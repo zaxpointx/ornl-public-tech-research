@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+*~
+.vscode/
+.idea/
+scratch/
+tmp/

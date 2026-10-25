@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it as below."
+title: "ORNL Public Technology Research"
+abstract: "Independent OSINT study of Oak Ridge National Laboratory's public software, tools, and datasets, with evidence-tagged briefs, a connections map, and fact-check logs. Not affiliated with ORNL, UT-Battelle, or DOE."
+type: dataset
+authors:
+  - family-names: Wilson
+    given-names: Cayden
+    alias: zaxpointx
+license: CC-BY-4.0
+repository-code: "https://github.com/zaxpointx/ornl-public-tech-research"
+date-released: "2026-10-24"
+version: "2026.10.24"
+keywords: [osint, research, ornl, open-source-software, national-laboratory]

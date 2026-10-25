@@ -1,0 +1,32 @@
+name: Correction
+description: Report a factual error, outdated claim, or wrong evidence tag
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: File and claim
+      description: Path and the claim or line in question
+      placeholder: projects/exago.md, "Status" line
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is correct
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source (URL)
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checks
+      options:
+        - label: The source is public and does not require a login
+          required: true
