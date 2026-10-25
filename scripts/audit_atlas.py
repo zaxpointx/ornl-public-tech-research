@@ -73,6 +73,29 @@ if "docs/publication-workflow.md" not in readme:
 if "docs/coverage-matrix.md" not in readme:
     errors.append("README.md does not link to the coverage matrix")
 
+# Keep the public navigation honest. Template placeholders such as `(URL)` are
+# examples, not repository links, so they are intentionally ignored.
+for source in ROOT.rglob("*"):
+    if not source.is_file() or ".git" in source.parts:
+        continue
+    if source.suffix.lower() not in {".md", ".yml", ".yaml"}:
+        continue
+    text = source.read_text()
+    for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
+        target = target.split("#", 1)[0].strip("<>").strip()
+        if (
+            not target
+            or target == "URL"
+            or target.startswith("#")
+            or "://" in target
+            or target.startswith("mailto:")
+        ):
+            continue
+        if not (source.parent / target).resolve().exists():
+            errors.append(
+                f"broken local link in {source.relative_to(ROOT)}: {target}"
+            )
+
 print(f"catalog rows: {len(catalog)}")
 print(f"project briefs: {len(project_ids)}")
 print(f"signal files: {len(signal_ids)}")

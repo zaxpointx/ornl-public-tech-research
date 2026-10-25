@@ -6,7 +6,7 @@
 
 A plain-English map of the public software, tools, and datasets from Oak Ridge National Laboratory, built only from public sources.
 
-This is an independent, open-source intelligence (OSINT) study of what Oak Ridge National Laboratory (ORNL) has released publicly. Each project gets a plain-English brief that explains what it does, how its code is organized, and who uses it, with every claim tagged by how well it is supported. A connections map shows how the projects depend on and relate to each other, and signals files read public traces such as commit history and funding records.
+This is an independent, open-source intelligence (OSINT) study of what Oak Ridge National Laboratory (ORNL) has released publicly. It is maintained by Cayden Wilson with an AI-assisted research workflow: Cayden sets the scope, reviews the writing, and makes the editorial decisions. Each project gets a plain-English brief that explains what it does, how its code is organized, and who uses it, with every claim tagged by how well it is supported. A connections map shows how the projects depend on and relate to each other, and signals files read public traces such as commit history and funding records.
 
 > [!IMPORTANT]
 > **Independent research. Not affiliated with, sponsored by, or endorsed by ORNL, UT-Battelle, LLC, or the U.S. Department of Energy.** Everything here comes from public sources (ornl.gov, osti.gov, energy.gov, public GitHub/GitLab repositories, public papers and docs). No logins, no restricted material, and no contact with lab staff. Project names belong to their owners. Findings can be wrong or out of date; see [Corrections](CONTRIBUTING.md).
@@ -50,14 +50,14 @@ Work in progress. Counts below are taken from the files in this snapshot.
 | | |
 |---|---|
 | Projects in the catalog | 66 ([discovery/catalog.csv](discovery/catalog.csv)) |
-| Project briefs written | 48 (46 full briefs plus 2 short drafts from public software records) |
-| Briefs that passed both fact-check sweeps | 48 |
+| Project files | 48 (46 full briefs plus 2 short OSTI-only drafts) |
+| Project files checked in two sweeps | 48 (full briefs and drafts are counted separately in the index) |
 | Briefs still to write | 18, in progress in batches of five |
 | Deep dives finished | 3 |
 | Signals files | 40 ([signals/](signals/)) |
 | Research batches | 7 ([batches/](batches/)) |
 
-Earlier versions of this README said 68 projects. The catalog has 66 unique entries, and 66 is the correct number.
+The 66 catalog entries are not all complete briefs: 18 are intentionally uncovered, including unresolved leads and OSTI-only stubs. The [coverage matrix](docs/coverage-matrix.md) explains that queue.
 
 ## Method
 
