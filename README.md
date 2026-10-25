@@ -16,7 +16,7 @@ An independent, open-source intelligence (OSINT) study of the public software, t
 | Projects in the catalog | 68 ([discovery/catalog.csv](discovery/catalog.csv)) |
 | Project briefs | 45 passed both fact-check sweeps, more in progress ([INDEX.md](INDEX.md)) |
 | Connections map | How the projects relate, every link tagged and sourced ([connections/map.md](connections/map.md)) |
-| Signals files | 14 ([signals/](signals/)) |
+| Signals files | 33 ([signals/](signals/)) |
 | Deep dives | 1, Cyberwheel ([deep-dives/cyberwheel/](deep-dives/cyberwheel/)) |
 | Research batches | 8 ([batches/](batches/)) |
 
@@ -46,6 +46,10 @@ Searches that came up empty are logged in [verification/not-found.md](verificati
 6. **Summarize** each batch and record what is still unknown.
 
 Full detail: [docs/methodology.md](docs/methodology.md) and the working rules in [RULES.md](RULES.md).
+
+## Research-team operations
+
+The repeatable team workflow is documented in [AGENTS.md](AGENTS.md) and [docs/research-team.md](docs/research-team.md). It defines role boundaries, batch size, evidence gates, deep-dive requirements, and the honest completion boundary. Run `python3 scripts/audit_atlas.py` before committing an atlas update.
 
 ## Highlights
 
