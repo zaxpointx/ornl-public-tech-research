@@ -11,6 +11,18 @@ This is an independent, open-source intelligence (OSINT) study of what Oak Ridge
 > [!IMPORTANT]
 > **Independent research. Not affiliated with, sponsored by, or endorsed by ORNL, UT-Battelle, LLC, or the U.S. Department of Energy.** Everything here comes from public sources (ornl.gov, osti.gov, energy.gov, public GitHub/GitLab repositories, public papers and docs). No logins, no restricted material, and no contact with lab staff. Project names belong to their owners. Findings can be wrong or out of date; see [Corrections](CONTRIBUTING.md).
 
+## Read this as a book
+
+The repository is both a living research atlas and the working manuscript for a book-length study. Start with the [Book Plan](docs/book-plan.md) for the narrative, then use the atlas files as the evidence layer behind each chapter.
+
+1. [Book Plan](docs/book-plan.md): canonical parts, chapters, reading paths, and completion criteria.
+2. [Executive orientation](LAB-TREE.md): the lab map and the research scope.
+3. [Project index](INDEX.md): the complete catalog of briefs and their evidence status.
+4. [Deep dives](deep-dives/): the three most developed case studies.
+5. [Methods and evidence](docs/methodology.md): how claims are sourced, tagged, and checked.
+
+The [reading order](docs/reading-order.md) remains useful for a short technical tour; the Book Plan is the canonical editorial structure.
+
 ## Start here
 
 1. [LAB-TREE.md](LAB-TREE.md): how the lab is organized, and where each project sits in it.
@@ -21,7 +33,7 @@ This is an independent, open-source intelligence (OSINT) study of what Oak Ridge
 3. [INDEX.md](INDEX.md): every project by domain, with a one-line summary and verification status.
 4. [lessons/](lessons/): plain-English takeaways about how the lab works.
 
-The full suggested order is in [docs/reading-order.md](docs/reading-order.md).
+The full suggested order is in [docs/reading-order.md](docs/reading-order.md). Publication and reproducibility conventions are documented in [docs/publication-workflow.md](docs/publication-workflow.md).
 
 ## Status
 
@@ -51,6 +63,10 @@ The batch plan and review gates are in [docs/research-team.md](docs/research-tea
 
 Full detail: [docs/methodology.md](docs/methodology.md) and the working rules in [RULES.md](RULES.md). New deep dives use [templates/project-case-study.md](templates/project-case-study.md).
 
+## Publication status
+
+This is a living edition, not a claim that the book is finished. The catalog is the source of truth for project coverage; the verification ledger is the source of truth for fact-check history; and the Book Plan tracks manuscript completeness. A future numbered edition should be cut only after the release checklist in [docs/publication-workflow.md](docs/publication-workflow.md) passes.
+
 ## Repository layout
 
 ```
@@ -70,6 +86,14 @@ batches/                 per-batch summaries
 docs/                    methodology, roles, reading order
 templates/               templates for briefs and deep dives, engineering checklist
 scripts/audit_atlas.py   structure check, run on every push
+```
+
+Editorial control files:
+
+```
+docs/book-plan.md             canonical book architecture and chapter map
+docs/publication-workflow.md  editioning, reproducibility, review, and release rules
+templates/chapter-checklist.md required evidence and editorial checks for chapters
 ```
 
 ## Corrections

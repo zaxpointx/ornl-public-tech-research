@@ -138,4 +138,4 @@ These failed the scope rule (no primary source names ORNL) and live in [connecti
 - [signals/](signals/): outside-in signals per project (RULES.md items 15-16)
 - [batches/](batches/): per-batch summaries
 
-Last updated: 2026-10-24 (batches 01-02 verified; batches 03-04 verified after two sweeps; batch 05 closed with all 4 verified; signals pilot swept; batch 06 briefs in progress; batch 04-05 rows listed as stubs; exaca and fates moved out under the scope rule)
+Last updated: 2026-10-24. The catalog currently contains 66 projects, 48 verified briefs, 40 signals files, and 18 intentionally uncovered catalog entries. See [the Book Plan](docs/book-plan.md) for the canonical manuscript structure and [the publication workflow](docs/publication-workflow.md) for edition status.
