@@ -5,7 +5,7 @@
 - Status: active. The latest release is 0.8.0 (2026-05-29 UTC), the last commit was 2026-09-16, and the in-progress version is `0.8.99-dev`. There have been 9 GitHub releases since the first. [KNOWN: GitHub API releases, git log, CMakeLists.txt line 18]
 - Scope (rule 13): passes because ORNL is a named contributing lab and a research org.
   - The README says it's developed in the ECP Co-Design Center for Particle Applications (CoPA): "a multi-institutional project with developers from ORNL, LANL, SNL, LLNL, PPNL, and ANL". [KNOWN: README]
-  - DOE CODE code-45702 lists ORNL as research org. [KNOWN: Scout's catalog row, OSTI API]
+  - DOE CODE code-45702 lists ORNL as research org. [KNOWN: the catalog row, OSTI API]
   - ORNL doesn't own the repo or hold the copyright alone, so the brief describes it as multi-lab. [rule 10/13]
 
 ## Plain-language walkthrough
@@ -24,7 +24,7 @@
 - **What comes out:** updated particle data each step, plus optional output files in HDF5 or Silo, two common scientific data formats. [KNOWN: `Cabana_HDF5ParticleOutput.hpp`, `Cabana_SiloParticleOutput.hpp`]
 - **Where humans act:** a developer writes the physics, chooses the hardware backend and dependencies at build time, and decides the run's size. [INFERRED]
 - **What it is not:** it isn't a ready-to-run simulation program, a visualizer, or a Kokkos replacement. [INFERRED]
-- **What's unknown:** which ORNL projects rely on it besides the ones in our catalog, and how the ECP's end affected funding (Scout's signals file covers funding).
+- **What's unknown:** which ORNL projects rely on it besides the ones in our catalog, and how the ECP's end affected funding (the discovery-pass signals file covers funding).
 - **Example:** the README lists molecular dynamics, particle-in-cell plasma physics, N-body cosmology and peridynamics (fracture modeling). [KNOWN: README] In our catalog, Finch, ORNL's additive-manufacturing heat solver, is built on Cabana. [KNOWN: Finch catalog row, repo description]
 
 ## How it works
@@ -43,7 +43,7 @@
 - Citation: a JOSS paper (`CITATION.bib`) and a Zenodo DOI for releases. [KNOWN: README]
 
 ## Who uses it / why it matters
-Cabana packages the hard parts of GPU particle codes so lab teams don't each rebuild them. That matters for exascale machines like ORNL's Frontier, though the README doesn't name Frontier. [INFERRED] For usage evidence, see Connector's section in `signals/cabana.md` (rule 17).
+Cabana packages the hard parts of GPU particle codes so lab teams don't each rebuild them. That matters for exascale machines like ORNL's Frontier, though the README doesn't name Frontier. [INFERRED] For usage evidence, see the usage section in `signals/cabana.md` (rule 17).
 
 ## Related projects
 - Finch (`finch`): built on Cabana. [KNOWN: catalog row]
@@ -58,9 +58,9 @@ Cabana packages the hard parts of GPU particle codes so lab teams don't each reb
 - https://github.com/ECP-copa/Cabana (README.md, LICENSE, CHANGELOG.md, CMakeLists.txt, CITATION.bib, core/, grid/, example/, .github/workflows/)
 - https://api.github.com/repos/ECP-copa/Cabana (plus /languages, /releases, /contributors)
 - https://github.com/ECP-copa/Cabana/wiki (linked)
-- https://www.osti.gov/doecode/biblio/45702 (per Scout's catalog row)
+- https://www.osti.gov/doecode/biblio/45702 (per the catalog row)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified: README CoPA lines name ORNL among the developer labs, DOE CODE code-45702 "Cabana" lists ORNL as research org (OSTI API, 2018-09-30), so rule 13 passes as a named contributing lab and research org. Also verified: LICENSE "Copyright 2018-2023 the Cabana authors", API NOASSERTION, 9 releases with 0.8.0 on 2026-05-29, last master commit 2026-09-16, contributors 43 with anonymous.
 - The README's lab list says "PPNL". That's probably meant to be PNNL or PPPL (INFERRED). The quote stays as written.
 - No corrections.

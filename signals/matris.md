@@ -1,11 +1,11 @@
 # Signals: matris
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
-- It's effectively dormant. There were 4 commits in 2025, and the last was 2025-10-23. In 2022 there were 247. [KNOWN: git log] That supports Reader's status of unknown. [INFERRED, medium]
+- It's effectively dormant. There were 4 commits in 2025, and the last was 2025-10-23. In 2022 there were 247. [KNOWN: git log] That supports the reading-pass status of unknown. [INFERRED, medium]
 - The history is older than the repo. Commits start on 2022-03-01, but GitHub created the repo on 2023-11-08. [KNOWN: git, GitHub API] Read: it was developed elsewhere and then published with its history. [INFERRED, high]
-- Two people wrote almost everything, with 69% and 27% of commits out of 9 emails. [KNOWN] The GitHub API lists 5 user accounts, while Reader's brief says 2. the Fact Checker should settle which is right. [KNOWN: API 2026-10-24]
+- Two people wrote almost everything, with 69% and 27% of commits out of 9 emails. [KNOWN] The GitHub API lists 5 user accounts, while the brief says 2. The fact-check pass should settle which is right. [KNOWN: API 2026-10-24]
 - It targets GPUs from more than one vendor: hip in 40 files, cuda in 45, rocm in 7, slurm in 5, crusher in 1. There's no CI. [KNOWN]
 
 ### Signal ledger
@@ -18,7 +18,7 @@
 | Funding | OSTI 2441045 and 2439841 list DOE Office of Science | OSTI API | [KNOWN] |
 | Wayback | One capture, 2025-03-05 | availability API | [KNOWN] |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 120, 169.
 
 **Outside vs inside:** The inside is a heterogeneous BLAS/LAPACK layer that requires ORNL's IRIS runtime. Outside, there is no package, no dependents, 1 star and 0 forks, and status is unknown; the PyPI name "matris" belongs to an unrelated project. Visible use is ORNL's IRIS group and its papers.

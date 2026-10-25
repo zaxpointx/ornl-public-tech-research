@@ -6,7 +6,7 @@
 - Status: unknown (rule 14).
   - The last commit was 2023-07-19 and the last push 2023-07-24 UTC. It isn't archived, and there are no releases or tags. [KNOWN: git log, GitHub API]
   - That's more than three years quiet. Quiet doesn't mean dead (rule 10).
-- Scope (rule 13): CORROBORATED. UT-Battelle holds the copyright and DOE CODE code-45739 (2018-10-01) lists ORNL as research org. [KNOWN: LICENSE; https://www.osti.gov/doecode/biblio/45739 per Scout]
+- Scope (rule 13): CORROBORATED. UT-Battelle holds the copyright and DOE CODE code-45739 (2018-10-01) lists ORNL as research org. [KNOWN: LICENSE; https://www.osti.gov/doecode/biblio/45739 per the discovery pass]
   - Org unit: the repo sits in ORNL-QCI, the same GitHub org as QIR-EE and TNQVM. The org name suggests a quantum computing group, but no page I read names the division, so it stays [INFERRED].
 
 ## Plain-language walkthrough
@@ -23,7 +23,7 @@
   3. It builds a task graph of the tensor operations, optimizes it, and runs it with an executor, on CPU through BLAS or on NVIDIA GPUs through cuTensor/cuQuantum, optionally across nodes with MPI. [KNOWN: README "Executive API", `src/runtime/{graph,optimizer,executor}`, Dependencies; INFERRED: the order]
 - **What comes out:** result tensors, such as an amplitude of a simulated quantum circuit or an energy from a many-body calculation. ExaTN also includes eigensolver, linear-solver and optimizer helpers. [KNOWN: `src/exatn/` file names; INFERRED: the examples]
 - **Where humans act:** a physicist or quantum-software developer designs the network and chooses build options like GPU, BLAS and MPI. [KNOWN: README build options; INFERRED]
-- **What it is not:** it isn't a quantum computer or a full circuit simulator by itself. TNQVM is the piece that turns XACC circuits into ExaTN networks. [KNOWN: Connector link 162; INFERRED: the division of labor]
+- **What it is not:** it isn't a quantum computer or a full circuit simulator by itself. TNQVM is the piece that turns XACC circuits into ExaTN networks. [KNOWN: map link 162; INFERRED: the division of labor]
 - **What's unknown:** whether anyone still maintains it, and whether it builds against current CUDA and cuQuantum.
 - **Example:** simulating a quantum circuit. Each gate becomes a small tensor, wires become shared indices, and contracting the network gives the probability of a particular output. The README lists "Quantum computing simulations" as a target. [KNOWN: README; INFERRED: the walkthrough]
 
@@ -41,7 +41,7 @@
 - Contributors: 12 including anonymous commit authors, but only 2 GitHub accounts. Most commit authors aren't linked to GitHub accounts. [KNOWN: GitHub API]
 
 ## Who uses it / why it matters
-Tensor networks are one of the main ways classical supercomputers simulate quantum computers and hard physics problems. ExaTN was ORNL's attempt at a general, multi-GPU engine for them. [INFERRED] It's the back end behind TNQVM's tensor-network simulation for XACC. [KNOWN per Connector link 162] For usage evidence, see Connector's section in `signals/exatn.md`.
+Tensor networks are one of the main ways classical supercomputers simulate quantum computers and hard physics problems. ExaTN was ORNL's attempt at a general, multi-GPU engine for them. [INFERRED] It's the back end behind TNQVM's tensor-network simulation for XACC. [KNOWN per map link 162] For usage evidence, see the usage section in `signals/exatn.md`.
 
 ## Related projects
 - TNQVM (`tnqvm`, catalog row 69): can use ExaTN. [KNOWN per map]
@@ -57,4 +57,9 @@ Tensor networks are one of the main ways classical supercomputers simulate quant
 - https://github.com/ORNL-QCI/exatn (README.md, LICENSE, src/, tpls/, python/, .github/workflows/)
 - https://api.github.com/repos/ORNL-QCI/exatn (plus /languages, /releases, /tags, /contributors)
 - https://www.frontiersin.org/articles/10.3389/fams.2022.838601/full (linked, not reviewed in depth)
-- https://www.osti.gov/doecode/biblio/45739 (per Scout)
+- https://www.osti.gov/doecode/biblio/45739 (per the discovery pass)
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of ORNL-QCI/exatn and public records: BSD 3-Clause "Copyright (c) 2017, UT-Battelle", last commit 2023-07-19, first 2018-11-01, 1,202 commits on `devel`, 12 remote branches, 0 tags, contributors 12 with anonymous and 2 accounts, `src/` and `tpls/` layouts, the runtime pieces including `executor/cuquantum`, both CI files, and README build requirements (CMake 3.9+, GNU 8+, C++14 and Fortran-2003, cuTensor 1.6.2/cuQuantum 22.11). DOE CODE code-45739 refetched from the OSTI API: "ExaTN", 2018-10-01, ORNL research org, contract AC05-00OR22725. Paper link resolves.
+- No corrections. Note: the 12 contributor figure is GitHub's count by commit email; git log shows 11 distinct author names, so a couple of entries may be the same person under two emails. [INFERRED]
+- Status unknown stands: not archived on GitHub, so rule 14 doesn't allow archived.

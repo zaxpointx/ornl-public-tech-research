@@ -1,11 +1,11 @@
 # ExaGO (Exascale Grid Optimization toolkit)
 - Official page: no separate website. The README, the `docs/web/` pages and a PDF manual (`docs/manual/manual.pdf`) serve as the docs. [KNOWN: README]
-- Repo: https://github.com/ORNL/ExaGO (default branch `develop`). It replaces the archived https://github.com/pnnl/ExaGO, whose README says development "has moved to the new repository". [KNOWN: GitHub API; Scout's catalog row]
+- Repo: https://github.com/ORNL/ExaGO (default branch `develop`). It replaces the archived https://github.com/pnnl/ExaGO, whose README says development "has moved to the new repository". [KNOWN: GitHub API; the catalog row]
 - License: a custom UT-Battelle open-source license, a BSD-like grant. The conditions are to keep notices, mark your changes, not use the names for endorsement, and include a fixed DOE contract acknowledgment. It also has a disclaimer, and GitHub reports NOASSERTION. The earlier v1.6.0 license is kept as `LICENSE-1.6.0`. [KNOWN: LICENSE, repo tree, GitHub API]
 - Copyright: "Copyright (c) 2026, UT-Battelle." It also carries "Copyright (c) 2020-2025, Battelle Memorial Institute" for the reused ExaGO v1.6.0 code. Battelle Memorial Institute operates PNNL. [KNOWN: LICENSE lines 1-5; INFERRED: the PNNL operator link, general knowledge]
 - Trademark: the README writes ExaGO™. [KNOWN]
 - Status: active. v2.1.0 came out 2026-10-09 UTC and v2.0.0 on 2026-05-21 UTC. The last commit was 2026-10-19 ET (2026-10-20 00:05 UTC), and CMake says version 2.1.0. [KNOWN: GitHub releases, git log, CMakeLists.txt line 9]
-- Scope (rule 13): CORROBORATED. ORNL owns the repo, UT-Battelle holds the copyright, and DOE CODE code-176348 "ExaGO v2" lists ORNL as research org. [KNOWN: GitHub, LICENSE, Scout's OSTI check]
+- Scope (rule 13): CORROBORATED. ORNL owns the repo, UT-Battelle holds the copyright, and DOE CODE code-176348 "ExaGO v2" lists ORNL as research org. [KNOWN: GitHub, LICENSE, OSTI check in the discovery pass]
 
 ## Plain-language walkthrough
 - **What it is:** software that works out the cheapest safe way to run an electric power grid, sized for supercomputers with GPUs. It's written in C/C++ with Python bindings. [KNOWN: README]
@@ -53,10 +53,10 @@
 - Contributors: 38 including anonymous commit authors, 22 GitHub accounts without them. 17 stars and 11 forks. [KNOWN: GitHub API]
 
 ## Who uses it / why it matters
-Power-grid planning with lots of renewables and failure scenarios gets huge fast. ExaGO aims those problems at GPU supercomputers, and the README links a configuration doc for ORNL's Frontier. [KNOWN: README; INFERRED: the significance] For usage evidence, see Connector's section in `signals/exago.md`.
+Power-grid planning with lots of renewables and failure scenarios gets huge fast. ExaGO aims those problems at GPU supercomputers, and the README links a configuration doc for ORNL's Frontier. [KNOWN: README; INFERRED: the significance] For usage evidence, see the usage section in `signals/exago.md`.
 
 ## Related projects
-- GridKit (`gridkit`, in our catalog): another ORNL power-grid code. [INFERRED: same domain; I didn't find a direct dependency, so this is for Connector to check]
+- GridKit (`gridkit`, in our catalog): another ORNL power-grid code. [INFERRED: same domain; I didn't find a direct dependency, so this is for the connections pass to check]
 - HiOp (LLNL) and PETSc: outside dependencies (rule 13).
 - pnnl/ExaGO: the archived predecessor.
 
@@ -68,10 +68,10 @@ Power-grid planning with lots of renewables and failure scenarios gets huge fast
 ## Sources (accessed 2026-10-24)
 - https://github.com/ORNL/ExaGO (README.md, LICENSE, CHANGELOG.md, CMakeLists.txt, src/, applications/, agentigrid/README.md, viz/, datafiles/, .github/workflows/)
 - https://api.github.com/repos/ORNL/ExaGO (plus /languages, /releases, /tags, /contributors)
-- https://github.com/pnnl/ExaGO (archived; per Scout's catalog row)
-- https://www.osti.gov/doecode/biblio/176348 (per Scout's catalog row)
+- https://github.com/pnnl/ExaGO (archived; per the catalog row)
+- https://www.osti.gov/doecode/biblio/176348 (per the catalog row)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified: LICENSE (UT-Battelle 2026, plus the Battelle 2020-2025 notice for v1.6.0 code), DOE CODE code-176348 "ExaGO v2" with ORNL as research org (OSTI API, 2026-03-02), pnnl/ExaGO archived (GitHub API), releases v2.1.0 2026-10-09 and v2.0.0 2026-05-21, contributors 38 with anonymous, languages Python 48.5% and C++ 41.4%.
 - Corrected: the last commit time zone. The develop feed shows 2026-10-20 00:05 UTC, which is 2026-10-19 ET, so both are now stated.
 - AgentiGrid: the "experimental" label comes from CHANGELOG 2.1 ("Add AgentiGrid experimental agentic AI user interface"). The agentigrid README describes the LLM loop but doesn't use the word. The KNOWN tag holds because CHANGELOG is cited. Not run.

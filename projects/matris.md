@@ -5,9 +5,9 @@
 - Status: unknown (borderline, rule 14).
   - The last commit and push were 2025-10-23, exactly 12 months before access.
   - There are no GitHub releases or tags, but CHANGELOG states version "[1.0.0] - 2025-07-21". That is a stated version, not a tagged release. [KNOWN: git log, GitHub API, CHANGELOG.md]
-  - I chose unknown over active because there has been no activity for a year, per rule 10. The lead confirmed unknown on 2026-10-24.
+  - I chose unknown over active because there has been no activity for a year, per rule 10. Status unknown was confirmed by editorial decision on 2026-10-24.
 - Maturity: the README describes its GEMM demo as a "proof of concept", and the brief keeps that wording (rule 10). [KNOWN: README]
-- Scope (rule 13): passes. ORNL owns the repo and UT-Battelle holds the copyright. OSTI 2441045 and 2439841 list ORNL as research org. [KNOWN: repo; Scout's OSTI check] That's the repo plus OSTI, so I'm marking it CORROBORATED pending Fact Checker.
+- Scope (rule 13): passes. ORNL owns the repo and UT-Battelle holds the copyright. OSTI 2441045 and 2439841 list ORNL as research org. [KNOWN: repo; OSTI check in the discovery pass] That's the repo plus OSTI, so I'm marking it CORROBORATED pending the fact-check pass.
 
 ## Plain-language walkthrough
 - **What it is:** a C/C++ math library that does the standard heavy matrix operations scientific and AI codes depend on. It picks at run time whether each piece runs on a CPU, an NVIDIA GPU, an AMD GPU or other chips, using ORNL's IRIS runtime to schedule the work. [KNOWN: README]
@@ -41,7 +41,7 @@
 - Contributors: 8 including anonymous commit authors, 5 GitHub accounts without them. 1 star and 0 forks. [KNOWN: GitHub API]
 
 ## Who uses it / why it matters
-It's a research testbed showing that IRIS can pick vendor math libraries per task at run time, which matters as lab machines mix GPU vendors. [INFERRED] For usage evidence, see Connector's section in `signals/matris.md`.
+It's a research testbed showing that IRIS can pick vendor math libraries per task at run time, which matters as lab machines mix GPU vendors. [INFERRED] For usage evidence, see the usage section in `signals/matris.md`.
 
 ## Related projects
 - IRIS (`iris`): a required runtime dependency. [KNOWN: CMake, README]
@@ -56,10 +56,10 @@ It's a research testbed showing that IRIS can pick vendor math libraries per tas
 ## Sources (accessed 2026-10-24)
 - https://github.com/ORNL/MatRIS (README.md, LICENSE, CHANGELOG.md, CMakeLists.txt, src/, tests/, containers/, utils/)
 - https://api.github.com/repos/ORNL/MatRIS (plus /languages, /tags, /contributors)
-- https://www.osti.gov/biblio/2441045 and https://www.osti.gov/biblio/2439841 (per Scout's catalog row)
+- https://www.osti.gov/biblio/2441045 and https://www.osti.gov/biblio/2439841 (per the catalog row)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
-- Verified on a full fresh clone of ORNL/MatRIS and refetches: LICENSE "Copyright (c) 2025, UT-Battelle, LLC", BSD-3 in the API, last commit 2025-10-23 (11:17 ET), 0 tags and 0 releases, CHANGELOG "[1.0.0] - 2025-07-21", README "proof of concept", and contributors 8 with anonymous and 5 accounts. The brief's 5 is right; a room message said 2.
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a full fresh clone of ORNL/MatRIS and refetches: LICENSE "Copyright (c) 2025, UT-Battelle, LLC", BSD-3 in the API, last commit 2025-10-23 (11:17 ET), 0 tags and 0 releases, CHANGELOG "[1.0.0] - 2025-07-21", README "proof of concept", and contributors 8 with anonymous and 5 accounts. The brief's 5 is right; an earlier report said 2.
 - IRIS dependency verified: `src/CMakeLists.txt` lines 7-10 put `$ENV{IRIS}/lib` on the link path with `iris` as a link library, linked at line 27.
 - Rule 13 CORROBORATED: OSTI 2441045 and 2439841 are both ORNL-research-org conference records titled "MatRIS: ...". Together with the UT-Battelle LICENSE and the ORNL repo owner, that's two independent sources.
-- Status is left as unknown pending the lead's call; the facts above don't settle it. No corrections.
+- Status is left as unknown pending an editorial decision; the facts above don't settle it. No corrections.

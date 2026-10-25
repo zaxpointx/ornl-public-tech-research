@@ -1,6 +1,6 @@
 # Signals: cyberwheel
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a fresh clone of https://github.com/ORNL/cyberwheel plus the OSTI API, unless another source is given.
 
 ### What the outside tells us that the inside doesn't
@@ -12,7 +12,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 ### Signal ledger
 | Signal | What it suggests | Tag, source | Confidence |
 |---|---|---|---|
-| 352 commits on the default branch, 398 across all branches. 246 commits in 2024, 152 in 2025, none after 2025-08-26 | Activity ended rather than tapering off. Reader's 352 counts the default branch only | [KNOWN: `git rev-list --count HEAD` and `git log --all` on a clone, 2026-10-24] | high |
+| 352 commits on the default branch, 398 across all branches. 246 commits in 2024, 152 in 2025, none after 2025-08-26 | Activity ended rather than tapering off. The reading-pass 352 counts the default branch only | [KNOWN: `git rev-list --count HEAD` and `git log --all` on a clone, 2026-10-24] | high |
 | 9 distinct author emails in total: 8 active in 2024, 5 in 2025, 1 new in 2025. 7 of the 9 use ornl.gov addresses | A small, stable in-house team with almost no outside contributors | [KNOWN: git log, counts only] | high |
 | Top author made 26% of commits, top three made 69% | Work concentrated in a few people, so the project depends on a handful of contributors | [KNOWN: git log] | medium |
 | Releases v1.0.0 2024-08-16, v1.1.0 2025-03-10, v2.0 2025-08-11. The last commit came 15 days after v2.0 | v2.0 reads as a wrap-up release | [KNOWN: git tags; INFERRED: wrap-up] | medium |
@@ -24,7 +24,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 - Nothing in this pilot pointed toward restricted work.
 - Personal profile pages surfaced in searches were not used.
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only; no people profiled beyond published author lists' institutions.
 
 **Outside vs inside:** The inside frames Cyberwheel as a training ground for autonomous cyber defense agents (README), aimed at "live networks" someday (LDRD report, OSTI 3025007 p.13; the README does not use that phrase). From the outside, it is not packaged anywhere (no PyPI, conda-forge or Spack) and GitHub lists 0 dependent repos, so its visible users are researchers who clone it: 3 papers run or extend it, and their institutions are not yet checked.
@@ -45,6 +45,6 @@ Accessed 2026-10-24 (ET). Artifacts only; no people profiled beyond published au
 Reasoning: no package + 0 dependents + recent use papers suggests a research artifact used by cloning, not a library others build on [INFERRED, medium confidence]. Claimed audience (autonomous defense for live networks, per OSTI 3025007 p.13) vs visible audience (academic RL-for-cyber researchers) [INFERRED].
 
 
-## Sweep notes (ORNL Fact Checker, 2026-10-24)
+## Sweep notes (fact-check pass, 2026-10-24)
 - Re-fetched and verified: the `Private :: Do not Upload` classifier (pyproject.toml line 9), no CI config (.github/workflows, .gitlab-ci.yml, Jenkinsfile and .travis.yml all 404), tags v1.0.0 2024-08-16, v1.1.0 2025-03-10 and v2.0 2025-08-11, DOE CODE code-134699 (LDRD) and OSTI 2478356 ("USDOE" only).
-- Not re-run: commit and author counts (Scout's clone). Taken as reported. The rule 16 check is clean: no infrastructure, people or restricted-work content.
+- Not re-run: commit and author counts (the discovery-pass clone). Taken as reported. The rule 16 check is clean: no infrastructure, people or restricted-work content.

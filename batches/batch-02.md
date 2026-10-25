@@ -1,14 +1,14 @@
 # Batch 02 summary (2026-10-24)
 
-Written by ORNL Librarian. Discovery notes from ORNL Scout (`batch-02-scout.md`) are merged below.
+Discovery notes (`discovery-notes/batch-02.md`) are merged below.
 
 ## What was researched
-- Discovery (Scout): 15 projects were added (33 total): daymet, tesvis-modis, e3sm-elm, fates, data-workflow, pyrs, 3dthesis, myna, finch, vivaldi, mind-the-gap, hydrofleetintel, olcf-test-harness, qiree and django-remote-submission. Every license comes from the repo's own license file, and OSTI records were added where they exist.
-- Briefs (Reader): 6 were written: [daymet](../projects/daymet.md), [e3sm-elm](../projects/e3sm-elm.md), [myna](../projects/myna.md), [data-workflow](../projects/data-workflow.md), [tesvis-modis](../projects/tesvis-modis.md) and [olcf-test-harness](../projects/olcf-test-harness.md).
-- Connections (Connector): [map.md](../connections/map.md) now covers all 46 cataloged projects through batch 3, with 69 unique links (50 KNOWN, 25 INFERRED, 9 UNKNOWN). Shared-contributor links are now split. The shared contributor is KNOWN, but "same group" built on it is INFERRED.
+- Discovery (the discovery pass): 15 projects were added (33 total): daymet, tesvis-modis, e3sm-elm, fates, data-workflow, pyrs, 3dthesis, myna, finch, vivaldi, mind-the-gap, hydrofleetintel, olcf-test-harness, qiree and django-remote-submission. Every license comes from the repo's own license file, and OSTI records were added where they exist.
+- Briefs (the reading pass): 6 were written: [daymet](../projects/daymet.md), [e3sm-elm](../projects/e3sm-elm.md), [myna](../projects/myna.md), [data-workflow](../projects/data-workflow.md), [tesvis-modis](../projects/tesvis-modis.md) and [olcf-test-harness](../projects/olcf-test-harness.md).
+- Connections (the connections pass): [map.md](../connections/map.md) now covers all 46 cataloged projects through batch 3, with 69 unique links (50 KNOWN, 25 INFERRED, 9 UNKNOWN). Shared-contributor links are now split. The shared contributor is KNOWN, but "same group" built on it is INFERRED.
 
 ## What was verified
-- Fact Checker checked all 6 briefs: 53 claims, with 43 verified, 6 corrected and 4 unverifiable.
+- The fact-check pass checked all 6 briefs: 53 claims, with 43 verified, 6 corrected and 4 unverifiable.
 - Corrections:
   - OLCF Test Harness: the README never mentions a v4.0, and NCCS comes from the developer affiliations rather than the OSTI research-org field.
   - e3sm-elm: a second OLCF DOI was added for the 1 km ELM datasets (OSTI 3005830).
@@ -23,15 +23,15 @@ Written by ORNL Librarian. Discovery notes from ORNL Scout (`batch-02-scout.md`)
 - The source code for TESViS, since there's no public repo.
 - data-workflow's owning division.
 - ORNL's role in FATES. OSTI lists Los Alamos.
-- Open question from Scout: should fates and e3sm-elm stay in the catalog, since ORNL doesn't own them, or move to the connections map as outside projects? The lead needs to decide.
+- Open question from the discovery pass: should fates and e3sm-elm stay in the catalog, since ORNL doesn't own them, or move to the connections map as outside projects? This needed an editorial decision.
 
 ## Investigate next
 - Fact-check the 6 batch 3 briefs (scale, vera, gitr, real-twin, gauntlet, energyplus).
-- Scout has these appends queued: exaca, adamantine, oncat, post-processing-agent and live-data-server. Scout is also running a DOE CODE confirmation pass on every batch 1 row.
-- Connector's open targets: ExaCA, Cabana/Kokkos, XACC, HiOp/SUNDIALS/ExaGO, FAR3d vs VMEC, GITR vs Xolotl/SOLPS, and Real-Twin, which has no links yet.
+- The discovery pass has these appends queued: exaca, adamantine, oncat, post-processing-agent and live-data-server. The discovery pass is also running a DOE CODE confirmation pass on every batch 1 row.
+- The connections-pass open targets: ExaCA, Cabana/Kokkos, XACC, HiOp/SUNDIALS/ExaGO, FAR3d vs VMEC, GITR vs Xolotl/SOLPS, and Real-Twin, which has no links yet.
 - Retry fetches: contributor lists for Real-Twin and 3DThesis, and the READMEs for data-workflow and PyRS.
 
-## Discovery notes (from ORNL Scout)
+## Discovery notes
 ### Sources checked (2026-10-24)
 - DOE CODE API: https://www.osti.gov/doecode/api/search returned 404 for both GET and POST. The search UI is JavaScript-rendered, so no records were pulled. A retry is needed with the documented endpoint or a browser.
 - daymet.ornl.gov and modis.ornl.gov (official pages).
@@ -57,7 +57,7 @@ Written by ORNL Librarian. Discovery notes from ORNL Scout (`batch-02-scout.md`)
 - The CASL/VERA public parts.
 - ORNL/gauntlet.
 
-### License and OSTI fixes (Scout 2026-10-24)
+### License and OSTI fixes (discovery pass 2026-10-24)
 Licenses below come from each repo's own license file. Every batch-2 row now records the license file URL in its notes.
 - Custom UT-Battelle permissive: daymet, vivaldi, mind-the-gap, hydrofleetintel. olcf-test-harness uses a UT-Battelle BSD-3 style license.
 - e3sm-elm: BSD-3-Clause. fates: BSD-3-style.

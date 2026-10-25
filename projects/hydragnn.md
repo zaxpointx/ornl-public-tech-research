@@ -29,7 +29,7 @@ HydraGNN is a Python toolkit for training graph neural networks (GNNs) that pred
 
 ## Who uses it / why it matters
 - It's for scientists who want to screen huge numbers of molecules or materials (for batteries, catalysts, carbon capture and so on) with AI instead of slow simulations [INFERRED: from example datasets such as open_direct_air_capture_2023 and open_catalyst].
-- 127 stars and 48 forks [KNOWN: GitHub API counts]. Stars aren't users: Connector's signals pass found every OpenAlex citing paper that mentions it has ORNL authors, and its 2 GitHub dependents are PyPI mirror repos, so visible use is mostly in-house [INFERRED; see signals/hydragnn.md].
+- 127 stars and 48 forks [KNOWN: GitHub API counts]. Stars aren't users: the connections-pass signals work found every OpenAlex citing paper that mentions it has ORNL authors, and its 2 GitHub dependents are PyPI mirror repos, so visible use is mostly in-house [INFERRED; see signals/hydragnn.md].
 - Specific outside users: [UNKNOWN].
 
 ## Related projects
@@ -47,7 +47,7 @@ HydraGNN is a Python toolkit for training graph neural networks (GNNs) that pred
 - https://api.github.com/repos/ORNL/HydraGNN (+ /languages, /releases, /contributors), accessed 2026-10-24
 - https://github.com/ORNL/HydraGNN/wiki/Install, linked from the README, not opened this pass
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: example dataset count about 40 -> about 35 (35 folders in examples/).
 - Corrected: package subfolder list was incomplete; added data, domain_losses, third_party.
 - Retagged: Frontier uses AMD GPUs, INFERRED -> KNOWN (OLCF Frontier user guide).

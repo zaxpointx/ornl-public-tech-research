@@ -49,7 +49,7 @@ The paper says it's especially suited to fused filament fabrication (plastic-sty
 - https://www.osti.gov/biblio/2472702 (via https://www.osti.gov/api/v1/records?osti_id=2472702)
 - https://api.github.com/repos/adamantine-sim/adamantine (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked license (LICENSE line 2, PR 346 "Relicense to apache 2.0 with the llvm exception"), CITATION.cff still BSD-3, OSTI 2472702 research org and sponsors, README quotes, contributors 10 accounts / 11 with anonymous, releases v1.0 2024-10-01 and v1.1 2026-01-23, project site and tutorials repo (both 200). All verified.
 - Corrected: the 1.1 release date is no longer UNKNOWN. Release branch and CHANGELOG commit dates confirm 2026-01-23, so the CHANGELOG's 2025 is tagged as an INFERRED typo.
 - Scope (rule 13) holds on OSTI 2472702. No ORNL affiliation is implied in the brief.

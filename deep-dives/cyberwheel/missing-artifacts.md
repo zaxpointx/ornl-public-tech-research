@@ -1,5 +1,5 @@
 # Cyberwheel deep dive: missing artifacts
-Owner: ORNL Fact Checker. 2026-10-24. These are things we looked for in public sources and didn't find. Every item is also logged in verification/not-found.md. Per rule 16, we don't guess at anything non-public.
+Written in the fact-check pass, 2026-10-24. These are things we looked for in public sources and didn't find. Every item is also logged in verification/not-found.md. Per rule 16, we don't guess at anything non-public.
 
 | # | Missing artifact | Where we looked | Effect on claims |
 |---|---|---|---|

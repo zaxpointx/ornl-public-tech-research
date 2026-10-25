@@ -14,8 +14,8 @@ An independent, open-source intelligence (OSINT) study of the public software, t
 | | |
 |---|---|
 | Projects in the catalog | 68 ([discovery/catalog.csv](discovery/catalog.csv)) |
-| Project briefs | 40, of which 39 passed both fact-check sweeps ([INDEX.md](INDEX.md)) |
-| Connections map | 169 numbered links, 306 tagged claims ([connections/map.md](connections/map.md)) |
+| Project briefs | 40 passed both fact-check sweeps, more in progress ([INDEX.md](INDEX.md)) |
+| Connections map | How the projects relate, every link tagged and sourced ([connections/map.md](connections/map.md)) |
 | Signals files | 14 ([signals/](signals/)) |
 | Deep dives | 1, Cyberwheel ([deep-dives/cyberwheel/](deep-dives/cyberwheel/)) |
 | Research batches | 8 ([batches/](batches/)) |

@@ -30,7 +30,7 @@ Shift is ORNL's high-speed radiation transport code. "Radiation transport" means
 
 ## How the project is organized
 - Code layout and languages: [UNKNOWN]. There's no public code.
-- People and group: the 2016 JCP paper's author line reads "Radiation Transport Group, Reactor and Nuclear Systems Division", and its introduction says Shift is developed and maintained at ORNL by that group. [KNOWN: OSTI 1237627, Pandya et al., J. Comput. Phys. 308 (2016), author affiliations and introduction, full text checked by Fact Checker 2026-10-24; single source, so not CORROBORATED] The group's current name is [UNKNOWN].
+- People and group: the 2016 JCP paper's author line reads "Radiation Transport Group, Reactor and Nuclear Systems Division", and its introduction says Shift is developed and maintained at ORNL by that group. [KNOWN: OSTI 1237627, Pandya et al., J. Comput. Phys. 308 (2016), author affiliations and introduction, full text checked by the fact-check pass 2026-10-24; single source, so not CORROBORATED] The group's current name is [UNKNOWN].
 - Key papers: 2015 ANS conference paper (ornl.gov page) and 2016 JCP paper (cited in the SCALE manual).
 
 ## Who uses it / why it matters
@@ -38,7 +38,7 @@ SCALE users get it for criticality safety and reactor physics. The manual says i
 
 ## Related projects
 - SCALE (`scale`): Shift ships inside it. [KNOWN: SCALE manual]
-- VERA (`vera`): Scout lists Shift as a VERA component. [INFERRED: not confirmed from a VERA page. OSTI 1237627 only says Shift was benchmarked on the "CASL VERA criticality test suite", which shows a test link, not membership]
+- VERA (`vera`): The discovery pass lists Shift as a VERA component. [INFERRED: not confirmed from a VERA page. OSTI 1237627 only says Shift was benchmarked on the "CASL VERA criticality test suite", which shows a test link, not membership]
 - Frontier/OLCF: hardware used in the 2025 study. [KNOWN: OSTI 3013520]
 
 ## Known / Inferred / Unknown
@@ -52,7 +52,7 @@ SCALE users get it for criticality safety and reactor physics. The manual says i
 - https://www.osti.gov/biblio/3013520 (Nuclear Science and Engineering 2025)
 - https://www.osti.gov/biblio/1237627 (Pandya et al., JCP 2016)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done.
 - Status changed from KNOWN to INFERRED: one 2025 paper shows ongoing work but isn't a release statement.
 - "Not openly distributed" changed to INFERRED. Ships-in-SCALE stays KNOWN.

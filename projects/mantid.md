@@ -45,7 +45,7 @@ Mantid is a large open-source program for turning raw data from neutron and muon
 - https://www.mantidproject.org (footer), accessed 2026-10-24
 - https://api.github.com/repos/mantidproject/mantid (+ /languages, /releases, /contributors), accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: homepage footer lists exactly five copyright holders (ISIS/UKRI, ORNL NScD, ESS, ILL, CSNS/IHEP CAS); removed "and others".
 - Retagged: SNAPRed built on Mantid, INFERRED -> KNOWN (SNAPRed pyproject.toml).
 - Verified: GPL-3.0, ~64% C++/35% Python, ~307 contributors, created 2011-10-17, v6.16.0/6.16.1 dates, DOI 10.5286/Software/Mantid6.16.1, OpenSSF badge 4316.

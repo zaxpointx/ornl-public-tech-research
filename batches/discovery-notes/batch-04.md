@@ -1,4 +1,4 @@
-# Batch 04 scout (discovery) - 2026-10-24 [Scout 2026-10-24]
+# Batch 04 discovery notes, 2026-10-24
 ## Added (13, discovered_batch "04")
 - cyber: cincinnatus, heartbeat-malware, cpad, situ, hyperion (all OSTI-only, no repo)
 - buildings/transport: fixs, pyxodr3d, roof-savings-calculator, autobem, wufi-ornl

@@ -41,7 +41,7 @@ DataFed is a system for keeping track of scientific data spread across many rese
 - https://ornl.github.io/DataFed/, linked, not opened this pass
 - https://api.github.com/repos/ORNL/DataFed (+ /languages, /releases, /tags, /contributors), accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Retagged: "never stores passwords" was KNOWN but isn't stated in overview.rst; rewrote as KNOWN Globus authorization + INFERRED no-password conclusion.
 - Added: DOE CODE code-48776 confirms ORNL.
 - Verified: custom UT-Battelle license (2020, DataFed Version 1), OLCF hosting, Globus/GridFTP transfers that copy not move, OAuth2 identity, data-silo framing, semantic + calendar versioning, release and tag dates, repo tree, ~22 contributors.

@@ -191,16 +191,16 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | energyplus | "DOE's main open-source program" KNOWN | README, OSTI 1395245 | corrected | neither says main/flagship; retagged INFERRED |
 | 2026-10-24 | energyplus | "not an ORNL-led project [KNOWN: LICENSE]" | LICENSE.txt | corrected | reworded to not ORNL-only (KNOWN), lead INFERRED |
 | 2026-10-24 | energyplus | Sweep 2: purpose, cadence, release, license holders | README lines 7, 33; GitHub API; OSTI 1395245 | verified | purpose CORROBORATED (README + OSTI) |
-| 2026-10-24 | map link 61 | NREL-led "per OSTI 1395245" | OSTI 1395245 | corrected | OSTI lists ORNL as only research org; does not support NREL-led. Flagged to Connector |
+| 2026-10-24 | map link 61 | NREL-led "per OSTI 1395245" | OSTI 1395245 | corrected | OSTI lists ORNL as only research org; does not support NREL-led. Flagged to the connections pass |
 | 2026-10-24 | cyberwheel (deep dive) | Quote "autonomously deploy decoys in unseen network topologies that delay or deny adversarial actors" | OSTI 3025007 PDF p. 13 | verified | exact |
 | 2026-10-24 | cyberwheel (deep dive) | Quote "modified version" of Firewheel, built on QEMU, >100,000 virtual nodes | OSTI 3025007 PDF p. 13 | verified | exact; what was modified is not stated |
 | 2026-10-24 | cyberwheel (deep dive) | 11049 funding note on OSTI 2478356 or code-134699 | OSTI records API | unverifiable | neither record names 11049 or a contract; code-134699 sponsor is generic LDRD Program; 2478356 sponsor is USDOE |
-| 2026-10-24 | map link 56 | Cyberwheel LDRD link CORROBORATED via CSET paper + shared authors | OSTI 2478356, code-134699 | corrected | shared authors prove team, not funding; LDRD funding CORROBORATED via report + DOE CODE sponsor field; 11049 number KNOWN single source. Flagged to Connector |
+| 2026-10-24 | map link 56 | Cyberwheel LDRD link CORROBORATED via CSET paper + shared authors | OSTI 2478356, code-134699 | corrected | shared authors prove team, not funding; LDRD funding CORROBORATED via report + DOE CODE sponsor field; 11049 number KNOWN single source. Flagged to the connections pass |
 | 2026-10-24 | map link 108 | arXiv 2610.00590 runs Cyberwheel | https://arxiv.org/abs/2610.00590 (2026-09-30) abstract: "Using the high fidelity Cyberwheel environment" | verified | |
 | 2026-10-24 | map link 108 | arXiv 2610.00557 evaluates in CybORG CAGE-4 and Cyberwheel | https://arxiv.org/abs/2610.00557 (2026-09-30) abstract: "in CybORG CAGE-4 and in Cyberwheel at two network scales" | verified | |
 | 2026-10-24 | map link 108 | Entropy 2025 extends Cyberwheel | DOI 10.3390/e27060622 (Entropy, 2025-06-11) abstract: "the algorithm training environment Cyberwheel is extended by adding new fine-grained defense mechanisms" | verified | author affiliation not checked |
 | 2026-10-24 | landscan | CC BY 4.0 | landscan.ornl.gov public page bundle, Licensing: "These datasets are offered under the Creative Commons Attribution 4.0 International License." | verified | /licensing returns 403 to fetches, so the bundle text was used |
-| 2026-10-24 | landscan | HD and USA are legacy | landscan.ornl.gov Historical Datasets: "LandScan HD and LandScan USA are legacy datasets that are no longer actively updated" | corrected | citation moved from the Scout batch file to the primary page |
+| 2026-10-24 | landscan | HD and USA are legacy | landscan.ornl.gov Historical Datasets: "LandScan HD and LandScan USA are legacy datasets that are no longer actively updated" | corrected | citation moved from the discovery notes to the primary page |
 | 2026-10-24 | landscan | R&D 100 award | landscan.ornl.gov: "R&D100-winning population data platform" | verified | |
 | 2026-10-24 | landscan | R&D 100 award year | landscan.ornl.gov | unverifiable | not stated on the site |
 | 2026-10-24 | landscan | LSG 2026: 30 arc-sec, ~100 predictions per country, DOI | OSTI 17076155 (Dataset, 2026-07-01) | verified | |
@@ -262,7 +262,7 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | oncat | Overview quotes (SNS/HFIR catalog, teams browse their data, DOIs, API) | oncat.ornl.gov rendered public page | verified | no API call, no login page |
 | 2026-10-24 | oncat | pyoncat: GPL v3 LICENSE, blank PyPI license, 8 versions 1.6.2 (2023-09-05) to 2.7 (2026-09-24), Python 3.9+, author "ONCat Support" | PyPI JSON; pyoncat-2.7 sdist | verified | files read, not run |
 | 2026-10-24 | oncat | Client classes, ReductionFileBuilder methods, login/logout methods, module sizes | pyoncat-2.7 sdist source | verified | |
-| 2026-10-24 | oncat | Release notes URL returned 404 | guessed path | corrected | rule 16 (lead): reworded to "not linked from public pages" |
+| 2026-10-24 | oncat | Release notes URL returned 404 | guessed path | corrected | rule 16 (editorial decision): reworded to "not linked from public pages" |
 | 2026-10-24 | signals/hydragnn | Grid expansion: OSTI 3377970 OE + ASCR, 3239722 | OSTI API | verified | |
 | 2026-10-24 | signals/hydragnn | AMD as research org | OSTI code-180990 | verified | |
 | 2026-10-24 | signals/hydragnn | ornl.gov says development started 2022; AI Initiative funding | ornl.gov news, Jan 28 2025 | verified | |
@@ -292,7 +292,7 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | qiree | License dual Apache-2.0+LLVM / MIT; contributors retain copyright; UT-Battelle file headers; license files missing | COPYRIGHT, Executor.cc raw; 404 on LICENSE-APACHE, LICENSE-MIT, LICENSE | verified | |
 | 2026-10-24 | qiree | Rule 13 second source | OSTI 3001783 (ORNL) | verified | CORROBORATED |
 | 2026-10-24 | qiree | 8 contributors, created 2024-06-20, languages | GitHub API | verified | |
-| 2026-10-24 | signals/cyberwheel | Scout's commit counts (352 default, 398 all, 246 in 2024, 152 in 2025, 0 after 2025-08-26, 9 authors) | fresh clone of ORNL/cyberwheel, author dates | verified | by committer date the year split is 243/155; totals identical |
+| 2026-10-24 | signals/cyberwheel | Discovery-pass commit counts (352 default, 398 all, 246 in 2024, 152 in 2025, 0 after 2025-08-26, 9 authors) | fresh clone of ORNL/cyberwheel, author dates | verified | by committer date the year split is 243/155; totals identical |
 | 2026-10-24 | hecbench | LICENSE names Argonne 2020 and ORNL 2020-; BSD-3 | fresh clone of ORNL/HeCBench; GitHub API | verified | rule 13 stays KNOWN (both sources are GitHub) |
 | 2026-10-24 | hecbench | 555 benchmarks; 554 CUDA, 551 HIP, 542 SYCL, 361 OpenMP folders | fresh clone src/ | verified | |
 | 2026-10-24 | hecbench | Last commit 2026-10-22, no releases, no CI, 113/29 contributors, languages | clone; GitHub API | verified | |
@@ -317,15 +317,38 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | exago | Last commit 2026-10-19 | develop atom feed 2026-10-20T00:05Z | corrected | time zone labeled (ET and UTC) |
 | 2026-10-24 | exago | AgentiGrid labeled experimental | CHANGELOG 2.1 line 17; agentigrid README | verified | label only in CHANGELOG |
 | 2026-10-24 | exago | Sweep 2: refetch | as above | verified | 4 checks: 3 verified, 1 corrected, 0 unverifiable |
-| 2026-10-24 | zambeze | MIT ORNL copyright, pyproject 0.2, PyPI 0.1, last commit 2024-09-13, 11/8 contributors | fresh clone; PyPI JSON; atom feed; API | verified | catalog's 2 contributors is wrong (Reader flagged) |
+| 2026-10-24 | zambeze | MIT ORNL copyright, pyproject 0.2, PyPI 0.1, last commit 2024-09-13, 11/8 contributors | fresh clone; PyPI JSON; atom feed; API | verified | catalog's 2 contributors is wrong (flagged in the reading pass) |
 | 2026-10-24 | zambeze | Flowcept hook in message_handler.py 70-77 | fresh clone | corrected | real path src/zambeze/orchestration/agent/message_handler.py lines 69-76 |
-| 2026-10-24 | zambeze | Rule 13 via OSTI 2483434 | OSTI API (abstract names Zambeze, ORNL research org) | corrected | citation moved from Scout's check to OSTI; 2477506 doesn't name Zambeze |
+| 2026-10-24 | zambeze | Rule 13 via OSTI 2483434 | OSTI API (abstract names Zambeze, ORNL research org) | corrected | citation moved from the discovery-pass check to OSTI; 2477506 doesn't name Zambeze |
 | 2026-10-24 | zambeze | Sweep 2: refetch | as above | verified | 3 checks: 1 verified, 2 corrected, 0 unverifiable |
 | 2026-10-24 | matris | LICENSE UT-Battelle 2025, BSD-3; OSTI 2441045 and 2439841 ORNL, titled MatRIS | fresh clone; API; OSTI API | verified | rule 13 CORROBORATED |
-| 2026-10-24 | matris | Last commit 2025-10-23, 0 tags/releases, CHANGELOG 1.0.0 2025-07-21, "proof of concept" | fresh clone | verified | status call left to lead |
+| 2026-10-24 | matris | Last commit 2025-10-23, 0 tags/releases, CHANGELOG 1.0.0 2025-07-21, "proof of concept" | fresh clone | verified | status call left as an editorial decision |
 | 2026-10-24 | matris | Contributors 8 with anon / 5 accounts | GitHub API Link headers | verified | room message said 2; brief already says 5 |
 | 2026-10-24 | matris | CMake links iris | src/CMakeLists.txt lines 7-10, 27 | verified | |
 | 2026-10-24 | matris | Sweep 2: clone plus refetch | as above | verified | 4 checks: 4 verified, 0 corrected, 0 unverifiable |
 | 2026-10-24 | exago (signals) | 2025 9 commits/5 authors, 2026 255/24 (git log --all) | fresh clone of ORNL/ExaGO | verified | default branch only: 47/10 in 2026; note added |
 | 2026-10-24 | matris (signals) | 4 commits in 2025; history starts 2022 | fresh full clone | verified | 247/181/133/4 for 2022-2025 |
 | 2026-10-24 | zambeze/flowcept (map 114) | Current Flowcept lacks ZambezeInterceptor | fresh clone of ORNL/flowcept src | verified | no class or reference to ZambezeInterceptor in src; "zambeze" only in settings and vocabulary |
+| 2026-10-24 | gridkit | License, tags v0.0.7/v0.1.0/v0.2.0, last commit 2026-10-23, CMake/C++20, options, CI, cases | fresh clone of ORNL/GridKit | verified | |
+| 2026-10-24 | gridkit | Contributors 22 with anon / 17 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | gridkit | Rule 13: DOE CODE code-152622 lists ORNL | OSTI API code-152622 | verified | 2025-03-14, AC05-00OR22725 |
+| 2026-10-24 | gridkit | `Experimental` is a model family under GridKit/Model | fresh clone, examples/README.md | corrected | it's an examples folder only |
+| 2026-10-24 | gridkit | Sweep 2: rewrite re-checked | as above | verified | 4 checks: 3 verified, 1 corrected, 0 unverifiable |
+| 2026-10-24 | exatn | License, dates, 1,202 commits, 12 branches, 0 tags, layout, CI, build reqs | fresh clone of ORNL-QCI/exatn, README | verified | 11 distinct author names vs 12 API entries noted |
+| 2026-10-24 | exatn | Contributors 12 with anon / 2 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | exatn | Rule 13: DOE CODE code-45739 lists ORNL | OSTI API code-45739 | verified | 2018-10-01, AC05-00OR22725 |
+| 2026-10-24 | exatn | Sweep 2: brief re-checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | zambeze (batch 09 Flowcept note) | Current Flowcept (c000b10, 2026-07-20 UTC) lacks ZambezeInterceptor and FlowceptConsumerAPI; only leftover names | fresh clone of ORNL/flowcept | verified | vocabulary.py:15, settings_factory.py:45, mqtt_interceptor.py docstrings, sample_settings.yaml all confirmed |
+| 2026-10-24 | gridkit (signals) | Commits per year 2017-2026 (git log --all) | fresh clone of ORNL/GridKit | verified | authors by name 3/19/21 vs signals 3/21/25 (likely by email); note added |
+| 2026-10-24 | resolve | License, tags, dates, 283 commits by year, CMake 3.22, deps, workflows, HyKKT wording | fresh clone of ORNL/ReSolve, README | verified | |
+| 2026-10-24 | resolve | Contributors 19 with anon / 15 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | resolve | Rule 13: DOE CODE code-114681 lists ORNL | OSTI API code-114681 | verified | 2023-10-16, AC05-00OR22725 |
+| 2026-10-24 | resolve | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | 3dthesis | License, tags, dates, 119 commits by year, examples, Stork mode, README quotes | fresh clone of ORNL-MDF/3DThesis, README | verified | |
+| 2026-10-24 | 3dthesis | Contributors 5 / 5 | GitHub contributors Link header | verified | |
+| 2026-10-24 | 3dthesis | Rule 13: DOE CODE code-26241 lists ORNL | OSTI API code-26241 | verified | 2018-12-21, DOI 10.11578/dc.20200909.3 |
+| 2026-10-24 | 3dthesis | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | finch | License, tags, dates, 192 commits by year, README deps, CI, latest commit message | fresh clone of ORNL-MDF/Finch, README | verified | |
+| 2026-10-24 | finch | Contributors 4 with anon / 3 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | finch | Rule 13 CORROBORATED on LICENSE alone | OSTI API code-122647 | corrected | one source isn't CORROBORATED; added DOE CODE code-122647 (ORNL, 2024-02-23) as the second |
+| 2026-10-24 | finch | Sweep 2: brief checked | as above | verified | 3 checks: 2 verified, 1 corrected, 0 unverifiable |

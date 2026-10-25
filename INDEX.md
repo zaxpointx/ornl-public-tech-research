@@ -1,13 +1,13 @@
 # ORNL Public Technology Research: Index
 
-Curated entry point, maintained by ORNL Librarian. Independent research from public sources only. We are not affiliated with ORNL.
+Curated entry point. Independent research from public sources only. We are not affiliated with ORNL.
 
-Status key: **verified** means the brief was fact-checked (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means Fact Checker finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
+Status key: **verified** means the brief was fact-checked (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means the fact-check pass finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
 
-Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only drafts (both verified), so 39 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, and batch 07-08 to 39. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit and exatn briefs plus a note on whether current Flowcept supports Zambeze; both pass rule 13 and are existing batch 01 rows. Catalog scope rule: RULES.md item 13.
+Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2 OSTI-only drafts (both verified), so 40 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39 and batch 09 (ExaTN, new; GridKit, rewritten) to 40. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
 
 ## AI/data
-- [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified; one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), Fact Checker rechecked and confirmed.
+- [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified; one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), the fact-check pass rechecked and confirmed.
 - [DataFed](projects/datafed.md): one shared catalog for finding, sharing and moving scientific data across facilities, with central services at OLCF. Verified.
 - [Flowcept](projects/flowcept.md): records what happened during AI and science workflow runs (provenance), MIT licensed. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/flowcept.md).
 - Vivaldi: machine learning that estimates building heights. Stub, stale.
@@ -15,10 +15,10 @@ Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only dra
 
 ## HPC
 - [HeCBench](projects/hecbench.md): 555 small GPU benchmarks, each in some or all of CUDA, HIP, SYCL and OpenMP, for comparing NVIDIA, AMD and Intel GPUs (ORNL and Argonne in LICENSE). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/hecbench.md).
-- ReSolve: GPU linear-equation solvers, used by GridKit. Stub, row checked.
+- [ReSolve](projects/resolve.md): GPU linear-equation solvers, used by GridKit. Unverified.
 - [TASMANIAN](projects/tasmanian.md): sparse-grid stand-in models and DREAM sampling for estimating uncertainty in simulations. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/tasmanian.md).
 - [Zambeze](projects/zambeze.md): orchestrates workflow tasks across large HPC systems and edge devices; can load Flowcept to record runs. Batch 07-08. Status unknown (last push 2024-09-13). Verified (two sweeps, 2026-10-24). [Signals](signals/zambeze.md).
-- [MatRIS](projects/matris.md): BLAS and LAPACK math library built on the IRIS runtime (IRIS is a required build dependency); GEMM demo is a proof of concept. Batch 07-08. Status unknown (lead 2026-10-24: no push since 2025-10-23, no tagged release). Verified (two sweeps, 2026-10-24). [Signals](signals/matris.md).
+- [MatRIS](projects/matris.md): BLAS and LAPACK math library built on the IRIS runtime (IRIS is a required build dependency); GEMM demo is a proof of concept. Batch 07-08. Status unknown (editorial decision 2026-10-24: no push since 2025-10-23, no tagged release). Verified (two sweeps, 2026-10-24). [Signals](signals/matris.md).
 - [Cabana](projects/cabana.md): particle-simulation library from the multi-lab CoPA co-design center, built on Kokkos (ORNL is a named lab and DOE CODE research org). Batch 07-08. Verified (two sweeps, 2026-10-24). [Signals](signals/cabana.md).
 - [IRIS](projects/iris.md): a runtime that lets one program use several kinds of processors. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/iris.md).
 - OLCF User Documentation: source for the public user guides of OLCF systems like Frontier. Stub.
@@ -29,7 +29,7 @@ Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only dra
 - SNAPRed: app for handling data from the SNAP instrument at SNS, built on Mantid. Stub.
 - [SNS Data Workflow Manager](projects/data-workflow.md): tracks automated processing of SNS and HFIR experiment data and ties into Mantid through livereduce. Verified.
 - PyRS: reduces residual-stress diffraction data from HFIR's HB2B instrument. Stub.
-- [ONCat](projects/oncat.md): searchable catalog of SNS and HFIR neutron experiment data, with an API and Python client (pyoncat on PyPI). No public source repo; the pyoncat client ships GPL-3.0. Batch 05. Verified. Lead decision 2026-10-24: public overview/docs pages and any public client repo only; no API calls, no logins; anything needing credentials is out of scope (RULES.md item 16).
+- [ONCat](projects/oncat.md): searchable catalog of SNS and HFIR neutron experiment data, with an API and Python client (pyoncat on PyPI). No public source repo; the pyoncat client ships GPL-3.0. Batch 05. Verified. Editorial decision 2026-10-24: public overview/docs pages and any public client repo only; no API calls, no logins; anything needing credentials is out of scope (RULES.md item 16).
 - [Post Processing Agent](projects/post-processing-agent.md): runs automated data reduction and cataloging when SNS and HFIR runs finish. Verified.
 - [Live Data Server](projects/live-data-server.md): serves plots of neutron experiment data while runs are in progress (Django and Postgres). Verified.
 - django-remote-submission: job queue for sending work to remote servers from a Django web app. Stub, stale.
@@ -47,7 +47,7 @@ Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only dra
 - [Shift / Exnihilo](projects/shift-exnihilo.md): parallel Monte Carlo radiation transport (runs on GPUs like Frontier), distributed within SCALE. Public pages only; Radiation Transport Group credit per OSTI 1237627. Verified.
 
 ## Grid/energy
-- [GridKit](projects/gridkit.md): framework for simulating and analyzing power grids. Verified.
+- [GridKit](projects/gridkit.md): simulates how a power grid reacts when something fails, like a line dropping out for a split second, and whether generators settle back down; young (v0.2) but actively developed. Rewritten in batch 09. Verified (two sweeps, 2026-10-24).
 - Hydropower Fleet Intelligence: brings hydropower plant data together for fleet-wide analysis. Stub, stale.
 - [ExaGO](projects/exago.md): power grid optimization at large scale; moved from PNNL to ORNL (UT-Battelle 2026); v2.1 adds an experimental LLM-driven tool (AgentiGrid). Batch 07-08. Verified (two sweeps, 2026-10-24). [Signals](signals/exago.md).
 - URBAN-NET-TOOLKIT: geospatial tool for how critical infrastructure systems depend on each other [INFERRED from title]. OSTI-only stub.
@@ -61,13 +61,13 @@ Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only dra
 
 ## Materials
 - AdditiveFOAM: heat and mass transfer simulation for additive manufacturing, built on OpenFOAM. Stub, row checked.
-- 3DThesis: fast thermal model of melt pools in 3D printing. Stub.
+- [3DThesis](projects/3dthesis.md): fast thermal model of melt pools in 3D printing. Unverified.
 - [Myna](projects/myna.md): links additive manufacturing simulations with experiment databases. Verified.
-- Finch: thermal solver for additive manufacturing, built on the Cabana library. Stub.
+- [Finch](projects/finch.md): thermal solver for additive manufacturing, built on the Cabana library. Unverified.
 - [adamantine](projects/adamantine.md): simulates heat transfer and thermomechanics in additive manufacturing (ORNL is a research org per OSTI 2472702; Apache-2.0 with LLVM exception since release 1.1, 2026-01-23). Batch 05. Verified.
 
 ## Quantum
-- ExaTN: tensor-network math library for exascale machines. Stub, row checked, status unknown (stale since 2023).
+- [ExaTN](projects/exatn.md): breaks math too big for memory (tensor networks) into pieces that run across GPUs; it is the engine TNQVM uses to simulate quantum circuits for XACC. Status unknown (no commits since mid-2023, no tagged release). Batch 09. Verified (two sweeps, 2026-10-24).
 - [QIR-EE](projects/qiree.md): runs quantum programs written in QIR (an LLVM-based format) on qsim, XACC backends or a Lightning simulator; one release, v0.1.0 (2026-05-05). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/qiree.md).
 - TNQVM: tensor-network quantum circuit simulator that plugs into XACC (UT-Battelle header, OSTI names ORNL). Batch 08 stub, status unknown; README says BSD-3 but no LICENSE file in the repo.
 - [XACC](projects/xacc.md): framework for programming quantum computers and simulators from C++ or Python; UT-Battelle copyright plus DOE CODE code-5041 (ORNL tie CORROBORATED); EPL-1.0 or EDL-1.0. Batch 07-08. Status unknown (last default-branch commit 2023-08-01); no successor named in public sources. Verified (two sweeps, 2026-10-24). [Signals](signals/xacc.md).
@@ -93,14 +93,14 @@ Projects: 68 cataloged, 37 full briefs linked (37 verified) plus 2 OSTI-only dra
 - WUFI-ORNL/IBP: models heat and moisture moving through walls, with Fraunhofer IBP. OSTI-only stub.
 
 ## Signals (outside-in pilot)
-Public traces each project leaves (git history, build targets, funding records, reverse dependencies, downloads, citing papers), per RULES.md items 15-16. Scout writes history, build and funding; Connector writes who actually uses it. Fact Checker swept all three on 2026-10-24 (8 verified, 2 corrected, job-trace and commit-metadata rows moved out of scope). From batch 06 every project gets a signals file (RULES.md item 17); all six batch 06 files and all five batch 07-08 files have both Scout's and Connector's sections.
+Public traces each project leaves (git history, build targets, funding records, reverse dependencies, downloads, citing papers), per RULES.md items 15-16. The discovery pass writes history, build and funding; the connections pass writes who actually uses it. The fact-check pass swept all three on 2026-10-24 (8 verified, 2 corrected, job-trace and commit-metadata rows moved out of scope). From batch 06 every project gets a signals file (RULES.md item 17); all six batch 06 files and all five batch 07-08 files have both the discovery-pass and the connections-pass sections.
 - [Cyberwheel](signals/cyberwheel.md): no commits since 2025-08-26, no CI or HPC targets, not on any package index; reads as a finished LDRD study, used by researchers who clone it plus 3 papers.
 - [HydraGNN](signals/hydragnn.md): Frontier is the main build target and it is expanding into power grid models (OSTI 3377970, Office of Electricity); visible use is mostly in-house (INFERRED).
 - [DataFed](signals/datafed.md): commits jumped from 58 (2022) to 1,406 (2024), pointing to new funding (INFERRED); org unit traceable to NCCS/OLCF with CSMD; one outside application (EcoKMER) names it.
 
 ## Deep dives
 Full reconstructions per RULES.md (deep-dives section).
-- Cyberwheel ([brief](projects/cyberwheel.md)): [synthesis](deep-dives/cyberwheel/synthesis.md), [timeline](deep-dives/cyberwheel/timeline.md), [system flow](deep-dives/cyberwheel/system-flow.md), [people and roles](deep-dives/cyberwheel/people-roles.md), [claim boundary](deep-dives/cyberwheel/claim-boundary.md) (Reader: what sources say vs. what we infer) and [lineage](deep-dives/cyberwheel/lineage.md) (Connector: FIREWHEEL origin, LDRD 11049). Fact Checker: [source ledger](deep-dives/cyberwheel/source-ledger.md) (13 sources), [missing artifacts](deep-dives/cyberwheel/missing-artifacts.md) (11 gaps) and [verification report](deep-dives/cyberwheel/verification-report.md). Verified; open items are the exact Firewheel modification, division-level owner and outside authors' affiliations.
+- Cyberwheel ([brief](projects/cyberwheel.md)): [synthesis](deep-dives/cyberwheel/synthesis.md), [timeline](deep-dives/cyberwheel/timeline.md), [system flow](deep-dives/cyberwheel/system-flow.md), [people and roles](deep-dives/cyberwheel/people-roles.md), [claim boundary](deep-dives/cyberwheel/claim-boundary.md) (the reading pass: what sources say vs. what we infer) and [lineage](deep-dives/cyberwheel/lineage.md) (the connections pass: FIREWHEEL origin, LDRD 11049). The fact-check pass: [source ledger](deep-dives/cyberwheel/source-ledger.md) (13 sources), [missing artifacts](deep-dives/cyberwheel/missing-artifacts.md) (11 gaps) and [verification report](deep-dives/cyberwheel/verification-report.md). Verified; open items are the exact Firewheel modification, division-level owner and outside authors' affiliations.
 
 ## Draft OSTI-only briefs
 Written from OSTI records alone (no public docs page found). Kept so the work isn't lost; not full briefs.

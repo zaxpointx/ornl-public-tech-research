@@ -1,5 +1,5 @@
 # Cyberwheel deep dive: source ledger
-Owner: ORNL Fact Checker. Checked 2026-10-24. Every public source this deep dive relies on, what it's used for, and whether I refetched it. All sources are public. Nothing here needed a login or a form.
+Written in the fact-check pass, checked 2026-10-24. Every public source this deep dive relies on, what it's used for, and whether I refetched it. All sources are public. Nothing here needed a login or a form.
 
 | # | Source | Type, publisher, date | Used for | Refetched 2026-10-24 | Notes |
 |---|---|---|---|---|---|

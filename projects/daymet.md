@@ -2,7 +2,7 @@
 - Official page: https://daymet.ornl.gov/
 - Repo: https://github.com/ornldaac/daymet-single-pixel-batch. This holds helper scripts for downloading data, not the Daymet algorithm itself [KNOWN: repo README]. The code that generates the data isn't public as far as we found [UNKNOWN].
 - Docs: https://daymet.ornl.gov/overview
-- License: the helper-script repo uses a custom UT-Battelle permissive license [KNOWN: Scout's check of https://raw.githubusercontent.com/ornldaac/daymet-single-pixel-batch/master/LICENSE.md]. The data's use and citation terms are not covered here [UNKNOWN].
+- License: the helper-script repo uses a custom UT-Battelle permissive license [KNOWN: discovery-pass check of https://raw.githubusercontent.com/ornldaac/daymet-single-pixel-batch/master/LICENSE.md]. The data's use and citation terms are not covered here [UNKNOWN].
 - Status: active. The product is updated through the most recent full calendar year [KNOWN: daymet.ornl.gov]. The helper repo's last push was 2025-03-29 [KNOWN: GitHub API].
 
 ## What it is (plain English, 2-4 sentences)
@@ -41,7 +41,7 @@ Daymet is a dataset of daily weather estimates for every 1 km × 1 km square of 
 - https://github.com/ornldaac/daymet-single-pixel-batch (README, tree) and https://api.github.com/repos/ornldaac/daymet-single-pixel-batch, accessed 2026-10-24
 - https://modis.ornl.gov/documentation.html, accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Re-checked against daymet.ornl.gov and /overview: coverage (1980 on for North America and Hawaii, 1950 on for Puerto Rico), ESD ownership, NASA and DOE BER funding, V3 (2016-07-14) and V4 (2020-12-15) dates, GHCN-Daily/NCEI inputs, 2° tiles and netCDF/CF outputs all match. Verified.
 - Helper repo: LICENSE.md is UT-Battelle all-rights-reserved style custom text, languages Java 52.3 / Python 25.7 / Shell 22.0, 6 contributor pages. Verified.
 - modis.ornl.gov/documentation.html does list Daymet Subset Products. Verified.

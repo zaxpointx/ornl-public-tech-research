@@ -1,14 +1,14 @@
 # Batch 05 summary (closed: 4 of 4 verified)
 
-Closed 2026-10-24: all four briefs passed two Fact Checker sweeps.
+Closed 2026-10-24: all four briefs passed two fact-check sweeps.
 
-Maintained by ORNL Librarian. Independent research from public sources only; not affiliated with ORNL. Date: 2026-10-24.
+Independent research from public sources only; not affiliated with ORNL. Date: 2026-10-24.
 
 ## What was researched
-- Scout ran OSTI software-record checks on the batch 01 rows and added 5 rows (discovered_batch 05): exaca, adamantine (materials), oncat, post-processing-agent and live-data-server (neutrons). exaca was later moved out of the catalog under RULES.md item 13, because the repo and DOE CODE record are LLNL's. It lives in connections/map.md as an outside project. So batch 05 has 4 catalog rows.
-- Reader wrote 4 briefs: [Live Data Server](../projects/live-data-server.md), [Post Processing Agent](../projects/post-processing-agent.md), [adamantine](../projects/adamantine.md) and [ONCat](../projects/oncat.md). ONCat scope, decided by the lead on 2026-10-24: read only its public overview and docs pages plus its public client repo if one exists. No API calls, no running the client against the service, no login pages. Anything that needs credentials is marked out of scope under RULES.md item 16. Order: adamantine, then oncat.
-- Scout also answered Reader's open questions from batch 4 (Model America download, roofcalc.com, the Radiation Transport Group, LandScan HD/USA). Those notes are appended below and fed the batch 04 sweep.
-- Fact Checker finished the Cyberwheel deep dive in the same round: [source ledger](../deep-dives/cyberwheel/source-ledger.md), [missing artifacts](../deep-dives/cyberwheel/missing-artifacts.md) and [verification report](../deep-dives/cyberwheel/verification-report.md).
+- The discovery pass ran OSTI software-record checks on the batch 01 rows and added 5 rows (discovered_batch 05): exaca, adamantine (materials), oncat, post-processing-agent and live-data-server (neutrons). exaca was later moved out of the catalog under RULES.md item 13, because the repo and DOE CODE record are LLNL's. It lives in connections/map.md as an outside project. So batch 05 has 4 catalog rows.
+- The reading pass wrote 4 briefs: [Live Data Server](../projects/live-data-server.md), [Post Processing Agent](../projects/post-processing-agent.md), [adamantine](../projects/adamantine.md) and [ONCat](../projects/oncat.md). ONCat scope, decided editorially on 2026-10-24: read only its public overview and docs pages plus its public client repo if one exists. No API calls, no running the client against the service, no login pages. Anything that needs credentials is marked out of scope under RULES.md item 16. Order: adamantine, then oncat.
+- The discovery pass also answered the reading-pass open questions from batch 4 (Model America download, roofcalc.com, the Radiation Transport Group, LandScan HD/USA). Those notes are appended below and fed the batch 04 sweep.
+- The fact-check pass finished the Cyberwheel deep dive in the same round: [source ledger](../deep-dives/cyberwheel/source-ledger.md), [missing artifacts](../deep-dives/cyberwheel/missing-artifacts.md) and [verification report](../deep-dives/cyberwheel/verification-report.md).
 
 ## What was verified
 Details are in [verification/log.md](../verification/log.md).
@@ -16,7 +16,7 @@ Details are in [verification/log.md](../verification/log.md).
 - Cyberwheel deep dive: 6 checks, 4 verified, 1 corrected, 1 unverifiable. The correction attributes "a modified version of the Firewheel test bed" to the LDRD report only (claim-boundary row 7). OSTI 3827147 as a successor is unverifiable.
 - adamantine: 6 checks, 5 verified, 1 corrected, 0 unverifiable. Release 1.1 is dated 2026-01-23; the CHANGELOG's 2025 is likely a typo.
 - ONCat: 4 checks, 3 verified, 1 corrected, 0 unverifiable. Only public pages and the pyoncat package files were read, nothing was run. The correction replaced a guessed release-notes URL with "not linked from public pages".
-- Signals pilot (cyberwheel, hydragnn, datafed): 10 checks, 8 verified, 2 corrected, 0 unverifiable. HydraGNN's commit-metadata row and job-trace row are out of scope under item 16; DataFed release dates are now labeled as tag commit dates. Scout's commit and author counts were taken on trust.
+- Signals pilot (cyberwheel, hydragnn, datafed): 10 checks, 8 verified, 2 corrected, 0 unverifiable. HydraGNN's commit-metadata row and job-trace row are out of scope under item 16; DataFed release dates are now labeled as tag commit dates. The discovery-pass commit and author counts were taken on trust.
 - Batch total, including the Cyberwheel deep dive: 35 checks, 24 verified, 10 corrected, 1 unverifiable.
 - Before adamantine and ONCat, 24 full briefs and 2 OSTI-only drafts are verified (26 in total; the total after batch 04 was 24).
 
@@ -26,19 +26,19 @@ Details are in [verification/log.md](../verification/log.md).
 - Cyberwheel: what Firewheel modification was made, its owner at division level, and outside authors' affiliations.
 
 ## What to investigate next
-- Signals pilot is done and swept; the lead decides whether to extend it.
-- Batch 06 briefs from Reader: flowcept, iris, tasmanian, xolotl written; qiree, hecbench next.
-- Batch 07 (Scout): zambeze, matris; next Cabana and XACC, then Kokkos, HiOp and ExaGO after a rule 13 check (record ORNL's stated role, not ownership).
-- Scout's parked leads, listed below, once discovery resumes after the pilot.
+- Signals pilot is done and swept; extending it was an editorial decision (it now covers every project, RULES.md item 17).
+- Batch 06 briefs from the reading pass: flowcept, iris, tasmanian, xolotl written; qiree, hecbench next.
+- Batch 07 (discovery): zambeze, matris; next Cabana and XACC, then Kokkos, HiOp and ExaGO after a rule 13 check (record ORNL's stated role, not ownership).
+- The discovery-pass parked leads, listed below, once discovery resumes after the pilot.
 
 ---
-# Batch 05 scout - 2026-10-24 [Scout OSTI 2026-10-24]
+# Batch 05 discovery notes (OSTI checks), 2026-10-24
 Batch-1 notes were only appended to, with marker "Scout OSTI 2026-10-24". No other fields were changed.
 
 ## Batch-1 OSTI results (records API, product_type=Software)
 | id | ORNL research org on OSTI? | record | OSTI license vs repo |
 |---|---|---|---|
-| resolve, tasmanian, exatn, hydragnn, gridkit, thermochimica, datafed | yes (earlier Fact Checker/Reader findings, not re-run) | see verification/log.md | per earlier findings |
+| resolve, tasmanian, exatn, hydragnn, gridkit, thermochimica, datafed | yes (earlier fact-check and reading-pass findings, not re-run) | see verification/log.md | per earlier findings |
 | additivefoam | yes (prior; also seen this run) | code-108345 | not compared |
 | cyberwheel | yes (prior; also seen this run) | code-134699 | not compared |
 | mantid, xolotl | no hits (prior findings) | - | - |
@@ -67,10 +67,10 @@ Totals: 9 confirmed ORNL (all from earlier findings), 0 newly confirmed, 9 with 
 - OSTI searches on grid, microgrid, battery, isotope and HFIR.
 - OpenStudio and BEopt (ORNL contributions).
 - olcf/pkpass.
-- Connector's targets: Cabana/Kokkos, XACC, HiOp, SUNDIALS, ExaGO.
+- The connections-pass targets: Cabana/Kokkos, XACC, HiOp, SUNDIALS, ExaGO.
 
 
-## Reader open questions (lookups 2026-10-24)
+## Open questions from the reading pass (lookups 2026-10-24)
 All accessed 2026-10-24. Every page was opened directly; none of these rest on search snippets alone. No forms were submitted and no logins were used.
 
 ### 1. AutoBEM "Model America" v1.0: public download?

@@ -1,8 +1,8 @@
 # Situ
 
-> DRAFT, `draft-osti-only` (2026-10-24, lead's call). The only public source is an OSTI record, with no docs page. Kept as a draft, not counted as a full brief.
+> DRAFT, `draft-osti-only` (2026-10-24, editorial decision). The only public source is an OSTI record, with no docs page. Kept as a draft, not counted as a full brief.
 - Official page: https://www.osti.gov/biblio/1232450 (OSTI software record, dated 2014-06-16)
-- Repo: none found [KNOWN: Scout catalog note; OSTI record only]
+- Repo: none found [KNOWN: catalog note; OSTI record only]
 - Docs: the OSTI abstract only
 - License: [UNKNOWN]
 - Status: [UNKNOWN]. The only public record is from 2014, so it may be dormant [INFERRED]
@@ -36,7 +36,7 @@ It's a clear public example of the ORNL cyber group's machine-learning approach 
 
 ## Related projects
 - Cyberwheel (`cyberwheel`): a newer ORNL cyber-defense tool using reinforcement learning, a different approach to the same problem. [INFERRED: same domain, no link found]
-- The other batch 4 cyber rows (cincinnatus, heartbeat-malware, cpad, hyperion) are also OSTI-only. [KNOWN: Scout notes]
+- The other batch 4 cyber rows (cincinnatus, heartbeat-malware, cpad, hyperion) are also OSTI-only. [KNOWN: discovery notes]
 
 ## Known / Inferred / Unknown
 - KNOWN: purpose, unsupervised multi-scale anomaly scoring, streaming design, web visualization, ORNL record.
@@ -46,7 +46,7 @@ It's a clear public example of the ORNL cyber group's machine-learning approach 
 ## Sources (accessed 2026-10-24)
 - https://www.osti.gov/biblio/1232450
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done. OSTI 1232450 refetched. Facts match: Software, 2014-06-16, ORNL, sponsor field just "u", no authors listed.
 - Narrowed "network activity" to INFERRED. The record says it "scores events in real-time based on probabilistic models".
 - Added the rule 12 walkthrough. No restricted content found.

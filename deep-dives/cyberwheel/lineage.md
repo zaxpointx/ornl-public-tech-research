@@ -1,6 +1,6 @@
-# Cyberwheel deep dive: lineage (Connector)
+# Cyberwheel deep dive: lineage
 
-Owner: ORNL Connector. Accessed 2026-10-24 for every source below. Public sources only.
+Written in the connections pass. Accessed 2026-10-24 for every source below. Public sources only.
 Tags: [KNOWN] one primary source · [CORROBORATED] two independent sources · [INFERRED] reasoning stated · [UNKNOWN] · [UNRELATED] checked, not part of the lineage.
 
 ## Plain-language walkthrough
@@ -24,7 +24,7 @@ Cyberwheel is ORNL's training ground for AI cyber defenders. A config file descr
 |---|---|---|---|
 | C1 | Emulation mode uses a *modified* FIREWHEEL | [KNOWN] | OSTI 3025007 (= 3027393, same report, not independent) p.13 §Results: "uses a modified version of the Firewheel test bed for emulation" |
 | C2 | Cyberwheel uses FIREWHEEL for emulation | [CORROBORATED] | C1 + Cyberwheel README §Emulation: "we've incorporated the FIREWHEEL network emulation tool by Sandia" |
-| C3 | The "modification" is Cyberwheel's own model components/topology copied into /opt/firewheel/model_components (plus custom Ubuntu/VyOS qcow2 images), not a fork of FIREWHEEL's core | [INFERRED] | No source states what was modified: OSTI 3025007 p.13 says only "modified version", "built on QEMU", "over 100,000 virtual nodes" (FC confirmed). Basis: emulator/README.md install steps; no FIREWHEEL fork under github.com/ORNL |
+| C3 | The "modification" is Cyberwheel's own model components/topology copied into /opt/firewheel/model_components (plus custom Ubuntu/VyOS qcow2 images), not a fork of FIREWHEEL's core | [INFERRED] | No source states what was modified: OSTI 3025007 p.13 says only "modified version", "built on QEMU", "over 100,000 virtual nodes" (fact-check confirmed). Basis: emulator/README.md install steps; no FIREWHEEL fork under github.com/ORNL |
 | C4 | Five run modes: train, evaluate, emulate, visualizer, run | [KNOWN] | README: "There are 5 modes for running cyberwheel" |
 | C5 | Emulations use ART Campaigns only | [KNOWN] | README §ART Campaign: "When running emulations, we exclusively train and evaluate with ART Campaigns" |
 | C6 | Emulation added in a later major update (with multi-agent support); "first iteration of our emulator". Per timeline.md: v1.1.0 2025-03-10, v2.0 (Firewheel emulation) 2025-08-11, last commit 2025-08-26; "dormant" since is [INFERRED] | [KNOWN] | README (news section); GitHub release notes via timeline.md |
@@ -42,7 +42,7 @@ Cyberwheel is ORNL's training ground for AI cyber defenders. A config file descr
 | L4 | Named team: Credited developer A, Credited developer B, Credited developer C | [KNOWN] | OSTI 3025007 p.13, line under the title. PI role not stated: first-listed ≠ PI per RULES (authorship = participation) |
 | L5a | Cyberwheel is LDRD-funded | [CORROBORATED] | OSTI 3025007 p.13: "trained in a custom-built, realistic network test bed environment called Cyberwheel"; DOE CODE code-134699 sponsor field: "USDOE Laboratory Directed Research and Development (LDRD) Program". The CSET paper (OSTI 2478356) shows the same team but lists only USDOE, so it is not funding evidence |
 | L5b | The LDRD project is number 11049 | [KNOWN] (single source) | OSTI 3025007 p.13 heading "11049: Automating Cyber Defense Using Reinforcement Learning" (3027393 is a reissue, not independent) |
-| L5c | LDRD described as "internal" | [INFERRED] | the word is not in the source; LDRD is lab-directed by definition (Reader, synthesis.md) |
+| L5c | LDRD described as "internal" | [INFERRED] | the word is not in the source; LDRD is lab-directed by definition (the reading pass, synthesis.md) |
 | L6 | Outputs: decoy-deploying agents in unseen topologies; linear runtime scaling with hosts | [KNOWN] | p.13: "AI agents can autonomously deploy decoys in unseen network topologies"; "runtime ... increased linearly with the number of hosts" |
 | L7 | Other OSTI products: 2478356 "Towards a High Fidelity Training Environment for Autonomous Cyber Defense Agents" (CSET workshop, 2024-08-13); code-134699 (software) | [INFERRED] tie to 11049 | same team/topic; the OSTI records were not checked for an LDRD funding note |
 | L8 | 3002907 "The Path to Autonomous Cyberdefense" (2024) and 3002671 "Agentic AI and the Cyber Arms Race" (2025, cites the CSET paper) | [INFERRED] related ORNL work | OSTI search credited developer A + RL cyber; link to 11049 unproven |
@@ -52,10 +52,10 @@ Cyberwheel is ORNL's training ground for AI cyber defenders. A config file descr
 |---|---|---|---|
 | U1 | RL/env libs in pyproject.toml: gymnasium ^1.1.0, pettingzoo ^1.24.3, ray ^2.43.0, stable-baselines3 ^2.5.0, networkx, wandb, tensorboard | [KNOWN] | pyproject.toml [tool.poetry.dependencies] |
 | U2 | requirements.txt pins older versions (gymnasium==0.28.1, ray[rllib]==2.10.0, stable-baselines3==2.2.1, torch==2.2.1) than pyproject.toml | [KNOWN] | both files |
-| U2a | Authoritative dependency spec is pyproject.toml + poetry.lock | [KNOWN] | README install section says to use `poetry install` and calls requirements.txt a fallback (FC) |
+| U2a | Authoritative dependency spec is pyproject.toml + poetry.lock | [KNOWN] | README install section says to use `poetry install` and calls requirements.txt a fallback (the fact-check pass) |
 | U2b | The mismatch is a stale requirements.txt export | [INFERRED] | fallback file not regenerated after pyproject updates |
 | U3 | PyTorch only in requirements.txt (not pyproject) | [KNOWN] | both files |
-| U4 | Citing work: Semantic Scholar shows 33 papers citing the CSET 2024 paper (OpenAlex showed 20); 4 name Cyberwheel | [KNOWN] | deep-dives/cyberwheel/synthesis.md (Reader) |
+| U4 | Citing work: Semantic Scholar shows 33 papers citing the CSET 2024 paper (OpenAlex showed 20); 4 name Cyberwheel | [KNOWN] | deep-dives/cyberwheel/synthesis.md (the reading pass) |
 | D1 | arXiv 2610.00590 "Towards Hierarchical Cyber Defense with Large Language Models" runs defenders in Cyberwheel | [KNOWN] | abstract: "Using the high fidelity Cyberwheel environment" (abstract checked 2026-10-24; synthesis.md) |
 | D2 | arXiv 2610.00557 "No One Architecture Fits All" tests red agents in Cyberwheel | [KNOWN] | abstract: "in CybORG CAGE-4 and in Cyberwheel at two network scales" (checked; synthesis.md) |
 | D3 | Entropy 2025, DOI 10.3390/e27060622, extends Cyberwheel | [KNOWN] | abstract: Cyberwheel "is extended by adding new fine-grained defense mechanisms" (Crossref abstract checked; synthesis.md) |
@@ -85,10 +85,10 @@ flowchart LR
 KNOWN 26 · CORROBORATED 6 · INFERRED 7 (F5, C3, L5c, L7, L8, U2b, U5) · UNKNOWN 3 (L3, U6, D5) · UNRELATED 3 (U7, U8, U9) = 45. U4's "use" sub-claim UNKNOWN not counted separately.
 
 ## Open questions
-- Settled (FC): no source states what is modified in FIREWHEEL; C3 stays INFERRED.
-- Settled (FC): pyproject.toml + poetry.lock is authoritative (U2a).
-- Settled (FC): code-134699 sponsor is the LDRD Program (L5a); no OSTI product besides the report names project 11049, so L7 stays INFERRED.
-- Settled (Reader): 3 papers run or extend Cyberwheel (D1–D3); author affiliations still UNKNOWN (D5).
+- Settled (fact-check): no source states what is modified in FIREWHEEL; C3 stays INFERRED.
+- Settled (fact-check): pyproject.toml + poetry.lock is authoritative (U2a).
+- Settled (fact-check): code-134699 sponsor is the LDRD Program (L5a); no OSTI product besides the report names project 11049, so L7 stays INFERRED.
+- Settled (reading pass): 3 papers run or extend Cyberwheel (D1–D3); author affiliations still UNKNOWN (D5).
 
 ## Map changes
 connections/map.md pass 6: link 54 and 56 now CORROBORATED with quotes; new nodes fw16 (Sandia Firewheel 2016, link 95) and ldrd (LDRD 11049); link 96 RL libraries; cyber stubs marked UNRELATED as lineage (links 69, 84).

@@ -41,9 +41,9 @@ OTH is the tool OLCF uses to automatically test its supercomputers. It builds re
 ## Sources (URL, accessed date)
 - https://github.com/olcf/olcf-test-harness (README, LICENSE, doc-sphinx/source/index.rst and user_guide/overview.rst, tree), accessed 2026-10-24
 - https://api.github.com/repos/olcf/olcf-test-harness (+ /languages, /releases, /contributors), accessed 2026-10-24
-- https://www.osti.gov/biblio/code-153320 (via Scout's catalog note), accessed 2026-10-24
+- https://www.osti.gov/biblio/code-153320 (via the catalog note), accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: README doesn't mention a v4.0; it only says v3.2 is the last fully 2.x-compatible version.
 - Corrected: OSTI's research_orgs field says ORNL only; NCCS comes from the developer affiliations on the same record.
 - Verified: LICENSE text (2025 UT-Battelle, cost-recovery clause); releases v2.1, v3.0, v3.1, v3.2 with dates; created 2021-01-11; Python 94.7%; 28 contributor pages; DOI 10.11578/dc.20250328.1 and ORNL-CODE-153320 in README; schedulers (slurm, lsf, pbs, k8s, openshift); configs (frontier, frontier_k8s, frontier_openshift, summit); index.rst 'NCCS_Test_Harness' created 2016; overview.rst 'light-weight templating framework'; rgt.inp, --mode, output_check.txt, Run_Archive/latest, LAMMPS example.

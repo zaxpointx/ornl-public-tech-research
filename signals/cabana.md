@@ -1,6 +1,6 @@
 # Signals: cabana
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The team is broad and has outlasted ECP, the DOE program that funded CoPA. There are 57 author emails, and no author has more than 25% of commits. 17 authors were active in 2025, after ECP ended. [KNOWN: git log] Read: it survived the end of its founding program. [INFERRED, medium]
@@ -18,7 +18,7 @@
 | Funding | code-45702 lists USDOE generically. The README credits ECP | OSTI API, README | [KNOWN] |
 | Wayback | Nearest captures 2020-10-16, 2023-03-16 and 2026-05-12 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institutions from OpenAlex, no individuals profiled. Detail in connections/map.md links 32, 146, 165-166.
 
 **Outside vs inside:** The inside is a multi-lab ECP particle library built on Kokkos. Outside, it reaches users through Spack, and three quarters of the papers citing its JOSS paper have no ORNL author (European HPC centres such as Forschungszentrum Jülich, plus LANL and LLNL), so ORNL is one contributor among several, not the main user.

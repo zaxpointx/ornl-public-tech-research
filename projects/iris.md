@@ -36,7 +36,7 @@
 It targets labs that must run on very mixed hardware, which is the direction DOE supercomputers are heading. [INFERRED] Named users beyond its own papers are [UNKNOWN]. For a security student, a runtime that loads backends at run time is a useful example of a big trusted layer: it uses `dlopen` (loading shared libraries while running), which matters when you think about what code a program will trust. [KNOWN: `dlfcn.h` include in DeviceQIREE.cpp; INFERRED: security framing]
 
 ## Related projects
-- QIR-EE (`qiree`): IRIS has a QIR-EE device backend. [KNOWN: `src/runtime/DeviceQIREE.cpp`] That's a new candidate link for Connector.
+- QIR-EE (`qiree`): IRIS has a QIR-EE device backend. [KNOWN: `src/runtime/DeviceQIREE.cpp`] That's a new candidate link for the connections pass.
 - HeCBench (`hecbench`): both are ORNL heterogeneous-computing work. Any direct tie is [UNKNOWN].
 
 ## Known / Inferred / Unknown
@@ -49,7 +49,7 @@ It targets labs that must run on very mixed hardware, which is the direction DOE
 - https://iris-programming.github.io
 - https://api.github.com/repos/ORNL/iris (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked: BSD-3 with "Copyright (c) 2021, UT-Battelle, LLC" (LICENSE line 3), created 2020-02-14, v3.0.1 on 2026-02-10 and the release list, contributors 12 with anonymous / 9 accounts, languages (Jupyter largest, then C++ and C; Julia, Rust and Fortran present), `Project.toml` and `pyproject.toml` present, the README "intelligent runtime system for extremely heterogeneous architectures" quote, iris-programming.github.io resolves, `src/runtime/DeviceQIREE.cpp` exists. All verified.
 - Second primary source: OSTI 3018176 ("Q-IRIS: The Evolution of the IRIS Task-Based Runtime...", 2026) comes back under an ORNL research-org filter. Rule 13 is CORROBORATED.
 - Namesake guard: DOE CODE code-75005 "slaclab/new-iris" is a SLAC project and is [UNRELATED].

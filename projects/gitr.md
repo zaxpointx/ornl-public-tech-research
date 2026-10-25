@@ -51,13 +51,13 @@ The `d3d_sas_1d` example points to DIII-D, General Atomics' tokamak in San Diego
 - https://www.osti.gov/biblio/3452355
 - https://www.osti.gov/biblio/3013481
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: releases list was missing 1.0 (2019-02-25); five releases in all.
 - Corrected: OSTI 3452355 (GA + ORNL, DIII-D helicon carbon) and OSTI 3013481 (ORNL, WEST tungsten erosion via STRIPE) both name GITR in their descriptions, so both links are now KNOWN.
 - Verified: GPL-2.0; README inputs, trace-impurity assumption, operator loop, container-recommended install; CUDA=1, OpenMP=0, MPI=0 defaults; 25 src files; 9 examples; C++ 95.6 / CMake 3.6; 36 contributor pages; last push 2025-11-21.
 - No DOE CODE software record found for GITR; ORNL division stays [UNKNOWN].
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Re-fetched the GitHub API (GPL-2.0, last push 2025-11-21, 5 releases, 36 contributor pages), README, and OSTI 3452355 and 3013481. No contradictions.
 - Load-bearing quotes: README "Description": "performs large scale simulation of plasma induced erosion, plasma transport of those impurities, sputtering, and redeposition"; trace assumption: "The density of impurities created in the GITR code is negligible in its effect on the background plasma parameters." OSTI 3013481 (ORNL, 2026): STRIPE integrates "GITR for impurity transport". OSTI 3452355 (GA + ORNL, 2026-08-12): workflow "couples SOLPS, COMSOL, RustBCA, GITR, and GITRm".
 - Not CORROBORATED: both OSTI papers come from the same STRIPE group, so they are not independent sources (agrees with map link 92).

@@ -5,7 +5,7 @@
 - License: BSD-3-Clause, per the LICENSE file's first line. GitHub's API shows NOASSERTION. [KNOWN: https://github.com/ORNL-Fusion/xolotl/blob/stable/LICENSE]
 - Copyright: shared among six institutions. The list starts with "Copyright 2012-2024 UT-Battelle, LLC" and also names the University of Tennessee and its research foundation, UChicago Argonne, University of Florida, Penn State and University of Michigan. [KNOWN: LICENSE lines 3 to 8]
 - Status: active. The latest release is v3.4.0 (2026-09-03 UTC), the last push was 2026-10-21 UTC, and the repo isn't archived. [KNOWN: GitHub API]
-- Scope (rule 13): UT-Battelle (ORNL's managing contractor) is a named copyright holder. [KNOWN: LICENSE] The GitHub org is "ORNL-Fusion". There's no OSTI software record (Scout's search came back empty), but OSTI 1513390, a 2018 journal article with ORNL as research org and ASCR as sponsor, calls it "Our cluster dynamics model, Xolotl". [KNOWN: https://www.osti.gov/biblio/1513390] Rule 13 is [CORROBORATED] by the copyright plus that record.
+- Scope (rule 13): UT-Battelle (ORNL's managing contractor) is a named copyright holder. [KNOWN: LICENSE] The GitHub org is "ORNL-Fusion". There's no OSTI software record (the discovery-pass search came back empty), but OSTI 1513390, a 2018 journal article with ORNL as research org and ASCR as sponsor, calls it "Our cluster dynamics model, Xolotl". [KNOWN: https://www.osti.gov/biblio/1513390] Rule 13 is [CORROBORATED] by the copyright plus that record.
 
 ## Plain-language walkthrough
 - **What it is:** a supercomputer simulation code that predicts how the inside of a metal wall changes over time when it's bombarded by particles. The README calls it "a continuum simulator under development within two DOE SciDAC programs". SciDAC is DOE's Scientific Discovery through Advanced Computing program. [KNOWN: README]
@@ -36,7 +36,7 @@
 Fusion power depends on walls that survive years of bombardment, and testing that in real reactors is slow and costly. A simulator like this lets researchers screen materials and conditions first. [INFERRED] The wiki keeps a publications list. [KNOWN: README] The six-institution copyright shows multi-lab and university collaboration. [KNOWN: LICENSE]
 
 ## Related projects
-- Kokkos and PETSc: outside libraries it depends on. Scout has Cabana/Kokkos queued. [KNOWN: README; Scout batch-07 notes]
+- Kokkos and PETSc: outside libraries it depends on. The discovery pass has Cabana/Kokkos queued. [KNOWN: README; the discovery pass batch-07 notes]
 - TASMANIAN (`tasmanian`): another UQ-flavored ORNL code, but I saw no direct tie. Xolotl's UQ scripts use UQTk, not Tasmanian. [INFERRED: from the `UQ/` folder]
 
 ## Known / Inferred / Unknown
@@ -49,7 +49,7 @@ Fusion power depends on walls that survive years of bombardment, and testing tha
 - https://github.com/ORNL-Fusion/xolotl/wiki (linked from the README; not separately reviewed)
 - https://api.github.com/repositories/120320792 (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked against the GitHub API and raw files: the BSD-3 LICENSE with 6 copyright holders (UT-Battelle first), NOASSERTION, created 2018-02-05, last push 2026-10-21, 14 releases from v2.0.0 (2021-09-22) to v3.4.0 (2026-09-03), contributors 27 with anonymous / 9 accounts, languages Jupyter 66.9% and C++ 30.1%, the README quotes ("continuum simulator under development within two DOE SciDAC", ITER, fission fuel), C++20 (CMakeLists line 13), Kokkos >= 4.6 and PETSc in the README requirements. All verified.
 - Corrected: ORNL as research org is no longer UNKNOWN. OSTI 1513390 (ORNL, ASCR) names Xolotl as "our cluster dynamics model", so rule 13 is CORROBORATED.
 - Note: Kokkos comes in through PETSc and plsm per the README, not a direct find_package in the top CMakeLists. The brief's wording ("handles the hardware") stays INFERRED-safe.

@@ -55,12 +55,12 @@ FEMA sponsorship suggests disaster and emergency use, such as estimating which b
 - https://www.osti.gov/biblio/2587435 (figshare dataset)
 - https://github.com/ORNL/vivaldi/blob/main/README.md
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: README feature table also has a 1000 m buffer.
 - Verified: MIT 2025 ORNL; created 2025-07-09, last push 2025-07-18; Python 98.2%; no releases; 2 contributor pages; 65 measures; 315-line script; geopandas/scipy/tqdm; Python 3.10.15; AL_structures example; isoperimetric quotient and nearest-neighbor index rows; OSTI code-157761 DOI and FEMA + FEMP sponsors; OSTI 3001779 and 2587435 (ORNL); Vivaldi README naming Gauntlet.
 - Staff name correctly withheld.
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Corrected: the walkthrough still listed buffers only to 500 m. The README feature table has 50, 100, 250, 500 and 1000 meter buffer rows, so the walkthrough now matches the body.
 - Re-fetched the GitHub API (MIT, created 2025-07-09, last push 2025-07-18, 0 releases), README, OSTI code-157761 and 3001779. No contradictions.
 - CORROBORATED: 65 features. README "Purpose: To generate 65 measurements from geospatial polygon data"; OSTI code-157761 "generates 65 measures of a building's morphology"; OSTI 3001779 (Scientific Data, 2025-11-07) "a set of 65 unique features for every building for more than 131 million buildings". The journal paper is an independent publication.

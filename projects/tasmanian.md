@@ -35,7 +35,7 @@
 UQ underpins any claim that "the simulation says X, plus or minus Y". [INFERRED] Named users beyond its own papers are [UNKNOWN]; the README asks users to cite the Manual and related papers. The sampling ideas behind DREAM (MCMC) also show up in security, for example in probabilistic attack-graph analysis. [INFERRED: a general connection; not about Tasmanian specifically]
 
 ## Related projects
-- IRIS (`iris`) and HeCBench (`hecbench`): other ORNL HPC libraries with CUDA and HIP backends. Connector found no source tying IRIS to Tasmanian. [KNOWN per Connector, map pass on IRIS]
+- IRIS (`iris`) and HeCBench (`hecbench`): other ORNL HPC libraries with CUDA and HIP backends. The connections pass found no source tying IRIS to Tasmanian. [KNOWN per map, map pass on IRIS]
 - MAGMA: an outside GPU linear-algebra library from the University of Tennessee ("UTK Magma" in the build options). [KNOWN: CMakeLists.txt line 83]
 
 ## Known / Inferred / Unknown
@@ -48,6 +48,6 @@ UQ underpins any claim that "the simulation says X, plus or minus Y". [INFERRED]
 - https://ornl.github.io/TASMANIAN/
 - https://api.github.com/repos/ORNL/TASMANIAN (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked: the LICENSE (line 3 copyright to an individual, lines 30-31 UT-Battelle disclaimer), NOASSERTION, created 2017-10-16, last push 2026-10-19, 12 releases with v8.2 on 2025-12-09 and yearly cadence since 2021, contributors 12 with anonymous / 8 accounts, languages (C++ 69%, Python 14%, Fortran, MATLAB), the README name expansion and "high dimensional integration and interpolation" quote, DREAM section, and the CUDA, HIP, DPC++ and MAGMA options marked "(stable)" in CMakeLists.txt. All verified.
 - Added: DOE CODE code-6305 / OSTI 1231809 lists ORNL as research org, so rule 13 is now CORROBORATED rather than resting on the GitHub org alone. Why the copyright names an individual is still UNKNOWN.

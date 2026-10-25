@@ -44,7 +44,7 @@ Utilities, cities and policymakers can see building-by-building where retrofits 
 - KNOWN: closed source, purpose, throughput claim, validation claim, 122.9 million building run, MAv1 dataset, Phoenix study.
 - INFERRED: footprint inputs, who benefits.
 - UNKNOWN: code, license, division.
-- Scout update 2026-10-24: Model America is publicly downloadable [CORROBORATED: https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a (DOI 10.13139/ORNLNCCS/1774134, via Globus) and https://doi.org/10.15485/2283980 (ESS-DIVE)]. The lead counted this dataset page as AutoBEM's public docs page (item 14), so this is a normal brief now.
+- Discovery update 2026-10-24: Model America is publicly downloadable [CORROBORATED: https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a (DOI 10.13139/ORNLNCCS/1774134, via Globus) and https://doi.org/10.15485/2283980 (ESS-DIVE)]. The editorial review counted this dataset page as AutoBEM's public docs page (item 14), so this is a normal brief now.
 
 ## Sources (accessed 2026-10-24)
 - https://www.osti.gov/doecode/biblio/115947
@@ -52,7 +52,7 @@ Utilities, cities and policymakers can see building-by-building where retrofits 
 - https://www.osti.gov/biblio/17315517 (Phoenix CO2 study)
 - https://www.osti.gov/biblio/3384902 (data center prototype models)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done.
 - Added the plain-language walkthrough required by rule 12.
 - Status changed from "active [KNOWN]" to `unknown` to match map.md and rule 14. Papers using AutoBEM aren't a statement that the software is maintained.

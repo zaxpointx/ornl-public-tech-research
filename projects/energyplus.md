@@ -33,7 +33,7 @@ EnergyPlus simulates how much energy and water a building uses (heating, cooling
 - Releases: twice a year, usually March and September. Pre-release candidates come first, such as v26.2.0-RC1 to RC3 (2026-09-21 to 2026-09-29) before v26.2.0. [KNOWN: README; GitHub releases API]
 - Testing: unit, integration, API and regression tests on every commit, through Decent CI and GitHub Actions. [KNOWN: README]
 - Scale: about 144 contributors, about 1,600 stars, created 2013-11-22. [KNOWN: GitHub API]
-- Lead institution: the repo is under the NatLabRockies GitHub org, whose profile name is National Laboratory of the Rockies (nlr.gov) [KNOWN: https://api.github.com/orgs/NatLabRockies]. That NLR is the renamed NREL and leads development is [INFERRED: Scout's note and Alliance for Energy Innovation, LLC in the copyright line; nlr.gov's homepage doesn't say "formerly NREL"]. ORNL is a named copyright holder, and the OSTI software record for EnergyPlus lists ORNL as research org. [KNOWN: LICENSE.txt; OSTI 1395245] ORNL's specific role (which modules, which group) is [UNKNOWN].
+- Lead institution: the repo is under the NatLabRockies GitHub org, whose profile name is National Laboratory of the Rockies (nlr.gov) [KNOWN: https://api.github.com/orgs/NatLabRockies]. That NLR is the renamed NREL and leads development is [INFERRED: the discovery-pass note and Alliance for Energy Innovation, LLC in the copyright line; nlr.gov's homepage doesn't say "formerly NREL"]. ORNL is a named copyright holder, and the OSTI software record for EnergyPlus lists ORNL as research org. [KNOWN: LICENSE.txt; OSTI 1395245] ORNL's specific role (which modules, which group) is [UNKNOWN].
 
 ## Who uses it / why it matters
 It's widely described as DOE's flagship building-energy engine [INFERRED: no fetched source says "flagship"]. Many users and developers are active on the Unmet Hours Q&A forum. [KNOWN: README] Buildings use a large share of US energy, so better design tools mean real savings. [INFERRED: general fact, no number cited]
@@ -52,12 +52,12 @@ It's widely described as DOE's flagship building-energy engine [INFERRED: no fet
 - https://www.osti.gov/biblio/1395245
 - https://energyplus.net/
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: the GitHub org's own name is National Laboratory of the Rockies. NREL as its former name is INFERRED.
 - Verified: LICENSE.txt holders (Illinois, UC/LBNL, ORNL/UT-Battelle, Alliance for Energy Innovation, others) and the Government rights notice; v26.2.0 on 2026-09-30 with RC1 to RC3 (2026-09-21 to 09-29); twice-yearly March/September; unit, integration, API and regression tests via Decent CI; Unmet Hours; DOE website; C++ 86.3 / Fortran 8.6; 144 contributor pages; 1,607 stars; created 2013-11-22; OSTI 1395245 is a Software record with ORNL as research org.
 - ORNL's specific role stays [UNKNOWN].
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Corrected: "DOE's main open-source program" was tagged KNOWN, but neither the README nor OSTI 1395245 says "main" or "flagship". Retagged INFERRED and kept the sourced wording.
 - Corrected: "not an ORNL-led project [KNOWN: LICENSE]" overstated what the license shows. A co-holder list proves ORNL is one of several holders, not who leads. Reworded to "not ORNL-only" (KNOWN) with lead INFERRED.
 - Disconfirming check: OSTI 1395245 (Software, dated 2012-01-01) lists ORNL as the only research org. That does not support NREL-led, so map link 61 should not cite it for that.

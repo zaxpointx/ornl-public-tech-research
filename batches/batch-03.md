@@ -1,10 +1,10 @@
 # Batch 03 summary
 
-Maintained by ORNL Librarian. Independent research from public sources only; not affiliated with ORNL. Date: 2026-10-24.
+Independent research from public sources only; not affiliated with ORNL. Date: 2026-10-24.
 
 ## What was researched
-- Scout added 13 catalog rows (discovered_batch 03): far3d, korc, gitr, scale, olm, vera (nuclear/fusion); tasqc, akatosh, can-d (cyber); gauntlet, real-twin, stor4build, energyplus (buildings/transport). Scout's discovery notes are appended below.
-- Reader wrote 6 briefs: [SCALE](../projects/scale.md), [VERA](../projects/vera.md), [GITR](../projects/gitr.md), [Real-Twin](../projects/real-twin.md), [Gauntlet](../projects/gauntlet.md), [EnergyPlus](../projects/energyplus.md).
+- The discovery pass added 13 catalog rows (discovered_batch 03): far3d, korc, gitr, scale, olm, vera (nuclear/fusion); tasqc, akatosh, can-d (cyber); gauntlet, real-twin, stor4build, energyplus (buildings/transport). The discovery notes are appended below.
+- The reading pass wrote 6 briefs: [SCALE](../projects/scale.md), [VERA](../projects/vera.md), [GITR](../projects/gitr.md), [Real-Twin](../projects/real-twin.md), [Gauntlet](../projects/gauntlet.md), [EnergyPlus](../projects/energyplus.md).
 - SCALE and VERA (and Shift, cited inside SCALE) are described from public overview pages, the public manual and OSTI only. Nothing about the controlled distribution beyond "licensed, not open source".
 
 ## What was verified
@@ -28,12 +28,12 @@ This is the first batch checked under the two-sweep rule (RULES.md item 11). Det
 - VERA: whether ORNL is the sole current developer.
 
 ## What to investigate next
-- Map link 61 needs a corrected citation, since OSTI 1395245 lists only ORNL. Connector is fixing it.
+- Map link 61 needs a corrected citation, since OSTI 1395245 lists only ORNL. The connections pass is fixing it.
 - A primary source naming SCALE's ORNL group, or VERA's current developer list.
 - Unread batch 03 rows: far3d, korc, olm, tasqc, akatosh, can-d, stor4build. akatosh and can-d are OSTI-only stubs.
 
 ---
-# Batch 03 scout (discovery) - 2026-10-24 [Scout 2026-10-24]
+# Batch 03 discovery notes, 2026-10-24
 ## Added (13, discovered_batch "03")
 - nuclear/fusion: far3d, korc, gitr, scale, olm, vera
 - cyber: tasqc, akatosh, can-d
@@ -48,7 +48,7 @@ This is the first batch checked under the two-sweep rule (RULES.md item 11). Det
 - Skipped because they are already in the catalog: Cyberwheel (OSTI code-134699), AdditiveFOAM, Finch, Myna, Equilipy, mind_the_gap, Profugus.
 - Real-Sim/FIXS was skipped because its repo was not reachable.
 - J1939 Decoder was skipped because it lives in a personal repo.
-- PKPass is an OLCF tool and a lead for batch 4.
+- PKPass is an OLCF tool and a candidate for batch 4.
 - VERA is cataloged as the overall suite. Its components (VERAView, VERAIn, CTF, MAMBA) are not split out, and MAMBA is LANL's.
 ## Caveats
 - FAR3d: no license file was found.

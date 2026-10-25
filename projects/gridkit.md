@@ -4,9 +4,9 @@
 - License: a custom UT-Battelle permissive (BSD-like) license, "Copyright (c) 2025, UT-Battelle." GitHub reports NOASSERTION. A NOTICE file carries the standard DOE/UT-Battelle disclaimer. [KNOWN: LICENSE line 1, NOTICE, GitHub API]
 - Trademark: the README writes GridKit™. [KNOWN]
 - Status: active. The last commit was 2026-10-23. Releases are v0.0.7 (2023-07-18 UTC), v0.1.0 (2025-04-14 UTC) and v0.2.0 (2026-10-01 UTC), and the CHANGELOG already has an unreleased "v.03" section. [KNOWN: git log, GitHub releases API, CHANGELOG.md] It's still pre-1.0, so interfaces may change. [INFERRED: version numbers]
-- Scope (rule 13): CORROBORATED. ORNL owns the repo, UT-Battelle holds the copyright, and DOE CODE code-152622 (2025-03-14) lists ORNL as research org. [KNOWN: GitHub, LICENSE; https://www.osti.gov/doecode/biblio/152622 per Scout]
-  - An older same-named OSTI software record isn't cited here, per the lead's ruling. [rule 10: no merging without binding evidence]
-- Rewrite note: this replaces the batch 01 brief, adding the rule 12 walkthrough, both contributor counts, and no named individuals. The old version is kept at `<local scratch copy>` for Fact Checker.
+- Scope (rule 13): CORROBORATED. ORNL owns the repo, UT-Battelle holds the copyright, and DOE CODE code-152622 (2025-03-14) lists ORNL as research org. [KNOWN: GitHub, LICENSE; https://www.osti.gov/doecode/biblio/152622 per the discovery pass]
+  - An older same-named OSTI software record isn't cited here, per an editorial decision. [rule 10: no merging without binding evidence]
+- Rewrite note: this replaces the batch 01 brief, adding the rule 12 walkthrough, both contributor counts, and no named individuals. The batch 01 version stays in the repository's git history.
 
 ## Plain-language walkthrough
 - **What it is:** a C++ toolkit for building computer models of a power grid and simulating how it behaves, both in steady state and during disturbances like a fault on a line. [KNOWN: README]
@@ -23,7 +23,7 @@
   3. It steps through time, applying events such as faults or switching a branch out. [KNOWN: README dependencies, `GridKit/Solver/{SteadyState,Dynamic,Optimization}`, CHANGELOG v.03 events; INFERRED: the step order]
 - **What comes out:** voltages, angles and machine states over time for the variables you choose to monitor. [KNOWN: `VariableMonitor*.hpp`; INFERRED: the output type]
 - **Where humans act:** an engineer writes or converts the case file, chooses the solver and events, and reads the results. [INFERRED]
-- **What it is not:** it isn't an optimizer for running the whole grid the way ExaGO is, and it isn't connected to any real utility. It's a modeling and simulation library tested on public benchmark cases. [INFERRED; Connector's link 150 found no code link to ExaGO]
+- **What it is not:** it isn't an optimizer for running the whole grid the way ExaGO is, and it isn't connected to any real utility. It's a modeling and simulation library tested on public benchmark cases. [INFERRED; map link 150 found no code link to ExaGO]
 - **What's unknown:** who uses it outside ORNL, and how close the EMT side is to working. The examples README calls the EMT examples "architecture skeletons". [KNOWN: examples/README.md]
 - **Example:** load the IEEE 39-bus case, put a fault on one bus for a fraction of a second, then clear it, and watch whether the generators swing back into step. [KNOWN: `cases/PhasorDynamics/IEEE39`, `Bus::setFault` in CHANGELOG v.03; INFERRED: the scenario]
 
@@ -33,7 +33,7 @@
   - `PhasorDynamics`: buses, branches, loads, exciters, governors, converters, controllers and signal nodes.
   - `PowerElectronics`: microgrid examples.
   - `EMT`: early.
-  - `Experimental`: dynamic-constrained optimization. [KNOWN: `GridKit/Model/`, examples/README.md]
+  - Dynamic-constrained optimization lives in `examples/Experimental`, not as a model family. [KNOWN: `GridKit/Model/` has only EMT, PhasorDynamics, PowerElectronics and PowerFlow; examples/README.md]
 - **Automatic differentiation:** optional Enzyme support computes the derivatives solvers need straight from the code, so they don't have to be written by hand. The README calls it experimental and warns some Enzyme versions break the build. [KNOWN: README, CHANGELOG v0.2]
 - **Optional features:** OpenMP and threads, ZeroMQ (a messaging library, possibly for co-simulation), and address and undefined-behavior sanitizers for catching memory bugs. [KNOWN: CMake options; INFERRED: the ZeroMQ purpose]
 
@@ -45,11 +45,11 @@
 - Contributors: 22 including anonymous commit authors, 17 GitHub accounts without them. Repo created 2023-07-18. 27 stars and 11 forks. [KNOWN: GitHub API] The README credits outside contributors from universities and industry. Per team convention, names aren't listed here.
 
 ## Who uses it / why it matters
-As grids add solar, wind and batteries, they behave faster and less predictably. A flexible simulator that can mix detailed and averaged models helps researchers test whether a future grid stays stable. [INFERRED] For usage evidence, see Connector's section in `signals/gridkit.md`.
+As grids add solar, wind and batteries, they behave faster and less predictably. A flexible simulator that can mix detailed and averaged models helps researchers test whether a future grid stays stable. [INFERRED] For usage evidence, see the usage section in `signals/gridkit.md`.
 
 ## Related projects
 - ReSolve (`resolve`, catalog stub): an optional GPU linear-solver dependency. [KNOWN: README]
-- ExaGO (`exago`): same field, no code link (Connector link 150). [KNOWN per map]
+- ExaGO (`exago`): same field, no code link (map link 150). [KNOWN per map]
 - SUNDIALS (LLNL) and Ipopt (COIN-OR): outside dependencies.
 
 ## Known / Inferred / Unknown
@@ -61,4 +61,9 @@ As grids add solar, wind and batteries, they behave faster and less predictably.
 - https://github.com/ORNL/GridKit (README.md, LICENSE, NOTICE, CHANGELOG.md, CMakeLists.txt, GridKit/, cases/, examples/README.md, .github/workflows/)
 - https://api.github.com/repos/ORNL/GridKit (plus /languages, /releases, /contributors)
 - https://gridkit.readthedocs.io/en/latest/ (linked)
-- https://www.osti.gov/doecode/biblio/152622 (per Scout)
+- https://www.osti.gov/doecode/biblio/152622 (per the discovery pass)
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of ORNL/GridKit and public records: LICENSE "Copyright (c) 2025, UT-Battelle.", tags v0.0.7, v0.1.0 and v0.2.0, CHANGELOG "v.03" section, last commit 2026-10-23, CMake 3.13 and C++20, all solver options OFF by default (including ZeroMQ), both CI workflows, the nine PhasorDynamics case folders, README trademark, Enzyme "experimental" warning and ReSolve dependency, contributors 22 with anonymous and 17 accounts. DOE CODE code-152622 refetched from the OSTI API: "GridKit", 2025-03-14, ORNL research org, contract AC05-00OR22725. Docs link resolves.
+- Corrected: `Experimental` is an examples folder for dynamic-constrained optimization, not a folder under `GridKit/Model/`.
+- Note: besides the two third-party submodules, `buildsystem/spack` is also a git submodule.

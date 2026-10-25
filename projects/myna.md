@@ -42,7 +42,7 @@ Myna is a Python tool that connects real 3D-printing build records to computer s
 - https://github.com/ORNL-MDF/Myna (README, ARCHITECTURE.md, CHANGELOG.md, CITATION.bib, LICENSE.md, application readme), accessed 2026-10-24
 - https://api.github.com/repos/ORNL-MDF/Myna (+ /languages, /releases, /contributors), accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: MDF retagged KNOWN via the ornl.gov facility page.
 - Added: DOE CODE record code-141169 (Myna, ORNL) via the OSTI records API.
 - Verified: BSD-3 copyright 2024 ORNL; releases 1.0.0 (2024-08-19) and 1.1.0 (2025-04-09); created 2024-02-23; Python 99.0%; 9 contributor pages; Python 3.10+ and not on PyPI; config/run/sync in ARCHITECTURE.md; application folders (adamantine, additivefoam, bnpy, cubit, deer, exaca, openfoam, rve, thesis); CHANGELOG database types and 3.9 baseline; seven-author CITATION.bib; 21 example cases; AGENTS.md present.

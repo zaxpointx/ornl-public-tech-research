@@ -38,7 +38,7 @@ TESViS, the Terrestrial Ecology Subsetting & Visualization Services, lets resear
 - https://modis.ornl.gov/documentation.html, accessed 2026-10-24
 - https://modis.ornl.gov/data/modis_webservice.html, accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: no-key access retagged KNOWN after a direct unauthenticated GET of /products returned 200.
 - Verified: homepage names TESViS, the LP DAAC partnership, Global Subsets, Fixed Sites, the web service and AppEEARS; documentation page lists VIIRS, SMAP, ECOSTRESS, GEDI, SIF and ICESat-2 plus the validation and site-characterization goal; web service page has the ten-dates limit, CSV/JSON, email order, curl/R/Python examples and DOI 10.3334/ORNLDAAC/1600.
 - Source code and tech stack stay [UNKNOWN].

@@ -53,11 +53,11 @@ Transportation researchers who want reproducible comparisons. Running the same s
 - https://www.osti.gov/doecode/biblio/147051
 - https://real-twin.readthedocs.io/en/latest/
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: releases recheck worked. There are four GitHub releases, and PyPI versions run 0.0.9.dev2 to 0.1.2.
 - Verified: func_lib _a to _h stages; datasets include chattanooga and Nolen; README platform-agnostic, SUMO/VISSIM/AIMSUN, calibration, AV/CAV/EV, pip install, VTO EEMS funding; CHANGELOG 22% to 38% coverage and 90% goal; version 0.1.2; Python 97.4%; GPL-3.0; OSTI code-147051 ORNL research org, VTO sponsor, DOI 10.11578/dc.20250602.3; FIXS in the same org (its description says it's part of the EEMS Real-Sim project).
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Re-fetched the GitHub API (GPL-3.0, last push 2026-10-08, 4 releases, 9 contributor pages), README and OSTI code-147051. No contradictions.
 - Corrected: the walkthrough still said release history was unknown because an API call failed. That was stale after sweep 1, so it is fixed.
 - Corrected: "the Real-Sim family" split into KNOWN same org and INFERRED working together, matching map link 79.

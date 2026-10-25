@@ -1,5 +1,5 @@
 # Batch 02 scout (discovery) - 2026-10-24
-Batch-1 rows were not edited (normalization belongs to the Librarian). The 15 new rows use discovered_batch=2 and the top-level domain set, with finer detail in notes as "subdomain:".
+Batch-1 rows were not edited (normalization is an editorial step). The 15 new rows use discovered_batch=2 and the top-level domain set, with finer detail in notes as "subdomain:".
 ## Added (15)
 daymet, tesvis-modis, e3sm-elm, fates, data-workflow, pyrs, 3dthesis, myna, finch, vivaldi, mind-the-gap, hydrofleetintel, olcf-test-harness, qiree, django-remote-submission
 ## Sources checked (2026-10-24)
@@ -27,7 +27,7 @@ daymet, tesvis-modis, e3sm-elm, fates, data-workflow, pyrs, 3dthesis, myna, finc
 - The CASL/VERA public parts.
 - ORNL/gauntlet.
 
-## License and OSTI fixes (Scout 2026-10-24)
+## License and OSTI fixes (discovery pass 2026-10-24)
 Licenses below come from each repo's own license file. Every batch-2 row now records the license file URL in its notes.
 - Custom UT-Battelle permissive: daymet, vivaldi, mind-the-gap, hydrofleetintel. olcf-test-harness uses a UT-Battelle BSD-3 style license.
 - e3sm-elm: BSD-3-Clause. fates: BSD-3-style.

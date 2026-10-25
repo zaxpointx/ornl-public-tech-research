@@ -1,6 +1,6 @@
 # Signals: zambeze
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The project wound down steadily. Commits went 573 (2022), 305 (2023), 193 (2024), and active authors 13, then 10, then 4, with the last commit on 2024-09-13. [KNOWN: git log --all] Read: the work probably moved on, perhaps into Flowcept, since both share LDRD project 11521 and Zambeze has a Flowcept hook. [INFERRED, low. No source says Zambeze was replaced]
@@ -14,10 +14,10 @@
 | Commits per year | 2022: 573, 2023: 305, 2024: 193 | git log --all | [KNOWN] |
 | Active authors per year | 2022: 13, 2023: 10, 2024: 4. 16 emails | git log | [KNOWN] |
 | Tags | v0.0.1-devel 2023-01-25, list 2023-02-07, v0.1-Yambeshe 2023-03-06 | git | [KNOWN] |
-| Funding | OSTI 2483434 lists USDOE generically. LDRD 11521 per OSTI 3025007 (Connector link 111) | OSTI API | [KNOWN] |
+| Funding | OSTI 2483434 lists USDOE generically. LDRD 11521 per OSTI 3025007 (map link 111) | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2023-02-14 and 2024-09-17 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 113-114, 168.
 
 **Outside vs inside:** The inside describes cross-facility workflow orchestration paired with Flowcept. Outside, the PyPI release (0.1) lags the repo (0.2), downloads are minimal, the repo has been quiet since 2024-09, and the only papers are ORNL's own, so it looks like an ORNL research prototype whose Flowcept hook may have drifted.

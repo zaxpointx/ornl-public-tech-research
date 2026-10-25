@@ -1,6 +1,5 @@
-<!-- Scout section goes above -->
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - Activity peaked in 2023 and has slowed since. Commits per year went 832, then 499, then 158 in 2025. There are no commits on the default branch after 2025-11-19. [KNOWN: git log] The v3.0.1 tag (2026-02-10) points at that 2025-11-19 commit. [KNOWN] Read: a maintenance phase, while the research continues as spin-offs like MatRIS, Q-IRIS and IRIS-MASH. [INFERRED, medium]
@@ -18,7 +17,7 @@
 | Funding | OSTI 2438809 and 3018176 list USDOE generically. No DOE CODE record was found by title search | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | Nearest captures 2022-08-06 and 2025-07-19 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 117-121.
 
 **Outside vs inside:** The inside targets "extremely heterogeneous" systems (CPUs, GPUs, FPGAs, DSPs, quantum via QIR-EE). Outside, IRIS has no Spack or conda-forge package and 0 dependents; its visible users are ORNL's own layers on top of it (MatRIS, LaRIS, FFTX-IRIS, IRIS-GNN) and academic partners in papers (U. Tsukuba, Carnegie Mellon).

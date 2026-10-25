@@ -1,9 +1,9 @@
-# Batch 07 (Scout discovery), 2026-10-24
+# Batch 07 discovery notes, 2026-10-24
 
 RULES.md was re-read before this batch, through item 16.
 
 ## Added to the catalog (2)
-- **zambeze**: ORNL copyright, MIT license. Status `unknown`: last push 2024-09-13, last release 2023-03-06. This is the lead's queued item, via the LDRD 11521 pairing with Flowcept.
+- **zambeze**: ORNL copyright, MIT license. Status `unknown`: last push 2024-09-13, last release 2023-03-06. This was a queued item, via the LDRD 11521 pairing with Flowcept.
 - **matris**: UT-Battelle copyright, BSD-3. Active (borderline): last push 2025-10-23. Built on IRIS.
 
 ## Checked and not added (paper-only, no public code found)

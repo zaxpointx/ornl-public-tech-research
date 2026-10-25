@@ -1,6 +1,6 @@
 # Signals: exago
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The move to ORNL brought a large staffing jump. Commits dropped to 33 in 2024 and 9 in 2025, then rose to 255 so far in 2026. Active authors went from 5 in 2025 to 24 in 2026. [KNOWN: git log --all] Read: development restarted as a funded ORNL effort after the handoff from PNNL. [INFERRED, high]
@@ -19,7 +19,7 @@
 | Funding | code-176348 lists USDOE generically | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | ORNL/ExaGO has none. pnnl/ExaGO has 2024-02-22 and 2026-06-16 | availability API | [KNOWN] |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); AgentiGrid not run. Detail in connections/map.md links 148-150, 167.
 
 **Outside vs inside:** The inside is a power-grid optimization toolkit that moved from PNNL to ORNL. Outside, it is packaged in Spack but shows no dependents and almost no citations of its main paper (1 citing work), so visible users are DOE grid-optimization teams; it shares 4 contributor accounts with GridKit but no code.
@@ -35,5 +35,5 @@ Accessed 2026-10-24 (ET). Artifacts only (RULES 16); AgentiGrid not run. Detail 
 
 Reasoning: a DOE-internal grid optimization code with Spack packaging and a lab-to-lab handover, not widely adopted outside [INFERRED, medium confidence]. AgentiGrid is "experimental" per CHANGELOG 2.1 only.
 
-## Sweep notes (ORNL Fact Checker, 2026-10-24)
-- Spot-checked against a fresh clone using author dates: across all branches, 2025 has 9 commits from 5 authors and 2026 has 255 from 24, matching Scout. On the default branch (`develop`) alone, 2026 has 47 commits from 10 authors, so most 2026 work sits on the other 44 remote branches. The "--all" label is correct; read the jump with that in mind.
+## Sweep notes (fact-check pass, 2026-10-24)
+- Spot-checked against a fresh clone using author dates: across all branches, 2025 has 9 commits from 5 authors and 2026 has 255 from 24, matching the discovery pass. On the default branch (`develop`) alone, 2026 has 47 commits from 10 authors, so most 2026 work sits on the other 44 remote branches. The "--all" label is correct; read the jump with that in mind.

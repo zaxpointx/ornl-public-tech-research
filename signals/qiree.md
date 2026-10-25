@@ -1,6 +1,5 @@
-<!-- Scout section goes above -->
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The project is small and slow-moving: 48 commits in about 2.5 years, with none after 2025-12-02. [KNOWN: git log] Read: an early research prototype, not a staffed product. [INFERRED, medium]
@@ -18,7 +17,7 @@
 | Funding | code-149694 lists ASCR. Across 6 OSTI hits: ASCR 3, LDRD 1, BES 1 | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2024-12-11 and 2026-06-07 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md links 117, 141-145.
 
 **Outside vs inside:** The inside presents QIR-EE as a cross-platform engine for running quantum programs (QIR) on many backends. Outside, it has no package on PyPI, Spack or conda-forge and 0 GitHub dependents; its one visible consumer is ORNL's own IRIS runtime (Q-IRIS), and its papers are ORNL-led with Georgia Tech and Quantum Science Center partners.

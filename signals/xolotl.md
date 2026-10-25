@@ -1,6 +1,5 @@
-<!-- Scout section goes above -->
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - This is the oldest codebase in batch 06. The first commit is 2012-08-31, and there's been steady, low activity ever since, peaking at 328 commits in 2020. [KNOWN: git log] Read: long-running funded work, not a one-off. [INFERRED, high]
@@ -17,9 +16,9 @@
 | Tags | v3.2.3 2025-12-15, v3.3.0 2026-03-03, v3.4.0 2026-09-03 | git | [KNOWN] |
 | Funding | OSTI 1513390 (ASCR). Keyword hits: NE 22, FES 10, NNSA 9, ASCR 6 | OSTI API | [KNOWN] for 1513390. The mix is [INFERRED] |
 | Wayback | Nearest captures 2018-06-17, 2022-03-07 and 2026-03-05 | availability API | [KNOWN], but only bounds the dates |
-| Note | GitHub history starts in 2012, which fits the 2012 LICENSE date. That eases Reader's open question about earlier history living elsewhere | git | [INFERRED, medium] |
+| Note | GitHub history starts in 2012, which fits the 2012 LICENSE date. That eases the reading-pass open question about earlier history living elsewhere | git | [INFERRED, medium] |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 136-140.
 
 **Outside vs inside:** The inside models plasma-facing divertor materials and fission fuel. Outside, the six copyright holders, the Spack package and fission-gas papers with INL, LANL and U. Florida show a multi-lab fusion/fission materials community, broader than ORNL alone; there is no PyPI or conda presence and 0 GitHub dependents.

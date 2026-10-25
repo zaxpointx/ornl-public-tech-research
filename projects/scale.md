@@ -41,7 +41,7 @@ SCALE is a suite, meaning several modules that each handle one part of the job. 
 OSTI's description says it's widely used by researchers, industry and regulators for criticality safety, reactor physics, shielding, source terms and inventory analysis. [KNOWN: OSTI 3007184] ORNL has published SCALE models of advanced (non-light-water) reactors for the NRC. [KNOWN: OSTI 2572299, 2583965] It's safety-critical software, so validation against real measurements matters as much as the code itself. [INFERRED]
 
 ## Related projects
-- VERA (`vera`): also ORNL reactor simulation. Both are tied to the Shift transport code. [INFERRED: Shift appears in both SCALE-Shift (OSTI 3007184) and Scout's VERA component list, needs verification]
+- VERA (`vera`): also ORNL reactor simulation. Both are tied to the Shift transport code. [INFERRED: Shift appears in both SCALE-Shift (OSTI 3007184) and the discovery-pass VERA component list, needs verification]
 - Thermochimica (`thermochimica`): nuclear fuel chemistry, a different layer of the same field. [INFERRED]
 
 ## Known / Inferred / Unknown
@@ -60,14 +60,14 @@ OSTI's description says it's widely used by researchers, industry and regulators
 - https://www.osti.gov/biblio/1237627 (Shift, J. Comput. Phys. 2016)
 - https://www.osti.gov/biblio/2572299 and https://www.osti.gov/biblio/2583965 (SCALE Non-LWR Models for NRC)
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Verified via WebFetch of https://www.ornl.gov/scale (curl from my computer hit a Cloudflare block): the description, NRC/DOE/NNSA contract, four application areas, and the four-volume 6.3 list.
 - Verified via the OSTI records API: 2575336 (KENO since the 1960s), 2583839 (Polaris-PARCS), 2587031 (fifth volume, ENDF/B-VII.1, update of 6.2.4), 3007184 (threads/OpenMP/MPI in SCALE-Shift), 2572299 and 2583965 (non-LWR NRC datasets).
 - Corrected: the license changed from fully UNKNOWN to KNOWN licensed, not open source; the terms are still UNKNOWN. How to obtain it is deliberately left out.
 - Corrected: four versus five volumes settled as the four topic reports plus a likely overview volume [INFERRED].
 - Restricted-content screen: clean. Overview pages and public OSTI reports only.
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Re-fetched OSTI 2587031, 2575336, 2583839, 3007184, 2572299 and the CSAS-Shift manual page. No contradictions found.
 - Load-bearing quotes: license, OSTI 2572299 (Dataset, ORNL, NRC sponsor, 2025-07-29) description: "required to obtain a license to the SCALE code system". Fifth volume, OSTI 2587031 description: "This report is the fifth volume in a series documenting the validation of SCALE 6.3". Parallelism, OSTI 3007184 abstract: "limited support for shared- and distributed-memory parallel processing was introduced via C++ threading, OpenMP, and MPI".
 - Corrected: Shift as Monte Carlo engine moved from INFERRED to CORROBORATED (SCALE manual section 2.2.1 plus OSTI 1237627).

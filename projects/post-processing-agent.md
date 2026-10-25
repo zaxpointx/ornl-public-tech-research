@@ -49,7 +49,7 @@ It's part of the automatic pipeline behind SNS and HFIR, so users can get reduce
 - https://github.com/neutrons/post_processing_agent (README.md, README_developer.md, LICENSE.rst, postprocessing/processors/calvera_processor.py)
 - https://api.github.com/repos/neutrons/post_processing_agent (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done against the GitHub API and raw files on `main`.
 - Verified:
   - MIT "Copyright (c) 2022 NScD", "@copyright: 2023 Oak Ridge National Laboratory" in calvera_processor.py, created 2014-05-16, last push 2026-10-21, contributors 18.

@@ -1,4 +1,4 @@
-# Batch 03 scout (discovery) - 2026-10-24 [Scout 2026-10-24]
+# Batch 03 discovery notes, 2026-10-24
 ## Added (13, discovered_batch "03")
 - nuclear/fusion: far3d, korc, gitr, scale, olm, vera
 - cyber: tasqc, akatosh, can-d
@@ -13,7 +13,7 @@
 - Skipped because they are already in the catalog: Cyberwheel (OSTI code-134699), AdditiveFOAM, Finch, Myna, Equilipy, mind_the_gap, Profugus.
 - Real-Sim/FIXS was skipped because its repo was not reachable.
 - J1939 Decoder was skipped because it lives in a personal repo.
-- PKPass is an OLCF tool and a lead for batch 4.
+- PKPass is an OLCF tool and a candidate for batch 4.
 - VERA is cataloged as the overall suite. Its components (VERAView, VERAIn, CTF, MAMBA) are not split out, and MAMBA is LANL's.
 ## Caveats
 - FAR3d: no license file was found.

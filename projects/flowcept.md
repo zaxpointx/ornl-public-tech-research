@@ -14,7 +14,7 @@
 - **What comes out:** stored provenance in a JSONL file, LMDB or MongoDB, plus a web UI, reports ("workflow cards") and a query API. [KNOWN: README]
 - **Where humans act:** scientists add decorators or turn on adapters, pick a storage setup, then browse the UI or ask questions. An optional "Flowcept Agent" lets people query the records in plain language through an LLM (large language model, the kind of AI behind chatbots). [KNOWN: README]
 - **What it is not:** it doesn't schedule or run your workflow; it watches and records one. [INFERRED: the docs describe capture, storage and querying only, with no scheduler]
-- **What's unknown:** which ORNL group owns it, and how widely it's used outside its own papers (Connector's signals work may answer the second).
+- **What's unknown:** which ORNL group owns it, and how widely it's used outside its own papers (the connections-pass signals work may answer the second).
 - **Example:** the README quickstart marks two tiny functions, `add_one` and `double`, with `@flowcept_task`. Running it with no database writes a local JSONL record of each call's inputs, outputs and timing, then prints a summary card. [KNOWN: README Quickstart]
 
 ## How it works
@@ -36,7 +36,7 @@
 The project says it targets ML training, agent workflows, HPC jobs and edge-to-cloud-to-HPC pipelines. [KNOWN: README] Its docs list publications. I didn't read them, so named users are [UNKNOWN]. For a security student, provenance is close to audit logging: a trustworthy record of who ran what on which data. That's the same idea behind forensic timelines and software supply-chain records. [INFERRED]
 
 ## Related projects
-- DataFed (`datafed`): Connector's map link 19 already ties them. [KNOWN per Connector; not re-read by me]
+- DataFed (`datafed`): map link 19 already ties them. [KNOWN per map; not re-read by me]
 - HydraGNN (`hydragnn`): both are ORNL AI and HPC tools. Any direct use is [UNKNOWN].
 
 ## Known / Inferred / Unknown
@@ -49,7 +49,7 @@ The project says it targets ML training, agent workflows, HPC jobs and edge-to-c
 - https://flowcept.readthedocs.io/
 - https://api.github.com/repos/ORNL/flowcept (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked against the GitHub API and raw files: MIT with "Copyright (c) 2022 Oak Ridge National Laboratory" (LICENSE line 3), created 2022-11-10, last push 2026-08-12, v1.0.3 on 2026-07-20, the same-day v0.10.8/v0.10.9 releases, contributors 19 with anonymous / 11 accounts, languages Python 74.3% and TypeScript 20.6%, the README "lightweight runtime provenance data management and data observability system" quote. flowcept.org, the readthedocs site and the repo all resolve. All verified.
 - Second primary source: ORNL's FY2025 LDRD report (OSTI 3025007) describes FlowCept as the part of an LDRD project that captures "runtime provenance, metadata, and references to large data objects", alongside Zambeze. Rule 13 is CORROBORATED.
 - No corrections needed.

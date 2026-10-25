@@ -1,10 +1,10 @@
-# Batch 05 scout - 2026-10-24 [Scout OSTI 2026-10-24]
+# Batch 05 discovery notes (OSTI checks), 2026-10-24
 Batch-1 notes were only appended to, with marker "Scout OSTI 2026-10-24". No other fields were changed.
 
 ## Batch-1 OSTI results (records API, product_type=Software)
 | id | ORNL research org on OSTI? | record | OSTI license vs repo |
 |---|---|---|---|
-| resolve, tasmanian, exatn, hydragnn, gridkit, thermochimica, datafed | yes (earlier Fact Checker/Reader findings, not re-run) | see verification/log.md | per earlier findings |
+| resolve, tasmanian, exatn, hydragnn, gridkit, thermochimica, datafed | yes (earlier fact-check and reading-pass findings, not re-run) | see verification/log.md | per earlier findings |
 | additivefoam | yes (prior; also seen this run) | code-108345 | not compared |
 | cyberwheel | yes (prior; also seen this run) | code-134699 | not compared |
 | mantid, xolotl | no hits (prior findings) | - | - |
@@ -33,10 +33,10 @@ Totals: 9 confirmed ORNL (all from earlier findings), 0 newly confirmed, 9 with 
 - OSTI searches on grid, microgrid, battery, isotope and HFIR.
 - OpenStudio and BEopt (ORNL contributions).
 - olcf/pkpass.
-- Connector's targets: Cabana/Kokkos, XACC, HiOp, SUNDIALS, ExaGO.
+- The connections-pass targets: Cabana/Kokkos, XACC, HiOp, SUNDIALS, ExaGO.
 
 
-## Reader open questions (lookups 2026-10-24)
+## Open questions from the reading pass (lookups 2026-10-24)
 All accessed 2026-10-24. Every page was opened directly; none of these rest on search snippets alone. No forms were submitted and no logins were used.
 
 ### 1. AutoBEM "Model America" v1.0: public download?

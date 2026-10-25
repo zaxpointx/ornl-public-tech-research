@@ -40,7 +40,7 @@ Thermochimica is a code library for chemical thermodynamics. Give it a mix of el
 - https://github.com/ORNL-CEES/thermochimica (README, LICENSE, repo tree), accessed 2026-10-24
 - https://api.github.com/repos/ORNL-CEES/thermochimica (+ /languages, /releases, /tags, /contributors), accessed 2026-10-24
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Retagged INFERRED -> KNOWN via INL report OSTI 3374533: Gibbs energy minimizer, MOOSE integration, nuclear (MSR) materials use.
 - Corrected: CEES was UNKNOWN; GitHub org page says Computational Engineering and Energy Sciences Group at ORNL.
 - Corrected: src/ list was missing debug, exec, module.

@@ -50,7 +50,7 @@ Researchers testing automated-driving controllers against realistic traffic. A c
 - https://api.github.com/repos/ORNL-Real-Sim/FIXS (plus /languages, /releases, /contributors)
 - https://www.osti.gov/doecode/biblio/110562
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done. Verified against the GitHub API and the README/LICENSE (main, 2026-10-24) plus DOE CODE 110562.
 - Verified: MIT, "Copyright (c) 2023 UT-Battelle, LLC", last push 2026-10-23, C++ 53.0% / Python 36.6%, homepage real-sim.readthedocs.io, and DOE CODE DOI 10.11578/dc.20230727.1 with VTO as sponsor.
 - README: "Real-Sim Project Lead: Oak Ridge National Lab", team UGA and UT-Dallas, "Primary Maintainer: University of Georgia", and "It is part of the core tools of EEMS."

@@ -1,12 +1,12 @@
 # Signals: hecbench
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - Many people have touched it in a light way. There are 119 author emails in total, 43 of them active in 2020, and the top two authors have 24% and 19% of commits. [KNOWN: git log] Read: a central maintainer accepts many small benchmark contributions. [INFERRED, medium]
-- Activity jumped again in 2026, with 1,124 commits so far after 324 in 2024. [KNOWN] Read: renewed investment, which fits its use in recent LLM-for-HPC papers that Fact Checker found. [INFERRED, low]
+- Activity jumped again in 2026, with 1,124 commits so far after 324 in 2024. [KNOWN] Read: renewed investment, which fits its use in recent LLM-for-HPC papers that the fact-check pass found. [INFERRED, low]
 - Web archive captures of github.com/ORNL/HeCBench only start in 2026-04, even though the repo dates from 2020-08-06 on GitHub. A fork back from a personal account was made on 2026-02-27. [KNOWN: availability API, GitHub API] Read: the repo was probably transferred into the ORNL org in early 2026. [INFERRED, medium]
-- It has no CI, no releases and no tags. [KNOWN] I didn't run a keyword count of supercomputer names this round. Reader's folder counts already show the GPU vendor spread.
+- It has no CI, no releases and no tags. [KNOWN] I didn't run a keyword count of supercomputer names this round. The reading-pass folder counts already show the GPU vendor spread.
 
 ### Signal ledger
 | Signal | Value | Source | Tag |
@@ -18,7 +18,7 @@
 | Funding | No OSTI software record. Not checked further this round | OSTI | [UNKNOWN] |
 | Wayback | github.com/ORNL/HeCBench nearest captures 2026-04-30 and 2026-10-06 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16; DVC data hosting not examined). Source repo is ORNL/HeCBench only; the zjin-lcf fork is not used as a source. Institution names from OpenAlex/OSTI, no individuals profiled. Detail in connections/map.md links 152-158.
 
 **Outside vs inside:** The inside describes a benchmark suite of the same kernels in CUDA, HIP, SYCL and OpenMP for studying portability. Outside, HeCBench has the broadest visible use of any ORNL tool checked so far: 122 forks and dozens of papers from universities, LLNL, Argonne and vendor co-authors that use it as a test corpus, especially for compilers and LLM code translation, even though GitHub shows 0 dependents (expected for a benchmark suite).

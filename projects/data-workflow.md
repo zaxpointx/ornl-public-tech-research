@@ -45,7 +45,7 @@ This is the behind-the-scenes plumbing that watches every experiment at ORNL's n
 - https://api.github.com/repos/neutrons/data_workflow (+ /languages, /releases, /contributors), accessed 2026-10-24
 - https://data-workflow.readthedocs.io, linked, not opened this pass
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Corrected: Mantid link retagged KNOWN after reading https://github.com/neutrons/post_processing_agent README.
 - Verified: BSD-3 copyright 2022 ORNL; created 2012-08-15; releases 3.10.0 (2026-07-16), 3.11.0 (2026-08-04), 3.12.0 (2026-10-19) with rc tags; Python 70.3 / JS 15.9 / HTML 9.7 / CSS 2.9; 35 contributor pages; README lists stomp, django, PostgreSQL 17+, MySQL option, ActiveMQ and badge 5504; glossary covers WebMon at SNS and HFIR and DASMON PVs; developer docs link monitor.sns.gov and the sibling repos; six Dockerfiles, nginx, pixi.lock confirmed.
 - No DOE CODE record found for data_workflow. Owning division stays [UNKNOWN].

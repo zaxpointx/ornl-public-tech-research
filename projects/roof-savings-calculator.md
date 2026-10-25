@@ -1,8 +1,8 @@
 # Roof Savings Calculator Suite
 
-> DRAFT, `draft-osti-only` (2026-10-24, lead's call). The only public source is an OSTI record, with no docs page. Kept as a draft, not counted as a full brief.
+> DRAFT, `draft-osti-only` (2026-10-24, editorial decision). The only public source is an OSTI record, with no docs page. Kept as a draft, not counted as a full brief.
 - Official page: https://www.osti.gov/biblio/1238771 (OSTI software record, 2013-11-22). Public web front end named in the record: www.roofcalc.com
-- Repo: none found [KNOWN: Scout catalog note]
+- Repo: none found [KNOWN: catalog note]
 - Docs: the OSTI abstract. roofcalc.com was unreachable on 2026-10-24 (one fetch returned a 404 "Site Not Configured" page). [KNOWN for that fetch]
 - License: [UNKNOWN]
 - Status: [UNKNOWN] (the record dates from 2013)
@@ -39,14 +39,14 @@ Homeowners, roofers and building managers deciding whether a reflective roof pay
 - KNOWN: purpose, input list, AtticSim plus DOE-2.1E engine, sponsor, ORNL record.
 - INFERRED: definitions, the EnergyPlus succession.
 - UNKNOWN: license, code, current status.
-- Scout update 2026-10-24: roofcalc.com returned a 404 "Site Not Configured" page on one fetch [KNOWN for that fetch]. OSTI 1651267 (2019, ORNL) says RSC is a web app first developed in 2010 [KNOWN: Fact Checker read the OSTI 1651267 abstract]. There's no newer software record.
+- Discovery update 2026-10-24: roofcalc.com returned a 404 "Site Not Configured" page on one fetch [KNOWN for that fetch]. OSTI 1651267 (2019, ORNL) says RSC is a web app first developed in 2010 [KNOWN: the fact-check pass read the OSTI 1651267 abstract]. There's no newer software record.
 
 ## Sources (accessed 2026-10-24)
 - https://www.osti.gov/biblio/1238771
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done. OSTI 1238771 refetched: 2013-11-22, BTO sponsor, 4 authors, AtticSim + DOE-2.1E.
 - Corrected: "attic ventilation" is now "above-sheathing ventilation", which is the input the record names.
-- Reworded the roofcalc line to "unreachable on 2026-10-24", as the lead asked.
+- Reworded the roofcalc line to "unreachable on 2026-10-24", per editorial decision.
 - OSTI 1651267 verified (2019-12-01, ORNL, USDOE): "a web-based application first developed in 2010" covering "over 200 U.S. locations".
 - Added the rule 12 walkthrough.

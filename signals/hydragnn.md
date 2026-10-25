@@ -1,6 +1,6 @@
 # Signals: hydragnn
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a fresh clone of https://github.com/ORNL/HydraGNN plus the OSTI API, unless another source is given.
 
 ### What the outside tells us that the inside doesn't
@@ -8,7 +8,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 - **The origin date disagrees.** An ornl.gov news story says the team "started developing HydraGNN" in 2022. [KNOWN: https://www.ornl.gov/news/lupo-pasini-receives-nersc-early-career-achievement-award] Git's first commit is 2020-10-08, and the software DOI is 10.11578/dc.20211019.2 (2021). [KNOWN] The news date likely marks the funded program, not the code. [INFERRED, medium]
 - **Frontier is the main target, but public CI is CPU-only.** GitHub Actions runs on `ubuntu-latest` with CPU PyTorch wheels. [KNOWN: .github/workflows/CI.yml] At HEAD, "frontier" appears in 127 files, "crusher" (Frontier's early test system) in 41, "rocm" in 74 and "gfx90a" (the AMD MI250X GPU architecture) in 20. Perlmutter (22), Aurora (11) and Andes (6) trail. `scripts/hpc/` has olcf, nersc and alcf subfolders, added 2026-08-21. [KNOWN: git grep counts] GPU testing happens on the machines themselves, not in public CI. [INFERRED, high]
 - **There's a GPU-vendor collaborator.** DOE CODE code-180990 (HydraGNN v5.0, 2026-05-12) lists Advanced Micro Devices (AMD) as a research org next to ORNL. [KNOWN: osti.gov/biblio/code-180990]
-- **PyPI lags the releases.** Git tags show v4.0 (2025-08-15) and v5.0 (2026-04-14), while PyPI still serves 3.0 (Connector, below). Users who `pip install` get a version two majors old. [KNOWN: tags; INFERRED: practical effect]
+- **PyPI lags the releases.** Git tags show v4.0 (2025-08-15) and v5.0 (2026-04-14), while PyPI still serves 3.0 (the connections pass, below). Users who `pip install` get a version two majors old. [KNOWN: tags; INFERRED: practical effect]
 
 ### Signal ledger
 | Signal | What it suggests | Tag, source | Confidence |
@@ -20,11 +20,11 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 | `examples/multidataset_hpo_sc26/` added 2026-02-13 (38 commits), with Aurora PBS job scripts | Prepared for an SC26 (Supercomputing 2026) submission | [KNOWN: folder; INFERRED: purpose] | medium |
 | Sponsor fields: LDRD + ASCR (manuals 2224153, 3367035); LDRD + BES (3252731); OE + ASCR (3377970); SC (code-164024, code-180990). The ornl.gov news story credits ORNL's AI Initiative (AI for Scientific Discovery thrust) | A stack of funders: internal seed money, then Office of Science, now Office of Electricity too | [KNOWN: OSTI API; ornl.gov news] | high |
 | Research orgs on 2538215 and 1893210 include LBNL/NERSC | A NERSC partnership, consistent with the Perlmutter scripts | [KNOWN: OSTI API] | high |
-| Job trace: a 2025 public postdoc announcement naming HydraGNN expansion | Possible new funded projects in late 2025 | [OUT OF SCOPE, rule 16: the only source was a post on a personal social media account, so the link and quote were removed by Fact Checker 2026-10-24. Reinstate only if an official ORNL job posting with the same title is found.] | none |
-| Commit author metadata that points at lab systems | Not analyzed | [OUT OF SCOPE, rule 16: it would describe ORNL infrastructure; row removed by Fact Checker 2026-10-24] | none |
+| Job trace: a 2025 public postdoc announcement naming HydraGNN expansion | Possible new funded projects in late 2025 | [OUT OF SCOPE, rule 16: the only source was a post on a personal social media account, so the link and quote were removed by the fact-check pass 2026-10-24. Reinstate only if an official ORNL job posting with the same title is found.] | none |
+| Commit author metadata that points at lab systems | Not analyzed | [OUT OF SCOPE, rule 16: it would describe ORNL infrastructure; row removed by the fact-check pass 2026-10-24] | none |
 | Wayback captures of the repo page: closest returned are 2022-07-22, 2024-12-13 and 2026-06-06 | Light archive interest. The availability API only returns the nearest capture, so these are bounds, not a full list | [KNOWN: archive.org/wayback/available] | low |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only; institution names come from OpenAlex author affiliations, no individuals profiled.
 
 **Outside vs inside:** The brief infers HydraGNN is for scientists screening molecules and materials with AI, and reads 127 stars / 48 forks as a modest outside user base. The outside traces say most visible use is ORNL's own: the citing works that mention HydraGNN in OpenAlex are almost all ORNL-authored (sometimes with LBNL, AMD, Utah), and GitHub shows no real dependent repos.
@@ -44,7 +44,7 @@ Accessed 2026-10-24 (ET). Artifacts only; institution names come from OpenAlex a
 Reasoning: PyPI presence but low downloads, no conda/Spack, no real dependents, and ORNL-authored citing work suggest an ORNL-led research code used mainly by its own team and DOE HPC collaborators [INFERRED, medium confidence]. Matching on "hydragnn" in OpenAlex is a mention, not proof of use.
 
 
-## Sweep notes (ORNL Fact Checker, 2026-10-24)
+## Sweep notes (fact-check pass, 2026-10-24)
 - Re-fetched and verified: OSTI 3377970 (OE + ASCR sponsors, 2026-07-01) and 3239722 (2026-07-14), DOE CODE code-180990 (AMD listed as research org), the ornl.gov news story ("In 2022, Lupo Pasini and his team started developing HydraGNN"; AI Initiative funding), CI.yml (`ubuntu-latest`, CPU PyTorch wheels), tags v4.0 2025-08-15 and v5.0 2026-04-14, PyPI 3.0 (tag v3.0 is 2023-12-12, so two majors behind holds).
-- Not re-run: git grep counts and per-year commit and author counts (Scout's clone). Taken as reported.
+- Not re-run: git grep counts and per-year commit and author counts (the discovery-pass clone). Taken as reported.
 - Corrected: the job trace row (personal social post) and the lab-system author metadata row are now out of scope under rule 16.

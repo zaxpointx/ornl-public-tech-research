@@ -63,9 +63,9 @@ XACC was an early attempt at a vendor-neutral quantum software stack from a nati
 - https://github.com/eclipse-xacc/xacc (README.md, NOTICE, LICENSE.EPL, LICENSE.EDL, VERSION, xacc/, quantum/, python/, tpls/, .github/workflows/)
 - https://api.github.com/repos/eclipse-xacc/xacc (plus /languages, /releases, /tags, /branches, /contributors)
 - https://xacc.readthedocs.io (linked, not reviewed in depth)
-- https://www.osti.gov/doecode/biblio/5041 (per Scout's catalog row)
+- https://www.osti.gov/doecode/biblio/5041 (per the catalog row)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Confirmed the DOE CODE record: OSTI API code-5041 is "XACC - eXtreme-scale Accelerator Programming Framework", Software, dated 2017-01-20. OSTI 1339995 has the same title, dated 2016-11-18. Both list ORNL as research org, USDOE as sponsor and contract AC05-00OR22725. The rule 13 citation now points at the OSTI records instead of the catalog row.
 - Verified: NOTICE (dual EPL-1.0/EDL-1.0, UT-Battelle 2016-2018, Eclipse trademarks), GitHub API BSD-3-Clause, not archived, created 2017-09-19, pushed 2024-08-13, 0 releases, 0 tags, VERSION 0.1.16, last master commit 2023-08-01 and last xacc-devel commit 2023-03-02 (commit feeds), contributors 30 with anonymous.
 - The 2024-08-13 push stays INFERRED as cause unknown. No public page shows which ref it was, so I didn't guess.

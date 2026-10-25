@@ -30,7 +30,7 @@
 It's the "show me my plot" step at the end of the neutron data pipeline. [INFERRED] It's a good small, readable example of a Django service with authenticated uploads, which is useful for studying web-app security basics. [INFERRED]
 
 ## Related projects
-- data-workflow (`data-workflow`): Connector's map link 91 ties the two. [KNOWN per Connector; not re-read by me]
+- data-workflow (`data-workflow`): map link 91 ties the two. [KNOWN per map; not re-read by me]
 - post-processing-agent (`post-processing-agent`): the likely uploader of live plots. [INFERRED: no upload call checked in the agent's code]
 - Mantid (`mantid`): makes the data that ends up plotted. [INFERRED]
 
@@ -44,7 +44,7 @@ It's the "show me my plot" step at the end of the neutron data pipeline. [INFERR
 - https://livedata-ornl.readthedocs.io/en/latest/
 - https://api.github.com/repos/neutrons/live_data_server (plus /languages, /releases, /contributors)
 
-## Sweep 2 notes (ORNL Fact Checker, 2026-10-24)
+## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Sweeps 1 and 2 done against the GitHub API and raw files on `next`.
 - Verified:
   - BSD-3 with "Copyright (c) 2024, OAK RIDGE NATIONAL LABORATORY", created 2016-05-27, last push 2026-10-21, HTML 47.7% / Python 45.2%, contributors 14.

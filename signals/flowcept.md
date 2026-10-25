@@ -1,6 +1,5 @@
-<!-- Scout section goes above -->
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The team is growing. Active commit authors went from 6 in 2024 to 13 in 2025, with 7 of those new. 2026 has 9 so far. [KNOWN: git log --all, author date] Read: the project is being staffed up, not just maintained. [INFERRED, medium]
@@ -22,7 +21,7 @@
 | Wayback | Only one capture found, nearest 2024-04-13 | archive.org availability API | [KNOWN], but only bounds the dates |
 | Job postings | Not searched this round | n/a | [UNKNOWN] |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md link 115.
 
 **Outside vs inside:** The inside describes provenance capture for AI and science workflows across facilities. Outside, Flowcept has the most PyPI download activity of the tools checked so far but no visible dependents; nearly all papers mentioning it are ORNL-authored, with one outside-only paper (a Brazilian university, 2026).

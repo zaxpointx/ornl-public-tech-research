@@ -1,6 +1,6 @@
 # Signals: xacc
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - Development stopped in 2023. Commits fell from 887 in 2020 to 135 in 2022 and 32 in 2023, and the last commit on any branch was 2023-08-01. [KNOWN: git log --all] GitHub's 2024-08-13 push timestamp doesn't match any commit date in the history. [KNOWN: GitHub API vs git log] Read: that push was probably repo housekeeping, such as the org move or branch changes, not new code. [INFERRED, low]
@@ -19,7 +19,7 @@
 | Funding | code-5041 lists USDOE generically | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | ORNL-QCI/xacc 2024-10-18 and 2026-06-07. eclipse-xacc/xacc 2025-01-20 and 2025-10-28 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md links 144, 159-164.
 
 **Outside vs inside:** The inside presents XACC as a hardware-agnostic framework for quantum-classical programming across many vendors' QPUs. Outside, it is heavily cited (143 citing works, two thirds with no ORNL author) but lightly installed: 35 PyPI downloads last month, no conda-forge or Spack package, 0 GitHub dependents, and code quiet since 2023-2024. Hands-on users visible in public traces are ORNL groups, ORNL plugins (TNQVM, QIR-EE's optional backend) and partners.

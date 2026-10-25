@@ -1,10 +1,9 @@
-<!-- Scout section goes above -->
 
-## Scout: history, build targets, funding (accessed 2026-10-24)
+## History, build targets, funding (discovery pass) (accessed 2026-10-24)
 
 ### What the outside tells us that the inside doesn't
 - The project is mature and slowing down. Commits per year went 1,214 (2018), 289 (2021), 83 (2024), 44 (2025), and 12 so far in 2026. Releases still come yearly. [KNOWN: git log, tags] Read: a stable library in maintenance mode, not abandoned. [INFERRED, high]
-- One author made 68% of all commits. [KNOWN] That matches the single-person copyright line Reader found. [INFERRED, medium]
+- One author made 68% of all commits. [KNOWN] That matches the single-person copyright line the reading pass found. [INFERRED, medium]
 - CI covers macOS, Ubuntu and Windows builds, but there's no GPU runner. The GPU backends (cuda in 46 files, hip in 29, rocm in 17, sycl in 12) are built but not tested in public CI. [KNOWN: workflows, grep; INFERRED: not tested] No named supercomputer appears. [KNOWN]
 - DOE CODE code-6305 dates the software to 2013-09-19, about four years before the first GitHub commit (2017-10-16). [KNOWN] Read: there's earlier history outside this repo. [INFERRED, high]
 
@@ -18,7 +17,7 @@
 | Funding | code-6305 lists USDOE generically. A keyword search for "TASMANIAN" on OSTI picks up many unrelated Tasmania records, so sponsor counts from it aren't usable | OSTI API | [KNOWN] for code-6305. The program is [UNKNOWN] |
 | Wayback | Nearest captures 2018-06-17, 2022-02-17 and 2026-05-12 | availability API | [KNOWN], but only bounds the dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 131-135.
 
 **Outside vs inside:** The inside offers sparse grids and DREAM sampling for uncertainty quantification. Outside, TASMANIAN is the best-packaged ORNL tool checked so far: a Spack package that the xSDK bundle references, plus PyPI. That points to reach through DOE HPC software stacks rather than through GitHub dependents (0).

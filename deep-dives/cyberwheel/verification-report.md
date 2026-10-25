@@ -1,6 +1,6 @@
 # Cyberwheel deep dive: verification report
 Status: VERIFIED (2026-10-24). OSTI 3827147 as a successor stays UNVERIFIABLE.
-Owner: ORNL Fact Checker. 2026-10-24. Covers synthesis.md, lineage.md, timeline.md, system-flow.md, people-roles.md and claim-boundary.md. The source list is in source-ledger.md and the gaps are in missing-artifacts.md. Every row is in verification/log.md.
+Written in the fact-check pass, 2026-10-24. Covers synthesis.md, lineage.md, timeline.md, system-flow.md, people-roles.md and claim-boundary.md. The source list is in source-ledger.md and the gaps are in missing-artifacts.md. Every row is in verification/log.md.
 
 ## Result
 The core picture holds. Cyberwheel is a public, MIT-licensed, LDRD-funded ORNL research environment for training RL cyber-defense agents. v2.0 added emulation through Sandia's FIREWHEEL. The repo has been quiet since 2025-08-26.
@@ -12,7 +12,7 @@ The core picture holds. Cyberwheel is a public, MIT-licensed, LDRD-funded ORNL r
 - Unverifiable: what Firewheel modification was made, who owns it at division level, and outside authors' affiliations.
 
 ## Wording to keep
-Use "research environment", "developed", "showed". Don't use "deployed", "adopted", "dead", "fork", or "trained on 100,000 nodes". Reader's claim-boundary.md matches this report after the row 7 fix.
+Use "research environment", "developed", "showed". Don't use "deployed", "adopted", "dead", "fork", or "trained on 100,000 nodes". The reading-pass claim-boundary.md matches this report after the row 7 fix.
 
 ## Scope check
 Everything is public: repo, OSTI/DOE CODE, a published LDRD report, papers. There's no restricted, internal or non-public content. Nothing implies we're affiliated with ORNL. The people named are limited to public credit lines (people-roles.md).

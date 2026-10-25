@@ -45,7 +45,7 @@ Cyberwheel is a training ground for AI cyber defenders. It simulates a computer 
 - https://api.github.com/repos/ORNL/cyberwheel (+ /languages, /releases, /tags, /contributors), accessed 2026-10-24
 - https://doi.org/10.1145/3675741.3675752 and https://arxiv.org/pdf/2404.10788.pdf, linked from the README, not opened
 
-## Fact-check notes (ORNL Fact Checker, 2026-10-24)
+## Fact-check notes (2026-10-24)
 - Retagged: "real virtual machines" isn't in the README; split into KNOWN emulation + INFERRED VMs.
 - Added: DOE CODE code-134699 and OSTI 2478356 confirm ORNL; possible LDRD funding (INFERRED).
 - Verified: MIT (2024 an individual developer (named in the LICENSE)), v2.0 multi-agent/multi-network (100/1,000/10,000 hosts)/FIREWHEEL, Python 3.10 + Poetry + Graphviz, Gym/W&B/Dash, Next Steps list, tags v1.0.0/v1.1.0/v2.0, six ornl.gov contacts, arXiv 2404.10788 title. ACM DOI returned 403 (publisher block), paper confirmed through OSTI.
