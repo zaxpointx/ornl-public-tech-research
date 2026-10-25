@@ -112,3 +112,16 @@
 | 2026-10-24 | mantid | ORNL-relevant PyPI package; conda-forge feedstock; Spack; GitHub dependents count | registries; network/dependents | PyPI name unrelated / 404 / 404 / no count shown (connections usage pass) |
 | 2026-10-24 | oncat | conda-forge / Spack for pyoncat; ONCat software paper | registries; api.openalex.org | 404; none found (connections usage pass) |
 | 2026-10-24 | exago / tnqvm | ExaGO in ReSolve-related build; XACC tpls for shared CppMicroServices | ExaGO CMakeLists.txt; eclipse/xacc contents API | no ReSolve in ExaGO CMake; XACC tpls listing returned nothing, tie not added (connections pass 20) |
+| 2026-10-24 | live-data-server | OSTI records naming "live data server" (sponsor fields) | osti.gov API | 0 matching records (signals history pass) |
+| 2026-10-24 | post-processing-agent | OSTI records naming "post processing agent" | osti.gov API | 0 matching records (signals history pass) |
+| 2026-10-24 | data-workflow | OSTI software record for the neutrons data_workflow repo | osti.gov API | only other-lab namesakes found (signals history pass) |
+| 2026-10-24 | stellarator-tools | a primary source naming ORNL (copyright, research org, repo owner) | repo LICENSE and README; PARVMEC, LIBSTELL, SIESTA LICENSE and README; GitHub org profile (no name or description); OSTI API q=V3FIT, "SIESTA stellarator", Stellarator-Tools, ORNL-Fusion | none: licenses say "Copyright (c) 2020 ORNL-Fusion" (a GitHub org name), org profile is blank, no OSTI record names the suite (reading pass, batch 10b) |
+| 2026-10-24 | pyxodr3d | a primary source naming ORNL | repo README, LICENSE, NOTICE; OSTI API q=pyxodr3d | none: NOTICE assigns copyright to an individual, no ORNL wording, no OSTI hits; NOTICE also still has an unfilled placeholder for the original libopendrive copyright (reading pass, batch 10b) |
+| 2026-10-24 | stork | identity of "Stork" used by Finch and 3DThesis: submodule, URL, docs link, public ORNL-MDF repo | both repos (fresh clones, .gitmodules, CMake, README); GitHub repo search org:ORNL-MDF | none found; only code names and a CMake find_package (connections pass 21) |
+| 2026-10-24 | exaca | ExaCA naming 3DThesis or AdditiveFOAM | LLNL/ExaCA README and docs (fresh clone) | not found; only Finch named (connections pass 21) |
+| 2026-10-24 | autobem | PyPI / conda-forge / Spack package; public repo | registries; catalog | 404; no repo (connections usage pass) |
+| 2026-10-24 | data-workflow | PyPI / conda-forge / Spack; software paper | registries; api.openalex.org | 404; none found (connections usage pass) |
+| 2026-10-24 | daymet | `daymet` on PyPI / conda-forge / Spack | registries | 404 (connections usage pass) |
+| 2026-10-24 | e3sm-elm | `e3sm` on PyPI / conda-forge / Spack; GitHub dependents count | registries; network/dependents | 404; no count shown (connections usage pass) |
+| 2026-10-24 | energyplus | official PyPI package; conda-forge feedstock; GitHub dependents count | registries; network/dependents | only unofficial PyPI packages; 404; no count shown (connections usage pass) |
+| 2026-10-24 | fixs | PyPI / conda-forge / Spack | registries | 404 (connections usage pass) |

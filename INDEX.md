@@ -4,7 +4,7 @@ Curated entry point. Independent research from public sources only. We are not a
 
 Status key: **verified** means the brief was fact-checked (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means the fact-check pass finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
 
-Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2 OSTI-only drafts (both verified), so 40 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39 and batch 09 (ExaTN, new; GridKit, rewritten) to 40. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
+Projects: 68 cataloged, 46 full briefs linked (43 verified, 3 unverified) plus 2 OSTI-only drafts (both verified), so 45 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39 batch 09 (ExaTN, new; GridKit, rewritten) to 40, and batch 10 (ReSolve, 3DThesis, Finch, AdditiveFOAM, TNQVM) to 45. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
 
 ## AI/data
 - [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified; one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), the fact-check pass rechecked and confirmed.
@@ -15,7 +15,7 @@ Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2
 
 ## HPC
 - [HeCBench](projects/hecbench.md): 555 small GPU benchmarks, each in some or all of CUDA, HIP, SYCL and OpenMP, for comparing NVIDIA, AMD and Intel GPUs (ORNL and Argonne in LICENSE). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/hecbench.md).
-- [ReSolve](projects/resolve.md): GPU linear-equation solvers, used by GridKit. Unverified.
+- [ReSolve](projects/resolve.md): GPU linear-equation solvers, used by GridKit. Batch 10. Verified (two sweeps, 2026-10-24).
 - [TASMANIAN](projects/tasmanian.md): sparse-grid stand-in models and DREAM sampling for estimating uncertainty in simulations. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/tasmanian.md).
 - [Zambeze](projects/zambeze.md): orchestrates workflow tasks across large HPC systems and edge devices; can load Flowcept to record runs. Batch 07-08. Status unknown (last push 2024-09-13). Verified (two sweeps, 2026-10-24). [Signals](signals/zambeze.md).
 - [MatRIS](projects/matris.md): BLAS and LAPACK math library built on the IRIS runtime (IRIS is a required build dependency); GEMM demo is a proof of concept. Batch 07-08. Status unknown (editorial decision 2026-10-24: no push since 2025-10-23, no tagged release). Verified (two sweeps, 2026-10-24). [Signals](signals/matris.md).
@@ -26,9 +26,9 @@ Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2
 
 ## Neutrons
 - [Mantid](projects/mantid.md): multi-institution framework for reducing and analyzing neutron and muon scattering data. ORNL Neutron Sciences is one co-owner. Verified.
-- SNAPRed: app for handling data from the SNAP instrument at SNS, built on Mantid. Stub.
+- [SNAPRed](projects/snapred.md): app for handling data from the SNAP instrument at SNS, built on Mantid. Batch 11. Unverified.
 - [SNS Data Workflow Manager](projects/data-workflow.md): tracks automated processing of SNS and HFIR experiment data and ties into Mantid through livereduce. Verified.
-- PyRS: reduces residual-stress diffraction data from HFIR's HB2B instrument. Stub.
+- [PyRS](projects/pyrs.md): works out hidden stress inside metal parts from neutron scans on HFIR's HB2B instrument, without cutting them open. Batch 11. Unverified.
 - [ONCat](projects/oncat.md): searchable catalog of SNS and HFIR neutron experiment data, with an API and Python client (pyoncat on PyPI). No public source repo; the pyoncat client ships GPL-3.0. Batch 05. Verified. Editorial decision 2026-10-24: public overview/docs pages and any public client repo only; no API calls, no logins; anything needing credentials is out of scope (RULES.md item 16).
 - [Post Processing Agent](projects/post-processing-agent.md): runs automated data reduction and cataloging when SNS and HFIR runs finish. Verified.
 - [Live Data Server](projects/live-data-server.md): serves plots of neutron experiment data while runs are in progress (Django and Postgres). Verified.
@@ -39,7 +39,7 @@ Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2
 - [Xolotl](projects/xolotl.md): simulates damage building up in fusion-reactor walls and fission fuel as clusters of trapped atoms move and merge (C++ on PETSc and Kokkos; README says under development). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/xolotl.md).
 - Stellarator-Tools: community codes for modeling stellarator fusion devices (includes PARVMEC and LIBSTELL). Stub.
 - FAR3d: models plasma instabilities driven by fast particles in tokamaks and stellarators. Stub.
-- KORC: follows runaway electrons in fusion plasmas. Stub.
+- [KORC](projects/korc.md): follows runaway electrons in fusion plasmas. Batch 11. Unverified.
 - [GITR](projects/gitr.md): tracks impurity particles worn off fusion device walls. Verified.
 - [SCALE](projects/scale.md): nuclear safety analysis suite (reactor physics, criticality, shielding, spent fuel). Public overview only, since the software is distributed through a controlled channel. Verified.
 - ORIGEN Library Manager (OLM): manages the reactor data libraries SCALE uses for fast spent-fuel calculations. Stub.
@@ -60,16 +60,16 @@ Projects: 68 cataloged, 41 full briefs linked (38 verified, 3 unverified) plus 2
 - [LandScan](projects/landscan.md): population distribution datasets down to about 100 m resolution (a dataset, not software). Licensed CC BY 4.0 per the site's own text. Verified.
 
 ## Materials
-- AdditiveFOAM: heat and mass transfer simulation for additive manufacturing, built on OpenFOAM. Stub, row checked.
-- [3DThesis](projects/3dthesis.md): fast thermal model of melt pools in 3D printing. Unverified.
+- [AdditiveFOAM](projects/additivefoam.md): full simulation of heat and molten-metal flow in 3D printing, built on OpenFOAM. Batch 10. Verified (two sweeps, 2026-10-24).
+- [3DThesis](projects/3dthesis.md): fast thermal model of melt pools in 3D printing; the quick-estimate rung of the 3D-printing heat models. Batch 10. Verified (two sweeps, 2026-10-24).
 - [Myna](projects/myna.md): links additive manufacturing simulations with experiment databases. Verified.
-- [Finch](projects/finch.md): thermal solver for additive manufacturing, built on the Cabana library. Unverified.
+- [Finch](projects/finch.md): thermal solver for additive manufacturing, built on the Cabana library; faster GPU grid model between 3DThesis and AdditiveFOAM. Batch 10. Verified (two sweeps, 2026-10-24).
 - [adamantine](projects/adamantine.md): simulates heat transfer and thermomechanics in additive manufacturing (ORNL is a research org per OSTI 2472702; Apache-2.0 with LLVM exception since release 1.1, 2026-01-23). Batch 05. Verified.
 
 ## Quantum
 - [ExaTN](projects/exatn.md): breaks math too big for memory (tensor networks) into pieces that run across GPUs; it is the engine TNQVM uses to simulate quantum circuits for XACC. Status unknown (no commits since mid-2023, no tagged release). Batch 09. Verified (two sweeps, 2026-10-24).
 - [QIR-EE](projects/qiree.md): runs quantum programs written in QIR (an LLVM-based format) on qsim, XACC backends or a Lightning simulator; one release, v0.1.0 (2026-05-05). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/qiree.md).
-- TNQVM: tensor-network quantum circuit simulator that plugs into XACC (UT-Battelle header, OSTI names ORNL). Batch 08 stub, status unknown; README says BSD-3 but no LICENSE file in the repo.
+- [TNQVM](projects/tnqvm.md): tensor-network quantum circuit simulator that plugs into XACC (UT-Battelle header, OSTI names ORNL). Batch 10. Verified (two sweeps, 2026-10-24). Status unknown; README says BSD-3 but no LICENSE file in the repo.
 - [XACC](projects/xacc.md): framework for programming quantum computers and simulators from C++ or Python; UT-Battelle copyright plus DOE CODE code-5041 (ORNL tie CORROBORATED); EPL-1.0 or EDL-1.0. Batch 07-08. Status unknown (last default-branch commit 2023-08-01); no successor named in public sources. Verified (two sweeps, 2026-10-24). [Signals](signals/xacc.md).
 
 ## Cyber

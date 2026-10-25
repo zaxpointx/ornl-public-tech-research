@@ -19,7 +19,7 @@
 | Funding | 4 OSTI hits: USDOE x2, LDRD, EERE x2 | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2024-04-19 and 2025-10-05 | availability API | [KNOWN], only bounds dates |
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. Refreshes map links 123, 126.
 
 **Outside vs inside:** Outside traces are thin: no packages, no dependents, and 4 of the 6 papers citing the JOSS paper include an ORNL author, so use is mostly inside ORNL's additive-manufacturing group.

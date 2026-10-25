@@ -352,3 +352,13 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | finch | Contributors 4 with anon / 3 accounts | GitHub contributors Link header | verified | |
 | 2026-10-24 | finch | Rule 13 CORROBORATED on LICENSE alone | OSTI API code-122647 | corrected | one source isn't CORROBORATED; added DOE CODE code-122647 (ORNL, 2024-02-23) as the second |
 | 2026-10-24 | finch | Sweep 2: brief checked | as above | verified | 3 checks: 2 verified, 1 corrected, 0 unverifiable |
+| 2026-10-24 | additivefoam | License lines, README scope quote, build needs, tags, dates, 68 commits by year, CI | fresh clone of ORNL/AdditiveFOAM, README | verified | |
+| 2026-10-24 | additivefoam | Contributors 6 with anon / 5 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | additivefoam | Rule 13: DOE CODE code-108345 lists ORNL | OSTI API code-108345 | verified | 2023-06-13, sponsors SC and NNSA |
+| 2026-10-24 | additivefoam | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | tnqvm | No LICENSE, README BSD-3, header copyright, VERSION 0.1.9, no tags, 636 commits by year, dates, CI files | fresh clone of ORNL-QCI/tnqvm | verified | |
+| 2026-10-24 | tnqvm | Contributors 11 with anon / 5 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | tnqvm | Rule 13 OSTI sources (were not re-fetched) | OSTI API 2583844, 2251617 | verified | both ORNL; 2251617 is a conference paper; citation updated |
+| 2026-10-24 | tnqvm | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | gauntlet (signals) | 6 commits 2025-07-09 to 2025-07-18, no tags or CI; DOE CODE code-157761 ORNL with FEMA and FEMP sponsors | fresh clone of ORNL/gauntlet; OSTI API code-157761 | verified | |
+| 2026-10-24 | mantid (signals) | 2014 Mantid paper has 1,807 citing works, 696 with an ORNL author | OpenAlex works W2036295204, cites filter | verified | total 1,807 matches exactly; ORNL subset came out 689 using ORNL's ROR id, a small difference from filter choice or index drift; doesn't change the "mostly outside" reading |

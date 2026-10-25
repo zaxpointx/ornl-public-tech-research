@@ -3,7 +3,7 @@
 - Repo: https://github.com/ORNL-QCI/tnqvm (default branch `master`). GitHub's description is "Tensor Network QPU Simulator for Eclipse XACC". [KNOWN: GitHub API]
 - License: BSD 3-Clause per the README ("TNQVM is licensed - BSD 3-Clause"). There's no LICENSE file in the repo, and the GitHub API license is null. Source headers carry "Copyright (c) 2019, UT-Battelle". [KNOWN: README, repo file list, `CMakeLists.txt` lines 1-3; this wording follows the editorial decision recorded in the catalog row]
 - Status: unknown (rule 14). The last commit and push were 2025-03-05 (commit at 15:50 ET). There are no releases or tags, and the repo isn't archived. The `VERSION` file says 0.1.9. More than a year with no push and no tagged release counts as unknown under the team's status convention. Quiet doesn't mean dead (rule 10). [KNOWN: git log, GitHub API, VERSION]
-- Scope (rule 13): CORROBORATED. UT-Battelle holds the copyright in the source headers. OSTI 2583844 (a 2022 journal article on TNQVM at exascale) and OSTI 2251617 (a PEPS plugin record, 2023) list ORNL as research org. [KNOWN: CMakeLists.txt; OSTI records per the catalog row, not re-fetched this pass]
+- Scope (rule 13): CORROBORATED. UT-Battelle holds the copyright in the source headers. OSTI 2583844 (a 2022 journal article on TNQVM at exascale) and OSTI 2251617 (a PEPS plugin record, 2023) list ORNL as research org. [KNOWN: CMakeLists.txt; OSTI API records 2583844 (journal article, 2022-10-21) and 2251617 (conference paper, 2023-11-01), re-fetched in the fact-check pass 2026-10-24]
 - Org unit: ORNL-QCI GitHub org, same as ExaTN and QIR-EE. [INFERRED: a quantum computing group, no division named]
 
 ## Plain-language walkthrough
@@ -56,3 +56,7 @@ It was XACC's tensor-network simulator, and the bridge between XACC and ExaTN. T
 - https://api.github.com/repos/ORNL-QCI/tnqvm (plus /languages, /releases, /tags, /contributors with and without anon=1)
 - https://doi.org/10.1371/journal.pone.0206704 (PLOS ONE 2018, cited in the README, not read)
 - OSTI 2583844 and 2251617 (per the catalog row)
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of ORNL-QCI/tnqvm and public records: no LICENSE file, README "BSD 3-Clause" line, UT-Battelle 2019 header in CMakeLists.txt, VERSION 0.1.9, no tags, `build.yml` and `.gitlab-ci.yml` present, 636 commits on `master` with the stated per-year counts, first 2016-11-11, last 2025-03-05 15:50 ET, contributors 11 with anonymous and 5 accounts, README "Summit-like architectures". OSTI 2583844 and 2251617 both list ORNL as research org.
+- Clarified: the rule 13 OSTI sources are now re-fetched, and 2251617 is a conference paper, not a software record. No facts changed.

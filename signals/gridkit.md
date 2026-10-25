@@ -21,9 +21,9 @@
 | Wayback | Nearest capture 2025-07-01 for every date checked | availability API | [KNOWN], only bounds dates |
 
 ## Sweep 2 spot-check (fact-check pass, 2026-10-24)
-- Commits per year on all branches match a fresh clone exactly (15, 2, 7, 0, 8, 5, 5, 20, 426, 947 for 2017 to 2026). Active authors for 2024, 2025 and 2026 come out as 3, 19 and 21 by distinct name; Scout's 21 and 25 for 2025 and 2026 likely count distinct emails, so the same people may appear under more than one email. Minor: 2020 had 0 commits, so "2 to 20 a year" in the summary line skips one empty year.
+- Commits per year on all branches match a fresh clone exactly (15, 2, 7, 0, 8, 5, 5, 20, 426, 947 for 2017 to 2026). Active authors for 2024, 2025 and 2026 come out as 3, 19 and 21 by distinct name; the discovery pass's 21 and 25 for 2025 and 2026 likely count distinct emails, so the same people may appear under more than one email. Minor: 2020 had 0 commits, so "2 to 20 a year" in the summary line skips one empty year.
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. Map links 1, 7, 55, 57, 150.
 
 **Outside vs inside:** The inside describes a flexible grid-simulation framework. Outside, it isn't packaged anywhere, has no GitHub dependents and no paper of its own in OpenAlex, so visible use is the ORNL team and its partners building from source.

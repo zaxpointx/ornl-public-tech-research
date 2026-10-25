@@ -1,6 +1,5 @@
-<!-- Scout section goes above -->
 
-## Connector: who actually uses it
+## Who actually uses it (connections pass)
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. ONCat: public PyPI metadata only; no API calls, no client run, no login pages. Refreshes map links 129-130.
 
 **Outside vs inside:** ONCat is a facility data catalog, so its users are SNS and HFIR experimenters, and the only public outside trace is the pyoncat client, with modest downloads and no source repo.

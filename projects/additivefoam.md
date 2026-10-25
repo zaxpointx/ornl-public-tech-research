@@ -70,3 +70,7 @@ It's the high-fidelity tier of the AM thermal tools in our catalog. It's slower 
 - https://ornl.github.io/AdditiveFOAM/ (home page capability list)
 - https://www.osti.gov/doecode/biblio/108345 ("Research Org.: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)")
 - https://doi.org/10.21105/joss.07770 (JOSS paper, linked, not read)
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of ORNL/AdditiveFOAM and public records: LICENSE copyright lines (OpenFOAM Foundation 2011-2017, ORNL 2023-2026) under GPL v3, README "released by Oak Ridge National Laboratory", OpenFOAM-14 and Python 3.10-3.12 requirements, wordmark hosted in ORNL-MDF, one CI workflow, tags 1.0.0 to 2.0.0, last commit 2026-09-21 11:34 ET, 68 commits (33/11/17/7 for 2023-2026), first 2023-03-28, contributors 6 with anonymous and 5 accounts. DOE CODE code-108345 refetched from the OSTI API: 2023-06-13, ORNL research org, sponsors DOE Office of Science and NNSA. Docs site resolves.
+- No corrections.
