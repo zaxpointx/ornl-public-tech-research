@@ -69,3 +69,14 @@ Residual stress is a big deal for welded and 3D-printed parts in energy, aerospa
 - https://api.github.com/repos/neutrons/PyRS (plus /languages, /releases, /contributors with and without anon=1)
 - https://www.osti.gov/api/v1/records/17315105 (title, research org, abstract)
 - https://neutrons-pyrs.readthedocs.io/en/latest/index.html (linked, not read in depth)
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** OSTI lists USDOE as sponsor without naming an office. [KNOWN: OSTI 17315105] The 2023 HIDRA instrument paper (OSTI 1959622, research org ORNL) lists Office of Science, Basic Energy Sciences, so BES likely funds the software too. [KNOWN: OSTI API, accessed 2026-10-24; INFERRED: that it carries over to PyRS]
+- **Where in the tree (Q2):** ORNL, then the High Flux Isotope Reactor (HFIR), then the HB2B/HIDRA instrument. [KNOWN: pyproject.toml, OSTI abstract]
+- **What it teaches about ORNL (Q8):** an instrument tool can run for eight years. There was a burst of work in 2019-2020, a quiet stretch, then a revival in 2026 tied to a "2.0" paper. The paper is the public milestone, and the version numbers trail behind it. [KNOWN: commit counts, tags, OSTI date; INFERRED: the reading] The lab also adds AI-assistant instructions aimed at scientists who aren't trained programmers. [KNOWN: CLAUDE.md]
+- **Student angle (Q9):** there's no CONTRIBUTING file and no good-first-issue labels (34 open issues and PRs). It does have `docs/developer`, `docs/user` and user-story planning docs with sample CSV outputs. [KNOWN: tree, GitHub API, accessed 2026-10-24] It's a friendly Python and PyQt codebase. A student would need NumPy, Qt basics, Mantid, and the idea of strain from diffraction. [INFERRED]
+- **Searched without result (Q10):** the sponsor office, and how "2.0" maps to the repo's version numbers.
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of neutrons/PyRS and public records: GPL-3.0 LICENSE, default branch `next`, last commit 2026-10-21 10:11 ET, 3,332 commits, first 2018-03-19, tags through v1.8.1, pyproject description naming the HFIR HB2B instrument and Python 3.12+, workflows including the Grype scan, contributors 33 with anonymous and 19 accounts. OSTI 17315105 refetched: "pyRS 2.0", 2026-10-01, DOI 10.1107/S1600576726007855, ORNL research org. Docs link resolves.
+- No corrections. Per-year counts shift by one commit across a few year boundaries depending on time zone; totals match.

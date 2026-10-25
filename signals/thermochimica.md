@@ -20,7 +20,7 @@
 | Funding | 7 OSTI hits: Nuclear Energy x6, USDOE x2, LDRD, NRC | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2018-06-17, 2019-09-20, 2023-11-15, 2025-04-04 | availability API | [KNOWN], only bounds dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users.
 
 **Outside vs inside:** Thermochimica is the most outward-facing of this batch: 36 forks and a molten-salt paper cited mostly from outside ORNL, plus its known MOOSE/BISON coupling (OSTI reports), so nuclear-fuel modelers elsewhere use it, but it's not distributed through any package registry.

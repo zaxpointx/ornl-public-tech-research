@@ -125,3 +125,27 @@
 | 2026-10-24 | e3sm-elm | `e3sm` on PyPI / conda-forge / Spack; GitHub dependents count | registries; network/dependents | 404; no count shown (connections usage pass) |
 | 2026-10-24 | energyplus | official PyPI package; conda-forge feedstock; GitHub dependents count | registries; network/dependents | only unofficial PyPI packages; 404; no count shown (connections usage pass) |
 | 2026-10-24 | fixs | PyPI / conda-forge / Spack | registries | 404 (connections usage pass) |
+| 2026-10-24 | gauntlet | ORNL Gauntlet on PyPI / conda-forge / Spack | registries | PyPI name unrelated; 404 / 404 (connections usage pass) |
+| 2026-10-24 | live-data-server | PyPI / conda-forge / Spack; paper | registries; api.openalex.org | 404; none found (connections usage pass) |
+| 2026-10-24 | olcf-test-harness | PyPI / conda-forge / Spack; GitHub dependents count | registries; network/dependents | 404; no count shown (connections usage pass) |
+| 2026-10-24 | post-processing-agent | PyPI / conda-forge / Spack; paper | registries; api.openalex.org | 404 (PyPI `postprocessing` unrelated); none found (connections usage pass) |
+| 2026-10-24 | real-twin | conda-forge / Spack | registries | 404 (connections usage pass) |
+| 2026-10-24 | landscan | PyPI / conda-forge / Spack; public code repo | registries; catalog | 404; no repo (connections usage pass) |
+| 2026-10-24 | korc / gitr | shared contributor accounts | contributors API | none (connections pass 22) |
+| 2026-10-24 | pyrs | code or file-format tie to AdditiveFOAM, 3DThesis or Finch | PyRS pyproject and brief | none found (connections pass 22) |
+| 2026-10-24 | korc | KORC in builtin Spack | spack-packages builtin | not checked as builtin; repo ships its own spackpack/package.py (connections pass 22) |
+| 2026-10-24 | scale | ORNL SCALE on PyPI / conda-forge; public repo | registries; ornl.gov/scale | PyPI name unrelated; 404; none (licensed) (connections usage pass) |
+| 2026-10-24 | shift-exnihilo | PyPI `shift` / `exnihilo`; public repo | registries | PyPI `shift` unrelated; `exnihilo` 404; none (connections usage pass) |
+| 2026-10-24 | vera | ORNL VERA on PyPI; public repo | registries; vera.ornl.gov | PyPI name unrelated; none (connections usage pass) |
+| 2026-10-24 | situ | ORNL Situ on PyPI; repo; records after 2018 | registries; api.openalex.org | PyPI name unrelated; none; none found (connections usage pass) |
+| 2026-10-24 | tesvis-modis | `tesvis` / `modistools` on PyPI; conda-forge | registries | 404 (connections usage pass) |
+| 2026-10-24 | roof-savings-calculator | PyPI / conda-forge package | registries | 404 (connections usage pass) |
+| 2026-10-24 | situ / fasguard | what FASGuard is | OpenAlex record title only | not determined (connections pass 23) |
+| 2026-10-24 | post-processing-agent / live-data-server | plot upload call from the agent; client named in live_data_server README | fresh clone of neutrons/post_processing_agent; live_data_server README | none found (connections pass 24) |
+| 2026-10-24 | pyrs | PyRS paper; ORNL PyRS on PyPI | api.openalex.org; pypi.org | none found; PyPI `pyrs` unrelated (connections pass 24) |
+| 2026-10-24 | snapred | SNAPRed on PyPI | pypi.org | 404 (connections pass 24) |
+| 2026-10-24 | snapred / pyrs | whether SNAPRed or PyRS run inside autoreduction | post_processing_agent processors (fresh clone); data-workflow settings.py queue names | not found; no SNAPRed or PyRS queue or processor named (connections pass 25) |
+| 2026-10-24 | stc | public STC source repo | data-workflow glossary and docs links | none linked (connections pass 25) |
+| 2026-10-24 | olcf-test-harness | public page stating another computing center runs the harness | OpenAlex full-text search "OLCF Test Harness" (11 works); repo README and docs | none found; 3 non-ORNL papers mention it as related work only (connections pass 26) |
+| 2026-10-24 | olcf-test-harness | PyPI / conda-forge package; GitHub dependents | registries; network/dependents | 404 / 404 / "0 Repositories" (connections pass 26) |
+| 2026-10-24 | olcf-test-harness / hecbench | either README naming the other | both READMEs (grep) | none (connections pass 26) |

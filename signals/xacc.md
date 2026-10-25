@@ -19,7 +19,7 @@
 | Funding | code-5041 lists USDOE generically | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | ORNL-QCI/xacc 2024-10-18 and 2026-06-07. eclipse-xacc/xacc 2025-01-20 and 2025-10-28 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md links 144, 159-164.
 
 **Outside vs inside:** The inside presents XACC as a hardware-agnostic framework for quantum-classical programming across many vendors' QPUs. Outside, it is heavily cited (143 citing works, two thirds with no ORNL author) but lightly installed: 35 PyPI downloads last month, no conda-forge or Spack package, 0 GitHub dependents, and code quiet since 2023-2024. Hands-on users visible in public traces are ORNL groups, ORNL plugins (TNQVM, QIR-EE's optional backend) and partners.

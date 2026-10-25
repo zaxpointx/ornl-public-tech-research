@@ -50,3 +50,9 @@ It's the "find my data" layer for SNS and HFIR users. [KNOWN: overview page] For
 - Rechecked the overview quotes (catalog for SNS and HFIR data, "Experiment teams and instrument staff", DOIs, API) on the rendered public page, plus the PyPI JSON (summary, author "ONCat Support", Python 3.9+, blank license, 8 versions 1.6.2 on 2023-09-05 to 2.7 on 2026-09-24) and the 2.7 sdist (GPL v3 LICENSE, module line counts, class and method names, login/logout methods). All verified. Nothing was run, no API was called and no login page was opened.
 - Corrected: the Docs line no longer cites a guessed URL. It now says release notes aren't linked from public pages (rule 16 editorial decision).
 - Rule 3 check: the brief describes ONCat from the outside and implies no affiliation.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** unknown. [UNKNOWN] No OSTI record matched the catalog's name in my search.
+- **What it teaches about ORNL (Q8):** some facility services are public only as a client package (`pyoncat` on PyPI), with the server side not public. That gap is part of the picture, and we don't speculate about what's behind it (rule 16). [KNOWN: this brief; INFERRED]
+- **Student angle (Q9):** there's nothing to contribute to publicly. You can only read the client's docs. [INFERRED]
+- **Searched without result (Q10):** a public repo, sponsor.

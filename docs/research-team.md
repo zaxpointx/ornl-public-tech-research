@@ -2,7 +2,7 @@
 
 ## What is already operational
 
-The repository has a catalog, project briefs, evidence tags, verification logs, connection mapping, batch summaries, outside-in signals, and one completed deep dive. This is a strong public-source research base, but coverage is uneven: a brief is not the same thing as a deep reconstruction.
+The repository has a catalog, project briefs, evidence tags, verification logs, connection mapping, batch summaries, outside-in signals, and three completed deep dives. This is a strong public-source research base, but coverage is uneven: a brief is not the same thing as a deep reconstruction.
 
 ## Team roles
 

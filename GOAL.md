@@ -6,7 +6,7 @@ Set by Cayden Wilson, 2026-10-24. Every batch, brief, signals file and deep dive
 
 1. **Learning.** One GitHub repository where you can learn from real national-lab projects. It pulls together what is scattered across ornl.gov, GitHub, OSTI and DOE CODE records, technical reports and papers, and explains it in plain English. Nothing here is private. The value is in reconstructing scattered public pieces into one clear picture nobody else has put together.
 2. **How ORNL works from the outside.** Lessons on how the lab actually funds, staffs, builds, releases, maintains and retires its software, drawn from the public traces projects leave. These are things people usually only learn by working there.
-3. **Ask-anything readiness.** The repo should be organized well enough that Cayden, or an AI agent like Codex or Hermes reading it, can answer almost any question about a project from the files, with sources, and say honestly when something is unknown.
+3. **Ask-anything readiness.** The repo should be organized well enough that a reader, or an AI assistant reading it, can answer almost any question about a project from the files, with sources, and say honestly when something is unknown.
 4. **Portfolio.** A public piece that shows how Cayden researches: careful sourcing, honest known/inferred/unknown labels, and OSINT done ethically.
 5. **ORNL internship.** Understanding which parts of the lab do work that matches Cayden's skills (cybersecurity, networking, Python, Linux), what skills keep showing up across projects, and where a student could realistically learn or contribute.
 

@@ -24,7 +24,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 | Commit author metadata that points at lab systems | Not analyzed | [OUT OF SCOPE, rule 16: it would describe ORNL infrastructure; row removed by the fact-check pass 2026-10-24] | none |
 | Wayback captures of the repo page: closest returned are 2022-07-22, 2024-12-13 and 2026-06-06 | Light archive interest. The availability API only returns the nearest capture, so these are bounds, not a full list | [KNOWN: archive.org/wayback/available] | low |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only; institution names come from OpenAlex author affiliations, no individuals profiled.
 
 **Outside vs inside:** The brief infers HydraGNN is for scientists screening molecules and materials with AI, and reads 127 stars / 48 forks as a modest outside user base. The outside traces say most visible use is ORNL's own: the citing works that mention HydraGNN in OpenAlex are almost all ORNL-authored (sometimes with LBNL, AMD, Utah), and GitHub shows no real dependent repos.

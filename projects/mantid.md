@@ -51,3 +51,10 @@ Mantid is a large open-source program for turning raw data from neutron and muon
 - Verified: GPL-3.0, ~64% C++/35% Python, ~307 contributors, created 2011-10-17, v6.16.0/6.16.1 dates, DOI 10.5286/Software/Mantid6.16.1, OpenSSF badge 4316.
 - Unverifiable: ORNL's share of development and which ORNL team maintains it.
 - No restricted content or implied ORNL affiliation found.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** the 2014 Mantid paper in Nuclear Instruments and Methods A is on OSTI twice. Record 1149396 lists research org "ORNL, Spallation Neutron Source" and sponsor USDOE Office of Science. Record 1556799 lists sponsor Office of Science, Basic Energy Sciences. [KNOWN: OSTI API, accessed 2026-10-24] It's a multi-institution project, so ORNL's share is the BES-funded part. Other partners' funders aren't covered here. [INFERRED]
+- **Where in the tree (Q2):** ORNL, then the neutron facilities (SNS and HFIR), then the shared analysis engine under instrument tools like SNAPRed and PyRS. [KNOWN: their pyproject files]
+- **What it teaches about ORNL (Q8):** the lab co-owns a community code with other neutron facilities instead of building its own, then ships ORNL-specific builds through its own conda channels. [KNOWN: multi-institution copyright, `mantid-ornl` channels in SNAPRed and PyRS; INFERRED: the pattern]
+- **Student angle (Q9):** this is the most contributor-ready repo in the neutron branch. It has `.github/CONTRIBUTING.md`, issue and PR templates, `SECURITY.md`, dependabot, and Copilot instructions. It has no open issues labeled "good first issue". [KNOWN: GitHub contents and issues API, accessed 2026-10-24] It's a huge C++ and Python codebase, so a student would start with the Python algorithms and docs. [INFERRED]
+- **Searched without result (Q10):** an OSTI software record giving current funding, and a breakdown of contributors by institution.

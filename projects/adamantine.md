@@ -53,3 +53,10 @@ The paper says it's especially suited to fused filament fabrication (plastic-sty
 - Rechecked license (LICENSE line 2, PR 346 "Relicense to apache 2.0 with the llvm exception"), CITATION.cff still BSD-3, OSTI 2472702 research org and sponsors, README quotes, contributors 10 accounts / 11 with anonymous, releases v1.0 2024-10-01 and v1.1 2026-01-23, project site and tutorials repo (both 200). All verified.
 - Corrected: the 1.1 release date is no longer UNKNOWN. Release branch and CHANGELOG commit dates confirm 2026-01-23, so the CHANGELOG's 2025 is tagged as an INFERRED typo.
 - Scope (rule 13) holds on OSTI 2472702. No ORNL affiliation is implied in the brief.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** OSTI 2472702 lists DOE LDRD (the lab's internal research-and-development fund) and EERE. [KNOWN, above]
+- **Where in the tree (Q2):** ORNL, then additive manufacturing, on the 3D-printing ladder (part-scale thermal and mechanical simulation). It lives in its own GitHub org, not an ORNL one. [KNOWN: repo owner]
+- **What it teaches about ORNL (Q8):** LDRD seed money can grow a code into a standalone project with its own org, releases and a paper, and the license can change partway (BSD-3 to Apache with LLVM exceptions). [KNOWN: sponsors, CHANGELOG; INFERRED: the growth story]
+- **Student angle (Q9):** it has a CONTRIBUTING.md and a separate tutorials repo. [KNOWN] You'd need C++, deal.II (a finite-element library) and some heat-transfer basics, so it's steep. [INFERRED]
+- **Searched without result (Q10):** see this brief's unknowns.

@@ -19,3 +19,6 @@ Before starting, I re-read RULES.md through item 16, including the new limits. T
 - Denovo and ORANGE
 - IRIS-MASH and IRIS-MEMFLOW
 - **tnqvm:** added 2026-10-24 on a connections-pass tip. UT-Battelle 2019 header in CMakeLists. README says BSD-3, but no LICENSE file is in the repo. OSTI 2583844 names ORNL. Status unknown (last push 2025-03-05).
+
+## Scope removals 2026-10-24
+- stellarator-tools and pyxodr3d were removed from catalog.csv under rule 13. Only the GitHub account name ties them to ORNL: there is no DOE CODE record, and the license credits the account name or one individual. Editorial decision: both go on the map as outside projects.

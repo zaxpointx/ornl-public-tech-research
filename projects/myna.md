@@ -46,3 +46,10 @@ Myna is a Python tool that connects real 3D-printing build records to computer s
 - Corrected: MDF retagged KNOWN via the ornl.gov facility page.
 - Added: DOE CODE record code-141169 (Myna, ORNL) via the OSTI records API.
 - Verified: BSD-3 copyright 2024 ORNL; releases 1.0.0 (2024-08-19) and 1.1.0 (2025-04-09); created 2024-02-23; Python 99.0%; 9 contributor pages; Python 3.10+ and not on PyPI; config/run/sync in ARCHITECTURE.md; application folders (adamantine, additivefoam, bnpy, cubit, deer, exaca, openfoam, rve, thesis); CHANGELOG database types and 3.9 baseline; seven-author CITATION.bib; 21 example cases; AGENTS.md present.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE CODE code-141169 lists the Office of Science, and other Myna records add EERE and Nuclear Energy once each (see `signals/myna.md`). [KNOWN: OSTI API]
+- **Where in the tree (Q2):** ORNL, then additive manufacturing, then the Manufacturing Demonstration Facility (ORNL-MDF org, Peregrine database). It sits at the top of the 3D-printing ladder and drives 3DThesis, AdditiveFOAM, ExaCA and others. [KNOWN per map; INFERRED: the ladder framing]
+- **What it teaches about ORNL (Q8):** when several labs' physics codes exist, someone builds the glue that runs them in sequence on real build data, and that glue is where a facility's data meets the simulations. [INFERRED]
+- **Student angle (Q9):** it has a CONTRIBUTING.md and docs deployed from CI. [KNOWN: tree, `.github/workflows/`] It's Python workflow code, the most approachable entry into the ladder for a Python student. [INFERRED]
+- **Searched without result (Q10):** see this brief's unknowns and `verification/not-found.md`.

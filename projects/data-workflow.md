@@ -49,3 +49,10 @@ This is the behind-the-scenes plumbing that watches every experiment at ORNL's n
 - Corrected: Mantid link retagged KNOWN after reading https://github.com/neutrons/post_processing_agent README.
 - Verified: BSD-3 copyright 2022 ORNL; created 2012-08-15; releases 3.10.0 (2026-07-16), 3.11.0 (2026-08-04), 3.12.0 (2026-10-19) with rc tags; Python 70.3 / JS 15.9 / HTML 9.7 / CSS 2.9; 35 contributor pages; README lists stomp, django, PostgreSQL 17+, MySQL option, ActiveMQ and badge 5504; glossary covers WebMon at SNS and HFIR and DASMON PVs; developer docs link monitor.sns.gov and the sibling repos; six Dockerfiles, nginx, pixi.lock confirmed.
 - No DOE CODE record found for data_workflow. Owning division stays [UNKNOWN].
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** unknown. No ORNL OSTI software record (see signals). [UNKNOWN]
+- **Where in the tree (Q2):** ORNL, then the neutron facilities (SNS and HFIR), then the data pipeline (workflow manager and the monitor site). [KNOWN per this brief]
+- **What it teaches about ORNL (Q8):** a user facility runs a public-code, production-facing monitoring web app, and the lab releases it openly anyway. [KNOWN; INFERRED: the lesson]
+- **Student angle (Q9):** it's the only one of the three `neutrons`-org pipeline repos (with live-data-server and post-processing-agent) that has a contributor guide (`CONTRIBUTING.rst`). It has no open good-first-issue labels. [KNOWN: GitHub contents and issues API, accessed 2026-10-24] It's Django, PostgreSQL, Docker and a message queue, which is solid ground for a Linux or web student. [INFERRED]
+- **Searched without result (Q10):** sponsor.

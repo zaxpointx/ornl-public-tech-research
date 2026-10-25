@@ -18,7 +18,7 @@
 | Funding | OSTI 2441045 and 2439841 list DOE Office of Science | OSTI API | [KNOWN] |
 | Wayback | One capture, 2025-03-05 | availability API | [KNOWN] |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 120, 169.
 
 **Outside vs inside:** The inside is a heterogeneous BLAS/LAPACK layer that requires ORNL's IRIS runtime. Outside, there is no package, no dependents, 1 star and 0 forks, and status is unknown; the PyPI name "matris" belongs to an unrelated project. Visible use is ORNL's IRIS group and its papers.

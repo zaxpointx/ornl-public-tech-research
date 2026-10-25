@@ -76,3 +76,10 @@ Power-grid planning with lots of renewables and failure scenarios gets huge fast
 - Corrected: the last commit time zone. The develop feed shows 2026-10-20 00:05 UTC, which is 2026-10-19 ET, so both are now stated.
 - AgentiGrid: the "experimental" label comes from CHANGELOG 2.1 ("Add AgentiGrid experimental agentic AI user interface"). The agentigrid README describes the LLM loop but doesn't use the word. The KNOWN tag holds because CHANGELOG is cited. Not run.
 - Rule 13 CORROBORATED holds (ORNL repo owner and UT-Battelle LICENSE, plus OSTI code-176348).
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE CODE code-176348 lists USDOE generically. [KNOWN, per signals] The program is [UNKNOWN].
+- **Where in the tree (Q2):** ORNL, then the power grid, as a grid optimization tool next to GridKit and ReSolve. [KNOWN per map]
+- **What it teaches about ORNL (Q8):** code moves between labs. PNNL archived its repo and pointed to ORNL's, and active authors at ORNL jumped from 5 to 24 in 2026. [KNOWN: archived README, signals; INFERRED: a funded handoff]
+- **Student angle (Q9):** there's no CONTRIBUTING file at the root. CI covers pre-commit, file naming and Spack builds. [KNOWN: tree, workflows] It's heavy C and C++ with optimization solvers, so it's hard for a beginner. [INFERRED]
+- **Searched without result (Q10):** sponsor program, any reference to ReSolve (logged in not-found).

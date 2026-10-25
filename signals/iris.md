@@ -17,7 +17,7 @@
 | Funding | OSTI 2438809 and 3018176 list USDOE generically. No DOE CODE record was found by title search | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | Nearest captures 2022-08-06 and 2025-07-19 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 117-121.
 
 **Outside vs inside:** The inside targets "extremely heterogeneous" systems (CPUs, GPUs, FPGAs, DSPs, quantum via QIR-EE). Outside, IRIS has no Spack or conda-forge package and 0 dependents; its visible users are ORNL's own layers on top of it (MatRIS, LaRIS, FFTX-IRIS, IRIS-GNN) and academic partners in papers (U. Tsukuba, Carnegie Mellon).

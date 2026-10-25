@@ -17,7 +17,7 @@
 | Funding | OSTI 2483434 lists USDOE generically. LDRD 11521 per OSTI 3025007 (map link 111) | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2023-02-14 and 2024-09-17 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 113-114, 168.
 
 **Outside vs inside:** The inside describes cross-facility workflow orchestration paired with Flowcept. Outside, the PyPI release (0.1) lags the repo (0.2), downloads are minimal, the repo has been quiet since 2024-09, and the only papers are ORNL's own, so it looks like an ORNL research prototype whose Flowcept hook may have drifted.

@@ -362,3 +362,50 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-24 | tnqvm | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
 | 2026-10-24 | gauntlet (signals) | 6 commits 2025-07-09 to 2025-07-18, no tags or CI; DOE CODE code-157761 ORNL with FEMA and FEMP sponsors | fresh clone of ORNL/gauntlet; OSTI API code-157761 | verified | |
 | 2026-10-24 | mantid (signals) | 2014 Mantid paper has 1,807 citing works, 696 with an ORNL author | OpenAlex works W2036295204, cites filter | verified | total 1,807 matches exactly; ORNL subset came out 689 using ORNL's ROR id, a small difference from filter choice or index drift; doesn't change the "mostly outside" reading |
+| 2026-10-24 | korc | License, dates, 975 commits by year, tags, workflows, README build | fresh clone of ORNL-Fusion/KORC | verified | |
+| 2026-10-24 | korc | Contributors 8 with anon / 5 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | korc | Rule 13 CORROBORATED on LICENSE alone | OSTI API 1870235, 2586907 | corrected | added OSTI 1870235 (ORNL research org, abstract names KORC) as second source |
+| 2026-10-24 | korc | Docs link http://ornl-fusion.github.io/KORC | curl | corrected | http form didn't respond; https form returns 200 |
+| 2026-10-24 | korc | Sweep 2: brief checked | as above | verified | 4 checks: 2 verified, 2 corrected, 0 unverifiable |
+| 2026-10-24 | snapred | License, branch, dates, 889 commits, tags, workflows, Python 3.10+ | fresh clone of neutrons/SNAPRed | verified | per-year counts off by one at year edges (time zone) |
+| 2026-10-24 | snapred | Contributors 20 with anon / 14 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | snapred | Rule 13: OSTI 3012509 lists ORNL | OSTI API 3012509 | verified | |
+| 2026-10-24 | snapred | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | pyrs | License, branch, dates, 3,332 commits, tags, pyproject HB2B and Python 3.12+, workflows | fresh clone of neutrons/PyRS | verified | per-year counts off by one at year edges (time zone) |
+| 2026-10-24 | pyrs | Contributors 33 with anon / 19 accounts | GitHub contributors Link header | verified | |
+| 2026-10-24 | pyrs | Rule 13: OSTI 17315105 lists ORNL | OSTI API 17315105 | verified | |
+| 2026-10-24 | pyrs | Sweep 2: brief checked | as above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable |
+| 2026-10-24 | finch | GOAL Q3: DOE CODE record has no sponsor, funder unknown | https://www.osti.gov/api/v1/records/code-122647 | corrected | sponsor_orgs lists USDOE SC and NNSA; brief updated |
+| 2026-10-24 | finch | GOAL Q9: has CONTRIBUTING.md | fresh clone of github.com/ORNL/Finch | verified | |
+| 2026-10-24 | tnqvm | GOAL Q3: 2583844 lists USDOE, 2251617 lists USDOE SC | OSTI API records 2583844, 2251617 | verified | |
+| 2026-10-24 | tnqvm | GOAL Q8/Q9: last push 2025-03, not archived, no CONTRIBUTING or LICENSE | api.github.com/repos/ORNL-QCI/tnqvm; fresh clone | verified | pushed_at 2025-03-05 |
+| 2026-10-24 | 3dthesis | GOAL Q3: README credits EERE AMO and OE TRAC; DOE CODE lists USDOE | README line 16; OSTI API code-26241 | verified | |
+| 2026-10-24 | 3dthesis | GOAL Q9: no CONTRIBUTING, six example folders | fresh clone | verified | |
+| 2026-10-24 | finch, tnqvm, 3dthesis | Sweep 2: GOAL-questions sections | see rows above | verified | 6 checks: 5 verified, 1 corrected, 0 unverifiable |
+| 2026-10-24 | sns-neutron-pipeline | Connections: Mantid main paper cited about 1,800 times, most with no ORNL author | api.openalex.org works/doi:10.1016/j.nima.2014.07.029; cites filter with ORNL ROR | verified | 1,809 citing works, 689 with an ORNL institution (about 62% without) |
+| 2026-10-24 | sns-neutron-pipeline | Queue names and per-instrument split, OnCat shared-queue comment | github.com/neutrons/data_workflow workflow/settings.py, states.py | corrected | split also covers REDUCTION.HIMEM and REDUCTION_CATALOG queues; added |
+| 2026-10-24 | sns-neutron-pipeline | Glossary quotes (SMS, STC, PVs) and livereduce line | data_workflow docs/glossary.rst, docs/developer/index.rst | verified | |
+| 2026-10-24 | sns-neutron-pipeline | Agent processors, 60 min / 70% limits, heartbeats, autoreduce predecessor | github.com/neutrons/post_processing_agent README, README_developer.md, processors/ | verified | |
+| 2026-10-24 | sns-neutron-pipeline | WebMon plot embedding, keyed link, live-data-server credentials and 3-year expiry | data_workflow view_util.py, settings/base.py; live_data_server config/settings.py, plots/views.py | verified | |
+| 2026-10-24 | sns-neutron-pipeline | Creation years, next branches, contributor guides, zero good-first issues | api.github.com/repos/neutrons/*; fresh clones | verified | |
+| 2026-10-24 | sns-neutron-pipeline | Sweep 2: deep dive walkthrough (connections and revival sections pending) | see rows above plus Mantid citation row | verified | 6 checks: 5 verified, 1 corrected, 0 unverifiable |
+| 2026-10-24 | sns-neutron-pipeline (timing) | PPU outage Aug 2023 to Apr 2024, commissioning 2024-06-07, users 2024-07-11 at 1.7 MW, BES SUF funding | https://proceedings.jacow.org/linac2024/pdf/THPB045.pdf (DOI 10.18429/jacow-linac2024-thpb045) | verified | |
+| 2026-10-24 | sns-neutron-pipeline (timing) | Monthly commit bursts (agent 28/68/38; live-data-server 28/11/53; data-workflow peak 33 in 2024-09) | fresh clones, git log --all | verified | exact match |
+| 2026-10-24 | sns-neutron-pipeline (timing) | ORNL news and sns.gov timeline links resolve | ornl.gov news 2024-11-07; sns.gov/sts/timeline | verified | HTTP 200 |
+| 2026-10-24 | sns-neutron-pipeline (timing) | Sweep 2: revival timing notes | see rows above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable; causal link correctly left as a guess |
+| 2026-10-24 | sns-neutron-pipeline (connections) | Funding for SNAPRed and PyRS unknown | OSTI API records 3012509, 17315105 | corrected | 3012509 lists BES SUF; 17315105 lists USDOE; line fixed |
+| 2026-10-24 | sns-neutron-pipeline (connections) | live-data-server BSD-3 Copyright 2024 ORNL; pyoncat 2.7 | fresh clone LICENSE; pypi.org/pypi/pyoncat/json | verified | |
+| 2026-10-24 | sns-neutron-pipeline (connections) | SNAPRed and PyRS stars/forks; MantidSnapper quote | api.github.com/repos/neutrons/SNAPRed, PyRS; SNAPRed pyproject.toml | verified | |
+| 2026-10-24 | sns-neutron-pipeline (connections) | Queue names, glossary trigger quote, WebMon plot embedding | data_workflow settings.py, glossary.rst, view_util.py | verified | |
+| 2026-10-24 | sns-neutron-pipeline (connections) | Sweep 2: connections and usage notes | see rows above | verified | 4 checks: 3 verified, 1 corrected, 0 unverifiable; Mantid count drift noted |
+| 2026-10-24 | olcf-test-harness (timing) | Per-year commits, Sept 2016 burst of 96, tags v2.1 to v3.2 | fresh clone of github.com/olcf/olcf-test-harness, git log --all | verified | |
+| 2026-10-24 | olcf-test-harness (timing) | summitdev support in the Sept 2016 burst | git log subjects | corrected | "Adding support for summitdev" is 2016-10-13 |
+| 2026-10-24 | olcf-test-harness (timing) | 9 authors in early 2025 | git log --all %an vs %ae | corrected | two people by name; 8 to 10 distinct emails |
+| 2026-10-24 | olcf-test-harness (timing) | code-153320 lists ASCR | https://www.osti.gov/api/v1/records/code-153320 | corrected | sponsor is USDOE Office of Science only; ASCR is on other OSTI hits |
+| 2026-10-24 | olcf-test-harness (signals) | 10 active authors in 2025 | git log --all | corrected | 10 emails, two people by name |
+| 2026-10-24 | olcf-test-harness (connections) | Configs, scheduler modules, pyproject, loggers, examples repo | fresh clone; api.github.com/repos/olcf/olcf-test-harness-examples | verified | |
+| 2026-10-24 | olcf-test-harness | Sweep 2: timing, connections and signals notes (walkthrough not yet drafted) | see rows above | verified | 6 checks: 2 verified, 4 corrected, 0 unverifiable |
+| 2026-10-24 | olcf-test-harness (walkthrough) | Exit codes 0/1/2/5 and zero vs non-zero caveat; .kill_test resubmit comment | doc-sphinx/source/user_guide/adding_new_test.rst | verified | |
+| 2026-10-24 | olcf-test-harness (walkthrough) | Event files, five modes, 2016 docs header, repo created 2021, v3.2 note, contributing.rst | fresh clone; api.github.com/repos/olcf/olcf-test-harness | verified | modes file path corrected |
+| 2026-10-24 | olcf-test-harness (walkthrough) | Funding: code-153320 names Office of Science, no program | OSTI API records/code-153320 | verified | already updated in the walkthrough before this check |
+| 2026-10-24 | olcf-test-harness | Sweep 2: walkthrough | see rows above | verified | 3 checks: 3 verified, 0 corrected, 0 unverifiable; small fixes to a file path and the summitdev date |

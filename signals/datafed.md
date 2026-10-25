@@ -21,7 +21,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 | Job search by project name found no DataFed posting | No public hiring signal | [KNOWN: empty search, logged] | low |
 | Wayback: repo page closest captures 2020-12-05, 2022-08-12, 2023-12-03, 2025-02-08. Docs site ornl.github.io/DataFed 2020-12-05, 2024-04-21, 2025-06-18 | Public docs existed by late 2020. Captures are bounds only | [KNOWN: archive.org availability API] | low |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only; institution names from OpenAlex, no individuals profiled. DataFed's servers were not probed (RULES 16).
 
 **Outside vs inside:** The inside says DataFed serves teams doing cross-facility experiments, simulation and analysis. Outside, its Python client is on PyPI with modest downloads and no visible dependents; papers that mention it are mostly ORNL-authored, with a few outside reviews or cross-facility workflow papers (LBNL, Argonne, NERSC) and one 2026 multi-lab application (EcoKMER).

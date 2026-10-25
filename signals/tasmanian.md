@@ -17,7 +17,7 @@
 | Funding | code-6305 lists USDOE generically. A keyword search for "TASMANIAN" on OSTI picks up many unrelated Tasmania records, so sponsor counts from it aren't usable | OSTI API | [KNOWN] for code-6305. The program is [UNKNOWN] |
 | Wayback | Nearest captures 2018-06-17, 2022-02-17 and 2026-05-12 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 131-135.
 
 **Outside vs inside:** The inside offers sparse grids and DREAM sampling for uncertainty quantification. Outside, TASMANIAN is the best-packaged ORNL tool checked so far: a Spack package that the xSDK bundle references, plus PyPI. That points to reach through DOE HPC software stacks rather than through GitHub dependents (0).

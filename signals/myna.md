@@ -19,7 +19,7 @@
 | Funding | code-141169 lists ORNL as research org and Office of Science as sponsor. Other Myna hits add EERE and Nuclear Energy once each | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2025-02-02 and 2025-04-13 | availability API | [KNOWN], only bounds dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. Map links 55 and the AM cluster.
 
 **Outside vs inside:** Its 2025 paper is new, and both citing works come from outside ORNL, but there's no package and no dependents. The PyPI name "myna" holds a bare 0.1 upload with no metadata, which can't be tied to this repo.

@@ -24,7 +24,7 @@ Public artifacts only (RULES 15-16). Contributor data is counts only. Source: a 
 - Nothing in this pilot pointed toward restricted work.
 - Personal profile pages surfaced in searches were not used.
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only; no people profiled beyond published author lists' institutions.
 
 **Outside vs inside:** The inside frames Cyberwheel as a training ground for autonomous cyber defense agents (README), aimed at "live networks" someday (LDRD report, OSTI 3025007 p.13; the README does not use that phrase). From the outside, it is not packaged anywhere (no PyPI, conda-forge or Spack) and GitHub lists 0 dependent repos, so its visible users are researchers who clone it: 3 papers run or extend it, and their institutions are not yet checked.

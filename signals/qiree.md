@@ -17,7 +17,7 @@
 | Funding | code-149694 lists ASCR. Across 6 OSTI hits: ASCR 3, LDRD 1, BES 1 | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2024-12-11 and 2026-06-07 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md links 117, 141-145.
 
 **Outside vs inside:** The inside presents QIR-EE as a cross-platform engine for running quantum programs (QIR) on many backends. Outside, it has no package on PyPI, Spack or conda-forge and 0 GitHub dependents; its one visible consumer is ORNL's own IRIS runtime (Q-IRIS), and its papers are ORNL-led with Georgia Tech and Quantum Science Center partners.

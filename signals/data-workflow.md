@@ -19,7 +19,7 @@
 | CI | CI, system tests, publish and lockfile workflows on ubuntu-latest | .github/workflows | [KNOWN] |
 | Funding | No match. OSTI "data workflow" hits (for example INL code-145281) are namesakes | OSTI API | [UNRELATED] |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users.
 
 **Outside vs inside:** This is SNS facility plumbing: no package, no dependents, 6 stars and 3 forks, and no paper, so its users are the neutron facility's own data pipeline, which is what the inside says too.

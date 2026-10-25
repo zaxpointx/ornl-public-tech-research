@@ -48,3 +48,10 @@ OTH is the tool OLCF uses to automatically test its supercomputers. It builds re
 - Corrected: OSTI's research_orgs field says ORNL only; NCCS comes from the developer affiliations on the same record.
 - Verified: LICENSE text (2025 UT-Battelle, cost-recovery clause); releases v2.1, v3.0, v3.1, v3.2 with dates; created 2021-01-11; Python 94.7%; 28 contributor pages; DOI 10.11578/dc.20250328.1 and ORNL-CODE-153320 in README; schedulers (slurm, lsf, pbs, k8s, openshift); configs (frontier, frontier_k8s, frontier_openshift, summit); index.rst 'NCCS_Test_Harness' created 2016; overview.rst 'light-weight templating framework'; rgt.inp, --mode, output_check.txt, Run_Archive/latest, LAMMPS example.
 - The /sw/acceptance path is from the public README, not restricted material.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE CODE code-153320 lists the Office of Science, and ASCR (the computing research office) funds 3 of 4 related OSTI hits. [KNOWN, per signals]
+- **Where in the tree (Q2):** ORNL, then computing, then the Oak Ridge Leadership Computing Facility (OLCF). It's the facility's acceptance-testing tool. [KNOWN]
+- **What it teaches about ORNL (Q8):** new supercomputers get proven with a public test framework, and commit activity rises around machine bring-ups. The README's examples target Frontier. [KNOWN: README; signals for the cadence]
+- **Student angle (Q9):** there's no CONTRIBUTING file. CI runs docs, lint and tests. [KNOWN: tree, workflows] It's Python and batch-scheduler work, which is the closest match in the catalog to Linux and ops skills. Real runs need an HPC system, but the code and examples are readable. [INFERRED]
+- **Searched without result (Q10):** see signals and this brief's unknowns.

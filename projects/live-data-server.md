@@ -52,3 +52,10 @@ It's the "show me my plot" step at the end of the neutron data pipeline. [INFERR
   - README "Data server for data plots.", `check_credentials` and `upload_plot_data` in views.py, `DATA_TYPES = {"html": 1}`, the 3-year expiry comment in settings.py, `arcs` and `hb2b` in instruments.py, and that the Apache doc and the RTD site resolve.
 - Corrected: I reworded the production-URL item. Per rule 16 it's out of scope, not an open question.
 - The README's local-dev example has placeholder credentials. They're not copied here and they're not relevant.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** unknown. No OSTI record (see `signals/live-data-server.md`). [UNKNOWN] The copyright notice is ORNL's, and its sibling tools' papers are BES-funded, so BES is plausible but not shown. [INFERRED]
+- **Where in the tree (Q2):** ORNL, then the neutron facilities, then the data pipeline (the live view during an experiment). [KNOWN per this brief]
+- **What it teaches about ORNL (Q8):** facility software includes ordinary web plumbing, not just physics. It was created in 2016, revived with releases in 2024-2026, and copyright was refreshed to 2024. [KNOWN: dates, LICENSE; INFERRED: the revival reading]
+- **Student angle (Q9):** there's no CONTRIBUTING file and no open good-first-issue labels. [KNOWN: GitHub API, accessed 2026-10-24] It's Django plus HTML, the most approachable code in the branch for a web or Python student. [INFERRED]
+- **Searched without result (Q10):** sponsor, OSTI record.

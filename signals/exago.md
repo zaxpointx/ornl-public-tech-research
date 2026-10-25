@@ -19,7 +19,7 @@
 | Funding | code-176348 lists USDOE generically | OSTI API | [KNOWN]. The program is [UNKNOWN] |
 | Wayback | ORNL/ExaGO has none. pnnl/ExaGO has 2024-02-22 and 2026-06-16 | availability API | [KNOWN] |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); AgentiGrid not run. Detail in connections/map.md links 148-150, 167.
 
 **Outside vs inside:** The inside is a power-grid optimization toolkit that moved from PNNL to ORNL. Outside, it is packaged in Spack but shows no dependents and almost no citations of its main paper (1 citing work), so visible users are DOE grid-optimization teams; it shares 4 contributor accounts with GridKit but no code.

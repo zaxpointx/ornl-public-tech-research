@@ -1,9 +1,9 @@
 # KORC (Kinetic Orbit Runaway electrons Code)
-- Official docs: http://ornl-fusion.github.io/KORC (generated from the repo's `docs/` folder with FORD, a Fortran documentation tool). [KNOWN: README, GitHub homepage field, `FORD_PF.md`]
+- Official docs: https://ornl-fusion.github.io/KORC/ (generated from the repo's `docs/` folder with FORD, a Fortran documentation tool). [KNOWN: README, GitHub homepage field, `FORD_PF.md`]
 - Repo: https://github.com/ORNL-Fusion/KORC (default branch `main`). GitHub's description is "Kinetic Orbit Runaway Code (KORC)". [KNOWN: GitHub API]
 - License: MIT, "Copyright (c) 2021, Oak Ridge National Laboratory". The GitHub API also says MIT. [KNOWN: LICENSE line 1, GitHub API]
 - Status: active (rule 14). The last commit was 2026-09-11 10:12 ET and the last push was 2026-10-22 00:33 UTC (8:33 PM ET on 2026-10-21). Not archived. [KNOWN: git log, GitHub API]
-- Scope (rule 13): CORROBORATED. Oak Ridge National Laboratory is the copyright holder. [KNOWN: LICENSE] OSTI journal records on runaway electrons list ORNL as a research org (for example 2586907, 2025), but I didn't check whether they name KORC, so they aren't used as scope evidence. [KNOWN: OSTI search results; UNKNOWN: whether they name KORC]
+- Scope (rule 13): CORROBORATED. Oak Ridge National Laboratory is the copyright holder [KNOWN: LICENSE], and OSTI 1870235 (journal article, 2022-05-23, "Computational study of runaway electrons in MST tokamak discharges with applied resonant magnetic perturbation") lists ORNL as research org and names KORC in its abstract. OSTI 2586907 (2025) also names KORC and lists ORNL alongside General Atomics. [KNOWN: https://www.osti.gov/api/v1/records/1870235 and /2586907, re-fetched in the fact-check pass 2026-10-24]
 - Org unit: ORNL-Fusion GitHub org. [INFERRED: a fusion energy group; no division named]
 
 ## Plain-language walkthrough
@@ -59,3 +59,16 @@ Runaway electrons are one of the main risks for large tokamaks, so codes that pr
 - https://api.github.com/repos/ORNL-Fusion/KORC (plus /languages, /releases, /contributors with and without anon=1)
 - http://ornl-fusion.github.io/KORC (linked docs site, not read in depth)
 - https://www.osti.gov/api/v1/records?q=KORC%20runaway (search only; records not tied to KORC)
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** the repo doesn't name a sponsor. [UNKNOWN] A 2025 Physics of Plasmas paper that couples KORC with the NIMROD plasma code (OSTI 2586907, DOI 10.1063/5.0279253, research orgs General Atomics and ORNL) lists DOE Office of Science Fusion Energy Sciences, plus Basic Energy Sciences Scientific User Facilities. [KNOWN: https://www.osti.gov/api/v1/records/2586907, accessed 2026-10-24] That shows who funds work that uses KORC, not necessarily who funds KORC itself. [INFERRED]
+- **Who outside uses it (Q6):** the same paper names General Atomics, which runs the DIII-D tokamak, as a co-research org. [KNOWN: OSTI 2586907] More usage goes in `signals/korc.md`.
+- **Connections (Q7):** upstream, it reads fields from M3D-C1 through FIO (KNOWN, above) and has been coupled with NIMROD (KNOWN: OSTI 2586907).
+- **What it teaches about ORNL (Q8):** fusion codes at the lab plug into other institutions' big plasma codes instead of standing alone. The repo was created in 2016 but its history only starts in 2019, which suggests it moved in from somewhere else. [INFERRED from the created date vs. the first commit]
+- **Student angle (Q9):** there's no CONTRIBUTING file, no good-first-issue labels, and 10 open issues and PRs. [KNOWN: tree, GitHub API, accessed 2026-10-24] To follow it you'd need modern Fortran, MPI and OpenMP or OpenACC, CMake, HDF5, and basic plasma physics. That's hard for a beginner, but the one-module-per-job layout is readable. [INFERRED]
+- **Searched without result (Q10):** KORC's own sponsor and a KORC software record on OSTI.
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of ORNL-Fusion/KORC: MIT LICENSE "Copyright (c) 2021, Oak Ridge National Laboratory", last commit 2026-09-11 10:12 ET, 975 commits with the stated per-year counts, first commit 2019-07-22, the five tags, the three workflows and the stale `spack.yml` badge, README Spack and gcc 13.1 quick start, contributors 8 with anonymous and 5 accounts.
+- Corrected: scope was called CORROBORATED on the LICENSE alone. Checked the OSTI records: 1870235 lists ORNL as research org and its abstract names KORC, so it's now the second source. 2586907 also names KORC.
+- Corrected: the docs link loads over https (`https://ornl-fusion.github.io/KORC/`); the http form didn't respond.

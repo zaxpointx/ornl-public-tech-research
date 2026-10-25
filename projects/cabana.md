@@ -64,3 +64,10 @@ Cabana packages the hard parts of GPU particle codes so lab teams don't each reb
 - Verified: README CoPA lines name ORNL among the developer labs, DOE CODE code-45702 "Cabana" lists ORNL as research org (OSTI API, 2018-09-30), so rule 13 passes as a named contributing lab and research org. Also verified: LICENSE "Copyright 2018-2023 the Cabana authors", API NOASSERTION, 9 releases with 0.8.0 on 2026-05-29, last master commit 2026-09-16, contributors 43 with anonymous.
 - The README's lab list says "PPNL". That's probably meant to be PNNL or PPPL (INFERRED). The quote stays as written.
 - No corrections.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** it was born in the Exascale Computing Project's co-design center CoPA. [KNOWN: README] Funding after ECP ended is [UNKNOWN].
+- **Where in the tree (Q2):** ORNL, then computing and math libraries, as a shared base under Finch (via Cabana::Grid). It's a multi-lab project in the ECP-copa org, with ORNL as a named developer lab. [KNOWN]
+- **What it teaches about ORNL (Q8):** exascale-era libraries outlived the program that paid for them and became the floor that newer ORNL codes build on. [KNOWN: Finch dependency, 2026 release; INFERRED: the lesson]
+- **Student angle (Q9):** it has a CONTRIBUTING.md and a wiki with tutorials. [KNOWN] You'd need C++ templates and Kokkos. [INFERRED]
+- **Searched without result (Q10):** post-ECP funding.

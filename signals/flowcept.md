@@ -21,7 +21,7 @@
 | Wayback | Only one capture found, nearest 2024-04-13 | archive.org availability API | [KNOWN], but only bounds the dates |
 | Job postings | Not searched this round | n/a | [UNKNOWN] |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institution names from OpenAlex, no individuals profiled. Detail in connections/map.md link 115.
 
 **Outside vs inside:** The inside describes provenance capture for AI and science workflows across facilities. Outside, Flowcept has the most PyPI download activity of the tools checked so far but no visible dependents; nearly all papers mentioning it are ORNL-authored, with one outside-only paper (a Brazilian university, 2026).

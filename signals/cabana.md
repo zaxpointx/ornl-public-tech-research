@@ -18,7 +18,7 @@
 | Funding | code-45702 lists USDOE generically. The README credits ECP | OSTI API, README | [KNOWN] |
 | Wayback | Nearest captures 2020-10-16, 2023-03-16 and 2026-05-12 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16); institutions from OpenAlex, no individuals profiled. Detail in connections/map.md links 32, 146, 165-166.
 
 **Outside vs inside:** The inside is a multi-lab ECP particle library built on Kokkos. Outside, it reaches users through Spack, and three quarters of the papers citing its JOSS paper have no ORNL author (European HPC centres such as Forschungszentrum Jülich, plus LANL and LLNL), so ORNL is one contributor among several, not the main user.

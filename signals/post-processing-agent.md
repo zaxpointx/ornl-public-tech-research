@@ -18,3 +18,16 @@
 | Tags | 26. Latest v4.6.0 2026-10-16 | git | [KNOWN] |
 | CI | Test-and-deploy and lockfile workflows on ubuntu-latest | .github/workflows | [KNOWN] |
 | Funding | None found on OSTI | OSTI API | [UNKNOWN] |
+
+## Who actually uses it
+Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. Map link 104 (writes to ONCat).
+
+**Outside vs inside:** Like live-data-server, this is SNS/HFIR facility plumbing: 0 stars, 4 forks, no package, no paper. Its visible user is the facility's own reduction pipeline.
+
+| Signal | Finding | Tag | Source |
+|---|---|---|---|
+| Registries | No `post-processing-agent` on PyPI, conda-forge or Spack (404); PyPI `postprocessing` is an unrelated ML package | [KNOWN]; namesake [UNRELATED] | registries |
+| GitHub "used by" | "0 Repositories"; 0 stars, 4 forks, last push 2026-10-21 UTC | [KNOWN] | https://github.com/neutrons/post_processing_agent/network/dependents ; GitHub API |
+| Citations | No paper found | [UNKNOWN] | api.openalex.org |
+
+Reasoning: facility-internal and actively maintained [INFERRED, medium confidence].

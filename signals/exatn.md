@@ -20,7 +20,7 @@
 | Funding | code-45739 lists USDOE generically. Other ExaTN papers on OSTI list ASCR and LDRD once each | OSTI API | [KNOWN], mix is [INFERRED, low] |
 | Wayback | Nearest captures 2020-12-27, 2023-12-16, 2025-11-21 | availability API | [KNOWN], only bounds dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users. Map links 10, 42, 162.
 
 **Outside vs inside:** The repo has been quiet since 2023, but its 2022 paper is mostly cited by groups outside ORNL (16 of 19 citing works have no ORNL author, e.g. Technical University of Munich, NVIDIA), so ExaTN lives on more as a reference than as a dependency.

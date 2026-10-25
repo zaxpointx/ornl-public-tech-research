@@ -60,3 +60,10 @@ It was XACC's tensor-network simulator, and the bridge between XACC and ExaTN. T
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified on a fresh clone of ORNL-QCI/tnqvm and public records: no LICENSE file, README "BSD 3-Clause" line, UT-Battelle 2019 header in CMakeLists.txt, VERSION 0.1.9, no tags, `build.yml` and `.gitlab-ci.yml` present, 636 commits on `master` with the stated per-year counts, first 2016-11-11, last 2025-03-05 15:50 ET, contributors 11 with anonymous and 5 accounts, README "Summit-like architectures". OSTI 2583844 and 2251617 both list ORNL as research org.
 - Clarified: the rule 13 OSTI sources are now re-fetched, and 2251617 is a conference paper, not a software record. No facts changed.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** OSTI 2583844 lists USDOE, and OSTI 2251617 lists USDOE Office of Science, with no office below that. [KNOWN: OSTI API, accessed 2026-10-24]
+- **Where in the tree (Q2):** ORNL, then quantum computing (ORNL-QCI org), as a simulator plugin for XACC that uses ExaTN. [KNOWN, above]
+- **What it teaches about ORNL (Q8):** research codes can go quiet without being archived. Its last push was 2025-03 with no tags, so the status is unknown rather than dead. [KNOWN; per rule 14]
+- **Student angle (Q9):** there's no CONTRIBUTING file and no LICENSE file (only a README line). [KNOWN] It's good for reading how a quantum-circuit simulator is structured, but contributing to a quiet repo is unlikely to get reviewed. [INFERRED]
+- **Searched without result (Q10):** a successor, outside users beyond citations (see signals).

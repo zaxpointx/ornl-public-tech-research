@@ -18,7 +18,7 @@
 | Wayback | Nearest captures 2018-06-17, 2022-03-07 and 2026-03-05 | availability API | [KNOWN], but only bounds the dates |
 | Note | GitHub history starts in 2012, which fits the 2012 LICENSE date. That eases the reading-pass open question about earlier history living elsewhere | git | [INFERRED, medium] |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16). Detail in connections/map.md links 136-140.
 
 **Outside vs inside:** The inside models plasma-facing divertor materials and fission fuel. Outside, the six copyright holders, the Spack package and fission-gas papers with INL, LANL and U. Florida show a multi-lab fusion/fission materials community, broader than ORNL alone; there is no PyPI or conda presence and 0 GitHub dependents.

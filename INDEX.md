@@ -1,10 +1,10 @@
 # ORNL Public Technology Research: Index
 
-Curated entry point. Independent research from public sources only. We are not affiliated with ORNL.
+Curated entry point. Independent research from public sources only. We are not affiliated with ORNL. Start with [GOAL.md](GOAL.md) for what this repo is for and [LAB-TREE.md](LAB-TREE.md) for the top-down map.
 
 Status key: **verified** means the brief was fact-checked (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means the fact-check pass finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
 
-Projects: 68 cataloged, 46 full briefs linked (43 verified, 3 unverified) plus 2 OSTI-only drafts (both verified), so 45 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39 batch 09 (ExaTN, new; GridKit, rewritten) to 40, and batch 10 (ReSolve, 3DThesis, Finch, AdditiveFOAM, TNQVM) to 45. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
+Projects: 66 cataloged, 46 full briefs linked (all 46 verified) plus 2 OSTI-only drafts (both verified), so 48 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39, batch 09 (ExaTN, new; GridKit, rewritten) to 40, and batch 10 (ReSolve, 3DThesis, Finch, AdditiveFOAM, TNQVM) to 45, and batch 11 (KORC, SNAPRed, PyRS) to 48. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
 
 ## AI/data
 - [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified; one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), the fact-check pass rechecked and confirmed.
@@ -26,9 +26,9 @@ Projects: 68 cataloged, 46 full briefs linked (43 verified, 3 unverified) plus 2
 
 ## Neutrons
 - [Mantid](projects/mantid.md): multi-institution framework for reducing and analyzing neutron and muon scattering data. ORNL Neutron Sciences is one co-owner. Verified.
-- [SNAPRed](projects/snapred.md): app for handling data from the SNAP instrument at SNS, built on Mantid. Batch 11. Unverified.
+- [SNAPRed](projects/snapred.md): app for handling data from the SNAP instrument at SNS, built on Mantid. Batch 11. Verified (two sweeps, 2026-10-24).
 - [SNS Data Workflow Manager](projects/data-workflow.md): tracks automated processing of SNS and HFIR experiment data and ties into Mantid through livereduce. Verified.
-- [PyRS](projects/pyrs.md): works out hidden stress inside metal parts from neutron scans on HFIR's HB2B instrument, without cutting them open. Batch 11. Unverified.
+- [PyRS](projects/pyrs.md): works out hidden stress inside metal parts from neutron scans on HFIR's HB2B instrument, without cutting them open. Batch 11. Verified (two sweeps, 2026-10-24).
 - [ONCat](projects/oncat.md): searchable catalog of SNS and HFIR neutron experiment data, with an API and Python client (pyoncat on PyPI). No public source repo; the pyoncat client ships GPL-3.0. Batch 05. Verified. Editorial decision 2026-10-24: public overview/docs pages and any public client repo only; no API calls, no logins; anything needing credentials is out of scope (RULES.md item 16).
 - [Post Processing Agent](projects/post-processing-agent.md): runs automated data reduction and cataloging when SNS and HFIR runs finish. Verified.
 - [Live Data Server](projects/live-data-server.md): serves plots of neutron experiment data while runs are in progress (Django and Postgres). Verified.
@@ -37,9 +37,8 @@ Projects: 68 cataloged, 46 full briefs linked (43 verified, 3 unverified) plus 2
 ## Nuclear/fusion
 - [Thermochimica](projects/thermochimica.md): calculates chemical equilibrium (which phases and compounds form), used in nuclear fuel modeling. Verified.
 - [Xolotl](projects/xolotl.md): simulates damage building up in fusion-reactor walls and fission fuel as clusters of trapped atoms move and merge (C++ on PETSc and Kokkos; README says under development). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/xolotl.md).
-- Stellarator-Tools: community codes for modeling stellarator fusion devices (includes PARVMEC and LIBSTELL). Stub.
 - FAR3d: models plasma instabilities driven by fast particles in tokamaks and stellarators. Stub.
-- [KORC](projects/korc.md): follows runaway electrons in fusion plasmas. Batch 11. Unverified.
+- [KORC](projects/korc.md): follows runaway electrons in fusion plasmas. Batch 11. Verified (two sweeps, 2026-10-24).
 - [GITR](projects/gitr.md): tracks impurity particles worn off fusion device walls. Verified.
 - [SCALE](projects/scale.md): nuclear safety analysis suite (reactor physics, criticality, shielding, spent fuel). Public overview only, since the software is distributed through a controlled channel. Verified.
 - ORIGEN Library Manager (OLM): manages the reactor data libraries SCALE uses for fast spent-fuel calculations. Stub.
@@ -88,7 +87,6 @@ Projects: 68 cataloged, 46 full briefs linked (43 verified, 3 unverified) plus 2
 - Stor4Build: simulates thermal energy storage built into buildings (ORNL and NREL). Stub.
 - [EnergyPlus](projects/energyplus.md): whole-building energy simulation. Multi-institution, with ORNL as one copyright holder. Verified.
 - [FIXS](projects/fixs.md): links traffic simulators with real vehicle and hardware tests (formerly Real-Sim), MIT licensed. Verified.
-- pyxodr3d: Python package for reading and converting OpenDRIVE road maps. Stub.
 - [AutoBEM](projects/autobem.md): automatically builds energy models for huge numbers of buildings. The code is closed source per OSTI, but its Model America dataset (122.9M building models) has been publicly downloadable since 2021-04-14; those runs used Argonne's computing facility. Verified, status unknown.
 - WUFI-ORNL/IBP: models heat and moisture moving through walls, with Fraunhofer IBP. OSTI-only stub.
 
@@ -101,6 +99,8 @@ Public traces each project leaves (git history, build targets, funding records, 
 ## Deep dives
 Full reconstructions per RULES.md (deep-dives section).
 - Cyberwheel ([brief](projects/cyberwheel.md)): [synthesis](deep-dives/cyberwheel/synthesis.md), [timeline](deep-dives/cyberwheel/timeline.md), [system flow](deep-dives/cyberwheel/system-flow.md), [people and roles](deep-dives/cyberwheel/people-roles.md), [claim boundary](deep-dives/cyberwheel/claim-boundary.md) (the reading pass: what sources say vs. what we infer) and [lineage](deep-dives/cyberwheel/lineage.md) (the connections pass: FIREWHEEL origin, LDRD 11049). The fact-check pass: [source ledger](deep-dives/cyberwheel/source-ledger.md) (13 sources), [missing artifacts](deep-dives/cyberwheel/missing-artifacts.md) (11 gaps) and [verification report](deep-dives/cyberwheel/verification-report.md). Verified; open items are the exact Firewheel modification, division-level owner and outside authors' affiliations.
+- SNS neutron data pipeline (done 2026-10-24): [walkthrough](deep-dives/sns-neutron-pipeline.md) [connections and who uses it](deep-dives/sns-neutron-pipeline-connections.md) and [revival timing](deep-dives/sns-neutron-pipeline-timing.md), following a neutron's data from the instrument through [live-data-server](projects/live-data-server.md), [post-processing-agent](projects/post-processing-agent.md), [data-workflow](projects/data-workflow.md) and [ONCat](projects/oncat.md) to analysis in [Mantid](projects/mantid.md). Verified: walkthrough, connections and revival timing all swept (fact-check 2026-10-24). Open: who uploads plots to live-data-server, whether SNAPRed and PyRS run automatically, and why the 2023-24 activity lined up with the SNS power-upgrade shutdown (INFERRED timing, cause UNKNOWN). Funding stays UNKNOWN where records are blank.
+- OLCF test harness (in progress, opened 2026-10-24), built on the [OLCF test harness brief](projects/olcf-test-harness.md): [walkthrough](deep-dives/olcf-test-harness.md) (awaiting sweep), [connections and who uses it](deep-dives/olcf-test-harness-connections.md) and [timing against machine launches](deep-dives/olcf-test-harness-timing.md) verified (fact-check 2026-10-24, three small corrections to the timing notes).
 
 ## Draft OSTI-only briefs
 Written from OSTI records alone (no public docs page found). Kept so the work isn't lost; not full briefs.
@@ -111,6 +111,8 @@ Written from OSTI records alone (no public docs page found). Kept so the work is
 These failed the scope rule (no primary source names ORNL) and live in [connections/map.md](connections/map.md) only.
 - ExaCA: grain-structure simulation for additive manufacturing, LLNL repo and DOE CODE record. Driven by Myna.
 - FATES: vegetation dynamics model that runs inside ELM. OSTI lists Los Alamos.
+- Stellarator-Tools: community codes for modeling stellarator fusion devices (PARVMEC, LIBSTELL). Lives in the ORNL-Fusion GitHub org, but no primary source names ORNL; removed 2026-10-24 (batch 08 discovery notes).
+- pyxodr3d: Python package for reading and converting OpenDRIVE road maps. Lives in the ORNL-Real-Sim GitHub org, but only an individual's copyright notice and no record name ORNL; removed 2026-10-24, can return if an official record turns up.
 - Kokkos: C++ library for writing code once and running it on many CPUs and GPUs; multi-lab Linux Foundation project. ORNL is listed as a contributor organization, not owner; DOE CODE research org is Sandia. Used by Cabana, Xolotl and adamantine.
 - HiOp: optimization solver, an optional outside dependency of ExaGO; LLNL holds the copyright.
 - UQTk: Sandia uncertainty toolkit used by Xolotl's scripts.

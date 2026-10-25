@@ -18,3 +18,19 @@
 | Tags | v0.1.0 2025-06-02, v0.1.1 2026-03-13, v0.1.2 2026-05-12 (plus one dev tag) | git | [KNOWN] |
 | CI | Wheel builds across a matrix of OSes, pylint, dependents tracking | .github/workflows | [KNOWN] |
 | Funding | code-147051 lists ORNL as research org and EERE as sponsor | OSTI API | [KNOWN] |
+
+## Who actually uses it
+Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users.
+
+**Outside vs inside:** Real-Twin is the only one of this batch published on PyPI (`realtwin`, 285 downloads last month), but it's new: its 2026 paper has 1 citation, from ORNL. Visible use is still the ORNL mobility team.
+
+| Signal | Finding | Tag | Source |
+|---|---|---|---|
+| PyPI | `realtwin` 0.1.2, "A Unified Simulation Scenario Generation Tool for Mobility Research", links to ORNL-Real-Sim/Real-Twin; repo pyproject name `realtwin` 0.1.2 | [KNOWN] | https://pypi.org/pypi/realtwin/json ; pyproject.toml |
+| Downloads | 285 last month (2026-10-24). Not users | [KNOWN] counts | https://pypistats.org/api/packages/realtwin/recent |
+| conda-forge / Spack | None (404) | [KNOWN] | registries |
+| GitHub "used by" | "0 Repositories"; 13 stars, 3 forks, last push 2026-10-08 UTC | [KNOWN] | network/dependents; GitHub API |
+| Citations | "Real-Twin: A Multi-Platform Simulation Scenario Generation Tool for Mobility Research" (SSRN 2026, 10.2139/ssrn.6427276): 1 citing work, with ORNL author | [KNOWN] | api.openalex.org |
+| Namesakes | Other "digital twin scenario generation" papers are different projects | [UNRELATED] | api.openalex.org |
+
+Reasoning: packaged for outside use but too new to show adopters [INFERRED, low confidence].

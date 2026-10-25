@@ -19,7 +19,7 @@
 | Funding | 9 OSTI hits: FES x5, USDOE x4, Office of Science x3, ASCR x2 | OSTI API | [KNOWN] |
 | Wayback | Nearest captures 2018-06-13, 2020-09-28, 2024-07-30 | availability API | [KNOWN], only bounds dates |
 
-## Who actually uses it (connections pass)
+## Who actually uses it
 Accessed 2026-10-24 (ET). Artifacts only (RULES 16): public registry, GitHub and OpenAlex reads; institution counts only, no individuals profiled. Downloads are not users.
 
 **Outside vs inside:** GITR has more forks (18) than stars (13) and a well-cited paper, but two thirds of its citers include ORNL authors, so it's mainly a fusion-group code with some outside plasma-material users.

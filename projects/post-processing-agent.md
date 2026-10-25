@@ -61,3 +61,10 @@ It's part of the automatic pipeline behind SNS and HFIR, so users can get reduce
   - The 60 min / 70% figures are now the README's example config, with "defaults" INFERRED.
   - Deployment size was reworded as out of scope (rule 16).
 - Note: the heartbeat topic name in README_developer.md is a public repo detail. It isn't repeated here, and we don't use it to map anything.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** unknown. No OSTI record for the agent (see signals). [UNKNOWN] Its code mentions Calvera, and the 2023 Calvera platform record (OSTI 1909092) is ORNL research with sponsor USDOE and no office named. [KNOWN: OSTI API, accessed 2026-10-24; the tie is only a module name, INFERRED]
+- **Where in the tree (Q2):** ORNL, then the neutron facilities, then the data pipeline (the step that turns each finished run into reduced data). [KNOWN per this brief]
+- **What it teaches about ORNL (Q8):** it's a 2014 tool that sat quiet and now releases every few weeks (v4.1.0 to v4.6.0 in a year), which shows how facility tools get revived rather than replaced. [KNOWN: releases; INFERRED]
+- **Student angle (Q9):** there's no CONTRIBUTING file and no open good-first-issue labels. [KNOWN: GitHub API, accessed 2026-10-24] It needs messaging-queue (ActiveMQ) and Python basics. [INFERRED]
+- **Searched without result (Q10):** sponsor, OSTI record for the agent itself.

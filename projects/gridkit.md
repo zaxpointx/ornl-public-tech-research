@@ -67,3 +67,10 @@ As grids add solar, wind and batteries, they behave faster and less predictably.
 - Verified on a fresh clone of ORNL/GridKit and public records: LICENSE "Copyright (c) 2025, UT-Battelle.", tags v0.0.7, v0.1.0 and v0.2.0, CHANGELOG "v.03" section, last commit 2026-10-23, CMake 3.13 and C++20, all solver options OFF by default (including ZeroMQ), both CI workflows, the nine PhasorDynamics case folders, README trademark, Enzyme "experimental" warning and ReSolve dependency, contributors 22 with anonymous and 17 accounts. DOE CODE code-152622 refetched from the OSTI API: "GridKit", 2025-03-14, ORNL research org, contract AC05-00OR22725. Docs link resolves.
 - Corrected: `Experimental` is an examples folder for dynamic-constrained optimization, not a folder under `GridKit/Model/`.
 - Note: besides the two third-party submodules, `buildsystem/spack` is also a git submodule.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE CODE code-152622 lists USDOE with no office named. [KNOWN, per signals] The program is [UNKNOWN].
+- **Where in the tree (Q2):** ORNL, then the power grid, alongside ExaGO and ReSolve. [KNOWN per map]
+- **What it teaches about ORNL (Q8):** a project can sit nearly idle for years, then explode. It went from a handful of commits a year to 947 so far in 2026 with about 25 active authors, which looks like a new team or new money around 2025. [KNOWN: signals; INFERRED: the cause]
+- **Student angle (Q9):** it has a CONTRIBUTING.md and pre-commit and Spack CI. [KNOWN: tree, workflows] It's very active right now, so issues and PRs get attention. You'd need C++, CMake and power-flow basics. [INFERRED]
+- **Searched without result (Q10):** sponsor program, outside users (signals says none found).

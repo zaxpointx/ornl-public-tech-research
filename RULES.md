@@ -33,7 +33,7 @@ Coordination: an editor assigns batches and makes scope and status decisions; th
 ## Known / Inferred / Unknown
 ## Sources (URL, accessed date)
 
-## Added 2026-10-24: evidence rules adapted from Cayden's deep-public-project-reconstruction skill
+## Added 2026-10-24: evidence rules adapted from a public-project reconstruction checklist
 7. Two more tags join the three above:
    - [CORROBORATED] KNOWN and also confirmed by a second independent public source (cite both).
    - [UNRELATED] checked and found not to be part of the project (say what was checked). Use it to stop namesake mixups.
@@ -47,7 +47,7 @@ Coordination: an editor assigns batches and makes scope and status decisions; th
 For a few high-value projects, run the full reconstruction: executive synthesis, timeline by stage, system/data-flow map, people-and-roles (conservative: authorship proves participation, not ownership), source ledger, missing-artifacts ledger, claim-boundary ledger, and a verification report. State what's well understood, inferred, unknown, searched without result, and whether more public research would change the core answer.
 
 ## Catalog scope and status (added 2026-10-24, editorial decision)
-13. Scope: a project stays in discovery/catalog.csv only if a primary source names ORNL as research org, copyright holder, repo owner, or a named contributing lab. Projects ORNL work depends on or ties to without that evidence go in connections/map.md as outside projects, not the catalog. (Applied 2026-10-24: exaca and fates moved to the map; adamantine stays on OSTI 2472702; e3sm-elm stays on ORNL's named ELM work.)
+13. Scope: a project stays in discovery/catalog.csv only if a primary source names ORNL as research org, copyright holder, repo owner, or a named contributing lab. A GitHub org or account name alone doesn't count as "repo owner": the main ORNL org counts, but a side org such as ORNL-Fusion needs other proof (an OSTI or DOE CODE record, an ORNL copyright line, or ORNL credited in the README). Projects ORNL work depends on or ties to without that evidence go in connections/map.md as outside projects, not the catalog. (Applied 2026-10-24: exaca and fates moved to the map; adamantine stays on OSTI 2472702; e3sm-elm stays on ORNL's named ELM work.)
 14. Status values: active, archived (only when GitHub flags the repo archived), unknown, stub-osti-only, draft-osti-only. stub-osti-only means the only public source is an OSTI record, with no public repo or docs page. A stub gets a brief only once a public docs page (including a public dataset landing page) exists for it. draft-osti-only means a brief was written from OSTI sources alone; it is kept but listed separately in INDEX and is not a full brief.
 
 ## Outside-in signals (added 2026-10-24, editorial decision)

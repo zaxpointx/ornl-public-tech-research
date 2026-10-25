@@ -65,3 +65,10 @@ GPU supercomputers like Frontier are fast at math but slow at moving data back a
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified on a fresh clone of ORNL/ReSolve and public records: LICENSE copyright line, README BSD-3 badge and "BSD-style" wording, CMake 3.22, SuiteSparse 5.0+ and ROCm 6.4+, ECP acknowledgment, HyKKT "experimental" wording, tags v0.99.1 to v0.99.4, last `develop` commit 2026-10-06 15:41 ET, 283 commits (142/29/66/46 for 2023-2026), first commit 2023-05-02, the six workflow files, contributors 19 with anonymous and 15 accounts. DOE CODE code-114681 refetched from the OSTI API: "ReSolve", 2023-10-16, DOI 10.11578/dc.20231013.1, ORNL research org, USDOE sponsor, contract AC05-00OR22725. Docs link resolves.
 - No corrections. The mirror workflows were checked by file name only, per rule 16.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** the README credits the Exascale Computing Project, and DOE CODE lists USDOE. [KNOWN, above]
+- **Where in the tree (Q2):** ORNL, then the power grid and math libraries, as a solver used by grid tools (an optional GridKit hookup). [KNOWN, above]
+- **What it teaches about ORNL (Q8):** it's a two-lab project (ORNL and PNNL) with CI wired to each lab's own machines. That shows how code is tested on hardware outsiders can't see, and we only note that those pipelines exist. [KNOWN: workflows; INFERRED]
+- **Student angle (Q9):** it has a CONTRIBUTING.md. [KNOWN: tree] You'd need C++, linear algebra, and some GPU (CUDA or HIP) basics. [INFERRED]
+- **Searched without result (Q10):** any ExaGO reference to ReSolve (logged in not-found).

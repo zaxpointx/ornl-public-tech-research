@@ -74,3 +74,10 @@ It's the high-fidelity tier of the AM thermal tools in our catalog. It's slower 
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified on a fresh clone of ORNL/AdditiveFOAM and public records: LICENSE copyright lines (OpenFOAM Foundation 2011-2017, ORNL 2023-2026) under GPL v3, README "released by Oak Ridge National Laboratory", OpenFOAM-14 and Python 3.10-3.12 requirements, wordmark hosted in ORNL-MDF, one CI workflow, tags 1.0.0 to 2.0.0, last commit 2026-09-21 11:34 ET, 68 commits (33/11/17/7 for 2023-2026), first 2023-03-28, contributors 6 with anonymous and 5 accounts. DOE CODE code-108345 refetched from the OSTI API: 2023-06-13, ORNL research org, sponsors DOE Office of Science and NNSA. Docs site resolves.
 - No corrections.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE Office of Science and NNSA, per DOE CODE code-108345. [KNOWN, above]
+- **Where in the tree (Q2):** ORNL, then additive manufacturing, on the 3D-printing ladder (melt-pool heat feeding ExaCA). [KNOWN: ExaCA output; INFERRED: the ladder framing]
+- **What it teaches about ORNL (Q8):** the lab extends big open-source community codes (OpenFOAM) instead of writing its own solvers, and keeps up with them. The 2.0.0 release ported it to OpenFOAM-14. [KNOWN; INFERRED: the lesson]
+- **Student angle (Q9):** it has a CONTRIBUTING.md, a docs site and a JOSS paper. [KNOWN] You'd need OpenFOAM, C++ and some heat-transfer basics. [INFERRED]
+- **Searched without result (Q10):** outside users (see signals).

@@ -29,8 +29,6 @@ for name, text in (("INDEX.md", index), ("README.md", readme)):
     if "Independent" not in text and "independent" not in text:
         errors.append(f"{name} is missing an independence statement")
 
-if not (ROOT / "AGENTS.md").exists():
-    errors.append("AGENTS.md is missing")
 if not (ROOT / "docs" / "research-team.md").exists():
     errors.append("docs/research-team.md is missing")
 

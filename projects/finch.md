@@ -61,3 +61,12 @@ Fast thermal models let AM researchers try many laser paths before printing real
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified on a fresh clone of ORNL-MDF/Finch: LICENSE "Copyright (c) 2024, Oak Ridge National Laboratory", tags 0.1.0 and 0.2.0, last commit 2026-10-05 09:35 ET with message "Optional coupling with stork for interpolation", 192 commits (98/86/4/4 for 2023-2026), first commit 2023-05-15, README requirements (CMake 3.12+, Cabana 0.6.1, json 3.10+), CI compilers and back ends, examples, contributors 4 with anonymous and 3 accounts. Zenodo link resolves.
 - Corrected: the brief called scope CORROBORATED on the LICENSE alone, which is one source. Added DOE CODE code-122647 as the second, independent source, so CORROBORATED now holds.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** the DOE CODE record (code-122647) lists the DOE Office of Science and the National Nuclear Security Administration as sponsors, with ORNL as the research org. [KNOWN: OSTI API records/code-122647, accessed 2026-10-24] Which program inside those offices is [UNKNOWN].
+- **Where in the tree (Q2):** ORNL, then additive manufacturing, on the 3D-printing ladder. It's coupled with ExaCA and built on Cabana, from the exascale co-design center. [KNOWN, above]
+- **What it teaches about ORNL (Q8):** exascale-era libraries (Kokkos, Cabana) became the base for new applied codes after the Exascale Computing Project. [KNOWN: dependencies; INFERRED: the lesson]
+- **Student angle (Q9):** it has a CONTRIBUTING.md. [KNOWN: tree] To contribute you'd need modern C++, CMake, and Kokkos's way of writing code that runs on both CPUs and GPUs. [INFERRED]
+- **Searched without result (Q10):** the specific program inside the sponsoring offices, what Stork is.
+
+- Fact-check pass 2026-10-24 (GOAL questions): Q3 corrected. The OSTI API record code-122647 does fill sponsor_orgs (USDOE SC and NNSA); the earlier line said it was blank. Q9 CONTRIBUTING.md confirmed in a fresh clone.

@@ -18,8 +18,8 @@
 | Funding | No OSTI software record. Not checked further this round | OSTI | [UNKNOWN] |
 | Wayback | github.com/ORNL/HeCBench nearest captures 2026-04-30 and 2026-10-06 | availability API | [KNOWN], but only bounds the dates |
 
-## Who actually uses it (connections pass)
-Accessed 2026-10-24 (ET). Artifacts only (RULES 16; DVC data hosting not examined). Source repo is ORNL/HeCBench only; the zjin-lcf fork is not used as a source. Institution names from OpenAlex/OSTI, no individuals profiled. Detail in connections/map.md links 152-158.
+## Who actually uses it
+Accessed 2026-10-24 (ET). Artifacts only (RULES 16; DVC data hosting not examined). Source repo is ORNL/HeCBench only; a separate personal fork is not used as a source. Institution names from OpenAlex/OSTI, no individuals profiled. Detail in connections/map.md links 152-158.
 
 **Outside vs inside:** The inside describes a benchmark suite of the same kernels in CUDA, HIP, SYCL and OpenMP for studying portability. Outside, HeCBench has the broadest visible use of any ORNL tool checked so far: 122 forks and dozens of papers from universities, LLNL, Argonne and vendor co-authors that use it as a test corpus, especially for compilers and LLM code translation, even though GitHub shows 0 dependents (expected for a benchmark suite).
 

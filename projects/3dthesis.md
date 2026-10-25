@@ -71,3 +71,10 @@ It's the "quick estimate" tier of ORNL's AM thermal tools. It's fast enough to s
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified on a fresh clone of ORNL-MDF/3DThesis and public records: BSD 3-Clause LICENSE, README DOE CODE and Zenodo links (Zenodo resolves), UT-Battelle contract acknowledgment, "experimental and should never be used" Secondary option, the Stork mode in `src/Run.cpp`, the six example folders, tags 1.0.0 to 4.0.0, last commit 2026-08-26 15:02 ET, 119 commits (1/1/3/8/85/14/7 for 2019-2026, none in 2022), first commit 2019-06-11, contributors 5 with and without anonymous. DOE CODE code-26241 refetched from the OSTI API: title as stated, 2018-12-21, DOI 10.11578/dc.20200909.3, ORNL research org, USDOE sponsor.
 - No corrections. The older GitLab.com home listed on DOE CODE wasn't followed, which fits rule 16 and the no-profiling limit.
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** the README credits DOE's EERE Advanced Manufacturing Office and the Office of Electricity's TRAC program, and DOE CODE lists USDOE. [KNOWN, above]
+- **Where in the tree (Q2):** ORNL, then additive manufacturing, then the Manufacturing Demonstration Facility's GitHub org (ORNL-MDF), on the 3D-printing ladder feeding ExaCA. [KNOWN: repo org, ExaCA output; INFERRED: the ladder framing]
+- **What it teaches about ORNL (Q8):** a tool can start under one funder (energy efficiency and grid hardware) and then move into a facility's shared toolchain. Here an older personal-account GitLab home was followed by a lab GitHub org and a burst of releases in 2024. [KNOWN: DOE CODE, releases; INFERRED: the story]
+- **Student angle (Q9):** there's no CONTRIBUTING file. [KNOWN: tree] It's small (about 119 commits), plain C++ with OpenMP, and has six worked example folders. That makes it one of the easiest physics codes in the catalog to build and read. [KNOWN: examples; INFERRED]
+- **Searched without result (Q10):** what Stork is (logged in not-found), and outside users.

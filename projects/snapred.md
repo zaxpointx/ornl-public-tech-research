@@ -69,3 +69,14 @@ Facility users get beam time for only a few days, so turning raw data into resul
 - https://api.github.com/repos/neutrons/SNAPRed (plus /languages, /releases, /contributors with and without anon=1)
 - https://www.osti.gov/api/v1/records/3012509 (title, research org, sponsor, abstract)
 - https://snapred.readthedocs.io/en/latest/ (linked docs, front page)
+
+## GOAL.md questions (added 2026-10-24)
+- **Who pays (Q3):** DOE Office of Science, Basic Energy Sciences, Scientific User Facilities. [KNOWN: OSTI 3012509]
+- **Where in the tree (Q2):** ORNL, then the Spallation Neutron Source (a user facility), then the SNAP instrument. [KNOWN: OSTI abstract] It belongs with the SNS neutron data pipeline deep dive. [INFERRED]
+- **What it teaches about ORNL (Q8):** user facilities build instrument-specific apps on top of a shared engine (Mantid) and ship them through the lab's own conda channels with QA and production builds. That's an in-house release pipeline. [KNOWN: pyproject.toml channels; INFERRED: the pattern]
+- **Student angle (Q9):** there's no CONTRIBUTING file and no good-first-issue labels (15 open issues and PRs). The Sphinx docs do have a developer section covering architecture, implementation notes and deploy. [KNOWN: tree, GitHub API, accessed 2026-10-24] It's a good read for a Python student: clean layering, a GUI built on model-view-presenter, and unit tests in CI. Real contributions would need Mantid and test data hosted off GitHub. [INFERRED; docs usage page]
+- **Searched without result (Q10):** why GitHub Releases stop at v2.0.0, and outside users.
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified on a fresh clone of neutrons/SNAPRed and public records: GPL-3.0 LICENSE, default branch `next`, last commit 2026-10-19 10:48 ET, 889 commits, first 2022-12-19, tags through v2.3.1 plus `v2.4.0exp1-cycle-aware-calib`, four workflows, Python 3.10+, contributors 20 with anonymous and 14 accounts. OSTI 3012509 refetched: title, 2025-12-08, DOI 10.1016/j.softx.2025.102464, ORNL research org, BES Scientific User Facilities sponsor. Docs link resolves.
+- No corrections. Per-year counts differ by one commit at the 2023 and 2026 edges depending on time zone (my clone gives 282 and 35), which doesn't change anything.
