@@ -23,6 +23,7 @@ Coordination: an editor assigns batches and makes scope and status decisions; th
 - INDEX.md                     curated entry point, kept current by the editor
 
 ## Project brief template (projects/<id>.md)
+The full template is templates/project-brief.md (from 2026-10-24); the outline below is the short form. Briefs written before then keep their shape and gain the new sections when next touched.
 # <Name>
 - Official page / Repo / Docs / License / Status (active, archived, unknown, stub-osti-only, draft-osti-only)
 ## What it is (plain English, 2-4 sentences)
@@ -55,3 +56,8 @@ For a few high-value projects, run the full reconstruction: executive synthesis,
 16. Hard limits on outside-in work: study artifacts, never systems. No scanning, probing, subdomain or DNS enumeration, port or service mapping, login-page discovery, or anything that maps ORNL networks or infrastructure. No profiling of individual people beyond public credit lines already allowed (no personal accounts, locations, or social media). No attempts to infer classified, export-controlled, or restricted work, and no speculation about what is hidden in non-public repos. If a signal points toward any of that, stop and log it as out of scope. Only follow links that a public page actually shows; never guess or try paths on ORNL hosts (for example `/release-notes`), since that counts as probing even when harmless. Job postings count only from official jobs boards, never social posts. [editorial decision 2026-10-24]
 Outputs go in signals/<project-id>.md, using the same tags and a short "what the outside tells us that the inside doesn't" section at the top.
 17. From batch 06 on, every project gets signals/<project-id>.md under items 15-16: the discovery pass writes the history, CI and funding section first, then the connections pass writes the usage section below it. The fact-check pass spot-checks at least one of the discovery-pass commit counts against a fresh clone when time allows. [editorial decision 2026-10-24]
+
+## Brief depth (added 2026-10-24, editorial decision, adapted from an outside review)
+18. Every new or reworked brief follows templates/project-brief.md, including the ten-question section from GOAL.md, a timeline table, and a related-projects table with a tag per row. Interpretation ("what stands out") stays in its own section, apart from the facts.
+19. "How the project is organized" is filled from templates/engineering-checklist.md: write what is visible with a path or URL, and leave the reason behind a design choice UNKNOWN unless a source states it. Authorship proves participation, not ownership; shared contributors prove a shared contributor, not a shared team; similar names prove nothing.
+20. A batch or work group is closed only when the catalog row count and INDEX agree, local Markdown links resolve, and every brief in it has passed both sweeps. The brief to-do list in INDEX.md is updated at the same time.

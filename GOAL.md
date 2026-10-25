@@ -9,7 +9,6 @@ Set by Cayden Wilson, 2026-10-24. Every batch, brief, signals file and deep dive
 3. **Ask-anything readiness.** The repo should be organized well enough that a reader, or an AI assistant reading it, can answer almost any question about a project from the files, with sources, and say honestly when something is unknown.
 4. **Portfolio.** A public piece that shows how Cayden researches: careful sourcing, honest known/inferred/unknown labels, and OSINT done ethically.
 5. **ORNL internship.** Understanding which parts of the lab do work that matches Cayden's skills (cybersecurity, networking, Python, Linux), what skills keep showing up across projects, and where a student could realistically learn or contribute.
-
 The execution plan and role boundaries are maintained in [docs/research-team.md](docs/research-team.md). The atlas distinguishes a broad inventory from a deep project reading; it does not claim that a brief or a catalog row is a complete understanding.
 
 ## End results (what "done" looks like)

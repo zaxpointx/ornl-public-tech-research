@@ -68,7 +68,7 @@ lessons/                 takeaways about how the lab works
 verification/            fact-check log and searched-but-not-found ledger
 batches/                 per-batch summaries
 docs/                    methodology, roles, reading order
-templates/               template for new deep dives
+templates/               templates for briefs and deep dives, engineering checklist
 scripts/audit_atlas.py   structure check, run on every push
 ```
 

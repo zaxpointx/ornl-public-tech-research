@@ -101,7 +101,6 @@
 | 2026-10-24 | zambeze | ZambezeInterceptor class in current Flowcept | ORNL/flowcept src | not found (renamed MQTTBrokerInterceptor) (connections pass, map pass 19) |
 | 2026-10-24 | zambeze | conda-forge feedstock | github.com/conda-forge | 404 (connections pass, map pass 19) |
 | 2026-10-24 | matris | Spack / conda-forge / ORNL PyPI package; GitHub dependents | registries; dependents page | 404 / 404 / PyPI name is unrelated / "0 Repositories" (connections pass, map pass 19) |
-| 2026-10-24 | finch, 3dthesis | what "stork" (the coupling and tracking mode) is | Finch and 3DThesis READMEs, src, examples | not explained anywhere in either repo (reading pass, batch 10) |
 | 2026-10-24 | exago | ReSolve reference in ExaGO top-level build files | ORNL/ExaGO CMakeLists.txt, cmake/ | no match (reading pass, batch 10) |
 | 2026-10-24 | gridkit | ORNL GridKit on PyPI / conda-forge / Spack; GridKit software paper | registries; api.openalex.org | 404 / PyPI name is unrelated; no paper found (connections usage pass) |
 | 2026-10-24 | exatn | PyPI / conda-forge / Spack; GitHub dependents count | registries; network/dependents | 404; no count shown (connections usage pass) |
@@ -117,7 +116,6 @@
 | 2026-10-24 | data-workflow | OSTI software record for the neutrons data_workflow repo | osti.gov API | only other-lab namesakes found (signals history pass) |
 | 2026-10-24 | stellarator-tools | a primary source naming ORNL (copyright, research org, repo owner) | repo LICENSE and README; PARVMEC, LIBSTELL, SIESTA LICENSE and README; GitHub org profile (no name or description); OSTI API q=V3FIT, "SIESTA stellarator", Stellarator-Tools, ORNL-Fusion | none: licenses say "Copyright (c) 2020 ORNL-Fusion" (a GitHub org name), org profile is blank, no OSTI record names the suite (reading pass, batch 10b) |
 | 2026-10-24 | pyxodr3d | a primary source naming ORNL | repo README, LICENSE, NOTICE; OSTI API q=pyxodr3d | none: NOTICE assigns copyright to an individual, no ORNL wording, no OSTI hits; NOTICE also still has an unfilled placeholder for the original libopendrive copyright (reading pass, batch 10b) |
-| 2026-10-24 | stork | identity of "Stork" used by Finch and 3DThesis: submodule, URL, docs link, public ORNL-MDF repo | both repos (fresh clones, .gitmodules, CMake, README); GitHub repo search org:ORNL-MDF | none found; only code names and a CMake find_package (connections pass 21) |
 | 2026-10-24 | exaca | ExaCA naming 3DThesis or AdditiveFOAM | LLNL/ExaCA README and docs (fresh clone) | not found; only Finch named (connections pass 21) |
 | 2026-10-24 | autobem | PyPI / conda-forge / Spack package; public repo | registries; catalog | 404; no repo (connections usage pass) |
 | 2026-10-24 | data-workflow | PyPI / conda-forge / Spack; software paper | registries; api.openalex.org | 404; none found (connections usage pass) |
@@ -149,3 +147,7 @@
 | 2026-10-24 | olcf-test-harness | public page stating another computing center runs the harness | OpenAlex full-text search "OLCF Test Harness" (11 works); repo README and docs | none found; 3 non-ORNL papers mention it as related work only (connections pass 26) |
 | 2026-10-24 | olcf-test-harness | PyPI / conda-forge package; GitHub dependents | registries; network/dependents | 404 / 404 / "0 Repositories" (connections pass 26) |
 | 2026-10-24 | olcf-test-harness / hecbench | either README naming the other | both READMEs (grep) | none (connections pass 26) |
+| 2026-10-24 | 3dthesis / adamantine / myna | Spack builtin package | spack-packages builtin | 404 (connections pass 28) |
+| 2026-10-24 | finch | journal paper for Finch | api.openalex.org | none found; only the Zenodo 0.1.0 record (connections pass 28) |
+| 2026-10-24 | thermochimica | mention in AM repos (Finch, 3DThesis, AdditiveFOAM, Myna, ExaCA, adamantine) | fresh clones, grep | none (connections pass 28) |
+| 2026-10-24 | exaca / stork | Stork named in ExaCA README or CMake; Stork README naming ExaCA | LLNL/ExaCA; ORNL/Stork README | none; consumer stays INFERRED (connections pass 28) |
