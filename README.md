@@ -11,6 +11,12 @@ This is an independent, open-source intelligence (OSINT) study of what Oak Ridge
 > [!IMPORTANT]
 > **Independent research. Not affiliated with, sponsored by, or endorsed by ORNL, UT-Battelle, LLC, or the U.S. Department of Energy.** Everything here comes from public sources (ornl.gov, osti.gov, energy.gov, public GitHub/GitLab repositories, public papers and docs). No logins, no restricted material, and no contact with lab staff. Project names belong to their owners. Findings can be wrong or out of date; see [Corrections](CONTRIBUTING.md).
 
+## What this is—and is not
+
+This is an evidence-bounded research atlas and book manuscript about ORNL-related public technology. It is useful for researchers, technical readers, and contributors who want a navigable starting point for public software and research artifacts.
+
+It is not an official ORNL directory, an exhaustive inventory, a claim about private systems or staff, or a substitute for the upstream project's own documentation. Public repositories show published artifacts; they do not by themselves prove production deployment, institutional ownership, or complete internal architecture.
+
 ## Read this as a book
 
 The repository is both a living research atlas and the working manuscript for a book-length study. Start with the [Book Plan](docs/book-plan.md) for the narrative, then use the atlas files as the evidence layer behind each chapter.
@@ -25,15 +31,13 @@ The repository is both a living research atlas and the working manuscript for a 
 
 The [reading order](docs/reading-order.md) remains useful for a short technical tour; the Book Plan is the canonical editorial structure.
 
-## Start here
+## Choose your path
 
-1. [LAB-TREE.md](LAB-TREE.md): how the lab is organized, and where each project sits in it.
-2. Deep dives, the most complete work in the repo:
-   - [Cyberwheel](deep-dives/cyberwheel/synthesis.md), a reinforcement-learning cyber defense simulator
-   - [SNS neutron data pipeline](deep-dives/sns-neutron-pipeline.md), how neutron experiment data is reduced and analyzed
-   - [OLCF test harness](deep-dives/olcf-test-harness.md), automated acceptance testing for supercomputers
-3. [INDEX.md](INDEX.md): every project by domain, with a one-line summary and verification status.
-4. [lessons/](lessons/): plain-English takeaways about how the lab works.
+- **New here:** read the [Book Plan](docs/book-plan.md), then the [lab map](LAB-TREE.md).
+- **Browse projects:** use the [Project Index](INDEX.md) and [coverage matrix](docs/coverage-matrix.md).
+- **Read case studies:** start with [Cyberwheel](deep-dives/cyberwheel/synthesis.md), the [SNS neutron data pipeline](deep-dives/sns-neutron-pipeline.md), or the [OLCF test harness](deep-dives/olcf-test-harness.md).
+- **Check the evidence:** read the [methodology](docs/methodology.md), [rules](RULES.md), and [verification ledger](verification/log.md).
+- **Contribute or correct:** read [CONTRIBUTING.md](CONTRIBUTING.md) and use the appropriate issue template.
 
 The full suggested order is in [docs/reading-order.md](docs/reading-order.md). Publication and reproducibility conventions are documented in [docs/publication-workflow.md](docs/publication-workflow.md).
 

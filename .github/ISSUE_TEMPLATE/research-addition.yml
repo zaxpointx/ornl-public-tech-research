@@ -1,0 +1,34 @@
+name: Research addition
+description: Suggest a public project, source, or evidence-backed connection
+title: "[Research]: "
+labels: [research]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project or topic
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Public source
+      description: Include a stable public URL and explain what it establishes.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Suggested change
+      description: Identify the brief, catalog row, deep dive, or connection that should be updated.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Scope checks
+      options:
+        - label: The source is public and does not require a login
+          required: true
+        - label: This suggestion does not expose private, restricted, or personal information
+          required: true

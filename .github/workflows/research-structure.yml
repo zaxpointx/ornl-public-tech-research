@@ -17,3 +17,7 @@ jobs:
           python-version: '3.x'
       - name: Validate atlas structure
         run: python3 scripts/audit_atlas.py
+      - name: Compile validation scripts
+        run: python3 -m compileall -q scripts
+      - name: Check patch whitespace
+        run: git diff --check
