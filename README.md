@@ -20,6 +20,7 @@ The repository is both a living research atlas and the working manuscript for a 
 3. [Project index](INDEX.md): the complete catalog of briefs and their evidence status.
 4. [Deep dives](deep-dives/): the three most developed case studies.
 5. [Methods and evidence](docs/methodology.md): how claims are sourced, tagged, and checked.
+6. [Research manifest](docs/research-manifest.md): the current snapshot and reproducibility boundary.
 
 The [reading order](docs/reading-order.md) remains useful for a short technical tour; the Book Plan is the canonical editorial structure.
 
@@ -93,6 +94,7 @@ Editorial control files:
 ```
 docs/book-plan.md             canonical book architecture and chapter map
 docs/publication-workflow.md  editioning, reproducibility, review, and release rules
+docs/research-manifest.md     snapshot inventory and reproduction boundary
 templates/chapter-checklist.md required evidence and editorial checks for chapters
 ```
 
