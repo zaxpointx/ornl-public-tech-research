@@ -39,6 +39,8 @@ The [reading order](docs/reading-order.md) remains useful for a short technical 
 - **Check the evidence:** read the [methodology](docs/methodology.md), [rules](RULES.md), and [verification ledger](verification/log.md).
 - **Contribute or correct:** read [CONTRIBUTING.md](CONTRIBUTING.md) and use the appropriate issue template.
 
+GitHub Actions dependencies are checked monthly through Dependabot; proposed updates still pass the repository audit before merging.
+
 The full suggested order is in [docs/reading-order.md](docs/reading-order.md). Publication and reproducibility conventions are documented in [docs/publication-workflow.md](docs/publication-workflow.md).
 
 ## Status
