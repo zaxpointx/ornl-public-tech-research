@@ -56,4 +56,4 @@ The book is ready for a numbered edition when every chapter in the map is either
 
 ## Current state
 
-The repository currently has a complete atlas foundation, 48 briefs, 3 completed deep dives, and a substantial connections and verification layer. Parts I and II are underway; Part III is partial; Part IV is the primary synthesis gap.
+The repository currently has a complete atlas foundation, 48 briefs, 3 completed deep dives, and a substantial connections and verification layer. Parts I and II are underway; Part III is partial; Part IV is the primary synthesis gap. See the [coverage matrix](coverage-matrix.md) for the current editorial control view.

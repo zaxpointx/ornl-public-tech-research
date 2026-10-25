@@ -51,6 +51,7 @@ for required_file in (
     ROOT / "docs" / "book-plan.md",
     ROOT / "docs" / "publication-workflow.md",
     ROOT / "docs" / "research-manifest.md",
+    ROOT / "docs" / "coverage-matrix.md",
     ROOT / "templates" / "chapter-checklist.md",
 ):
     if not required_file.exists():
@@ -69,6 +70,8 @@ if "docs/book-plan.md" not in readme:
     errors.append("README.md does not link to the canonical book plan")
 if "docs/publication-workflow.md" not in readme:
     errors.append("README.md does not link to the publication workflow")
+if "docs/coverage-matrix.md" not in readme:
+    errors.append("README.md does not link to the coverage matrix")
 
 print(f"catalog rows: {len(catalog)}")
 print(f"project briefs: {len(project_ids)}")
