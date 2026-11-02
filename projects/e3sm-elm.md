@@ -55,3 +55,12 @@ This is an editorial question, and here's what the public record supports:
 - Another ORNL example for later: OSTI 3022692, ELM runoff evaluation for Alaska permafrost (LANL + ORNL).
 - Verified: LICENSE is BSD-3, copyright 2024 UChicago Argonne; components/elm and src folder lists match; external_models holds emi and fates; docs/index.md has placeholder intro and mentions Coupler-bypass mode; languages Fortran 79.4 / C++ 10.1.
 - Land-group leadership stays [UNKNOWN]. ORNL 'owns ELM' is not supported by anything found, and the brief correctly doesn't claim it.
+
+### Second pass (2026-10-29)
+Skeptical reread of the riskiest claims against sources not leaned on before (a fresh clone, GitHub API, live pages). Earlier 2026-10-24 fixes checked and still hold.
+- License: LICENSE on a fresh clone says BSD-3 for E3SM except separable pieces, copyright 2024 UChicago Argonne. (GitHub's license field shows NOASSERTION because of the mixed text.) Verified.
+- `components/elm/` layout (bld, cime_config, docs, src, test, tools, mkdocs.yml): verified on the clone.
+- Active: GitHub API last push 2026-10-29 UTC. Verified.
+- Commit spot check (Rule 17, treeless clone): default branch `master` 69,163 commits, all branches 87,337; 478 author names; first commit dated 2009-06-08, before the 2014 GitHub repo creation, so history was imported. Counts are for all of E3SM, not ELM alone.
+- Unverifiable this pass: the OSTI dataset records 3005830 and 3364821 and the DOE CODE version list; the OSTI API timed out. They stand on the earlier checks.
+- No corrections.

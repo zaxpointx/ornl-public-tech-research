@@ -16,3 +16,7 @@ Written in the fact-check pass, checked 2026-10-24. Every public source this dee
 | S11 | OSTI 1373059 "Firewheel." | Sandia conference record, 2016-07-01, NNSA sponsor | Firewheel predecessor (INFERRED link) | yes | Same name and lab only |
 | S12 | OSTI 3827147, DOI 10.2172/3827147 | ORNL LDRD supplementary report (OT pentesting with AI), 2026-09-01 | Possible adjacent work only | metadata yes | No source ties it to Cyberwheel. Stays INFERRED/adjacent |
 | S13 | cyberwheel/emulator README in repo | Repo doc | "Firewheel uses QEMU/KVM to host virtual machines" | not refetched | Cited by lineage F8 |
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: the GitHub, release and arXiv sources listed still resolve. No corrections.

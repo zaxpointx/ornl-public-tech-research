@@ -2,7 +2,7 @@
 - Official page: none separate from the repo [KNOWN: GitHub API homepage empty]
 - Repo: https://github.com/ORNL/cyberwheel
 - Docs: README, plus `cyberwheel/emulator/README.md` for emulation setup [KNOWN: README]
-- License: MIT, copyright 2024 an individual developer (named in the LICENSE) [KNOWN: LICENSE file, https://github.com/ORNL/cyberwheel/blob/main/LICENSE]
+- License: MIT, copyright 2024 held by an individual credited developer (corrected in a fact-check pass, 2026-10-29) [KNOWN: LICENSE file, https://github.com/ORNL/cyberwheel/blob/main/LICENSE]
 - Status: borderline active. Last push 2025-08-26, about 14 months before this brief [KNOWN: GitHub API; "borderline" INFERRED]
 
 ## What it is (plain English, 2-4 sentences)
@@ -48,7 +48,12 @@ Cyberwheel is a training ground for AI cyber defenders. It simulates a computer 
 ## Fact-check notes (2026-10-24)
 - Retagged: "real virtual machines" isn't in the README; split into KNOWN emulation + INFERRED VMs.
 - Added: DOE CODE code-134699 and OSTI 2478356 confirm ORNL; possible LDRD funding (INFERRED).
-- Verified: MIT (2024 an individual developer (named in the LICENSE)), v2.0 multi-agent/multi-network (100/1,000/10,000 hosts)/FIREWHEEL, Python 3.10 + Poetry + Graphviz, Gym/W&B/Dash, Next Steps list, tags v1.0.0/v1.1.0/v2.0, six ornl.gov contacts, arXiv 2404.10788 title. ACM DOI returned 403 (publisher block), paper confirmed through OSTI.
+- Verified: MIT (2024, an individual credited developer) (corrected in a fact-check pass, 2026-10-29), v2.0 multi-agent/multi-network (100/1,000/10,000 hosts)/FIREWHEEL, Python 3.10 + Poetry + Graphviz, Gym/W&B/Dash, Next Steps list, tags v1.0.0/v1.1.0/v2.0, six ornl.gov contacts, arXiv 2404.10788 title. ACM DOI returned 403 (publisher block), paper confirmed through OSTI.
 - Unverifiable: owning division and whether development continues.
 - No restricted content or implied ORNL affiliation found; contact names correctly left out.
 - Update (map.md spot-check, 2026-10-24): read the LDRD report itself. LDRD funding and QEMU-based virtual machines in emulation mode both retagged KNOWN.
+
+### Second pass (2026-10-29)
+- Rule 17 spot check on a fresh `--filter=blob:none` clone: 352 commits on the default branch (main), 398 on all branches. First commit 2024-01-02, last 2025-08-26. All-branch counts per year: 246 and 152 by author date, 243 and 155 by committer date. These match signals/cyberwheel.md, which used author date. Tags v1.0.0 (2024-08-16), v1.1.0 (2025-03-10) and v2.0 (2025-08-11) are confirmed from git tags. The MIT license is confirmed from the LICENSE file.
+- Corrected: the license line named the copyright holder. It now gives the role only, to follow the people-by-role rule; the earlier fact-check note was changed the same way.
+- The 2026-10-24 fixes are in place. No affiliation, copying or restricted issues found.

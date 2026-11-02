@@ -121,3 +121,17 @@ Independent research from public sources only; not affiliated with ORNL. Prepare
 
 ## Not suggested (keep off the tree as links)
 Map links tagged only [UNKNOWN] (18, 19, 20, 38, 47, 49) and [UNRELATED] namesakes (57 LLNL GridKit) should not become tree branches.
+
+## Fact-check notes (2026-10-29)
+First full check of this file (no earlier logged check found). Every numbered crosslink's tag was compared with the tag on the map link it cites, including later "Pass N" upgrades inside that map entry.
+- Verified: all cited map links exist, and no crosslink's tag is stronger than its map link. The CORROBORATED items (Flowcept at OLCF, DataFed at OLCF, Cabana's ORNL tie, IRIS and QIR-EE, Zambeze and Flowcept, SNAPRed and SNS) each match a CORROBORATED upgrade recorded in the map. The CEES line states a KNOWN fact (the org's own description) inside a link the map tags INFERRED for its relationship; that's consistent.
+- No corrections.
+
+### Second pass (2026-10-29)
+Adversarial reread of the CORROBORATED items against the repos themselves.
+- IRIS: `src/runtime/CMakeLists.txt` names the QIR-EE sources. Verified.
+- Zambeze: `message_handler.py` loads Flowcept when it is enabled (lines 70-73). Verified.
+- Flowcept: the `examples/olcf_frontier` folder resolves. Verified.
+- SNAPRed: `pyproject.toml` references an SNS data mount. Verified.
+- Cabana: README says CoPA is a multi-institutional project with ORNL among the developers. Verified.
+- No corrections.

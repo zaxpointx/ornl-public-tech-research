@@ -14,3 +14,7 @@ Written in the fact-check pass, 2026-10-24. These are things we looked for in pu
 | M9 | Atomic Red Team version | Repo code | UNKNOWN |
 | M10 | Any results from a Cyberwheel experiment at 100,000-node scale | OSTI 3025007 | That figure is Firewheel's capacity only |
 | M11 | An archive notice or deprecation statement | Repo (not archived), releases | Quiet since 2025-08-26 is a fact. "Dead" is not |
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Reread: listed gaps still open; nothing newly public found in the repo. No corrections.

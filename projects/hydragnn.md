@@ -33,7 +33,7 @@ HydraGNN is a Python toolkit for training graph neural networks (GNNs) that pred
 - Specific outside users: [UNKNOWN].
 
 ## Related projects
-- It runs on OLCF Frontier, see olcf-user-docs [INFERRED: Frontier install scripts].
+- It is set up to run on OLCF Frontier: the repo ships Frontier install scripts, and Frontier's AMD GPUs match its ROCm scripts. [KNOWN: repo `scripts/hpc/olcf/frontier/`; OLCF Frontier user guide; matches map link 26]
 - It overlaps with GridKit and the power-grid domain through its optimal power flow examples [INFERRED: examples/opf, no stated link].
 - It uses ADIOS as an optional feature for data I/O [KNOWN: README mentions "HPO, ADIOS, etc." under optional extras].
 
@@ -54,3 +54,10 @@ HydraGNN is a Python toolkit for training graph neural networks (GNNs) that pred
 - Added: DOE CODE records for v3.0, v4.0 and v5.0 confirm ORNL as research org; v5.0 also lists AMD.
 - Verified against GitHub API, README, LICENSE, CITATION.cff: license, languages, releases, contributors, created date, stars/forks, Python 3.11-3.14, DDP/FSDP/DeepSpeed, equivariant layers, interatomic potentials, OPF training, ADIOS extra.
 - No restricted content or implied ORNL affiliation found. No verbatim copying beyond short phrases.
+
+### Second pass (2026-10-29)
+- Rule 17 spot check on a fresh clone: 1,069 commits on all branches and 928 on main, first commit 2020-10-08. The yearly figures in signals/hydragnn.md are all-branch counts by author date. By committer date: 2021 425, 2022 115, 2023 42, 2024 129.
+- Release dates are confirmed from the GitHub release pages: v2.0.0 published 2023-01-20 and v3.0 published 2023-11-10. The v3.0 tag's own commit date is later (2023-11-27), so the brief's dates are release-publish dates. LICENSE: BSD 3-Clause, 2021 Oak Ridge National Laboratory.
+- The 2026-10-24 fixes are in place. No issues found.
+- 2026-10-29: Frontier tie raised from INFERRED to KNOWN to match map link 26 (same sources as line 22). Needs a re-check of that one line.
+- 2026-11-02: Frontier line re-checked: repo scripts/hpc/olcf/frontier/installation has the ROCm install scripts and the OLCF Frontier guide lists MI250X GPUs. Verified.

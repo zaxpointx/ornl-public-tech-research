@@ -87,3 +87,8 @@ Reasoning: outside users meet the SNS pipeline through Mantid and through the da
 - Corrected the funding line: SNAPRed and PyRS do have sponsor fields on OSTI (BES Scientific User Facilities, and plain USDOE), matching the main deep dive and their briefs.
 - Verified: queue names and the glossary trigger quote, live-data-server's BSD-3 2024 ORNL copyright, pyoncat 2.7 on PyPI, SNAPRed 2 stars and 4 forks, PyRS 6 stars and 10 forks, and the "routed through 'MantidSnapper'" quote (SNAPRed `pyproject.toml`).
 - Mantid citing counts drift slightly between queries (1,807 here against 1,809 in the fact-check pass; ORNL-author subset 696 against 689 by ORNL's ROR id). Both give about 61 to 62 percent without an ORNL author, so the claim stands.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep).
+- Verified: link 105, the agent's README points to mantidproject/autoreduce for the old version; link 106, live-data-server LICENSE is BSD-3, 2024 ORNL; link 51, the three sibling repos exist with the stated creation years.
+- No corrections.

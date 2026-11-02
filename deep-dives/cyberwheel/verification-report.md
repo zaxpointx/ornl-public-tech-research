@@ -16,3 +16,7 @@ Use "research environment", "developed", "showed". Don't use "deployed", "adopte
 
 ## Scope check
 Everything is public: repo, OSTI/DOE CODE, a published LDRD report, papers. There's no restricted, internal or non-public content. Nothing implies we're affiliated with ORNL. The people named are limited to public credit lines (people-roles.md).
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Reread: the report's counts reflect the 2026-10-24 check; this 2026-10-29 pass adds one timeline correction (February 2024 is 31 commits). No other changes.

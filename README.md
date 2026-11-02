@@ -49,15 +49,15 @@ Work in progress. Counts below are taken from the files in this snapshot.
 
 | | |
 |---|---|
-| Projects in the catalog | 66 ([discovery/catalog.csv](discovery/catalog.csv)) |
-| Project files | 48 (46 full briefs plus 2 short OSTI-only drafts) |
-| Project files checked in two sweeps | 48 (full briefs and drafts are counted separately in the index) |
-| Briefs still to write | 18, in progress in batches of five |
-| Deep dives finished | 3 |
+| Projects in the catalog | 69 ([discovery/catalog.csv](discovery/catalog.csv)) |
+| Project files | 67 (58 full briefs, 7 short briefs and 2 short OSTI-only drafts) |
+| Project files checked in two sweeps | 67 |
+| Briefs still to write | 2 OSTI-only stubs (Cincinnatus, CPAD), waiting on a public docs page |
+| Deep dives finished | 6 |
 | Signals files | 40 ([signals/](signals/)) |
-| Research batches | 7 ([batches/](batches/)) |
+| Research batches | 11 ([batches/](batches/)) |
 
-The 66 catalog entries are not all complete briefs: 18 are intentionally uncovered, including unresolved leads and OSTI-only stubs. The [coverage matrix](docs/coverage-matrix.md) explains that queue.
+The 69 catalog entries are not all complete briefs: 2 are OSTI-only stubs with no public docs page yet. The [coverage matrix](docs/coverage-matrix.md) explains that queue.
 
 ## Method
 

@@ -1,5 +1,5 @@
 # Myna
-- Official page / Docs: https://ornl-mdf.github.io/Myna/ [KNOWN: GitHub API homepage]. The README also links ornl-mdf.github.io/myna-docs/ [KNOWN: README; the two links differ, which is minor].
+- Official page / Docs: https://ornl-mdf.github.io/Myna/ [KNOWN: GitHub API homepage]. The README shows the text ornl-mdf.github.io/myna-docs/ but its link goes to /Myna/, and a separate getting-started link uses the myna-docs address; that address returned 404 on 2026-10-29, so /Myna/ is the working docs site. [KNOWN: README lines 9 and 30; HTTP check] (corrected in a fact-check pass, 2026-10-29)
 - Repo: https://github.com/ORNL-MDF/Myna
 - License: BSD 3-Clause, copyright 2024 Oak Ridge National Laboratory [KNOWN: LICENSE.md, https://github.com/ORNL-MDF/Myna/blob/main/LICENSE.md]
 - Status: active, last push 2026-10-13 [KNOWN: GitHub API]. The README warns that ongoing development may change directory layouts and outputs [KNOWN].
@@ -53,3 +53,11 @@ Myna is a Python tool that connects real 3D-printing build records to computer s
 - **What it teaches about ORNL (Q8):** when several labs' physics codes exist, someone builds the glue that runs them in sequence on real build data, and that glue is where a facility's data meets the simulations. [INFERRED]
 - **Student angle (Q9):** it has a CONTRIBUTING.md and docs deployed from CI. [KNOWN: tree, `.github/workflows/`] It's Python workflow code, the most approachable entry into the ladder for a Python student. [INFERRED]
 - **Searched without result (Q10):** see this brief's unknowns and `verification/not-found.md`.
+
+### Second pass (2026-10-29)
+Skeptical reread of the riskiest claims against sources not leaned on before (a fresh clone, GitHub API, live pages). Earlier 2026-10-24 fixes checked and still hold.
+- License BSD-3, 2024 ORNL: fresh clone and GitHub API. Verified.
+- Releases 1.0.0 (2024-08-19) and 1.1.0 (2025-04-09): API publish dates and clone tags. Verified.
+- "About 9 contributors per the GitHub API": API returns 9 (accounts, incl. anonymous). Git history shows 13 distinct author names on the default branch because some people commit under more than one name. Verified, with the method noted.
+- Docs links: corrected. The myna-docs address now returns 404; the README's main docs link actually points to /Myna/, which works.
+- Commit spot check (Rule 17): default branch `main` 477 commits, all branches 540; first commit 2023-05-11, before the 2024-02-23 repo creation, so history was imported; last commit 2026-10-28 (author and committer).

@@ -7,7 +7,7 @@ This is the editorial control view of the current manuscript. The catalog remain
 | Part | Subject | Current evidence | Editorial status | Next work |
 |---|---|---|---|---|
 | I | Scope, method, and public evidence | `GOAL.md`, `RULES.md`, `docs/methodology.md`, `verification/` | Foundation present | Draft a connected introductory chapter |
-| II | Portfolio by technical domain | `INDEX.md`, `LAB-TREE.md`, `projects/`, `signals/` | Broad coverage; 18 catalog entries lack briefs | Normalize brief metadata and complete priority gaps |
+| II | Portfolio by technical domain | `INDEX.md`, `LAB-TREE.md`, `projects/`, `signals/` | Broad coverage; 2 OSTI-only stubs lack briefs | Normalize brief metadata and complete priority gaps |
 | III | Deep case studies | `deep-dives/` | 3 complete; additive manufacturing in progress | Apply chapter checklist to every deep dive |
 | IV | Connections, maturity, and unknowns | `connections/`, `lessons/`, `verification/` | Evidence exists; synthesis is incomplete | Write comparative conclusion and glossary |
 
@@ -15,9 +15,9 @@ This is the editorial control view of the current manuscript. The catalog remain
 
 | Measure | Current value | Meaning |
 |---|---:|---|
-| Catalog entries | 66 | Public projects currently in scope |
-| Project briefs | 48 | Entries with a project-level research file |
-| Missing briefs | 18 | Explicitly uncovered or stub/unknown entries; not silently treated as complete |
+| Catalog entries | 69 | Public projects currently in scope |
+| Project briefs | 67 | Entries with a project-level research file |
+| Missing briefs | 2 | Explicitly uncovered or stub/unknown entries; not silently treated as complete |
 | Signals files | 40 | Public-trace analyses; coverage is intentionally narrower than briefs |
 | Completed deep dives | 3 | Full case-study evidence packages |
 

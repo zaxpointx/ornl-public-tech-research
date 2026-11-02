@@ -100,3 +100,11 @@ The existing usage sections cover [Myna](../signals/myna.md#who-actually-uses-it
 - **Funding:** stays [UNKNOWN] here for Finch, 3DThesis, AdditiveFOAM and Stork. Only adamantine's OSTI record names sponsors (LDRD and EERE, link 125), and Myna's DOE CODE record names the Office of Science (link 55).
 
 Reasoning: the thermal models reach outside researchers mainly through papers and through ExaCA, and the coupling layers (Stork, Myna) are new and still inside the team [INFERRED, medium confidence].
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified against fresh clones, Spack's builtin package recipe, the GitHub API and OpenAlex: the Spack AdditiveFOAM recipe's `openfoam-org@10` pin against the README's OpenFOAM-14; Myna's application folders (no Finch wrapper); 3DThesis's Stork mode first landing 2024-09-12; 3DThesis paper 69 citing works with 24 ORNL; ExaCA paper 55 with 25 ORNL; Stork repo facts. No corrections.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep).
+- Verified: Finch's CMake has `find_package(Cabana 0.6.1 REQUIRED COMPONENTS Cabana::Grid)`; Myna's `src/myna/application/` lists adamantine, additivefoam, bnpy, cubit, deer, exaca, openfoam, rve and thesis, with no Finch wrapper; Myna README's Peregrine wording; ExaCA is llnl/ExaCA (MIT).
+- No corrections.

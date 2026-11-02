@@ -41,7 +41,7 @@ Rank candidates by how well they serve the goals above: they reveal how the lab 
 3. **The 3D-printing ladder** (3DThesis, Finch, AdditiveFOAM, ExaCA, Myna, adamantine).
 4. **The grid tools** (GridKit, ReSolve, ExaGO).
 
-Cyberwheel is already done.
+Status on 2026-11-02: all six deep dives (Cyberwheel, the SNS pipeline, the OLCF test harness, 3D-printing tools, grid tools and nuclear reactor software, open codes only) are written and verified with two checks. Live status is in [INDEX.md](INDEX.md#deep-dives).
 
 ## Rules that do not change
 

@@ -11,7 +11,7 @@ Short answer: yes, roughly. Each burst of work lands in the run-up to a new supe
 - **2016 to 2017, the Summit run-up.** This is the biggest early burst (96 commits in September 2016), and the following month brought "Adding support for summitdev" (2016-10-13), Summit's early test system. Titan, the machine of the day, shows up in 2016 subjects, and Summit shows up from 2017 to 2021. Activity nearly stops in 2018, the year Summit launched. [KNOWN: git log] Read: the harness was built up before Summit arrived, then went quiet once it was running. [INFERRED, medium]
 - **2022 to 2023, the Frontier years.** Commits came back to 121 and 105. The 2022 work adds automatic timing metrics and support for the Slurm job scheduler. [KNOWN: commit subjects] The brief says the docs cover both Slurm and LSF, the older scheduler. [KNOWN: signals/olcf-test-harness.md] Read: retooling for Frontier. [INFERRED, medium]
 - **2025, the busiest year since 2016.** 203 commits from two people by commit name (the 9 to 10 count comes from distinct email addresses, which overcount), and the v3.0 release on 2025-03-31. The work centers on sending test results and machine health into streaming metrics databases. [KNOWN: git log, tags] This comes right after Summit was retired and DOE asked for Discovery bids. [KNOWN dates] Whether it's tied to Discovery is [UNKNOWN]. A general push for better monitoring is just as likely. [INFERRED, low]
-- Only one commit subject names Frontier (2026-10). Machine names live in config files more than in commit messages, so name counts undercount. [KNOWN; INFERRED about why]
+- No commit subject names Frontier on a 2026-10-29 fresh clone (all branches) (corrected in a fact-check pass, 2026-10-29). Machine names live in config files more than in commit messages, so name counts undercount. [KNOWN; INFERRED about why]
 - I didn't read machine configs, node details or any system layout (rule 16).
 
 ## Funding
@@ -33,3 +33,10 @@ Short answer: yes, roughly. Each burst of work lands in the run-up to a new supe
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified against a fresh clone: per-year commits, 96 commits in September 2016, the 2018 lull, all four tags and dates, and the 2026-10 Frontier mention.
 - Corrected: summitdev support landed 2016-10-13, a month after the September burst; 2025's work came from two people by commit name (email counts give 9 to 10); code-153320's sponsor field says Office of Science, not ASCR, which appears on the other OSTI hits.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep), on a fresh clone.
+- Verified: yearly counts 2015-2024 match on both the default branch and all branches (author dates); 96 commits in September 2016; "Adding support for summitdev" on 2016-10-13; two author names in 2025.
+- Labels: 2025's 203 is all branches (201 on the default branch). 2026 is now 93 default / 94 all; the file's 79 was a snapshot from 2026-10-24.
+- Corrected: no commit subject names Frontier (the earlier "one" could not be found).
+- Nothing about hosts or systems recorded (rule 16).

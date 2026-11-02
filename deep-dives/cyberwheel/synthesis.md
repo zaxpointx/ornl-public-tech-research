@@ -45,3 +45,7 @@ Probably not. The purpose, funding, design and results all come from primary sou
 - Funding nuance: "LDRD-funded" is CORROBORATED (report p. 13 plus the DOE CODE code-134699 sponsor field "USDOE Laboratory Directed Research and Development (LDRD) Program"). The project number 11049 rests only on the report, so it's KNOWN from a single source. Neither code-134699 nor OSTI 2478356 carries a project number or contract number.
 - "Built for ORNL's internal LDRD project": the report says agents were "trained in a custom-built, realistic network test bed environment called Cyberwheel". "Internal" is not in the source; LDRD is lab-directed by definition, so it's acceptable but INFERRED.
 - What "modified" means in Firewheel is not stated anywhere on p. 13. The report gives only "modified version" plus "built on QEMU" and "over 100,000 virtual nodes". The connections-pass reading (Cyberwheel's own components, not a fork) stays INFERRED.
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: MIT license (LICENSE); v1.1.0 released 2025-03-10 and v2.0 on 2025-08-11 (GitHub releases); about 8 contributors (GitHub API, 8). No corrections.

@@ -55,3 +55,9 @@ OTH is the tool OLCF uses to automatically test its supercomputers. It builds re
 - **What it teaches about ORNL (Q8):** new supercomputers get proven with a public test framework, and commit activity rises around machine bring-ups. The README's examples target Frontier. [KNOWN: README; signals for the cadence]
 - **Student angle (Q9):** there's no CONTRIBUTING file. CI runs docs, lint and tests. [KNOWN: tree, workflows] It's Python and batch-scheduler work, which is the closest match in the catalog to Linux and ops skills. Real runs need an HPC system, but the code and examples are readable. [INFERRED]
 - **Searched without result (Q10):** see signals and this brief's unknowns.
+
+### Second pass (2026-10-29)
+- Rule 17 spot check on a fresh clone: 1,073 commits on all branches and 1,070 on the default branch (devel), first commit 2015-03-10, last 2026-10-28. That's 15 more than the 1,058 / 1,055 counted through 2026-10-16. Yearly all-branch counts match signals/olcf-test-harness.md by author date; by committer date, 2022 and 2023 read 109 and 117, not 121 and 105.
+- Release dates: v2.1 published 2021-02-27 per its GitHub release page (tag commit 2021-02-24), and v3.0, v3.1 and v3.2 match. LICENSE shows a 2025 UT-Battelle copyright.
+- The status line's last push of 2026-10-16 is now out of date; there was a commit on 2026-10-28. It's left as an as-of-access-date fact and flagged here.
+- The 2026-10-24 fixes (no v4.0 claim, NCCS from developer affiliations) are in place.

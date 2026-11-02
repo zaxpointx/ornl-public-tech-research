@@ -8,11 +8,11 @@ This file records the reproducibility boundary for the current living edition. I
 |---|---|
 | Repository | `zaxpointx/ornl-public-tech-research` |
 | Branch | `main` |
-| Snapshot date | 2026-10-24 |
-| Catalog rows | 66 |
-| Project briefs | 48 |
+| Snapshot date | 2026-11-02 |
+| Catalog rows | 69 |
+| Project briefs | 67 |
 | Signals files | 40 |
-| Completed deep dives | 3 |
+| Completed deep dives | 6 |
 | Verification boundary | Public sources only |
 | Structural audit | `python3 scripts/audit_atlas.py` |
 

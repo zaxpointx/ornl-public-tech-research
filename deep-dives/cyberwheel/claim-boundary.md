@@ -41,3 +41,7 @@ Only at the edges. Reading the full citing papers could settle author affiliatio
 - Row 10: the last commit was 2025-08-26 (22:30 UTC). The report's title is "FY 2025 Completed Projects", and 11049 is listed in it. Verified.
 - Row 11: first commit 2024-01-02, repo created 2024-07-08. Verified.
 - No conflicts with source-ledger.md or verification-report.md.
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: row 10 last commit 2025-08-26 and row 11 first commit 2024-01-02 / creation 2024-07-08 (fresh clone, GitHub API). No corrections.

@@ -56,3 +56,12 @@ This is the behind-the-scenes plumbing that watches every experiment at ORNL's n
 - **What it teaches about ORNL (Q8):** a user facility runs a public-code, production-facing monitoring web app, and the lab releases it openly anyway. [KNOWN; INFERRED: the lesson]
 - **Student angle (Q9):** it's the only one of the three `neutrons`-org pipeline repos (with live-data-server and post-processing-agent) that has a contributor guide (`CONTRIBUTING.rst`). It has no open good-first-issue labels. [KNOWN: GitHub contents and issues API, accessed 2026-10-24] It's Django, PostgreSQL, Docker and a message queue, which is solid ground for a Linux or web student. [INFERRED]
 - **Searched without result (Q10):** sponsor.
+
+### Second pass (2026-10-29)
+Skeptical reread of the riskiest claims against sources not leaned on before (a fresh clone, GitHub API, live pages). Earlier 2026-10-24 fixes checked and still hold.
+- License BSD-3, 2022 ORNL: LICENSE on a fresh clone of default branch `next`. Verified.
+- Releases 3.10.0/3.11.0/3.12.0: GitHub release publish dates 2026-07-16, 2026-08-04, 2026-10-19 (UTC) match. The 3.10.0 tag's commit is dated 2026-07-15 (author and committer), a day earlier than the release; both are fine, the brief's dates are release dates. Verified.
+- "About 35 contributors": 35 distinct author names on the default branch, matching the API figure. Verified.
+- "Only one of the three pipeline repos with a contributor guide": root listings of live_data_server and post_processing_agent show no CONTRIBUTING file. Verified.
+- Commit spot check (Rule 17): default branch 1,873, all branches 1,891; first commit 2012-08-15, same day as repo creation. Last push is now 2026-10-27; the brief's 2026-10-23 is a dated snapshot, not wrong.
+- No corrections.

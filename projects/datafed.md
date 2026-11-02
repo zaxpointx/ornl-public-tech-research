@@ -47,3 +47,8 @@ DataFed is a system for keeping track of scientific data spread across many rese
 - Verified: custom UT-Battelle license (2020, DataFed Version 1), OLCF hosting, Globus/GridFTP transfers that copy not move, OAuth2 identity, data-silo framing, semantic + calendar versioning, release and tag dates, repo tree, ~22 contributors.
 - Unverifiable: developing team or division.
 - No restricted content or implied ORNL affiliation found.
+
+### Second pass (2026-10-29)
+- Rule 17 spot check on a fresh clone: 6,210 commits on all branches and 3,713 on the default branch (master). First commit 2017-11-13. Yearly counts on all branches by author date match signals/datafed.md exactly (for example 1,406 in 2024 and 1,600 in 2025); by committer date they're 1,403 and 1,603. The 8 extra all-branch commits are after the 2026-10-24 count (last 2026-10-27).
+- Confirmed: LICENSE.md opens with a 2020 UT-Battelle copyright, and the v5.1.3 tag is dated 2026-09-22.
+- The 2026-10-24 fixes are in place. No issues found.

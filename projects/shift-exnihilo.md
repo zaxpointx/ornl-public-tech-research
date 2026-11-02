@@ -38,12 +38,12 @@ SCALE users get it for criticality safety and reactor physics. The manual says i
 
 ## Related projects
 - SCALE (`scale`): Shift ships inside it. [KNOWN: SCALE manual]
-- VERA (`vera`): The discovery pass lists Shift as a VERA component. [INFERRED: not confirmed from a VERA page. OSTI 1237627 only says Shift was benchmarked on the "CASL VERA criticality test suite", which shows a test link, not membership]
+- VERA (`vera`): Shift ships inside VERA. The public RSICC catalog page for VERA 4.3 lists Shift as a physics component, and says it is "integrated into VERA" and coupled to MPACT through VERA. [KNOWN: https://rsicc.ornl.gov/codes/ccc/ccc8/ccc-855.html ; matches map link 204. Earlier OSTI 1237627 only showed a benchmark tie]
 - Frontier/OLCF: hardware used in the 2025 study. [KNOWN: OSTI 3013520]
 
 ## Known / Inferred / Unknown
 - KNOWN: Exnihilo membership, ORANGE, CSAS-Shift use, track-length estimator, CADIS, Frontier GPU results.
-- INFERRED: plain definitions, the VERA link.
+- INFERRED: plain definitions.
 - UNKNOWN: license, code layout, current maintainers list, the group's current name.
 
 ## Sources (accessed 2026-10-24)
@@ -60,4 +60,6 @@ SCALE users get it for criticality safety and reactor physics. The manual says i
 - Frontier results verified in OSTI 3013520 (abstract): "less than 2 min on 20 nodes of Frontier" and "9 to 11 times greater throughput per graphics compute die than the best CPU performance".
 - I read the group credit myself in the OSTI 1237627 full text (Introduction): "developed and maintained at Oak Ridge National Laboratory (ORNL) by the Radiation Transport Group". It also says "Development of Shift began at ORNL in 2010". KNOWN, single source.
 - The ornl.gov publication page is verified: Pandya et al., Trans. ANS, April 2015, M&C + SNA + MC conference, Nashville.
-- Added a caveat to the VERA link: it's a benchmark-suite link only.
+- Earlier caveat (VERA link was benchmark-suite only) is superseded: the RSICC VERA 4.3 page confirms Shift is a VERA component (2026-10-29).
+
+- 2026-10-29: VERA link upgraded from INFERRED to KNOWN using the RSICC CCC-855 page, to match map link 204. Re-checked and verified the same day.
