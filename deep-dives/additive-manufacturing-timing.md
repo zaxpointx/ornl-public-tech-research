@@ -13,13 +13,13 @@ Scope: the five 3D-printing simulation tools in the catalog: adamantine, Additiv
 | Tool | First commit | Per year | Tags |
 |---|---|---|---|
 | adamantine | 2016-06-30 | 2016 56, 2017 47, 2018 0, 2019 29, 2020 113, 2021 229, 2022 173, 2023 140, 2024 171, 2025 159, 2026 172 | v1.0 2024-10-01, v1.1 2026-01-23 |
-| 3DThesis | 2019-06-11 | 2019 1, 2020 1, 2021 3, 2022 0, 2023 8, 2024 85, 2025 14, 2026 7 | 2.0.0 2020-01-16, 3.0.0 2023-04-12, 4.0.0 2025-05-29 |
+| 3DThesis | 2019-06-11 | 2019 1, 2020 1, 2021 3, 2022 0, 2023 8, 2024 85, 2025 14, 2026 7 | 1.0.0 2019-06-11, 2.0.0 2020-01-16, 3.0.0 2023-04-12, 4.0.0 2025-05-29 |
 | AdditiveFOAM | 2023-03-28 | 2023 33, 2024 11, 2025 17, 2026 7 | 1.0.0 2023-06-13, 1.1.0 2025-05-14, 1.2.0 2026-06-29, 2.0.0 2026-08-31 |
 | Finch | 2023-05-15 | 2023 98, 2024 86, 2025 4, 2026 4 | 0.1.0 2024-02-23, 0.2.0 2024-09-05 |
 | Myna | 2023-05-11 | 2023 38, 2024 201, 2025 123, 2026 113 | 1.0.0 2024-08-19, 1.1.0 2025-04-09 |
 [KNOWN: git log and git tag on public clones, 2026-10-24]
 
-Monthly detail for 2024: Finch's work sat in Feb to May (36, 20, 14, 6) around its 0.1.0 tag, then nearly stopped. Myna climbed through mid-2024 and peaked in Aug and Sep (43, 32) around its 1.0.0 tag. 3DThesis went from almost nothing to a burst in Oct and Nov 2024 (37, 27). [KNOWN: git log by month]
+Monthly detail for 2024: Finch's work sat in Feb to May (36, 20, 14, 6) around its 0.1.0 tag, then nearly stopped. Myna climbed through mid-2024 and peaked in Aug and Sep (43, 32 on the default branch by author date; 34 in Sep across all branches) (corrected in a fact-check pass, 2026-10-29) around its 1.0.0 tag. 3DThesis went from almost nothing to a burst in Oct and Nov 2024 (37, 27). [KNOWN: git log by month]
 
 Authors per year by commit email: adamantine 1 to 3 through 2023, then 7, 8 and 6 in 2024 to 2026; Myna 9 in 2024; 3DThesis 7 in 2024 after years of 1. Email counts can overcount people. [KNOWN: git log] The ornl.gov email share is a lower bound: Myna 83 to 100% every year; Finch 73% in 2023; adamantine 0% in 2016 to 2017, then 21 to 51%; AdditiveFOAM 15% in 2023 and 0% since. [KNOWN: git log; lower bound because personal emails are common]
 
@@ -35,7 +35,17 @@ Authors per year by commit email: adamantine 1 to 3 through 2023, then 7, 8 and 
 - Three tools (AdditiveFOAM, Finch, Myna) all got public repos within about seven weeks in spring 2023, the last full year of ECP. [KNOWN dates] Finch's activity collapsed after 2024, right as ECP ended. [KNOWN dates] That ECP's end caused the drop is [INFERRED, low to medium]; nothing public states it.
 - Myna and adamantine kept going past 2024, and their later papers list EERE/AMMTO and Nuclear Energy rather than NNSA. [KNOWN: OSTI sponsor fields] A shift from exascale money toward applied manufacturing and nuclear money is [INFERRED, medium] from the sponsor fields only.
 - adamantine is the one long-runner: an older solo project (2016 to 2017, no commits in 2018), then a steady team from 2020 on. Why it restarted in 2019 to 2020 is [UNKNOWN]; LDRD on its paper is the only funding clue.
-- Each DOE CODE record was filed the same day as a first release tag, so releases and lab software filings move together. [KNOWN dates]
+- Three of the four DOE CODE records (AdditiveFOAM, Finch, Myna) carry the same date as a release tag, so for the 2023-24 tools releases and lab software filings move together. [KNOWN dates] 3DThesis is the exception: its record (2018-12-21) predates the public repo's first commit and tag (2019-06-11), consistent with the brief's older GitLab home. [KNOWN dates; INFERRED: the GitLab link]
 
 ### Searched without result
 - Any public statement linking these tools' start or slowdown to ECP or ExaAM funding: OSTI records, the four ORNL-MDF/ORNL repo READMEs, adamantine's README and the ECP home page checked, none says so. The only ECP trace is Finch's README listing Cabana, a library hosted in the ECP-copa GitHub org, as a dependency. (2026-10-24)
+
+## Sweep 2 notes (fact-check pass, 2026-10-24)
+- Verified against fresh clones and the OSTI API: first commits, per-year counts and tags for all five tools; all ten OSTI records (dates and sponsor fields, including the AMO-to-AMMTO wording); Finch Feb 36 and Myna Sep 32 monthly figures.
+- Corrected: 3DThesis also has a 1.0.0 tag (2019-06-11); "each DOE CODE record was filed the same day as a release" holds for three of four, not 3DThesis.
+- Small monthly drift, not corrected: this pass counts Finch 2024-03 as 19 (not 20) and Myna 2024-08 as 40 (not 43); month-edge time zones or branch choice likely explain it.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep), on fresh clones.
+- Verified: Finch Feb-May 2024 (36, 20, 14, 6, all branches, author dates) and its 0.1.0 tag dated 2024-02-23; ECP "ran from 2016–2024" on exascaleproject.org.
+- Corrected (label only): Myna's September 2024 count is 32 on the default branch and 34 across all branches.

@@ -37,3 +37,7 @@ It isn't a live intrusion-prevention product. No public source describes connect
 ## Results the sources report (keep these words)
 - The simulator's runtime "increased linearly with the number of hosts", while many existing simulators "performed poorly with more than 100 hosts in this testing". [KNOWN: OSTI 3025007 p. 13]
 - In their test, the red agent attacked a decoy the blue agent had placed instead of the real server. [KNOWN: OSTI 3025007 p. 13, paraphrased]
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: v2.0 release adds Firewheel emulation (release date 2025-08-11). VM sizes not re-read. No corrections.

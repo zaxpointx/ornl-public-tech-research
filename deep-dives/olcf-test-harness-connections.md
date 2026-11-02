@@ -41,7 +41,7 @@ Validated with mermaid-cli on 2026-10-24. Solid arrows come from code or config.
 - **Link 43, OLCF Test Harness and OLCF User Docs** [KNOWN]: both are in the olcf GitHub org, and the README configures Frontier test suites.
 - **Link 76, and NCCS** [KNOWN]: developers on DOE CODE code-153320 list NCCS affiliations; the record's research-org field says only ORNL.
 - **Link 181, target machines** (new) [KNOWN]: `configs/olcf_examples/` holds `frontier.ini`, `frontier_k8s.ini`, `frontier_openshift.ini` and `summit.ini`, and the README walks through launching an example on Frontier. This corroborates link 43's Frontier part. Note: the discovery-pass signals section says Frontier is the one machine with its own example config, but `summit.ini` is also in the public folder.
-- **Link 182, schedulers** (new) [KNOWN]: `harness/schedulers/` has `slurm.py`, `lsf.py`, `pbs.py`, `k8s.py` and `openshift.py` on a shared `base.py`.
+- **Link 182, schedulers** (new) [KNOWN]: `oth/schedulers/` (formerly `harness/schedulers/`, moved 2026-10-15) (corrected in a fact-check pass, 2026-10-29) has `slurm.py`, `lsf.py`, `pbs.py`, `k8s.py` and `openshift.py` on a shared `base.py`.
 - **Link 183, Python tooling** (new) [KNOWN]: `pyproject.toml` lists "dependencies = []" and Python ">=3.6". Optional extras are pyyaml and jinja2. Dev tools are mypy, pytest and ruff, docs use Sphinx, and the build backend is hatchling. Optional result loggers for InfluxDB and Kafka sit in `harness/libraries/rgt_database_loggers/db_backends/`.
 - **Link 184, the examples repo** (new) [KNOWN]: the README says "Sample tests can be found at https://github.com/olcf/olcf-test-harness-examples". That repo has `frontier`, `summit` and `hello_world` folders, 4 stars, 0 forks, and a last push on 2023-09-19 UTC.
 - **Link 185, HeCBench** (new) [INFERRED] common domain: both are ORNL-side HPC testing or benchmark codes; [KNOWN] neither README names the other. Related HeCBench links: 11 and 155 (OLCF training material) and 158 (HeCBench's own reach).
@@ -62,3 +62,8 @@ Reasoning: the harness is used where it was built. Outsiders who build their own
 
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Verified against a fresh clone and the GitHub API: the four example configs including `summit.ini`, the five scheduler modules on `base.py`, `dependencies = []`, Python >=3.6, hatchling, the InfluxDB and Kafka loggers, the examples-repo quote, and that repo's `frontier`, `summit` and `hello_world` folders. No corrections.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep).
+- Verified: 14 stars and 10 forks (GitHub API); the four configs in `configs/olcf_examples/`; `pyproject.toml` has no required dependencies and Python >=3.6; scheduler modules for Slurm, LSF, PBS, Kubernetes and OpenShift.
+- Corrected: the scheduler folder moved from `harness/schedulers/` to `oth/schedulers/` on 2026-10-15. The same old path appears in map link 182, which this pass did not edit.

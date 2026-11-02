@@ -103,3 +103,9 @@ This is one of the best fits in the catalog for a cybersecurity or IT student. I
 - Verified against a fresh clone and the GitHub API: the exit-code list and its "only zero versus non-zero matters" caveat, the `.kill_test` resubmit comment, the ten event names in `status_file.py`, the five modes, the 2016 Sphinx header naming NCCS_Test_Harness, repo creation 2021-01-11, the README's v3.2 compatibility note, `example_machine.ini`, the `linux_x86_64` machine type, `contributing.rst` with no root CONTRIBUTING file, and the funding paragraph (Office of Science only).
 - Corrected: the modes file path, and the summitdev date carried over from the timing-notes fix.
 - Nothing about machine layout, nodes or accounts appears; the rule 16 boundary holds.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep), on a fresh clone of the default branch `devel`.
+- Corrected: on 2026-10-15 the repo was reorganized (commit subject: scripts moved to a top-level `bin`, and `runtests.py` replaced). The `harness/...` paths in this walkthrough describe the layout before that date. Today the drivers are `bin/test_harness_driver.py` and `bin/check_executable_driver.py`, and the libraries, machine types and schedulers sit under `oth/`. Whether the `runtests.py --mode` commands still work as written is UNKNOWN until the new docs are read.
+- Verified: both driver scripts still exist (under `bin/`); `oth/libraries/status_file.py` and the database loggers exist.
+- Nothing restricted.

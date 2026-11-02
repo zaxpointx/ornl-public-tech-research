@@ -22,7 +22,7 @@ How to read it:
     - [Mantid](projects/mantid.md): the shared reduction and analysis framework, built by several institutions [KNOWN, map 53].
       - [SNAPRed](projects/snapred.md): built on Mantid, for the SNAP instrument at SNS [KNOWN, map 4 and 23].
       - [PyRS](projects/pyrs.md): built on Mantid, for residual stress on HFIR's HB2B instrument [KNOWN, map 34 and 37].
-  - Unplaced: django-remote-submission (no brief yet), which lives in the ornl-ndav GitHub org. Its tie to the facility tools is [UNKNOWN] (map 38).
+  - [Django Remote Submission](projects/django-remote-submission.md): web-to-cluster job runner built at SNS for reflectometry fits, tied to the liquids reflectometer [KNOWN, brief and map]. It lives in the ornl-ndav GitHub org; any tie to the other facility tools is still [UNKNOWN].
 - Planned deep dive: this whole branch (GOAL.md, ranking item 1).
 
 ### Computing (HPC)
@@ -30,7 +30,7 @@ How to read it:
 - **Facility: OLCF (Oak Ridge Leadership Computing Facility), with the supercomputers Summit and Frontier**
   - Operations:
     - [OLCF Test Harness](projects/olcf-test-harness.md): acceptance and regression tests for each new machine, including Frontier test suites [KNOWN, map 43].
-    - OLCF User Documentation (no brief yet): the user docs [KNOWN, repo description].
+    - [OLCF User Documentation](projects/olcf-user-docs.md): the user docs [KNOWN, repo description].
   - Services hosted at OLCF:
     - [DataFed](projects/datafed.md): research data management, with its central services in OLCF [CORROBORATED, map 51 and 128].
   - Projects that build for or run on OLCF machines:
@@ -74,24 +74,27 @@ How to read it:
   - [Shift / Exnihilo](projects/shift-exnihilo.md): Monte Carlo radiation transport. Shift ships inside SCALE [CORROBORATED, map 82].
 - Reactor analysis (no division named):
   - [SCALE](projects/scale.md): nuclear safety and criticality suite (ornl.gov/scale).
-    - ORIGEN Library Manager (OLM) (no brief yet): SCALE project group on code.ornl.gov [INFERRED].
+    - [ORIGEN Library Manager (OLM)](projects/olm.md): SCALE project group on code.ornl.gov [INFERRED].
+    - [Profugus](projects/profugus.md): open mini-app with the core kernels of the Exnihilo suite [KNOWN, README], so it sits beside [Shift / Exnihilo](projects/shift-exnihilo.md).
   - [VERA](projects/vera.md): reactor multiphysics from the CASL program (ornl.gov/onramp/casl-vera).
+  - [TRANSFORM](projects/transform-library.md): reactor and energy-system thermal hydraulics in Modelica, GitHub org ORNL-Modelica; unit UNKNOWN.
+  - [Molten Salt Database](projects/molten-salt-database.md): salt property data; ORNL manages the thermophysical half and the University of South Carolina the thermochemical half [KNOWN, ORNL report Pub196202]. Its files work with [Thermochimica](projects/thermochimica.md) [KNOWN, about page].
 - **CEES (Computational Engineering and Energy Sciences Group)**, named by its GitHub org [INFERRED]
   - [Thermochimica](projects/thermochimica.md): thermodynamic equilibrium solver, wired into nuclear fuel codes (signals/thermochimica.md).
 - Fusion, in the GitHub org ORNL-Fusion [INFERRED placement]:
   - [Xolotl](projects/xolotl.md): plasma-surface materials. Multi-institution copyright with UT-Battelle first [KNOWN, map 136].
   - [GITR](projects/gitr.md): impurity transport. It's a component of the STRIPE framework (outside) [KNOWN, map 92].
   - [KORC](projects/korc.md): runaway electrons in fusion plasmas.
-  - FAR3d (no brief yet): models plasma instabilities driven by fast particles (stub).
+  - [FAR3d](projects/far3d.md): models plasma instabilities driven by fast particles (stub).
 
 ### Grid and energy
 - No division named.
   - [GridKit](projects/gridkit.md): power grid dynamics. It uses [ReSolve](projects/resolve.md) and shares its lead developer [KNOWN, map 7].
   - [ExaGO](projects/exago.md): grid optimization, with Frontier builds.
   - [HydraGNN](projects/hydragnn.md): power-flow examples [CORROBORATED, map 127].
-  - Hydropower Fleet Intelligence (no brief yet): status unknown.
-  - URBAN-NET-TOOLKIT: OSTI record only (stub).
-- Planned deep dive: the grid tools (GOAL.md, ranking item 4).
+  - [Hydropower Fleet Intelligence](projects/hydrofleetintel.md): fake demo data only; tied to DOE's water power office. Status unknown.
+  - [URBAN-NET](projects/urban-net-toolkit.md): infrastructure dependency toolkit, slated for DOE's EAGLE-I (short brief).
+- Deep dive in progress: [the grid tools](INDEX.md#deep-dives).
 
 ### Climate and earth
 - **Environmental Sciences Division** [KNOWN, daymet.ornl.gov]
@@ -99,7 +102,7 @@ How to read it:
 - **ORNL DAAC (Distributed Active Archive Center)** [KNOWN, map 44 and 45]
   - [Daymet](projects/daymet.md): listed twice on purpose. The science comes from Environmental Sciences, and ORNL DAAC distributes the data and hosts its helper repo.
   - [TESViS](projects/tesvis-modis.md): satellite data subsets, operated by ORNL DAAC with LP DAAC. It serves GEDI subsets [KNOWN, map 73].
-  - ORNL DAAC GEDI Tutorials (no brief yet).
+  - [ORNL DAAC GEDI Tutorials](projects/gedi-tutorials.md).
 - Other:
   - [E3SM Land Model (ELM)](projects/e3sm-elm.md): a multi-lab model. ORNL is a research org on specific ELM work, and its datasets carry OLCF DOIs [KNOWN, map 77 and 78].
   - [LandScan](projects/landscan.md): population distribution datasets (a dataset, not software).
@@ -109,8 +112,8 @@ How to read it:
   - [EnergyPlus](projects/energyplus.md): building energy simulation. It's multi-lab, with ORNL as one co-owner [KNOWN, map 61].
   - [AutoBEM](projects/autobem.md): automatic building energy models.
   - [Roof Savings Calculator Suite](projects/roof-savings-calculator.md): OSTI-only draft.
-  - WUFI-ORNL/IBP: a joint ORNL and Fraunhofer IBP program [KNOWN, map 89] (stub).
-  - Stor4Build (no brief yet): co-developed with NREL [KNOWN, map 60].
+  - [WUFI-ORNL/IBP](projects/wufi-ornl.md): a joint ORNL and Fraunhofer IBP program [KNOWN, map 89] (short brief).
+  - [Stor4Build](projects/stor4build.md): co-developed with NREL [KNOWN, map 60].
   - [Real-Twin](projects/real-twin.md) and [FIXS](projects/fixs.md): transportation simulation tools.
   - [Gauntlet](projects/gauntlet.md): sponsored by FEMA and FEMP, per its OSTI record (signals/gauntlet.md).
 
@@ -119,11 +122,12 @@ How to read it:
   - [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning network defense test bed [CORROBORATED, map 56]. There's a full deep dive in [deep-dives/cyberwheel](deep-dives/cyberwheel/).
 - OSTI records only:
   - [Situ](projects/situ.md) (draft).
-  - Stubs: Akatosh, CAN-D, Cincinnatus, Heartbeat Malware Detection, CPAD and Hyperion.
-- Other: TASQC (no brief yet), status unknown.
+  - Short briefs: [Akatosh](projects/akatosh.md), [CAN-D](projects/can-d.md), [Heartbeat Malware Detection](projects/heartbeat-malware.md) and [Hyperion](projects/hyperion.md).
+  - Catalog entries only: Cincinnatus and CPAD.
+- Other: [TASQC](projects/tasqc.md), status unknown.
 
 ### AI and data
-- Vivaldi (no brief yet) and Mind the Gap (no brief yet): building-data machine learning tools [INFERRED common domain, map 48].
+- [Vivaldi](projects/vivaldi.md) and [Mind the Gap](projects/mind-the-gap.md): building-data machine learning tools [INFERRED common domain, map 48].
 - Cross-listed above: [HydraGNN](projects/hydragnn.md), [Flowcept](projects/flowcept.md) and [DataFed](projects/datafed.md).
 
 ## Cross-links

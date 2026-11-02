@@ -36,7 +36,7 @@ It's a clear public example of the ORNL cyber group's machine-learning approach 
 
 ## Related projects
 - Cyberwheel (`cyberwheel`): a newer ORNL cyber-defense tool using reinforcement learning, a different approach to the same problem. [INFERRED: same domain, no link found]
-- The other batch 4 cyber rows (cincinnatus, heartbeat-malware, cpad, hyperion) are also OSTI-only. [KNOWN: discovery notes]
+- The other batch 4 cyber rows: Cincinnatus and CPAD are still OSTI-only stubs, while Heartbeat and Hyperion now have short briefs ([heartbeat-malware](heartbeat-malware.md), [hyperion](hyperion.md)). All are same domain only. [KNOWN: map link 84; INFERRED: domain tie]
 
 ## Known / Inferred / Unknown
 - KNOWN: purpose, unsupervised multi-scale anomaly scoring, streaming design, web visualization, ORNL record.
@@ -50,3 +50,5 @@ It's a clear public example of the ORNL cyber group's machine-learning approach 
 - Sweeps 1 and 2 done. OSTI 1232450 refetched. Facts match: Software, 2014-06-16, ORNL, sponsor field just "u", no authors listed.
 - Narrowed "network activity" to INFERRED. The record says it "scores events in real-time based on probabilistic models".
 - Added the rule 12 walkthrough. No restricted content found.
+- 2026-10-29: cyber-row status updated to match map link 84 (Heartbeat and Hyperion have short briefs now). Needs a re-check of that one line.
+- 2026-11-02: cyber-row line re-checked: Heartbeat and Hyperion briefs exist, Cincinnatus and CPAD are stub-osti-only in the catalog with no briefs, matching map link 84. Verified.

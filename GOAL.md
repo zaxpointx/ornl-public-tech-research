@@ -41,7 +41,7 @@ Rank candidates by how well they serve the goals above: they reveal how the lab 
 3. **The 3D-printing ladder** (3DThesis, Finch, AdditiveFOAM, ExaCA, Myna, adamantine).
 4. **The grid tools** (GridKit, ReSolve, ExaGO).
 
-Cyberwheel is already done.
+Status on 2026-10-28: Cyberwheel, the SNS pipeline and the OLCF test harness are done. The 3D-printing ladder and the grid tools are in progress, with walkthroughs waiting on the last briefs. Nuclear reactor software (open codes only) was added on 2026-10-28 and is in progress. Live status is in [INDEX.md](INDEX.md#deep-dives).
 
 ## Rules that do not change
 

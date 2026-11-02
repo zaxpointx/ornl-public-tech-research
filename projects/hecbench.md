@@ -53,6 +53,6 @@ Benchmark suites like this are how compiler teams and labs check whether a new G
 
 ## Sweep 2 notes (fact-check pass, 2026-10-24)
 - Rechecked on a fresh shallow clone of ORNL/HeCBench and the GitHub API. Verified: the LICENSE copyright lines (Argonne 2020, ORNL "2020-"), BSD-3-Clause in the API, created 2020-08-06, last commit 2026-10-22, 0 releases, no `.github/` directory, contributors 113 with anonymous / 29 accounts, languages (C++ 44.4%, CUDA 25.1%, C 22.4%), 555 distinct benchmarks, and folder counts of 554 CUDA, 551 HIP, 542 SYCL and 361 OpenMP. All match.
-- Namesake guard: https://github.com/zjin-lcf/HeCBench is a separate GitHub fork of ORNL/HeCBench with its own commit history, not a redirect. Sources should cite ORNL/HeCBench.
+- Namesake guard: a fork of ORNL/HeCBench under a personal GitHub account (left out here) has its own commit history and is not a redirect. Sources should cite https://github.com/ORNL/HeCBench.
 - Rule 13 rests on the LICENSE plus the github.com/ORNL owner. Both are GitHub artifacts, so it stays KNOWN rather than CORROBORATED. The OSTI search for "HeCBench" returns papers that use it (ORNL ChatPORT and ChatHPC, plus several LLNL papers) but no software record. Those are usage evidence for the signals file, not ownership.
 - No corrections needed.

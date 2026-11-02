@@ -151,3 +151,32 @@
 | 2026-10-24 | finch | journal paper for Finch | api.openalex.org | none found; only the Zenodo 0.1.0 record (connections pass 28) |
 | 2026-10-24 | thermochimica | mention in AM repos (Finch, 3DThesis, AdditiveFOAM, Myna, ExaCA, adamantine) | fresh clones, grep | none (connections pass 28) |
 | 2026-10-24 | exaca / stork | Stork named in ExaCA README or CMake; Stork README naming ExaCA | LLNL/ExaCA; ORNL/Stork README | none; consumer stays INFERRED (connections pass 28) |
+| 2026-10-24 | resolve | ReSolve software paper | api.openalex.org search | none found (connections pass 29) |
+| 2026-10-24 | exago / gridkit | resolve or gridkit in Spack exago recipe | spack-packages builtin exago | none (connections pass 29) |
+| 2026-10-24 | hydrofleetintel | shared grid solver libraries (PETSc, Ipopt, HiOp, SUNDIALS) | hfi_env.yml, package.json | none (connections pass 29) |
+| 2026-10-24 | real-twin | grid solver or grid repo named in its files | ORNL-Real-Sim/Real-Twin | none; marked UNRELATED to grid (connections pass 29) |
+| 2026-10-24 | hiop | stated role of the ORNL/hiop copy | GitHub API ORNL/hiop | not stated (connections pass 29) |
+| 2026-10-24 | olcf-user-docs | license file; CI or publish workflow | GitHub API license field; repo tree (.github/) | none (reading pass) |
+| 2026-10-24 | gedi-tutorials | OSTI software record; Zenodo DOI | OSTI API "GEDI tutorials"; citation.md | none; DOI is a placeholder `zenodo.xxx` (reading pass) |
+| 2026-10-24 | mind-the-gap | paper describing the algorithm; PyPI release | OSTI API "mind the gap building footprint" | only code-152916; PyPI not checked (reading pass) |
+| 2026-10-24 | hydrofleetintel | tests, CI, releases, CONTRIBUTING | repo tree, GitHub releases | none (reading pass) |
+| 2026-10-24 | akatosh, can-d, cincinnatus, heartbeat-malware, cpad, hyperion, wufi-ornl, urban-net-toolkit | public repo | GitHub repository search by name plus github.com/ORNL repo list (179 names) | none for any of the 8 (discovery pass) |
+| 2026-10-24 | cincinnatus | public page or paper naming it | web search; OpenAlex; OSTI 1562290 links field | none; 2018 CCS memory-forensics poster not bound to the name (discovery pass) |
+| 2026-10-24 | cpad | ornl.gov or docs page | web search; OSTI 1396084 links field | none beyond OSTI software and patent 1632617 (discovery pass) |
+| 2026-10-24 | all 8 stubs | links in OSTI records | OSTI API links field | no outside docs or repo link found in the records checked (discovery pass) |
+| 2026-10-24 | django-remote-submission | code or dependency link to data-workflow, post-processing-agent or live-data-server | repo files and SNS deep-dive map | none found (connections pass) |
+| 2026-10-28 | olm | papers or outside users | OSTI API "ORIGEN Library Manager" | only code-122128 (reading pass) |
+| 2026-10-28 | olm | macOS CI job | .github/workflows/test.yml | Ubuntu only (reading pass) |
+| 2026-10-28 | nuclear scan | ORNL repos with reactor, nuclear or fuel in name or description | GitHub search org:ORNL, org:ORNL-CEES; ORNL org repo list | none beyond thermochimica, Profugus, DataTransferKit, MOOSE_Python_Binder (empty repo, LICENSE only) (discovery pass) |
+| 2026-10-28 | nuclear scan | GitHub orgs ornl-nuclear, ORNL-NE, ornlneams, ORNL-RNSD | GitHub orgs API | not found (discovery pass) |
+| 2026-10-28 | nuclear scan | public repo for a molten salt modeling capability in VERA | web search | none found (discovery pass) |
+| 2026-10-28 | thermochimica | MSTDB test data file LiBeUPuThF_T1.dat | repo data/ folder | not in public repo (reading pass) |
+| 2026-10-28 | thermochimica | data/C-O.dat used by example inputs | repo data/ folder | missing; CO.dat exists (reading pass) |
+| 2026-10-28 | cyber repos | ORNL cyber code besides Cyberwheel | github.com/ORNL org list (179 repos) + GitHub search "Oak Ridge National Laboratory" cyber | none; ESP32-Traffic-Classifier is empty (discovery pass) |
+| 2026-10-29 | reactor connections | ornl.gov/scale/how-order-scale (SCALE ordering page) | curl and WebFetch | redirects to ORNL home page; not re-read (connections pass) |
+| 2026-10-29 | reactor connections | vera.ornl.gov/vera-license | curl | blocked by site firewall; used RSICC CCC-855 instead (connections pass) |
+| 2026-10-29 | reactor connections | public source tying an ORNL code to OpenMC | GitHub READMEs of catalog nuclear codes, catalog briefs | none found (connections pass) |
+| 2026-10-29 | reactor connections | NEAMS named as sponsor for Thermochimica, OLM, SCALE, VERA | OSTI records 3374533, code-122128, code-5745 | none found (connections pass) |
+| 2026-10-29 | reactor connections | public source tying a cataloged code to MSRE models | discovery scan, repo READMEs | none found (connections pass) |
+| 2026-10-29 | reactor connections | Spack, conda-forge, PyPI packages for thermochimica, gitr, korc, profugus; conda-forge and Spack for scale-olm | registries | 404 (connections pass) |
+| 2026-10-29 | reactor connections | OpenAlex citing-author splits for OLM, TRANSFORM, Profugus, KORC | api.openalex.org | daily budget exhausted; not run (connections pass) |

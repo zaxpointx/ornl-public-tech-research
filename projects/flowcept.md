@@ -36,7 +36,7 @@
 The project says it targets ML training, agent workflows, HPC jobs and edge-to-cloud-to-HPC pipelines. [KNOWN: README] Its docs list publications. I didn't read them, so named users are [UNKNOWN]. For a security student, provenance is close to audit logging: a trustworthy record of who ran what on which data. That's the same idea behind forensic timelines and software supply-chain records. [INFERRED]
 
 ## Related projects
-- DataFed (`datafed`): map link 19 already ties them. [KNOWN per map; not re-read by me]
+- DataFed (`datafed`): same domain (both are ORNL scientific-data tools), but no public source shows them working together. No DataFed or Globus mention was found in the Flowcept repo. [UNKNOWN: map link 19]
 - HydraGNN (`hydragnn`): both are ORNL AI and HPC tools. Any direct use is [UNKNOWN].
 
 ## Known / Inferred / Unknown
@@ -53,3 +53,5 @@ The project says it targets ML training, agent workflows, HPC jobs and edge-to-c
 - Rechecked against the GitHub API and raw files: MIT with "Copyright (c) 2022 Oak Ridge National Laboratory" (LICENSE line 3), created 2022-11-10, last push 2026-08-12, v1.0.3 on 2026-07-20, the same-day v0.10.8/v0.10.9 releases, contributors 19 with anonymous / 11 accounts, languages Python 74.3% and TypeScript 20.6%, the README "lightweight runtime provenance data management and data observability system" quote. flowcept.org, the readthedocs site and the repo all resolve. All verified.
 - Second primary source: ORNL's FY2025 LDRD report (OSTI 3025007) describes FlowCept as the part of an LDRD project that captures "runtime provenance, metadata, and references to large data objects", alongside Zambeze. Rule 13 is CORROBORATED.
 - No corrections needed.
+- 2026-10-29: DataFed tie corrected from KNOWN to UNKNOWN to match map link 19. Needs a re-check of that one line.
+- 2026-11-02: DataFed line re-checked: Flowcept README has no DataFed mention and map link 19 is UNKNOWN. Verified.

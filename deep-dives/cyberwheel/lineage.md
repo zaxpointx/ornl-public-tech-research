@@ -93,3 +93,7 @@ KNOWN 26 · CORROBORATED 6 · INFERRED 7 (F5, C3, L5c, L7, L8, U2b, U5) · UNKNO
 ## Map changes
 connections/map.md pass 6: link 54 and 56 now CORROBORATED with quotes; new nodes fw16 (Sandia Firewheel 2016, link 95) and ldrd (LDRD 11049); link 96 RL libraries; cyber stubs marked UNRELATED as lineage (links 69, 84).
 connections/map.md pass 10: link 56 split (LDRD-funded CORROBORATED; 11049 KNOWN; "internal" INFERRED); link 108 downstream users added.
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: sandialabs/firewheel created 2024-11-13 (GitHub API; the API license field reads NOASSERTION, so the Apache 2.0 call rests on the LICENSE file, as the row says); arXiv 2610.00590 resolves. Firewheel release dates (row F6) unverifiable this pass: the API rate limit was hit. No corrections.

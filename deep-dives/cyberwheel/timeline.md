@@ -4,7 +4,7 @@ All dates are UTC as the sources give them. Commit counts come from the GitHub c
 | Date | Stage | Event | Source | Tag |
 |---|---|---|---|---|
 | 2024-01-02 | Build (pre-public) | First commit in the repo history, "Initial commit" | GitHub commits API | KNOWN |
-| 2024-01 to 2024-06 | Build | Heavy early work: 50 commits in Jan, then 21–29 a month Feb–Apr | GitHub commits API | KNOWN |
+| 2024-01 to 2024-06 | Build | Heavy early work: 50 commits in Jan, then 21–31 a month Feb–Apr (author dates, all branches; Feb is 31) (corrected in a fact-check pass, 2026-10-29) | GitHub commits API | KNOWN |
 | 2024-04 | Publish | "The Path to Autonomous Cyber Defense" on arXiv (2404.10788) | README Papers; the month comes from the arXiv ID format | KNOWN title / INFERRED month |
 | 2024-07-08 | Go public | GitHub repo ORNL/cyberwheel created. The earlier history was pushed into it | GitHub API created_at | KNOWN |
 | 2024-07-16 | Register | DOE CODE record code-134699, DOI 10.11578/dc.20240715.1, sponsor LDRD | OSTI API | KNOWN |
@@ -22,3 +22,8 @@ All dates are UTC as the sources give them. Commit counts come from the GitHub c
 Notes:
 - The first commit (January 2024) comes six months before the repo went public (July 2024). That means it was built privately first and then released. [INFERRED from the dates]
 - When the LDRD project started is [UNKNOWN]. The report doesn't give a start date in the text we read.
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check), on a fresh clone.
+- Verified: first commit 2024-01-02 "Initial commit"; 50 commits in January 2024; repo created 2024-07-08; last commit 2025-08-26 (author and committer). Default branch 352 commits, all branches 398.
+- Corrected: February 2024 has 31 commits by author date, so the range is 21–31. By committer date the months read 34, 33, 24, 21.

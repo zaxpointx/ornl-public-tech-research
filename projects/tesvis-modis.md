@@ -42,3 +42,11 @@ TESViS, the Terrestrial Ecology Subsetting & Visualization Services, lets resear
 - Corrected: no-key access retagged KNOWN after a direct unauthenticated GET of /products returned 200.
 - Verified: homepage names TESViS, the LP DAAC partnership, Global Subsets, Fixed Sites, the web service and AppEEARS; documentation page lists VIIRS, SMAP, ECOSTRESS, GEDI, SIF and ICESat-2 plus the validation and site-characterization goal; web service page has the ten-dates limit, CSV/JSON, email order, curl/R/Python examples and DOI 10.3334/ORNLDAAC/1600.
 - Source code and tech stack stay [UNKNOWN].
+
+### Second pass (2026-10-29)
+Skeptical reread of the riskiest claims against sources not leaned on before (a fresh clone, GitHub API, live pages). Earlier 2026-10-24 fixes checked and still hold.
+- All four public pages (site, documentation, web service, OpenAPI UI) return 200. Verified.
+- Citation DOI 10.3334/ORNLDAAC/1600 resolves, and the web service page shows it. Verified.
+- API version v1: the web service page's example paths use v1. Verified.
+- No repo: still none found; stays UNKNOWN. No probing of the host beyond pages the site links.
+- No corrections. No repo, so no commit spot check.

@@ -128,3 +128,8 @@ The connections pass keeps its map and usage notes in [sns-neutron-pipeline-conn
 - Re-checked against fresh clones of data_workflow, post_processing_agent and live_data_server plus the GitHub API: queue names in `workflow/settings.py` lines 15-17, the per-instrument split and its OnCat comment in `workflow/states.py`, the `POSTPROCESS.DATA_READY` docstring example, all three glossary quotes, the livereduce line, both ONCat processors and their queues, the 60-minute and 70% limits, heartbeat topics, the autoreduce predecessor link, the WebMon plot functions and `LIVE_PLOT_SECRET_KEY`, `check_credentials`, the 3-year plot expiry (`config/settings.py`), creation years 2012, 2014 and 2016, `next` default branches, CONTRIBUTING only in data_workflow, and zero open good-first-issue labels. All match.
 - Added: the per-instrument split also covers the high-memory reduction queue and the reduced-data catalog queue, not only normal reduction.
 - No hosts, ports or deployment details beyond what the public code names; nothing restricted found.
+
+## Fact-check notes (2026-10-29)
+Second logged check of this file (the first was the 2026-10-24 sweep), using a fresh clone of each public repo and the GitHub API.
+- Verified: data-workflow created 2012, post-processing-agent 2014, live-data-server 2016 (GitHub API); data-workflow's 447 commits in 2022 and live-data-server's 118 in 2024 (all branches, author dates); data-workflow and live-data-server both use `next` as default branch.
+- No corrections. Nothing restricted; no deployment or host details read.

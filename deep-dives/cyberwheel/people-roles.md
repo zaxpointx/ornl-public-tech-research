@@ -25,3 +25,7 @@ All are listed with ORNL affiliation in those OSTI records. [KNOWN: OSTI API aut
 ## Searched without result (for the fact-check ledgers)
 - A PI designation for LDRD 11049 in the OSTI 3025007 text. Not found on p. 13.
 - A division name in the README, the DOE CODE record or OSTI 2478356. Not found.
+
+## Fact-check notes (2026-10-29)
+Second logged check (the first was the 2026-10-24 deep-dive check).
+- Verified: about 8 contributors (GitHub API); handles still not mapped to people. No corrections.

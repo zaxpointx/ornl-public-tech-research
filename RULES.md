@@ -1,6 +1,6 @@
 # ORNL Public Technology Research: Team Rules
 
-Repository root: this repository.
+Repository root: this repo. Every pass reads and writes the same copy.
 Coordination: an editor assigns batches and makes scope and status decisions; those are recorded as editorial decisions.
 
 ## Hard rules
@@ -61,3 +61,4 @@ Outputs go in signals/<project-id>.md, using the same tags and a short "what the
 18. Every new or reworked brief follows templates/project-brief.md, including the ten-question section from GOAL.md, a timeline table, and a related-projects table with a tag per row. Interpretation ("what stands out") stays in its own section, apart from the facts.
 19. "How the project is organized" is filled from templates/engineering-checklist.md: write what is visible with a path or URL, and leave the reason behind a design choice UNKNOWN unless a source states it. Authorship proves participation, not ownership; shared contributors prove a shared contributor, not a shared team; similar names prove nothing.
 20. A batch or work group is closed only when the catalog row count and INDEX agree, local Markdown links resolve, and every brief in it has passed both sweeps. The brief to-do list in INDEX.md is updated at the same time.
+21. What counts as a public docs page for RULES 14 (editorial decision 2026-10-24): any public page that describes the tool itself in enough detail to say what it does, such as a project page, a report or publication page about the tool, a partner's product page, or a news story centred on the tool. A patent record or a passing mention does not count. Briefs built on such pages with no public repo mark the code, layout and release questions UNKNOWN rather than guessing, and their status is unknown, not active. Such a brief is labelled "Short brief" on its first line and in INDEX, and says only what those pages support (lead decision 2026-10-24). CPAD and Cincinnatus stay catalog entries only.

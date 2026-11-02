@@ -2,16 +2,16 @@
 
 Curated entry point. Independent research from public sources only. We are not affiliated with ORNL. Start with [GOAL.md](GOAL.md) for what this repo is for and [LAB-TREE.md](LAB-TREE.md) for the top-down map.
 
-Status key: **verified** means the brief was fact-checked (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means the fact-check pass finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
+Status key: **verified** means the brief passed both fact-check sweeps (see [verification/log.md](verification/log.md)). **unverified** means a brief exists but hasn't been checked yet. **sweep 1 done** means the fact-check pass finished the first check; it counts as verified only after sweep 2 (RULES.md item 11). **stub** means the project is only in the catalog, with no brief. **row checked** means the catalog row itself was spot-checked. **OSTI-only stub** (catalog status `stub-osti-only`) means the only public source is an OSTI record; it gets a brief only once a public docs page exists.
 
-Projects: 66 cataloged, 46 full briefs linked (all 46 verified) plus 2 OSTI-only drafts (both verified), so 48 verified briefs in total. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39, batch 09 (ExaTN, new; GridKit, rewritten) to 40, and batch 10 (ReSolve, 3DThesis, Finch, AdditiveFOAM, TNQVM) to 45, and batch 11 (KORC, SNAPRed, PyRS) to 48. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). Batch 09 (open): gridkit rewrite and exatn verified; the note on whether current Flowcept supports Zambeze is in the zambeze brief, awaiting its check. Catalog scope rule: RULES.md item 13.
+Projects: 69 cataloged, 58 full briefs plus 7 short briefs linked (all 65 verified with two sweeps) plus 2 OSTI-only drafts (both verified), so 67 verified briefs in total. Batches 01-02 ran before the two-sweep rule; their briefs got sweep 2 on 2026-10-29. After batch 04 the total was 24 (22 full plus 2 drafts); batch 05 brings it to 28, batch 06 to 34, batch 07-08 to 39, batch 09 (ExaTN, new; GridKit, rewritten) to 40, and batch 10 (ReSolve, 3DThesis, Finch, AdditiveFOAM, TNQVM) to 45, batch 11 (KORC, SNAPRed, PyRS) to 48, and brief group A (GEDI Tutorials, OLCF User Documentation, Django Remote Submission, HydroFleetIntel, Mind the Gap) to 53. Batch 12 (reactor software, opened 2026-10-28) adds three catalog rows: TRANSFORM, Profugus and the Molten Salt Database. Batches: [01](batches/batch-01.md), [02](batches/batch-02.md), [03](batches/batch-03.md), [04](batches/batch-04.md), [05](batches/batch-05.md) (closed: 4 of 4 verified), [06](batches/batch-06.md) (closed: 6 of 6 verified), [07-08](batches/batch-07-08.md) (combined; closed: 5 of 5 verified; kokkos and hiop kept off the catalog under rule 13). [09](batches/batch-09.md) (closed: gridkit and exatn verified, Flowcept-Zambeze note verified), [10](batches/batch-10.md) (closed: 5 of 5 verified), [11](batches/batch-11.md) (closed: 3 of 3 verified). [12](batches/batch-12.md) (reactor software; closed: 3 of 3 verified). Catalog scope rule: RULES.md item 13.
 
 ## AI/data
-- [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified; one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), the fact-check pass rechecked and confirmed.
-- [DataFed](projects/datafed.md): one shared catalog for finding, sharing and moving scientific data across facilities, with central services at OLCF. Verified.
-- [Flowcept](projects/flowcept.md): records what happened during AI and science workflow runs (provenance), MIT licensed. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/flowcept.md).
-- Vivaldi: machine learning that estimates building heights. Stub, stale.
-- Mind the Gap: finds areas missing from building-footprint datasets. Stub.
+- [HydraGNN](projects/hydragnn.md): graph neural networks that predict material and molecule properties, trained at supercomputer scale. Verified (two sweeps; Frontier line raised to known 2026-10-29 and re-checked 2026-11-02); one line on outside use changed 2026-10-24 from the signals pilot (mostly in-house use, INFERRED), the fact-check pass rechecked and confirmed.
+- [DataFed](projects/datafed.md): one shared catalog for finding, sharing and moving scientific data across facilities, with central services at OLCF. Verified (two sweeps; second sweep 2026-10-29).
+- [Flowcept](projects/flowcept.md): records what happened during AI and science workflow runs (provenance), MIT licensed. Batch 06. Verified (two sweeps done 2026-10-24; DataFed tie set back to unknown 2026-10-29 to match the map, re-checked 2026-11-02). [Signals](signals/flowcept.md).
+- [Vivaldi](projects/vivaldi.md): machine learning that estimates building heights. Stale. Group B. Verified, two sweeps (2026-10-29: one person under two author names; its DOE CODE record names only a developer affiliation, the ORNL tie rests on the GitHub home and copyright line).
+- [Mind the Gap](projects/mind-the-gap.md): finds areas missing from building-footprint datasets; paid for by the National Geospatial-Intelligence Agency, per its software record. Group A (new template). Verified (two sweeps, 2026-10-24).
 
 ## HPC
 - [HeCBench](projects/hecbench.md): 555 small GPU benchmarks, each in some or all of CUDA, HIP, SYCL and OpenMP, for comparing NVIDIA, AMD and Intel GPUs (ORNL and Argonne in LICENSE). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/hecbench.md).
@@ -21,47 +21,50 @@ Projects: 66 cataloged, 46 full briefs linked (all 46 verified) plus 2 OSTI-only
 - [MatRIS](projects/matris.md): BLAS and LAPACK math library built on the IRIS runtime (IRIS is a required build dependency); GEMM demo is a proof of concept. Batch 07-08. Status unknown (editorial decision 2026-10-24: no push since 2025-10-23, no tagged release). Verified (two sweeps, 2026-10-24). [Signals](signals/matris.md).
 - [Cabana](projects/cabana.md): particle-simulation library from the multi-lab CoPA co-design center, built on Kokkos (ORNL is a named lab and DOE CODE research org). Batch 07-08. Verified (two sweeps, 2026-10-24). [Signals](signals/cabana.md).
 - [IRIS](projects/iris.md): a runtime that lets one program use several kinds of processors. Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/iris.md).
-- OLCF User Documentation: source for the public user guides of OLCF systems like Frontier. Stub.
-- [OLCF Test Harness](projects/olcf-test-harness.md): runs test suites on OLCF supercomputers like Frontier (NCCS developers). Verified.
+- [OLCF User Documentation](projects/olcf-user-docs.md): source for the public user guides of OLCF systems like Frontier. Group A (new template). Verified (two sweeps, 2026-10-24).
+- [OLCF Test Harness](projects/olcf-test-harness.md): runs test suites on OLCF supercomputers like Frontier (NCCS developers). Verified (two sweeps; brief's second sweep 2026-10-29; last-push date is an as-of date, it pushed again 2026-10-28).
 
 ## Neutrons
-- [Mantid](projects/mantid.md): multi-institution framework for reducing and analyzing neutron and muon scattering data. ORNL Neutron Sciences is one co-owner. Verified.
+- [Mantid](projects/mantid.md): multi-institution framework for reducing and analyzing neutron and muon scattering data. ORNL Neutron Sciences is one co-owner. Verified (two sweeps; second sweep 2026-10-29).
 - [SNAPRed](projects/snapred.md): app for handling data from the SNAP instrument at SNS, built on Mantid. Batch 11. Verified (two sweeps, 2026-10-24).
-- [SNS Data Workflow Manager](projects/data-workflow.md): tracks automated processing of SNS and HFIR experiment data and ties into Mantid through livereduce. Verified.
+- [SNS Data Workflow Manager](projects/data-workflow.md): tracks automated processing of SNS and HFIR experiment data and ties into Mantid through livereduce. Verified (two sweeps; second sweep 2026-10-29).
 - [PyRS](projects/pyrs.md): works out hidden stress inside metal parts from neutron scans on HFIR's HB2B instrument, without cutting them open. Batch 11. Verified (two sweeps, 2026-10-24).
 - [ONCat](projects/oncat.md): searchable catalog of SNS and HFIR neutron experiment data, with an API and Python client (pyoncat on PyPI). No public source repo; the pyoncat client ships GPL-3.0. Batch 05. Verified. Editorial decision 2026-10-24: public overview/docs pages and any public client repo only; no API calls, no logins; anything needing credentials is out of scope (RULES.md item 16).
 - [Post Processing Agent](projects/post-processing-agent.md): runs automated data reduction and cataloging when SNS and HFIR runs finish. Verified.
 - [Live Data Server](projects/live-data-server.md): serves plots of neutron experiment data while runs are in progress (Django and Postgres). Verified.
-- django-remote-submission: job queue for sending work to remote servers from a Django web app. Stub, stale.
+- [Django Remote Submission](projects/django-remote-submission.md): lets SNS users run jobs on a cluster from a web page and watch the log live (built for reflectometry fits). Stale. Group A (new template). Verified (two sweeps, 2026-10-24).
 
 ## Nuclear/fusion
-- [Thermochimica](projects/thermochimica.md): calculates chemical equilibrium (which phases and compounds form), used in nuclear fuel modeling. Verified.
+- [Thermochimica](projects/thermochimica.md): calculates chemical equilibrium (which phases and compounds form), used in nuclear fuel modeling. Verified (two sweeps; second sweep 2026-10-29).
 - [Xolotl](projects/xolotl.md): simulates damage building up in fusion-reactor walls and fission fuel as clusters of trapped atoms move and merge (C++ on PETSc and Kokkos; README says under development). Batch 06. Verified (two sweeps, 2026-10-24). [Signals](signals/xolotl.md).
-- FAR3d: models plasma instabilities driven by fast particles in tokamaks and stellarators. Stub.
+- [FAR3d](projects/far3d.md): models plasma instabilities driven by fast particles in tokamaks and stellarators. Group B. Verified, two sweeps (2026-10-29; license is a source conflict: guide says GNU, DOE CODE says MIT, no license file).
 - [KORC](projects/korc.md): follows runaway electrons in fusion plasmas. Batch 11. Verified (two sweeps, 2026-10-24).
 - [GITR](projects/gitr.md): tracks impurity particles worn off fusion device walls. Verified.
 - [SCALE](projects/scale.md): nuclear safety analysis suite (reactor physics, criticality, shielding, spent fuel). Public overview only, since the software is distributed through a controlled channel. Verified.
-- ORIGEN Library Manager (OLM): manages the reactor data libraries SCALE uses for fast spent-fuel calculations. Stub.
+- [ORIGEN Library Manager (OLM)](projects/olm.md): manages the reactor data libraries SCALE uses for fast spent-fuel calculations; open source and pip-installable; GitHub is the main repo and ORNL's GitLab a read-only mirror. Group B. Verified, two sweeps (2026-10-29).
+- [TRANSFORM](projects/transform-library.md): an open Modelica library for modeling how heat and coolant move through reactors and other energy systems over time (Apache-2.0, still active). Batch 12. Verified (two sweeps, 2026-10-29).
+- [Profugus](projects/profugus.md): an open, older mini-app holding the core math of the Exnihilo transport suite, built for performance studies rather than real answers (last push 2018). Batch 12. Verified (two sweeps, 2026-10-29).
+- [Molten Salt Database](projects/molten-salt-database.md): property data for molten salt reactor modeling; its about page is public, the files sit behind an account, so we only read the public pages. Batch 12. Short brief (RULES 21). Verified (two sweeps, 2026-10-29).
 - [VERA](projects/vera.md): couples several physics codes to simulate a whole reactor core rod by rod. Public overview only. Verified.
 - [Shift / Exnihilo](projects/shift-exnihilo.md): parallel Monte Carlo radiation transport (runs on GPUs like Frontier), distributed within SCALE. Public pages only; Radiation Transport Group credit per OSTI 1237627. Verified.
 
 ## Grid/energy
 - [GridKit](projects/gridkit.md): simulates how a power grid reacts when something fails, like a line dropping out for a split second, and whether generators settle back down; young (v0.2) but actively developed. Rewritten in batch 09. Verified (two sweeps, 2026-10-24).
-- Hydropower Fleet Intelligence: brings hydropower plant data together for fleet-wide analysis. Stub, stale.
+- [Hydropower Fleet Intelligence](projects/hydrofleetintel.md): brings hydropower plant data together for fleet-wide analysis; ships with fake data only, funded by DOE's water power office. Stale. Group A (new template). Verified (two sweeps, 2026-10-24).
 - [ExaGO](projects/exago.md): power grid optimization at large scale; moved from PNNL to ORNL (UT-Battelle 2026); v2.1 adds an experimental LLM-driven tool (AgentiGrid). Batch 07-08. Verified (two sweeps, 2026-10-24). [Signals](signals/exago.md).
-- URBAN-NET-TOOLKIT: geospatial tool for how critical infrastructure systems depend on each other [INFERRED from title]. OSTI-only stub.
+- [URBAN-NET](projects/urban-net-toolkit.md): maps how critical infrastructure systems depend on each other and where failures would cascade; ORNL said in 2022 it would be folded into DOE's EAGLE-I outage monitor. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 
 ## Climate/earth
-- GEDI Tutorials: how-tos for NASA GEDI forest structure and biomass data (ORNL DAAC). Stub.
-- [Daymet](projects/daymet.md): daily 1 km weather grids for North America, plus a pixel-extraction tool. Verified.
-- [TESViS](projects/tesvis-modis.md): web tool and API for small satellite land-data subsets (MODIS/VIIRS). Verified.
-- [E3SM Land Model (ELM)](projects/e3sm-elm.md): the land part of DOE's E3SM climate model. Multi-lab code. ORNL's specific contributions (km-scale North America framework, 1 km input datasets) are KNOWN, but ownership and the land-group lead are unknown. Verified.
+- [GEDI Tutorials](projects/gedi-tutorials.md): how-tos for NASA GEDI forest structure and biomass data (ORNL DAAC). Group A (new template). Verified (two sweeps, 2026-10-24).
+- [Daymet](projects/daymet.md): daily 1 km weather grids for North America, plus a pixel-extraction tool. Verified (two sweeps; second sweep 2026-10-29).
+- [TESViS](projects/tesvis-modis.md): web tool and API for small satellite land-data subsets (MODIS/VIIRS). Verified (two sweeps; second sweep 2026-10-29).
+- [E3SM Land Model (ELM)](projects/e3sm-elm.md): the land part of DOE's E3SM climate model. Multi-lab code. ORNL's specific contributions (km-scale North America framework, 1 km input datasets) are KNOWN, but ownership and the land-group lead are unknown. Verified (two sweeps; second sweep 2026-10-29).
 - [LandScan](projects/landscan.md): population distribution datasets down to about 100 m resolution (a dataset, not software). Licensed CC BY 4.0 per the site's own text. Verified.
 
 ## Materials
 - [AdditiveFOAM](projects/additivefoam.md): full simulation of heat and molten-metal flow in 3D printing, built on OpenFOAM. Batch 10. Verified (two sweeps, 2026-10-24).
 - [3DThesis](projects/3dthesis.md): fast thermal model of melt pools in 3D printing; the quick-estimate rung of the 3D-printing heat models. Batch 10. Verified (two sweeps, 2026-10-24).
-- [Myna](projects/myna.md): links additive manufacturing simulations with experiment databases. Verified.
+- [Myna](projects/myna.md): links additive manufacturing simulations with experiment databases. Verified (two sweeps; second sweep 2026-10-29).
 - [Finch](projects/finch.md): thermal solver for additive manufacturing, built on the Cabana library; faster GPU grid model between 3DThesis and AdditiveFOAM. Batch 10. Verified (two sweeps, 2026-10-24).
 - [adamantine](projects/adamantine.md): simulates heat transfer and thermomechanics in additive manufacturing (ORNL is a research org per OSTI 2472702; Apache-2.0 with LLVM exception since release 1.1, 2026-01-23). Batch 05. Verified.
 
@@ -72,23 +75,23 @@ Projects: 66 cataloged, 46 full briefs linked (all 46 verified) plus 2 OSTI-only
 - [XACC](projects/xacc.md): framework for programming quantum computers and simulators from C++ or Python; UT-Battelle copyright plus DOE CODE code-5041 (ORNL tie CORROBORATED); EPL-1.0 or EDL-1.0. Batch 07-08. Status unknown (last default-branch commit 2023-08-01); no successor named in public sources. Verified (two sweeps, 2026-10-24). [Signals](signals/xacc.md).
 
 ## Cyber
-- [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning simulator for training AI agents that defend networks. Verified, borderline active (whether it's still developed is unverifiable).
-- TASQC: uses quantum correlations to authenticate grid timing signals. Stub.
-- Akatosh: pairs intrusion-detection alerts with automated forensic checks to cut false alarms. OSTI-only stub.
-- CAN-D: works out what the signals in raw vehicle CAN bus logs mean. OSTI-only stub.
+- [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning simulator for training AI agents that defend networks. Verified (two sweeps; second sweep 2026-10-29), borderline active (whether it's still developed is unverifiable).
+- [TASQC](projects/tasqc.md): uses quantum correlations to authenticate grid timing signals. Group B. Verified, two sweeps (2026-10-29).
+- [Akatosh](projects/akatosh.md): pairs intrusion-detection alerts with automated forensic checks to cut false alarms. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
+- [CAN-D](projects/can-d.md): works out what the signals in raw vehicle CAN bus logs mean. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 - Cincinnatus: flags changes in binary data that may mean a breach or fraud. OSTI-only stub.
-- Heartbeat Malware Detection: aims to catch stealthy malware that signature tools miss. OSTI-only stub.
+- [Heartbeat Malware Detection](projects/heartbeat-malware.md): spots operating-system tampering from a computer's power draw during a timed test routine, a side channel that signature tools don't watch. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 - CPAD: spots attacks by learning the physical relationships in sensor data. OSTI-only stub.
-- Hyperion: works out what a program does without running it. OSTI-only stub.
+- [Hyperion](projects/hyperion.md): works out what a program does from the compiled file alone, without its source code. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 
 ## Buildings/transport
 - [Gauntlet](projects/gauntlet.md): computes shape measures for each building footprint, used by Vivaldi. Verified.
 - [Real-Twin](projects/real-twin.md): builds standard traffic-simulation scenarios for testing new mobility tech. Verified.
-- Stor4Build: simulates thermal energy storage built into buildings (ORNL and NREL). Stub.
+- [Stor4Build](projects/stor4build.md): simulates thermal energy storage built into buildings (ORNL and NREL). Group B. Verified, two sweeps (2026-10-29).
 - [EnergyPlus](projects/energyplus.md): whole-building energy simulation. Multi-institution, with ORNL as one copyright holder. Verified.
 - [FIXS](projects/fixs.md): links traffic simulators with real vehicle and hardware tests (formerly Real-Sim), MIT licensed. Verified.
 - [AutoBEM](projects/autobem.md): automatically builds energy models for huge numbers of buildings. The code is closed source per OSTI, but its Model America dataset (122.9M building models) has been publicly downloadable since 2021-04-14; those runs used Argonne's computing facility. Verified, status unknown.
-- WUFI-ORNL/IBP: models heat and moisture moving through walls, with Fraunhofer IBP. OSTI-only stub.
+- [WUFI-ORNL/IBP](projects/wufi-ornl.md): models heat and moisture moving through walls; a free North American edition of Fraunhofer IBP's program, made with ORNL. Short brief (group C), closed-source program owned by the partner. Verified, two sweeps (2026-10-29).
 
 ## Signals (outside-in pilot)
 Public traces each project leaves (git history, build targets, funding records, reverse dependencies, downloads, citing papers), per RULES.md items 15-16. The discovery pass writes history, build and funding; the connections pass writes who actually uses it. The fact-check pass swept all three on 2026-10-24 (8 verified, 2 corrected, job-trace and commit-metadata rows moved out of scope). From batch 06 every project gets a signals file (RULES.md item 17); all six batch 06 files and all five batch 07-08 files have both the discovery-pass and the connections-pass sections.
@@ -97,11 +100,13 @@ Public traces each project leaves (git history, build targets, funding records, 
 - [DataFed](signals/datafed.md): commits jumped from 58 (2022) to 1,406 (2024), pointing to new funding (INFERRED); org unit traceable to NCCS/OLCF with CSMD; one outside application (EcoKMER) names it.
 
 ## Briefs still to write
-18 of the 66 catalog rows have no brief yet. New briefs use [templates/project-brief.md](templates/project-brief.md) with the ten-question section. Groups of five, oldest batch first; each group is swept by the fact-check pass before it counts.
-- Group A (batches 01-02): gedi-tutorials, olcf-user-docs, django-remote-submission, hydrofleetintel, mind-the-gap
-- Group B (batches 02-03): vivaldi, far3d, olm, stor4build, tasqc
-- Waiting on a public docs page (OSTI-only stubs, no brief allowed yet under RULES item 14): akatosh, can-d, cincinnatus, cpad, heartbeat-malware, hyperion, urban-net-toolkit, wufi-ornl
-- Notes: olm's repo is on code.ornl.gov, so read only pages that open without a login; tasqc and the stubs are cyber-domain, so they matter for the internship angle.
+18 of the 66 catalog rows had no brief on 2026-10-24. With three reactor rows added on 2026-10-28 the catalog has 69, and 2 still have none: cpad and cincinnatus stay catalog entries (stub-osti-only). New briefs use [templates/project-brief.md](templates/project-brief.md) with the ten-question section. Groups of five, oldest batch first; each group is swept by the fact-check pass before it counts.
+- Group A (batches 01-02), done and verified (related-projects tables checked too): [gedi-tutorials](projects/gedi-tutorials.md), [olcf-user-docs](projects/olcf-user-docs.md), [django-remote-submission](projects/django-remote-submission.md), [hydrofleetintel](projects/hydrofleetintel.md), [mind-the-gap](projects/mind-the-gap.md)
+- Group B (batches 02-03), all written and verified with two sweeps on 2026-10-29: [vivaldi](projects/vivaldi.md), [far3d](projects/far3d.md), [olm](projects/olm.md), [stor4build](projects/stor4build.md), [tasqc](projects/tasqc.md)
+- Group C, after group B (short briefs, former OSTI-only stubs that now have a public page, RULES 21), all written and verified with two sweeps on 2026-10-29: [hyperion](projects/hyperion.md), [urban-net-toolkit](projects/urban-net-toolkit.md), [akatosh](projects/akatosh.md), [heartbeat-malware](projects/heartbeat-malware.md), [can-d](projects/can-d.md), plus [wufi-ornl](projects/wufi-ornl.md) (code belongs to the German partner; ORNL's part beyond co-development is UNKNOWN). Sources in [the stub search notes](discovery/stub-search-2026-10-24.md).
+- Group D (batch 12, reactor software), all written 2026-10-29, verified with two sweeps on 2026-10-29 (sweep 1: 19 held, 9 fixed, 3 unverifiable; sweep 2: 2 lines toned down): [transform-library](projects/transform-library.md), [profugus](projects/profugus.md), [molten-salt-database](projects/molten-salt-database.md) (short brief from public pages only; its data files need an account, so they stay unopened).
+- Catalog entries only (stay stub-osti-only): cpad (patent record only) and cincinnatus (nothing found).
+- Notes: olm's repo is on code.ornl.gov, so read only pages that open without a login. Heartbeat and [Situ](projects/situ.md) were research-licensed to the same small company in 2023 (ORNL story, September 2024); Situ later moved to a commercial license.
 
 Older briefs (written before the template) gain the ten-question section when next touched; that pass isn't scheduled yet.
 
@@ -110,12 +115,14 @@ Full reconstructions per RULES.md (deep-dives section).
 - Cyberwheel ([brief](projects/cyberwheel.md)): [synthesis](deep-dives/cyberwheel/synthesis.md), [timeline](deep-dives/cyberwheel/timeline.md), [system flow](deep-dives/cyberwheel/system-flow.md), [people and roles](deep-dives/cyberwheel/people-roles.md), [claim boundary](deep-dives/cyberwheel/claim-boundary.md) (the reading pass: what sources say vs. what we infer) and [lineage](deep-dives/cyberwheel/lineage.md) (the connections pass: FIREWHEEL origin, LDRD 11049). The fact-check pass: [source ledger](deep-dives/cyberwheel/source-ledger.md) (13 sources), [missing artifacts](deep-dives/cyberwheel/missing-artifacts.md) (11 gaps) and [verification report](deep-dives/cyberwheel/verification-report.md). Verified; open items are the exact Firewheel modification, division-level owner and outside authors' affiliations.
 - SNS neutron data pipeline (done 2026-10-24): [walkthrough](deep-dives/sns-neutron-pipeline.md) [connections and who uses it](deep-dives/sns-neutron-pipeline-connections.md) and [revival timing](deep-dives/sns-neutron-pipeline-timing.md), following a neutron's data from the instrument through [live-data-server](projects/live-data-server.md), [post-processing-agent](projects/post-processing-agent.md), [data-workflow](projects/data-workflow.md) and [ONCat](projects/oncat.md) to analysis in [Mantid](projects/mantid.md). Verified: walkthrough, connections and revival timing all swept (fact-check 2026-10-24). Open: who uploads plots to live-data-server, whether SNAPRed and PyRS run automatically, and why the 2023-24 activity lined up with the SNS power-upgrade shutdown (INFERRED timing, cause UNKNOWN). Funding stays UNKNOWN where records are blank.
 - OLCF test harness (done 2026-10-24), built on the [OLCF test harness brief](projects/olcf-test-harness.md): [walkthrough](deep-dives/olcf-test-harness.md), [connections and who uses it](deep-dives/olcf-test-harness-connections.md) and [timing against machine launches](deep-dives/olcf-test-harness-timing.md). Verified: all three pieces swept (fact-check 2026-10-24; the walkthrough's exit codes, off-switch file and per-step logs match the code, with one file path and one date fixed; three small corrections to the timing notes). Open: nothing public depends on it, and the 2025 activity burst has no stated cause (UNKNOWN).
-- 3D-printing tools (in progress, opened 2026-10-24; walkthrough on hold until the missing briefs catch up): [timing](deep-dives/additive-manufacturing-timing.md) (awaiting sweep). [Connections and who uses it](deep-dives/additive-manufacturing-connections.md) (awaiting sweep): three heat models hand off to ExaCA, with Stork as the shortcut between them and Myna wrapping most of them. Stork (a public go-between that expands heat data from 3DThesis and Finch for ExaCA) is now sourced in the fact-check log.
-- Next deep dive after that: the grid tools (GridKit, ReSolve, ExaGO).
+- 3D-printing tools (opened 2026-10-24; [walkthrough](deep-dives/additive-manufacturing.md) written 2026-10-29, verified with two checks): one of three heat models (3DThesis, Finch or AdditiveFOAM) works out how the metal cools and hands that to ExaCA, which grows the grains; Myna drives the chain from build records and adamantine handles warping. [Timing](deep-dives/additive-manufacturing-timing.md) (verified 2026-10-24; two small fixes: an earlier 3DThesis first release, and same-day records hold for three of four tools). [Connections and who uses it](deep-dives/additive-manufacturing-connections.md) (verified 2026-10-24, no changes): three heat models hand off to ExaCA, with Stork as the shortcut between them and Myna wrapping most of them. Stork (a public go-between that expands heat data from 3DThesis and Finch for ExaCA) is now sourced in the fact-check log.
+- Grid tools (opened 2026-10-24; [walkthrough](deep-dives/grid-tools.md) written 2026-10-29, verified with two checks): ExaGO finds the cheapest safe way to run the grid, GridKit checks whether it stays stable after a fault, and ReSolve is the GPU math under both. [Timing](deep-dives/grid-tools-timing.md) and [connections and who uses it](deep-dives/grid-tools-connections.md), both verified 2026-10-24 (ExaGO's 2023 monthly numbers corrected; ExaGO's newer funding record only says DOE, so funding stays UNKNOWN). Short version: GridKit, ExaGO and ReSolve share math libraries and some developers but don't contain each other's code; the tie between GridKit's 2025 burst and a posted grid-simulation plan is a guess (INFERRED).
+
+- Nuclear reactor software (in progress, opened 2026-10-28): [deep dive](deep-dives/nuclear-reactor-software.md) and [connections](deep-dives/nuclear-reactor-software-connections.md) (connections file verified with two checks; deep dive filled in 2026-10-29 from the checked briefs, scan notes and map, verified with two checks). Software only: which ORNL reactor codes are open, licensed or export-controlled, walkthroughs of the open ones, Molten Salt Reactor Experiment history, and a closing section on what can be built and run on a home Mac. Builds on the SCALE, VERA, Shift and Thermochimica briefs.
 
 ## Draft OSTI-only briefs
 Written from OSTI records alone (no public docs page found). Kept so the work isn't lost; not full briefs.
-- [Situ](projects/situ.md): finds new attacks in network traffic and gives analysts context. Records from 2013-14 only. Verified as a draft.
+- [Situ](projects/situ.md): finds new attacks in network traffic and gives analysts context. Records from 2013-14 only. Verified (checked as a draft; stub wording updated 2026-10-29, re-checked 2026-11-02).
 - [Roof Savings Calculator](projects/roof-savings-calculator.md): estimates energy savings from cool roofs and attic changes. roofcalc.com was unreachable on 2026-10-24. Verified as a draft.
 
 ## Outside projects (not in catalog)

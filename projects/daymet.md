@@ -46,3 +46,11 @@ Daymet is a dataset of daily weather estimates for every 1 km × 1 km square of 
 - Helper repo: LICENSE.md is UT-Battelle all-rights-reserved style custom text, languages Java 52.3 / Python 25.7 / Shell 22.0, 6 contributor pages. Verified.
 - modis.ornl.gov/documentation.html does list Daymet Subset Products. Verified.
 - Whether the Daymet generator code is public stays [UNKNOWN]; no OSTI software record found for it. No changes made.
+
+### Second pass (2026-10-29)
+Skeptical reread of the riskiest claims against sources not leaned on before (a fresh clone, GitHub API, live pages). Earlier 2026-10-24 fixes checked and still hold.
+- Helper-repo license: re-read LICENSE.md. It opens with "All rights reserved" but then grants a free, perpetual license to use, copy, modify and distribute, so "custom UT-Battelle permissive license" is right. (The 2026-10-24 note's "all-rights-reserved style" describes only the header.) The copyright line has no year. Verified.
+- V3 2016-07-14 and V4 2020-12-15: re-read from the daymet.ornl.gov page source. Verified.
+- Last push 2025-03-29: GitHub API and the last commit on a fresh clone (author and committer 2025-03-29). Verified.
+- Commit spot check (Rule 17): 15 commits, same on default branch `master` and all branches; 6 author names, matching 6 contributor pages; first commit 2018-04-16, the creation date.
+- No corrections.
