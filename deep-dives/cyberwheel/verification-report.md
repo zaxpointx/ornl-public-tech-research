@@ -11,6 +11,8 @@ The core picture holds. Cyberwheel is a public, MIT-licensed, LDRD-funded ORNL r
   - "Internal" is now INFERRED, not KNOWN.
 - Unverifiable: what Firewheel modification was made, who owns it at division level, and outside authors' affiliations.
 
+Update 2026-11-04: the public ORNL [Cybersecurity Research directory](https://impact.ornl.gov/en/organisations/cybersecurity-research/) lists Cyberwheel as a research output and associates the page with the National Security Sciences Directorate. This is a newly documented directory association, not a resolution of administrative ownership. Evidence, quote and maturity: Z01 in ../../docs/public-research-sources.md.
+
 ## Wording to keep
 Use "research environment", "developed", "showed". Don't use "deployed", "adopted", "dead", "fork", or "trained on 100,000 nodes". The reading-pass claim-boundary.md matches this report after the row 7 fix.
 

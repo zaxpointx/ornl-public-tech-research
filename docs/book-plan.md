@@ -37,7 +37,7 @@ ORNL's public technology is best understood as a connected portfolio of research
 10. **Cyberwheel** — reinforcement-learning cyber defense as a research test bed.
 11. **The SNS neutron data pipeline** — from instrument output to analyzed result.
 12. **The OLCF test harness** — automated acceptance testing for supercomputers.
-13. **Additive manufacturing** — the next deep dive, once its timing and connections work is complete.
+13. **Additive manufacturing** — the existing deep dive and its timing and connections work.
 
 ### Part IV — Connections and conclusions
 
@@ -56,4 +56,4 @@ The book is ready for a numbered edition when every chapter in the map is either
 
 ## Current state
 
-The repository currently has a complete atlas foundation, 48 briefs, 3 completed deep dives, and a substantial connections and verification layer. Parts I and II are underway; Part III is partial; Part IV is the primary synthesis gap. See the [coverage matrix](coverage-matrix.md) for the current editorial control view.
+The current catalog and deep-dive status are in [INDEX.md](../INDEX.md). The [public research guide](public-research-guide.md) begins a broader institutional layer but explicitly records major remaining gaps. Parts I–IV are not a finished book; see the [coverage matrix](coverage-matrix.md).

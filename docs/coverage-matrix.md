@@ -8,7 +8,7 @@ This is the editorial control view of the current manuscript. The catalog remain
 |---|---|---|---|---|
 | I | Scope, method, and public evidence | `GOAL.md`, `RULES.md`, `docs/methodology.md`, `verification/` | Foundation present | Draft a connected introductory chapter |
 | II | Portfolio by technical domain | `INDEX.md`, `LAB-TREE.md`, `projects/`, `signals/` | Broad coverage; 2 OSTI-only stubs lack briefs | Normalize brief metadata and complete priority gaps |
-| III | Deep case studies | `deep-dives/` | 3 complete; additive manufacturing in progress | Apply chapter checklist to every deep dive |
+| III | Deep case studies | `deep-dives/` | 6 existing deep dives listed in INDEX; the broader public research guide is a first batch | Apply chapter checklist; extend into facility science |
 | IV | Connections, maturity, and unknowns | `connections/`, `lessons/`, `verification/` | Evidence exists; synthesis is incomplete | Write comparative conclusion and glossary |
 
 ## Catalog coverage
@@ -19,21 +19,19 @@ This is the editorial control view of the current manuscript. The catalog remain
 | Project briefs | 67 | Entries with a project-level research file |
 | Missing briefs | 2 | Explicitly uncovered or stub/unknown entries; not silently treated as complete |
 | Signals files | 40 | Public-trace analyses; coverage is intentionally narrower than briefs |
-| Completed deep dives | 3 | Full case-study evidence packages |
+| Existing deep dives | 6 | Listed in INDEX; their forms vary |
 
 The structural audit prints the current missing IDs and status totals on every run. A missing brief is not automatically an error: some entries are intentionally OSTI-only stubs or unresolved public leads. Active entries without briefs are the highest-priority completion queue.
 
 ## Priority completion queue
 
-The following active catalog entries currently lack project briefs and should be resolved before a numbered book edition:
+The previous queue incorrectly listed five entries that already have briefs. The structural audit on 2026-11-04 identifies `cpad` and `cincinnatus` as the two catalog entries without briefs; both remain OSTI-only stubs under RULES.md. Do not turn a stub into a full brief without the required public documentation.
 
-- `olcf-user-docs`
-- `gedi-tutorials`
-- `far3d`
-- `olm`
-- `stor4build`
+The [public research guide](public-research-guide.md), [facilities and roles guide](facilities-instruments-roles.md), [isotope story](isotopes-and-hot-cells.md), [autonomous science story](autonomous-science.md), [additive story](intersect-additive-story.md) and selected [relationship index](research-relationships.md) are incomplete first batches, not a finished edition. Remaining work: source-backed representative research for every directorate; fuller facilities/instruments and dated professional credits; additional autonomy and isotope/hot-cell topics; broader relationship coverage and a machine-readable schema if needed; broader source rechecks and citation validation; and reconciliation of remaining stale editorial documents.
 
-The remaining uncovered entries are either unresolved public leads or OSTI-only stubs and should be either researched into briefs, moved to an explicitly labeled appendix, or removed under the scope rules after verification.
+Workstation blocker recorded 2026-11-04: the requested local commit failed because the configured signing key requires an interactive passphrase. The signing key and configuration were not changed or bypassed. The research batch remains uncommitted on the requested branch. Direct-origin link checks are also partially blocked by HTTP 403; see the source ledger for the affected pages and successful public extraction.
+
+Navigation blocker recorded 2026-11-04: creating a repository-level `AGENTS.md` was explicitly blocked without user consent and the file was not created. The recorded response does not establish why approval was not given. Do not retry or work around the protected-file control. The ordinary README and reading-order documents link the shared corpus for human readers and assistants; a protected agent-instruction entry point remains pending explicit approval.
 
 ## Editorial rule
 

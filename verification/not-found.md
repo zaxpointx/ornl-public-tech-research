@@ -39,7 +39,7 @@
 | 2026-10-24 | scale | SCALE 6.3 validation overview volume | OSTI records API "SCALE 6.3 Validation" | no overview record; fifth-volume count stays INFERRED (fact-check pass) |
 | 2026-10-24 | gitr | "GITR" | OSTI records API (product_type=Software) | no DOE CODE record (fact-check pass) |
 | 2026-10-24 | cyberwheel | PI designation for LDRD 11049 | OSTI 3025007 p. 13 (project 11049 section) | not found; only a three-name team line (reading pass, deep dive) |
-| 2026-10-24 | cyberwheel | owning division or group name | ORNL/cyberwheel README, DOE CODE code-134699, OSTI 2478356 | not found (reading pass, deep dive) |
+| 2026-10-24 | cyberwheel | owning division or group name | ORNL/cyberwheel README, DOE CODE code-134699, OSTI 2478356 | not found in those sources at that time; 2026-11-04 ORNL research directory lists Cyberwheel under Cybersecurity Research associated with National Security Sciences (ledger Z01). Administrative ownership remains unknown. |
 | 2026-10-24 | cyberwheel | "deployed" or "production" wording | README, v1.1.0/v2.0 release notes, DOE CODE code-134699, OSTI 3025007 p. 13 | not found; "deployable in live networks" appears only as a goal (reading pass, deep dive) |
 | 2026-10-24 | cyberwheel | commits after 2025-08-26 | GitHub commits API, ORNL/cyberwheel | none (reading pass, deep dive) |
 | 2026-10-24 | cyberwheel | LDRD 11049 or contract number on the DOE CODE / CSET records | OSTI records API code-134699, 2478356 | no project number on either (fact-check pass) |

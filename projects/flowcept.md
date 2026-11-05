@@ -33,7 +33,7 @@
 - Owning division or group: not stated in what I read. [UNKNOWN]
 
 ## Who uses it / why it matters
-The project says it targets ML training, agent workflows, HPC jobs and edge-to-cloud-to-HPC pipelines. [KNOWN: README] Its docs list publications. I didn't read them, so named users are [UNKNOWN]. For a security student, provenance is close to audit logging: a trustworthy record of who ran what on which data. That's the same idea behind forensic timelines and software supply-chain records. [INFERRED]
+The project says it targets ML training, agent workflows, HPC jobs and edge-to-cloud-to-HPC pipelines. [KNOWN: README] Update 2026-11-04: a [2025 conference paper](https://dl.acm.org/doi/10.1145/3731599.3767592) describes Flowcept in an INTERSECT additive-manufacturing software demonstration; the printer and sensing service were simulated. This is one documented research use, not proof of broad external adoption. [KNOWN: evidence H02 in ../docs/public-research-sources.md] For a security student, provenance is close to audit logging: a trustworthy record of who ran what on which data. That's the same idea behind forensic timelines and software supply-chain records. [INFERRED]
 
 ## Related projects
 - DataFed (`datafed`): same domain (both are ORNL scientific-data tools), but no public source shows them working together. No DataFed or Globus mention was found in the Flowcept repo. [UNKNOWN: map link 19]
@@ -42,7 +42,7 @@ The project says it targets ML training, agent workflows, HPC jobs and edge-to-c
 ## Known / Inferred / Unknown
 - KNOWN: MIT license with ORNL copyright, purpose, capture and streaming design, storage options, layout, languages, CI coverage, release history.
 - INFERRED: it doesn't schedule workflows; the MCP folder's role; the security relevance.
-- UNKNOWN: owning group, outside users, which supercomputers it has run on (not checked; that's signals work).
+- UNKNOWN: owning group and outside users. The 2025 study above identifies use in its particular research demonstration; it does not establish use on every ORNL computing system.
 
 ## Sources (accessed 2026-10-24)
 - https://github.com/ORNL/flowcept (README.md, LICENSE, pyproject.toml, docs/architecture.rst, .github/workflows/, src/)

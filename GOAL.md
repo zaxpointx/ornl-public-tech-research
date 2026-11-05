@@ -49,6 +49,6 @@ Everything in `RULES.md` still applies. In particular:
 
 - Public information only. No restricted, private, export-controlled or classified material, and no guessing about it.
 - Study artifacts, never systems: no scanning, probing or network mapping.
-- No profiling of individual people. Describe roles ("the lead developer", "a credited contributor"), not personal histories. This is stricter than the HIT-HD research, on purpose, because this repo is public.
+- No profiling of individual people. As of 2026-11-04, a name may accompany a narrowly relevant professional role or authorship when an official public professional source directly supports that exact credit; date it and do not infer leadership from authorship. No personal histories, personal contact details or outreach. Earlier role-only entries remain valid historical editorial choices.
 - No claim of ORNL affiliation, and no copied copyrighted text beyond short cited quotes.
 - Every claim is tagged known, corroborated, inferred or unknown, with a source.

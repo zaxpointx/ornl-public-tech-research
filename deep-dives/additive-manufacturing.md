@@ -66,7 +66,7 @@ A researcher wants to know the grain structure in one region of one printed part
 - Someone has to build the dependencies first (Kokkos and Cabana for Finch, OpenFOAM for AdditiveFOAM). [KNOWN: READMEs]
 
 ## What it is not
-- None of these tools controls a printer or designs parts. [INFERRED: no printer-control or CAD code found in the briefs' repo reads]
+- None of these tools was identified as a standalone printer-control or CAD system in the original brief reads [INFERRED]. Update 2026-11-04: [a 2025 INTERSECT study](https://dl.acm.org/doi/10.1145/3731599.3767592) incorporates adamantine simulations into a wider control workflow; its printer and sensing service were simulated [KNOWN: H02 in ../docs/public-research-sources.md]. This does not establish standalone physical-printer control by adamantine.
 - Peregrine, the print-monitoring tool, isn't one of these open tools. Whether it's public is [UNKNOWN] (Myna brief), and a search result described it as licensed, which was not fetched (discovery/nuclear-reactor-scan-2026-10-28.md). [UNKNOWN]
 - ExaCA isn't an ORNL catalog project. It's an LLNL repo with many ORNL-authored citing papers, and it's kept on the map only (rule 13). [KNOWN: INDEX outside projects, connections notes]
 - Thermochimica isn't part of this cluster. No AM repo mentions it. [UNRELATED: link 191]

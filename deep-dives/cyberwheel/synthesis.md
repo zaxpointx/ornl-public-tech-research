@@ -15,7 +15,7 @@ Cyberwheel is an ORNL research test bed for training AI network defenders with r
 - **Lineage:** "ART" in the code means Atomic Red Team, a public library of attack technique tests. The code docstrings name it, so this is KNOWN for the code. What upstream ART version it tracks is UNKNOWN.
 
 ## Unknown
-- The owning division or group. No public source names it.
+- Administrative ownership of the project. Update 2026-11-04: ORNL's [Cybersecurity Research directory](https://impact.ornl.gov/en/organisations/cybersecurity-research/) lists the Cyberwheel software output and associates the page with the National Security Sciences Directorate [KNOWN: evidence Z01 in ../../docs/public-research-sources.md]. This is an organizational listing, not an explicit administrative ownership designation.
 - Whether anyone outside the team uses it.
 - Whether a follow-on project exists.
 - The v1.0.0 tag date. The tag has no release object.

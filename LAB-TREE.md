@@ -11,7 +11,7 @@ How to read it:
 ## Oak Ridge National Laboratory
 
 ### Neutron science
-- **NScD** is named in Mantid's site footer and in post-processing-agent's license [KNOWN, map 53 and projects/post-processing-agent.md]. That it stands for the neutron sciences directorate is [INFERRED].
+- **NScD** stands for Neutron Sciences Directorate [KNOWN: [ORNL overview](https://www.ornl.gov/nscd-about/), accessed 2026-11-04; “Neutron Sciences Directorate (NScD)”]. Earlier versions marked the expansion inferred; the official source states it directly.
 - **Facilities: SNS (Spallation Neutron Source) and HFIR (High Flux Isotope Reactor)**
   - The data path at the facilities:
     - [Live Data Server](projects/live-data-server.md): serves plots of experiment data while runs are in progress (see brief).
@@ -23,7 +23,7 @@ How to read it:
       - [SNAPRed](projects/snapred.md): built on Mantid, for the SNAP instrument at SNS [KNOWN, map 4 and 23].
       - [PyRS](projects/pyrs.md): built on Mantid, for residual stress on HFIR's HB2B instrument [KNOWN, map 34 and 37].
   - [Django Remote Submission](projects/django-remote-submission.md): web-to-cluster job runner built at SNS for reflectometry fits, tied to the liquids reflectometer [KNOWN, brief and map]. It lives in the ornl-ndav GitHub org; any tie to the other facility tools is still [UNKNOWN].
-- Planned deep dive: this whole branch (GOAL.md, ranking item 1).
+- Deep dive: [SNS neutron data pipeline](deep-dives/sns-neutron-pipeline.md).
 
 ### Computing (HPC)
 - **NCCS** is named in the OLCF Test Harness developer affiliations [KNOWN, map 76]. CSMD and NCCS/OLCF are named for DataFed [KNOWN, catalog: ORNL/TM-166131].
@@ -50,7 +50,7 @@ How to read it:
     - [MatRIS](projects/matris.md): BLAS and LAPACK math library built on IRIS (see brief). Status unknown.
   - [TASMANIAN](projects/tasmanian.md): sparse grids and uncertainty quantification.
   - [ReSolve](projects/resolve.md): GPU linear solvers. It feeds GridKit (see Grid and energy).
-- Planned deep dive: supercomputer operations (GOAL.md, ranking item 2).
+- Deep dive: [OLCF test harness](deep-dives/olcf-test-harness.md).
 
 ### Quantum computing
 - **GitHub org ORNL-QCI** (it's the only placement clue for this whole branch) [KNOWN org; ownership INFERRED].
@@ -67,7 +67,7 @@ How to read it:
       - [AdditiveFOAM](projects/additivefoam.md): full heat and melt-pool flow, built on OpenFOAM (outside).
     - [adamantine](projects/adamantine.md): heat transfer and thermomechanics simulation, funded by LDRD and EERE [KNOWN, map 125].
   - Outside: ExaCA (grain growth) and Stork (an optional library whose identity is [UNKNOWN], map 174).
-- Planned deep dive: the 3D-printing ladder (GOAL.md, ranking item 3).
+- Deep dive: [3D-printing tools](deep-dives/additive-manufacturing.md).
 
 ### Nuclear and fusion
 - **Reactor and Nuclear Systems Division, Radiation Transport Group** [KNOWN, single source, map 101]
@@ -94,7 +94,7 @@ How to read it:
   - [HydraGNN](projects/hydragnn.md): power-flow examples [CORROBORATED, map 127].
   - [Hydropower Fleet Intelligence](projects/hydrofleetintel.md): fake demo data only; tied to DOE's water power office. Status unknown.
   - [URBAN-NET](projects/urban-net-toolkit.md): infrastructure dependency toolkit, slated for DOE's EAGLE-I (short brief).
-- Deep dive in progress: [the grid tools](INDEX.md#deep-dives).
+- Deep dive: [the grid tools](deep-dives/grid-tools.md).
 
 ### Climate and earth
 - **Environmental Sciences Division** [KNOWN, daymet.ornl.gov]
