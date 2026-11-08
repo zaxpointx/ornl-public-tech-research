@@ -35,7 +35,10 @@ Status key: **DIRECT** = a source explicitly supports the exact proposition; **I
 | R27 | 2025 simulated-printer demonstration | same implementation as | three-facility additive deployment | UNKNOWN | H02, S05 | Shared initiative or a common tool does not establish identity or a neutron-measurement link. |
 | R28 | SPRUCE environmental dataset version 2.0 | supersedes and corrects | previous versions of the same dataset | DIRECT | E01 | Dataset metadata says the revision was released in 2026; files and reuse terms were not independently examined. |
 | R29 | ORNL Cyberwheel v2.0 | supports emulation using | Sandia-developed FIREWHEEL | DIRECT | X01, X02 | Public release and repository descriptions, fetched 2026-11-07; no joint team, live deployment, current compatibility or personal run is established. |
-| R30 | LLNL ExaCA | lists as an optional heat-transport model for coupled simulation | ORNL Finch | DIRECT | X03–X06 | A documented optional coupling, not evidence of a particular run, experimental validation or the INTERSECT workflow. Existing project briefs already record this connection. |
+| R30 | LLNL ExaCA | lists as an optional heat-transport model for coupled simulation | ORNL Finch | DIRECT | X03–X06, Y02 | A 2025 paper reports coupled example studies; which computation ran at which facility, experimental validation and a connection to INTERSECT remain unknown. Existing briefs already record the coupling. |
+| R31 | 2025 Myna study | used public MDF build data and simulations from | 3DThesis, AdditiveFOAM and ExaCA | DIRECT | Y01 | 54, 78 and 3 simulations respectively; compared with measurements, with a reported mismatch. Finch and adamantine are not established components of that experiment. |
+| R32 | ExaCA v2.0 study | reports using resources of | Oak Ridge and Argonne leadership computing facilities | DIRECT | Y02 | The funding statement credits both resources; allocation of individual simulations to machines is unknown. LLNL is the ExaCA repository's institution, not evidence LLNL ran this particular study. |
+| R33 | Peregrine monitoring software | was developed under | Transformational Challenge Reactor program | DIRECT | Y04 | 2024 report's historical account; does not establish that Myna was developed under TCR or a reactor was completed. |
 
 ## How to use this index
 

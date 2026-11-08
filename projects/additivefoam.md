@@ -50,6 +50,8 @@
 - Citation: a JOSS (Journal of Open Source Software) paper, DOI 10.21105/joss.07770, plus Zenodo DOIs. [KNOWN: README]
 
 ## Who uses it / why it matters
+**Research update, 2026-11-07:** In a [2025 study](https://www.osti.gov/pages/servlets/purl/3002570), Myna configured 78 AdditiveFOAM melt-pool simulations from public MDF build data; selected outputs supported ExaCA grain simulations compared against measurements of printed steel. The study reports a mismatch in microstructure trends, not general validation. John Coleman, Gerry Knapp, Benjamin Stump, Sam Reeve, Matt Rolchigo and Alex Plotkowski coauthored both that paper and the separate [AdditiveFOAM software paper](https://www.osti.gov/pages/biblio/3002891); shared authorship alone does not prove common management. [KNOWN: Y01, Y05 in ../docs/public-research-sources.md; accessed 2026-11-07]
+
 It's the high-fidelity tier of the AM thermal tools in our catalog. It's slower than 3DThesis or Finch, but it captures melt-pool flow, and it feeds ExaCA for grain prediction. [INFERRED] Myna wraps it as an application. [KNOWN per myna brief] Usage evidence goes in `signals/additivefoam.md` once it exists.
 
 ## Related projects

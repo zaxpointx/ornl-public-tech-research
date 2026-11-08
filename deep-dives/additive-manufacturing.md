@@ -3,7 +3,19 @@ Written in the reading pass on 2026-10-29, from the team's existing briefs, map 
 
 Covers: [3DThesis](../projects/3dthesis.md), [Finch](../projects/finch.md), [AdditiveFOAM](../projects/additivefoam.md), [Myna](../projects/myna.md) and [adamantine](../projects/adamantine.md), plus two outside or map-only pieces: ExaCA (an LLNL repo kept off the catalog under rule 13) and Stork (a new public ORNL library). The Transformational Challenge Reactor appears as history only and has no catalog row (lead decision 2026-10-29, batch-12).
 
-Limits: this covers software artifacts only. We say nothing about how the Manufacturing Demonstration Facility (MDF) runs its machines or networks (rule 16), and nothing about any part design.
+Limits: the original 2026-10-29 pass covered software artifacts only. The 2026-11-07 research update below adds published experiment results and facility acknowledgments. We say nothing about live MDF machines, networks or nonpublic part designs (rule 16).
+
+## Research update: what happened when the predictions met a real sample?
+
+[KNOWN] The [2025 Myna manuscript](https://www.osti.gov/pages/servlets/purl/3002570) describes an actual study using the public Peregrine v2023-10 build dataset from ORNL's Manufacturing Demonstration Facility. The researchers used Myna v1.1 to configure 54 3DThesis thermal, 78 AdditiveFOAM melt-pool and three ExaCA grain simulations. 3DThesis was used to compare a layer across 54 parts; researchers manually selected regions for more detailed simulations, then compared predicted microstructures to electron backscatter diffraction measurements of corresponding printed steel regions. [KNOWN: Y01 in ../docs/public-research-sources.md, accessed 2026-11-07]
+
+[KNOWN] The models predicted differences in microstructure with process conditions, while measurements of the three selected regions showed little variation in texture and grain size. The authors suggest that a two-phase solidification model might explain the mismatch for some 316L feedstock compositions; this is a hypothesis, not a demonstrated fix. The paper also calls initial simulated grain competition over approximately the first 0.25 mm unphysical because of the initial conditions. The result demonstrates a workflow and its limitations, not qualified parts or universally accurate predictions. [KNOWN: Y01]
+
+[KNOWN] The paper credits Gerald Knapp, Samuel Reeve, John Coleman, Matthew Rolchigo, Benjamin Stump, Stephen DeWitt and Alex Plotkowski as authors and lists ORNL materials-science and computational-sciences division affiliations at publication. Authorship is not a current staffing chart or proof of individual project leadership. [KNOWN: Y01]
+
+[KNOWN] Separately, the 2025 [ExaCA v2.0 paper](https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/) reports example studies coupling Finch and ExaCA in memory. It credits resources at ORNL's and Argonne's leadership computing facilities; the abstract and acknowledgment do not identify which machine ran each simulation. This is separate from the Myna experiment above. [KNOWN: Y02]
+
+[KNOWN] A 2024 ORNL report says Peregrine was developed under the Transformational Challenge Reactor program. The Myna paper's use of a Peregrine dataset connects the published studies, but it does not establish that Myna itself was developed under TCR, that the reactor was completed, or that the Myna study qualified a reactor part. [KNOWN: Y01, Y04] The [public dataset record](https://impact.ornl.gov/en/datasets/simulated-microstructures-for-laser-powder-bed-fusion-additive-ma/) separately describes six simulated microstructure files made with Myna, AdditiveFOAM and ExaCA; their exact correspondence to Y01's three runs, access and reuse terms remain [UNKNOWN: Y03].
 
 ## The short version
 Metal 3D printing builds a part by melting thin layers of metal powder with a moving laser. How fast each spot heats and cools decides the grain structure (the crystal pattern inside the metal), and the grain structure decides how strong the part is. ORNL's public tools split that question into steps:
@@ -56,7 +68,7 @@ Solid arrows are KNOWN from code or docs; dashed arrows are optional or inferred
 7. **Write back.** `myna sync` pushes results back into the database, so the build record and its simulations sit together. [KNOWN: ARCHITECTURE.md]
 
 ## One concrete example
-A researcher wants to know the grain structure in one region of one printed part. Myna ships about 20 example cases, including `microstructure_region` and `melt_pool_geometry_part`, and its examples use the public Peregrine v2023-10 dataset. [KNOWN: Myna brief, link 30/71] In a run like that, Myna would pull the part's layer and scan data, run 3DThesis for the thermal history of that region, pass the RDF output to ExaCA, and sync the predicted grains back. [INFERRED: the exact steps inside `microstructure_region` weren't read line by line in this pass] A smaller hands-on version is Finch's bundled `single_line` example, which melts one straight laser track on a small block and writes the solidification data along it. [KNOWN: Finch `examples/single_line/`]
+A researcher wants to know the grain structure in one region of one printed part. Myna ships example cases including `microstructure_region` and `melt_pool_geometry_part`. [KNOWN: Myna brief, link 30/71] The actual 2025 research workflow is described in the research update above: 3DThesis guided region selection, then AdditiveFOAM supplied solidification data to ExaCA. [KNOWN: Y01] The exact steps inside the software example `microstructure_region` remain [UNKNOWN]; do not assume they are identical to the paper. A smaller hands-on example is Finch's bundled `single_line` case. [KNOWN: Finch `examples/single_line/`]
 
 ## Where humans act
 - A researcher picks the material, beam settings and scan path, and decides which outputs to sample. [KNOWN: input files in all briefs]
@@ -73,7 +85,7 @@ A researcher wants to know the grain structure in one region of one printed part
 - PyRS (neutron residual-stress reduction) shares the topic, not the code. [INFERRED: link 175]
 
 ## History: the Transformational Challenge Reactor (history only)
-DOE's nuclear energy office launched TCR in 2019 with ORNL leading, aiming at a 3D-printed microreactor, and it did not complete a reactor demonstration. [KNOWN: https://www.ans.org/news/2026-08-27/article-8345/ornl-and-inl-collaborate-on-3dprinted-pressure-vessels/, via discovery/nuclear-reactor-scan-2026-10-28.md] An ORNL report says TCR used AM to print nuclear components and predicted material properties from in-situ laser powder bed data, and a later ORNL report says that from FY21 it shifted toward AI-informed design, materials, sensing and a digital platform. [KNOWN: https://doi.org/10.2172/1831630; https://info.ornl.gov/sites/publications/Files/Pub166838.pdf; map link 222] A software tie between TCR and Peregrine or Myna is [INFERRED only]: neither report was read for a named software link. Myna's 2025 paper lists the Nuclear Energy office among its sponsors (OSTI 3002570), which fits but doesn't prove a TCR link. [KNOWN: sponsor field; INFERRED: the fit] It has no catalog row and no brief, by lead decision.
+DOE's nuclear energy office launched TCR in 2019 with ORNL leading, aiming at a 3D-printed microreactor, and it did not complete a reactor demonstration. [KNOWN: https://www.ans.org/news/2026-08-27/article-8345/ornl-and-inl-collaborate-on-3dprinted-pressure-vessels/, via discovery/nuclear-reactor-scan-2026-10-28.md] An ORNL report says TCR used AM to print nuclear components and predicted material properties from in-situ laser powder bed data, and a later ORNL report says that from FY21 it shifted toward AI-informed design, materials, sensing and a digital platform. [KNOWN: https://doi.org/10.2172/1831630; https://info.ornl.gov/sites/publications/Files/Pub166838.pdf; map link 222] **Correction, 2026-11-07:** Y04 directly states that Peregrine was developed under TCR; the earlier TCR–Peregrine link tagged only inferred is superseded. Myna's own development under TCR remains [UNKNOWN]. Myna's 2025 paper lists the Nuclear Energy office among its sponsors, but that alone does not prove its TCR origin [KNOWN: OSTI 3002570]. It has no catalog row and no brief, by lead decision.
 
 ## Life story and who pays (from the timing notes)
 - adamantine is the long-runner (first commit 2016, steady team since 2020). AdditiveFOAM, Finch and Myna all started within about seven weeks in spring 2023 by first-commit date (AdditiveFOAM repo created 2023-03-28; Finch first commit 2023-05-15; Myna 2023-05-11). Finch's and Myna's GitHub repos were only created on 2024-02-23, with earlier history imported. [KNOWN: git log, author dates; GitHub API] (corrected in a fact-check pass, 2026-10-29)
@@ -98,15 +110,15 @@ Myna is the easiest entry point: about 99% Python, pytest tests, a YAML config, 
 | Hand-offs | Each heat model has an ExaCA output or script | Stork's consumer is ExaCA | That ExaCA documents 3DThesis or AdditiveFOAM support |
 | Ownership | ORNL copyright or DOE CODE for 3DThesis, Finch, AdditiveFOAM, Myna; OSTI 2472702 for adamantine | ORNL-MDF org means the MDF | That ExaCA is an ORNL project |
 | Funding | Sponsor fields above | ExaAM money behind the 2023-24 records | That ECP's end caused Finch's slowdown |
-| TCR | Printed parts, in-situ data, shift to a digital platform | A tie to Peregrine or Myna | That any tool here was built for TCR |
+| TCR | Y04 says Peregrine was developed under TCR | A direct Myna development link remains unknown | That Myna was built for TCR or that the reactor was completed |
 | Facility | Myna targets Peregrine's database format | | Anything about MDF machines, hosts or networks |
 
 ## Unknown and searched without result
 - Whether Peregrine is publicly available. [UNKNOWN]
 - What `microstructure_region` runs step by step. [UNKNOWN: not read in this pass]
-- Who funds Finch, 3DThesis and AdditiveFOAM work after 2024. [UNKNOWN; searched in the timing pass]
+- Who funds ongoing Finch, 3DThesis and AdditiveFOAM work after the cited studies. [UNKNOWN; the 2025 ExaCA v2.0 paper lists sponsors for that study, Y02, not necessarily future support.]
 - Whether a Finch 0.3 release is planned. [UNKNOWN]
-- Would more public research change the core picture? Probably not: the stage-by-stage flow comes from code in several repos that agree. The open edges are funding, the TCR tie and outside use. [INFERRED]
+- The earlier judgment that more research probably would not change the core picture is superseded: the 2026-11-07 paper reading established actual results, a mismatch with measurements, facility acknowledgments and the historical TCR–Peregrine link. Remaining gaps include outside use, current funding and independent validation. [KNOWN: Y01–Y04; INFERRED: research priorities]
 
 ## Sources (accessed 2026-10-24 unless noted; via the briefs and companion notes)
 - Briefs: [3dthesis](../projects/3dthesis.md), [finch](../projects/finch.md), [additivefoam](../projects/additivefoam.md), [myna](../projects/myna.md), [adamantine](../projects/adamantine.md)

@@ -82,7 +82,7 @@ Validated with mermaid-cli on 2026-10-29. Solid arrows are stated dependencies o
 - **Link 218, CASL and NEAMS** (new) [KNOWN] CASL built VERA's packaged pieces; NEAMS [UNKNOWN].
 - **Link 219, HFIR methods paper** (new) [KNOWN] title; tool names per the discovery pass [INFERRED].
 - **Link 220, MSRE** (new) [UNKNOWN] software tie; third-party MSR model repo [UNRELATED] to ORNL.
-- **Link 222, TCR and AM** (new) [KNOWN] printed components and in situ build data; tie to the map's Peregrine node [INFERRED].
+- **Link 222, TCR and AM** [KNOWN] printed components and in situ build data. Update 2026-11-07: a [2024 ORNL report](https://impact.ornl.gov/en/publications/evaluation-of-in-situ-am-process-monitoring-techniques-and-potent-3/) directly says Peregrine was developed under TCR, superseding the earlier inferred tie. This does not establish that Myna was developed under TCR. [KNOWN: Y04 in ../docs/public-research-sources.md; accessed 2026-11-07]
 
 ### Distribution status
 | Code | Status | Public distribution page | Tag |

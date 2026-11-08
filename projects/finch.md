@@ -40,6 +40,8 @@
 - Contributors: 4 including anonymous commit authors, 3 GitHub accounts. [KNOWN: GitHub API]
 
 ## Who uses it / why it matters
+**Research update, 2026-11-07:** A 2025 [ExaCA v2.0 paper](https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/) reports example studies with in-memory Finch coupling and credits the ORNL manufacturing facility and computing resources at Oak Ridge and Argonne. Sam Reeve, John Coleman and Matt Rolchigo are credited in the [Finch software record](https://www.osti.gov/doecode/biblio/122647) and as paper coauthors. Which facility ran each particular simulation and whether it was experimentally validated remain [UNKNOWN]. [KNOWN: Y02, X05 in ../docs/public-research-sources.md; accessed 2026-11-07]
+
 Fast thermal models let AM researchers try many laser paths before printing real parts. Finch's GPU support is what makes it fast at full-part scale. [INFERRED] Its `exaca` output format shows it was built to feed microstructure prediction. [KNOWN: examples README] Usage evidence goes in `signals/finch.md` once it exists.
 
 ## Related projects

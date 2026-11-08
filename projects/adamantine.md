@@ -35,7 +35,7 @@
 The paper says it's especially suited to fused filament fabrication (plastic-style nozzle printing), directed energy deposition and powder bed fusion. [KNOWN: OSTI 2472702 abstract] Named users beyond the authors are [UNKNOWN]. The interesting idea for a cyber student is the "digital twin" pattern: a simulation that keeps correcting itself with live sensor data from one specific physical process. [INFERRED: framing; the source doesn't use the term "digital twin"]
 
 ## Related projects
-- 3DThesis (`3dthesis`), AdditiveFOAM (`additivefoam`), Myna (`myna`) and ExaCA (in the map as an outside project): all are AM simulation codes in our catalog or map. Direct code ties are [UNKNOWN]. I didn't check dependency files for them.
+- Myna has an adamantine application wrapper [KNOWN: Myna brief]. The [2025 Myna study](https://www.osti.gov/pages/servlets/purl/3002570) describes a different workflow using 3DThesis, AdditiveFOAM and ExaCA; it does not establish adamantine was used in those simulations. Stephen DeWitt coauthored that study and the [adamantine paper](https://www.osti.gov/biblio/2472702); common authorship is not evidence of a single workflow or shared management. [KNOWN: Y01, Y05 and OSTI 2472702; accessed 2026-11-07]
 - Trilinos and Kokkos: outside libraries adamantine depends on. [KNOWN: README]
 
 ## Known / Inferred / Unknown
