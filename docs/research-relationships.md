@@ -35,6 +35,7 @@ Status key: **DIRECT** = a source explicitly supports the exact proposition; **I
 | R27 | 2025 simulated-printer demonstration | same implementation as | three-facility additive deployment | UNKNOWN | H02, S05 | Shared initiative or a common tool does not establish identity or a neutron-measurement link. |
 | R28 | SPRUCE environmental dataset version 2.0 | supersedes and corrects | previous versions of the same dataset | DIRECT | E01 | Dataset metadata says the revision was released in 2026; files and reuse terms were not independently examined. |
 | R29 | ORNL Cyberwheel v2.0 | supports emulation using | Sandia-developed FIREWHEEL | DIRECT | X01, X02 | Public release and repository descriptions, fetched 2026-11-07; no joint team, live deployment, current compatibility or personal run is established. |
+| R30 | LLNL ExaCA | lists as an optional heat-transport model for coupled simulation | ORNL Finch | DIRECT | X03–X06 | A documented optional coupling, not evidence of a particular run, experimental validation or the INTERSECT workflow. Existing project briefs already record this connection. |
 
 ## How to use this index
 

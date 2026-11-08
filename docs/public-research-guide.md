@@ -27,6 +27,8 @@ A related but distinct research result is OpeN-AM: ORNL reports wire-arc printin
 
 The [longer connected story](intersect-additive-story.md) separates the architecture's goals, the published neutron experiment and the simulated-printer software demonstration.
 
+**Another cross-lab connection:** How might heating during a 3D print affect the metal's microscopic grain structure? ORNL's [Finch](../projects/finch.md) models heat transfer, while LLNL's [ExaCA](https://github.com/LLNL/ExaCA) models grain development. ExaCA's public documentation lists Finch as an optional heat-transport model for coupled simulation [KNOWN: X03–X06]. This connection was already in the existing atlas; the source check makes the purpose and limitation explicit. It does not establish that a specific simulation was run, validated against a physical part, or used in the INTERSECT workflow above [UNKNOWN].
+
 ## Connected story 2: from neutron measurements to usable data
 
 The public [workflow-manager repository](https://github.com/neutrons/data_workflow) describes a workflow manager and reporting application; the [post-processing agent](https://github.com/neutrons/post_processing_agent) describes automated reduction and cataloging [KNOWN: S13, S14]. In plain language: experimental measurements need to be organized and converted into forms researchers can analyze. The existing [pipeline walkthrough](../deep-dives/sns-neutron-pipeline.md) explains the published components, with [Mantid](../projects/mantid.md), [ONCat](../projects/oncat.md), [SNAPRed](../projects/snapred.md) and [PyRS](../projects/pyrs.md) as linked reading.
