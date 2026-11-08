@@ -1,6 +1,6 @@
 # Public research relationships: an evidence-bounded index
 
-This is an independent, selected index of relationships already explained in the [human-readable guide](public-research-guide.md), not a map of live infrastructure, a staff hierarchy, or a complete knowledge graph. It is a regular Markdown table that people and automated readers can both navigate. Each row is one narrowly worded proposition; direction is expressed in the relationship itself, not assumed from the order of names. The [evidence ledger](public-research-sources.md) supplies directly read public URLs, short quotes, fetch dates, source maturity and limits. All sources cited here were fetched on 2026-11-04, and some source reports are historical or describe targets rather than present operations.
+This is an independent, selected index of relationships already explained in the [human-readable guide](public-research-guide.md), not a map of live infrastructure, a staff hierarchy, or a complete knowledge graph. It is a regular Markdown table that people and automated readers can both navigate. Each row is one narrowly worded proposition; direction is expressed in the relationship itself, not assumed from the order of names. The [evidence ledger](public-research-sources.md) supplies directly read public URLs, short quotes, fetch dates, source maturity and limits. Sources have individual fetch dates, and some reports are historical or describe targets rather than present operations.
 
 Status key: **DIRECT** = a source explicitly supports the exact proposition; **INFERRED** = our bounded synthesis of stated facts, not an additional source assertion; **UNKNOWN** = the identified relationship is not established by the sources cited, not a claim that no relationship exists. A source can document a plan, a capability or a past event directly without proving current operation. Professional credits concern only the exact published role or authorship; they do not establish a current appointment.
 
@@ -34,6 +34,7 @@ Status key: **DIRECT** = a source explicitly supports the exact proposition; **I
 | R26 | 2025 INTERSECT additive demonstration | used | adamantine and Flowcept | DIRECT | H02 | The printer and sensing service were simulated; it does not establish use in every INTERSECT workflow. |
 | R27 | 2025 simulated-printer demonstration | same implementation as | three-facility additive deployment | UNKNOWN | H02, S05 | Shared initiative or a common tool does not establish identity or a neutron-measurement link. |
 | R28 | SPRUCE environmental dataset version 2.0 | supersedes and corrects | previous versions of the same dataset | DIRECT | E01 | Dataset metadata says the revision was released in 2026; files and reuse terms were not independently examined. |
+| R29 | ORNL Cyberwheel v2.0 | supports emulation using | Sandia-developed FIREWHEEL | DIRECT | X01, X02 | Public release and repository descriptions, fetched 2026-11-07; no joint team, live deployment, current compatibility or personal run is established. |
 
 ## How to use this index
 
