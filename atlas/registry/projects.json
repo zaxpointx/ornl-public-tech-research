@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-10",
+  "projects": [
+    {
+      "id": "project-agentic-workflows",
+      "title": "Agentic workflow orchestration and cross-facility integration",
+      "kind": "public_role_signal",
+      "source_ids": ["src-agentic-workflows-job"],
+      "facility_ids": ["facility-olcf-frontier", "facility-hpc-manufacturing-user-facilities"],
+      "role_ids": ["role-research-scientist-agentic-workflows", "role-wes-nccs"],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_role_signal",
+      "local_translation": "Model a bounded research workflow as stages, dependencies, approvals, retries, and evidence outputs. Do not represent the model as ORNL's internal implementation."
+    },
+    {
+      "id": "project-autonomous-science",
+      "title": "Autonomous science and self-driving laboratories",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-autonomous-science", "src-intersect", "src-autonomous-experiments-paper", "src-intersect-demo-2023", "src-autoflows-project", "src-intersect-architecture-2025"],
+      "facility_ids": ["facility-hpc-manufacturing-user-facilities", "facility-autonomous-chemistry-lab"],
+      "role_ids": ["role-research-scientist-agentic-workflows"],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "blocked_and_lead",
+      "local_translation": "Run a synthetic research loop with a human approval gate, deterministic verifier, provenance log, and explicit stop conditions."
+    },
+    {
+      "id": "project-codex-hpc",
+      "title": "Codex for HPC kernel generation",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-codex-hpc"],
+      "facility_ids": ["facility-olcf-frontier"],
+      "role_ids": ["role-research-scientist-agentic-workflows"],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "blocked",
+      "local_translation": "Benchmark generated code against a small hand-written baseline with tests, timing, and failure notes."
+    },
+    {
+      "id": "project-neutron-imaging",
+      "title": "VENUS and AI-powered neutron imaging",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-venus", "src-neutron-workflow", "src-venus-instrument"],
+      "facility_ids": ["facility-hfir-venus"],
+      "role_ids": ["role-research-scientist-agentic-workflows"],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "blocked_and_lead",
+      "local_translation": "Treat project artifacts as a synthetic instrument stream and test whether a detector can surface repeated failure patterns."
+    },
+    {
+      "id": "project-quantum-networking",
+      "title": "Quantum communications for critical infrastructure",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-quantum-grid", "src-quantum-network-2025", "src-quantum-network-2020"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_with_public_demonstrations",
+      "local_translation": "Simulate key rotation, link failure, observability, and recovery scoring on a synthetic critical-service network."
+    },
+    {
+      "id": "project-nuclear-batteries",
+      "title": "Radioisotope nuclear batteries",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-nuclear-batteries", "src-nuclear-battery-2026", "src-isotopes-overview"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_program_record",
+      "local_translation": "Study durable state, low-resource operation, graceful degradation, and explicit recovery behavior in a software agent."
+    },
+    {
+      "id": "project-polymer-enzymes",
+      "title": "AI and synthetic biology for polymer breakdown",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-polymer-enzymes", "src-polymer-enzymes-2025"],
+      "facility_ids": [],
+      "role_ids": ["role-microbial-synthetic-biologist"],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Create a multi-agent evidence exchange where specialist agents must pass citations and uncertainty, not prose opinions."
+    },
+    {
+      "id": "project-wildfire-grid",
+      "title": "AWARE and early grid-wildfire detection",
+      "kind": "existing_project_dossier",
+      "source_ids": ["src-wildfire-grid", "src-grid-wildfire-2026"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Build early-warning checks for project drift, repeated failures, dangerous assumptions, and resource exhaustion."
+    },
+    {
+      "id": "project-ai-security",
+      "title": "AI security and cyber-resilience research",
+      "kind": "verified_public_project_family",
+      "source_ids": ["src-caiser", "src-ai-phyx", "src-situ-heartbeat"],
+      "facility_ids": ["facility-olcf-frontier"],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_family",
+      "local_translation": "Test synthetic models against poisoning, drift, sensor failure, and misleading alerts while keeping all systems disconnected from real infrastructure."
+    },
+    {
+      "id": "project-autonomous-chemistry",
+      "title": "Autonomous chemistry lab",
+      "kind": "verified_intersect_science_project",
+      "source_ids": ["src-autonomous-chemistry-project", "src-intersect-demo-2023"],
+      "facility_ids": ["facility-autonomous-chemistry-lab"],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Use synthetic experiment records to study reproducibility, decision loops, and human review without running chemistry or robotics."
+    },
+    {
+      "id": "project-itaqpro",
+      "title": "ITAQPRO quantum edge node",
+      "kind": "verified_intersect_science_project",
+      "source_ids": ["src-itaqpro"],
+      "facility_ids": ["facility-olcf-frontier"],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Simulate a quantum-control workflow with synthetic measurements, drift, retries, and an approval gate."
+    },
+    {
+      "id": "project-automated-microscopy",
+      "title": "Automated microscopy and 4D STEM",
+      "kind": "verified_intersect_science_project",
+      "source_ids": ["src-automated-microscopy-project"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Use public or synthetic image arrays to study reconstruction, data transfer, and model-assisted measurement selection."
+    },
+    {
+      "id": "project-agile-grid-lab",
+      "title": "AGILE grid laboratory emulation",
+      "kind": "verified_intersect_science_project",
+      "source_ids": ["src-agile-grid-lab"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Build a disconnected synthetic grid emulator with digital-twin records, latency, failures, and human review."
+    },
+    {
+      "id": "project-intersect-integration",
+      "title": "INTERSECT integration and virtual testbeds",
+      "kind": "verified_intersect_crosscutting_project",
+      "source_ids": ["src-intersect-integration"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Test workflow components against local software doubles instead of instruments, networks, or internal facility systems."
+    },
+    {
+      "id": "project-intersect-sde",
+      "title": "INTERSECT software development environment",
+      "kind": "verified_intersect_crosscutting_project",
+      "source_ids": ["src-intersect-sde"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Study reusable service boundaries and documentation using small local components and synthetic data."
+    },
+    {
+      "id": "project-smart-plant",
+      "title": "SMART Plant field systems",
+      "kind": "verified_intersect_field_project",
+      "source_ids": ["src-smart-plant"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Simulate field sensors, edge collection, sample queues, and model updates without deploying robots or collecting real field data."
+    },
+    {
+      "id": "project-software-deployment",
+      "title": "Software deployment at DOE facilities",
+      "kind": "verified_crosscutting_software_project",
+      "source_ids": ["src-software-deployment-facilities"],
+      "facility_ids": ["facility-olcf-frontier"],
+      "role_ids": [],
+      "software_ids": ["software-hermes-codex"],
+      "evidence": "verified_public_project_record",
+      "local_translation": "Create a toy multi-platform build matrix with explicit dependencies, tests, and reproducible environment records."
+    },
+    {
+      "id": "project-public-software-surface",
+      "title": "ORNL public software discovery surface",
+      "kind": "infrastructure_record",
+      "source_ids": ["src-software-catalog", "src-software-catalog-guidance", "src-software-licensing-guidance", "src-doe-code", "src-datafed-paper", "src-adios2-paper"],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": ["software-ornl-software-catalog", "software-doe-code", "software-datafed", "software-adios2", "software-trilinos", "software-flux", "software-openmc"],
+      "evidence": "verified_catalog_boundary_with_leads",
+      "local_translation": "Use the catalog as a discovery index; verify each repository's own README, license, release identifier, citation data, and documentation before making project claims."
+    },
+    {
+      "id": "project-workflow-software-reconstruction",
+      "title": "Public workflow software contracts and local provenance reconstruction",
+      "kind": "public_software_comparison",
+      "source_ids": [
+        "src-flowcept-repository",
+        "src-flowcept-architecture",
+        "src-flowcept-exports",
+        "src-zambeze-repository",
+        "src-zambeze-flowcept-hook",
+        "src-intersect-sdk-schema",
+        "src-intersect-sdk-service",
+        "src-datafed-repository",
+        "src-datafed-dependency-types",
+        "src-intersect-sdk-framework-paper",
+        "src-intersect-scientific-data-layer",
+        "src-intersect-dms-spec"
+      ],
+      "facility_ids": [],
+      "role_ids": [],
+      "software_ids": [
+        "software-flowcept",
+        "software-zambeze",
+        "software-datafed",
+        "software-intersect-python-sdk",
+        "software-atlas-workflow-lab"
+      ],
+      "evidence": "verified_public_artifacts_with_inferred_comparison",
+      "dossier": "guide/project-dossiers/workflow-software-and-local-reconstruction.md",
+      "local_translation": "Study synthetic measure/analyze/decide execution with evidence gates, bounded recovery and replayable provenance. Not a joint ORNL implementation."
+    }
+  ]
+}

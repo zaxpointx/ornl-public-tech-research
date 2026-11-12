@@ -63,3 +63,23 @@ This continued the work above on the same branch. The 2026-11-10 files were left
 - **Connections.** Map Pass 33 adds links 226-241. The headline link is the ORANGE geometry engine shared by Celeritas and Shift (OSTI 3376506).
 - **Checks.** `audit_atlas.py` PASS. `build_portfolio_map.py --check` valid at 74 projects. External links in the new files were checked with HTTP requests (see the batch file). Code was read, not built or run.
 - **Next.** An ORANGE lineage deep dive; a cross-repo contract check for the SNS queue names; one small local experiment that measures a failure boundary (pattern D2 or D5) instead of demoing a workflow.
+
+## Continuation, 2026-11-11 (later): ornl-atlas merged; focus lanes
+
+- **Merge.** The former `ornl-atlas` repository now lives in [atlas/](../../atlas/README.md). It was copied from its commit `f70741a` plus the uncommitted work present at 21:59 local time, including the Flowcept failure study.
+  - Left out: a private personal context file, the old agent instruction files, and one archived, mis-scoped planning document.
+  - Sanitized: two private local paths and three raw web-page scrapes.
+  - The original checkout was not modified or deleted. Retiring it is a separate decision, best made once no agent is still working there.
+- **Focus.** [discovery/lanes.csv](../../discovery/lanes.csv) tags all 74 projects (6 deep, 20 lead, 48 pool), and the audit checks that it covers the catalog.
+- **Agent entry point.** The root [AGENTS.md](../../AGENTS.md) is now the single guide: lanes, a where-to-look table and all checks.
+- **Patterns.** Pattern A4 now cites the lab's measured result: a killed offline Flowcept run leaves zero records.
+- **Checks.** Audit PASS, map check valid, atlas registry valid, and the atlas query-tool and lab tests pass from the repository root. CI runs all of them.
+- **Open.**
+  - The catalog and `atlas/registry/` overlap on a few projects and have not been reconciled.
+  - The atlas text says its drafts were not posted, but the lab README records upstream pull request ORNL/flowcept#357; the atlas README copy was corrected to match.
+  - A second agent's untracked discovery scripts (`scripts/discover_*.py`, `discovery/snapshots/`) were present during this work and were deliberately left uncommitted.
+- **Atlas link check, 2026-11-11.** 174 unique URLs: 158 returned 200, 1 redirected, 11 returned 403 and 4 returned 404.
+  - The 403s come from sites that block automated requests (ACM, filtered ornl.gov publication pages, job aggregators), so they are not dead.
+  - Dead (404), still to replace: `ornl.gov/labsofthefuture`, two `ornl.gov/staff-profile/...` pages, and `ornl.gov/project/autonomous-chemistry-lab-accelerated-materials-discovery-and-innovation`.
+- **Rules conflict to reconcile.** The atlas registry cites job postings on third-party aggregators (CareerBuilder, ZipRecruiter, Teal). RULES.md item 16 accepts only official job boards. Those records should be re-sourced to the ORNL careers site or downgraded to `lead`.
+- **Next.** The first lane deep dive: Cyberwheel (understand, run, find its failure boundary, write it up).

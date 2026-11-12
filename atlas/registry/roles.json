@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-31",
+  "roles": [
+    {
+      "id": "role-research-scientist-agentic-workflows",
+      "title": "Research Scientist, Agentic Workflows",
+      "kind": "public_job_family",
+      "source_ids": ["src-agentic-workflows-job"],
+      "evidence": "verified",
+      "public_signal": "Design and deploy agentic workflows and frameworks that bridge leadership computing resources, instruments, and cloud platforms."
+    },
+    {
+      "id": "role-wes-nccs",
+      "title": "Workflows and Ecosystem Services within NCCS",
+      "kind": "public_team_signal",
+      "source_ids": ["src-agentic-workflows-job"],
+      "evidence": "verified",
+      "public_signal": "The job record places the role in the WES Group at the National Center for Computational Sciences."
+    },
+    {
+      "id": "role-distributed-workflows",
+      "title": "Research Scientist, Distributed Workflows",
+      "kind": "public_job_lead",
+      "source_ids": ["src-distributed-workflows-job"],
+      "evidence": "blocked",
+      "public_signal": "The local retrieval record confirms the posting existed but was closed; substantive role details remain unknown."
+    },
+    {
+      "id": "role-data-science-advanced-manufacturing",
+      "title": "Data science for advanced manufacturing",
+      "kind": "public_job_lead",
+      "source_ids": ["src-mdf-job"],
+      "evidence": "lead",
+      "public_signal": "Local source ledger associates the role with a manufacturing digital thread, multimodal data, and digital twins. Re-fetch before promotion."
+    },
+    {
+      "id": "role-quantum-optics-bioimaging",
+      "title": "Quantum optics and bioimaging",
+      "kind": "public_job_lead",
+      "source_ids": ["src-quantum-optics-job"],
+      "evidence": "lead",
+      "public_signal": "Local source ledger associates the role with squeezed-light microscopy for label-free cells and tissues. Re-fetch before promotion."
+    },
+    {
+      "id": "role-microbial-synthetic-biologist",
+      "title": "Microbial synthetic biologist",
+      "kind": "public_job_lead",
+      "source_ids": ["src-microbial-job"],
+      "evidence": "lead",
+      "public_signal": "Local source ledger associates the role with non-model microbes, microbiome engineering, and conversion of waste biomass. Re-fetch before promotion."
+    }
+  ]
+}

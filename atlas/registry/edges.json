@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-11",
+  "edges": [
+    {
+      "from": "project-agentic-workflows",
+      "to": "facility-olcf-frontier",
+      "relation": "public_role_mentions_compute_context",
+      "evidence": "verified_role_signal",
+      "source_ids": ["src-agentic-workflows-job"]
+    },
+    {
+      "from": "project-agentic-workflows",
+      "to": "role-research-scientist-agentic-workflows",
+      "relation": "role_signal_for",
+      "evidence": "verified",
+      "source_ids": ["src-agentic-workflows-job"]
+    },
+    {
+      "from": "project-agentic-workflows",
+      "to": "role-wes-nccs",
+      "relation": "located_in_public_team_signal",
+      "evidence": "verified",
+      "source_ids": ["src-agentic-workflows-job"]
+    },
+    {
+      "from": "project-autonomous-science",
+      "to": "facility-hpc-manufacturing-user-facilities",
+      "relation": "public_architecture_lead",
+      "evidence": "lead",
+      "source_ids": ["src-autonomous-experiments-paper"]
+    },
+    {
+      "from": "project-neutron-imaging",
+      "to": "facility-hfir-venus",
+      "relation": "instrument_context_lead",
+      "evidence": "blocked_and_lead",
+      "source_ids": ["src-venus", "src-neutron-workflow"]
+    },
+    {
+      "from": "project-public-software-surface",
+      "to": "software-ornl-software-catalog",
+      "relation": "uses_public_discovery_surface",
+      "evidence": "verified",
+      "source_ids": ["src-software-catalog"]
+    },
+    {
+      "from": "project-public-software-surface",
+      "to": "software-doe-code",
+      "relation": "uses_public_discovery_surface",
+      "evidence": "verified",
+      "source_ids": ["src-doe-code"]
+    },
+    {
+      "from": "project-public-software-surface",
+      "to": "software-datafed",
+      "relation": "public_paper_and_catalog_record",
+      "evidence": "verified",
+      "source_ids": ["src-datafed-paper", "src-software-catalog"]
+    },
+    {
+      "from": "project-public-software-surface",
+      "to": "software-adios2",
+      "relation": "public_paper_and_catalog_record",
+      "evidence": "verified",
+      "source_ids": ["src-adios2-paper", "src-software-catalog"]
+    },
+    {
+      "from": "project-autonomous-chemistry",
+      "to": "facility-autonomous-chemistry-lab",
+      "relation": "public_project_facility_context",
+      "evidence": "verified",
+      "source_ids": ["src-autonomous-chemistry-project"]
+    },
+    {
+      "from": "project-itaqpro",
+      "to": "facility-olcf-frontier",
+      "relation": "public_project_mentions_hpc_connection",
+      "evidence": "verified",
+      "source_ids": ["src-itaqpro"]
+    },
+    {
+      "from": "project-automated-microscopy",
+      "to": "facility-olcf-frontier",
+      "relation": "public_project_mentions_hpc_connection",
+      "evidence": "verified",
+      "source_ids": ["src-automated-microscopy-project"]
+    },
+    {
+      "from": "project-smart-plant",
+      "to": "project-autonomous-science",
+      "relation": "intersect_science_project_family",
+      "evidence": "verified",
+      "source_ids": ["src-smart-plant"]
+    },
+    {
+      "from": "project-intersect-integration",
+      "to": "project-autonomous-science",
+      "relation": "intersect_crosscutting_support",
+      "evidence": "verified",
+      "source_ids": ["src-intersect-integration"]
+    },
+    {
+      "from": "project-software-deployment",
+      "to": "facility-olcf-frontier",
+      "relation": "public_project_facility_context",
+      "evidence": "verified",
+      "source_ids": ["src-software-deployment-facilities"]
+    },
+    {
+      "from": "project-ai-security",
+      "to": "facility-olcf-frontier",
+      "relation": "public_center_mentions_exascale_testing",
+      "evidence": "verified",
+      "source_ids": ["src-caiser"]
+    },
+    {
+      "from": "project-quantum-networking",
+      "to": "project-wildfire-grid",
+      "relation": "shared_critical_infrastructure_security_context",
+      "evidence": "inferred",
+      "source_ids": ["src-quantum-network-2020", "src-grid-wildfire-2026"]
+    },
+    {
+      "from": "project-polymer-enzymes",
+      "to": "project-autonomous-science",
+      "relation": "shared_ai_guided_experiment_pattern",
+      "evidence": "inferred",
+      "source_ids": ["src-polymer-enzymes-2025", "src-autonomous-science"]
+    },
+    {
+      "from": "project-agentic-workflows",
+      "to": "software-hermes-codex",
+      "relation": "local_study_proxy",
+      "evidence": "local",
+      "source_ids": []
+    },
+    {
+      "from": "project-autonomous-science",
+      "to": "software-hermes-codex",
+      "relation": "local_translation",
+      "evidence": "local",
+      "source_ids": []
+    },
+    {
+      "from": "software-zambeze",
+      "to": "software-flowcept",
+      "relation": "historical_optional_integration_hook",
+      "evidence": "DIRECT",
+      "source_ids": [
+        "src-zambeze-flowcept-hook",
+        "src-flowcept-exports",
+        "src-flowcept-commit-remove-consumer-api",
+        "src-flowcept-commit-remove-zambeze-export",
+        "src-flowcept-commit-delete-zambeze-adapter"
+      ],
+      "limitation": "Import line runtime-tested 2026-11-11: succeeds on Flowcept v0.3.11 (after adding msgpack and numpy<2) and raises ImportError on v1.0.3. Full Zambeze agent with RabbitMQ not run."
+    },
+    {
+      "from": "project-workflow-software-reconstruction",
+      "to": "software-flowcept",
+      "relation": "compares_public_artifact",
+      "evidence": "DIRECT",
+      "source_ids": [
+        "src-flowcept-repository"
+      ]
+    },
+    {
+      "from": "project-workflow-software-reconstruction",
+      "to": "software-zambeze",
+      "relation": "compares_public_artifact",
+      "evidence": "DIRECT",
+      "source_ids": [
+        "src-zambeze-repository"
+      ]
+    },
+    {
+      "from": "project-workflow-software-reconstruction",
+      "to": "software-datafed",
+      "relation": "compares_public_artifact",
+      "evidence": "DIRECT",
+      "source_ids": [
+        "src-datafed-repository"
+      ]
+    },
+    {
+      "from": "project-workflow-software-reconstruction",
+      "to": "software-intersect-python-sdk",
+      "relation": "compares_public_artifact",
+      "evidence": "DIRECT",
+      "source_ids": [
+        "src-intersect-sdk-schema"
+      ]
+    },
+    {
+      "from": "project-workflow-software-reconstruction",
+      "to": "software-atlas-workflow-lab",
+      "relation": "local_translation",
+      "evidence": "local",
+      "source_ids": []
+    },
+    {
+      "from": "software-atlas-flowcept-failure-study",
+      "to": "software-flowcept",
+      "relation": "executes_upstream_artifact",
+      "evidence": "local",
+      "source_ids": [
+        "src-flowcept-offline-buffer-code"
+      ]
+    }
+  ]
+}

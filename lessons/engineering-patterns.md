@@ -86,7 +86,7 @@ The stated goals are "Keep workflow orchestration generic across build database 
 - Hook into the frameworks people already run before asking them to add decorators.
 [INFERRED]
 
-**Watch out for** what a buffer means for failures. Records still sitting in it when a job dies are lost unless something flushes them; the code tracks flush-complete signals per interceptor, which points to this concern. [KNOWN: `register_flush_complete`; INFERRED: the motive]
+**Watch out for** what a buffer means for failures, and note that this is now measured, not just read. The [Flowcept failure study](../atlas/labs/flowcept-failure-study/README.md) ran Flowcept 1.0.3 with deliberately killed jobs. In offline mode the buffer is a plain list written only on a normal stop, so a process killed by SIGTERM or `os._exit` left **zero** records, including 200 tasks that had already finished. The project's docs say offline mode keeps everything in memory until dumped, so this is a documented limit, and calling `dump_buffer()` before the crash saved everything. The automatic flushing described above applies only to the online, broker-backed mode. The same study found that a workflow which raises an exception is still recorded as FINISHED. [KNOWN: lab results at the pinned revision; online mode not tested] For your own design: buffered telemetry needs a periodic flush or a signal handler, because the runs that die are the ones you most need records for. [INFERRED]
 
 ---
 

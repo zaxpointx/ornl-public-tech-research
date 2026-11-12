@@ -1,0 +1,75 @@
+id,lanes,tier,why
+hecbench,software-engineering,lead,"Portable GPU benchmark kernels across CUDA, HIP, SYCL and OpenMP."
+hydragnn,ai-agents,lead,Distributed GNN training with Frontier scripts; in lane for its training infrastructure only.
+resolve,software-engineering,pool,Numerical library; read pattern C1 for the reusable idea.
+tasmanian,none,pool,Outside the four focus lanes; kept as discovery context.
+additivefoam,none,pool,Outside the four focus lanes; kept as discovery context.
+cyberwheel,cybersecurity;ai-agents,deep,Cyber-range simulation with RL defense agents; public code small enough to run locally.
+iris,software-engineering,lead,Runtime for mixed processors; ChatHPC evaluates a ChatIRIS assistant.
+flowcept,ai-agents;software-engineering,deep,Provenance capture for AI and agent workflows; already run in atlas/labs/flowcept-failure-study.
+datafed,software-engineering;linux-infra,lead,Federated data management with central services; large codebase.
+gridkit,none,pool,Outside the four focus lanes; kept as discovery context.
+thermochimica,none,pool,Outside the four focus lanes; kept as discovery context.
+xolotl,none,pool,Outside the four focus lanes; kept as discovery context.
+mantid,none,pool,Outside the four focus lanes; kept as discovery context.
+snapred,software-engineering,lead,"Facade over Mantid enforced by a lint rule, with concurrency guards (pattern B2)."
+exatn,none,pool,Outside the four focus lanes; kept as discovery context.
+olcf-user-docs,linux-infra,lead,"Public docs for schedulers, modules and environments on OLCF systems."
+gedi-tutorials,none,pool,Outside the four focus lanes; kept as discovery context.
+daymet,none,pool,Outside the four focus lanes; kept as discovery context.
+tesvis-modis,none,pool,Outside the four focus lanes; kept as discovery context.
+e3sm-elm,none,pool,Outside the four focus lanes; kept as discovery context.
+data-workflow,software-engineering;linux-infra,deep,Message-queue workflow manager with fail-safe routing and input validation (pattern A1).
+pyrs,none,pool,Outside the four focus lanes; kept as discovery context.
+3dthesis,none,pool,Outside the four focus lanes; kept as discovery context.
+myna,software-engineering,lead,Typed component pipeline with tool wrappers and database adapters (pattern A3); the printing physics is out of lane.
+finch,none,pool,Outside the four focus lanes; kept as discovery context.
+vivaldi,none,pool,Outside the four focus lanes; kept as discovery context.
+mind-the-gap,none,pool,Outside the four focus lanes; kept as discovery context.
+hydrofleetintel,none,pool,Outside the four focus lanes; kept as discovery context.
+olcf-test-harness,linux-infra;software-engineering,deep,Build-submit-check acceptance harness for clusters; has a plain Linux machine type (pattern B1).
+qiree,none,pool,Outside the four focus lanes; kept as discovery context.
+django-remote-submission,software-engineering;linux-infra,lead,Web-to-cluster job submission over Celery; stale since 2021.
+gauntlet,none,pool,Outside the four focus lanes; kept as discovery context.
+far3d,none,pool,Outside the four focus lanes; kept as discovery context.
+korc,none,pool,Outside the four focus lanes; kept as discovery context.
+gitr,none,pool,Outside the four focus lanes; kept as discovery context.
+scale,none,pool,Outside the four focus lanes; kept as discovery context.
+olm,none,pool,Outside the four focus lanes; kept as discovery context.
+vera,none,pool,Outside the four focus lanes; kept as discovery context.
+tasqc,cybersecurity,lead,Quantum-secured timing authentication for the grid; in lane for the security idea.
+akatosh,cybersecurity,lead,IDS alerts plus automated forensics to cut false positives; OSTI records only.
+can-d,cybersecurity,lead,Reverse-engineers vehicle CAN signal definitions from raw logs; OSTI records only.
+real-twin,none,pool,Outside the four focus lanes; kept as discovery context.
+stor4build,none,pool,Outside the four focus lanes; kept as discovery context.
+energyplus,none,pool,Outside the four focus lanes; kept as discovery context.
+cincinnatus,cybersecurity,pool,Cyber stub; nothing public found.
+heartbeat-malware,cybersecurity,lead,"Hardware power-signal malware detection; short brief, no public code."
+cpad,cybersecurity,pool,"Cyber-physical attack detection; patent record only, nothing to read."
+situ,cybersecurity,lead,"Streaming network anomaly detection; OSTI-only draft, licensed to a company."
+hyperion,cybersecurity,lead,"Static behavior analysis of executables; short brief, no public code."
+fixs,none,pool,Outside the four focus lanes; kept as discovery context.
+shift-exnihilo,none,pool,Outside the four focus lanes; kept as discovery context.
+roof-savings-calculator,none,pool,Outside the four focus lanes; kept as discovery context.
+autobem,none,pool,Outside the four focus lanes; kept as discovery context.
+wufi-ornl,none,pool,Outside the four focus lanes; kept as discovery context.
+landscan,none,pool,Outside the four focus lanes; kept as discovery context.
+urban-net-toolkit,cybersecurity,lead,Critical-infrastructure interdependency and cascading-failure mapping; no public code.
+adamantine,none,pool,Outside the four focus lanes; kept as discovery context.
+oncat,none,pool,Outside the four focus lanes; kept as discovery context.
+post-processing-agent,linux-infra;software-engineering,deep,"Queue workers with process-tree limits, heartbeats and systemd/RPM packaging (patterns A1, A2)."
+live-data-server,software-engineering;cybersecurity,lead,Small Django service with authenticated uploads and keyed plot links; good first read.
+zambeze,ai-agents;linux-infra,lead,Cross-facility orchestration; Flowcept hook only works up to v0.3.11 (atlas lab).
+matris,none,pool,Outside the four focus lanes; kept as discovery context.
+cabana,software-engineering,pool,Numerical library; read pattern C2 for the reusable idea.
+xacc,none,pool,Outside the four focus lanes; kept as discovery context.
+exago,ai-agents,lead,Grid optimizer whose v2.1 adds an experimental LLM tool (AgentiGrid); only that tool is in lane.
+tnqvm,none,pool,Outside the four focus lanes; kept as discovery context.
+transform-library,none,pool,Outside the four focus lanes; kept as discovery context.
+profugus,none,pool,Outside the four focus lanes; kept as discovery context.
+molten-salt-database,none,pool,Outside the four focus lanes; kept as discovery context.
+adios2,software-engineering,lead,I/O and streaming library; engine abstraction and collective failure handling (pattern D5).
+celeritas,software-engineering,pool,Physics is out of lane; read patterns D6-D8 for the reusable ideas.
+dedfoam,ai-agents,lead,Only the out-of-range-refusing ML surrogate is in lane (pattern D2); the printing physics is not.
+chathpc,ai-agents,deep,Fine-tuned HPC coding assistants with a reproducible SC25 artifact (pattern D3).
+matey,ai-agents,pool,Physics foundation models; read pattern D4 for the reusable idea.

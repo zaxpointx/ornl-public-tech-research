@@ -21,5 +21,11 @@ jobs:
         run: python3 scripts/build_portfolio_map.py --check
       - name: Compile validation scripts
         run: python3 -m compileall -q scripts
+      - name: Validate atlas registry
+        run: python3 atlas/scripts/validate_registry.py
+      - name: Test atlas query tool and lab
+        run: |
+          python3 -m unittest discover -s atlas/tests -p 'test_*.py'
+          python3 -m unittest discover -s atlas/labs/cross-layer-pilot
       - name: Check patch whitespace
         run: git diff --check

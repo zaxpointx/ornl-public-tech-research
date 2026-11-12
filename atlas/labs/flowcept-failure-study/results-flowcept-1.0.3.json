@@ -1,0 +1,161 @@
+{
+ "flowcept_version": "1.0.3",
+ "python": "3.11.15",
+ "run_date": "2026-11-11",
+ "scenarios": [
+  {
+   "scenario": "success",
+   "exit_code": 0,
+   "stdout_tail": [
+    "result 8"
+   ],
+   "stderr_tail": [],
+   "jsonl_files": [
+    "flowcept_buffer.jsonl"
+   ],
+   "records": [
+    {
+     "activity_id": "measure",
+     "status": "FINISHED",
+     "used": {
+      "x": 3
+     },
+     "generated": {
+      "y": 4
+     },
+     "workflow_id": "71a0e3e9-b653-4018-8208-f515e179b0b5",
+     "task_id": "1794437033.213095",
+     "type": "task"
+    },
+    {
+     "activity_id": "analyze",
+     "status": "FINISHED",
+     "used": {
+      "y": 4
+     },
+     "generated": {
+      "z": 8
+     },
+     "workflow_id": "71a0e3e9-b653-4018-8208-f515e179b0b5",
+     "task_id": "1794437033.213109",
+     "type": "task"
+    }
+   ]
+  },
+  {
+   "scenario": "uncaught_task_error",
+   "exit_code": 1,
+   "stdout_tail": [],
+   "stderr_tail": [
+    "    raise ValueError(\"synthetic analysis failure\")",
+    "ValueError: synthetic analysis failure"
+   ],
+   "jsonl_files": [
+    "flowcept_buffer.jsonl"
+   ],
+   "records": [
+    {
+     "activity_id": "measure",
+     "status": "FINISHED",
+     "used": {
+      "x": 3
+     },
+     "generated": {
+      "y": 4
+     },
+     "workflow_id": "2b63acb2-7f78-4f06-93fd-724309eac335",
+     "task_id": "1794437033.296083",
+     "type": "task"
+    },
+    {
+     "activity_id": "analyze",
+     "status": "ERROR",
+     "stderr": "synthetic analysis failure",
+     "used": {
+      "y": 4
+     },
+     "workflow_id": "2b63acb2-7f78-4f06-93fd-724309eac335",
+     "task_id": "1794437033.296098",
+     "type": "task"
+    }
+   ]
+  },
+  {
+   "scenario": "caught_error_then_retry",
+   "exit_code": 0,
+   "stdout_tail": [
+    "result 8"
+   ],
+   "stderr_tail": [
+    "    raise RuntimeError(\"transient failure, attempt 1\")",
+    "RuntimeError: transient failure, attempt 1"
+   ],
+   "jsonl_files": [
+    "flowcept_buffer.jsonl"
+   ],
+   "records": [
+    {
+     "activity_id": "measure",
+     "status": "FINISHED",
+     "used": {
+      "x": 3
+     },
+     "generated": {
+      "y": 4
+     },
+     "workflow_id": "69fdf1f1-3791-42b6-9b81-69789025ecb1",
+     "task_id": "1794437033.3767161",
+     "type": "task"
+    },
+    {
+     "activity_id": "flaky_analyze",
+     "status": "ERROR",
+     "stderr": "transient failure, attempt 1",
+     "used": {
+      "y": 4
+     },
+     "workflow_id": "69fdf1f1-3791-42b6-9b81-69789025ecb1",
+     "task_id": "1794437033.376728",
+     "type": "task"
+    },
+    {
+     "activity_id": "flaky_analyze",
+     "status": "FINISHED",
+     "used": {
+      "y": 4
+     },
+     "generated": {
+      "z": 8
+     },
+     "workflow_id": "69fdf1f1-3791-42b6-9b81-69789025ecb1",
+     "task_id": "1794437033.376941",
+     "type": "task"
+    }
+   ]
+  },
+  {
+   "scenario": "hard_kill_mid_workflow",
+   "exit_code": 9,
+   "stdout_tail": [],
+   "stderr_tail": [],
+   "jsonl_files": [],
+   "records": []
+  },
+  {
+   "scenario": "sigterm_mid_workflow",
+   "exit_code": -15,
+   "stdout_tail": [],
+   "stderr_tail": [],
+   "jsonl_files": [],
+   "records": []
+  },
+  {
+   "scenario": "hard_kill_after_200_tasks",
+   "exit_code": 9,
+   "stdout_tail": [],
+   "stderr_tail": [],
+   "jsonl_files": [],
+   "records": []
+  }
+ ]
+}
