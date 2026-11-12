@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "boundary": "New source-backed propositions from this research batch. UNKNOWN edges are questions, not dependencies.",
+  "relationships": [
+    {
+      "id": "N01",
+      "subject": "HydraGNN",
+      "relation": "has optional ADIOS backend and inspected BP5 writer",
+      "object": "ADIOS2",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py"
+      ],
+      "limitation": "BP5 file example does not prove SST streaming or operational deployment.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N02",
+      "subject": "TNQVM",
+      "relation": "requires programming frontend",
+      "object": "XACC",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt"
+      ],
+      "limitation": "Required build dependency; modern workstation compatibility untested.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N03",
+      "subject": "TNQVM",
+      "relation": "optionally invokes tensor numerical operations from",
+      "object": "ExaTN",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp"
+      ],
+      "limitation": "Selected numerical representation determines accuracy and memory cost.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N04",
+      "subject": "pycroscopy",
+      "relation": "declares package dependency on",
+      "object": "sidpy",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/pycroscopy/pycroscopy/blob/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml"
+      ],
+      "limitation": "Package dependency, not facility topology or instrument calibration.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N05",
+      "subject": "Model America 2021 models",
+      "relation": "target simulator version",
+      "object": "EnergyPlus 9.4 / OpenStudio 3.1",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a"
+      ],
+      "limitation": "Open generated artifacts; missing upstream metadata and closed AutoBEM generator remain separate.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N06",
+      "subject": "LandCast historical series 1975\u20132023",
+      "relation": "is anchored to benchmark",
+      "object": "LandScan Mosaic 2024",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/"
+      ],
+      "limitation": "Dataset metadata read; files, exact release chronology and reuse terms not independently checked.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N07",
+      "subject": "AtomAI structural output",
+      "relation": "has established implementation adapter to",
+      "object": "HydraGNN",
+      "evidence": "UNKNOWN",
+      "source_urls": [
+        "https://atomai.readthedocs.io/en/latest/atomai_models.html",
+        "https://www.osti.gov/biblio/2562660"
+      ],
+      "limitation": "Potential comparison only. Reviewed sources do not establish an adapter; not proof none exists.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N08",
+      "subject": "AutoBEM",
+      "relation": "consumes as weather input",
+      "object": "Daymet",
+      "evidence": "UNKNOWN",
+      "source_urls": [
+        "https://www.osti.gov/doecode/biblio/115947",
+        "https://daymet.ornl.gov/overview"
+      ],
+      "limitation": "Proposed comparison; reviewed sources do not document this pipeline.",
+      "accessed": "2026-11-10"
+    }
+  ]
+}

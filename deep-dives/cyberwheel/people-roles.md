@@ -20,7 +20,7 @@ All are listed with ORNL affiliation in those OSTI records. [KNOWN: OSTI API aut
 - **Copyright:** the MIT LICENSE names one individual as copyright holder. Whether ORNL or UT-Battelle also hold rights isn't stated in the LICENSE. [KNOWN: LICENSE; UNKNOWN: institutional rights]
 - **Contributors:** GitHub counts about 8 contributors, including anonymous ones. We didn't map GitHub handles to people. [KNOWN: count; deliberately not mapped, to avoid merging identities without binding evidence (rule 10)]
 - **Outside parties:** Sandia National Laboratories builds Firewheel, a tool Cyberwheel depends on. No Sandia person is credited on Cyberwheel. [KNOWN: README and emulator README; the connections pass owns the lineage]
-- **Owning group:** [UNKNOWN]. None of the public records name a division or group.
+- **Organizational listing:** as of 2026-11-04, ORNL's [Cybersecurity Research directory](https://impact.ornl.gov/en/organisations/cybersecurity-research/) lists Cyberwheel and associates the page with the National Security Sciences Directorate [KNOWN: evidence Z01 in ../../docs/public-research-sources.md]. Administrative ownership and current staffing remain [UNKNOWN].
 
 ## Searched without result (for the fact-check ledgers)
 - A PI designation for LDRD 11049 in the OSTI 3025007 text. Not found on p. 13.

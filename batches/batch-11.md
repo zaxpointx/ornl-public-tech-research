@@ -12,7 +12,7 @@ Independent research from public sources only; not affiliated with ORNL. Date: 2
 - Verified briefs in total after this batch: 48.
 
 ## Still unknown
-- Whether SNAPRed and PyRS run automatically in the SNS and HFIR data pipeline or only by hand (also open in the [SNS deep dive](../deep-dives/sns-neutron-pipeline.md)).
+- As of this 2026-10-24 batch, whether SNAPRed and PyRS ran automatically was unknown. Update 2026-11-04: public papers describe PyRS autoreduction for HIDRA; its linkage to the specific agent and the SNAPRed question remain open. See [SNS deep dive](../deep-dives/sns-neutron-pipeline.md).
 - Which machines KORC is routinely run on beyond what its build scripts show, and its outside users.
 - How the "pyRS 2.0" named in a 2026 paper maps to the repo's v1.8.x tags.
 

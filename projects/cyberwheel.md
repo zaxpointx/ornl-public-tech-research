@@ -22,7 +22,7 @@ Cyberwheel is a training ground for AI cyber defenders. It simulates a computer 
 - The README's roadmap lists unit tests and detailed documentation as still to do [KNOWN: README "Next Steps"].
 - Contributors: about 8 per the GitHub API, counting anonymous ones [KNOWN: contributors pagination]. The README lists six contacts with ornl.gov emails [KNOWN: README Contacts]. Names were left out of this brief on purpose, see the README.
 - Releases: v1.0.0 (tag only), v1.1.0 (2025-03-10) and v2.0 (2025-08-11) [KNOWN: GitHub releases and tags API]. The repo was created 2024-07-08 [KNOWN].
-- Org unit: [UNKNOWN].
+- Organizational association: ORNL's public research directory lists Cyberwheel under Cybersecurity Research and associates that page with the National Security Sciences Directorate [KNOWN: https://impact.ornl.gov/en/organisations/cybersecurity-research/, fetched 2026-11-04; see evidence Z01 in ../docs/public-research-sources.md]. A research-output listing does not establish the administrative owner, present staffing or exclusive ownership [UNKNOWN].
 - DOE CODE record code-134699 (2024) and the 2024 conference paper (OSTI 2478356) both list ORNL as research org [KNOWN: https://www.osti.gov/api/v1/records?q=cyberwheel, accessed 2026-10-24]. ORNL's FY2025 LDRD Completed Projects report names Cyberwheel as the test bed for project 11049, "Automating Cyber Defense Using Reinforcement Learning" (Director's R&D Program, AI area), so it was developed under ORNL's internal LDRD program [KNOWN: https://www.osti.gov/servlets/purl/3025007, accessed 2026-10-24].
 - Papers: "Towards a High Fidelity Training Environment for Autonomous Cyber Defense Agents" (2024, https://doi.org/10.1145/3675741.3675752) and "The Path to Autonomous Cyber Defense" (2024, https://arxiv.org/pdf/2404.10788.pdf) [KNOWN: README Papers section; papers themselves not read this pass].
 
@@ -38,7 +38,7 @@ Cyberwheel is a training ground for AI cyber defenders. It simulates a computer 
 ## Known / Inferred / Unknown
 - [KNOWN] MIT, Python 3.10/Poetry, red vs. blue RL, v2.0 features, FIREWHEEL emulation, two linked 2024 papers.
 - [INFERRED] Development has slowed since August 2025, and it's a good fit for student learning.
-- [UNKNOWN] Owning division, funding, and whether development is continuing.
+- [UNKNOWN] Administrative owning division and whether development is continuing. LDRD funding is documented above; the directorate association is limited to the research-output listing.
 
 ## Sources (URL, accessed date)
 - https://github.com/ORNL/cyberwheel (README, LICENSE, tree), accessed 2026-10-24

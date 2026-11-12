@@ -2,6 +2,30 @@
 
 One row per claim checked. Verdicts: verified / corrected / unverifiable.
 
+2026-11-04 public-research first batch: independently re-fetched the INTERSECT highlight and architecture example, documented feedback loops, microscope result, isotope factsheet, and project-PI page; source excerpts and boundaries are in [the new source ledger](../docs/public-research-sources.md). The two-facility OpeN-AM result was kept separate from INTERSECT's named workflow; the twice-closer stress figure was kept as a target, not a result. Updated the NScD expansion and corrected the stale brief queue and deep-dive status. This was not a new two-sweep verification of the older corpus or a complete fact-check of a finished edition. The broader guide remains in progress.
+
+2026-11-04 facilities batch: read the HIDRA and VULCAN instrument pages twice and the pyRS 2.0 accepted manuscript section 2.2 and 2021 paper record. Corrected the previously broad PyRS autoreduction unknown to the narrower unresolved link to the specific post-processing agent. The HIDRA page's reported per-sub-run automation is attributed to that page; no live facility service was accessed. Added a bounded [facilities and roles guide](../docs/facilities-instruments-roles.md) with evidence in ledger F01–F11. Full independent review of the broader edition remains open.
+
+2026-11-04 isotope batch: added [isotopes and hot cells](../docs/isotopes-and-hot-cells.md) with source ledger I01–I11. Re-fetched load-bearing ORNL sources and checked that actinium-227 is distinguished from radium-223, that Cf-252 validation and a proposed modeled conversion are not conflated, and that NASA's annual Pu-238 target is not described as achieved. Current output, present contract and later facility dates remain unknown. No protected materials or services were accessed; whole-edition review remains open.
+
+2026-11-04 autonomous-science batch: added the [connected account](../docs/autonomous-science.md) with evidence A01–A06. Re-read the authors' accepted manuscript and the full INTERSECT event account to distinguish scientific contributions from roles and the digital twin from a physical microscope. Publication-page metadata, not the extractor's header dates, governs the two paper dates. Shared authorship does not prove shared software; current deployment is unknown. Whole-edition review remains open.
+
+2026-11-04 directorate sample batch: added bounded examples for energy, fusion and computing, and a specific SPRUCE result, with D01–D04 and existing S03–S04. Checked the energy figure's 2050, contiguous-US and modeled-deployment scope; independently reread DIII-D through the ORNL research-output record and checked the computing award against the OLCF account. The fusion example does not establish a specific directorate reporting line. These additions do not close all directorate-coverage gaps or the edition-wide review.
+
+2026-11-04 relationship batch: indexed selected direct, inferred and unknown links in [the relationship index](../docs/research-relationships.md), preserving the existing source ledger's dates and maturity boundaries. Re-fetched public INTERSECT architecture, OpeN-AM, pyRS and Cyberwheel records; did not treat a shared facility or shared author as proof of a shared workflow. This selected index and source reread do not constitute a complete relationship map or an independent review of the entire edition.
+
+2026-11-04 neutron science batch: added a BASIS model-protein example and instrument-scientist credit, plus a separately documented NOMAD data-challenge record, with evidence N01–N03. The protein paper labels its cluster interpretation a hypothesis; the NOMAD files, download permission and reuse terms were not inspected. Both records concern SNS but no dataset dependency between them is established. Whole-edition review remains open.
+
+2026-11-04 Cyberwheel organizational correction: independently re-fetched ORNL's Cybersecurity Research directory and matched the 2024 Cyberwheel output by title and author list to the software record. The page associates that output listing with National Security Sciences. Updated earlier categorical no-public-source statements, preserving the distinction between a directory association and unresolved administrative ownership. AI ATAC is a separate bounded evaluation, not evidence of Cyberwheel integration. Sources, dates and excerpts: Z01–Z02 in the public evidence ledger.
+
+2026-11-04 additive story batch: independently re-fetched the primary 2025 ACM paper and the 2023 ORNL/OSTI paper abstract. The 2025 test explicitly simulated the printer and sensing service, while naming adamantine and Flowcept; this establishes a limited software connection, not a physical-print result or the precise three-facility workflow. The 2023 measured steel study is kept distinct from both. Evidence and maturity: H01–H03, S05–S07 and S11 in the public ledger.
+
+2026-11-04 SPRUCE data and date check: re-fetched the project status, publication abstract and environmental dataset record; read the publisher's paper history. Corrected ledger S04's previous March attribution to February 2025, with the publisher giving February 19 as version-of-record date. Dataset metadata says the warming treatments operated through December 31, 2025 and version 2.0 corrects earlier values; the data files were not inspected. The ESS-DIVE portal returned only a loading screen. See E01–E02 and S03–S04; decommissioning completion and present monitoring are not established.
+
+2026-11-04 editorial consistency check: marked the 2026-11-02 `main` manifest table as historical rather than current checkout state; clarified that broader public research supplements rather than replaces the software catalog; linked the human-readable guide and evidence ledger from publication workflow. Checked staged Markdown local targets and heading fragments (430 checked, none reported missing); this mechanical check is not a review of external URLs or source support.
+
+2026-11-04 load-bearing source reread: re-fetched the INTERSECT architecture highlight, example, design-pattern page and source document; ORNL's project page, microscope report and directorates page; the RDL factsheet and Cf-252 abstract; and the public neutron software READMEs. The rendered architecture extraction omitted the quantitative target, so S06 now points explicitly to the directly read source document. The redirected project-page rendering no longer showed the PI credit; changed the guide to cite S06, which does. Corrected the navigation-blocker wording: the tool recorded an explicit no-consent block, not its cause. This is not a whole-edition verification.
+
 | Date | Project | Claim | Source checked | Verdict | Notes |
 |---|---|---|---|---|---|
 | 2026-10-24 | resolve (catalog) | License NOASSERTION | github.com/ORNL/ReSolve LICENSE | corrected | Custom permissive UT-Battelle + Battelle Memorial license |
@@ -487,7 +511,11 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-10-29 | reactor map 215 | TRANSFORM requires Dymola; OpenModelica | README; repo grep | verified | README lists only Dymola; repo has only an OpenModelica course link; scan row already says so |
 | 2026-10-29 | reactor map | Thermochimica and GITR docs have Mac build steps | READMEs (Thermochimica "MacOS"; GITR "Mac OSx, No CUDA") | verified | |
 | 2026-10-29 | reactor map 211-212 | INL plugs Thermochimica into MOOSE, Pronghorn, BISON | OSTI 3374533, 1214026, 1615992, 1507873 | corrected | INL-led: MOOSE and Pronghorn; BISON coupling reports are ORNL-led |
-| 2026-10-29 | reactor map 222 | TCR moved to printed parts and an AI digital platform | OSTI 1831630; Pub166838 | verified | Peregrine tie stays INFERRED |
+| 2026-10-29 | reactor map 222 | TCR moved to printed parts and an AI digital platform | OSTI 1831630; Pub166838 | verified | Peregrine tie stayed INFERRED at that time; superseded by 2026-11-07 correction below |
+| 2026-11-07 | manufacturing research update | Myna study's simulations, measurement comparison and author credits | https://www.osti.gov/pages/servlets/purl/3002570 ; https://www.ornl.gov/publication/myna-connecting-powder-bed-fusion-build-data-simulation-tools-digital-twin-applications | verified | Read manuscript methods and results; re-fetched ORNL paper abstract. These are two renderings of one study, not independent replication. |
+| 2026-11-07 | manufacturing research update | Finch–ExaCA examples and Oak Ridge/Argonne resources | https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/ ; https://www.ornl.gov/publications/exaca-v2-0-a-versatile-scalable-and-performance-portable-cellular-automata-application-for-additive-manufacturing-solidification/ | corrected | Paper reports examples beyond the earlier software-only check; per-machine run allocation not established. The two records describe the same paper. |
+| 2026-11-07 | map 222 and manufacturing/ reactor connections | TCR–Peregrine | https://impact.ornl.gov/en/publications/evaluation-of-in-situ-am-process-monitoring-techniques-and-potent-3/ | corrected | 2024 report states Peregrine was developed under TCR; direct Myna development under TCR remains unknown. |
+| 2026-11-07 | Myna brief | ExaCA and adamantine catalog status | https://www.osti.gov/doecode/biblio/68592 ; https://www.osti.gov/biblio/2472702 | corrected | ExaCA is external to the ORNL catalog, adamantine is already in it; the 2025 Myna study does not establish adamantine as a component. |
 | 2026-10-29 | reactor map (file summary) | links 203-222 | as above | corrected | 6 verified, 2 corrected, 0 unverifiable |
 | 2026-10-29 | hyperion (file summary) | purpose, inputs/outputs, expert review, OSTI fields; "not a sandbox" | ORNL project page; OSTI 1231925 | corrected | 5 verified, 1 corrected (KNOWN to INFERRED), 0 unverifiable; license dates not added |
 | 2026-10-29 | urban-net-toolkit (file summary) | scope, example, lifelines, capabilities, EAGLE-I, LDRD 2015, OSTI fields | ORNL news 2022-08-04; OSTI 1467082 | verified | 7 verified, 0 corrected, 0 unverifiable; papers not added |
@@ -681,3 +709,38 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-11-02 | flowcept | DataFed tie UNKNOWN (re-look of 2026-10-29 one-line fix) | raw README on main; map link 19 | verified | No DataFed mention; brief matches map |
 | 2026-11-02 | situ | cyber-row stub wording (re-look of 2026-10-29 one-line fix) | catalog.csv; projects/; map link 84 | verified | Heartbeat/Hyperion briefs exist; Cincinnatus/CPAD stub-osti-only |
 | 2026-11-02 | connections/map.md (pass 2 close) | links 31 and 40 | as above | corrected | 1 verified, 1 corrected, 0 unverifiable; map now two checks on all 225 links |
+
+
+## 2026-11-10: broader portfolio map and cross-domain research
+
+[KNOWN, local checks] Added a generated map for all 69 catalog entries, preserving 33 inherited evidence-bounded relationships and eight new research propositions. Four new chapters deepen computing/instruments, materials/biology, energy/Earth and geospatial uncertainty; source verification and independent referee scope are recorded in the [batch report](../docs/portfolio-expansion-2026-11-10/verification.md). Original catalog/brief totals are unchanged. No upstream experiment, deployment or publication is claimed. Source checks include eight pinned raw-file excerpts and 57 linked external URLs returning HTTP 200; link availability is separate from scientific verification.
+
+## 2026-11-11: batch 13 sweep 2 and engineering-patterns pins
+
+Sweep 2 by the coordinator, independent of the two discovery researchers. Sources were re-fetched from raw GitHub at the pinned commits and from the OSTI API on 2026-11-11.
+
+| Date | Item | Claim | Source re-fetched | Verdict | Note |
+|---|---|---|---|---|---|
+| 2026-11-11 | adios2 | ORNL ownership; Apache-2.0 | Copyright.txt L1, LICENSE L189 at e43363b | verified | |
+| 2026-11-11 | adios2 | maturity verbs "used in production", "validated on" | ReadMe L14, L29 | verified | the project's own words, kept as written (RULES 10) |
+| 2026-11-11 | adios2 | ECP funding; five institutions | nutshell.rst L35; ReadMe L170-L177 | verified | |
+| 2026-11-11 | adios2 | deferred Put; step status; rank-0 engine probe | Engine.h L140-L162; ADIOSTypes.h L101-L114; IO.cpp L605-L726 | verified | |
+| 2026-11-11 | map 226 | HydraGNN imports adios2 | HydraGNN `_backend.py` L16-L22 at d49d934 | verified | |
+| 2026-11-11 | celeritas | ORNL among original developers; dual license | COPYRIGHT L4-L19 at e06590a | verified | |
+| 2026-11-11 | celeritas | loop interchange; offload most stable; SciDAC/ECP/OLCF acknowledgment | doc/index.rst L200-L212, L251-L256, L363-L376 | verified | |
+| 2026-11-11 | map 229 | ORANGE shared between Shift and Celeritas | OSTI 3376506 full text (footnote) | verified | |
+| 2026-11-11 | map 231 | QIR-EE Celeritas-derived headers | qiree Assert.hh L2-L3 at 7827409 | verified | |
+| 2026-11-11 | signals/celeritas | 2,699 commits; per-year counts | independent blob:none clone | verified | exact match (RULES 17) |
+| 2026-11-11 | dedfoam | ORNL copyright; GPL-3.0-or-later; base solver | LICENSE L1-L8; README L1-L5, L28-L40; DEDFoam.C L32-L36 at d298a00 | verified | |
+| 2026-11-11 | dedfoam | DOE CODE research org and sponsor | OSTI API code-186894 | verified | ORNL; EERE AMMTO |
+| 2026-11-11 | dedfoam | ML range guard | createMLmodel.H L26-L72 | verified | |
+| 2026-11-11 | chathpc | MIT, UT-Battelle 2025; eval set = training file; LoRA settings | LICENSE; app.py L520-L526, L825-L923 at 5c70d58 | verified | |
+| 2026-11-11 | chathpc | ChatIRIS, "about 70" samples, ExCL, two H100 GPUs | OSTI 3682544 full text | verified | |
+| 2026-11-11 | matey | MIT, UT-Battelle 2026; seed statement | LICENSE; README L79 at 631a413 | verified | |
+| 2026-11-11 | matey | DOE CODE and paper sponsors; 1.1 EFLOPS | OSTI API code-173753, 3365777, 3367073 | verified | |
+| 2026-11-11 | map 239 | HydraGNN-derived helper | distributed_utils.py L239-L240 | verified | |
+| 2026-11-11 | signals/matey | 171 commits; per-year counts | independent clone | verified | exact match |
+| 2026-11-11 | projects/matey, signals/matey | Frontier job-script detail | brief text | corrected | removed an OLCF allocation ID (RULES 16) |
+| 2026-11-11 | lessons/engineering-patterns.md | 16 patterns, pinned line ranges | shallow clones and raw files at the pinned commits listed in the file | verified | three line ranges tightened while writing |
+
+Batch result: 5 of 5 briefs verified with two sweeps. 0 factual corrections, 1 rule-16 correction. Not re-checked in sweep 2, and listed in each brief: CI job files, some benchmark figures, physics-file line ranges, artifact data counts.

@@ -6,7 +6,7 @@ Written in the fact-check pass, 2026-10-24. These are things we looked for in pu
 | M1 | Contract or LDRD project number on the software or paper records | code-134699, OSTI 2478356 | 11049 stays KNOWN from one source (OSTI 3025007) |
 | M2 | What was "modified" in Firewheel | OSTI 3025007 p.13, v2.0 notes, lineage sources | Stays INFERRED (lineage C3). Don't say "fork" |
 | M3 | Any statement that Cyberwheel was deployed, operational or in production | Report, repo, releases, OSTI records | Keep the source verbs (developed, showed, study) |
-| M4 | Owning division or group | DOE CODE, OSTI, repo | UNKNOWN. Don't infer it from author names |
+| M4 | Administrative owning division or group | DOE CODE, OSTI, repo; ORNL research directory rechecked 2026-11-04 | Administrative ownership remains UNKNOWN. The directory lists Cyberwheel as a Cybersecurity Research output under National Security Sciences; see evidence Z01 in ../../docs/public-research-sources.md. Listing is not an ownership designation. |
 | M5 | Funding amount and start date | OSTI 3025007 | Not stated |
 | M6 | FY2026 follow-on or successor | OSTI search; 3827147 is only adjacent | Don't claim it either way |
 | M7 | Affiliations of the authors who use Cyberwheel (S7, S8) | Abstracts only | "Outside use" stays UNKNOWN |

@@ -19,23 +19,24 @@ Myna is a Python tool that connects real 3D-printing build records to computer s
 - Build: `pyproject.toml` plus a `uv.lock` lockfile, using uv (a fast Python package manager) or pip. It isn't on PyPI yet [KNOWN: README].
 - Releases: 1.0.0 (2024-08-19) and 1.1.0 (2025-04-09) [KNOWN: GitHub releases API]. The repo was created 2024-02-23 [KNOWN].
 - Contributors: about 9 per the GitHub API, counting anonymous ones [KNOWN]. The paper has seven authors [KNOWN: CITATION.bib].
-- Paper: "Myna: Connecting powder bed fusion build data to simulation tools for digital twin applications", Computational Materials Science, https://doi.org/10.1016/j.commatsci.2025.114094 [KNOWN: CITATION.bib; paper not read].
+- Paper: "Myna: Connecting powder bed fusion build data to simulation tools for digital twin applications", Computational Materials Science, https://doi.org/10.1016/j.commatsci.2025.114094. [KNOWN: [manuscript](https://www.osti.gov/pages/servlets/purl/3002570), accessed 2026-11-07; details Y01 in ../docs/public-research-sources.md]
 - Org unit: the ORNL-MDF GitHub org [KNOWN]. The README ties it to "ORNL MDF" [KNOWN].
 - The repo includes an AGENTS.md file for AI coding agents [KNOWN: repo root]. It's a small sign of how the team works.
 
 ## Who uses it / why it matters
+**Research update, 2026-11-07:** The 2025 paper uses Myna v1.1 and the public Peregrine v2023-10 dataset for 54 3DThesis, 78 AdditiveFOAM and three ExaCA simulations. The authors manually chose regions, then compared simulated grain structure with electron backscatter diffraction measurements. Their simulated trends differed from the limited variation observed in the measured parts; a proposed two-phase explanation needs further testing. The paper credits Gerald Knapp, Samuel Reeve, John Coleman, Matthew Rolchigo, Benjamin Stump, Stephen DeWitt and Alex Plotkowski as authors, not necessarily current project leads. [KNOWN: Y01; accessed 2026-11-07]
 - Metal 3D-printing researchers who want to predict defects and material properties of a specific printed part instead of a generic one [INFERRED: purpose plus the example cases].
 - Matters for aerospace and energy parts made by additive manufacturing [INFERRED: general context].
 
 ## Related projects
 - Wraps AdditiveFOAM, which is in the catalog [KNOWN: application/additivefoam].
 - Wraps 3DThesis, which is in the catalog [KNOWN: application/thesis; matching it to the 3dthesis row is INFERRED].
-- ExaCA and adamantine are likely other ORNL codes not yet in the catalog [INFERRED].
+- ExaCA is an LLNL-hosted external project in the map; adamantine has its own [catalog brief](adamantine.md) supported by an ORNL publication record. Both have Myna wrappers, but adamantine was not identified as part of the particular 2025 Myna experiment. [KNOWN: Y01, X06; project briefs]
 - Uses Peregrine, the ORNL MDF monitoring tool [KNOWN: README].
 
 ## Known / Inferred / Unknown
 - [KNOWN] BSD-3, Python, config/run/sync workflow, the wrapped tools, Peregrine origin, two releases, and the paper.
-- [INFERRED] The target users, and ExaCA/adamantine being ORNL codes.
+- [INFERRED] The target users. The earlier inference that ExaCA was an ORNL catalog code is superseded: its DOE CODE record lists LLNL; adamantine is in the ORNL catalog on its publication record. [KNOWN: X06; adamantine brief]
 - [UNKNOWN] Whether Peregrine itself is public, and how widely Myna is used outside ORNL.
 
 ## Sources (URL, accessed date)

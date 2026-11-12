@@ -49,6 +49,8 @@
 - Contributors: 5 including anonymous commit authors, 5 GitHub accounts. [KNOWN: GitHub API]
 
 ## Who uses it / why it matters
+**Research update, 2026-11-07:** In a 2025 MDF study, Myna configured 54 3DThesis simulations to compare solidification characteristics across parts in one layer; researchers manually selected regions for more detailed modeling and measurement. Benjamin Stump and Alex Plotkowski are credited among the software's authors in the 2018 [DOE CODE record](https://www.osti.gov/doecode/biblio/26241); both are coauthors of the [2025 study](https://www.osti.gov/pages/servlets/purl/3002570). Authorship is not proof of current leadership. The simulated downstream grain patterns did not closely match the measured variation in the tested samples. [KNOWN: Y01 in ../docs/public-research-sources.md; accessed 2026-11-07]
+
 It's the "quick estimate" tier of ORNL's AM thermal tools. It's fast enough to sweep a whole layer and hand G and V to grain-growth models. [INFERRED] Myna wraps it as one of its applications. [KNOWN per myna brief] Usage evidence goes in `signals/3dthesis.md` once it exists.
 
 ## Related projects

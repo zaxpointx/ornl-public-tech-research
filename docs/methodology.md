@@ -1,7 +1,7 @@
 # Methodology
 
 ## Scope
-Public software, tools, datasets, and facility software released by ORNL. A project is cataloged only if a primary source names ORNL as research organization, copyright holder, repository owner, or a named contributing lab. Related projects without that evidence appear in the connections map as outside projects.
+The original project catalog covers public software, tools, datasets, and facility software released by ORNL. The in-progress [public research guide](public-research-guide.md) also covers selected publicly documented research, facilities, instruments, results and professional roles across the lab. The software catalog remains the master project list: a cataloged project must have a primary source naming ORNL as research organization, copyright holder, repository owner, or a named contributing lab. Related projects without that evidence appear in the connections map as outside projects. A research story or facility example is not automatically a new catalog entry.
 
 ## Sources
 Allowed: ornl.gov, osti.gov (including DOE CODE), energy.gov, public GitHub/GitLab organizations, public papers, public documentation sites. Search snippets are never final evidence; the page itself is fetched. Primary sources are preferred over news.
@@ -27,4 +27,4 @@ Not allowed: logging in, bypassing access controls, anything marked restricted, 
 Public records show what a project chose to publish. They rarely show internal priorities, funding amounts per project, or who leads a team. Commit counts measure activity, not importance. Absence from search results is logged but is not proof that something does not exist.
 
 ## Privacy
-The subject is projects, not people. Names, emails, and handles of individuals are removed or replaced with role labels in this public copy. Published citations are kept as bibliographic references.
+The subject is research, not personal profiles. Since 2026-11-04, names may be included for a relevant professional role or authorship directly supported by an official public professional source, with an access date. Authorship is not leadership. Do not include personal contact details, personal histories or social-media investigation; do not contact staff. Older role-only files retain their original convention. See RULES.md item 22.

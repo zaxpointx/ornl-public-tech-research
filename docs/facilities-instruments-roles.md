@@ -1,0 +1,36 @@
+# Public facilities, instruments and professional roles
+
+A selected guide, not a complete inventory or an access directory. It describes publicly documented research capabilities, not live operational status or infrastructure. This research is independent of ORNL and DOE. Sources, short quotations, dates and maturity limits are recorded in [the public evidence ledger](public-research-sources.md); [KNOWN] means directly stated, [INFERRED] is bounded interpretation, and [UNKNOWN] is not established. All descriptions are snapshots, not an assurance of user access or current operation.
+
+## Where work happens
+
+- **Manufacturing Demonstration Facility (MDF):** advanced manufacturing research and development; ORNL says it works with industry, academia and government, and identifies DOE's Advanced Materials and Manufacturing Technologies Office as its sponsor [KNOWN: F03]. Its relationship to the INTERSECT additive-manufacturing workflow is stated in [the main guide](public-research-guide.md#connected-story-1-can-a-print-learn-from-measurement) [KNOWN: S05, S06].
+- **Spallation Neutron Source (SNS):** a neutron-scattering facility. Its VULCAN engineering diffractometer is designed for studies including residual stress and changing material structure [KNOWN: F01]. In a reported 2023 OpeN-AM experiment, a platform developed at MDF was used with VULCAN to measure material during printing [KNOWN: S11]. Whether that particular experiment is the same as the INTERSECT deployment is [UNKNOWN: S05, S11].
+- **High Flux Isotope Reactor (HFIR):** ORNL describes both neutron-scattering research and isotope-production uses [KNOWN: F07]. The April 2026 factsheet's specific actinium-227 pathway links HFIR irradiation with processing at the Radioisotope Development Laboratory [KNOWN: S18]. Neither a facility description nor historical production is a live-status claim.
+- **Oak Ridge Leadership Computing Facility (OLCF), Frontier:** the facility's Frontier page describes its exascale supercomputer and dates its first online period to May 2022 [KNOWN: F06]. ORNL names OLCF as part of the INTERSECT cross-facility workflow [KNOWN: S05]; the precise machine used in each workflow run remains [UNKNOWN].
+- **Center for Nanophase Materials Sciences (CNMS):** the center describes nanomaterials synthesis, microscopy, fabrication, modeling and simulation, and its Data NanoAnalytics group describes research combining simulation, machine learning and instrument automation [KNOWN: F05]. The [autonomous microscopy example](public-research-guide.md#connected-story-4-autonomy-still-needs-scientists) reports a proof of concept, not universal operation [KNOWN: S08].
+- **Building Technologies Research and Integration Center (BTRIC):** research areas include building envelopes, equipment, energy storage and building-to-grid interactions; its MAXLAB is described as a multipurpose research laboratory [KNOWN: F04]. The existing [EnergyPlus](../projects/energyplus.md) and [AutoBEM](../projects/autobem.md) briefs offer related building-research context; a direct BTRIC dependency is [UNKNOWN].
+
+## Instruments and the research questions they answer
+
+**VULCAN, SNS:** Neutron diffraction helps investigate deformation, phase changes and residual stress in materials, including during processing [KNOWN: F01]. Instrument scientist Ke An is listed on the instrument page; an ORNL professional profile describes him as VULCAN's lead scientist [KNOWN: F01, F08]. These are source-dated descriptions, not a verified present personnel directory.
+
+**HIDRA, HB-2B at HFIR:** This diffractometer is designed to map strain from applied or residual stresses in bulk engineering materials [KNOWN: F02]. A 2023 paper reports a 2018 instrument upgrade and demonstrates measurements on quenched aluminum [KNOWN: F09]. The ORNL instrument page lists Jeffrey Bunn as lead instrument scientist and Chris Fancher as instrument scientist [KNOWN: F02]; the labels are limited to that page's listing.
+
+**BASIS, SNS:** This backscattering spectrometer is designed to study fast material motions, including motions in biological materials [KNOWN: N02]. A 2024 paper reports a model-protein experiment at BASIS and proposes an interpretation of the short-lived protein clusters near a separation transition [KNOWN: N01]. The experiment does not establish a clinical outcome. The instrument page lists Niina H. Jalarvo as an instrument scientist, and the paper lists her as a coauthor [KNOWN: N01, N02]; these are source-bound credits, not proof of present staffing or project leadership.
+
+**NOMAD, SNS:** A 2022 ORNL dataset record describes measurements made at the Nanoscale-Ordered Materials Diffractometer for a data challenge, with amorphous and crystalline silica data in NeXus-formatted HDF5 [KNOWN: N03]. The record is public metadata and offers a Globus download; the data files and any access or reuse requirements were not checked. Its use in the BASIS paper or any particular live reduction workflow is [UNKNOWN: N01, N03].
+
+**How HIDRA data become useful:** The 2026 pyRS 2.0 paper says it adds reduction of live neutron event data, and describes live data being processed using calibration and reduction shared with an autoreduction workflow [KNOWN: F10, section 2.2]. It describes examples of reduced plots and saved data while measurements proceed—not a claim about every instrument or every current run. The 2021 paper says pyRS's scripting interface facilitates automated reduction and peak fitting through an autoreduction protocol [KNOWN: F11]. The HIDRA user guide additionally states pyRS autoreduction runs on completed sub-runs [KNOWN: F02, user-guidance section]. The published record therefore answers the earlier broad question of whether pyRS can be used in autoreduction for HIDRA: **yes, in the described HIDRA workflows**. Whether it is invoked through the specific post-processing-agent and data-workflow chain reconstructed in the [SNS pipeline](../deep-dives/sns-neutron-pipeline.md) remains [UNKNOWN]. See [PyRS brief](../projects/pyrs.md).
+
+## Named credits in context
+
+- **Stephen DeWitt:** named principal investigator for the specific INTERSECT additive-manufacturing project in its architecture documentation [KNOWN: S06].
+- **Christian Engelmann:** named principal investigator for the INTERSECT architecture highlight, not necessarily all projects in the initiative [KNOWN: S05].
+- **Alex Plotkowski:** ORNL names him lead scientist of its reported OpeN-AM experiment [KNOWN: S11].
+- **Chris Fancher, Nathan E. Peterson and Jeffrey Bunn:** coauthors on the 2026 pyRS 2.0 paper [KNOWN: F10]. Authorship does not establish individual ownership or present institutional affiliation.
+- **Ke An and Jeffrey Bunn:** roles are limited to the instrument-source descriptions above [KNOWN: F01, F02, F08].
+
+## Boundaries and gaps
+
+Coverage is representative, not comprehensive. Many SNS and HFIR instruments, other ORNL facilities, and the isotope and energy-facility personnel are not yet covered here. Public access descriptions do not grant access; no applications, contact, sign-in or live service inspection were performed. Shared interest in stress measurement does not prove that HIDRA is part of the INTERSECT workflow; the sources reviewed here do not establish that relationship [UNKNOWN: F02, S05–S07].

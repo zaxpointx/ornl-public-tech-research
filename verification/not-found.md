@@ -39,7 +39,7 @@
 | 2026-10-24 | scale | SCALE 6.3 validation overview volume | OSTI records API "SCALE 6.3 Validation" | no overview record; fifth-volume count stays INFERRED (fact-check pass) |
 | 2026-10-24 | gitr | "GITR" | OSTI records API (product_type=Software) | no DOE CODE record (fact-check pass) |
 | 2026-10-24 | cyberwheel | PI designation for LDRD 11049 | OSTI 3025007 p. 13 (project 11049 section) | not found; only a three-name team line (reading pass, deep dive) |
-| 2026-10-24 | cyberwheel | owning division or group name | ORNL/cyberwheel README, DOE CODE code-134699, OSTI 2478356 | not found (reading pass, deep dive) |
+| 2026-10-24 | cyberwheel | owning division or group name | ORNL/cyberwheel README, DOE CODE code-134699, OSTI 2478356 | not found in those sources at that time; 2026-11-04 ORNL research directory lists Cyberwheel under Cybersecurity Research associated with National Security Sciences (ledger Z01). Administrative ownership remains unknown. |
 | 2026-10-24 | cyberwheel | "deployed" or "production" wording | README, v1.1.0/v2.0 release notes, DOE CODE code-134699, OSTI 3025007 p. 13 | not found; "deployable in live networks" appears only as a goal (reading pass, deep dive) |
 | 2026-10-24 | cyberwheel | commits after 2025-08-26 | GitHub commits API, ORNL/cyberwheel | none (reading pass, deep dive) |
 | 2026-10-24 | cyberwheel | LDRD 11049 or contract number on the DOE CODE / CSET records | OSTI records API code-134699, 2478356 | no project number on either (fact-check pass) |
@@ -180,3 +180,25 @@
 | 2026-10-29 | reactor connections | public source tying a cataloged code to MSRE models | discovery scan, repo READMEs | none found (connections pass) |
 | 2026-10-29 | reactor connections | Spack, conda-forge, PyPI packages for thermochimica, gitr, korc, profugus; conda-forge and Spack for scale-olm | registries | 404 (connections pass) |
 | 2026-10-29 | reactor connections | OpenAlex citing-author splits for OLM, TRANSFORM, Profugus, KORC | api.openalex.org | daily budget exhausted; not run (connections pass) |
+| 2026-11-11 | dedfoam | "DEDFoam", "DEDFOAM" | OSTI records API | only DOE CODE code-186894; no paper or report about the code (discovery pass) |
+| 2026-11-11 | dedfoam | dedfoam package | PyPI, conda-forge, Spack builtin | 404 (discovery pass) |
+| 2026-11-11 | dedfoam | mention of DEDFoam | ORNL/AdditiveFOAM all branches, ORNL-MDF/Myna HEAD | none (discovery pass) |
+| 2026-11-11 | dedfoam | files byte-identical to any AdditiveFOAM version | blob-hash comparison, DEDFoam HEAD vs 127 AdditiveFOAM commits | none (discovery pass) |
+| 2026-11-11 | dedfoam | public CI; hosted docs site | repo tree, GitHub homepage field | none (discovery pass) |
+| 2026-11-11 | chathpc | "ChatHPC", "ChatHPC-app", "ChatHPC Kokkos" | OSTI records API, product_type Software | no DOE CODE software record; papers and reports only (discovery pass) |
+| 2026-11-11 | chathpc | chathpc-app, chathpc packages | PyPI, conda-forge, Spack builtin | 404 (discovery pass) |
+| 2026-11-11 | chathpc | public data or code for non-Kokkos assistants (ChatADIOS2, ChatMAGMA, ChatIRIS, ChatTAU) | github.com/ORNL repos linked from ornl.github.io/ChatHPC | none public; docs link only code.ornl.gov, not followed (discovery pass) |
+| 2026-11-11 | chathpc | 2024 NCCS "chatHPC" paper listed on the ChatHPC project page | ornl.github.io/ChatHPC publications | not listed (discovery pass) |
+| 2026-11-11 | matey | matey package | PyPI (name taken by unrelated tool), conda-forge, Spack builtin | no MATEY package (discovery pass) |
+| 2026-11-11 | matey | CI workflows; unit tests | repo tree (.github, tests/) | none; tests/ holds only .gitkeep (discovery pass) |
+| 2026-11-11 | matey | mention of MATEY | ORNL/HydraGNN HEAD | none (discovery pass) |
+| 2026-11-11 | matey | reference to other ORNL foundation models (e.g. ORBIT) | MATEY repo grep | none (discovery pass) |
+| 2026-11-11 | matey | published pretrained weights | repo tree and README | none found; Zenodo not searched for weights (discovery pass) |
+| 2026-11-11 | adios2 | "ADIOS2", "ADIOS", "Adaptable Input Output System" | OSTI records API (product_type=Software) | no ADIOS2 DOE CODE record; only code-3272 (Sandia ADIOS 1 VTK reader) (discovery pass) |
+| 2026-11-11 | adios2 | csmd.ornl.gov/software/adios2 (linked from ADIOS2 docs) | curl | no response; used Wayback capture 20241024062808 instead (discovery pass) |
+| 2026-11-11 | adios2 | PyPI download counts | pypistats.org/api/packages/adios2/recent | HTTP 429 three times; not retrieved (discovery pass) |
+| 2026-11-11 | adios2 | "adios2" / "adios" in flowcept, xolotl, Cabana, GITR, KORC, adamantine, Finch, DataFed, zambeze, mantid, iris, TASMANIAN | GitHub code search (default branches) | 0 hits; only HydraGNN and E3SM matched (discovery pass) |
+| 2026-11-11 | celeritas | "celeritas" | PyPI | name taken by an unrelated music-engine package (namesake) (discovery pass) |
+| 2026-11-11 | celeritas | conda-forge package; Spack reverse dependencies | api.anaconda.org; spack-packages builtin grep | none (discovery pass) |
+| 2026-11-11 | celeritas | "celeritas" in Profugus and HeCBench | GitHub code search | 0 hits; no public Profugus link (discovery pass) |
+| 2026-11-11 | celeritas | "good first issue" label | GitHub labels API | no such label (discovery pass) |

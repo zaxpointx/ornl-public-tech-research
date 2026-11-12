@@ -11,6 +11,7 @@ This repository has two identities: a living atlas that can change as public sou
 - `verification/` contains fact-check history and searched-but-not-found evidence.
 - `docs/book-plan.md` is the editorial source of truth for the manuscript.
 - `docs/research-manifest.md` records the current snapshot and reproducibility boundary.
+- `docs/public-research-guide.md` is the primary human-readable entry to the in-progress broader research edition; `docs/public-research-sources.md` records its new source evidence, and `docs/research-relationships.md` indexes selected relationships. These complement rather than replace the catalog and older verification records.
 
 Do not hand-edit summary counts in several places without updating the underlying source and running the audit.
 

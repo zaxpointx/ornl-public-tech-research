@@ -1,0 +1,292 @@
+{
+  "checked_on": "2026-11-10",
+  "method": "curl GET, follow redirects, 15-second timeout, no login or access workaround",
+  "scope": "linked external sources in four new research chapters; HTTP status is not claim verification",
+  "checks": [
+    {
+      "url": "https://api.github.com/repos/ORNL-QCI/exatn/commits/c528f7ec7323ab5f4485b85efcefa016c32e1a2d",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://api.github.com/repos/ORNL-QCI/tnqvm/commits/a70eed190a4448dbe3dae94189d066ac694dc798",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://api.github.com/repos/ORNL/HydraGNN/commits/d49d934403f0cc3276750004c8dfbf3a502a10f1",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://api.github.com/repos/ornladios/ADIOS2/commits/2d6d28a519905ac2e33ef4e91a308139c829d7f3",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://api.github.com/repos/pycroscopy/pycroscopy/commits/90e2d232acc9da634131c1793f082a70a04a3297",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://api.github.com/repos/pycroscopy/sidpy/commits/06105426f780ed8c0da5054589cc7d22afbfcf85",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://arxiv.org/abs/2506.21788",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://arxiv.org/html/2401.13926",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://arxiv.org/html/2410.00178v1",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://arxiv.org/pdf/2104.10523",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://atomai.readthedocs.io/en/latest/atomai_models.html",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://code.ornl.gov/alexander-public/mijamp",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://daac.ornl.gov/DAYMET/guides/Daymet_V4_Stn_Level_CrossVal.html",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://daymet.ornl.gov/overview",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/README.md",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/README.md",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/ExaGO",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/ExaGO/blob/43726da124c9d8fb092446ac4f1cc36fe00c4b7f/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/ExaGO/blob/43726da124c9d8fb092446ac4f1cc36fe00c4b7f/docs/web/opflow.md",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/HydraGNN_GFM_FineTuning4Materials",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/ReSolve/blob/c2ccbca565bc3c2e3f4db48a7fe138df406f9e74/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ORNL/ReSolve/blob/c2ccbca565bc3c2e3f4db48a7fe138df406f9e74/docs/sphinx/user_guide/index.rst",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/docs/user_guide/source/engines/sst.rst",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/atomai",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/atomai/blob/93c88817a577686d6b8a84ab954872ca5cab7fcc/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/pycroscopy/blob/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/LICENSE",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/setup.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/proc/fitter.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dataset.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dimension.py",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://impact.ornl.gov/en/publications/atomai-framework-for-deep-learning-analysis-of-image-and-spectros/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://impact.ornl.gov/en/publications/identification-and-characterization-of-substrate-and-product-sele/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://impact.ornl.gov/en/publications/iterative-methods-in-gpu-resident-linear-solvers-for-nonlinear-co/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://impact.ornl.gov/en/publications/mijamp/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11601465/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12320774/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://pycroscopy.github.io/pycroscopy/about.html",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://resolve.readthedocs.io/en/latest/doxygen/html/index.html",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2022.838601/full",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.nature.com/articles/s41598-025-28125-z",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.ornl.gov/news/ornl-releases-landscan-mosaic/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.ornl.gov/news/synthetic-biology-ai-driven-analysis-reveal-new-polymer-targeting-enzymes/",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.osti.gov/biblio/2562660",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.osti.gov/biblio/3740812",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.osti.gov/doecode/biblio/115947",
+      "http_status": "200",
+      "exit_code": 0
+    },
+    {
+      "url": "https://www.osti.gov/servlets/purl/2478374",
+      "http_status": "200",
+      "exit_code": 0
+    }
+  ]
+}
