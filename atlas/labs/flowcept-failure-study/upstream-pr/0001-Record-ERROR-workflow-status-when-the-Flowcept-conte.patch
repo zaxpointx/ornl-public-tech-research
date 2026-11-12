@@ -1,0 +1,117 @@
+From ec0bc69fe8ce9a4749cea02aa4ae46c79499f514 Mon Sep 17 00:00:00 2001
+From: Cayden Wilson <272302202+zaxpointx@users.noreply.github.com>
+Date: Wed, 11 Nov 2026 18:49:43 -0500
+Subject: [PATCH] Record ERROR workflow status when the Flowcept context raises
+
+Flowcept.__exit__ ignored the exception and stop() always set the
+workflow status to FINISHED, so a workflow whose block raised was
+saved as FINISHED while its failed task was saved as ERROR.
+
+stop() now takes an optional status (default FINISHED). __exit__
+passes ERROR when the block raised, except for SystemExit(0/None).
+Adds offline-safe tests for both the error and clean-exit paths.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+---
+ .../flowcept_api/flowcept_controller.py       | 18 +++++---
+ .../flowcept_explicit_tasks_test.py           | 41 +++++++++++++++++++
+ 2 files changed, 54 insertions(+), 5 deletions(-)
+
+diff --git a/src/flowcept/flowcept_api/flowcept_controller.py b/src/flowcept/flowcept_api/flowcept_controller.py
+index 4f243bbc..7c8ba092 100644
+--- a/src/flowcept/flowcept_api/flowcept_controller.py
++++ b/src/flowcept/flowcept_api/flowcept_controller.py
+@@ -940,8 +940,15 @@ class Flowcept(object):
+         doc_inserter.start()
+         self._db_inserters.append(doc_inserter)
+ 
+-    def stop(self):
+-        """Stop Flowcept controller."""
++    def stop(self, status: Status = Status.FINISHED):
++        """Stop Flowcept controller.
++
++        Parameters
++        ----------
++        status : Status, optional
++            Final status recorded on the workflow object. Defaults to ``Status.FINISHED``.
++            The context manager passes ``Status.ERROR`` when the block raises.
++        """
+         if not self.is_started or not self.enabled:
+             self.logger.warning("Flowcept is already stopped or may never have been started!")
+             return
+@@ -952,7 +959,7 @@ class Flowcept(object):
+             and self._current_workflow_obj is not None
+         ):
+             self._current_workflow_obj.ended_at = time()
+-            self._current_workflow_obj.status = Status.FINISHED
++            self._current_workflow_obj.status = status
+             self._first_interceptor.intercept(self._current_workflow_obj.to_dict())
+ 
+         if self._interceptors and len(self._interceptor_instances):
+@@ -987,8 +994,9 @@ class Flowcept(object):
+         return self
+ 
+     def __exit__(self, exc_type, exc_val, exc_tb):
+-        """Run the stop function."""
+-        self.stop()
++        """Run the stop function, recording ERROR if the block raised."""
++        failed = exc_type is not None and not (issubclass(exc_type, SystemExit) and exc_val.code in (0, None))
++        self.stop(status=Status.ERROR if failed else Status.FINISHED)
+ 
+     @staticmethod
+     def services_status() -> Dict[str, str]:
+diff --git a/tests/instrumentation_tests/flowcept_explicit_tasks_test.py b/tests/instrumentation_tests/flowcept_explicit_tasks_test.py
+index 331f8748..bd77439c 100644
+--- a/tests/instrumentation_tests/flowcept_explicit_tasks_test.py
++++ b/tests/instrumentation_tests/flowcept_explicit_tasks_test.py
+@@ -117,6 +117,47 @@ class ExplicitTaskTest(unittest.TestCase):
+         assert end_msg is not None, "No workflow end message with ended_at found."
+         assert end_msg.get("status") == Status.FINISHED, "Workflow end message must have status=FINISHED."
+ 
++    def _workflow_end_status(self, workflow_id):
++        read_args = {"file_path": configs.DUMP_BUFFER_PATH}
++        if configs.APPEND_WORKFLOW_ID_TO_PATH or configs.APPEND_ID_TO_PATH:
++            read_args["consolidate"] = True
++            read_args["workflow_id"] = workflow_id
++        messages = Flowcept.read_buffer_file(**read_args)
++        end_msgs = [
++            m
++            for m in messages
++            if m.get("type") == "workflow" and m.get("workflow_id") == workflow_id and "ended_at" in m
++        ]
++        assert len(end_msgs) == 1, f"Expected one workflow end message, got {len(end_msgs)}."
++        return end_msgs[0].get("status")
++
++    @pytest.mark.safeoffline
++    def test_workflow_status_error_when_context_raises(self):
++        """A workflow whose context manager block raises must end with status=ERROR."""
++        if not configs.DUMP_BUFFER_ENABLED:
++            self.skipTest("Skipping: project.dump_buffer.enabled is false.")
++
++        with pytest.raises(ValueError), Flowcept(start_persistence=False, save_workflow=True):
++            workflow_id = Flowcept.current_workflow_id
++            raise ValueError("boom")
++
++        assert self._workflow_end_status(workflow_id) == Status.ERROR
++
++    @pytest.mark.safeoffline
++    def test_workflow_status_finished_when_context_exits_cleanly(self):
++        """A clean exit, including sys.exit(0), keeps status=FINISHED."""
++        if not configs.DUMP_BUFFER_ENABLED:
++            self.skipTest("Skipping: project.dump_buffer.enabled is false.")
++
++        with Flowcept(start_persistence=False, save_workflow=True):
++            workflow_id = Flowcept.current_workflow_id
++        assert self._workflow_end_status(workflow_id) == Status.FINISHED
++
++        with pytest.raises(SystemExit), Flowcept(start_persistence=False, save_workflow=True):
++            workflow_id = Flowcept.current_workflow_id
++            raise SystemExit(0)
++        assert self._workflow_end_status(workflow_id) == Status.FINISHED
++
+     @pytest.mark.safeoffline
+     def test_data_files(self):
+         with Flowcept():
+-- 
+2.50.1 (Apple Git-155)
+

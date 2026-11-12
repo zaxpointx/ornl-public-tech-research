@@ -47,6 +47,23 @@ if missing_briefs:
 if orphan_briefs:
     errors.append(f"project briefs not present in catalog: {', '.join(orphan_briefs)}")
 
+# Research lanes and tiers (added 2026-11-11): every catalog row needs exactly one lanes.csv row.
+lanes_path = ROOT / "discovery" / "lanes.csv"
+if lanes_path.exists():
+    with lanes_path.open(newline="") as fh:
+        lane_rows = list(csv.DictReader(fh))
+    lane_ids = [row.get("id", "").strip() for row in lane_rows]
+    allowed_lanes = {"cybersecurity", "software-engineering", "ai-agents", "linux-infra", "none"}
+    allowed_tiers = {"deep", "lead", "pool"}
+    if set(lane_ids) != catalog_ids or len(lane_ids) != len(set(lane_ids)):
+        errors.append("discovery/lanes.csv ids must match catalog ids exactly once")
+    for row in lane_rows:
+        lanes = set(row.get("lanes", "").split(";"))
+        if not lanes <= allowed_lanes or row.get("tier") not in allowed_tiers:
+            errors.append(f"lanes.csv has invalid lane or tier for {row.get('id')}")
+else:
+    errors.append("discovery/lanes.csv is missing")
+
 for required_file in (
     ROOT / "docs" / "book-plan.md",
     ROOT / "docs" / "publication-workflow.md",

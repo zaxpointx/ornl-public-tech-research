@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-11",
+  "software": [
+    {
+      "id": "software-ornl-software-catalog",
+      "name": "ORNL Software Catalog",
+      "kind": "public_discovery_surface",
+      "source_ids": ["src-software-catalog", "src-software-catalog-guidance"],
+      "evidence": "verified",
+      "study_action": "Read the catalog metadata and guidance. Treat it as a public-release/discovery surface, not a complete ORNL software inventory."
+    },
+    {
+      "id": "software-doe-code",
+      "name": "DOE CODE",
+      "kind": "government_software_index",
+      "source_ids": ["src-doe-code"],
+      "evidence": "verified",
+      "study_action": "Use the public search surface to locate DOE-funded code, then verify each record and repository independently."
+    },
+    {
+      "id": "software-hermes-codex",
+      "name": "Hermes + Codex local study stack",
+      "kind": "local_tooling",
+      "source_ids": [],
+      "evidence": "local",
+      "study_action": "Use only on synthetic or public data for the pilot. This record is not an ORNL attribution."
+    },
+    {
+      "id": "software-datafed",
+      "name": "DataFed",
+      "repository": "https://github.com/ORNL/DataFed",
+      "revision": "361945a31ffb77c6c9b359f58fd3e364e5527277",
+      "license": "Custom UT-Battelle open source license",
+      "license_url": "https://github.com/ORNL/DataFed/blob/361945a31ffb77c6c9b359f58fd3e364e5527277/LICENSE.md",
+      "kind": "public_software_research_record",
+      "source_ids": ["src-software-catalog", "src-datafed-paper", "src-datafed-repository", "src-datafed-dependency-types"],
+      "evidence": "verified_public_record",
+      "study_action": "Repository contracts and custom license inspected at the recorded revision. Study typed dependencies; select and test a release and deployment requirements before installation."
+    },
+    {
+      "id": "software-adios2",
+      "name": "ADIOS2",
+      "kind": "public_software_research_record",
+      "source_ids": ["src-software-catalog", "src-adios2-paper"],
+      "evidence": "verified_public_record",
+      "study_action": "Study the publication and repository documentation, then verify current release, license, build requirements, and safe local inputs before installation."
+    },
+    {
+      "id": "software-trilinos",
+      "name": "Trilinos",
+      "kind": "candidate_public_software",
+      "source_ids": ["src-software-catalog"],
+      "evidence": "lead",
+      "study_action": "Verify the current ORNL catalog entry and repository-specific release and license metadata before installation."
+    },
+    {
+      "id": "software-flux",
+      "name": "Flux",
+      "kind": "candidate_public_software",
+      "source_ids": ["src-software-catalog"],
+      "evidence": "lead",
+      "study_action": "Verify the current ORNL catalog entry and repository-specific release and license metadata before installation."
+    },
+    {
+      "id": "software-openmc",
+      "name": "OpenMC",
+      "kind": "candidate_public_software",
+      "source_ids": ["src-software-catalog"],
+      "evidence": "lead",
+      "study_action": "Verify the current ORNL catalog entry and repository-specific release and license metadata before installation."
+    },
+    {
+      "id": "software-flowcept",
+      "name": "Flowcept",
+      "kind": "inspected_public_repository",
+      "source_ids": [
+        "src-flowcept-repository",
+        "src-flowcept-architecture",
+        "src-flowcept-exports",
+        "src-flowcept-offline-buffer-code"
+      ],
+      "evidence": "verified_public_code",
+      "repository": "https://github.com/ORNL/flowcept",
+      "revision": "c000b10ea49659af6c5821b61918f3893bd46a92",
+      "license": "MIT",
+      "license_url": "https://github.com/ORNL/flowcept/blob/c000b10ea49659af6c5821b61918f3893bd46a92/LICENSE",
+      "study_action": "Executed v1.0.3 (PyPI, equal to the pinned revision) offline on 2026-11-11 under six failure scenarios in labs/flowcept-failure-study. Raised task errors are recorded; abnormal process exit loses every buffered record."
+    },
+    {
+      "id": "software-zambeze",
+      "name": "Zambeze",
+      "kind": "inspected_public_repository",
+      "source_ids": [
+        "src-zambeze-repository",
+        "src-zambeze-flowcept-hook"
+      ],
+      "evidence": "verified_public_code",
+      "repository": "https://github.com/ORNL/Zambeze",
+      "revision": "13875a1e9186c9398df56faef0be3c84cd8bd1a9",
+      "license": "MIT",
+      "license_url": "https://github.com/ORNL/Zambeze/blob/13875a1e9186c9398df56faef0be3c84cd8bd1a9/LICENSE",
+      "study_action": "Study campaign chain dispatch and failure propagation; match historical Flowcept APIs before attempting integration."
+    },
+    {
+      "id": "software-intersect-python-sdk",
+      "name": "INTERSECT Python SDK",
+      "kind": "inspected_public_repository",
+      "source_ids": [
+        "src-intersect-sdk-schema",
+        "src-intersect-sdk-service"
+      ],
+      "evidence": "verified_public_code",
+      "repository": "https://github.com/INTERSECT-SDK/python-sdk",
+      "revision": "d7e9763afac7e058b45212f35b37376bb706fbbb",
+      "license": "BSD-3-Clause",
+      "license_url": "https://github.com/INTERSECT-SDK/python-sdk/blob/d7e9763afac7e058b45212f35b37376bb706fbbb/LICENSE",
+      "study_action": "Study typed capabilities and correlated messages. Atlas simulator is not wire-compatible and does not run the SDK."
+    },
+    {
+      "id": "software-atlas-workflow-lab",
+      "name": "Atlas synthetic provenance workflow lab",
+      "kind": "local_tooling",
+      "source_ids": [],
+      "evidence": "local",
+      "local_path": "labs/cross-layer-pilot/README.md",
+      "study_action": "Run the deterministic synthetic fixture, inject a failure, and verify recorded lineage. Atlas-authored code, not ORNL software."
+    },
+    {
+      "id": "software-atlas-flowcept-failure-study",
+      "name": "Atlas Flowcept failure-provenance study",
+      "kind": "local_tooling",
+      "source_ids": [],
+      "evidence": "local",
+      "local_path": "labs/flowcept-failure-study/README.md",
+      "study_action": "Run scenarios.py with an installed Flowcept to reproduce failure-path capture. Atlas-authored harness around upstream Flowcept."
+    }
+  ]
+}

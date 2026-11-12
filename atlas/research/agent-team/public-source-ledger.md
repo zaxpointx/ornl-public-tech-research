@@ -1,0 +1,14 @@
+# ORNL public technical ecosystem ledger
+
+Research date: 2026-10-14. Public sources only; no login or bot bypass.
+
+## Sources and verified takeaways
+- https://impact.ornl.gov/en/projects/agentic-hpc-pipeline-initiative-ahpi-ai-driven-orchestration-of-d/ — AHPI proposes AI agents that select DOE simulation tools, configure/validate inputs, run cloud simulations, produce recommendations and digital twins; ORNL, LBNL, LLNL and Rescale; examples include semiconductor plasma, flare-gas-to-liquid-fuel reactors, and turbine-part 3D printing.
+- https://impact.ornl.gov/en/publications/ai-agents-for-enabling-autonomous-experiments-at-ornls-hpc-and-ma/ — modular cross-facility architecture: LLM natural-language interface, multi-agent decision making, facility APIs, provenance-aware infrastructure; demonstrated on additive-manufacturing workflow linking experiment and HPC.
+- https://impact.ornl.gov/en/publications/chathpc-building-the-foundations-for-a-productive-and-trustworthy/ — ChatHPC uses small specialist assistants for HPC stack tasks; public abstract reports Code Llama fine-tuning, one node/two H100s, and targets portability, parallelization, optimization, scalability and instrumentation.
+- https://impact.ornl.gov/en/publications/chathpc-empowering-hpc-users-with-large-language-models/ — chatHPC pipeline covers pretraining, fine-tuning, service deployment and evaluation; reports end-to-end alignment in under an hour on Frontier and script-generation/HPC QA.
+- https://impact.ornl.gov/en/publications/toward-anautonomous-workflow-forsingle-crystal-neutron-diffractio/ — autonomous neutron workflow uses real-time image segmentation, distributed training on Summit, and a web frontend; intended to steer next experiment at HFIR with less expert intervention.
+- https://jobs.ornl.gov/job/Oak-Ridge-Postdoctoral-Research-Associate-Data-Science-for-Advanced-Manufacturing-TN-37830/1409103400/ — MDF described as >100 manufacturing systems across powder bed, directed energy deposition, machining, polymer and convergent manufacturing, connected by a unified digital thread with multimodal data and digital twins.
+- https://jobs.ornl.gov/job/Oak-Ridge-Postdoctoral-Research-Associate-Quantum-Optics-and-Bioimaging-TN-37830/1434745800/ — quantum-enhanced squeezed-light microscopy for label-free cells/tissues, crossing quantum sensing and biology.
+- https://jobs.ornl.gov/job/Oak-Ridge-Postdoctoral-Research-Associate-Microbial-Synthetic-Biologist-TN-37830/1410536100/ — CRISPR/recombineering in non-model microbes, microbiome engineering, and organisms converting waste plastics/lignocellulosic biomass into fuels/chemicals.
+- https://science.osti.gov/ascr/Facilities/User-Facilities/OLCF — DOE source for OLCF and Frontier as the first exascale supercomputer, >1 exaflop Linpack in 2022.

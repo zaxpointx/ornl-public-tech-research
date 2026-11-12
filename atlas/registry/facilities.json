@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-31",
+  "facilities": [
+    {
+      "id": "facility-olcf-frontier",
+      "name": "Oak Ridge Leadership Computing Facility / Frontier",
+      "kind": "compute_facility",
+      "source_ids": ["src-olcf"],
+      "evidence": "lead",
+      "boundary": "The current seed records public facility context only. It does not describe access, internal topology, or current allocation rules."
+    },
+    {
+      "id": "facility-hpc-manufacturing-user-facilities",
+      "name": "HPC and manufacturing user facilities",
+      "kind": "cross_facility_surface",
+      "source_ids": ["src-autonomous-experiments-paper"],
+      "evidence": "lead",
+      "boundary": "The source lead is an architecture/publication record. Facility APIs, controls, credentials, and deployment details are unknown."
+    },
+    {
+      "id": "facility-hfir-venus",
+      "name": "HFIR / VENUS neutron-imaging context",
+      "kind": "scientific_instrument",
+      "source_ids": ["src-venus", "src-neutron-workflow"],
+      "evidence": "blocked_and_lead",
+      "boundary": "Public project notes identify a neutron-imaging context, but the cited ORNL news page was blocked in the original retrieval pass."
+    },
+    {
+      "id": "facility-autonomous-chemistry-lab",
+      "name": "Autonomous chemistry laboratory",
+      "kind": "laboratory_context",
+      "source_ids": ["src-autonomous-science"],
+      "evidence": "blocked",
+      "boundary": "Retained as a lead only. No local lab should imitate physical chemistry, robotics, or facility control."
+    }
+  ]
+}

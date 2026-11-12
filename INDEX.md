@@ -117,6 +117,10 @@ Public traces each project leaves (git history, build targets, funding records, 
 
 Older briefs (written before the template) gain the ten-question section when next touched; that pass isn't scheduled yet.
 
+## Focus lanes and the atlas lab layer
+- [discovery/lanes.csv](discovery/lanes.csv) (2026-11-11): every catalog project tagged by lane (cybersecurity, software engineering, AI/agents, Linux/infra) and tier (6 deep, 20 lead, 48 pool). The audit keeps it in step with the catalog.
+- [atlas/](atlas/README.md): the former ornl-atlas repository, merged 2026-11-11. It holds the [operating-model guide](atlas/guide/README.md), a [JSON registry](atlas/registry/README.md) with verified, lead and blocked states, an [agent entry point](atlas/guide/agent-entrypoint.md) and the [labs](atlas/labs/), including the [Flowcept failure study](atlas/labs/flowcept-failure-study/README.md), the first experiment here to run ORNL software.
+
 ## Engineering patterns
 - [Engineering patterns in ORNL's public code](lessons/engineering-patterns.md) (2026-11-11): 16 reusable design moves, each tied to pinned code lines with tagged reasons and pitfalls, plus a "what are you building" lookup table for people and coding agents. It complements [How ORNL works](lessons/how-ornl-works.md), which covers the organization rather than the code.
 
