@@ -38,6 +38,7 @@ The [reading order](docs/reading-order.md) links the same corpus for human reade
 - **Browse projects:** use the [Project Index](INDEX.md) and [coverage matrix](docs/coverage-matrix.md).
 - **Read connected stories:** follow [INTERSECT additive manufacturing](docs/intersect-additive-story.md), the [SNS neutron data pipeline](deep-dives/sns-neutron-pipeline.md), [Cyberwheel](deep-dives/cyberwheel/synthesis.md), [autonomous science](docs/autonomous-science.md), or [isotopes and hot cells](docs/isotopes-and-hot-cells.md).
 - **Facilities and relationships:** browse the [facilities, instruments and roles guide](docs/facilities-instruments-roles.md) and the selected [relationship index](docs/research-relationships.md).
+- **Reuse the engineering:** [engineering patterns in ORNL's public code](lessons/engineering-patterns.md) turns design moves in 15 public repos into reusable patterns, each tied to pinned code lines, with a lookup table by what you are building.
 - **Check the evidence:** read the [methodology](docs/methodology.md), [rules](RULES.md), and [verification ledger](verification/log.md).
 - **Contribute or correct:** read [CONTRIBUTING.md](CONTRIBUTING.md) and use the appropriate issue template.
 
@@ -51,15 +52,15 @@ Work in progress. Counts below are taken from the files in this snapshot.
 
 | | |
 |---|---|
-| Projects in the catalog | 69 ([discovery/catalog.csv](discovery/catalog.csv)) |
-| Project files | 67 (58 full briefs, 7 short briefs and 2 short OSTI-only drafts) |
-| Project files checked in two sweeps | 67 |
+| Projects in the catalog | 74 ([discovery/catalog.csv](discovery/catalog.csv)) |
+| Project files | 72 (63 full briefs, 7 short briefs and 2 short OSTI-only drafts) |
+| Project files checked in two sweeps | 72 |
 | Briefs still to write | 2 OSTI-only stubs (Cincinnatus, CPAD), waiting on a public docs page |
 | Deep dives finished | 6 |
-| Signals files | 40 ([signals/](signals/)) |
-| Research batches | 11 ([batches/](batches/)) |
+| Signals files | 45 ([signals/](signals/)) |
+| Research batches | 12 files covering batches 01 to 13; 07 and 08 share a file ([batches/](batches/)) |
 
-The 69 catalog entries are not all complete briefs: 2 are OSTI-only stubs with no public docs page yet. The [coverage matrix](docs/coverage-matrix.md) explains that queue.
+The 74 catalog entries are not all complete briefs: 2 are OSTI-only stubs with no public docs page yet. The [coverage matrix](docs/coverage-matrix.md) explains that queue.
 
 ## Method
 
@@ -90,7 +91,7 @@ projects/                one plain-English brief per project
 deep-dives/              full walkthroughs of selected projects
 connections/             how projects relate, with mermaid diagrams
 signals/                 public-trace readings (commit history, funding, usage)
-lessons/                 takeaways about how the lab works
+lessons/                 how the lab works, and engineering patterns in its code
 verification/            fact-check log and searched-but-not-found ledger
 batches/                 per-batch summaries
 docs/                    methodology, roles, reading order
@@ -117,3 +118,8 @@ Found something wrong or overstated? Open an issue using the correction template
 Written research is licensed under [CC BY 4.0](LICENSE). To cite it, use [CITATION.cff](CITATION.cff). Quotes from third-party sources are short, attributed, and remain the property of their owners. Project names belong to their owners.
 
 Maintained by Cayden Wilson ([ZaxPointX](https://github.com/zaxpointx)).
+
+
+## Whole-portfolio reading map, 2026-11-10
+
+The [portfolio map](docs/portfolio-map.md) links all current catalog entries (74 as of 2026-11-11) across ten research domains, with a [JSON evidence map](docs/portfolio-map.json) retaining the 33 selected relationship propositions and their limits. The [cross-domain research expansion](docs/portfolio-expansion-2026-11-10/README.md) adds technical studies of scientific streaming, quantum simulation, microscopy, biology, materials learning, building models, weather data, grid mathematics, and population uncertainty. Catalog coverage and deep research are reported separately; neither is a claim to cover everything ORNL has done.

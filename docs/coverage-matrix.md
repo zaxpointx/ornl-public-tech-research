@@ -15,10 +15,10 @@ This is the editorial control view of the current manuscript. The catalog remain
 
 | Measure | Current value | Meaning |
 |---|---:|---|
-| Catalog entries | 69 | Public projects currently in scope |
-| Project briefs | 67 | Entries with a project-level research file |
+| Catalog entries | 74 | Public projects currently in scope |
+| Project briefs | 72 | Entries with a project-level research file |
 | Missing briefs | 2 | Explicitly uncovered or stub/unknown entries; not silently treated as complete |
-| Signals files | 40 | Public-trace analyses; coverage is intentionally narrower than briefs |
+| Signals files | 45 | Public-trace analyses; coverage is intentionally narrower than briefs |
 | Existing deep dives | 6 | Listed in INDEX; their forms vary |
 
 The structural audit prints the current missing IDs and status totals on every run. A missing brief is not automatically an error: some entries are intentionally OSTI-only stubs or unresolved public leads. Active entries without briefs are the highest-priority completion queue.
@@ -36,3 +36,13 @@ Navigation blocker recorded 2026-11-04: creating a repository-level `AGENTS.md` 
 ## Editorial rule
 
 Do not describe the book as complete while any chapter or catalog entry is only a placeholder. If a future edition intentionally excludes an entry, record the reason in `verification/not-found.md` or the relevant batch file and preserve the exclusion in the edition manifest.
+
+
+## Cross-domain expansion, 2026-11-10
+
+The [whole-portfolio map](portfolio-map.md) now covers all 69 existing catalog entries across ten catalog domains and exports 33 selected relationship propositions with their evidence labels and ledger context. This is navigation over inherited research, not a new verification of every historical claim. The [technical research expansion](portfolio-expansion-2026-11-10/README.md) deepens computing/instruments, materials/biology, energy/Earth and population uncertainty. New research sections are not silently counted as new catalog briefs. Existing totals remain 69 catalog rows, 67 briefs and 40 signals files. The two OSTI-only stubs remain unfilled.
+
+
+## Batch 13, 2026-11-11
+
+[Batch 13](../batches/batch-13.md) adds five catalog rows: ADIOS2, Celeritas, DEDFoam, ChatHPC and MATEY. All five are verified with two sweeps, which brings totals to 74 rows, 72 briefs and 45 signals files. The two OSTI-only stubs are still unfilled. The counts in the 2026-11-10 section above describe that date. The new [engineering patterns guide](../lessons/engineering-patterns.md) adds a code-level synthesis, which is separate from the catalog count.

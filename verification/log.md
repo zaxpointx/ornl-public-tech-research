@@ -709,3 +709,38 @@ One row per claim checked. Verdicts: verified / corrected / unverifiable.
 | 2026-11-02 | flowcept | DataFed tie UNKNOWN (re-look of 2026-10-29 one-line fix) | raw README on main; map link 19 | verified | No DataFed mention; brief matches map |
 | 2026-11-02 | situ | cyber-row stub wording (re-look of 2026-10-29 one-line fix) | catalog.csv; projects/; map link 84 | verified | Heartbeat/Hyperion briefs exist; Cincinnatus/CPAD stub-osti-only |
 | 2026-11-02 | connections/map.md (pass 2 close) | links 31 and 40 | as above | corrected | 1 verified, 1 corrected, 0 unverifiable; map now two checks on all 225 links |
+
+
+## 2026-11-10: broader portfolio map and cross-domain research
+
+[KNOWN, local checks] Added a generated map for all 69 catalog entries, preserving 33 inherited evidence-bounded relationships and eight new research propositions. Four new chapters deepen computing/instruments, materials/biology, energy/Earth and geospatial uncertainty; source verification and independent referee scope are recorded in the [batch report](../docs/portfolio-expansion-2026-11-10/verification.md). Original catalog/brief totals are unchanged. No upstream experiment, deployment or publication is claimed. Source checks include eight pinned raw-file excerpts and 57 linked external URLs returning HTTP 200; link availability is separate from scientific verification.
+
+## 2026-11-11: batch 13 sweep 2 and engineering-patterns pins
+
+Sweep 2 by the coordinator, independent of the two discovery researchers. Sources were re-fetched from raw GitHub at the pinned commits and from the OSTI API on 2026-11-11.
+
+| Date | Item | Claim | Source re-fetched | Verdict | Note |
+|---|---|---|---|---|---|
+| 2026-11-11 | adios2 | ORNL ownership; Apache-2.0 | Copyright.txt L1, LICENSE L189 at e43363b | verified | |
+| 2026-11-11 | adios2 | maturity verbs "used in production", "validated on" | ReadMe L14, L29 | verified | the project's own words, kept as written (RULES 10) |
+| 2026-11-11 | adios2 | ECP funding; five institutions | nutshell.rst L35; ReadMe L170-L177 | verified | |
+| 2026-11-11 | adios2 | deferred Put; step status; rank-0 engine probe | Engine.h L140-L162; ADIOSTypes.h L101-L114; IO.cpp L605-L726 | verified | |
+| 2026-11-11 | map 226 | HydraGNN imports adios2 | HydraGNN `_backend.py` L16-L22 at d49d934 | verified | |
+| 2026-11-11 | celeritas | ORNL among original developers; dual license | COPYRIGHT L4-L19 at e06590a | verified | |
+| 2026-11-11 | celeritas | loop interchange; offload most stable; SciDAC/ECP/OLCF acknowledgment | doc/index.rst L200-L212, L251-L256, L363-L376 | verified | |
+| 2026-11-11 | map 229 | ORANGE shared between Shift and Celeritas | OSTI 3376506 full text (footnote) | verified | |
+| 2026-11-11 | map 231 | QIR-EE Celeritas-derived headers | qiree Assert.hh L2-L3 at 7827409 | verified | |
+| 2026-11-11 | signals/celeritas | 2,699 commits; per-year counts | independent blob:none clone | verified | exact match (RULES 17) |
+| 2026-11-11 | dedfoam | ORNL copyright; GPL-3.0-or-later; base solver | LICENSE L1-L8; README L1-L5, L28-L40; DEDFoam.C L32-L36 at d298a00 | verified | |
+| 2026-11-11 | dedfoam | DOE CODE research org and sponsor | OSTI API code-186894 | verified | ORNL; EERE AMMTO |
+| 2026-11-11 | dedfoam | ML range guard | createMLmodel.H L26-L72 | verified | |
+| 2026-11-11 | chathpc | MIT, UT-Battelle 2025; eval set = training file; LoRA settings | LICENSE; app.py L520-L526, L825-L923 at 5c70d58 | verified | |
+| 2026-11-11 | chathpc | ChatIRIS, "about 70" samples, ExCL, two H100 GPUs | OSTI 3682544 full text | verified | |
+| 2026-11-11 | matey | MIT, UT-Battelle 2026; seed statement | LICENSE; README L79 at 631a413 | verified | |
+| 2026-11-11 | matey | DOE CODE and paper sponsors; 1.1 EFLOPS | OSTI API code-173753, 3365777, 3367073 | verified | |
+| 2026-11-11 | map 239 | HydraGNN-derived helper | distributed_utils.py L239-L240 | verified | |
+| 2026-11-11 | signals/matey | 171 commits; per-year counts | independent clone | verified | exact match |
+| 2026-11-11 | projects/matey, signals/matey | Frontier job-script detail | brief text | corrected | removed an OLCF allocation ID (RULES 16) |
+| 2026-11-11 | lessons/engineering-patterns.md | 16 patterns, pinned line ranges | shallow clones and raw files at the pinned commits listed in the file | verified | three line ranges tightened while writing |
+
+Batch result: 5 of 5 briefs verified with two sweeps. 0 factual corrections, 1 rule-16 correction. Not re-checked in sweep 2, and listed in each brief: CI job files, some benchmark figures, physics-file line ranges, artifact data counts.

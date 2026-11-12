@@ -1,5 +1,8 @@
 # ORNL through public research: a starting guide
 
+**Broader reading, 2026-11-10:** [all catalog projects and selected connections](portfolio-map.md), plus [new technical research across computing, instruments, materials, biology, energy, Earth systems and geospatial uncertainty](portfolio-expansion-2026-11-10/README.md). Research depth and unverified boundaries are stated separately from inventory coverage.
+
+
 This is independent research, not affiliated with or endorsed by ORNL or DOE. This is a first research batch, not a completed edition or an exhaustive directory. [INDEX.md](../INDEX.md) preserves the existing software atlas; [LAB-TREE.md](../LAB-TREE.md) maps its projects. Sources for new claims, short supporting excerpts, dates, maturity and limits are in [the evidence ledger](public-research-sources.md). A source's statement is [KNOWN]; [INFERRED] is our explicitly bounded interpretation, and [UNKNOWN] means not established. Current-sounding material is an as-of-source snapshot, not a promise of present operation.
 
 ## The eight directorates: a starting map, not an organization chart

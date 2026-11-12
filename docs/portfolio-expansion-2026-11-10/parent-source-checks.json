@@ -1,0 +1,46 @@
+{
+  "accessed": "2026-11-10",
+  "scope": "Independent literal checks of eight pinned computing source files; no runtime tests",
+  "checks": [
+    {
+      "id": "C01",
+      "url": "https://raw.githubusercontent.com/ornladios/ADIOS2/2d6d28a519905ac2e33ef4e91a308139c829d7f3/docs/user_guide/source/engines/sst.rst",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C04",
+      "url": "https://raw.githubusercontent.com/ORNL/HydraGNN/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C05",
+      "url": "https://raw.githubusercontent.com/ORNL/HydraGNN/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C10",
+      "url": "https://raw.githubusercontent.com/ORNL-QCI/tnqvm/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C12",
+      "url": "https://raw.githubusercontent.com/ORNL-QCI/tnqvm/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C14",
+      "url": "https://raw.githubusercontent.com/pycroscopy/sidpy/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dataset.py",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C16",
+      "url": "https://raw.githubusercontent.com/pycroscopy/sidpy/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/proc/fitter.py",
+      "excerpt_matched": true
+    },
+    {
+      "id": "C17",
+      "url": "https://raw.githubusercontent.com/pycroscopy/pycroscopy/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml",
+      "excerpt_matched": true
+    }
+  ]
+}

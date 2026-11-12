@@ -3,6 +3,8 @@
 Independent research from public sources only; not affiliated with ORNL. Draft started 2026-10-24 (ET).
 Every lesson here is built from evidence already in this repo: [connections map](../connections/map.md) (cited as "map link N"), [signals files](../signals/), [project briefs](../projects/) and [verification](../verification/log.md). No new sources were fetched for this draft. Tags follow RULES.md: [KNOWN] means each example is stated in a cited source; [INFERRED] means the cross-project pattern is a reading of several facts, not something any source says. Most lessons are INFERRED on purpose: no single public page describes "how ORNL works". People are described by role only.
 
+This file covers the organization. For the code itself, meaning design moves you can reuse with pinned source lines, see [engineering patterns in ORNL's public code](engineering-patterns.md).
+
 ## Lesson 1. Facility testing code wakes up with each new machine
 **Pattern.** Software that exists to bring up and check a supercomputer shows bursts of activity when a new system arrives and goes quiet in between.
 - [OLCF Test Harness](../projects/olcf-test-harness.md): 213 and 146 commits in 2016 and 2017, a quiet 2018 to 2021, then a rise from 2022 to a peak of 203 commits in 2025; Frontier is the only machine with its own example config; three releases in 18 months after a single release before 2025. [KNOWN: [signals/olcf-test-harness.md](../signals/olcf-test-harness.md)]

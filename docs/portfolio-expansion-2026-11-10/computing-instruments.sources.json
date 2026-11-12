@@ -1,0 +1,206 @@
+{
+  "accessed": "2026-11-10",
+  "scope": "public-primary-artifacts",
+  "sources": [
+    {
+      "id": "C01",
+      "title": "ADIOS2 SST engine documentation",
+      "publisher": "ornladios contributors",
+      "publication_date": "snapshot 2026-11-11 UTC",
+      "url": "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/docs/user_guide/source/engines/sst.rst",
+      "section": "SST engine and parameter descriptions",
+      "excerpt": "timesteps submitted when there are no active readers will be immediately discarded.",
+      "supports": "Step atomicity, rendezvous, queue policy, non-durable streaming"
+    },
+    {
+      "id": "C02",
+      "title": "Streaming Data in HPC Workflows Using ADIOS",
+      "publisher": "Eisenhauer et al., ORNL and collaborating institutions",
+      "publication_date": "2024-09-30, arXiv v1",
+      "url": "https://arxiv.org/html/2410.00178v1",
+      "section": "III architecture; IV-C performance",
+      "excerpt": "The full-scale throughput reaches between 20 and 30 TB/s for MPI",
+      "supports": "ORNL author affiliations; SST mechanism and bounded Frontier benchmark"
+    },
+    {
+      "id": "C03",
+      "title": "ADIOS2 license",
+      "publisher": "UT-Battelle and ADIOS2 contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/LICENSE",
+      "section": "license body and copyright",
+      "excerpt": "Copyright 2019 UT-BATTELLE, LLC",
+      "supports": "Apache-2.0 and ORNL-tied copyright boundary"
+    },
+    {
+      "id": "C04",
+      "title": "HydraGNN ADIOS backend",
+      "publisher": "ORNL HydraGNN contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+      "section": "optional imports and _comm_args",
+      "excerpt": "import adios2",
+      "supports": "Actual ADIOS dependency and serial-versus-MPI runtime guard"
+    },
+    {
+      "id": "C05",
+      "title": "HydraGNN fused inference ADIOS writer",
+      "publisher": "ORNL HydraGNN contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py",
+      "section": "module docstring; _open_adios_writer",
+      "excerpt": "Each GPU writes a BP5 file where every ADIOS step is one atomistic structure.",
+      "supports": "File-based BP5 path; atom identities, positions, forces, energy and branch weights"
+    },
+    {
+      "id": "C06",
+      "title": "ExaTN README",
+      "publisher": "ORNL-QCI ExaTN contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/README.md",
+      "section": "Concepts and Usage; Dependencies; Mac OS X build",
+      "excerpt": "declarative API calls do not allocate storage for tensors.",
+      "supports": "Descriptor versus execution API; column-major arrays; native-build constraints"
+    },
+    {
+      "id": "C07",
+      "title": "ExaTN license",
+      "publisher": "UT-Battelle",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/LICENSE",
+      "section": "license header",
+      "excerpt": "Copyright (c) 2017, UT-Battelle",
+      "supports": "BSD-3-Clause and non-org-name institutional tie"
+    },
+    {
+      "id": "C08",
+      "title": "ExaTN: Scalable GPU-Accelerated High-Performance Processing of General Tensor Networks at Exascale",
+      "publisher": "Lyakh et al.; Frontiers in Applied Mathematics and Statistics",
+      "publication_date": "2022-07-06",
+      "url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2022.838601/full",
+      "section": "3.1 Table 1; 3.3.1 Table 3",
+      "excerpt": "Performance of numerical evaluation of the 3:1 MERA fragment on Summit supercomputer.",
+      "supports": "ORNL affiliations; measured contraction scaling and single-amplitude benchmark limits"
+    },
+    {
+      "id": "C09",
+      "title": "TNQVM README",
+      "publisher": "ORNL-QCI TNQVM contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/README.md",
+      "section": "Installation; MPI execution; License",
+      "excerpt": "TNQVM can be built with",
+      "supports": "Actual optional ExaTN link, XACC prerequisite, MPI build options; README license statement"
+    },
+    {
+      "id": "C10",
+      "title": "TNQVM CMake build",
+      "publisher": "UT-Battelle",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt",
+      "section": "copyright header; build configuration",
+      "excerpt": "find_package(XACC REQUIRED)",
+      "supports": "ORNL tie by copyright, C++17/Fortran build and required XACC"
+    },
+    {
+      "id": "C11",
+      "title": "Tensor Network Quantum Virtual Machine for Simulating Quantum Circuits at Exascale",
+      "publisher": "Nguyen et al., ORNL and NVIDIA",
+      "publication_date": "2021-04-21, arXiv v1",
+      "url": "https://arxiv.org/pdf/2104.10523",
+      "section": "3.2 MPS; 4.3 single amplitude; Fig. 9",
+      "excerpt": "maximum entanglement bond dimension",
+      "supports": "Gate merge/SVD/truncation method; 53-qubit single-amplitude demonstration; ORNL affiliations"
+    },
+    {
+      "id": "C12",
+      "title": "ExaTN MPS visitor",
+      "publisher": "TNQVM contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp",
+      "section": "initialization around lines 259\u2013273; SVD call near 1625",
+      "excerpt": "exatn::decomposeTensorSVDLRSync(mergeContractionPattern)",
+      "supports": "svd-cutoff and max-bond-dim options; explicit ExaTN numerical call"
+    },
+    {
+      "id": "C13",
+      "title": "A processing and analytics system for microscopy data workflows: the Pycroscopy ecosystem of packages",
+      "publisher": "Vasudevan et al.; ORNL manuscript via OSTI",
+      "publication_date": "Exact publication date not established from fetched OSTI manuscript",
+      "url": "https://www.osti.gov/servlets/purl/2478374",
+      "section": "author affiliations; Workflow examples 1 and 2; Fig. 3\u20134",
+      "excerpt": "Our data model, termed the N-dimensional spectral imaging data format, is realized in pycroscopy\u2019s sidpy package.",
+      "supports": "ORNL tie; common dataset representation; STEM texture analysis and parallel spectral fitting"
+    },
+    {
+      "id": "C14",
+      "title": "sidpy Dataset implementation",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dataset.py",
+      "section": "Dataset class; from_array; set_dimension",
+      "excerpt": "class Dataset(da.Array):",
+      "supports": "Actual Dask inheritance, metadata, dimension length validation"
+    },
+    {
+      "id": "C15",
+      "title": "sidpy Dimension implementation",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dimension.py",
+      "section": "DimensionType; Dimension; dimension_type setter",
+      "excerpt": "class Dimension(np.ndarray):",
+      "supports": "Axis values, quantity, units and physical type; unknown type degrades to UNKNOWN"
+    },
+    {
+      "id": "C16",
+      "title": "sidpy SidFitter implementation",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/proc/fitter.py",
+      "section": "constructor; do_fit; k-means priors",
+      "excerpt": "def do_fit(self, **kwargs):",
+      "supports": "User model/guess functions; delayed SciPy fits and optional cluster-based priors"
+    },
+    {
+      "id": "C17",
+      "title": "Pycroscopy package manifest",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/pycroscopy/blob/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml",
+      "section": "dependencies; project metadata",
+      "excerpt": "\"sidpy\",",
+      "supports": "Explicit pycroscopy to sidpy and SciFiReaders dependencies; MIT declaration"
+    },
+    {
+      "id": "C18",
+      "title": "sidpy package dependencies",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/setup.py",
+      "section": "requirements; development status classifier",
+      "excerpt": "dask-ml>=2025.1.0",
+      "supports": "Python analysis-stack requirements; pre-alpha classifier is publisher metadata, not runtime evaluation"
+    },
+    {
+      "id": "C19",
+      "title": "sidpy license",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "pinned snapshot",
+      "url": "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/LICENSE",
+      "section": "license header",
+      "excerpt": "MIT License",
+      "supports": "Inspected license; institutional tie comes from paper, not this copyright"
+    },
+    {
+      "id": "C20",
+      "title": "Pycroscopy reimagined documentation",
+      "publisher": "Pycroscopy contributors",
+      "publication_date": "hosted documentation accessed 2026-11-10",
+      "url": "https://pycroscopy.github.io/pycroscopy/about.html",
+      "section": "Pycroscopy reimagined; Legacy package",
+      "excerpt": "V 0.60.7 is the last version of the legacy iteration",
+      "supports": "USID/HDF5 legacy versus sidpy.Dataset current object boundary"
+    }
+  ]
+}

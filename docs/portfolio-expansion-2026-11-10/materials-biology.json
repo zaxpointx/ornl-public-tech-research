@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "accessed_on": "2026-11-10",
+  "scope": "Research retrieval index; sections are not new catalog entries; local opportunities are proposals only.",
+  "sections": [
+    {
+      "id": "mb-nylon-hydrolases",
+      "title": "Nylon-selective enzyme discovery",
+      "domain": "biology/chemistry/materials",
+      "summary": "Measured selectivity and overall conversion are separate research outcomes.",
+      "evidence": "KNOWN",
+      "source_urls": [
+        "https://impact.ornl.gov/en/publications/identification-and-characterization-of-substrate-and-product-sele/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11601465/"
+      ],
+      "related_catalog_ids": [],
+      "local_opportunity": "LOCAL: synthetic assay-table analysis separating selectivity, yield, and detection limits.",
+      "unknowns": [
+        "Final supplemental code/data completeness",
+        "Scale-up economics"
+      ]
+    },
+    {
+      "id": "mb-mijamp",
+      "title": "MIJAMP interactive methylation-pattern analysis",
+      "domain": "biosciences/bioinformatics",
+      "summary": "Candidate pattern discovery includes human review and unexplained-data diagnostics.",
+      "evidence": "KNOWN",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12320774/",
+        "https://impact.ornl.gov/en/publications/mijamp/",
+        "https://code.ornl.gov/alexander-public/mijamp"
+      ],
+      "related_catalog_ids": [],
+      "local_opportunity": "LOCAL: explainability exercise on invented strings and marked positions.",
+      "unknowns": [
+        "Code license",
+        "Pinned revision",
+        "Runtime reproducibility"
+      ]
+    },
+    {
+      "id": "mb-atomai",
+      "title": "AtomAI microscopy-to-structure bridge",
+      "domain": "materials/microscopy/AI",
+      "summary": "Microscopy inference exposes checkable structural intermediate artifacts.",
+      "evidence": "KNOWN",
+      "source_urls": [
+        "https://impact.ornl.gov/en/publications/atomai-framework-for-deep-learning-analysis-of-image-and-spectros/",
+        "https://github.com/pycroscopy/atomai",
+        "https://atomai.readthedocs.io/en/latest/atomai_models.html"
+      ],
+      "related_catalog_ids": [],
+      "local_opportunity": "LOCAL: missing-site detection benchmark with synthetic lattice images and known coordinates.",
+      "unknowns": [
+        "Modality-specific transfer accuracy",
+        "Uncertainty calibration",
+        "Any AtomAI-to-HydraGNN adapter"
+      ]
+    },
+    {
+      "id": "mb-hydragnn-multifidelity",
+      "title": "HydraGNN multi-source materials modeling",
+      "domain": "materials/chemistry/HPC/AI",
+      "summary": "Dataset-specific heads and energy-reference alignment preserve scientific target distinctions.",
+      "evidence": "KNOWN",
+      "source_urls": [
+        "https://arxiv.org/abs/2506.21788",
+        "https://www.osti.gov/biblio/2562660",
+        "https://github.com/ORNL/HydraGNN_GFM_FineTuning4Materials"
+      ],
+      "related_catalog_ids": [
+        "hydragnn"
+      ],
+      "local_opportunity": "LOCAL: compare pooled and source-specific regressors with synthetic label offsets.",
+      "unknowns": [
+        "Companion weights/data licensing",
+        "Workstation resource needs",
+        "Compatibility of inspected revisions"
+      ]
+    }
+  ]
+}

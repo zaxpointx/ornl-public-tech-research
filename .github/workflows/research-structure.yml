@@ -17,6 +17,8 @@ jobs:
           python-version: '3.x'
       - name: Validate atlas structure
         run: python3 scripts/audit_atlas.py
+      - name: Check portfolio map freshness
+        run: python3 scripts/build_portfolio_map.py --check
       - name: Compile validation scripts
         run: python3 -m compileall -q scripts
       - name: Check patch whitespace

@@ -1,0 +1,2095 @@
+{
+  "schema_version": 1,
+  "boundary": "Generated navigation over the declared catalog and selected relationship ledger. Not a census of ORNL, a live system map, or a fresh source verification. Briefs, signals, and deep-dive mentions indicate files, not equal research depth. Source retrieval dates remain in their original ledger entries.",
+  "additional_research_relationships": [
+    {
+      "id": "N01",
+      "subject": "HydraGNN",
+      "relation": "has optional ADIOS backend and inspected BP5 writer",
+      "object": "ADIOS2",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py"
+      ],
+      "limitation": "BP5 file example does not prove SST streaming or operational deployment.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N02",
+      "subject": "TNQVM",
+      "relation": "requires programming frontend",
+      "object": "XACC",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt"
+      ],
+      "limitation": "Required build dependency; modern workstation compatibility untested.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N03",
+      "subject": "TNQVM",
+      "relation": "optionally invokes tensor numerical operations from",
+      "object": "ExaTN",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp"
+      ],
+      "limitation": "Selected numerical representation determines accuracy and memory cost.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N04",
+      "subject": "pycroscopy",
+      "relation": "declares package dependency on",
+      "object": "sidpy",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://github.com/pycroscopy/pycroscopy/blob/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml"
+      ],
+      "limitation": "Package dependency, not facility topology or instrument calibration.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N05",
+      "subject": "Model America 2021 models",
+      "relation": "target simulator version",
+      "object": "EnergyPlus 9.4 / OpenStudio 3.1",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a"
+      ],
+      "limitation": "Open generated artifacts; missing upstream metadata and closed AutoBEM generator remain separate.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N06",
+      "subject": "LandCast historical series 1975–2023",
+      "relation": "is anchored to benchmark",
+      "object": "LandScan Mosaic 2024",
+      "evidence": "DIRECT",
+      "source_urls": [
+        "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/"
+      ],
+      "limitation": "Dataset metadata read; files, exact release chronology and reuse terms not independently checked.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N07",
+      "subject": "AtomAI structural output",
+      "relation": "has established implementation adapter to",
+      "object": "HydraGNN",
+      "evidence": "UNKNOWN",
+      "source_urls": [
+        "https://atomai.readthedocs.io/en/latest/atomai_models.html",
+        "https://www.osti.gov/biblio/2562660"
+      ],
+      "limitation": "Potential comparison only. Reviewed sources do not establish an adapter; not proof none exists.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "N08",
+      "subject": "AutoBEM",
+      "relation": "consumes as weather input",
+      "object": "Daymet",
+      "evidence": "UNKNOWN",
+      "source_urls": [
+        "https://www.osti.gov/doecode/biblio/115947",
+        "https://daymet.ornl.gov/overview"
+      ],
+      "limitation": "Proposed comparison; reviewed sources do not document this pipeline.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "research_chapters": [
+    {
+      "path": "docs/portfolio-expansion-2026-11-10/computing-instruments.md",
+      "title": "Computing and instruments: streams, graph learning, quantum tensors, and microscopy data",
+      "source_urls": [
+        "https://api.github.com/repos/ORNL-QCI/exatn/commits/c528f7ec7323ab5f4485b85efcefa016c32e1a2d",
+        "https://api.github.com/repos/ORNL-QCI/tnqvm/commits/a70eed190a4448dbe3dae94189d066ac694dc798",
+        "https://api.github.com/repos/ORNL/HydraGNN/commits/d49d934403f0cc3276750004c8dfbf3a502a10f1",
+        "https://api.github.com/repos/ornladios/ADIOS2/commits/2d6d28a519905ac2e33ef4e91a308139c829d7f3",
+        "https://api.github.com/repos/pycroscopy/pycroscopy/commits/90e2d232acc9da634131c1793f082a70a04a3297",
+        "https://api.github.com/repos/pycroscopy/sidpy/commits/06105426f780ed8c0da5054589cc7d22afbfcf85",
+        "https://arxiv.org/html/2410.00178v1",
+        "https://arxiv.org/pdf/2104.10523",
+        "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/LICENSE",
+        "https://github.com/ORNL-QCI/exatn/blob/c528f7ec7323ab5f4485b85efcefa016c32e1a2d/README.md",
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/CMakeLists.txt",
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/README.md",
+        "https://github.com/ORNL-QCI/tnqvm/blob/a70eed190a4448dbe3dae94189d066ac694dc798/tnqvm/visitors/exatn-mps/ExaTnMpsVisitor.cpp",
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/examples/multidataset_hpo_sc26/inference_fused_write_adios.py",
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/hydragnn/data/adiosdataset/_backend.py",
+        "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/LICENSE",
+        "https://github.com/ornladios/ADIOS2/blob/2d6d28a519905ac2e33ef4e91a308139c829d7f3/docs/user_guide/source/engines/sst.rst",
+        "https://github.com/pycroscopy/pycroscopy/blob/90e2d232acc9da634131c1793f082a70a04a3297/pyproject.toml",
+        "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/LICENSE",
+        "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/setup.py",
+        "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/proc/fitter.py",
+        "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dataset.py",
+        "https://github.com/pycroscopy/sidpy/blob/06105426f780ed8c0da5054589cc7d22afbfcf85/sidpy/sid/dimension.py",
+        "https://pycroscopy.github.io/pycroscopy/about.html",
+        "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2022.838601/full",
+        "https://www.osti.gov/servlets/purl/2478374"
+      ]
+    },
+    {
+      "path": "docs/portfolio-expansion-2026-11-10/energy-earth.md",
+      "title": "Energy and Earth systems: four reproducible research boundaries",
+      "source_urls": [
+        "https://arxiv.org/html/2401.13926",
+        "https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html",
+        "https://daac.ornl.gov/DAYMET/guides/Daymet_V4_Stn_Level_CrossVal.html",
+        "https://daymet.ornl.gov/overview",
+        "https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a",
+        "https://github.com/ORNL/ExaGO",
+        "https://github.com/ORNL/ExaGO/blob/43726da124c9d8fb092446ac4f1cc36fe00c4b7f/LICENSE",
+        "https://github.com/ORNL/ExaGO/blob/43726da124c9d8fb092446ac4f1cc36fe00c4b7f/docs/web/opflow.md",
+        "https://github.com/ORNL/ReSolve/blob/c2ccbca565bc3c2e3f4db48a7fe138df406f9e74/LICENSE",
+        "https://github.com/ORNL/ReSolve/blob/c2ccbca565bc3c2e3f4db48a7fe138df406f9e74/docs/sphinx/user_guide/index.rst",
+        "https://impact.ornl.gov/en/publications/iterative-methods-in-gpu-resident-linear-solvers-for-nonlinear-co/",
+        "https://resolve.readthedocs.io/en/latest/doxygen/html/index.html",
+        "https://www.osti.gov/biblio/3740812",
+        "https://www.osti.gov/doecode/biblio/115947"
+      ]
+    },
+    {
+      "path": "docs/portfolio-expansion-2026-11-10/geospatial-uncertainty.md",
+      "title": "LandScan Mosaic: a population estimate is also a distribution",
+      "source_urls": [
+        "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/",
+        "https://www.nature.com/articles/s41598-025-28125-z",
+        "https://www.ornl.gov/news/ornl-releases-landscan-mosaic/"
+      ]
+    },
+    {
+      "path": "docs/portfolio-expansion-2026-11-10/materials-biology.md",
+      "title": "Materials, chemistry, and biology: four systems worth understanding",
+      "source_urls": [
+        "https://arxiv.org/abs/2506.21788",
+        "https://atomai.readthedocs.io/en/latest/atomai_models.html",
+        "https://code.ornl.gov/alexander-public/mijamp",
+        "https://github.com/ORNL/HydraGNN/blob/d49d934403f0cc3276750004c8dfbf3a502a10f1/LICENSE",
+        "https://github.com/ORNL/HydraGNN_GFM_FineTuning4Materials",
+        "https://github.com/pycroscopy/atomai",
+        "https://github.com/pycroscopy/atomai/blob/93c88817a577686d6b8a84ab954872ca5cab7fcc/LICENSE",
+        "https://impact.ornl.gov/en/publications/atomai-framework-for-deep-learning-analysis-of-image-and-spectros/",
+        "https://impact.ornl.gov/en/publications/identification-and-characterization-of-substrate-and-product-sele/",
+        "https://impact.ornl.gov/en/publications/mijamp/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11601465/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12320774/",
+        "https://www.ornl.gov/news/synthetic-biology-ai-driven-analysis-reveal-new-polymer-targeting-enzymes/",
+        "https://www.osti.gov/biblio/2562660",
+        "https://www.osti.gov/servlets/purl/3002770`"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "hecbench",
+      "name": "HeCBench",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/HeCBench",
+      "repository_url": "https://github.com/ORNL/HeCBench",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/hecbench.md",
+      "signals": "signals/hecbench.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/benchmarking; BSD-3-Clause; last push 2026-10-22; collection of small heterogeneous-computing benchmark kernels across CUDA/HIP/SYCL/OpenMP [INFERRED: from repo name/contents]; ~310 stars, most-starred ORNL org repo [KNOWN]; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI records API q=\"HeCBench\" and 'HeCBench benchmark': no hits; ORNL research org unconfirmed; OSTI license n/a"
+    },
+    {
+      "id": "hydragnn",
+      "name": "HydraGNN",
+      "domain": "AI/data",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/HydraGNN",
+      "repository_url": "https://github.com/ORNL/HydraGNN",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/hydragnn.md",
+      "signals": "signals/hydragnn.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: AI/materials; BSD-3-Clause; last push 2026-10-24; distributed PyTorch multi-headed graph neural networks for predicting materials/molecular properties at scale [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "resolve",
+      "name": "ReSolve",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/ReSolve",
+      "repository_url": "https://github.com/ORNL/ReSolve",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/resolve.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: HPC/numerical libraries; License: custom permissive UT-Battelle LLC + Battelle Memorial Institute license (LICENSE file; GitHub API shows NOASSERTION) [KNOWN: repo LICENSE]; ORNL record in DOE CODE code-114681 [KNOWN: osti.gov]; Battelle co-copyright suggests PNNL co-development [INFERRED]; last push 2026-10-18; library of GPU-resident linear solvers [KNOWN: repo description]; likely used by grid optimization [INFERRED: unverified]; accessed 2026-10-24; fact-check 2026-10-24: license corrected; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "tasmanian",
+      "name": "TASMANIAN",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/TASMANIAN",
+      "repository_url": "https://github.com/ORNL/TASMANIAN",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/tasmanian.md",
+      "signals": "signals/tasmanian.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/uncertainty quantification; BSD-3-Clause (LICENSE file; GitHub API shows NOASSERTION) [KNOWN: repo LICENSE]; ORNL software record OSTI 1231809 [KNOWN: osti.gov]; last push 2026-10-19; toolkit for sparse-grid and adaptive surrogate models used in uncertainty quantification [KNOWN: repo description + OSTI]; accessed 2026-10-24; fact-check 2026-10-24: license corrected; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "additivefoam",
+      "name": "AdditiveFOAM",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/AdditiveFOAM",
+      "repository_url": "https://github.com/ORNL/AdditiveFOAM",
+      "recorded_org_evidence": "[INFERRED: ORNL manufacturing research, not stated]",
+      "brief": "projects/additivefoam.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/additive-manufacturing.md"
+      ],
+      "catalog_notes": "subdomain: materials/additive manufacturing; GPL-3.0-or-later (LICENSE file; GitHub API shows NOASSERTION) [KNOWN: repo LICENSE]; ORNL record in DOE CODE code-108345 [KNOWN: osti.gov]; last push 2026-09-21; heat and mass transfer simulation for additive manufacturing built on OpenFOAM [KNOWN: README]; metal AM focus [INFERRED: not stated in README intro]; accessed 2026-10-24; fact-check 2026-10-24: license and tag corrected; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md; DOE CODE code-108345 seen in a search and lists research org ORNL"
+    },
+    {
+      "id": "cyberwheel",
+      "name": "Cyberwheel",
+      "domain": "cyber",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/cyberwheel",
+      "repository_url": "https://github.com/ORNL/cyberwheel",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/cyberwheel.md",
+      "signals": "signals/cyberwheel.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: cybersecurity/AI; MIT; last push 2025-08-26 (borderline active); reinforcement-learning simulation environment for training autonomous cyber-defense agents [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md; OSTI code-134699 seen in a search"
+    },
+    {
+      "id": "iris",
+      "name": "IRIS",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/iris",
+      "repository_url": "https://github.com/ORNL/iris",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/iris.md",
+      "signals": "signals/iris.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/programming models; BSD-3-Clause; last push 2026-02-10; runtime unifying multiple programming platforms across heterogeneous devices [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI q=\"IRIS\" heterogeneous and 'IRIS runtime': no relevant hits; unconfirmed"
+    },
+    {
+      "id": "flowcept",
+      "name": "Flowcept",
+      "domain": "AI/data",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/flowcept",
+      "repository_url": "https://github.com/ORNL/flowcept",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/flowcept.md",
+      "signals": "signals/flowcept.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: AI/data provenance; MIT; last push 2026-08-12; captures runtime provenance of AI and scientific workflows [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI q=\"Flowcept\" and 'Flowcept provenance': only unrelated ORNL record code-185154 (REDI); no Flowcept record found; unconfirmed"
+    },
+    {
+      "id": "datafed",
+      "name": "DataFed",
+      "domain": "AI/data",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/DataFed",
+      "repository_url": "https://github.com/ORNL/DataFed",
+      "recorded_org_evidence": "NCCS/OLCF with CSMD [KNOWN: ORNL/TM-166131 (2021), OSTI 3412938]",
+      "brief": "projects/datafed.md",
+      "signals": "signals/datafed.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: data management; License: custom UT-Battelle permissive (\"DataFed, Version 1\"), per LICENSE.md [editor 2026-10-24, from reading-pass brief; GitHub API shows NOASSERTION]; last push 2026-10-23; federated system for managing and sharing scientific data across facilities [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md [editor 2026-10-24: org_unit updated from signals/datafed.md (discovery pass); was INFERRED OLCF/CCS-related; fact-check signals sweep 2026-10-24: confirmed]"
+    },
+    {
+      "id": "gridkit",
+      "name": "GridKit",
+      "domain": "grid/energy",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/GridKit",
+      "repository_url": "https://github.com/ORNL/GridKit",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/gridkit.md",
+      "signals": "signals/gridkit.md",
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: energy/power grid; License: custom UT-Battelle permissive (BSD-like), per LICENSE file [editor 2026-10-24, from reading-pass brief; GitHub API shows NOASSERTION]; last push 2026-10-23; modeling framework for power-system simulation and analysis [KNOWN: repo description]; accessed 2026-10-24; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "thermochimica",
+      "name": "Thermochimica",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-CEES/thermochimica",
+      "repository_url": "https://github.com/ORNL-CEES/thermochimica",
+      "recorded_org_evidence": "[INFERRED: CEES org name]",
+      "brief": "projects/thermochimica.md",
+      "signals": "signals/thermochimica.md",
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software.md"
+      ],
+      "catalog_notes": "subdomain: nuclear/materials thermodynamics; BSD-3-Clause; last push 2026-07-23; library computing chemical equilibrium and phases, used in nuclear-fuel modeling [KNOWN description; nuclear use INFERRED]; accessed 2026-10-24; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "xolotl",
+      "name": "Xolotl",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-Fusion/xolotl",
+      "repository_url": "https://github.com/ORNL-Fusion/xolotl",
+      "recorded_org_evidence": "[INFERRED: ORNL-Fusion org]",
+      "brief": "projects/xolotl.md",
+      "signals": "signals/xolotl.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: fusion/materials; BSD-3-Clause (LICENSE file; GitHub API shows NOASSERTION) [KNOWN: repo LICENSE]; multi-institution copyright incl. UT-Battelle, Univ. of Tennessee, UChicago Argonne, others [KNOWN: repo LICENSE]; no DOE CODE record found [UNKNOWN]; last push 2026-10-21; spatially dependent cluster-dynamics simulator for plasma-facing material damage [KNOWN description; application INFERRED]; accessed 2026-10-24; fact-check 2026-10-24: license corrected; [OSTI check 2026-10-24] no OSTI hits per earlier fact-check and reading-pass findings (not re-run); ORNL research org KNOWN via OSTI 1513390 (ORNL paper, ASCR-funded) [fact-check 2026-10-24]"
+    },
+    {
+      "id": "mantid",
+      "name": "Mantid",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/mantidproject/mantid",
+      "repository_url": "https://github.com/mantidproject/mantid",
+      "recorded_org_evidence": "[INFERRED: ORNL Neutron Sciences is a co-developer, multi-institution project]",
+      "brief": "projects/mantid.md",
+      "signals": "signals/mantid.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: neutrons/data reduction; GPL-3.0; last push 2026-10-24; framework for reducing and analyzing neutron and muon scattering data, used at SNS/HFIR [INFERRED: co-developed with ISIS etc.]; accessed 2026-10-24; [OSTI check 2026-10-24] no OSTI hits per earlier fact-check and reading-pass findings (not re-run); ORNL research org unconfirmed"
+    },
+    {
+      "id": "snapred",
+      "name": "SNAPRed",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/neutrons/SNAPRed",
+      "repository_url": "https://github.com/neutrons/SNAPRed",
+      "recorded_org_evidence": "[INFERRED: neutrons org, SNS SNAP instrument]",
+      "brief": "projects/snapred.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "GPL-3.0; last push 2026-10-19; desktop app managing data lifecycle for the SNAP diffractometer [KNOWN description]; low stars; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI q=\"SNAPRed\": no hits; unconfirmed"
+    },
+    {
+      "id": "exatn",
+      "name": "ExaTN",
+      "domain": "quantum",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL-QCI/exatn",
+      "repository_url": "https://github.com/ORNL-QCI/exatn",
+      "recorded_org_evidence": "[INFERRED: ORNL-QCI org]",
+      "brief": "projects/exatn.md",
+      "signals": "signals/exatn.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: quantum computing/HPC; BSD-3-Clause [KNOWN: repo LICENSE]; ORNL record in DOE CODE code-45739 [KNOWN: osti.gov]; last push 2023-07-24, not formally archived on GitHub [KNOWN: GitHub API]; hierarchical tensor-network library at exascale [KNOWN description]; accessed 2026-10-24; fact-check 2026-10-24: status archived->unknown; [OSTI check 2026-10-24] ORNL research org confirmed on OSTI/DOE CODE per earlier fact-check and reading-pass findings (not re-run); see verification/log.md"
+    },
+    {
+      "id": "olcf-user-docs",
+      "name": "OLCF User Documentation",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/olcf/olcf-user-docs",
+      "repository_url": "https://github.com/olcf/olcf-user-docs",
+      "recorded_org_evidence": "Oak Ridge Leadership Computing Facility [KNOWN: repo description]",
+      "brief": "projects/olcf-user-docs.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/facility docs; License [UNKNOWN] (none in API); last push 2026-10-23; source for public user guides of OLCF systems like Frontier [KNOWN]; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI q=\"OLCF\" documentation: no record for the docs (only OLCF Test Harness code-153320); unconfirmed; docs are not a code record [INFERRED]"
+    },
+    {
+      "id": "gedi-tutorials",
+      "name": "ORNL DAAC GEDI Tutorials",
+      "domain": "climate/earth",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ornldaac/gedi_tutorials",
+      "repository_url": "https://github.com/ornldaac/gedi_tutorials",
+      "recorded_org_evidence": "ORNL DAAC [INFERRED: ornldaac org]",
+      "brief": "projects/gedi-tutorials.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: climate/earth observation; License NOASSERTION in API; last push 2026-10-23; tutorials for using NASA GEDI forest-structure/biomass data products [KNOWN description]; accessed 2026-10-24; [OSTI check 2026-10-24] OSTI q=\"GEDI\": no relevant hits (only an unrelated LLNL record); unconfirmed"
+    },
+    {
+      "id": "daymet",
+      "name": "Daymet",
+      "domain": "climate/earth",
+      "recorded_status": "active",
+      "primary_url": "https://daymet.ornl.gov/",
+      "repository_url": "https://github.com/ornldaac/daymet-single-pixel-batch",
+      "recorded_org_evidence": "Environmental Sciences Division [KNOWN: daymet.ornl.gov]",
+      "brief": "projects/daymet.md",
+      "signals": "signals/daymet.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: gridded daily weather data; 1 km daily temperature/precipitation/etc. grids for North America, with pixel-extraction tool and REST services [KNOWN: daymet.ornl.gov]; last push 2025-03-29; data product V4 released 2020-12-15 [KNOWN]; accessed 2026-10-24; [discovery 2026-10-24] license: custom UT-Battelle permissive open source license (helper-script repo) https://raw.githubusercontent.com/ornldaac/daymet-single-pixel-batch/master/LICENSE.md; DOE CODE record: none found; ORNL ownership from daymet.ornl.gov [KNOWN]"
+    },
+    {
+      "id": "tesvis-modis",
+      "name": "TESViS (MODIS/VIIRS subsetting services)",
+      "domain": "climate/earth",
+      "recorded_status": "active",
+      "primary_url": "https://modis.ornl.gov/",
+      "repository_url": null,
+      "recorded_org_evidence": "ORNL DAAC [INFERRED: modis.ornl.gov host]",
+      "brief": "projects/tesvis-modis.md",
+      "signals": "signals/tesvis-modis.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: remote-sensing data services; site-level subsets of satellite land products via web tool and REST API, with LP DAAC [KNOWN: modis.ornl.gov]; license [UNKNOWN]; status from live site, release date [UNKNOWN]; accessed 2026-10-24"
+    },
+    {
+      "id": "e3sm-elm",
+      "name": "E3SM Land Model (ELM)",
+      "domain": "climate/earth",
+      "recorded_status": "active",
+      "primary_url": "https://e3sm.org/",
+      "repository_url": "https://github.com/E3SM-Project/E3SM",
+      "recorded_org_evidence": "[INFERRED: ORNL is an E3SM partner lab; ORNL's ELM role not verified this batch]",
+      "brief": "projects/e3sm-elm.md",
+      "signals": "signals/e3sm-elm.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: Earth system / land model; land component of DOE's E3SM climate model, part of the multi-lab E3SM repo; last push 2026-10-24; dedupe: ORNL/E3SM fork (stale) not added; accessed 2026-10-24; [discovery 2026-10-24] license: BSD-3-Clause (copyright UChicago Argonne; separable pieces under other licenses) https://raw.githubusercontent.com/E3SM-Project/E3SM/master/LICENSE; DOE CODE records https://www.osti.gov/doecode/biblio/148889 (v3.0.2) and /123310 (v3.0.0, ELM described as the land component) list developer 'E3SM Project, DOE'; ORNL not listed as research org in the records seen, so ORNL role stays [UNKNOWN]"
+    },
+    {
+      "id": "data-workflow",
+      "name": "SNS Data Workflow Manager",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/neutrons/data_workflow",
+      "repository_url": "https://github.com/neutrons/data_workflow",
+      "recorded_org_evidence": "[INFERRED: neutrons org; SNS named in description]",
+      "brief": "projects/data-workflow.md",
+      "signals": "signals/data-workflow.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: facility data pipeline; manages and reports on automated processing of SNS experiment data [KNOWN: repo description]; BSD-3-Clause; last push 2026-10-23; accessed 2026-10-24"
+    },
+    {
+      "id": "pyrs",
+      "name": "PyRS",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/neutrons/PyRS",
+      "repository_url": "https://github.com/neutrons/PyRS",
+      "recorded_org_evidence": "[INFERRED: neutrons org; HB2B is an HFIR instrument]",
+      "brief": "projects/pyrs.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: residual stress; reduces and visualizes residual-stress diffraction data from HB2B [KNOWN: repo description]; GPL-3.0; last push 2026-10-23; accessed 2026-10-24"
+    },
+    {
+      "id": "3dthesis",
+      "name": "3DThesis",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-MDF/3DThesis",
+      "repository_url": "https://github.com/ORNL-MDF/3DThesis",
+      "recorded_org_evidence": "[INFERRED: ORNL-MDF = Manufacturing Demonstration Facility]",
+      "brief": "projects/3dthesis.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/additive-manufacturing.md"
+      ],
+      "catalog_notes": "subdomain: additive manufacturing heat transfer; fast semi-analytic thermal model of melt pools [KNOWN: repo description]; BSD-3-Clause; last push 2026-08-26; accessed 2026-10-24"
+    },
+    {
+      "id": "myna",
+      "name": "Myna",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-MDF/Myna",
+      "repository_url": "https://github.com/ORNL-MDF/Myna",
+      "recorded_org_evidence": "[INFERRED: ORNL-MDF org]",
+      "brief": "projects/myna.md",
+      "signals": "signals/myna.md",
+      "deep_dive_mentions": [
+        "deep-dives/additive-manufacturing.md"
+      ],
+      "catalog_notes": "subdomain: additive manufacturing workflows; links AM simulation tools with experiment databases [KNOWN: repo description]; BSD-3-Clause; last push 2026-10-13; accessed 2026-10-24"
+    },
+    {
+      "id": "finch",
+      "name": "Finch",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-MDF/Finch",
+      "repository_url": "https://github.com/ORNL-MDF/Finch",
+      "recorded_org_evidence": "[INFERRED: ORNL-MDF org]",
+      "brief": "projects/finch.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/additive-manufacturing.md"
+      ],
+      "catalog_notes": "subdomain: additive manufacturing heat transfer; finite-difference thermal solver on the Cabana library [KNOWN: repo description]; BSD-3-Clause; last push 2026-10-05; accessed 2026-10-24"
+    },
+    {
+      "id": "vivaldi",
+      "name": "Vivaldi",
+      "domain": "AI/data",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL/vivaldi",
+      "repository_url": "https://github.com/ORNL/vivaldi",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/vivaldi.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: geospatial building ML; ML pipeline estimating building heights building by building [KNOWN: repo description]; last push 2024-04-19 (stale); accessed 2026-10-24; [discovery 2026-10-24] license: custom UT-Battelle permissive https://raw.githubusercontent.com/ORNL/vivaldi/main/LICENSE.txt; DOE CODE https://www.osti.gov/doecode/biblio/126052 lists the developer as ORNL-affiliated, and also points to a copy under a personal GitHub account (left out here; cite the ORNL repo or the DOE CODE record) [KNOWN]"
+    },
+    {
+      "id": "mind-the-gap",
+      "name": "Mind the Gap",
+      "domain": "AI/data",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL/mind_the_gap",
+      "repository_url": "https://github.com/ORNL/mind_the_gap",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/mind-the-gap.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: geospatial data quality; detects areas missing from building-footprint datasets [KNOWN: repo description]; last push 2025-08-05; accessed 2026-10-24; [discovery 2026-10-24] license: custom UT-Battelle permissive https://raw.githubusercontent.com/ORNL/mind_the_gap/main/LICENSE.txt; DOE CODE https://www.osti.gov/doecode/biblio/152916 lists research org ORNL, sponsor NGA [KNOWN]"
+    },
+    {
+      "id": "hydrofleetintel",
+      "name": "Hydropower Fleet Intelligence",
+      "domain": "grid/energy",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL/HydroFleetIntel",
+      "repository_url": "https://github.com/ORNL/HydroFleetIntel",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/hydrofleetintel.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: hydropower; app integrating hydropower facility data for fleet-level analysis [KNOWN: repo description, paraphrased]; last push 2024-03-12 (stale); accessed 2026-10-24; [discovery 2026-10-24] license: custom UT-Battelle permissive https://raw.githubusercontent.com/ORNL/HydroFleetIntel/main/LICENSE.md; OSTI https://www.osti.gov/biblio/code-123550 lists research org ORNL, sponsor DOE EERE Water Power Technologies Office [KNOWN]"
+    },
+    {
+      "id": "olcf-test-harness",
+      "name": "OLCF Test Harness",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/olcf/olcf-test-harness",
+      "repository_url": "https://github.com/olcf/olcf-test-harness",
+      "recorded_org_evidence": "Oak Ridge Leadership Computing Facility [INFERRED: olcf org]",
+      "brief": "projects/olcf-test-harness.md",
+      "signals": "signals/olcf-test-harness.md",
+      "deep_dive_mentions": [
+        "deep-dives/olcf-test-harness.md"
+      ],
+      "catalog_notes": "subdomain: system acceptance/regression testing; framework for running test suites on OLCF supercomputers [INFERRED: name/org]; last push 2026-10-16; accessed 2026-10-24; [discovery 2026-10-24] license: custom UT-Battelle BSD-3-style (adds an administrative-cost clause) https://raw.githubusercontent.com/olcf/olcf-test-harness/devel/LICENSE; OSTI https://www.osti.gov/biblio/code-153320 lists research org ORNL, NCCS [KNOWN]"
+    },
+    {
+      "id": "qiree",
+      "name": "QIR-EE",
+      "domain": "quantum",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-QCI/qiree",
+      "repository_url": "https://github.com/ORNL-QCI/qiree",
+      "recorded_org_evidence": "[INFERRED: ORNL-QCI org]",
+      "brief": "projects/qiree.md",
+      "signals": "signals/qiree.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: quantum program execution; library for running QIR quantum programs on various backends [KNOWN: repo description]; last push 2026-05-05; accessed 2026-10-24; [discovery 2026-10-24] license: Apache-2.0 WITH LLVM-exception or MIT, at the user's option, per https://raw.githubusercontent.com/ORNL-QCI/qiree/main/COPYRIGHT; the LICENSE-APACHE/LICENSE-MIT files it names are not in the repo root; DOE CODE https://www.osti.gov/doecode/biblio/149694 lists research org ORNL but gives the license as GPL-3.0, which conflicts with the repo [KNOWN conflict]; fact-check 2026-10-24 license verdict: trust the repo, Apache-2.0 WITH LLVM-exception (73 files) with some files (Apache-2.0 OR MIT) and docs CC-BY-4.0, per SPDX headers in the source; zero GPL references in the repo; the OSTI rights field (GPL-3.0) looks like a metadata error [INFERRED]"
+    },
+    {
+      "id": "django-remote-submission",
+      "name": "django-remote-submission",
+      "domain": "neutrons",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ornl-ndav/django-remote-submission",
+      "repository_url": "https://github.com/ornl-ndav/django-remote-submission",
+      "recorded_org_evidence": "[INFERRED: ornl-ndav org, neutron data analysis/visualization]",
+      "brief": "projects/django-remote-submission.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: remote job submission; Celery-based queue for submitting jobs to remote servers from Django [KNOWN: repo description]; ISC; last push 2021-11-18 (stale); accessed 2026-10-24"
+    },
+    {
+      "id": "gauntlet",
+      "name": "Gauntlet",
+      "domain": "buildings/transport",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/157761",
+      "repository_url": "https://github.com/ORNL/gauntlet",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/gauntlet.md",
+      "signals": "signals/gauntlet.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: geospatial building morphology; computes dozens of 2D shape measures per building footprint for classification/modeling [KNOWN: OSTI + DOE CODE 157761]; vivaldi builds on Gauntlet features [KNOWN: https://github.com/ORNL/vivaldi/blob/main/README.md, discovery 2026-10-24]; research org ORNL per OSTI record [KNOWN]; license MIT https://raw.githubusercontent.com/ORNL/gauntlet/main/LICENSE; last push 2025-07-18; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "far3d",
+      "name": "FAR3d",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/144364",
+      "repository_url": "https://github.com/DSfusion/FAR3d",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/far3d.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: energetic-particle plasma instabilities; models stability of Alfven modes driven by fast particles in tokamaks and stellarators [KNOWN: DOE CODE 144364]; research org ORNL per OSTI record [KNOWN]; repo is on a non-ORNL org; license: sources conflict: DOE CODE 144364 lists MIT, the PDF guide says \"GNU license\" with no version, and the repo has no license file [KNOWN: fact-check 2026-10-29, see projects/far3d.md]; last push 2026-10-15; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "korc",
+      "name": "KORC",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-Fusion/KORC",
+      "repository_url": "https://github.com/ORNL-Fusion/KORC",
+      "recorded_org_evidence": "[INFERRED: ORNL-Fusion org]",
+      "brief": "projects/korc.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: runaway electrons; kinetic orbit code following relativistic runaway electrons in fusion plasmas [INFERRED: name/description]; license MIT (copyright ORNL) https://raw.githubusercontent.com/ORNL-Fusion/KORC/main/LICENSE; last push 2026-10-22; DOE CODE record not checked; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "gitr",
+      "name": "GITR",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-Fusion/GITR",
+      "repository_url": "https://github.com/ORNL-Fusion/GITR",
+      "recorded_org_evidence": "[INFERRED: ORNL-Fusion org]",
+      "brief": "projects/gitr.md",
+      "signals": "signals/gitr.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: plasma-material interaction; tracks impurity particles eroded from fusion device walls [INFERRED: name 'Global Impurity Transport']; license GPL-2.0 https://raw.githubusercontent.com/ORNL-Fusion/GITR/main/LICENSE; last push 2025-11-21; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "scale",
+      "name": "SCALE",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://www.ornl.gov/scale",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN] (developed and maintained by ORNL per ornl.gov/scale)",
+      "brief": "projects/scale.md",
+      "signals": "signals/scale.md",
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software.md"
+      ],
+      "catalog_notes": "subdomain: nuclear safety analysis; suite for reactor physics, criticality safety, shielding and spent-fuel analysis, sponsored by NRC/DOE/NNSA [KNOWN: ornl.gov/scale]; distributed through a controlled channel, so no repo or download link recorded; license [UNKNOWN] (not open source, per its distribution); status from SCALE 6.3 validation reports listed on the page; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "olm",
+      "name": "ORIGEN Library Manager (OLM)",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/122128",
+      "repository_url": "https://code.ornl.gov/scale/code/olm",
+      "recorded_org_evidence": "[INFERRED: SCALE project group on code.ornl.gov]",
+      "brief": "projects/olm.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software-connections.md",
+        "deep-dives/nuclear-reactor-software.md"
+      ],
+      "catalog_notes": "subdomain: spent-fuel depletion data; manages ORIGEN reactor libraries used with SCALE/ORIGAMI for fast spent-fuel calculations [KNOWN: DOE CODE 122128]; research org ORNL per OSTI record [KNOWN]; license BSD-3-Clause per public GitLab API metadata (file not read directly); last activity 2026-09-11; accessed 2026-10-24 [discovery 2026-10-24]; repo_url switched to the GitHub repo the README calls the main development repository; https://code.ornl.gov/scale/code/olm is a read-only mirror, [KNOWN: README]; newest commit 2026-06-12 [KNOWN: fresh clone]; the mirror's 2026-09-11 date is likely a sync, not a code push [INFERRED] (editorial decision 2026-10-29)"
+    },
+    {
+      "id": "vera",
+      "name": "VERA (Virtual Environment for Reactor Applications)",
+      "domain": "nuclear/fusion",
+      "recorded_status": "unknown",
+      "primary_url": "https://vera.ornl.gov/",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN] (ORNL-led CASL collaboration per ornl.gov/onramp/casl-vera)",
+      "brief": "projects/vera.md",
+      "signals": "signals/vera.md",
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software.md"
+      ],
+      "catalog_notes": "subdomain: LWR multiphysics; couples neutronics, thermal-hydraulics, fuel performance and chemistry to simulate a full reactor core rod by rod [KNOWN: vera.ornl.gov]; components include MPACT, CTF, Shift; OSTI 'VERA Infrastructure' https://www.osti.gov/biblio/1546053 (research org ORNL per OSTI record [KNOWN]); license [UNKNOWN]; release date [UNKNOWN]; no public repo recorded; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "tasqc",
+      "name": "TASQC",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1339958",
+      "repository_url": "https://github.com/ORNL/TASQC",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/tasqc.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: quantum-secured timing; aims to authenticate timing signals for the power grid using quantum correlations [KNOWN: repo description, paraphrased]; research org ORNL per OSTI record [KNOWN] (TASQC Quantum Key Transfer Program); license custom UT-Battelle BSD-3-style https://raw.githubusercontent.com/ORNL/TASQC/master/LICENSE; last push 2019-05-21 (stale, not archived); accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "akatosh",
+      "name": "Akatosh",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1419663",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/akatosh.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: intrusion detection / forensics; combines IDS alerts with automated forensic checks to cut false positives [KNOWN: OSTI 1419663]; research org ORNL per OSTI record [KNOWN]; no public repo found; license [UNKNOWN]; record date 2016-10-06; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://www.ornl.gov/news/ornl-researchers-enable-real-time-forensic-analysis-new-cybersecurity-tool (ORNL news story, 2018); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "can-d",
+      "name": "CAN-D",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1822873",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/can-d.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: vehicle network security/reverse engineering; infers signal definitions (.dbc) from raw vehicle CAN logs [KNOWN: OSTI 1822873]; research org ORNL per OSTI record [KNOWN]; no public repo found; license [UNKNOWN]; record date 2020-11-23; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://www.ornl.gov/publication/can-d-modular-four-step-pipeline-comprehensively-decoding-controller-area-network-data (publication page, IEEE TVT 2021); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "real-twin",
+      "name": "Real-Twin",
+      "domain": "buildings/transport",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/147051",
+      "repository_url": "https://github.com/ORNL-Real-Sim/Real-Twin",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/real-twin.md",
+      "signals": "signals/real-twin.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: mobility scenario generation; builds standardized traffic-simulation scenarios to evaluate new mobility tech [KNOWN: DOE CODE 147051]; research org ORNL per OSTI record [KNOWN]; license GPL-3.0 https://raw.githubusercontent.com/ORNL-Real-Sim/Real-Twin/main/LICENSE; last push 2026-10-08; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "stor4build",
+      "name": "Stor4Build",
+      "domain": "buildings/transport",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/170060",
+      "repository_url": "https://github.com/Stor4Build/stor4build",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/stor4build.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: building thermal energy storage; simulates building-integrated thermal storage via OpenStudio/EnergyPlus [KNOWN: repo description]; research orgs ORNL and NREL per OSTI [KNOWN]; license BSD-3-Clause (copyright ORNL/UT-Battelle) https://raw.githubusercontent.com/Stor4Build/stor4build/develop/LICENSE.txt; last push 2026-10-13; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "energyplus",
+      "name": "EnergyPlus",
+      "domain": "buildings/transport",
+      "recorded_status": "active",
+      "primary_url": "https://energyplus.net/",
+      "repository_url": "https://github.com/NatLabRockies/EnergyPlus",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/energyplus.md",
+      "signals": "signals/energyplus.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: whole-building energy simulation; models a building's heating, cooling, lighting and water energy use [KNOWN: OSTI 1395245]; multi-institution (UIUC, LBNL, ORNL and others are named copyright holders); OSTI 1395245 lists research org ORNL [KNOWN] though NREL leads development [INFERRED]; license custom BSD-3-style https://raw.githubusercontent.com/NatLabRockies/EnergyPlus/develop/LICENSE.txt; last push 2026-10-24; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "cincinnatus",
+      "name": "Cincinnatus",
+      "domain": "cyber",
+      "recorded_status": "stub-osti-only",
+      "primary_url": "https://www.osti.gov/biblio/1562290",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": null,
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: breach/anomaly detection; flags changes in binary data that may indicate breaches or fraud without hand-built models [KNOWN: OSTI 1562290]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2019-02-20; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet)"
+    },
+    {
+      "id": "heartbeat-malware",
+      "name": "Heartbeat Malware Detection",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1574875",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/heartbeat-malware.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: malware detection; aims to catch polymorphic/stealthy malware that signature tools miss [KNOWN: OSTI 1574875]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2019-02-28; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://www.ornl.gov/publication/heartbeat-detecting-malware-periodic-power-signal-injection-and-monitoring (ORNL report page, 2024); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "cpad",
+      "name": "CPAD: Cyber-Physical Attack Detection",
+      "domain": "cyber",
+      "recorded_status": "stub-osti-only",
+      "primary_url": "https://www.osti.gov/biblio/1396084",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": null,
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: cyber-physical anomaly detection; infers physical relationships in sensor data to spot attacks [KNOWN: OSTI 1396084]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2016-06-02; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet)"
+    },
+    {
+      "id": "situ",
+      "name": "Situ",
+      "domain": "cyber",
+      "recorded_status": "draft-osti-only",
+      "primary_url": "https://www.osti.gov/biblio/1232450",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/situ.md",
+      "signals": "signals/situ.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: network situational awareness; scores events in real time with probabilistic models to find novel attacks and give analysts context [KNOWN: OSTI 1232450]; network-traffic input [INFERRED] [editor 2026-10-24: matched to fact-check batch 4 correction]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2014-06-16; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); [editor 2026-10-24] status draft-osti-only: brief exists but only OSTI sources, editorial decision"
+    },
+    {
+      "id": "hyperion",
+      "name": "Hyperion",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1231925",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/hyperion.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: software behavior analysis; computes what an executable does without running it [KNOWN: OSTI 1231925]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2014-09-01; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://www.ornl.gov/division/projects/hyperion (ORNL project page); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "fixs",
+      "name": "FIXS (Flexible Interface for X-in-the-loop Simulation)",
+      "domain": "buildings/transport",
+      "recorded_status": "active",
+      "primary_url": "https://www.osti.gov/doecode/biblio/110562",
+      "repository_url": "https://github.com/ORNL-Real-Sim/FIXS",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/fixs.md",
+      "signals": "signals/fixs.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: connected/automated vehicle testing; links traffic simulators with vehicle and hardware-in-the-loop tests (formerly Real-Sim) [KNOWN: DOE CODE 110562]; research org ORNL per OSTI records API [KNOWN]; license MIT (copyright UT-Battelle) https://raw.githubusercontent.com/ORNL-Real-Sim/FIXS/main/LICENSE; last push 2026-10-23; dedupe: batch-3 note said repo unreachable, it moved to ORNL-Real-Sim org; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "shift-exnihilo",
+      "name": "Shift / Exnihilo",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://www.ornl.gov/publication/shift-massively-parallel-monte-carlo-radiation-transport-package",
+      "repository_url": null,
+      "recorded_org_evidence": "Radiation Transport Group [KNOWN: Pandya et al. 2016 JCP doi:10.1016/j.jcp.2015.12.037]",
+      "brief": "projects/shift-exnihilo.md",
+      "signals": "signals/shift-exnihilo.md",
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software-connections.md",
+        "deep-dives/nuclear-reactor-software.md"
+      ],
+      "catalog_notes": "subdomain: Monte Carlo radiation transport; massively parallel (incl. GPU/Frontier) Monte Carlo code in the Exnihilo suite with the Denovo deterministic solver; distributed within SCALE [KNOWN: SCALE manual https://scale-manual.ornl.gov/6.3.3/CSAS-Shift.html; EPJ-N 2025]; public overview only, no repo; license [UNKNOWN] (SCALE distribution); related: scale, vera; accessed 2026-10-24 [discovery 2026-10-24]; [discovery 2026-10-24] home group: 'Radiation Transport Group, Reactor and Nuclear Systems Division' per author affiliation in Pandya et al. 2016 JCP, OSTI https://www.osti.gov/biblio/1237627 [KNOWN]; current group name [UNKNOWN] [editor 2026-10-24: status active is INFERRED per fact-check batch 4 sweep (OSTI 3013520)]"
+    },
+    {
+      "id": "roof-savings-calculator",
+      "name": "Roof Savings Calculator Suite",
+      "domain": "buildings/transport",
+      "recorded_status": "draft-osti-only",
+      "primary_url": "https://www.osti.gov/biblio/1238771",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/roof-savings-calculator.md",
+      "signals": "signals/roof-savings-calculator.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: building envelope energy; estimates energy savings from cool roofs and attic changes, web front end at roofcalc.com [KNOWN: OSTI 1238771]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2013-11-22; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); [discovery 2026-10-24] roofcalc.com returned HTTP 404 'Site Not Configured' on 2026-10-24 [KNOWN for that fetch]; 2019 ORNL-affiliated conference paper describes RSC as a web app first developed in 2010 https://www.osti.gov/biblio/1651267 [KNOWN]; [editor 2026-10-24] status draft-osti-only: brief exists but only OSTI sources, editorial decision"
+    },
+    {
+      "id": "autobem",
+      "name": "AutoBEM (Automatic Building Energy Modeling)",
+      "domain": "buildings/transport",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/code-115947",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/autobem.md",
+      "signals": "signals/autobem.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: urban-scale building energy modeling; auto-builds energy models for very large building stocks to quantify savings [KNOWN: OSTI code-115947]; research org ORNL per OSTI records API [KNOWN]; OSTI lists Closed Source; no public repo; license [UNKNOWN]; record date 2023-11-15; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); [discovery 2026-10-24] output dataset Model America v1 is public via Globus (free Globus Connect Personal needed): https://doi.ccs.ornl.gov/dataset/9e968129-1ca9-5a71-93fa-24f009132a3a DOI 10.13139/ORNLNCCS/1774134 [CORROBORATED with ESS-DIVE https://doi.org/10.15485/2283980]; software itself is still Closed Source per OSTI; [editor 2026-10-24] status unknown (was stub-osti-only): public dataset page exists (Constellation DOI 10.13139/ORNLNCCS/1774134, ESS-DIVE 10.15485/2283980), editorial decision"
+    },
+    {
+      "id": "wufi-ornl",
+      "name": "WUFI-ORNL/IBP",
+      "domain": "buildings/transport",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1231793",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/wufi-ornl.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: building envelope heat/moisture; PC program for transient heat and moisture transport in walls, with Fraunhofer IBP [KNOWN: OSTI 1231793]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2014-05-20; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://wufi.de/en/service/free-wufi-versions/ (partner product page, Fraunhofer IBP); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "landscan",
+      "name": "LandScan",
+      "domain": "climate/earth",
+      "recorded_status": "active",
+      "primary_url": "https://landscan.ornl.gov/",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/landscan.md",
+      "signals": "signals/landscan.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: geospatial; population distribution datasets at down to ~100 m resolution, with web viewer and downloads [KNOWN: landscan.ornl.gov]; dataset not software; OSTI dataset record LandScan Global 2026 https://www.osti.gov/biblio/17076155 (ORNL) [KNOWN]; no repo; license/terms [UNKNOWN] (not read); accessed 2026-10-24 [discovery 2026-10-24]; [discovery 2026-10-24] LandScan HD and USA are legacy (no longer updated; archived but downloadable via a details form, not submitted); succeeded by LandScan Global and Mosaic [KNOWN: landscan.ornl.gov app text]; USA added day-night population dynamics (2004, re-engineered 2016); per-dataset resolution [UNKNOWN]"
+    },
+    {
+      "id": "urban-net-toolkit",
+      "name": "URBAN-NET-TOOLKIT",
+      "domain": "grid/energy",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1467082",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/urban-net-toolkit.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: geospatial critical-infrastructure interdependency; [INFERRED: title and related OSTI infrastructure papers; description not read]; research org ORNL per OSTI records API [KNOWN]; no public repo found (OSTI record only); license [UNKNOWN]; record date 2017-08-31; accessed 2026-10-24 [discovery 2026-10-24]; [editor 2026-10-24] status stub-osti-only per editorial decision (no repo or public docs page yet); public page found 2026-10-24: https://www.ornl.gov/news/urban-net-infrastructure-modeling-tool-be-incorporated-eagle-i (ORNL news story, 2022); no public repo [KNOWN: discovery/stub-search-2026-10-24.md]; status moved from stub-osti-only under RULES 14 (editorial decision 2026-10-24)"
+    },
+    {
+      "id": "adamantine",
+      "name": "adamantine",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/adamantine-sim/adamantine",
+      "repository_url": "https://github.com/adamantine-sim/adamantine",
+      "recorded_org_evidence": "ORNL [KNOWN: OSTI 2472702 research org]",
+      "brief": "projects/adamantine.md",
+      "signals": "signals/adamantine.md",
+      "deep_dive_mentions": [
+        "deep-dives/additive-manufacturing.md"
+      ],
+      "catalog_notes": "subdomain: additive manufacturing heat transfer; simulates heat transfer (and thermomechanics) in AM processes [KNOWN: repo description]; OSTI software search for \"adamantine\": no hits; ORNL role not stated in README, but OSTI 2472702 journal article names ORNL as research org (see end); license Apache-2.0 WITH LLVM-exception https://raw.githubusercontent.com/adamantine-sim/adamantine/master/LICENSE; last push 2026-10-21; accessed 2026-10-24 [discovery 2026-10-24] ; OSTI 2472702 'Adamantine 1.0: A Thermomechanical Simulator for Additive Manufacturing' (journal article) lists ORNL as research org [KNOWN: https://www.osti.gov/biblio/2472702, discovery 2026-10-24]; [editor 2026-10-24] ORNL role now [KNOWN]: OSTI https://www.osti.gov/biblio/2472702 lists ORNL as research org (discovery find, editorial decision); earlier [UNKNOWN] above is superseded"
+    },
+    {
+      "id": "oncat",
+      "name": "ONCat (ORNL Neutron Catalog)",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://oncat.ornl.gov/",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN] (catalog for SNS and HFIR data per oncat.ornl.gov)",
+      "brief": "projects/oncat.md",
+      "signals": "signals/oncat.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: experiment data catalog; catalogs SNS/HFIR neutron data, supports search, download and DOIs, with an API and pyoncat Python client https://pypi.org/project/pyoncat/ [KNOWN]; API use needs credentials (not used); OSTI q=\"ONCat\": no hits; no public repo found; license [UNKNOWN]; status from live site; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "post-processing-agent",
+      "name": "Post Processing Agent",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/neutrons/post_processing_agent",
+      "repository_url": "https://github.com/neutrons/post_processing_agent",
+      "recorded_org_evidence": "[INFERRED: neutrons org; LICENSE copyright NScD]",
+      "brief": "projects/post-processing-agent.md",
+      "signals": "signals/post-processing-agent.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: automated reduction; runs automated data reduction and cataloging when SNS/HFIR runs finish [KNOWN: repo description, paraphrased]; license MIT (copyright NScD) https://raw.githubusercontent.com/neutrons/post_processing_agent/main/LICENSE.rst; OSTI: no hits; last push 2026-10-21; related: data-workflow, oncat; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "live-data-server",
+      "name": "Live Data Server",
+      "domain": "neutrons",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/neutrons/live_data_server",
+      "repository_url": "https://github.com/neutrons/live_data_server",
+      "recorded_org_evidence": "[INFERRED: neutrons org]",
+      "brief": "projects/live-data-server.md",
+      "signals": "signals/live-data-server.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: live experiment plots; serves data plots for neutron experiments as they run [KNOWN: repo description 'Data server for data plots']; license BSD-3-Clause (copyright ORNL) https://raw.githubusercontent.com/neutrons/live_data_server/next/LICENSE; OSTI: no hits; last push 2026-10-21; related: data-workflow; accessed 2026-10-24 [discovery 2026-10-24]"
+    },
+    {
+      "id": "zambeze",
+      "name": "Zambeze",
+      "domain": "HPC",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL/zambeze",
+      "repository_url": "https://github.com/ORNL/zambeze",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/zambeze.md",
+      "signals": "signals/zambeze.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: cross-facility workflow orchestration; MIT, LICENSE 'Copyright (c) 2022 Oak Ridge National Laboratory' [KNOWN: https://github.com/ORNL/zambeze/blob/main/LICENSE, discovery 2026-10-24]; distributed task orchestration across large-scale and edge systems [KNOWN: README]; repo created 2022-04-14, last push 2024-09-13, not archived, releases v0.0.1-devel 2023-01-25 and v0.1-Yambeshe 2023-03-06, 11 contributors with anonymous authors, 8 accounts (GitHub API, per reading-pass brief 2026-10-24) [editor 2026-10-24: was \"2 contributors\"] [KNOWN: GitHub API 2026-10-24]; status unknown because no push in ~2 years; PyPI install documented in README; OSTI 2483434 (PEARC 2024 cross-facility workflows, ORNL research org) [KNOWN: OSTI API]; paired with Flowcept under LDRD 11521 per OSTI 3025007 (map link 111) [KNOWN via map] [editor 2026-10-24: OSTI 2477506 does not name Zambeze (fact-check sweep 1); project tie rests on OSTI 2483434]"
+    },
+    {
+      "id": "matris",
+      "name": "MatRIS",
+      "domain": "HPC",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL/MatRIS",
+      "repository_url": "https://github.com/ORNL/MatRIS",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/matris.md",
+      "signals": "signals/matris.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: heterogeneous math library (BLAS+LAPACK on IRIS runtime); BSD-3-Clause, LICENSE 'Copyright (c) 2025, UT-Battelle, LLC' [KNOWN: https://github.com/ORNL/MatRIS/blob/main/LICENSE, discovery 2026-10-24]; README: math library using IRIS run-time [KNOWN]; repo created 2023-11-08, last push 2025-10-23 (borderline active), no GitHub releases, 8 contributors with anonymous authors, 5 accounts (recounted 2026-10-24) [KNOWN: GitHub API 2026-10-24]; OSTI 2441045 (SC23 workshop) and 2439841 (2024) name ORNL research org, sponsor SC [KNOWN: OSTI API]; builds on iris (map link 120) [KNOWN: README]; namesake HPC-AI-Team/MatRIS (PyTorch, 2026) is [UNRELATED] [editor 2026-10-24: status active to unknown by editorial decision (no push since 2025-10-23, no tagged release; CHANGELOG 1.0.0 is a stated version, not a release)]"
+    },
+    {
+      "id": "cabana",
+      "name": "Cabana",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ECP-copa/Cabana",
+      "repository_url": "https://github.com/ECP-copa/Cabana",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/cabana.md",
+      "signals": "signals/cabana.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: performance-portable particle simulation library (built on Kokkos); README: developed in ECP CoPA, 'a multi-institutional project with developers from ORNL, LANL, SNL, LLNL, PPNL, and ANL' [KNOWN: README, discovery 2026-10-24]; DOE CODE code-45702 lists ORNL as research org [KNOWN: OSTI API]; LICENSE BSD-3 style, 'Copyright 2018-2023 the Cabana authors' (GitHub API NOASSERTION); repo owned by ECP-copa, not ORNL; created 2018-09-24, last push 2026-09-16 [KNOWN: GitHub API]; rule 13 passes on research org and named contributing lab"
+    },
+    {
+      "id": "xacc",
+      "name": "XACC",
+      "domain": "quantum",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/eclipse-xacc/xacc",
+      "repository_url": "https://github.com/eclipse-xacc/xacc",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/xacc.md",
+      "signals": "signals/xacc.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: quantum-classical programming framework; DOE CODE code-5041 and OSTI 1339995 (2016-2017) list ORNL as research org [KNOWN: OSTI API, discovery 2026-10-24]; license EPL-1.0 or EDL-1.0 per NOTICE, GitHub API shows BSD-3-Clause (matches EDL half only) [KNOWN: NOTICE, per reading pass 2026-10-24]; README links API docs at ornl-qci.github.io and the ornl-qci/tnqvm repo [KNOWN: README]; repo now under eclipse-xacc org, created 2017-09-19, last push 2024-08-13, not archived [KNOWN: GitHub API]; status unknown because no push in ~2 years; related ORNL-QCI/xacc-vqe is a separate repo, not added [editor 2026-10-24: domain normalized from \"Quantum computing\"]"
+    },
+    {
+      "id": "exago",
+      "name": "ExaGO",
+      "domain": "grid/energy",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/ExaGO",
+      "repository_url": "https://github.com/ORNL/ExaGO",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/exago.md",
+      "signals": "signals/exago.md",
+      "deep_dive_mentions": [
+        "deep-dives/grid-tools.md"
+      ],
+      "catalog_notes": "subdomain: power-grid optimization (stochastic, security-constrained, multi-period) on HPC; LICENSE 'Copyright (c) 2026, UT-Battelle.' plus 'Copyright (c) 2020-2025, Battelle Memorial Institute' [KNOWN: https://github.com/ORNL/ExaGO LICENSE, discovery 2026-10-24]; old repo pnnl/ExaGO is archived and its README says development 'has moved to the new repository' at ORNL/ExaGO [KNOWN: pnnl/ExaGO README]; ORNL/ExaGO created 2026-01-08, last push 2026-10-21 [KNOWN: GitHub API]; DOE CODE code-176348 'ExaGO v2' (2026-03-02) lists ORNL research org [KNOWN: OSTI API]; README links a Frontier configuration doc [KNOWN]; depends on HiOp (LLNL, map only) [editor 2026-10-24: domain normalized from \"Energy / power grid\"]"
+    },
+    {
+      "id": "tnqvm",
+      "name": "TNQVM",
+      "domain": "quantum",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL-QCI/tnqvm",
+      "repository_url": "https://github.com/ORNL-QCI/tnqvm",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/tnqvm.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: tensor-network quantum circuit simulator, plugs into XACC as an Accelerator; CMakeLists header 'Copyright (c) 2019, UT-Battelle' [KNOWN: https://github.com/ORNL-QCI/tnqvm/blob/master/CMakeLists.txt, discovery 2026-10-24]; license: BSD-3 per README, LICENSE file not in repo (GitHub API license null) [KNOWN: README, repo listing]; OSTI 2583844 (2022 journal article, TNQVM at exascale) and 2251617 (PEPS plugin, 2023) list ORNL research org [KNOWN: OSTI API]; repo created 2016-11-08, last push 2025-03-05, not archived [KNOWN: GitHub API]; status unknown (~19 months since push); 11 contributors with anonymous authors; a non-public pipeline exists (.gitlab-ci.yml), out of scope; map link 162"
+    },
+    {
+      "id": "transform-library",
+      "name": "TRANSFORM (TRANsient Simulation Framework of Reconfigurable Models)",
+      "domain": "nuclear/fusion",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL-Modelica/TRANSFORM-Library",
+      "repository_url": "https://github.com/ORNL-Modelica/TRANSFORM-Library",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/transform-library.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: reactor and energy-system thermal hydraulics (Modelica library); README license section 'Copyright 2017, UT-Battelle, LLC' and Apache-2.0 [KNOWN: repo README, accessed 2026-10-28]; DOE CODE code-5745 (2017-09-26) and OSTI 1395459, research org ORNL, sponsor USDOE [KNOWN: OSTI API]; repo created 2017-07-26, last push 2026-10-14 [KNOWN: GitHub API]; sibling repos TRANSFORM-Training, TRANSFORM-Julia, ModelicaPy in the same org; molten-salt use per search summary only [INFERRED, not fetched]; open source; (discovery pass) accessed 2026-10-28; discovered_batch set to 12, the reactor-software round (editorial decision 2026-10-28)"
+    },
+    {
+      "id": "profugus",
+      "name": "Profugus",
+      "domain": "nuclear/fusion",
+      "recorded_status": "unknown",
+      "primary_url": "https://github.com/ORNL-CEES/Profugus",
+      "repository_url": "https://github.com/ORNL-CEES/Profugus",
+      "recorded_org_evidence": "[UNKNOWN] (CEES group per LICENSE copyright line)",
+      "brief": "projects/profugus.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: open radiation-transport mini-app; README says it holds the core kernels of ORNL's Exnihilo suite, which is export controlled, and that it targets performance study, not correctness [KNOWN: README.rst]; packages SPn and MC (Monte Carlo) [KNOWN: README.rst]; BSD-2-Clause; DOE CODE code-10329 (2018-01-18), research org ORNL [KNOWN: OSTI API]; last push 2018-08-14, not archived [KNOWN: GitHub API]; open counterpart of shift-exnihilo row; (discovery pass) accessed 2026-10-28; discovered_batch set to 12, the reactor-software round (editorial decision 2026-10-28)"
+    },
+    {
+      "id": "molten-salt-database",
+      "name": "Molten Salt Database (MSD, formerly MSTDB)",
+      "domain": "nuclear/fusion",
+      "recorded_status": "unknown",
+      "primary_url": "https://mstdb.ornl.gov/about/",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN] (TP arm managed by ORNL, TC arm by University of South Carolina per ORNL report Pub196202)",
+      "brief": "projects/molten-salt-database.md",
+      "signals": null,
+      "deep_dive_mentions": [
+        "deep-dives/nuclear-reactor-software-connections.md"
+      ],
+      "catalog_notes": "subdomain: molten salt thermochemical and thermophysical property data for MSR modeling; about page says MSD-TC and MSD-TP are available for public use, MSD-TC license-free but not for sale [KNOWN: mstdb.ornl.gov/about]; files hosted on code.ornl.gov behind an account plus membership request, so not opened by us [KNOWN: msd.ornl.gov/access-instructions]; TC files work with open-source Thermochimica [KNOWN: about page]; funded by DOE-NE MSR program, NEAMS and NEUP [KNOWN: about page]; 2026 ORNL news says new uranium-salt measurements were added [KNOWN: ornl.gov/news/new-measurements-advance-molten-salt-reactor-technologies]; (discovery pass) accessed 2026-10-28; discovered_batch set to 12, the reactor-software round (editorial decision 2026-10-28)"
+    },
+    {
+      "id": "adios2",
+      "name": "ADIOS2",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://adios2.readthedocs.io",
+      "repository_url": "https://github.com/ornladios/ADIOS2",
+      "recorded_org_evidence": "[KNOWN] CSMD software page (Wayback 2024-10-24); multi-institution",
+      "brief": "projects/adios2.md",
+      "signals": "signals/adios2.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/scientific I/O and streaming; Apache-2.0; Copyright.txt \"Copyright Oak Ridge National Laboratory and Contributors\", LICENSE \"Copyright 2019 UT-BATTELLE, LLC\"; collaborators ORNL, Kitware, LBNL, Georgia Tech, Rutgers (ReadMe); funded by ECP per docs; OSTI 1638101 ORNL research org; no DOE CODE record found; pinned e43363b; accessed 2026-11-11; two sweeps 2026-11-11"
+    },
+    {
+      "id": "celeritas",
+      "name": "Celeritas",
+      "domain": "HPC",
+      "recorded_status": "active",
+      "primary_url": "https://celeritas-project.github.io/celeritas/",
+      "repository_url": "https://github.com/celeritas-project/celeritas",
+      "recorded_org_evidence": "[KNOWN] OLCF named as research org on OSTI 2481196; multi-lab",
+      "brief": "projects/celeritas.md",
+      "signals": "signals/celeritas.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: HPC/GPU Monte Carlo particle transport for HEP detector simulation, offloads from Geant4; Apache-2.0 OR MIT; COPYRIGHT credits ORNL (UT-Battelle) among original 2020 developers with FNAL, ANL, LBNL; DOE CODE code-94866 (ORNL, ANL, FNAL; SciDAC); ORANGE geometry shared with Shift per OSTI 3376506; pinned e06590a; accessed 2026-11-11; two sweeps 2026-11-11"
+    },
+    {
+      "id": "dedfoam",
+      "name": "DEDFoam",
+      "domain": "materials",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/DEDFOAM",
+      "repository_url": "https://github.com/ORNL/DEDFOAM",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/dedfoam.md",
+      "signals": "signals/dedfoam.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: additive manufacturing/directed energy deposition; OpenFOAM (OpenCFD v2312/v2606) VOF solver based on compressibleInterFoam, Lagrangian or assumed powder, optional PETSc/Kokkos GPU solves and TensorFlow Lite catchment model; GPL-3.0-or-later, LICENSE \"Copyright (C) 2026 Oak Ridge National Laboratory\" (GitHub API NOASSERTION); DOE CODE code-186894 ORNL research org, sponsor EERE AMMTO; created 2026-07-28, v1.0 2026-07-30; optional AdditiveFOAM heat-source plugin, not derived from it; accessed 2026-11-11; two sweeps 2026-11-11"
+    },
+    {
+      "id": "chathpc",
+      "name": "ChatHPC",
+      "domain": "AI/data",
+      "recorded_status": "active",
+      "primary_url": "https://ornl.github.io/ChatHPC/",
+      "repository_url": "https://github.com/ORNL/ChatHPC-app",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/chathpc.md",
+      "signals": "signals/chathpc.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: AI assistants for HPC software; two repos, ChatHPC-app (library/CLI, LoRA fine-tuning of Code Llama 7B) and ChatHPC-ChatHPCforKokkos-SC25 (paper artifact), both linked from the project page; MIT, \"Copyright (c) 2025 UT-BATTELLE, LLC\"; SC25 paper OSTI 3682544 ORNL research org; no DOE CODE record found; separate from the 2024 NCCS chatHPC paper OSTI 2538074 (not merged); accessed 2026-11-11; two sweeps 2026-11-11"
+    },
+    {
+      "id": "matey",
+      "name": "MATEY",
+      "domain": "AI/data",
+      "recorded_status": "active",
+      "primary_url": "https://github.com/ORNL/MATEY",
+      "repository_url": "https://github.com/ORNL/MATEY",
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/matey.md",
+      "signals": "signals/matey.md",
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: AI/spatiotemporal foundation models for physical systems; transformer backbones with variance-based adaptive tokenization, FSDP/DDP and ring-attention sequence parallelism, Frontier scripts; MIT, \"Copyright (c) 2026, UT-Battelle, LLC\"; DOE CODE code-173753 ORNL research org; seeded from PolymathicAI multiple_physics_pretraining (README); v1.0.0 2026-01-26; accessed 2026-11-11; two sweeps 2026-11-11"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "R01",
+      "subject": "INTERSECT autonomous additive manufacturing",
+      "relation": "reported deployed across",
+      "object": "MDF, SNS and OLCF",
+      "evidence": "DIRECT",
+      "source_expression": "S05, S06",
+      "sources": {
+        "S05": {
+          "ledger_entry": "- S05 — [INTERSECT architecture highlight](https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future), dated 2025-10-09 on one rendering. Evidence: “released version 1.0”; “The AAM system is deployed”; “PI and affiliation: Christian Engelmann”. Maturity: reported architecture release and research deployment, plus an objective; not proof that qualification was achieved. Current deployment status and results not stated.",
+          "urls": [
+            "https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        },
+        "S06": {
+          "ledger_entry": "- S06 — [Autonomous additive manufacturing example](https://intersect-architecture.readthedocs.io/en/latest/examples/aam/), v1.0 documentation, undated, and its directly read [source document](https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst). Evidence from the source document: “residual stress at least two times closer to the desired distribution than current methods”; it lists “Stephen DeWitt (Principal Investigator)”. Maturity: target, not reported achievement; present configuration and appointment unknown. On the 2026-11-04 reread, the extracted rendered page omitted the target paragraph, so the source document supplies the quotation. Its three-facility deployment description repeats S05 and is not independent corroboration of that announcement.",
+          "urls": [
+            "https://intersect-architecture.readthedocs.io/en/latest/examples/aam/",
+            "https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Reported research deployment; precise machine, current operation and independent performance are unknown."
+    },
+    {
+      "id": "R02",
+      "subject": "INTERSECT additive workflow",
+      "relation": "targets",
+      "object": "residual-stress improvement",
+      "evidence": "DIRECT",
+      "source_expression": "S06",
+      "sources": {
+        "S06": {
+          "ledger_entry": "- S06 — [Autonomous additive manufacturing example](https://intersect-architecture.readthedocs.io/en/latest/examples/aam/), v1.0 documentation, undated, and its directly read [source document](https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst). Evidence from the source document: “residual stress at least two times closer to the desired distribution than current methods”; it lists “Stephen DeWitt (Principal Investigator)”. Maturity: target, not reported achievement; present configuration and appointment unknown. On the 2026-11-04 reread, the extracted rendered page omitted the target paragraph, so the source document supplies the quotation. Its three-facility deployment description repeats S05 and is not independent corroboration of that announcement.",
+          "urls": [
+            "https://intersect-architecture.readthedocs.io/en/latest/examples/aam/",
+            "https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Target, not a demonstrated result or completed qualification."
+    },
+    {
+      "id": "R03",
+      "subject": "OpeN-AM reported experiment",
+      "relation": "used",
+      "object": "VULCAN at SNS",
+      "evidence": "DIRECT",
+      "source_expression": "S11",
+      "sources": {
+        "S11": {
+          "ledger_entry": "- S11 — [Neutrons see stress in 3D-printed parts](https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing), 2023-10-16 as shown on a separately retrieved rendering on 2026-11-04. Evidence: “lead scientist of the experiment”; “designed and built at the Manufacturing Demonstration Facility”. Maturity: a reported steel experiment, not universal qualification; relationship to S05's specific workflow unknown.",
+          "urls": [
+            "https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Specific experiment on steel; it does not establish universal manufacturing performance."
+    },
+    {
+      "id": "R04",
+      "subject": "OpeN-AM platform",
+      "relation": "designed and built at",
+      "object": "MDF",
+      "evidence": "DIRECT",
+      "source_expression": "S11",
+      "sources": {
+        "S11": {
+          "ledger_entry": "- S11 — [Neutrons see stress in 3D-printed parts](https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing), 2023-10-16 as shown on a separately retrieved rendering on 2026-11-04. Evidence: “lead scientist of the experiment”; “designed and built at the Manufacturing Demonstration Facility”. Maturity: a reported steel experiment, not universal qualification; relationship to S05's specific workflow unknown.",
+          "urls": [
+            "https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Platform history, not proof the experiment was the INTERSECT deployment."
+    },
+    {
+      "id": "R05",
+      "subject": "OpeN-AM experiment",
+      "relation": "same implementation as",
+      "object": "INTERSECT additive workflow",
+      "evidence": "UNKNOWN",
+      "source_expression": "S05, S11",
+      "sources": {
+        "S05": {
+          "ledger_entry": "- S05 — [INTERSECT architecture highlight](https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future), dated 2025-10-09 on one rendering. Evidence: “released version 1.0”; “The AAM system is deployed”; “PI and affiliation: Christian Engelmann”. Maturity: reported architecture release and research deployment, plus an objective; not proof that qualification was achieved. Current deployment status and results not stated.",
+          "urls": [
+            "https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        },
+        "S11": {
+          "ledger_entry": "- S11 — [Neutrons see stress in 3D-printed parts](https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing), 2023-10-16 as shown on a separately retrieved rendering on 2026-11-04. Evidence: “lead scientist of the experiment”; “designed and built at the Manufacturing Demonstration Facility”. Maturity: a reported steel experiment, not universal qualification; relationship to S05's specific workflow unknown.",
+          "urls": [
+            "https://www.ornl.gov/news/neutrons-see-stress-3d-printed-parts-advancing-additive-manufacturing"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Similar facilities or scientific interests do not establish identity."
+    },
+    {
+      "id": "R06",
+      "subject": "Myna",
+      "relation": "initially developed for",
+      "object": "Peregrine database structure",
+      "evidence": "DIRECT",
+      "source_expression": "S12",
+      "sources": {
+        "S12": {
+          "ledger_entry": "- S12 — [Myna public repository](https://github.com/ORNL-MDF/Myna), undated README. Evidence: “initially developed for the database structure maintained by ORNL MDF's Peregrine tool”. Maturity: public working examples; README cautions ongoing development. No identified binding to S05's particular loop.",
+          "urls": [
+            "https://github.com/ORNL-MDF/Myna"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Its use in the INTERSECT additive workflow remains unknown."
+    },
+    {
+      "id": "R07",
+      "subject": "pyRS",
+      "relation": "supports automated data reduction for",
+      "object": "HIDRA",
+      "evidence": "DIRECT",
+      "source_expression": "F02, F10, F11",
+      "sources": {
+        "F02": {
+          "ledger_entry": "- F02 — [HIDRA instrument overview and user guidance](https://neutrons-user-facilities.ornl.gov/instruments/hidra/), undated ORNL facility page. Evidence: “optimized for strain measurement and determination of residual stress”; “Jeffrey Bunn – Lead Instrument Scientist”; “pyRS AutoReduction runs automatically on each completed sub-run”. Maturity: site-reported capability and workflow; current configuration unknown. The access-controlled services linked from this page were not opened.",
+          "urls": [
+            "https://neutrons-user-facilities.ornl.gov/instruments/hidra/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "F10": {
+          "ledger_entry": "- F10 — [pyRS 2.0 accepted manuscript](https://www.osti.gov/pages/servlets/purl/17315105), Fancher, Peterson and Bunn, 2026, DOI 10.1107/S1600576726007855. Evidence: “real-time reduction of live neutron event data”; section 2.2: “same set of calibration and reduction ... as part of the auto reduction workflow”. Maturity: paper describes HIDRA-specific capability and an illustrated live workflow; it does not name the post-processing-agent as its caller. OSTI's [bibliographic record](https://www.osti.gov/api/v1/records/17315105) was also read for publication metadata.",
+          "urls": [
+            "https://www.osti.gov/pages/servlets/purl/17315105",
+            "https://www.osti.gov/api/v1/records/17315105"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "F11": {
+          "ledger_entry": "- F11 — [pyRS 2021 paper record](https://www.ornl.gov/publications/pyrs-a-user-friendly-package-for-the-reduction-and-analysis-of-neutron-diffraction-data-measured-at-the-high-intensity-diffractometer-for-residual-stress-analysis/), 2021, DOI 10.1107/S1600576721010554. Evidence: “facilitates automated data reduction and peak-fitting analysis using an autoreduction protocol”. Maturity: described capability, not proof that every experiment uses it or identification of an agent.",
+          "urls": [
+            "https://www.ornl.gov/publications/pyrs-a-user-friendly-package-for-the-reduction-and-analysis-of-neutron-diffraction-data-measured-at-the-high-intensity-diffractometer-for-residual-stress-analysis/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        }
+      },
+      "limitation": "Documented capability and workflow, not every measurement or live status."
+    },
+    {
+      "id": "R08",
+      "subject": "specific post-processing-agent chain",
+      "relation": "invokes",
+      "object": "HIDRA pyRS workflow",
+      "evidence": "UNKNOWN",
+      "source_expression": "S14, F02, F10, F11",
+      "sources": {
+        "F02": {
+          "ledger_entry": "- F02 — [HIDRA instrument overview and user guidance](https://neutrons-user-facilities.ornl.gov/instruments/hidra/), undated ORNL facility page. Evidence: “optimized for strain measurement and determination of residual stress”; “Jeffrey Bunn – Lead Instrument Scientist”; “pyRS AutoReduction runs automatically on each completed sub-run”. Maturity: site-reported capability and workflow; current configuration unknown. The access-controlled services linked from this page were not opened.",
+          "urls": [
+            "https://neutrons-user-facilities.ornl.gov/instruments/hidra/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "F10": {
+          "ledger_entry": "- F10 — [pyRS 2.0 accepted manuscript](https://www.osti.gov/pages/servlets/purl/17315105), Fancher, Peterson and Bunn, 2026, DOI 10.1107/S1600576726007855. Evidence: “real-time reduction of live neutron event data”; section 2.2: “same set of calibration and reduction ... as part of the auto reduction workflow”. Maturity: paper describes HIDRA-specific capability and an illustrated live workflow; it does not name the post-processing-agent as its caller. OSTI's [bibliographic record](https://www.osti.gov/api/v1/records/17315105) was also read for publication metadata.",
+          "urls": [
+            "https://www.osti.gov/pages/servlets/purl/17315105",
+            "https://www.osti.gov/api/v1/records/17315105"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "F11": {
+          "ledger_entry": "- F11 — [pyRS 2021 paper record](https://www.ornl.gov/publications/pyrs-a-user-friendly-package-for-the-reduction-and-analysis-of-neutron-diffraction-data-measured-at-the-high-intensity-diffractometer-for-residual-stress-analysis/), 2021, DOI 10.1107/S1600576721010554. Evidence: “facilitates automated data reduction and peak-fitting analysis using an autoreduction protocol”. Maturity: described capability, not proof that every experiment uses it or identification of an agent.",
+          "urls": [
+            "https://www.ornl.gov/publications/pyrs-a-user-friendly-package-for-the-reduction-and-analysis-of-neutron-diffraction-data-measured-at-the-high-intensity-diffractometer-for-residual-stress-analysis/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "S14": {
+          "ledger_entry": "- S14 — [Post Processing Agent](https://github.com/neutrons/post_processing_agent), undated README. Evidence: “automated reduction and cataloging”. Maturity: published code and documentation, not evidence of every deployed path.",
+          "urls": [
+            "https://github.com/neutrons/post_processing_agent"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "The cited records do not establish this caller relationship."
+    },
+    {
+      "id": "R09",
+      "subject": "HIDRA and isotope production",
+      "relation": "share",
+      "object": "HFIR as an institutional facility context",
+      "evidence": "INFERRED",
+      "source_expression": "F02, F07, S18",
+      "sources": {
+        "F02": {
+          "ledger_entry": "- F02 — [HIDRA instrument overview and user guidance](https://neutrons-user-facilities.ornl.gov/instruments/hidra/), undated ORNL facility page. Evidence: “optimized for strain measurement and determination of residual stress”; “Jeffrey Bunn – Lead Instrument Scientist”; “pyRS AutoReduction runs automatically on each completed sub-run”. Maturity: site-reported capability and workflow; current configuration unknown. The access-controlled services linked from this page were not opened.",
+          "urls": [
+            "https://neutrons-user-facilities.ornl.gov/instruments/hidra/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "F07": {
+          "ledger_entry": "- F07 — [High Flux Isotope Reactor](https://neutrons-user-facilities.ornl.gov/facilities/hfir/), undated ORNL facility overview. Evidence: “HFIR is also used for medical, industrial, and research isotope production”; it also describes neutron scattering. Maturity: institutional capability description; live status not relied on.",
+          "urls": [
+            "https://neutrons-user-facilities.ornl.gov/facilities/hfir/"
+          ],
+          "ledger_section": "## Facilities and instruments batch",
+          "retrieval_context": "All F sources below were fetched and read on 2026-11-04. Publishers are ORNL or its OLCF, except F10 (authors' accepted manuscript hosted by DOE OSTI). Descriptions and personnel designations are source snapshots; no live systems, login-only tools, or services were accessed. F01 and F02 were separately re-fetched; F10's relevant section 2.2 was read directly."
+        },
+        "S18": {
+          "ledger_entry": "- S18 — [Radioisotope Development Laboratory factsheet](https://www.ornl.gov/wp-content/uploads/2026/09/26-G00245_Szallar_RDLFactsheet2026_rco.pdf), April 2026. Evidence: “targets are both fabricated in the RDL and returned to the RDL for processing”; “producing Ac-227 since 2017”. Maturity: stated operations as of factsheet, not a current operating guarantee. Re-read separately.",
+          "urls": [
+            "https://www.ornl.gov/wp-content/uploads/2026/09/26-G00245_Szallar_RDLFactsheet2026_rco.pdf"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Shared facility context does not establish a shared experiment, isotope campaign or data flow."
+    },
+    {
+      "id": "R10",
+      "subject": "Cyberwheel software",
+      "relation": "includes",
+      "object": "simulation and emulation capabilities",
+      "evidence": "DIRECT",
+      "source_expression": "S10",
+      "sources": {
+        "S10": {
+          "ledger_entry": "- S10 — [Cyberwheel software record](https://impact.ornl.gov/en/publications/cyberwheel/), 2024 software. Evidence: “includes both simulation and emulation capabilities”. Maturity: published software description; actual production use unknown. Does not establish owning directorate.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/cyberwheel/"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Software description, not a claim of production network deployment."
+    },
+    {
+      "id": "R11",
+      "subject": "Cyberwheel 2024 paper",
+      "relation": "reports",
+      "object": "initial simulated cyber-deception agent results",
+      "evidence": "DIRECT",
+      "source_expression": "S09",
+      "sources": {
+        "S09": {
+          "ledger_entry": "- S09 — [Cyberwheel conference-paper record](https://impact.ornl.gov/en/publications/towards-a-high-fidelity-training-environment-for-autonomous-cyber/), published 2024-08-13, DOI 10.1145/3675741.3675752. Evidence: “initial results training an autonomous agent to deploy cyber deception strategies in simulation”; authors Sean Oesch and Amul Chaulagain listed. Maturity: initial simulated results; authorship is not leadership or proof of a current role.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/towards-a-high-fidelity-training-environment-for-autonomous-cyber/"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Results concern simulation; real-network deployment is not established."
+    },
+    {
+      "id": "R12",
+      "subject": "2022 ferroelectric active-learning paper",
+      "relation": "same implementation as",
+      "object": "2023 INTERSECT microscope-twin demonstration",
+      "evidence": "UNKNOWN",
+      "source_expression": "A01, A04",
+      "sources": {
+        "A01": {
+          "ledger_entry": "- A01 — ORNL publication record, [Experimental discovery of structure–property relationships in ferroelectric materials via active learning](https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/), April 2022, DOI 10.1038/s42256-022-00460-0. Evidence: “automated piezoresponse force microscopy and spectroscopy experiments”; “discovery path and sampling points of on- and off-field hysteresis loops are largely different”. Maturity: peer-reviewed published experimental result and authors' interpretation for the studied material; generality and any link to A03 are unknown. The page's displayed publication metadata says April 2022 despite an extractor header date of 2025.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        },
+        "A04": {
+          "ledger_entry": "- A04 — ORNL, [INTERSECT demo introduces autonomous labs](https://www.ornl.gov/news/intersect-demo-introduces-autonomous-labs/), 2023-02-06. Evidence: “a digital twin of an electron microscope to a real computational server”; “2 to 3 days” versus “a couple of minutes” for some reactions, attributed to Ben Mintz. Maturity: event report and attributed comparison, not a controlled benchmark; present status and direct linkage to A03 are unknown. This is an alternative rendering of S17, not an independent second account.",
+          "urls": [
+            "https://www.ornl.gov/news/intersect-demo-introduces-autonomous-labs/"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        }
+      },
+      "limitation": "Similar feedback concepts are not evidence of shared software or instruments."
+    },
+    {
+      "id": "R13",
+      "subject": "AutoFlowS reactor development",
+      "relation": "supported by",
+      "object": "INTERSECT initiative",
+      "evidence": "DIRECT",
+      "source_expression": "A06",
+      "sources": {
+        "A06": {
+          "ledger_entry": "- A06 — ORNL publication record, [Autonomous continuous flow reactor synthesis for scalable atom-precision](https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr), March 2023, DOI 10.1016/j.cartre.2022.100234. Evidence: “preliminary results”; “work was performed at the Center for Nanophase Materials Sciences”; reactor development “supported by the INTERSECT Initiative”. Maturity: paper abstract reports preliminary results and a research framework; independently comparable yield, universal performance and present operation are unknown. Its publication metadata says March 2023, notwithstanding the extractor header's 2024 date.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        }
+      },
+      "limitation": "Research funding/development support; shared software with microscopy remains unknown."
+    },
+    {
+      "id": "R14",
+      "subject": "2022 ferroelectric paper and 2023 AutoFlowS paper",
+      "relation": "share",
+      "object": "author Rama K. Vasudevan",
+      "evidence": "DIRECT",
+      "source_expression": "A01, A06",
+      "sources": {
+        "A01": {
+          "ledger_entry": "- A01 — ORNL publication record, [Experimental discovery of structure–property relationships in ferroelectric materials via active learning](https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/), April 2022, DOI 10.1038/s42256-022-00460-0. Evidence: “automated piezoresponse force microscopy and spectroscopy experiments”; “discovery path and sampling points of on- and off-field hysteresis loops are largely different”. Maturity: peer-reviewed published experimental result and authors' interpretation for the studied material; generality and any link to A03 are unknown. The page's displayed publication metadata says April 2022 despite an extractor header date of 2025.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        },
+        "A06": {
+          "ledger_entry": "- A06 — ORNL publication record, [Autonomous continuous flow reactor synthesis for scalable atom-precision](https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr), March 2023, DOI 10.1016/j.cartre.2022.100234. Evidence: “preliminary results”; “work was performed at the Center for Nanophase Materials Sciences”; reactor development “supported by the INTERSECT Initiative”. Maturity: paper abstract reports preliminary results and a research framework; independently comparable yield, universal performance and present operation are unknown. Its publication metadata says March 2023, notwithstanding the extractor header's 2024 date.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        }
+      },
+      "limitation": "Shared authorship does not prove shared leadership, instrument or implementation."
+    },
+    {
+      "id": "R15",
+      "subject": "2022 ferroelectric paper and 2023 AutoFlowS paper",
+      "relation": "related as",
+      "object": "examples of adaptive scientific research",
+      "evidence": "INFERRED",
+      "source_expression": "A01, A06",
+      "sources": {
+        "A01": {
+          "ledger_entry": "- A01 — ORNL publication record, [Experimental discovery of structure–property relationships in ferroelectric materials via active learning](https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/), April 2022, DOI 10.1038/s42256-022-00460-0. Evidence: “automated piezoresponse force microscopy and spectroscopy experiments”; “discovery path and sampling points of on- and off-field hysteresis loops are largely different”. Maturity: peer-reviewed published experimental result and authors' interpretation for the studied material; generality and any link to A03 are unknown. The page's displayed publication metadata says April 2022 despite an extractor header date of 2025.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/experimental-discovery-of-structureproperty-relationships-in-ferr/"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        },
+        "A06": {
+          "ledger_entry": "- A06 — ORNL publication record, [Autonomous continuous flow reactor synthesis for scalable atom-precision](https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr), March 2023, DOI 10.1016/j.cartre.2022.100234. Evidence: “preliminary results”; “work was performed at the Center for Nanophase Materials Sciences”; reactor development “supported by the INTERSECT Initiative”. Maturity: paper abstract reports preliminary results and a research framework; independently comparable yield, universal performance and present operation are unknown. Its publication metadata says March 2023, notwithstanding the extractor header's 2024 date.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/autonomous-continuous-flow-reactor-synthesis-for-scalable-atom-pr"
+          ],
+          "ledger_section": "## Autonomous science batch",
+          "retrieval_context": "All A sources were directly fetched and read on 2026-11-04; A02 and A04 were separately fetched again to check the contributions and twin boundary. All are public ORNL research pages or DOE-hosted publications; no instrument or facility service was accessed. Publication dates below come from the pages' publication metadata, not the extractor's indexing dates."
+        }
+      },
+      "limitation": "Conceptual comparison only; specific operational linkage is unknown."
+    },
+    {
+      "id": "R16",
+      "subject": "Radioisotope Development Laboratory and HFIR",
+      "relation": "connected by",
+      "object": "the reported actinium-227 pathway",
+      "evidence": "DIRECT",
+      "source_expression": "S18",
+      "sources": {
+        "S18": {
+          "ledger_entry": "- S18 — [Radioisotope Development Laboratory factsheet](https://www.ornl.gov/wp-content/uploads/2026/09/26-G00245_Szallar_RDLFactsheet2026_rco.pdf), April 2026. Evidence: “targets are both fabricated in the RDL and returned to the RDL for processing”; “producing Ac-227 since 2017”. Maturity: stated operations as of factsheet, not a current operating guarantee. Re-read separately.",
+          "urls": [
+            "https://www.ornl.gov/wp-content/uploads/2026/09/26-G00245_Szallar_RDLFactsheet2026_rco.pdf"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Particular high-level pathway as described in the 2026 factsheet, not a facility layout or all campaigns."
+    },
+    {
+      "id": "R17",
+      "subject": "ORNL-supplied actinium-227",
+      "relation": "source of",
+      "object": "radium-223 in the historical medical supply account",
+      "evidence": "DIRECT",
+      "source_expression": "I01, I02",
+      "sources": {
+        "I01": {
+          "ledger_entry": "- I01 — ORNL, [Actinium-227 production announcement](https://www.ornl.gov/news/ornl-ramps-production-key-radioisotope-cancer-fighting-drug/), 2018-05-31. Evidence: “Ra-223, the active ingredient in Xofigo”; “Saed Mirzadeh, principal investigator for the project”. Maturity: historical production and project role; current contract and output unknown.",
+          "urls": [
+            "https://www.ornl.gov/news/ornl-ramps-production-key-radioisotope-cancer-fighting-drug/"
+          ],
+          "ledger_section": "## Isotope and hot-cell batch",
+          "retrieval_context": "All sources below were directly fetched and read 2026-11-04. Publication dates are stated when available; otherwise the source is a dated-as-fetched snapshot. The ORNL announcement, factsheet, validation abstract and 2026 stable-isotope report were separately fetched again. Public overviews only: no facility services or restricted material were accessed. S18 and F07 above are reused for the RDL and HFIR."
+        },
+        "I02": {
+          "ledger_entry": "- I02 — DOE Office of Science, [Improving Isotope Supply for a Cancer-Fighting Drug](https://science.osti.gov/Isotope-Research-Development-and-Production/Science-Highlights/2019/NP-2019-05-b), 2019 highlight. Evidence: “radium-223 produced via radioactive decay of the ORNL-supplied actinium-227”. Maturity: historical description; it cites I01 and is not independent experimental corroboration.",
+          "urls": [
+            "https://science.osti.gov/Isotope-Research-Development-and-Production/Science-Highlights/2019/NP-2019-05-b"
+          ],
+          "ledger_section": "## Isotope and hot-cell batch",
+          "retrieval_context": "All sources below were directly fetched and read 2026-11-04. Publication dates are stated when available; otherwise the source is a dated-as-fetched snapshot. The ORNL announcement, factsheet, validation abstract and 2026 stable-isotope report were separately fetched again. Public overviews only: no facility services or restricted material were accessed. S18 and F07 above are reused for the RDL and HFIR."
+        }
+      },
+      "limitation": "Distinct isotopes; no assertion about current supply or treatment suitability."
+    },
+    {
+      "id": "R18",
+      "subject": "californium-252 validation study",
+      "relation": "used",
+      "object": "Shift and ORIGEN among its calculation codes",
+      "evidence": "DIRECT",
+      "source_expression": "I04",
+      "sources": {
+        "I04": {
+          "ledger_entry": "- I04 — ORNL publication record, [Californium-252 production at HFIR I](https://www.ornl.gov/publications/californium-252-production-at-the-high-flux-isotope-reactor-%e2%88%92-i-validation-study-using-campaign-data/), February 2025, DOI 10.1016/j.anucene.2024.110960. Evidence: “HFIRCON, Shift, ORIGEN, and TCOMP codes”; “within 3 standard deviations of measurements”. Maturity: authors' abstract reports validation against selected campaign measurements, not universal accuracy or current deployment of codes.",
+          "urls": [
+            "https://www.ornl.gov/publications/californium-252-production-at-the-high-flux-isotope-reactor-%e2%88%92-i-validation-study-using-campaign-data/"
+          ],
+          "ledger_section": "## Isotope and hot-cell batch",
+          "retrieval_context": "All sources below were directly fetched and read 2026-11-04. Publication dates are stated when available; otherwise the source is a dated-as-fetched snapshot. The ORNL announcement, factsheet, validation abstract and 2026 stable-isotope report were separately fetched again. Public overviews only: no facility services or restricted material were accessed. S18 and F07 above are reused for the RDL and HFIR."
+        }
+      },
+      "limitation": "Use in that published study only, not in every production campaign."
+    },
+    {
+      "id": "R19",
+      "subject": "ORNL's Frontier",
+      "relation": "used for",
+      "object": "2024 award-winning quantum molecular dynamics calculation",
+      "evidence": "DIRECT",
+      "source_expression": "D03, D04",
+      "sources": {
+        "D03": {
+          "ledger_entry": "- D03 — ORNL, [Calculations on Frontier earns Gordon Bell Prize](https://www.ornl.gov/news/calculations-frontier-earns-gordon-bell-prize-ornl-major-presence-sc24), published 2024-12-10, updated 2026-02-24. Evidence: “University of Melbourne, with Dmytro Bykov from the Computing and Computational Sciences Directorate at ORNL”; “Gordon Bell Prize”. Maturity: historical award and credited affiliation in an ORNL news report; no current role or later result implied.",
+          "urls": [
+            "https://www.ornl.gov/news/calculations-frontier-earns-gordon-bell-prize-ornl-major-presence-sc24"
+          ],
+          "ledger_section": "## Directorate representative-research batch",
+          "retrieval_context": "The following public sources were fetched and read on 2026-11-04; D02 was separately checked against its [ORNL research-output record](https://impact.ornl.gov/en/publications/shattered-pellet-penetration-in-low-and-high-energy-plasmas-on-di/), and D03 against D04. Alternative ORNL descriptions of the same achievement are not independent experimental corroboration. No facility services or restricted resources were accessed."
+        },
+        "D04": {
+          "ledger_entry": "- D04 — OLCF, [Game-Changing Quantum Chemistry Calculations on Frontier Earn Gordon Bell Prize](https://www.olcf.ornl.gov/2024/11/22/game-changing-quantum-chemistry-calculations-on-frontier-earn-gordon-bell-prize/), 2024-11-22. Evidence: “more than 2 million correlated electrons”. Maturity: reported computational result and award; utility in a particular scientific application and independent replication are unknown.",
+          "urls": [
+            "https://www.olcf.ornl.gov/2024/11/22/game-changing-quantum-chemistry-calculations-on-frontier-earn-gordon-bell-prize/"
+          ],
+          "ledger_section": "## Directorate representative-research batch",
+          "retrieval_context": "The following public sources were fetched and read on 2026-11-04; D02 was separately checked against its [ORNL research-output record](https://impact.ornl.gov/en/publications/shattered-pellet-penetration-in-low-and-high-energy-plasmas-on-di/), and D03 against D04. Alternative ORNL descriptions of the same achievement are not independent experimental corroboration. No facility services or restricted resources were accessed."
+        }
+      },
+      "limitation": "A reported simulation by a multi-institution team, not a measured physical experiment."
+    },
+    {
+      "id": "R20",
+      "subject": "Stephen DeWitt",
+      "relation": "listed as principal investigator of",
+      "object": "specific INTERSECT additive-manufacturing project",
+      "evidence": "DIRECT",
+      "source_expression": "S06",
+      "sources": {
+        "S06": {
+          "ledger_entry": "- S06 — [Autonomous additive manufacturing example](https://intersect-architecture.readthedocs.io/en/latest/examples/aam/), v1.0 documentation, undated, and its directly read [source document](https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst). Evidence from the source document: “residual stress at least two times closer to the desired distribution than current methods”; it lists “Stephen DeWitt (Principal Investigator)”. Maturity: target, not reported achievement; present configuration and appointment unknown. On the 2026-11-04 reread, the extracted rendered page omitted the target paragraph, so the source document supplies the quotation. Its three-facility deployment description repeats S05 and is not independent corroboration of that announcement.",
+          "urls": [
+            "https://intersect-architecture.readthedocs.io/en/latest/examples/aam/",
+            "https://raw.githubusercontent.com/ORNL/intersect-architecture/main/examples/aam/index.rst"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Architecture-documentation designation as fetched, not proof of a present appointment or leadership of all INTERSECT."
+    },
+    {
+      "id": "R21",
+      "subject": "2024 model-protein paper",
+      "relation": "reports experiments performed at",
+      "object": "BASIS spectrometer at SNS",
+      "evidence": "DIRECT",
+      "source_expression": "N01",
+      "sources": {
+        "N01": {
+          "ledger_entry": "- N01 — ORNL research-output record, [Continuity of Short-Time Dynamics Crossing the Liquid-Liquid Phase Separation in Charge-Tuned Protein Solutions](https://impact.ornl.gov/en/publications/continuity-of-short-time-dynamics-crossing-the-liquid-liquid-phas/), 2024-12-05, DOI 10.1021/acs.jpclett.4c02533. Evidence: “experiments performed at the BASIS spectrometer”; authors “hypothesize that the short-time transient protein cluster size distribution is conserved”; Niina H. Jalarvo is listed among the authors. Maturity: peer-reviewed model-protein study with an explicitly labeled interpretation; clinical significance, broader generality and present instrument use unknown.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/continuity-of-short-time-dynamics-crossing-the-liquid-liquid-phas/"
+          ],
+          "ledger_section": "## Neutron instruments and dataset batch",
+          "retrieval_context": "Sources N01–N03 were fetched and read on 2026-11-04. These are public research and dataset-description pages; no login, data download, facility service, instrument control, or user application was accessed. Public descriptive metadata does not establish unrestricted dataset access or reuse terms."
+        }
+      },
+      "limitation": "One research study, not a clinical result or proof of current instrument use."
+    },
+    {
+      "id": "R22",
+      "subject": "NOMAD data-challenge record",
+      "relation": "describes measurements made at",
+      "object": "NOMAD at SNS",
+      "evidence": "DIRECT",
+      "source_expression": "N03",
+      "sources": {
+        "N03": {
+          "ledger_entry": "- N03 — ORNL Constellation, [NOMAD total scattering dataset for SMC data challenge](https://doi.ccs.ornl.gov/dataset/d71c396a-57a4-5cfb-9347-458e8f8caed3), released 2022-04-11, DOI [10.13139/ORNLNCCS/1861435](https://doi.org/10.13139/ORNLNCCS/1861435). Evidence: “measured using the Nanoscale-Ordered Materials Diffractometer (NOMAD) at the Spallation Neutron Source”; “stored in a hdf5 file following the NeXus standard”; the record distinguishes amorphous and crystalline silica entries. Maturity: public dataset metadata, not a direct inspection or validation of the data files; download accessibility, license, analysis quality and links to other workflows unknown. DOI resolved to the cited landing page on retrieval.",
+          "urls": [
+            "https://doi.ccs.ornl.gov/dataset/d71c396a-57a4-5cfb-9347-458e8f8caed3",
+            "https://doi.org/10.13139/ORNLNCCS/1861435"
+          ],
+          "ledger_section": "## Neutron instruments and dataset batch",
+          "retrieval_context": "Sources N01–N03 were fetched and read on 2026-11-04. These are public research and dataset-description pages; no login, data download, facility service, instrument control, or user application was accessed. Public descriptive metadata does not establish unrestricted dataset access or reuse terms."
+        }
+      },
+      "limitation": "Public metadata was read; data files, access and reuse terms were not checked."
+    },
+    {
+      "id": "R23",
+      "subject": "NOMAD data-challenge dataset",
+      "relation": "used by",
+      "object": "2024 BASIS model-protein paper",
+      "evidence": "UNKNOWN",
+      "source_expression": "N01, N03",
+      "sources": {
+        "N01": {
+          "ledger_entry": "- N01 — ORNL research-output record, [Continuity of Short-Time Dynamics Crossing the Liquid-Liquid Phase Separation in Charge-Tuned Protein Solutions](https://impact.ornl.gov/en/publications/continuity-of-short-time-dynamics-crossing-the-liquid-liquid-phas/), 2024-12-05, DOI 10.1021/acs.jpclett.4c02533. Evidence: “experiments performed at the BASIS spectrometer”; authors “hypothesize that the short-time transient protein cluster size distribution is conserved”; Niina H. Jalarvo is listed among the authors. Maturity: peer-reviewed model-protein study with an explicitly labeled interpretation; clinical significance, broader generality and present instrument use unknown.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/continuity-of-short-time-dynamics-crossing-the-liquid-liquid-phas/"
+          ],
+          "ledger_section": "## Neutron instruments and dataset batch",
+          "retrieval_context": "Sources N01–N03 were fetched and read on 2026-11-04. These are public research and dataset-description pages; no login, data download, facility service, instrument control, or user application was accessed. Public descriptive metadata does not establish unrestricted dataset access or reuse terms."
+        },
+        "N03": {
+          "ledger_entry": "- N03 — ORNL Constellation, [NOMAD total scattering dataset for SMC data challenge](https://doi.ccs.ornl.gov/dataset/d71c396a-57a4-5cfb-9347-458e8f8caed3), released 2022-04-11, DOI [10.13139/ORNLNCCS/1861435](https://doi.org/10.13139/ORNLNCCS/1861435). Evidence: “measured using the Nanoscale-Ordered Materials Diffractometer (NOMAD) at the Spallation Neutron Source”; “stored in a hdf5 file following the NeXus standard”; the record distinguishes amorphous and crystalline silica entries. Maturity: public dataset metadata, not a direct inspection or validation of the data files; download accessibility, license, analysis quality and links to other workflows unknown. DOI resolved to the cited landing page on retrieval.",
+          "urls": [
+            "https://doi.ccs.ornl.gov/dataset/d71c396a-57a4-5cfb-9347-458e8f8caed3",
+            "https://doi.org/10.13139/ORNLNCCS/1861435"
+          ],
+          "ledger_section": "## Neutron instruments and dataset batch",
+          "retrieval_context": "Sources N01–N03 were fetched and read on 2026-11-04. These are public research and dataset-description pages; no login, data download, facility service, instrument control, or user application was accessed. Public descriptive metadata does not establish unrestricted dataset access or reuse terms."
+        }
+      },
+      "limitation": "Shared facility and neutron methods do not establish a dataset or workflow dependency."
+    },
+    {
+      "id": "R24",
+      "subject": "Cyberwheel 2024 software output",
+      "relation": "listed on",
+      "object": "Cybersecurity Research directory page associated with National Security Sciences",
+      "evidence": "DIRECT",
+      "source_expression": "Z01",
+      "sources": {
+        "Z01": {
+          "ledger_entry": "- Z01 — ORNL, [Cybersecurity Research organizational research-output page](https://impact.ornl.gov/en/organisations/cybersecurity-research/), undated as-of-fetch directory. Evidence: page heading “Cybersecurity Research”; organizational association “National Security Sciences Directorate”; research output “Cyberwheel ... 2024 ... Non-textual form › Software”. Maturity: research-output directory association, not an explicit assignment of project ownership or current group membership; current administrative owner and operation remain unknown. The output matches the separately read 2024 Cyberwheel record S10 by title and credited authors.",
+          "urls": [
+            "https://impact.ornl.gov/en/organisations/cybersecurity-research/"
+          ],
+          "ledger_section": "## Cybersecurity organizational listing batch",
+          "retrieval_context": "Z01 and Z02 are public ORNL research-output pages fetched and read on 2026-11-04, and separately re-fetched for their organizational listings. Directory association is not equated with administrative ownership, present staffing or deployment. No live systems or malicious files were accessed."
+        }
+      },
+      "limitation": "Research-output listing as fetched, not proof of administrative ownership or live deployment."
+    },
+    {
+      "id": "R25",
+      "subject": "Cyberwheel software and AI ATAC 1 paper",
+      "relation": "share",
+      "object": "an ORNL Cybersecurity Research output listing",
+      "evidence": "DIRECT",
+      "source_expression": "Z01",
+      "sources": {
+        "Z01": {
+          "ledger_entry": "- Z01 — ORNL, [Cybersecurity Research organizational research-output page](https://impact.ornl.gov/en/organisations/cybersecurity-research/), undated as-of-fetch directory. Evidence: page heading “Cybersecurity Research”; organizational association “National Security Sciences Directorate”; research output “Cyberwheel ... 2024 ... Non-textual form › Software”. Maturity: research-output directory association, not an explicit assignment of project ownership or current group membership; current administrative owner and operation remain unknown. The output matches the separately read 2024 Cyberwheel record S10 by title and credited authors.",
+          "urls": [
+            "https://impact.ornl.gov/en/organisations/cybersecurity-research/"
+          ],
+          "ledger_section": "## Cybersecurity organizational listing batch",
+          "retrieval_context": "Z01 and Z02 are public ORNL research-output pages fetched and read on 2026-11-04, and separately re-fetched for their organizational listings. Directory association is not equated with administrative ownership, present staffing or deployment. No live systems or malicious files were accessed."
+        }
+      },
+      "limitation": "Listing together does not establish integration or a common deployment."
+    },
+    {
+      "id": "R26",
+      "subject": "2025 INTERSECT additive demonstration",
+      "relation": "used",
+      "object": "adamantine and Flowcept",
+      "evidence": "DIRECT",
+      "source_expression": "H02",
+      "sources": {
+        "H02": {
+          "ledger_entry": "- H02 — ACM, [AI Agents for Enabling Autonomous Experiments at ORNL's HPC and Manufacturing User Facilities](https://dl.acm.org/doi/10.1145/3731599.3767592), 2025-11-15, DOI 10.1145/3731599.3767592. Evidence: “the SCOPS service and 3D printer are represented by simulated components”; section 5.1 names “Flowcept provenance system” and “Adamantine” simulations. Maturity: peer-reviewed, preliminary cross-facility software demonstration, with simulated printer and sensing service; relation to the three-facility deployment and live physical printer control are unknown. The public full text, rather than the publisher's AI-generated summary, was read.",
+          "urls": [
+            "https://dl.acm.org/doi/10.1145/3731599.3767592"
+          ],
+          "ledger_section": "## INTERSECT additive research batch",
+          "retrieval_context": "H01–H03 were fetched and read on 2026-11-04. The 2025 full text and the 2023 OSTI abstract were separately re-fetched; H02 and H03 are the same paper and are not independent corroboration. No facility services, applications or systems were accessed."
+        }
+      },
+      "limitation": "The printer and sensing service were simulated; it does not establish use in every INTERSECT workflow."
+    },
+    {
+      "id": "R27",
+      "subject": "2025 simulated-printer demonstration",
+      "relation": "same implementation as",
+      "object": "three-facility additive deployment",
+      "evidence": "UNKNOWN",
+      "source_expression": "H02, S05",
+      "sources": {
+        "H02": {
+          "ledger_entry": "- H02 — ACM, [AI Agents for Enabling Autonomous Experiments at ORNL's HPC and Manufacturing User Facilities](https://dl.acm.org/doi/10.1145/3731599.3767592), 2025-11-15, DOI 10.1145/3731599.3767592. Evidence: “the SCOPS service and 3D printer are represented by simulated components”; section 5.1 names “Flowcept provenance system” and “Adamantine” simulations. Maturity: peer-reviewed, preliminary cross-facility software demonstration, with simulated printer and sensing service; relation to the three-facility deployment and live physical printer control are unknown. The public full text, rather than the publisher's AI-generated summary, was read.",
+          "urls": [
+            "https://dl.acm.org/doi/10.1145/3731599.3767592"
+          ],
+          "ledger_section": "## INTERSECT additive research batch",
+          "retrieval_context": "H01–H03 were fetched and read on 2026-11-04. The 2025 full text and the 2023 OSTI abstract were separately re-fetched; H02 and H03 are the same paper and are not independent corroboration. No facility services, applications or systems were accessed."
+        },
+        "S05": {
+          "ledger_entry": "- S05 — [INTERSECT architecture highlight](https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future), dated 2025-10-09 on one rendering. Evidence: “released version 1.0”; “The AAM system is deployed”; “PI and affiliation: Christian Engelmann”. Maturity: reported architecture release and research deployment, plus an objective; not proof that qualification was achieved. Current deployment status and results not stated.",
+          "urls": [
+            "https://www.ornl.gov/news/intersect-federated-architecture-scientific-laboratory-future"
+          ],
+          "ledger_section": "# Evidence ledger: public research guide, first batch",
+          "retrieval_context": "Sources in the initial S batch were fetched and read on 2026-11-04; publisher is ORNL except S06, S07 (INTERSECT architecture documentation) and S12–S14 (public project repositories). Later batches state their own fetch dates and publishers. [KNOWN] means the source directly states the narrow claim. Quotes are short; source dates are supplied when visible, otherwise unknown. Live pages can change. Independent rereads of S05–S08 and S18 were made in a separate fetch. See the guide for claim-level interpretation and unknowns.\nLink-check limitation: on 2026-11-04, direct HTTP GET checks from this machine returned 403 for S01, S02, S04, S05, S08, S11, S15–S17, S19 and S20, although their public page bodies were successfully retrieved and read through web extraction. The other nine primary ledger links returned HTTP 200. A 403 from this client is not proof that the page is gone; automated direct-origin link validation remains blocked for those URLs. No login or bypass was attempted."
+        }
+      },
+      "limitation": "Shared initiative or a common tool does not establish identity or a neutron-measurement link."
+    },
+    {
+      "id": "R28",
+      "subject": "SPRUCE environmental dataset version 2.0",
+      "relation": "supersedes and corrects",
+      "object": "previous versions of the same dataset",
+      "evidence": "DIRECT",
+      "source_expression": "E01",
+      "sources": {
+        "E01": {
+          "ledger_entry": "- E01 — SPRUCE official [whole-ecosystem warming environmental dataset record, version 2.0](https://mnspruce.ornl.gov/datasets/spruce-whole-ecosystems-warming-wew-environmental-data-marcell-experimental-forest), version released 2026-07-02, dataset DOI [10.3334/CDIAC/spruce.032](https://doi.org/10.3334/CDIAC/spruce.032). Evidence: “both operated until 2025-12-31”; “Version 2.0 supersedes and replaces previous versions”; “corrections to previously released values were made”. Maturity: public dataset metadata reports treatment end and revised environmental observations; the data files, methods validation, present site status and reuse requirements were not independently checked. The record identifies half-hourly averages from 2014–2025 and reports a DOI for the archive; the DOI target was not separately verified in this batch.",
+          "urls": [
+            "https://mnspruce.ornl.gov/datasets/spruce-whole-ecosystems-warming-wew-environmental-data-marcell-experimental-forest",
+            "https://doi.org/10.3334/CDIAC/spruce.032"
+          ],
+          "ledger_section": "## SPRUCE dataset and date correction batch",
+          "retrieval_context": "E01 and E02 were fetched and read on 2026-11-04; the ORNL paper abstract S04 and SPRUCE homepage S03 were separately re-fetched. Only public metadata, a publication and project pages were read. The ESS-DIVE portal returned a loading screen; no files, access permissions or license terms were checked."
+        }
+      },
+      "limitation": "Dataset metadata says the revision was released in 2026; files and reuse terms were not independently examined."
+    },
+    {
+      "id": "R29",
+      "subject": "ORNL Cyberwheel v2.0",
+      "relation": "supports emulation using",
+      "object": "Sandia-developed FIREWHEEL",
+      "evidence": "DIRECT",
+      "source_expression": "X01, X02",
+      "sources": {
+        "X01": {
+          "ledger_entry": "- X01 — ORNL, [Cyberwheel release notes](https://github.com/ORNL/cyberwheel/releases), v2.0, released 2025-08-11. Evidence: “Cyberwheel now supports emulation with FIREWHEEL, an emulation experimentation tool developed by researchers at Sandia National Laboratories.” The notes say simulator-trained agents can be evaluated using FIREWHEEL's virtual-machine management. Maturity: a version-specific public release claim; current compatibility and the outcome of any independent local test are unknown.",
+          "urls": [
+            "https://github.com/ORNL/cyberwheel/releases"
+          ],
+          "ledger_section": "## Cross-laboratory Cyberwheel and FIREWHEEL example",
+          "retrieval_context": "X01 and X02 were directly fetched and read on 2026-11-07. These are public software descriptions, not evidence of access to a laboratory system, a joint project team, or production use."
+        },
+        "X02": {
+          "ledger_entry": "- X02 — Sandia National Laboratories, [FIREWHEEL public repository](https://github.com/sandialabs/firewheel). Evidence: “FIREWHEEL was developed as part of Sandia National Laboratories ... Emulytics ... program”; its README describes repeatable experiments of distributed network systems. Maturity: a public software description fetched 2026-11-07, not independent proof that a particular Cyberwheel run used the latest FIREWHEEL version.",
+          "urls": [
+            "https://github.com/sandialabs/firewheel"
+          ],
+          "ledger_section": "## Cross-laboratory Cyberwheel and FIREWHEEL example",
+          "retrieval_context": "X01 and X02 were directly fetched and read on 2026-11-07. These are public software descriptions, not evidence of access to a laboratory system, a joint project team, or production use."
+        }
+      },
+      "limitation": "Public release and repository descriptions, fetched 2026-11-07; no joint team, live deployment, current compatibility or personal run is established."
+    },
+    {
+      "id": "R30",
+      "subject": "LLNL ExaCA",
+      "relation": "lists as an optional heat-transport model for coupled simulation",
+      "object": "ORNL Finch",
+      "evidence": "DIRECT",
+      "source_expression": "X03–X06, Y02",
+      "sources": {
+        "X03": {
+          "ledger_entry": "- X03 — LLNL, [ExaCA public repository](https://github.com/LLNL/ExaCA), undated README. Evidence: the dependency table lists Finch as “No” under required, with the detail “Heat transport model for coupled simulation”. The README also lists installation configurations that do and do not support Finch. Maturity: public software documentation as fetched, not evidence that a particular run used Finch or that the coupled model was experimentally validated.",
+          "urls": [
+            "https://github.com/LLNL/ExaCA"
+          ],
+          "ledger_section": "## Cross-laboratory manufacturing software example",
+          "retrieval_context": "X03–X06 were directly fetched and read on 2026-11-07. They add a source-checked explanation to the existing Finch and additive-manufacturing briefs, which already mention ExaCA; they are not a new claim of discovery."
+        },
+        "X04": {
+          "ledger_entry": "- X04 — ORNL MDF, [Finch public repository](https://github.com/ORNL-MDF/Finch), undated README. Evidence: “Finite difference heat transfer using Cabana for additive manufacturing”. Maturity: public code description; model accuracy in a particular experiment is not established here.",
+          "urls": [
+            "https://github.com/ORNL-MDF/Finch"
+          ],
+          "ledger_section": "## Cross-laboratory manufacturing software example",
+          "retrieval_context": "X03–X06 were directly fetched and read on 2026-11-07. They add a source-checked explanation to the existing Finch and additive-manufacturing briefs, which already mention ExaCA; they are not a new claim of discovery."
+        },
+        "X05": {
+          "ledger_entry": "- X05 — DOE CODE, [Finch software record](https://www.osti.gov/doecode/biblio/122647), release dated 2024-02-23. Evidence: research organization “Oak Ridge National Laboratory (ORNL)”. Maturity: software registration for the stated version, not proof of the current organization of every developer.",
+          "urls": [
+            "https://www.osti.gov/doecode/biblio/122647"
+          ],
+          "ledger_section": "## Cross-laboratory manufacturing software example",
+          "retrieval_context": "X03–X06 were directly fetched and read on 2026-11-07. They add a source-checked explanation to the existing Finch and additive-manufacturing briefs, which already mention ExaCA; they are not a new claim of discovery."
+        },
+        "X06": {
+          "ledger_entry": "- X06 — DOE CODE, [ExaCA software record](https://www.osti.gov/doecode/biblio/68592), release dated 2020-09-30. Evidence: “predict grain-scale microstructure development”; research organization “Lawrence Livermore National Laboratory (LLNL)”. The record explains that its temperature evolution can be driven by heat-transport simulation data or a simplified approximation. Maturity: software registration for version 1.0, not independent validation or proof that current releases have identical limitations.",
+          "urls": [
+            "https://www.osti.gov/doecode/biblio/68592"
+          ],
+          "ledger_section": "## Cross-laboratory manufacturing software example",
+          "retrieval_context": "X03–X06 were directly fetched and read on 2026-11-07. They add a source-checked explanation to the existing Finch and additive-manufacturing briefs, which already mention ExaCA; they are not a new claim of discovery."
+        },
+        "Y02": {
+          "ledger_entry": "- Y02 — Rolchigo et al., [ExaCA v2.0](https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/), *Computational Materials Science* 251 (2025), DOI 10.1016/j.commatsci.2025.113734. Evidence: “in-memory coupling ... with ... Finch” was “demonstrated in example studies”; funding statement identifies research at MDF and use of Oak Ridge and Argonne leadership computing resources. This corrects X03's earlier statement that no particular example had been established. The abstract does not show which specific calculation ran on which machine, or independent experimental validation. The [other ORNL rendering](https://www.ornl.gov/publications/exaca-v2-0-a-versatile-scalable-and-performance-portable-cellular-automata-application-for-additive-manufacturing-solidification/) describes the same paper, not an independent replication.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/",
+            "https://www.ornl.gov/publications/exaca-v2-0-a-versatile-scalable-and-performance-portable-cellular-automata-application-for-additive-manufacturing-solidification/"
+          ],
+          "ledger_section": "## Manufacturing research results batch",
+          "retrieval_context": "Y01–Y05 were fetched and read on 2026-11-07. The Myna manuscript's methods and results sections were read, not only its abstract; the ORNL rendering and the ExaCA project record were re-fetched as a second check. Different records of the same paper are not independent replication. Dataset files and reuse terms were not checked."
+        }
+      },
+      "limitation": "A 2025 paper reports coupled example studies; which computation ran at which facility, experimental validation and a connection to INTERSECT remain unknown. Existing briefs already record the coupling."
+    },
+    {
+      "id": "R31",
+      "subject": "2025 Myna study",
+      "relation": "used public MDF build data and simulations from",
+      "object": "3DThesis, AdditiveFOAM and ExaCA",
+      "evidence": "DIRECT",
+      "source_expression": "Y01",
+      "sources": {
+        "Y01": {
+          "ledger_entry": "- Y01 — Knapp et al., [Myna manuscript](https://www.osti.gov/pages/servlets/purl/3002570), *Computational Materials Science* 258 (2025), DOI 10.1016/j.commatsci.2025.114094. Abstract: “54 semi-analytical 3DThesis melt pool simulations, 78 numerical AdditiveFOAM melt pool simulations, and 3 ExaCA microstructure simulations.” Sections 2.2, 3.3–3.4 describe manual region selection, simulations and electron backscatter diffraction measurements of three part regions; section 3.3 calls the first roughly 0.25 mm of simulated grain competition “unphysical” due to initialization. The abstract reports a simulation/measurement mismatch and offers a two-phase model as a possibility, not a proven fix. Seven named authors and two ORNL division affiliations appear on the manuscript; authorship does not establish project leadership or current roles. [ORNL paper record](https://www.ornl.gov/publication/myna-connecting-powder-bed-fusion-build-data-simulation-tools-digital-twin-applications) re-fetched; it is the same study.",
+          "urls": [
+            "https://www.osti.gov/pages/servlets/purl/3002570",
+            "https://www.ornl.gov/publication/myna-connecting-powder-bed-fusion-build-data-simulation-tools-digital-twin-applications"
+          ],
+          "ledger_section": "## Manufacturing research results batch",
+          "retrieval_context": "Y01–Y05 were fetched and read on 2026-11-07. The Myna manuscript's methods and results sections were read, not only its abstract; the ORNL rendering and the ExaCA project record were re-fetched as a second check. Different records of the same paper are not independent replication. Dataset files and reuse terms were not checked."
+        }
+      },
+      "limitation": "54, 78 and 3 simulations respectively; compared with measurements, with a reported mismatch. Finch and adamantine are not established components of that experiment."
+    },
+    {
+      "id": "R32",
+      "subject": "ExaCA v2.0 study",
+      "relation": "reports using resources of",
+      "object": "Oak Ridge and Argonne leadership computing facilities",
+      "evidence": "DIRECT",
+      "source_expression": "Y02",
+      "sources": {
+        "Y02": {
+          "ledger_entry": "- Y02 — Rolchigo et al., [ExaCA v2.0](https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/), *Computational Materials Science* 251 (2025), DOI 10.1016/j.commatsci.2025.113734. Evidence: “in-memory coupling ... with ... Finch” was “demonstrated in example studies”; funding statement identifies research at MDF and use of Oak Ridge and Argonne leadership computing resources. This corrects X03's earlier statement that no particular example had been established. The abstract does not show which specific calculation ran on which machine, or independent experimental validation. The [other ORNL rendering](https://www.ornl.gov/publications/exaca-v2-0-a-versatile-scalable-and-performance-portable-cellular-automata-application-for-additive-manufacturing-solidification/) describes the same paper, not an independent replication.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/exaca-v20-a-versatile-scalable-and-performance-portable-cellular-/",
+            "https://www.ornl.gov/publications/exaca-v2-0-a-versatile-scalable-and-performance-portable-cellular-automata-application-for-additive-manufacturing-solidification/"
+          ],
+          "ledger_section": "## Manufacturing research results batch",
+          "retrieval_context": "Y01–Y05 were fetched and read on 2026-11-07. The Myna manuscript's methods and results sections were read, not only its abstract; the ORNL rendering and the ExaCA project record were re-fetched as a second check. Different records of the same paper are not independent replication. Dataset files and reuse terms were not checked."
+        }
+      },
+      "limitation": "The funding statement credits both resources; allocation of individual simulations to machines is unknown. LLNL is the ExaCA repository's institution, not evidence LLNL ran this particular study."
+    },
+    {
+      "id": "R33",
+      "subject": "Peregrine monitoring software",
+      "relation": "was developed under",
+      "object": "Transformational Challenge Reactor program",
+      "evidence": "DIRECT",
+      "source_expression": "Y04",
+      "sources": {
+        "Y04": {
+          "ledger_entry": "- Y04 — Hyer et al., [monitoring techniques report](https://impact.ornl.gov/en/publications/evaluation-of-in-situ-am-process-monitoring-techniques-and-potent-3/), 2024, DOI 10.2172/2428052. Evidence: “Under the TCR program, the Peregrine software was developed”. This supports a historical TCR–Peregrine connection, not an assertion that Myna was developed under TCR or that qualification was achieved. The authors say further data are needed for full microstructure prediction.",
+          "urls": [
+            "https://impact.ornl.gov/en/publications/evaluation-of-in-situ-am-process-monitoring-techniques-and-potent-3/"
+          ],
+          "ledger_section": "## Manufacturing research results batch",
+          "retrieval_context": "Y01–Y05 were fetched and read on 2026-11-07. The Myna manuscript's methods and results sections were read, not only its abstract; the ORNL rendering and the ExaCA project record were re-fetched as a second check. Different records of the same paper are not independent replication. Dataset files and reuse terms were not checked."
+        }
+      },
+      "limitation": "2024 report's historical account; does not establish that Myna was developed under TCR or a reactor was completed."
+    }
+  ],
+  "domains": {
+    "AI/data": [
+      "hydragnn",
+      "flowcept",
+      "datafed",
+      "vivaldi",
+      "mind-the-gap",
+      "chathpc",
+      "matey"
+    ],
+    "HPC": [
+      "hecbench",
+      "resolve",
+      "tasmanian",
+      "iris",
+      "olcf-user-docs",
+      "olcf-test-harness",
+      "zambeze",
+      "matris",
+      "cabana",
+      "adios2",
+      "celeritas"
+    ],
+    "buildings/transport": [
+      "gauntlet",
+      "real-twin",
+      "stor4build",
+      "energyplus",
+      "fixs",
+      "roof-savings-calculator",
+      "autobem",
+      "wufi-ornl"
+    ],
+    "climate/earth": [
+      "gedi-tutorials",
+      "daymet",
+      "tesvis-modis",
+      "e3sm-elm",
+      "landscan"
+    ],
+    "cyber": [
+      "cyberwheel",
+      "tasqc",
+      "akatosh",
+      "can-d",
+      "cincinnatus",
+      "heartbeat-malware",
+      "cpad",
+      "situ",
+      "hyperion"
+    ],
+    "grid/energy": [
+      "gridkit",
+      "hydrofleetintel",
+      "urban-net-toolkit",
+      "exago"
+    ],
+    "materials": [
+      "additivefoam",
+      "3dthesis",
+      "myna",
+      "finch",
+      "adamantine",
+      "dedfoam"
+    ],
+    "neutrons": [
+      "mantid",
+      "snapred",
+      "data-workflow",
+      "pyrs",
+      "django-remote-submission",
+      "oncat",
+      "post-processing-agent",
+      "live-data-server"
+    ],
+    "nuclear/fusion": [
+      "thermochimica",
+      "xolotl",
+      "far3d",
+      "korc",
+      "gitr",
+      "scale",
+      "olm",
+      "vera",
+      "shift-exnihilo",
+      "transform-library",
+      "profugus",
+      "molten-salt-database"
+    ],
+    "quantum": [
+      "exatn",
+      "qiree",
+      "xacc",
+      "tnqvm"
+    ]
+  }
+}
