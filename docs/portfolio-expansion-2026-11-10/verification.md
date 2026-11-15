@@ -122,3 +122,48 @@ Passed checks: structural audit (74 catalog entries, 72 briefs, 45 signals); map
 The index is lexical retrieval, not a semantic answer engine. Name/link associations only aid navigation. Registry source promotions, historical third-party job leads and existing dead links keep their inherited limitations. The unfinished discovery collectors were neither validated nor adopted by this outcome. No push, publication, deployment, outreach or upstream issue/PR was performed.
 
 Next bounded investigation: at pinned post-processing-agent code, determine whether a short-lived child or polling interval can exceed the intended process-tree memory/time budget. Search the process-tree card first; inspect the dependency/configuration contract; choose a small synthetic local test only if feasible, with prediction, bounded child resources and raw results. Code inspection remains a valid outcome if execution needs unavailable services. Separately, harvesting claimed external Cyberwheel artifacts requires permission for inspection outside this named repo, then evidence verification before import. Do not repeat its setup based solely on the old assistant report.
+
+
+## Round plan, 2026-11-15: off-catalog discovery, cybersecurity and software engineering
+
+- Question to resolve: what public ORNL cybersecurity and software-engineering projects exist outside the GitHub software catalog and the two 2026-11-11 snapshots, and which have enough public material to study?
+- Existing evidence searched and read: catalog, lanes, both snapshots, the library, and the OR-SAGE site (seeded in `discovery/leads.csv` as the model case: a standalone ornl.gov site absent from the catalog and snapshots).
+- Selection rationale: the owner wants discovery across the whole institution, not only GitHub. Cyber work is mostly report-only, so off-catalog surfaces are where it lives.
+- Depth: artifact study (candidate discovery only). No code is run this round.
+- Work bound: two scouts with about 15 new candidates each, then one referee on the top leads. Stop after the leads merge and a ranked shortlist.
+- Ownership:
+  - Coordinator (Claude, Opus): `discovery/leads.csv`, `verification/not-found.md`, this handoff.
+  - Scout A: `discovery/scouting/2026-11-15-ornl-web.md`, covering ornl.gov, standalone sites, tech transfer and sponsors.
+  - Scout B: `discovery/scouting/2026-11-15-records-papers.md`, covering OSTI, DOE CODE, papers and artifact repositories.
+  - Referee: an appended paragraph in `verification/log.md`.
+- Expected checks: audit, library build/check, both test suites, and `search --kind lead` for merged leads.
+
+## Result, 2026-11-15: off-catalog discovery round 1
+
+**State: verified complete for the declared bound.** This is not a census of ORNL's off-catalog work.
+
+- **Setup (commit 07137bb).**
+  - Claude Code coordinator skill `/ornl-research` with discover, deep-dive, rebuild and triage modes.
+  - Agents `ornl-scout`, `ornl-reader`, `ornl-experimenter` and `ornl-referee` in `.claude/agents/`.
+  - `discovery/leads.csv`, validated by the audit and the library (`search --kind lead`). Scout reports in `discovery/scouting/` are indexed.
+  - The audit link check now skips `.cache/`.
+  - In this session the helpers ran as general-purpose agents that followed the role files. A fresh session should load them natively, but that hasn't been confirmed yet.
+- **Discovery.**
+  - Scout A (ornl.gov, standalone sites, tech transfer, sponsors) and scout B (OSTI, DOE CODE, papers, artifacts) found 33 new candidates.
+  - All 33 were deduped against the catalog, leads and both snapshots.
+  - Merged result: 39 leads in all, 32 of them candidates (11 deep, 20 lead, 1 pool).
+  - 4 rejected: one duplicate, one repo that moved to a non-ORNL owner, one with no ORNL attribution, one personal project.
+  - 2 out of scope: product- and facility-specific vulnerability assessments, logged and not opened.
+  - 24 empty searches appended to `verification/not-found.md`.
+- **Referee** (fresh agent, ten top leads): 3 verified as written, 7 corrected, no tier changes. The verdict table is in `verification/log.md`, and the corrections are applied to the leads.
+  - ai-atac-cyber-range and cyber-ops-research-range are the same ICCWS 2021 paper, now merged.
+  - UnifyFS meets RULES 13: its LICENSE names UT-Battelle as a copyright holder, and its OSTI record names ORNL. It's eligible for promotion once a brief and lanes row are written.
+- **Flags.**
+  - AMIGO generates evasive malware. Study only its published description; never reconstruct the generator.
+  - Ranges and testbeds (AI ATAC range, SI-GRID) are paper-only studies.
+  - Two DOE CODE candidates host code on code.ornl.gov, which hasn't been opened yet.
+- **Collector gap.** DOE CODE lists 563 records with ORNL as site owner. 111 of them are missing from the 2026-11-11 snapshot, because its all-fields query selects a different set. `scripts/discover_doecode.py` should take the union of both queries.
+- **Checks.** Audit PASS, map check valid, registry valid, 12 library tests and 3 atlas tests pass, and library build/check is current. Lead search returns `road-can-dataset` for "CAN intrusion dataset". No code was run, and nothing was pushed.
+- **Next bounded investigation (deep-dive).** On the public ROAD dataset with the ORNL companion code `can-time-ids-benchmark` (DOE CODE 69319, GPL-3.0): does a time-based CAN IDS baseline detect ROAD's masquerade attacks, and where does it fail? This is cyber-first with public code and data, and it connects to catalog `can-d`. Alternatives:
+  - stripped-bof-llm, rebuilt from its paper on Ghidra.
+  - The post-processing-agent process-tree question from the earlier handoff.

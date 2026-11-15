@@ -207,3 +207,27 @@
 ## 2026-11-11: bounded historical-link check during library setup
 
 The independent referee followed the previously documented Cyberwheel emulator README URL, `https://github.com/ORNL/cyberwheel/blob/main/emulator/README.md`, and received HTTP 404. This establishes only that the exact historical path was unavailable in this check. It does not establish that emulation code is absent. The public repository and v2.0 release page were available. No replacement paths on ORNL hosts were guessed or probed. The new Cyberwheel card relies on the release/repository and report instead; prior reconstruction remains historical.
+| 2026-11-15 | ORNL SBOM / software supply-chain tool | `site:ornl.gov software bill of materials OR "supply chain" cybersecurity tool` | web search | No ornl.gov results; hits were LLNL EyeON, INL SBOM survey, DHS Protobom |
+| 2026-11-15 | ORNL open-source cyber tool on GitHub (off-catalog) | `site:ornl.gov news cybersecurity "open source" tool released github ORNL researchers` | web search | Only licensed or already-cataloged tools surfaced; open-source mentions were NREL and Sandia |
+| 2026-11-15 | ORNL ICS/PLC firmware binary-analysis tool | `"Oak Ridge National Laboratory" firmware binary analysis tool industrial control systems` | web search | Only AVUD (smart meters) surfaced; ICSREF is NYU, not ORNL |
+| 2026-11-15 | ORNL post-quantum cryptography software | `"Oak Ridge" ORNL quantum key distribution grid OR "post-quantum" OR "quantum network" software tool news 2025` | web search | QKD testbed work only (atlas already covers); no PQC software |
+| 2026-11-15 | ORNL software assurance / formal verification tool | `"Oak Ridge National Laboratory" software assurance static analysis tool formal verification news` | web search | Only AVUD and an SQA assessment report; Sandia-led formal-methods news |
+| 2026-11-15 | ORNL HPC CI / research software engineering tooling | `site:ornl.gov research software engineering continuous integration HPC tool OLCF` | web search | OLCF DevOps CI/D (2014) and ECP CI roles only; OLCF Test Harness already in catalog |
+| 2026-11-15 | Lantern release or docs | `ORNL CAISER Lantern tool AI security` | web search, CAISER page | Named only; no public release page |
+| 2026-11-15 | CANShield code | arXiv 2205.01306 page; ORNL research highlight | arXiv, ornl.gov | No repository linked on either page |
+| 2026-11-15 | Cybersecurity Research factsheet | https://www.ornl.gov/file/cybersecurity-research-factsheet/display (search result) | ornl.gov | HTTP 404 |
+| 2026-11-15 | Systems Vulnerability factsheet | https://www.ornl.gov/file/systems-vulnerability/display (search result) | ornl.gov | HTTP 404 |
+| 2026-11-15 | CRID division fact sheet (WestWorld) | ornl.gov/sites/default/files/2023-03/2022-G00224_NSSD CRID Fact Sheet PDF (search result) | ornl.gov | HTTP 404; WestWorld unverified |
+| 2026-11-15 | SDS group highlights | https://ornl.gov/group/sds/highlights (search result) | ornl.gov | HTTP 404 |
+| 2026-11-15 | CCSD projects listing | https://www.ornl.gov/directorate/ccsd/projects?page=1 (search result) | ornl.gov | HTTP 404 |
+| 2026-11-15 | UnifyFS CSMD project page | https://csmd.ornl.gov/node/376 (search result) | ornl.gov | DNS lookup failed; not retried, no alternative host tried |
+| 2026-11-15 | ORNL fact-sheet index | https://www.ornl.gov/content/fact-sheets (search result) | ornl.gov | Served news headlines, not a fact-sheet list |
+| 2026-11-15 | Software Development Environment and Testing unit | https://www.ornl.gov/directorate/software-development-environment-and-testing (search result) | ornl.gov | Rendered the ORNL homepage; no unit content |
+| 2026-11-15 | polyconv | `polyconv`; `polyglot files` | GitHub repository search | No ORNL or paper-linked repo. Dataset and code for OSTI 2573646 not found |
+| 2026-11-15 | stripped-bof-llm | `"stack buffer overflow" ghidra llm` | GitHub repository search | No result; OSTI 17427531 abstract names no repository |
+| 2026-11-15 | ot-llm-pentest | `"operational technology" pentest llm` | GitHub repository search | No result; OSTI 3367033 and 3827147 name no repository |
+| 2026-11-15 | (topic) anomaly detection | `site_ownership_code=ORNL&all_fields=anomaly detection` | DOE CODE search API | 0 hits. The all_fields search appears strict on multi-word terms, so this isn't evidence of absence |
+| 2026-11-15 | (topic) SCADA | `site_ownership_code=ORNL&all_fields=SCADA` | DOE CODE search API | 0 hits |
+| 2026-11-15 | (topic) fuzzing | `site_ownership_code=ORNL&all_fields=fuzzing` | DOE CODE search API | 0 hits |
+| 2026-11-15 | (topic) ORNL cs.CR papers | `all:"Oak Ridge" AND cat:cs.CR` | arXiv export API | Only 5 hits; arXiv doesn't index affiliation, so this surface underreports ORNL work |
+| 2026-11-15 | gopcap | repo metadata for ornl-sava/gopcap (DOE CODE 10430) | GitHub API | Repo now redirects to a non-ORNL owner (bytzster/gopcap); rejected as a candidate |
