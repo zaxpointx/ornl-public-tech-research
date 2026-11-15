@@ -202,3 +202,8 @@
 | 2026-11-11 | celeritas | conda-forge package; Spack reverse dependencies | api.anaconda.org; spack-packages builtin grep | none (discovery pass) |
 | 2026-11-11 | celeritas | "celeritas" in Profugus and HeCBench | GitHub code search | 0 hits; no public Profugus link (discovery pass) |
 | 2026-11-11 | celeritas | "good first issue" label | GitHub labels API | no such label (discovery pass) |
+
+
+## 2026-11-11: bounded historical-link check during library setup
+
+The independent referee followed the previously documented Cyberwheel emulator README URL, `https://github.com/ORNL/cyberwheel/blob/main/emulator/README.md`, and received HTTP 404. This establishes only that the exact historical path was unavailable in this check. It does not establish that emulation code is absent. The public repository and v2.0 release page were available. No replacement paths on ORNL hosts were guessed or probed. The new Cyberwheel card relies on the release/repository and report instead; prior reconstruction remains historical.

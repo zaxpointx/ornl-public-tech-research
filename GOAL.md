@@ -4,6 +4,8 @@ Set by Cayden Wilson, 2026-10-24. Every batch, brief, signals file and deep dive
 
 ## Why this exists
 
+Owner clarification, 2026-11-11: exploration and reusable engineering are the primary outcomes. Prefer fifty exceptional projects to hundreds of summaries; fifty is illustrative, not a quota. Discover what Cayden could build, reverse engineer from public artifacts, or learn without requiring a predefined personal project. Search broadly within cybersecurity, software engineering, AI/agents and Linux/infrastructure, then spend deep effort on unusual capabilities and transferable mechanisms. The investigator chooses artifact study, code reconstruction or experiment according to available evidence. Institutional mapping and portfolio value remain supporting outcomes. The readable guide and agent-searchable library share maintained records; see [the library](docs/research-library.md).
+
 1. **Learning.** One GitHub repository where you can learn from real national-lab projects. It pulls together what is scattered across ornl.gov, GitHub, OSTI and DOE CODE records, technical reports and papers, and explains it in plain English. Nothing here is private. The value is in reconstructing scattered public pieces into one clear picture nobody else has put together.
 2. **How ORNL works from the outside.** Lessons on how the lab actually funds, staffs, builds, releases, maintains and retires its software, drawn from the public traces projects leave. These are things people usually only learn by working there.
 3. **Ask-anything readiness.** The repo should be organized well enough that a reader, or an AI assistant reading it, can answer almost any question about a project from the files, with sources, and say honestly when something is unknown.
@@ -35,6 +37,8 @@ The execution plan and role boundaries are maintained in [docs/research-team.md]
 ## How to pick the next deep dive
 
 Rank candidates by how well they serve the goals above: they reveal how the lab works, they connect to many other projects, they touch cybersecurity or operations, and there is enough public material to say something real. Current order:
+
+The list below is historical and completed as noted afterward. New rounds use the exploration criteria and evidence depths in [the research workflow](docs/research-team.md), the focus lanes, and the latest handoff. Selection is an editorial judgment; priority does not certify execution or completeness.
 
 1. **The neutron data pipeline at SNS** (Mantid, ONCat, live-data-server, post-processing-agent, data-workflow). It follows data from the beam to the scientist and shows how a national user facility actually runs its software. It also has the odd revival story from 2021 to 2024.
 2. **Supercomputer operations** (OLCF test harness and related tools). How the lab tests and brings up machines like Frontier.

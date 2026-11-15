@@ -40,6 +40,7 @@ The [reading order](docs/reading-order.md) links the same corpus for human reade
 - **Facilities and relationships:** browse the [facilities, instruments and roles guide](docs/facilities-instruments-roles.md) and the selected [relationship index](docs/research-relationships.md).
 - **Focus lanes and the lab layer:** [discovery/lanes.csv](discovery/lanes.csv) tags every project for cybersecurity, software engineering, AI/agents and Linux/infra, with a deep, lead or pool tier. [atlas/](atlas/README.md), merged in from the former ornl-atlas repository on 2026-11-11, holds the operating-model guide, a JSON evidence registry with an agent query tool, and experiments that run ORNL code.
 - **Reuse the engineering:** [engineering patterns in ORNL's public code](lessons/engineering-patterns.md) turns design moves in 15 public repos into reusable patterns, each tied to pinned code lines, with a lookup table by what you are building.
+- **Explore what you could build:** the [searchable research library](docs/research-library.md) connects readable guides, structured findings cards and a local SQLite database. The [bounded research workflow](docs/research-team.md) selects unusual mechanisms, reconstructs or tests them, and uses independent verification. In Codex, invoke `$ornl-research` from this repo.
 - **Check the evidence:** read the [methodology](docs/methodology.md), [rules](RULES.md), and [verification ledger](verification/log.md).
 - **Contribute or correct:** read [CONTRIBUTING.md](CONTRIBUTING.md) and use the appropriate issue template.
 
