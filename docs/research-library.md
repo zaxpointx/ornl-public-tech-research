@@ -27,6 +27,7 @@ python3 scripts/research_library.py build
 python3 scripts/research_library.py search "offline provenance SIGTERM" --limit 5
 python3 scripts/research_library.py search "process memory limit" --lane linux-infra
 python3 scripts/research_library.py search "defender simulation" --kind card
+python3 scripts/research_library.py search "siting" --kind lead
 python3 scripts/research_library.py project flowcept
 python3 scripts/research_library.py project cincinnatus
 python3 scripts/research_library.py stats
@@ -49,6 +50,7 @@ The default database is `.cache/research-library.sqlite3`, ignored by Git. Every
 | Explicit overlap between registry and catalog | [Registry crosswalk](../discovery/registry-links.json) |
 | Explanations, evidence ledgers, experiments and limitations | Existing Markdown and lab artifacts |
 | Reusable findings | `cards/*.json`, backed by those artifacts |
+| Off-catalog candidates and how they were found | `discovery/leads.csv` (a lead is not a catalog project until promoted under RULES 13) |
 
 The crosswalk currently joins DataFed, ADIOS2, Flowcept and Zambeze without merging their records or evidence fields. Broad registry themes, such as agentic workflows, remain separate from catalog projects. An identity match establishes neither a working integration nor an ORNL deployment. The original [registry query tool](../atlas/scripts/atlas_query.py) remains available for registry-only packets.
 

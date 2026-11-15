@@ -64,6 +64,28 @@ if lanes_path.exists():
 else:
     errors.append("discovery/lanes.csv is missing")
 
+# Off-catalog leads (added 2026-11-15): candidates only; a promoted lead must be in the catalog.
+leads_path = ROOT / "discovery" / "leads.csv"
+if leads_path.exists():
+    lead_fields = ["id", "name", "url", "surface", "found_via", "lanes", "tier_guess",
+                   "mechanism", "status", "checked", "notes"]
+    lead_statuses = {"candidate", "promoted", "out-of-lane", "rejected", "out-of-scope"}
+    with leads_path.open(newline="") as fh:
+        reader = csv.DictReader(fh)
+        lead_rows = list(reader)
+    if reader.fieldnames != lead_fields:
+        errors.append("discovery/leads.csv columns do not match the documented schema")
+    lead_ids = [row.get("id", "").strip() for row in lead_rows]
+    if "" in lead_ids or len(lead_ids) != len(set(lead_ids)):
+        errors.append("discovery/leads.csv ids must be unique and non-empty")
+    for row in lead_rows:
+        promoted = row.get("status") == "promoted"
+        if (row.get("status") not in lead_statuses
+                or row.get("tier_guess") not in {"deep", "lead", "pool"}
+                or not set(row.get("lanes", "").split(";")) <= {"cybersecurity", "software-engineering", "ai-agents", "linux-infra", "none"}
+                or promoted != (row.get("id") in catalog_ids)):
+            errors.append(f"leads.csv has an invalid row for {row.get('id')}")
+
 for required_file in (
     ROOT / "docs" / "book-plan.md",
     ROOT / "docs" / "publication-workflow.md",
@@ -93,7 +115,8 @@ if "docs/coverage-matrix.md" not in readme:
 # Keep the public navigation honest. Template placeholders such as `(URL)` are
 # examples, not repository links, so they are intentionally ignored.
 for source in ROOT.rglob("*"):
-    if not source.is_file() or ".git" in source.parts:
+    # .cache holds untrusted upstream clones and generated files, not our navigation.
+    if not source.is_file() or ".git" in source.parts or ".cache" in source.parts:
         continue
     if source.suffix.lower() not in {".md", ".yml", ".yaml"}:
         continue

@@ -124,6 +124,34 @@ class LibraryTests(unittest.TestCase):
             library.build(self.root, self.database)
         self.assertEqual(original, self.database.read_bytes())
 
+    def lead(self, **changes):
+        row = dict(id='or-sage', name='OR-SAGE', url='https://orsage.example.org/', surface='standalone site',
+                   found_via='owner URL', lanes='none', tier_guess='pool', mechanism='GIS siting screen',
+                   status='out-of-lane', checked='2026-11-15', notes='no public code searched')
+        row.update(changes)
+        return row
+
+    def test_leads_are_searchable_but_not_catalog_projects(self):
+        self.write_csv('discovery/leads.csv', [self.lead()])
+        db = self.open()
+        rows = library.search(db, 'siting', kind='lead')
+        self.assertEqual([r['id'] for r in rows], ['lead:or-sage'])
+        with self.assertRaisesRegex(ValueError, 'unknown catalog'):
+            library.project_packet(db, 'or-sage')
+        self.write_csv('discovery/leads.csv', [self.lead(notes='changed')])
+        with self.assertRaisesRegex(ValueError, 'stale'):
+            library.open_current(self.root, self.database)
+
+    def test_invalid_or_falsely_promoted_lead_is_rejected(self):
+        self.open()
+        original = self.database.read_bytes()
+        for bad in (self.lead(status='maybe'), self.lead(status='promoted'),
+                    self.lead(id='flowcept', status='candidate'), self.lead(lanes='physics')):
+            self.write_csv('discovery/leads.csv', [bad])
+            with self.assertRaisesRegex(ValueError, 'invalid lead'):
+                library.build(self.root, self.database)
+        self.assertEqual(original, self.database.read_bytes())
+
     def test_concurrent_source_edit_cannot_certify_old_text(self):
         self.open()
         original = self.database.read_bytes()

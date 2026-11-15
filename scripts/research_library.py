@@ -22,7 +22,12 @@ BOUNDARY = (
 )
 COLLECTIONS = ('sources', 'projects', 'facilities', 'software', 'roles', 'edges')
 TEXT_ROOTS = ('projects', 'signals', 'deep-dives', 'lessons', 'connections', 'docs', 'verification',
-              'atlas/guide', 'atlas/projects', 'atlas/research', 'atlas/sources', 'atlas/labs')
+              'atlas/guide', 'atlas/projects', 'atlas/research', 'atlas/sources', 'atlas/labs',
+              'discovery/scouting')
+LANES = {'none', 'cybersecurity', 'software-engineering', 'ai-agents', 'linux-infra'}
+LEAD_FIELDS = ('id', 'name', 'url', 'surface', 'found_via', 'lanes', 'tier_guess', 'mechanism',
+               'status', 'checked', 'notes')
+LEAD_STATUSES = {'candidate', 'promoted', 'out-of-lane', 'rejected', 'out-of-scope'}
 ROOT_DOCS = ('README.md', 'INDEX.md', 'LAB-TREE.md', 'RULES.md', 'GOAL.md', 'atlas/README.md')
 
 
@@ -47,6 +52,8 @@ def source_paths(root):
     paths.update(root / f'atlas/registry/{name}.json' for name in COLLECTIONS)
     paths.update(root / p for p in ('discovery/catalog.csv', 'discovery/lanes.csv',
                                   'discovery/registry-links.json'))
+    if (root / 'discovery/leads.csv').is_file():
+        paths.add(root / 'discovery/leads.csv')
     if (root / 'scripts/research_library.py').is_file():
         paths.add(root / 'scripts/research_library.py')
     # Include only referenced machine-readable results, never execute experiments.
@@ -145,7 +152,7 @@ def collect(root):
     projects = {key: dict(row, lanes=lanes[key]['lanes'].split(';'), tier=lanes[key]['tier'],
                           priority_reason=lanes[key]['why']) for key, row in catalog.items()}
     for row in projects.values():
-        if row['tier'] not in {'deep', 'lead', 'pool'} or not set(row['lanes']) <= {'none', 'cybersecurity', 'software-engineering', 'ai-agents', 'linux-infra'}:
+        if row['tier'] not in {'deep', 'lead', 'pool'} or not set(row['lanes']) <= LANES:
             raise ValueError(f'invalid lane/tier for {row["id"]}')
     registry = {}
     edges = []
@@ -191,6 +198,17 @@ def collect(root):
         add(f'edge:{i}', 'relationship', edge['relation'], 'atlas/registry/edges.json',
             json.dumps(edge, ensure_ascii=False),
             [aliases[k] for k in (edge['from'], edge['to']) if k in aliases], edge)
+    # Off-catalog leads are candidates, not catalog projects; only a promoted lead joins one.
+    leads_path = root / 'discovery/leads.csv'
+    leads = csv_by_id(leads_path) if leads_path.is_file() else {}
+    for key, row in leads.items():
+        if tuple(row) != LEAD_FIELDS or row['status'] not in LEAD_STATUSES \
+                or row['tier_guess'] not in {'deep', 'lead', 'pool'} \
+                or not set(row['lanes'].split(';')) <= LANES \
+                or (row['status'] == 'promoted') != (key in projects):
+            raise ValueError(f'invalid lead row {key}')
+        add(f'lead:{key}', 'lead', row['name'], 'discovery/leads.csv',
+            json.dumps(row, ensure_ascii=False), [key] if key in projects else [], row)
     lab_projects = {}
     for path in sorted((root / 'cards').glob('*.json')):
         card = read_json(path)
@@ -354,7 +372,7 @@ def main(argv=None):
     find.add_argument('query')
     find.add_argument('--lane', choices=('cybersecurity', 'software-engineering', 'ai-agents', 'linux-infra', 'none'))
     find.add_argument('--tier', choices=('deep', 'lead', 'pool'))
-    find.add_argument('--kind', choices=('catalog', 'registry', 'relationship', 'card', 'document', 'lab'))
+    find.add_argument('--kind', choices=('catalog', 'registry', 'relationship', 'card', 'document', 'lab', 'lead'))
     find.add_argument('--limit', type=int, default=10)
     commands.add_parser('project').add_argument('project_id')
     args = parser.parse_args(argv)

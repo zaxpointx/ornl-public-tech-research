@@ -23,7 +23,8 @@ Choose artifact study, code reconstruction or experiment according to available 
 | Search across guides, cards, code studies and labs | `python3 scripts/research_library.py build`, then `search "<terms>"` using the same script |
 | A catalog project context packet | `python3 scripts/research_library.py project <id>` |
 | A registry-only context packet | `python3 atlas/scripts/atlas_query.py --search <terms>` or `--node <id>` |
-| Run an exploration round with a team | [docs/research-team.md](docs/research-team.md), or `$ornl-research` in Codex |
+| Run an exploration round with a team | [docs/research-team.md](docs/research-team.md): `/ornl-research` in Claude Code, `$ornl-research` in Codex |
+| Projects found outside the catalog (e.g. standalone ornl.gov sites) | [discovery/leads.csv](discovery/leads.csv), scout reports in `discovery/scouting/` |
 | Relationships between projects | [connections/map.md](connections/map.md), [docs/portfolio-map.json](docs/portfolio-map.json), `atlas/registry/edges.json` |
 | Experiments that ran ORNL code | [atlas/labs/](atlas/labs/) |
 
