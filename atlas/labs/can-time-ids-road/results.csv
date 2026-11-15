@@ -1,0 +1,27 @@
+q,item,cm,prec,recall,f1,fpr,source
+R0,"Mean a=0.444 3of6, published labels","[[1525274, 1473], [239, 61277]]",0.9765,0.9961,0.9862,0.001,r0_seed0.json:r0.optima.mean
+R0,"Binning a=3.5, published labels","[[1525895, 852], [514, 61002]]",0.9862,0.9916,0.9889,0.0006,r0_seed0.json:r0.optima.binning
+R0,"Gaussian p=0.09 3consec, published labels","[[1500707, 26040], [48436, 13080]]",0.3344,0.2126,0.2599,0.0171,q2.json:gauss_3consec['0.09']
+Q1,mean on 13 masquerade logs (aggregate),"[[1437838, 1320], [30731, 0]]",0.0,0.0,,0.0009,q1.json:aggregate.mean
+Q1,binning on 13 masquerade logs (aggregate),"[[1438377, 781], [30731, 0]]",0.0,0.0,,0.0005,q1.json:aggregate.binning
+Q1,gauss on 13 masquerade logs (aggregate),"[[1413749, 25409], [29473, 1258]]",0.0472,0.0409,0.0438,0.0177,q1.json:aggregate.gauss
+Q1,correlated_signal_attack_1_masquerade recall mean/bin/gauss,,gauss 0.3204,0.0000/0.0000/0.2685,,gauss 0.0165,q1.json:per_file
+Q1,correlated_signal_attack_2_masquerade recall mean/bin/gauss,,gauss 0.2852,0.0000/0.0000/0.2005,,gauss 0.0176,q1.json:per_file
+Q1,correlated_signal_attack_3_masquerade recall mean/bin/gauss,,gauss 0.1241,0.0000/0.0000/0.0419,,gauss 0.0102,q1.json:per_file
+Q1,max_engine_coolant_temp_attack_masquerade recall mean/bin/gauss,,gauss 0.0513,0.0000/0.0000/0.8333,,gauss 0.0112,q1.json:per_file
+Q1,max_speedometer_attack_1_masquerade recall mean/bin/gauss,,gauss 0.0042,0.0000/0.0000/0.0061,,gauss 0.0182,q1.json:per_file
+Q1,max_speedometer_attack_2_masquerade recall mean/bin/gauss,,gauss 0.0661,0.0000/0.0000/0.0137,,gauss 0.0047,q1.json:per_file
+Q1,max_speedometer_attack_3_masquerade recall mean/bin/gauss,,gauss 0.0032,0.0000/0.0000/0.0072,,gauss 0.0722,q1.json:per_file
+Q1,reverse_light_off_attack_1_masquerade recall mean/bin/gauss,,gauss 0.0000,0.0000/0.0000/0.0000,,gauss 0.0063,q1.json:per_file
+Q1,reverse_light_off_attack_2_masquerade recall mean/bin/gauss,,gauss 0.0032,0.0000/0.0000/0.0008,,gauss 0.0071,q1.json:per_file
+Q1,reverse_light_off_attack_3_masquerade recall mean/bin/gauss,,gauss 0.0357,0.0000/0.0000/0.0086,,gauss 0.0045,q1.json:per_file
+Q1,reverse_light_on_attack_1_masquerade recall mean/bin/gauss,,gauss 0.0897,0.0000/0.0000/0.0276,,gauss 0.0046,q1.json:per_file
+Q1,reverse_light_on_attack_2_masquerade recall mean/bin/gauss,,gauss 0.0000,0.0000/0.0000/0.0000,,gauss 0.0076,q1.json:per_file
+Q1,reverse_light_on_attack_3_masquerade recall mean/bin/gauss,,gauss 0.0010,0.0000/0.0000/0.0004,,gauss 0.0074,q1.json:per_file
+Q2,Gaussian p=0.09 3of6,"[[1437983, 88764], [66, 61450]]",0.4091,0.9989,0.5805,0.0581,q2.json:gauss_3of6['0.09']
+Q2,Gaussian 3of6 best (p=0.007),"[[1515677, 11070], [212, 61304]]",0.847,0.9966,0.9157,0.0073,q2.json:gauss_3of6['0.007']
+Q2,Mean a=0.444 3consec,"[[1526032, 715], [60143, 1373]]",0.6576,0.0223,0.0432,0.0005,q2.json:mean_3consec['0.4444444444444444']
+Q2,Mean 3consec best (a=0.9444444444444444),"[[1525485, 1262], [19057, 42459]]",0.9711,0.6902,0.8069,0.0008,q2.json:mean_3consec['0.9444444444444444']
+Q3,"mean at optimum, payload labels, all 16","[[1525317, 32161], [196, 30589]]",0.4875,0.9936,0.6541,0.0206,q3.json:payload_labels_all16.mean
+Q3,"binning at optimum, payload labels, all 16","[[1526064, 31414], [345, 30440]]",0.4921,0.9888,0.6572,0.0202,q3.json:payload_labels_all16.binning
+Q3,"13 targeted logs: positives published 61462, payload 30731, share 0.5000",,,,,,q3.json:per_file

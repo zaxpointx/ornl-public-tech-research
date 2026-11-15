@@ -11,3 +11,4 @@ tmp/
 .cache/research-library.sqlite3
 __pycache__/
 .cache/src/
+.cache/data/

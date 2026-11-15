@@ -73,3 +73,4 @@ celeritas,software-engineering,pool,Physics is out of lane; read patterns D6-D8 
 dedfoam,ai-agents,lead,Only the out-of-range-refusing ML surrogate is in lane (pattern D2); the printing physics is not.
 chathpc,ai-agents,deep,Fine-tuned HPC coding assistants with a reproducible SC25 artifact (pattern D3).
 matey,ai-agents,pool,Physics foundation models; read pattern D4 for the reusable idea.
+can-time-ids-benchmark,cybersecurity,deep,Public ORNL CAN IDS code plus public ROAD data; reproduced and boundary-tested in atlas/labs/can-time-ids-road.

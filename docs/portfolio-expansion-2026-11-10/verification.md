@@ -167,3 +167,52 @@ Next bounded investigation: at pinned post-processing-agent code, determine whet
 - **Next bounded investigation (deep-dive).** On the public ROAD dataset with the ORNL companion code `can-time-ids-benchmark` (DOE CODE 69319, GPL-3.0): does a time-based CAN IDS baseline detect ROAD's masquerade attacks, and where does it fail? This is cyber-first with public code and data, and it connects to catalog `can-d`. Alternatives:
   - stripped-bof-llm, rebuilt from its paper on Ghidra.
   - The post-processing-agent process-tree question from the earlier handoff.
+
+## Round plan, 2026-11-15: deep dive, time-based CAN intrusion detection on ROAD
+
+- **Question.** Using ORNL's public benchmark code at a pinned commit and the public ROAD dataset, does a time-based CAN IDS detect ROAD's masquerade attacks? Where does detection fail, by attack type, signal and window?
+- **Existing evidence read.**
+  - Leads `can-time-ids-benchmark` (DOE CODE 69319, site ownership ORNL, GPL-3.0, HEAD e0c862d at 2026-11-15) and `road-can-dataset` (Zenodo 10462796, CC BY 4.0, road.zip 556.7 MB).
+  - Catalog `can-d`.
+  - Referee verdicts in `verification/log.md`.
+- **Why.** It's cyber-first, with public ORNL code plus public real-vehicle data, and it connects to the existing CAN cluster.
+- **Depth.** Code reconstruction, then experiment.
+- **Bound.**
+  - One reader, one experimenter, then one referee.
+  - Run locally only, on public data. Cap the run's memory and time. No contact with any vehicle or ORNL system.
+  - The dataset download needs the owner's OK.
+- **Ownership.**
+  - Coordinator: this handoff, cards and leads.
+  - Reader: `deep-dives/can-time-ids/reconstruction.md`.
+  - Experimenter: `atlas/labs/can-time-ids-road/`.
+  - Referee: an appended paragraph in `verification/log.md`.
+  - Clones and data go in `.cache/src/` and `.cache/data/`, which Git ignores.
+
+## Result, 2026-11-15: deep dive, time-based CAN IDS on ROAD
+
+**State: verified complete for the declared question.** The lab replayed one vehicle's dynamometer captures offline. That says nothing about live vehicles or the paper's plug-in.
+
+- **Reader.** [Reconstruction](../../deep-dives/can-time-ids/reconstruction.md) of ORNL's benchmark at `e0c862d`, with line-pinned citations.
+  - The code excludes masquerade and accelerator attacks.
+  - The Binning code sums six gaps, unlike the paper's wording.
+  - Labels ignore payload.
+  - The "with outliers" results depend on pickles the repo doesn't ship.
+- **Experimenter.** [Lab](../../atlas/labs/can-time-ids-road/README.md): an independent re-implementation, checked against the pinned helper code, run offline on ROAD (Zenodo md5 verified). Python 3.10 in an isolated venv; it took 43 s and 3.6 GB peak.
+  - R0: the Mean and Binning confusion matrices reproduce exactly on two seeds. Gaussian is within 14 false positives.
+  - Q1: Mean and Binning have recall 0 on all 13 masquerades. Gaussian catches part of the slow-injector coolant masquerade, at precision 0.32 or lower.
+  - Q2: switching Gaussian to the 3-of-6 rule takes F1 from 0.26 to 0.92.
+  - Q3: payload labels keep exactly 50.00% of positives in every targeted log, and F1 at the published optima falls to about 0.65.
+  - Four of the predictions are scored wrong in the README.
+- **Referee.** 11 verified, 3 corrected and 1 unverifiable; the table is in `verification/log.md`, and all the corrections are applied.
+  - DOE CODE 69319 lists ORNL as site owner and developer affiliation, with the research-org field empty.
+  - It couldn't prove the predictions were written before the results, because the README was edited after the runs started.
+- **Integration.**
+  - `can-time-ids-benchmark` promoted from the leads to the catalog under RULES 13 (DOE CODE ORNL site ownership plus ORNL author affiliations), with a lanes row (cybersecurity, deep), a [brief](../../projects/can-time-ids-benchmark.md), an INDEX entry and a rebuilt portfolio map.
+  - New card `cards/can-time-ids-masquerade-blindspot.json`.
+  - The ROAD data, the clone and the venv stay in the ignored `.cache/`.
+- **Not done.**
+  - The notebook itself was not run.
+  - KDE was skipped (over 5 hours in the original run).
+  - Only one referee sweep, not the full two-sweep brief standard.
+  - No upstream issue was opened about the label or paper discrepancies. That would count as outreach and needs the owner's OK.
+- **Next bounded question.** Can a one-sided slow-period or period-drift test on the target ID catch the coolant and correlated-signal masquerades at a false-positive rate of 1e-3 or less, while staying blind on the 0xD0 masquerades whose period matches the real one?

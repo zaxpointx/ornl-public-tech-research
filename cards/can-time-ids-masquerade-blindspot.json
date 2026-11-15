@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "can-time-ids-masquerade-blindspot",
+  "project_ids": ["can-time-ids-benchmark"],
+  "title": "Timing-only CAN detectors miss masquerades, and their labels hide half the truth",
+  "problem": "Vehicle intrusion detectors are often judged on published benchmarks, but a benchmark's attack set, alert rule and labels decide what its scores mean.",
+  "mechanism": "[KNOWN: code inspection at e0c862d] ORNL's benchmark learns each CAN ID's normal inter-arrival time and flags frames that arrive too soon, using Mean, Binning, Gaussian or KDE rules. Mean uses a 3-of-last-6 rule, while Gaussian and KDE require 3 consecutive flags. Labels mark every frame of the target ID inside the injection window, regardless of payload. Masquerade and accelerator captures are excluded as out of scope.",
+  "finding": "[KNOWN: recorded experiment, 2026-11-15] On the public ROAD dataset, an independent re-implementation reproduced the published Mean and Binning confusion matrices exactly. Mean and Binning had recall 0 on all 13 masquerade captures. Gaussian caught most of one masquerade whose injector runs about 14% slow, at precision 0.32 or lower. Switching Gaussian to the 3-of-6 rule raised its best F1 from 0.26 to 0.92. Payload-based labels kept exactly 50.00% of published positives in every targeted log, and F1 at the published optima fell to about 0.65. These results come from offline replay of one vehicle's dynamometer captures.",
+  "evidence_level": "experiment-recorded",
+  "source_urls": [
+    "https://github.com/pmoriano/can-time-based-ids-benchmark",
+    "https://www.osti.gov/doecode/biblio/69319",
+    "https://arxiv.org/abs/2101.05781",
+    "https://zenodo.org/records/10462796"
+  ],
+  "code_refs": [
+    "https://github.com/pmoriano/can-time-based-ids-benchmark/blob/e0c862d6c6cbb0d60ed2572a90dd483a3253ed0f/code/helper_functions.py#L255-L265",
+    "https://github.com/pmoriano/can-time-based-ids-benchmark/blob/e0c862d6c6cbb0d60ed2572a90dd483a3253ed0f/code/helper_functions.py#L524-L538"
+  ],
+  "supporting_paths": [
+    "deep-dives/can-time-ids/reconstruction.md",
+    "atlas/labs/can-time-ids-road/README.md",
+    "atlas/labs/can-time-ids-road/results.csv",
+    "projects/can-time-ids-benchmark.md"
+  ],
+  "experiment": {
+    "status": "recorded",
+    "revision": "e0c862d6c6cbb0d60ed2572a90dd483a3253ed0f",
+    "command": "sh atlas/labs/can-time-ids-road/run.sh",
+    "results_path": "atlas/labs/can-time-ids-road/raw/q1.json",
+    "limitations": "Independent re-implementation, checked against the pinned helper code on small inputs; the notebook itself was not run. Python 3.10.20 with numpy 1.23.5, pandas 1.5.3, scipy 1.9.3 and scikit-learn 1.1.3 on macOS arm64. Requires the ROAD dataset (not committed). Offline replay of one vehicle's dynamometer captures; says nothing about live vehicles or the paper's Raspberry Pi plug-in. KDE was skipped. The referee could not prove the predictions were written before the results."
+  },
+  "adaptation": "[INFERRED] When evaluating or building a CAN IDS, report masquerade results separately, label by payload rather than by ID inside a window, and treat the alert-sufficiency rule as a tunable component. A one-sided slow-period or period-drift test is a candidate for the masquerades that change timing slightly; it remains untested.",
+  "unknowns": [
+    "Whether a period-drift test catches the coolant-style masquerades at a false-positive rate of 1e-3 or less is untested.",
+    "Behavior on other vehicles, live buses or ORNL's plug-in prototype is unknown.",
+    "Whether the ID-window labelling convention was a deliberate design choice is not stated in any source."
+  ]
+}

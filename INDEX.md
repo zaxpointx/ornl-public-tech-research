@@ -86,6 +86,7 @@ Projects: 74 cataloged, 63 full briefs plus 7 short briefs linked (all 70 verifi
 - [TASQC](projects/tasqc.md): uses quantum correlations to authenticate grid timing signals. Group B. Verified, two sweeps (2026-10-29).
 - [Akatosh](projects/akatosh.md): pairs intrusion-detection alerts with automated forensic checks to cut false alarms. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 - [CAN-D](projects/can-d.md): works out what the signals in raw vehicle CAN bus logs mean. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
+- [Time-Based CAN IDS Benchmark](projects/can-time-ids-benchmark.md): ORNL code comparing four timing-based detectors for attacks on a car network. Promoted from leads 2026-11-15; [deep dive](deep-dives/can-time-ids/reconstruction.md) and [lab run](atlas/labs/can-time-ids-road/README.md) reproduced its results and measured its masquerade blind spot. Refereed once (2026-11-15).
 - Cincinnatus: flags changes in binary data that may mean a breach or fraud. OSTI-only stub.
 - [Heartbeat Malware Detection](projects/heartbeat-malware.md): spots operating-system tampering from a computer's power draw during a timed test routine, a side channel that signature tools don't watch. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
 - CPAD: spots attacks by learning the physical relationships in sensor data. OSTI-only stub.
