@@ -23,7 +23,7 @@ Not allowed: logging in, bypassing access controls, anything marked restricted, 
 - Two projects, tools, or people are never merged without binding evidence.
 - Authorship shows participation, not ownership or leadership.
 
-## Limits of OSINT
+## Limits of public sources
 Public records show what a project chose to publish. They rarely show internal priorities, funding amounts per project, or who leads a team. Commit counts measure activity, not importance. Absence from search results is logged but is not proof that something does not exist.
 
 ## Privacy
