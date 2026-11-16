@@ -216,3 +216,35 @@ Next bounded investigation: at pinned post-processing-agent code, determine whet
   - Only one referee sweep, not the full two-sweep brief standard.
   - No upstream issue was opened about the label or paper discrepancies. That would count as outreach and needs the owner's OK.
 - **Next bounded question.** Can a one-sided slow-period or period-drift test on the target ID catch the coolant and correlated-signal masquerades at a false-positive rate of 1e-3 or less, while staying blind on the 0xD0 masquerades whose period matches the real one?
+
+## Round plan, 2026-11-15: off-catalog discovery round 2, cybersecurity outside GitHub
+
+- **Question.** Which public ORNL cybersecurity tools live outside GitHub (DOE CODE records with no or non-GitHub repositories, licensing listings, sponsor and partner pages, conference artifact repositories), and which have enough public material to study?
+- **Existing evidence read.** The 39 leads, catalog, lanes, both 2026-11-11 snapshots, `verification/not-found.md` (round 1 empty searches) and both round-1 scout reports. The library was rebuilt and searched with `--kind lead`.
+- **Why these surfaces.** Round 1 covered ornl.gov news, CAISER, R&D 100 coverage, OSTI keyword queries and arXiv. It left two gaps open: the 111 DOE CODE records with ORNL site ownership that the snapshot's all-fields query missed, and the licensing, sponsor and artifact-repository surfaces. Repeating round 1's queries is out of bounds.
+- **Depth.** Artifact study (candidate discovery only). No code is run.
+- **Bound.** Two scouts, about 12 new cyber-first candidates each and about 40 fetches each, then one referee on the top leads. Stop after the leads merge and a ranked shortlist.
+- **Ownership.**
+  - Coordinator (Claude, Opus): `discovery/leads.csv`, `verification/not-found.md`, this handoff.
+  - Scout C: `discovery/scouting/2026-11-15-doecode-gap.md`, covering the DOE CODE site-ownership gap and the non-GitHub repositories (code.ornl.gov, GitLab, Zenodo, institutional hosts) that DOE CODE or OSTI records link to.
+  - Scout D: `discovery/scouting/2026-11-15-transfer-artifacts.md`, covering ORNL licensing listings, partner and startup product pages, sponsor program pages (DOE CESER, DHS S&T, CISA and others), and conference artifact repositories (Zenodo, IEEE DataPort, USENIX/ACSAC/NDSS artifact pages, Kaggle).
+  - Referee: an appended paragraph in `verification/log.md`.
+- **Expected checks.** Audit, library build/check, both test suites, map check, `search --kind lead` on a merged lead.
+
+## Result, 2026-11-15: off-catalog discovery round 2, cybersecurity outside GitHub
+
+**State: verified complete for the declared bound.** This is not a census of ORNL's off-GitHub cyber work.
+
+- **Discovery.** Scout C ([report](../../discovery/scouting/2026-11-15-doecode-gap.md)) and Scout D ([report](../../discovery/scouting/2026-11-15-transfer-artifacts.md)) added 26 candidates and 3 rejected or out-of-scope rows. The leads file now has 68 rows: 56 candidates (15 deep, 40 lead, 1 pool), 6 rejected, 3 out of scope, 2 out of lane, 1 promoted. 26 empty or failed searches were appended to `verification/not-found.md`.
+- **DOE CODE gap, measured.** `site_ownership_code=ORNL` returns 563 records; 111 are missing from the 2026-11-11 snapshot. The gap itself held no new cyber tools: every cyber hit was a round-1 lead, a rejection or a false positive. The cyber value was in the 71 closed-source or no-repo ORNL records instead (CAN signal-clustering masquerade detector, D2U, SANSR, Stucco, certificate validation libraries).
+- **Off-GitHub surfaces that paid off.** The OLCF DOI dataset service reached through Sandia's RAIICE catalog (OAKBAT GNSS spoofing recordings), a university-hosted ICS dataset page with ORNL co-authorship (MSU/ORNL power-system and gas-pipeline sets), DOE CESER CEDS fact sheets and peer-review decks (CYVET, SEQCESS), and ORNL technology listings (rogue private-cell audit, time-based attestation). Kaggle, IEEE DataPort, figshare, Mendeley, DARPA, CISA, DOT and SBIR searches came up empty for ORNL-owned cyber tools.
+- **Coordinator decisions.**
+  - DOE CODE snapshot records count as untriaged raw metadata, not as recorded work, so a snapshot-present record with no catalog or lead row can become a lead. Each such row is marked "Snapshot-present".
+  - SEQCESS is kept as a lead and flagged as a possible source for the atlas dossier `quantum-networking-and-grid-security`.
+  - The in-situ trainable IDS listing stays as a weak note on `orca-avd`, not a merge.
+  - rt-time-attestation is kept, re-anchored on OSTI 2305802 (the Verify proof of concept), with the tie marked inferred.
+- **Referee** (fresh agent, 12 leads behind 9 claims): 6 verified, 6 corrected, 0 unverifiable at claim level, no status or tier changes. All 12 meet RULES 13. Key rulings: Stucco's site LICENSE.md names UT-Battelle as copyright holder; pcircle meets RULES 13 through DOE CODE affiliation plus an OLCF credit in its README, unlike gopcap; MSU/ORNL datasets pass through ORNL-research-org companion papers OSTI 1154827 and 1111444; D2U has a public artifacts repository on a personal account. All corrections are applied to the leads. Table in `verification/log.md`.
+- **Flags.** The driver-identification dataset contains human heart-rate data under research-only, no-re-identification terms: never download without the owner's OK. OAKBAT is about 77 GB per series via Globus: download needs the owner's OK. The MDA STTR was logged out of scope and not opened. Nothing was downloaded or run.
+- **Not done.** No lead was promoted to the catalog. The ORNL Security and Defense technology portfolio (153 listings, about 16 pages) was read only on page 1; its pagination links are public and can be followed in a later pass. 15 snapshot-present ORNL GitHub records in the lanes (Systemd_Snapshot, certified, greggd, eBPF_communityID, pkpass, oidc-utils and others) have never been triaged; they're listed in the Scout C report.
+- **Checks.** Audit PASS, map check valid (75 projects), registry valid, atlas and library test suites OK, library build/check current, `search "GNSS spoofing" --kind lead` returns `oakbat`, `git diff --check` clean. Nothing was pushed.
+- **Next bounded question (rebuild).** Can an independent rebuild of ORNL's signal-clustering-similarity detector (DOE CODE 134139, closed source; method public in OSTI 1866690), run on ROAD's signal-translated captures already in `.cache/data/`, detect the masquerades the time-based IDS missed at recall 0? Alternatives: a triage pass over the 15 untriaged GitHub records, or paging the remaining Security and Defense listings.
