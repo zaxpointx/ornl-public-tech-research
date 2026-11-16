@@ -74,3 +74,4 @@ dedfoam,ai-agents,lead,Only the out-of-range-refusing ML surrogate is in lane (p
 chathpc,ai-agents,deep,Fine-tuned HPC coding assistants with a reproducible SC25 artifact (pattern D3).
 matey,ai-agents,pool,Physics foundation models; read pattern D4 for the reusable idea.
 can-time-ids-benchmark,cybersecurity,deep,Public ORNL CAN IDS code plus public ROAD data; reproduced and boundary-tested in atlas/labs/can-time-ids-road.
+can-signal-clustering-masquerade,cybersecurity,deep,"Closed ORNL code but a public method, data and libraries; independently rebuilt and boundary-tested in atlas/labs/can-signal-clustering-rebuild."

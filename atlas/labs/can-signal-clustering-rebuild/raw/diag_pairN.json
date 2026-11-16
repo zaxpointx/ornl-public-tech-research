@@ -1,0 +1,2201 @@
+{
+ "median_N_attack_benign_pairs": 186.0,
+ "median_N_benign_pairs": 245.5,
+ "pairs": [
+  {
+   "N": 273,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.902937,
+   "sim_pairwise": 0.899005
+  },
+  {
+   "N": 258,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.82779,
+   "sim_pairwise": 0.844924
+  },
+  {
+   "N": 255,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "bb",
+   "min_grid": 5262,
+   "sim_global": 0.882999,
+   "sim_pairwise": 0.886694
+  },
+  {
+   "N": 272,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.884065,
+   "sim_pairwise": 0.882107
+  },
+  {
+   "N": 256,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.885392,
+   "sim_pairwise": 0.867747
+  },
+  {
+   "N": 195,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.877912,
+   "sim_pairwise": 0.87453
+  },
+  {
+   "N": 279,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 12488,
+   "sim_global": 0.83314,
+   "sim_pairwise": 0.834175
+  },
+  {
+   "N": 180,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 6581,
+   "sim_global": 0.87994,
+   "sim_pairwise": 0.886105
+  },
+  {
+   "N": 182,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.857189,
+   "sim_pairwise": 0.88667
+  },
+  {
+   "N": 252,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4682,
+   "sim_global": 0.889267,
+   "sim_pairwise": 0.888299
+  },
+  {
+   "N": 276,
+   "a": "ambient_dyno_drive_basic_long",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 12488,
+   "sim_global": 0.907751,
+   "sim_pairwise": 0.875058
+  },
+  {
+   "N": 246,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.848277,
+   "sim_pairwise": 0.836946
+  },
+  {
+   "N": 250,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.916059,
+   "sim_pairwise": 0.907433
+  },
+  {
+   "N": 273,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.886991,
+   "sim_pairwise": 0.886307
+  },
+  {
+   "N": 248,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.900255,
+   "sim_pairwise": 0.889283
+  },
+  {
+   "N": 190,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.882971,
+   "sim_pairwise": 0.898807
+  },
+  {
+   "N": 262,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.861662,
+   "sim_pairwise": 0.840814
+  },
+  {
+   "N": 174,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.895378,
+   "sim_pairwise": 0.892163
+  },
+  {
+   "N": 182,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.894484,
+   "sim_pairwise": 0.888453
+  },
+  {
+   "N": 245,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.905731,
+   "sim_pairwise": 0.88873
+  },
+  {
+   "N": 270,
+   "a": "ambient_dyno_drive_basic_short",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 4426,
+   "sim_global": 0.893443,
+   "sim_pairwise": 0.881383
+  },
+  {
+   "N": 287,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.863176,
+   "sim_pairwise": 0.854349
+  },
+  {
+   "N": 312,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.861818,
+   "sim_pairwise": 0.848106
+  },
+  {
+   "N": 261,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.866316,
+   "sim_pairwise": 0.849536
+  },
+  {
+   "N": 188,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.878038,
+   "sim_pairwise": 0.868074
+  },
+  {
+   "N": 407,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.932835,
+   "sim_pairwise": 0.88115
+  },
+  {
+   "N": 236,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.876858,
+   "sim_pairwise": 0.865442
+  },
+  {
+   "N": 179,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.86031,
+   "sim_pairwise": 0.857151
+  },
+  {
+   "N": 250,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.848283,
+   "sim_pairwise": 0.852257
+  },
+  {
+   "N": 282,
+   "a": "ambient_dyno_drive_benign_anomaly",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 4541,
+   "sim_global": 0.830797,
+   "sim_pairwise": 0.801934
+  },
+  {
+   "N": 359,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.909863,
+   "sim_pairwise": 0.898988
+  },
+  {
+   "N": 245,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.88859,
+   "sim_pairwise": 0.886476
+  },
+  {
+   "N": 196,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.897768,
+   "sim_pairwise": 0.89943
+  },
+  {
+   "N": 333,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 5262,
+   "sim_global": 0.869107,
+   "sim_pairwise": 0.835307
+  },
+  {
+   "N": 223,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 5262,
+   "sim_global": 0.906744,
+   "sim_pairwise": 0.888729
+  },
+  {
+   "N": 180,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.904643,
+   "sim_pairwise": 0.902922
+  },
+  {
+   "N": 243,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4682,
+   "sim_global": 0.882143,
+   "sim_pairwise": 0.891911
+  },
+  {
+   "N": 290,
+   "a": "ambient_dyno_drive_extended_long",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 5262,
+   "sim_global": 0.885469,
+   "sim_pairwise": 0.875987
+  },
+  {
+   "N": 265,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.883563,
+   "sim_pairwise": 0.882793
+  },
+  {
+   "N": 195,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.899637,
+   "sim_pairwise": 0.890353
+  },
+  {
+   "N": 355,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.867967,
+   "sim_pairwise": 0.838045
+  },
+  {
+   "N": 219,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.882869,
+   "sim_pairwise": 0.880765
+  },
+  {
+   "N": 180,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.873118,
+   "sim_pairwise": 0.887763
+  },
+  {
+   "N": 260,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.875291,
+   "sim_pairwise": 0.878281
+  },
+  {
+   "N": 312,
+   "a": "ambient_dyno_drive_extended_short",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 2884,
+   "sim_global": 0.898613,
+   "sim_pairwise": 0.861321
+  },
+  {
+   "N": 195,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.906074,
+   "sim_pairwise": 0.870924
+  },
+  {
+   "N": 274,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.873318,
+   "sim_pairwise": 0.867631
+  },
+  {
+   "N": 179,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.900743,
+   "sim_pairwise": 0.879386
+  },
+  {
+   "N": 181,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.871367,
+   "sim_pairwise": 0.87725
+  },
+  {
+   "N": 240,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.89316,
+   "sim_pairwise": 0.878589
+  },
+  {
+   "N": 266,
+   "a": "ambient_dyno_drive_radio_infotainment",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 3877,
+   "sim_global": 0.875338,
+   "sim_pairwise": 0.866957
+  },
+  {
+   "N": 196,
+   "a": "ambient_dyno_drive_winter",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.883324,
+   "sim_pairwise": 0.873977
+  },
+  {
+   "N": 155,
+   "a": "ambient_dyno_drive_winter",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.914431,
+   "sim_pairwise": 0.886225
+  },
+  {
+   "N": 167,
+   "a": "ambient_dyno_drive_winter",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.897066,
+   "sim_pairwise": 0.925906
+  },
+  {
+   "N": 189,
+   "a": "ambient_dyno_drive_winter",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.889997,
+   "sim_pairwise": 0.881134
+  },
+  {
+   "N": 195,
+   "a": "ambient_dyno_drive_winter",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 457,
+   "sim_global": 0.87093,
+   "sim_pairwise": 0.889956
+  },
+  {
+   "N": 246,
+   "a": "ambient_dyno_exercise_all_bits",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "bb",
+   "min_grid": 6581,
+   "sim_global": 0.891963,
+   "sim_pairwise": 0.872397
+  },
+  {
+   "N": 182,
+   "a": "ambient_dyno_exercise_all_bits",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.860202,
+   "sim_pairwise": 0.863791
+  },
+  {
+   "N": 268,
+   "a": "ambient_dyno_exercise_all_bits",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4682,
+   "sim_global": 0.862335,
+   "sim_pairwise": 0.856377
+  },
+  {
+   "N": 330,
+   "a": "ambient_dyno_exercise_all_bits",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 20270,
+   "sim_global": 0.84493,
+   "sim_pairwise": 0.82951
+  },
+  {
+   "N": 148,
+   "a": "ambient_dyno_idle_radio_infotainment",
+   "b": "ambient_dyno_reverse",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.89769,
+   "sim_pairwise": 0.898233
+  },
+  {
+   "N": 177,
+   "a": "ambient_dyno_idle_radio_infotainment",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 4682,
+   "sim_global": 0.884771,
+   "sim_pairwise": 0.875677
+  },
+  {
+   "N": 184,
+   "a": "ambient_dyno_idle_radio_infotainment",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 6581,
+   "sim_global": 0.875243,
+   "sim_pairwise": 0.854925
+  },
+  {
+   "N": 177,
+   "a": "ambient_dyno_reverse",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.875593,
+   "sim_pairwise": 0.88262
+  },
+  {
+   "N": 182,
+   "a": "ambient_dyno_reverse",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 497,
+   "sim_global": 0.857611,
+   "sim_pairwise": 0.879655
+  },
+  {
+   "N": 274,
+   "a": "ambient_highway_street_driving_diagnostics",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "bb",
+   "min_grid": 4682,
+   "sim_global": 0.921737,
+   "sim_pairwise": 0.876092
+  },
+  {
+   "N": 198,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.860221,
+   "sim_pairwise": 0.868471
+  },
+  {
+   "N": 197,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.881356,
+   "sim_pairwise": 0.872037
+  },
+  {
+   "N": 196,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.882069,
+   "sim_pairwise": 0.880385
+  },
+  {
+   "N": 178,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.885355,
+   "sim_pairwise": 0.90024
+  },
+  {
+   "N": 197,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.869477,
+   "sim_pairwise": 0.887644
+  },
+  {
+   "N": 196,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.879524,
+   "sim_pairwise": 0.890325
+  },
+  {
+   "N": 164,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.903895,
+   "sim_pairwise": 0.895141
+  },
+  {
+   "N": 198,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.88139,
+   "sim_pairwise": 0.873515
+  },
+  {
+   "N": 141,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.901242,
+   "sim_pairwise": 0.904379
+  },
+  {
+   "N": 156,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.920832,
+   "sim_pairwise": 0.906178
+  },
+  {
+   "N": 193,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.880465,
+   "sim_pairwise": 0.865478
+  },
+  {
+   "N": 198,
+   "a": "correlated_signal_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 312,
+   "sim_global": 0.850005,
+   "sim_pairwise": 0.876422
+  },
+  {
+   "N": 203,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.859135,
+   "sim_pairwise": 0.90571
+  },
+  {
+   "N": 203,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.874723,
+   "sim_pairwise": 0.877362
+  },
+  {
+   "N": 199,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.862942,
+   "sim_pairwise": 0.877607
+  },
+  {
+   "N": 182,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.87848,
+   "sim_pairwise": 0.899111
+  },
+  {
+   "N": 203,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.859249,
+   "sim_pairwise": 0.890393
+  },
+  {
+   "N": 201,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.897804,
+   "sim_pairwise": 0.893236
+  },
+  {
+   "N": 166,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.906223,
+   "sim_pairwise": 0.904972
+  },
+  {
+   "N": 203,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.865307,
+   "sim_pairwise": 0.874023
+  },
+  {
+   "N": 144,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.899677,
+   "sim_pairwise": 0.886326
+  },
+  {
+   "N": 157,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.919266,
+   "sim_pairwise": 0.890896
+  },
+  {
+   "N": 202,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.87188,
+   "sim_pairwise": 0.901489
+  },
+  {
+   "N": 202,
+   "a": "correlated_signal_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 264,
+   "sim_global": 0.830139,
+   "sim_pairwise": 0.885395
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.874463,
+   "sim_pairwise": 0.886991
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.886191,
+   "sim_pairwise": 0.896454
+  },
+  {
+   "N": 152,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.882644,
+   "sim_pairwise": 0.87388
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.887387,
+   "sim_pairwise": 0.888405
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.869585,
+   "sim_pairwise": 0.880671
+  },
+  {
+   "N": 154,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.870985,
+   "sim_pairwise": 0.863316
+  },
+  {
+   "N": 149,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.915338,
+   "sim_pairwise": 0.901729
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.878227,
+   "sim_pairwise": 0.862813
+  },
+  {
+   "N": 128,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.90937,
+   "sim_pairwise": 0.909915
+  },
+  {
+   "N": 144,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.916122,
+   "sim_pairwise": 0.916986
+  },
+  {
+   "N": 152,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.870862,
+   "sim_pairwise": 0.868864
+  },
+  {
+   "N": 155,
+   "a": "correlated_signal_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 147,
+   "sim_global": 0.851723,
+   "sim_pairwise": 0.872316
+  },
+  {
+   "N": 167,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.874844,
+   "sim_pairwise": 0.878312
+  },
+  {
+   "N": 166,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.89732,
+   "sim_pairwise": 0.887306
+  },
+  {
+   "N": 165,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.855346,
+   "sim_pairwise": 0.867317
+  },
+  {
+   "N": 167,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.890152,
+   "sim_pairwise": 0.898934
+  },
+  {
+   "N": 168,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.867266,
+   "sim_pairwise": 0.888183
+  },
+  {
+   "N": 164,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.882602,
+   "sim_pairwise": 0.896369
+  },
+  {
+   "N": 161,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.911189,
+   "sim_pairwise": 0.918976
+  },
+  {
+   "N": 170,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.858753,
+   "sim_pairwise": 0.857035
+  },
+  {
+   "N": 140,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.907246,
+   "sim_pairwise": 0.89819
+  },
+  {
+   "N": 159,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.911084,
+   "sim_pairwise": 0.93006
+  },
+  {
+   "N": 171,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.886671,
+   "sim_pairwise": 0.857181
+  },
+  {
+   "N": 170,
+   "a": "max_engine_coolant_temp_attack_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 237,
+   "sim_global": 0.873047,
+   "sim_pairwise": 0.874967
+  },
+  {
+   "N": 209,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.879285,
+   "sim_pairwise": 0.881299
+  },
+  {
+   "N": 204,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.902379,
+   "sim_pairwise": 0.895409
+  },
+  {
+   "N": 206,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.867439,
+   "sim_pairwise": 0.866466
+  },
+  {
+   "N": 210,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.903881,
+   "sim_pairwise": 0.912344
+  },
+  {
+   "N": 209,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.883397,
+   "sim_pairwise": 0.878898
+  },
+  {
+   "N": 208,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.895079,
+   "sim_pairwise": 0.877082
+  },
+  {
+   "N": 186,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.926294,
+   "sim_pairwise": 0.915046
+  },
+  {
+   "N": 209,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.87762,
+   "sim_pairwise": 0.874942
+  },
+  {
+   "N": 163,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.916243,
+   "sim_pairwise": 0.901458
+  },
+  {
+   "N": 179,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.90358,
+   "sim_pairwise": 0.912349
+  },
+  {
+   "N": 201,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.883418,
+   "sim_pairwise": 0.882674
+  },
+  {
+   "N": 210,
+   "a": "max_speedometer_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 855,
+   "sim_global": 0.877127,
+   "sim_pairwise": 0.888244
+  },
+  {
+   "N": 224,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.863094,
+   "sim_pairwise": 0.868557
+  },
+  {
+   "N": 223,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.891017,
+   "sim_pairwise": 0.890015
+  },
+  {
+   "N": 221,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.852108,
+   "sim_pairwise": 0.882757
+  },
+  {
+   "N": 205,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.89595,
+   "sim_pairwise": 0.894928
+  },
+  {
+   "N": 223,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.862081,
+   "sim_pairwise": 0.886681
+  },
+  {
+   "N": 224,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.883994,
+   "sim_pairwise": 0.897734
+  },
+  {
+   "N": 178,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.899532,
+   "sim_pairwise": 0.894645
+  },
+  {
+   "N": 224,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.858066,
+   "sim_pairwise": 0.877488
+  },
+  {
+   "N": 161,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.893477,
+   "sim_pairwise": 0.876038
+  },
+  {
+   "N": 178,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.917037,
+   "sim_pairwise": 0.906462
+  },
+  {
+   "N": 217,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.877327,
+   "sim_pairwise": 0.894865
+  },
+  {
+   "N": 222,
+   "a": "max_speedometer_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 578,
+   "sim_global": 0.850767,
+   "sim_pairwise": 0.892111
+  },
+  {
+   "N": 220,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.844989,
+   "sim_pairwise": 0.879954
+  },
+  {
+   "N": 220,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.880515,
+   "sim_pairwise": 0.883975
+  },
+  {
+   "N": 217,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.839078,
+   "sim_pairwise": 0.865051
+  },
+  {
+   "N": 201,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.879849,
+   "sim_pairwise": 0.887857
+  },
+  {
+   "N": 219,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.864302,
+   "sim_pairwise": 0.873547
+  },
+  {
+   "N": 220,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.884209,
+   "sim_pairwise": 0.883035
+  },
+  {
+   "N": 178,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.881854,
+   "sim_pairwise": 0.894723
+  },
+  {
+   "N": 220,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.845066,
+   "sim_pairwise": 0.8682
+  },
+  {
+   "N": 159,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.878062,
+   "sim_pairwise": 0.863329
+  },
+  {
+   "N": 178,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.894029,
+   "sim_pairwise": 0.89876
+  },
+  {
+   "N": 215,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.867634,
+   "sim_pairwise": 0.892516
+  },
+  {
+   "N": 220,
+   "a": "max_speedometer_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 849,
+   "sim_global": 0.85068,
+   "sim_pairwise": 0.880861
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.863924,
+   "sim_pairwise": 0.875495
+  },
+  {
+   "N": 177,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.880729,
+   "sim_pairwise": 0.869096
+  },
+  {
+   "N": 177,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.863187,
+   "sim_pairwise": 0.86662
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.877147,
+   "sim_pairwise": 0.903554
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.872452,
+   "sim_pairwise": 0.883976
+  },
+  {
+   "N": 178,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.86123,
+   "sim_pairwise": 0.8699
+  },
+  {
+   "N": 166,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.910718,
+   "sim_pairwise": 0.909116
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.867406,
+   "sim_pairwise": 0.860639
+  },
+  {
+   "N": 144,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.895469,
+   "sim_pairwise": 0.88526
+  },
+  {
+   "N": 172,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.929811,
+   "sim_pairwise": 0.947181
+  },
+  {
+   "N": 174,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.869335,
+   "sim_pairwise": 0.879915
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 263,
+   "sim_global": 0.856703,
+   "sim_pairwise": 0.876488
+  },
+  {
+   "N": 187,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.85739,
+   "sim_pairwise": 0.876419
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.887237,
+   "sim_pairwise": 0.879448
+  },
+  {
+   "N": 183,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.875074,
+   "sim_pairwise": 0.86596
+  },
+  {
+   "N": 185,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.88617,
+   "sim_pairwise": 0.890598
+  },
+  {
+   "N": 185,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.876418,
+   "sim_pairwise": 0.870157
+  },
+  {
+   "N": 185,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.876259,
+   "sim_pairwise": 0.865386
+  },
+  {
+   "N": 170,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.918784,
+   "sim_pairwise": 0.904971
+  },
+  {
+   "N": 187,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.87684,
+   "sim_pairwise": 0.855377
+  },
+  {
+   "N": 147,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.90365,
+   "sim_pairwise": 0.891099
+  },
+  {
+   "N": 176,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.932755,
+   "sim_pairwise": 0.93346
+  },
+  {
+   "N": 180,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.872127,
+   "sim_pairwise": 0.874329
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 382,
+   "sim_global": 0.853981,
+   "sim_pairwise": 0.856089
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.883895,
+   "sim_pairwise": 0.886241
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.908685,
+   "sim_pairwise": 0.876598
+  },
+  {
+   "N": 183,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.868385,
+   "sim_pairwise": 0.870924
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.894695,
+   "sim_pairwise": 0.908791
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.882768,
+   "sim_pairwise": 0.881039
+  },
+  {
+   "N": 185,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.889206,
+   "sim_pairwise": 0.87971
+  },
+  {
+   "N": 169,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.911928,
+   "sim_pairwise": 0.910601
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.872595,
+   "sim_pairwise": 0.871667
+  },
+  {
+   "N": 146,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.90758,
+   "sim_pairwise": 0.901214
+  },
+  {
+   "N": 178,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.91648,
+   "sim_pairwise": 0.927074
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.882974,
+   "sim_pairwise": 0.872333
+  },
+  {
+   "N": 184,
+   "a": "reverse_light_off_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 555,
+   "sim_global": 0.874878,
+   "sim_pairwise": 0.880829
+  },
+  {
+   "N": 189,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.876394,
+   "sim_pairwise": 0.878117
+  },
+  {
+   "N": 188,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.896274,
+   "sim_pairwise": 0.885392
+  },
+  {
+   "N": 188,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.842464,
+   "sim_pairwise": 0.860368
+  },
+  {
+   "N": 187,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.879281,
+   "sim_pairwise": 0.901311
+  },
+  {
+   "N": 186,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.854734,
+   "sim_pairwise": 0.879317
+  },
+  {
+   "N": 189,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.866553,
+   "sim_pairwise": 0.873964
+  },
+  {
+   "N": 170,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.90256,
+   "sim_pairwise": 0.896045
+  },
+  {
+   "N": 189,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.84968,
+   "sim_pairwise": 0.857796
+  },
+  {
+   "N": 149,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.893904,
+   "sim_pairwise": 0.884104
+  },
+  {
+   "N": 178,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.914684,
+   "sim_pairwise": 0.928638
+  },
+  {
+   "N": 183,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.881723,
+   "sim_pairwise": 0.876921
+  },
+  {
+   "N": 187,
+   "a": "reverse_light_on_attack_1_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 525,
+   "sim_global": 0.86698,
+   "sim_pairwise": 0.874442
+  },
+  {
+   "N": 227,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.852114,
+   "sim_pairwise": 0.88014
+  },
+  {
+   "N": 225,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.878822,
+   "sim_pairwise": 0.891378
+  },
+  {
+   "N": 224,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.861174,
+   "sim_pairwise": 0.877006
+  },
+  {
+   "N": 204,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.887161,
+   "sim_pairwise": 0.90509
+  },
+  {
+   "N": 222,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.866009,
+   "sim_pairwise": 0.900378
+  },
+  {
+   "N": 226,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.882613,
+   "sim_pairwise": 0.889002
+  },
+  {
+   "N": 179,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.897159,
+   "sim_pairwise": 0.899455
+  },
+  {
+   "N": 226,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.867276,
+   "sim_pairwise": 0.870218
+  },
+  {
+   "N": 159,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.887576,
+   "sim_pairwise": 0.889489
+  },
+  {
+   "N": 181,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.908227,
+   "sim_pairwise": 0.903431
+  },
+  {
+   "N": 217,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.875787,
+   "sim_pairwise": 0.89004
+  },
+  {
+   "N": 225,
+   "a": "reverse_light_on_attack_2_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 701,
+   "sim_global": 0.844676,
+   "sim_pairwise": 0.879148
+  },
+  {
+   "N": 228,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_long",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.854835,
+   "sim_pairwise": 0.890245
+  },
+  {
+   "N": 226,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_basic_short",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.891289,
+   "sim_pairwise": 0.884007
+  },
+  {
+   "N": 225,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_benign_anomaly",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.853226,
+   "sim_pairwise": 0.869923
+  },
+  {
+   "N": 204,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_long",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.900176,
+   "sim_pairwise": 0.895358
+  },
+  {
+   "N": 223,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_extended_short",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.876535,
+   "sim_pairwise": 0.899236
+  },
+  {
+   "N": 224,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.886344,
+   "sim_pairwise": 0.884578
+  },
+  {
+   "N": 180,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_drive_winter",
+   "kind": "ab",
+   "min_grid": 457,
+   "sim_global": 0.893515,
+   "sim_pairwise": 0.89552
+  },
+  {
+   "N": 227,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_exercise_all_bits",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.8533,
+   "sim_pairwise": 0.871156
+  },
+  {
+   "N": 163,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_idle_radio_infotainment",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.891322,
+   "sim_pairwise": 0.877287
+  },
+  {
+   "N": 180,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_dyno_reverse",
+   "kind": "ab",
+   "min_grid": 497,
+   "sim_global": 0.899328,
+   "sim_pairwise": 0.901509
+  },
+  {
+   "N": 221,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_diagnostics",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.87229,
+   "sim_pairwise": 0.906486
+  },
+  {
+   "N": 228,
+   "a": "reverse_light_on_attack_3_masquerade",
+   "b": "ambient_highway_street_driving_long",
+   "kind": "ab",
+   "min_grid": 622,
+   "sim_global": 0.856011,
+   "sim_pairwise": 0.882192
+  }
+ ],
+ "per_file": [
+  {
+   "file": "ambient_dyno_drive_basic_long",
+   "median_sim_to_benign_global": 0.882999,
+   "median_sim_to_benign_pairwise": 0.882107,
+   "n_grid": 12488,
+   "n_nonconstant": 299
+  },
+  {
+   "file": "ambient_dyno_drive_basic_short",
+   "median_sim_to_benign_global": 0.894484,
+   "median_sim_to_benign_pairwise": 0.88873,
+   "n_grid": 4426,
+   "n_nonconstant": 285
+  },
+  {
+   "file": "ambient_dyno_drive_benign_anomaly",
+   "median_sim_to_benign_global": 0.861818,
+   "median_sim_to_benign_pairwise": 0.852257,
+   "n_grid": 4541,
+   "n_nonconstant": 435
+  },
+  {
+   "file": "ambient_dyno_drive_extended_long",
+   "median_sim_to_benign_global": 0.88859,
+   "median_sim_to_benign_pairwise": 0.888729,
+   "n_grid": 5262,
+   "n_nonconstant": 374
+  },
+  {
+   "file": "ambient_dyno_drive_extended_short",
+   "median_sim_to_benign_global": 0.883563,
+   "median_sim_to_benign_pairwise": 0.882107,
+   "n_grid": 2884,
+   "n_nonconstant": 397
+  },
+  {
+   "file": "ambient_dyno_drive_radio_infotainment",
+   "median_sim_to_benign_global": 0.885392,
+   "median_sim_to_benign_pairwise": 0.87725,
+   "n_grid": 3877,
+   "n_nonconstant": 276
+  },
+  {
+   "file": "ambient_dyno_drive_winter",
+   "median_sim_to_benign_global": 0.889997,
+   "median_sim_to_benign_pairwise": 0.886225,
+   "n_grid": 457,
+   "n_nonconstant": 196
+  },
+  {
+   "file": "ambient_dyno_exercise_all_bits",
+   "median_sim_to_benign_global": 0.867967,
+   "median_sim_to_benign_pairwise": 0.856377,
+   "n_grid": 20270,
+   "n_nonconstant": 523
+  },
+  {
+   "file": "ambient_dyno_idle_radio_infotainment",
+   "median_sim_to_benign_global": 0.891963,
+   "median_sim_to_benign_pairwise": 0.880765,
+   "n_grid": 6581,
+   "n_nonconstant": 248
+  },
+  {
+   "file": "ambient_dyno_reverse",
+   "median_sim_to_benign_global": 0.873118,
+   "median_sim_to_benign_pairwise": 0.88667,
+   "n_grid": 497,
+   "n_nonconstant": 182
+  },
+  {
+   "file": "ambient_highway_street_driving_diagnostics",
+   "median_sim_to_benign_global": 0.884771,
+   "median_sim_to_benign_pairwise": 0.878589,
+   "n_grid": 4682,
+   "n_nonconstant": 280
+  },
+  {
+   "file": "ambient_highway_street_driving_long",
+   "median_sim_to_benign_global": 0.875338,
+   "median_sim_to_benign_pairwise": 0.875058,
+   "n_grid": 37620,
+   "n_nonconstant": 369
+  },
+  {
+   "file": "correlated_signal_attack_1_masquerade",
+   "median_sim_to_benign_global": 0.881373,
+   "median_sim_to_benign_pairwise": 0.8840144999999999,
+   "n_grid": 312,
+   "n_nonconstant": 199
+  },
+  {
+   "file": "correlated_signal_attack_2_masquerade",
+   "median_sim_to_benign_global": 0.8733015,
+   "median_sim_to_benign_pairwise": 0.8906445000000001,
+   "n_grid": 264,
+   "n_nonconstant": 203
+  },
+  {
+   "file": "correlated_signal_attack_3_masquerade",
+   "median_sim_to_benign_global": 0.8804354999999999,
+   "median_sim_to_benign_pairwise": 0.883831,
+   "n_grid": 147,
+   "n_nonconstant": 155
+  },
+  {
+   "file": "max_engine_coolant_temp_attack_masquerade",
+   "median_sim_to_benign_global": 0.8846365,
+   "median_sim_to_benign_pairwise": 0.8877444999999999,
+   "n_grid": 237,
+   "n_nonconstant": 172
+  },
+  {
+   "file": "max_speedometer_attack_1_masquerade",
+   "median_sim_to_benign_global": 0.8892485,
+   "median_sim_to_benign_pairwise": 0.885459,
+   "n_grid": 855,
+   "n_nonconstant": 210
+  },
+  {
+   "file": "max_speedometer_attack_2_masquerade",
+   "median_sim_to_benign_global": 0.8806605,
+   "median_sim_to_benign_pairwise": 0.8910629999999999,
+   "n_grid": 578,
+   "n_nonconstant": 224
+  },
+  {
+   "file": "max_speedometer_attack_3_masquerade",
+   "median_sim_to_benign_global": 0.8728480000000001,
+   "median_sim_to_benign_pairwise": 0.881948,
+   "n_grid": 849,
+   "n_nonconstant": 220
+  },
+  {
+   "file": "reverse_light_off_attack_1_masquerade",
+   "median_sim_to_benign_global": 0.8708935,
+   "median_sim_to_benign_pairwise": 0.8782015000000001,
+   "n_grid": 263,
+   "n_nonconstant": 179
+  },
+  {
+   "file": "reverse_light_off_attack_2_masquerade",
+   "median_sim_to_benign_global": 0.876629,
+   "median_sim_to_benign_pairwise": 0.875374,
+   "n_grid": 382,
+   "n_nonconstant": 187
+  },
+  {
+   "file": "reverse_light_off_attack_3_masquerade",
+   "median_sim_to_benign_global": 0.8865505,
+   "median_sim_to_benign_pairwise": 0.880934,
+   "n_grid": 555,
+   "n_nonconstant": 186
+  },
+  {
+   "file": "reverse_light_on_attack_1_masquerade",
+   "median_sim_to_benign_global": 0.8778375,
+   "median_sim_to_benign_pairwise": 0.878717,
+   "n_grid": 525,
+   "n_nonconstant": 189
+  },
+  {
+   "file": "reverse_light_on_attack_2_masquerade",
+   "median_sim_to_benign_global": 0.8773044999999999,
+   "median_sim_to_benign_pairwise": 0.8897645000000001,
+   "n_grid": 701,
+   "n_nonconstant": 227
+  },
+  {
+   "file": "reverse_light_on_attack_3_masquerade",
+   "median_sim_to_benign_global": 0.8814394999999999,
+   "median_sim_to_benign_pairwise": 0.8874115,
+   "n_grid": 622,
+   "n_nonconstant": 228
+  }
+ ],
+ "spearman_N_vs_sim_pairwise_all": {
+  "correlation": -0.297398954331545,
+  "pvalue": 6.526892900995593e-06
+ },
+ "spearman_N_vs_sim_pairwise_benign_pairs": {
+  "correlation": -0.4134813405167731,
+  "pvalue": 0.0005590022748076318
+ },
+ "spearman_file_ngrid_vs_median_sim_global": {
+  "correlation": 0.1576923076923077,
+  "pvalue": 0.45155541117112874
+ },
+ "spearman_file_nonconstant_vs_median_sim_pairwise": {
+  "correlation": -0.2235045242344592,
+  "pvalue": 0.2828364918179412
+ },
+ "spearman_mingrid_vs_sim_global_all": {
+  "correlation": -0.05933135998888812,
+  "pvalue": 0.37896647874379696
+ }
+}

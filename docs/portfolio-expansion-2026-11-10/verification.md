@@ -248,3 +248,36 @@ Next bounded investigation: at pinned post-processing-agent code, determine whet
 - **Not done.** No lead was promoted to the catalog. The ORNL Security and Defense technology portfolio (153 listings, about 16 pages) was read only on page 1; its pagination links are public and can be followed in a later pass. 15 snapshot-present ORNL GitHub records in the lanes (Systemd_Snapshot, certified, greggd, eBPF_communityID, pkpass, oidc-utils and others) have never been triaged; they're listed in the Scout C report.
 - **Checks.** Audit PASS, map check valid (75 projects), registry valid, atlas and library test suites OK, library build/check current, `search "GNSS spoofing" --kind lead` returns `oakbat`, `git diff --check` clean. Nothing was pushed.
 - **Next bounded question (rebuild).** Can an independent rebuild of ORNL's signal-clustering-similarity detector (DOE CODE 134139, closed source; method public in OSTI 1866690), run on ROAD's signal-translated captures already in `.cache/data/`, detect the masquerades the time-based IDS missed at recall 0? Alternatives: a triage pass over the 15 untriaged GitHub records, or paging the remaining Security and Defense listings.
+
+## Round plan, 2026-11-15: rebuild, signal-clustering-similarity CAN masquerade detector on ROAD
+
+- **Question.** ORNL's signal-clustering-similarity detector (DOE CODE 134139, closed source) is described in OSTI 1866690 (NDSS 2022 workshop paper). Can an independent rebuild of that published method, run on ROAD's signal-translated captures, detect the masquerade attacks that the time-based IDS detected at recall 0? Where does it fail, by attack and by window?
+- **Existing evidence read.** Lead `can-signal-clustering-masquerade` and its referee verdict (verified), the [can-time-ids reconstruction](../../deep-dives/can-time-ids/reconstruction.md), the [can-time-ids-road lab](../../atlas/labs/can-time-ids-road/README.md) (Q1: Mean and Binning recall 0 on all 13 masquerades) and lead `road-can-dataset`. ROAD's `road.zip` is already in `.cache/data/road/` with its md5 verified; `signal_extractions/` (17 attack captures, ambient captures, DBC) is inside the zip but not yet extracted.
+- **Why.** It's cyber-first, it attacks the measured blind spot of the previous deep dive, and the method is public while the code is not. That is exactly the rebuild case.
+- **Depth.** Artifact study of the paper, then an independent rebuild and experiment. The rebuild is labelled as not ORNL's code throughout.
+- **Bound.**
+  - One reader, then one experimenter, then one referee.
+  - Local, offline, public data only. Run memory capped at 8 GB and each run at 30 minutes. No new downloads except open-source Python packages from PyPI (for example `clusim`) into an isolated venv in `.cache/`.
+  - Stop once the prediction, the R0 sanity check against the paper's reported numbers (where the paper gives them), and the masquerade question are answered or blocked with evidence.
+- **Ownership.**
+  - Coordinator: this handoff, leads, cards, INDEX.
+  - Reader: `deep-dives/can-signal-clustering/artifact-study.md`.
+  - Experimenter: `atlas/labs/can-signal-clustering-rebuild/`. Extracted data and venv in `.cache/data/road/` and `.cache/venv-clusim/`, which Git ignores.
+  - Referee: an appended paragraph in `verification/log.md`.
+- **Expected checks.** The AGENTS.md verify list, `git diff --check`, and a library search hit for the new lab.
+
+## Result, 2026-11-15: rebuild, signal-clustering-similarity CAN masquerade detector on ROAD
+
+**State: verified complete for the declared question.** The answer is a non-reproduction. It's an independent rebuild of a closed implementation, run offline on one vehicle's released captures.
+
+- **Reader.** [Artifact study](../../deep-dives/can-signal-clustering/artifact-study.md) of OSTI 1866690 (arXiv 2201.02665 v2 has the same text). The method is whole-capture, not windowed. The paper leaves ten choices open (A1-A10), each given a recommended default. One related public ORNL repo (DOE CODE 141444, windowed variant) was cloned read-only at `695a24e` in `.cache/src/` and not run. ROAD's `signal_extractions/ambient/` holds byte-identical copies of all 17 attack CSVs, so globbing it would leak attacks into the benign set.
+- **Experimenter.** [Lab](../../atlas/labs/can-signal-clustering-rebuild/README.md). Predictions were hashed at 02:54Z, before data extraction, the venv or any script existed. Python 3.10.20, clusim 0.4, scipy 1.9.3, caps of 30 minutes and an 8 GiB RSS watchdog per step; longest step 791 s.
+  - R0: Ward significant in 0 of 5 categories (paper 5 of 5; smallest two-sided p 0.199). Table III false positives match closely (29 vs 30 of 220), but true positives are 8/1/0/15/2 against the paper's 220/220/204/205/220.
+  - Q1: 1 of 13 masquerades flagged, so the rebuild does not recover what the timing IDS missed.
+  - Q2 (confound): clean pre-injection segments significant in 3 of 5 categories, length-matched benign crops in 25% of category tests, both above the full attack files.
+  - Q3: the global constant filter drops every injected field. In the per-pair variant, the one with any significance, results run the wrong way (attacks more similar to benign) and survive removing the target ID entirely.
+- **Referee.** 25 claims: 17 verified, 6 corrected, 2 unverifiable (self-attested deviation dates; the scipy failure behind the version pins wasn't logged). The predictions hash and timestamps check out, and `summarize.py` regenerates all five results CSVs byte for byte. The corrections (the paper's wording on where its signal translation came from, three prediction-table verdicts, slow-ID details, two timings, one median comparison) are applied to the study and the lab README.
+- **Integration.** `can-signal-clustering-masquerade` promoted from leads to the catalog under RULES 13 (DOE CODE 134139 research org and developer affiliation ORNL), with a lanes row (cybersecurity, deep), a [short brief](../../projects/can-signal-clustering-masquerade.md) (RULES 21, closed code), an INDEX entry and a rebuilt portfolio map (76 projects). New card `cards/can-signal-clustering-not-reproduced.json`. Extracted data, the parse cache and the venv stay in ignored `.cache/`.
+- **Checks.** Audit PASS, map check valid, registry valid, atlas and library tests OK, library build/check current; a search for "masquerade length confound clustering" returns the new card, and the project packet resolves. `git diff --check` clean. Nothing pushed.
+- **Not done.** Only one variant was changed at a time; combinations weren't searched. The brief has one referee sweep, not two. No upstream issue was opened about the non-reproduction or the duplicated ambient files. That would be outreach and needs the owner's OK.
+- **Next bounded question.** Does ORNL's public windowed follow-up (DOE CODE 141444, pinned `695a24e`, MIT) avoid the length confound? Run it on ROAD with the same two controls (pre-injection segments and length-matched benign crops). Its preprocessing module is missing from the repo, so first decide whether the lab's signal loader can stand in for it. Alternative: a small grid of the two most plausible preprocessing combinations, to settle whether the 2022 tables can be reproduced at all.

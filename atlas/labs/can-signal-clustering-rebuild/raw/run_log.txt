@@ -1,0 +1,39 @@
+2026-11-16T02:57:37Z start env
+2026-11-16T02:57:38Z end env
+2026-11-16T02:57:38Z start dups
+2026-11-16T02:57:39Z end dups
+2026-11-16T02:57:39Z start prep
+2026-11-16T02:58:07Z end prep
+2026-11-16T03:00:02Z start r0
+2026-11-16T03:00:11Z end r0
+2026-11-16T03:00:29Z start sens
+2026-11-16T03:00:41Z end sens
+2026-11-16T03:00:48Z start a3
+2026-11-16T03:06:19Z end a3
+2026-11-16T03:07:58Z start q1
+2026-11-16T03:07:59Z end q1
+2026-11-16T03:07:59Z start diag
+2026-11-16T03:08:02Z end diag
+2026-11-16T03:08:02Z start q2g
+2026-11-16T03:08:16Z note q2g failed (KeyError in cat_of on tagged names, no results computed); fixed cat_of and rerun
+2026-11-16T03:08:16Z start q2g
+2026-11-16T03:08:40Z end q2g
+2026-11-16T03:08:40Z start q3g
+2026-11-16T03:09:11Z note q3g failed (empty category in table2, no results computed); table2 now skips categories with no files; rerun
+2026-11-16T03:09:11Z start q3g
+2026-11-16T03:09:34Z end q3g
+2026-11-16T03:09:47Z start q3p
+2026-11-16T03:09:47Z start q2pc0
+2026-11-16T03:09:47Z start q2p
+2026-11-16T03:13:25Z start r0check
+2026-11-16T03:13:34Z end r0check
+2026-11-16T03:17:39Z end q2p
+2026-11-16T03:20:38Z end q3p
+2026-11-16T03:22:30Z end q2pc0
+2026-11-16T03:23:51Z start q2pc1
+2026-11-16T03:24:10Z start q2pi
+2026-11-16T03:28:40Z end q2pi
+2026-11-16T03:37:02Z end q2pc1
+2026-11-16T03:37:57Z note parse cache moved from .cache/work-clusim to .cache/data/road/work-clusim (git-ignored, inside the owned path); earlier steps used the old path with identical files; r0check rerun to confirm
+2026-11-16T03:37:57Z start r0check
+2026-11-16T03:38:05Z end r0check

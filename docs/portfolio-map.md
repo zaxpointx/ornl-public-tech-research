@@ -2,7 +2,7 @@
 
 Generated navigation over the declared catalog and selected relationship ledger. Not a census of ORNL, a live system map, or a fresh source verification. Briefs, signals, and deep-dive mentions indicate files, not equal research depth. Source retrieval dates remain in their original ledger entries.
 
-This navigation covers **75 catalog entries**, **33 inherited relationships**, and **8 new research propositions**. The [new technical research](portfolio-expansion-2026-11-10/README.md) adds cross-domain detail outside this inherited catalog. The [JSON map](portfolio-map.json) preserves every catalog record and original source-ledger text.
+This navigation covers **76 catalog entries**, **33 inherited relationships**, and **8 new research propositions**. The [new technical research](portfolio-expansion-2026-11-10/README.md) adds cross-domain detail outside this inherited catalog. The [JSON map](portfolio-map.json) preserves every catalog record and original source-ledger text.
 
 Rebuild with `python3 scripts/build_portfolio_map.py`; check with `python3 scripts/build_portfolio_map.py --check`.
 
@@ -21,7 +21,7 @@ flowchart LR
   atlas --> d1["HPC: 11 entries"]
   atlas --> d2["buildings/transport: 8 entries"]
   atlas --> d3["climate/earth: 5 entries"]
-  atlas --> d4["cyber: 10 entries"]
+  atlas --> d4["cyber: 11 entries"]
   atlas --> d5["grid/energy: 4 entries"]
   atlas --> d6["materials: 6 entries"]
   atlas --> d7["neutrons: 8 entries"]
@@ -94,6 +94,7 @@ flowchart LR
 | [Situ](https://www.osti.gov/biblio/1232450) | draft-osti-only | [brief](../projects/situ.md); [public traces](../signals/situ.md) |
 | [Hyperion](https://www.osti.gov/biblio/1231925) | unknown | [brief](../projects/hyperion.md) |
 | [Time-Based CAN IDS Benchmark](https://github.com/pmoriano/can-time-based-ids-benchmark) | active | [brief](../projects/can-time-ids-benchmark.md) |
+| [Signal Clustering Similarity CAN Masquerade Detector](https://www.osti.gov/biblio/1866690) | unknown | [brief](../projects/can-signal-clustering-masquerade.md) |
 
 ## grid/energy
 

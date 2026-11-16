@@ -1201,6 +1201,19 @@
       "signals": null,
       "deep_dive_mentions": [],
       "catalog_notes": "subdomain: vehicle network security; four timing-based CAN intrusion detectors benchmarked on ROAD fabrication attacks [KNOWN: repo, arXiv 2101.05781]; DOE CODE 69319 site ownership ORNL, developer affiliation ORNL, research_organizations empty [KNOWN: referee re-fetch 2026-11-15]; GPL-3.0; last push 2022-01-18; promoted from discovery/leads.csv 2026-11-15; deep dive and lab run 2026-11-15"
+    },
+    {
+      "id": "can-signal-clustering-masquerade",
+      "name": "Signal Clustering Similarity CAN Masquerade Detector",
+      "domain": "cyber",
+      "recorded_status": "unknown",
+      "primary_url": "https://www.osti.gov/biblio/1866690",
+      "repository_url": null,
+      "recorded_org_evidence": "[UNKNOWN]",
+      "brief": "projects/can-signal-clustering-masquerade.md",
+      "signals": null,
+      "deep_dive_mentions": [],
+      "catalog_notes": "subdomain: vehicle network security; whole-capture masquerade detector comparing signal-correlation dendrograms with CluSim [KNOWN: OSTI 1866690]; DOE CODE 134139 research org and developer affiliation ORNL, closed source, no repo [KNOWN: referee re-fetch 2026-11-15]; promoted from discovery/leads.csv 2026-11-15; short brief (RULES 21); independent rebuild did not reproduce Tables II-III"
     }
   ],
   "relationships": [
@@ -2061,7 +2074,8 @@
       "cpad",
       "situ",
       "hyperion",
-      "can-time-ids-benchmark"
+      "can-time-ids-benchmark",
+      "can-signal-clustering-masquerade"
     ],
     "grid/energy": [
       "gridkit",
