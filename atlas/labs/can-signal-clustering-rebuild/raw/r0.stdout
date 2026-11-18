@@ -1,0 +1,5 @@
+primary N 114 build 2.4 s
+primary single 0.9 s {'correlated_signal': 0.9136, 'max_speedometer': 0.1732, 'max_engine_coolant_temp': 0.3717, 'reverse_light_on': 0.7027, 'reverse_light_off': 0.3356}
+primary complete 0.8 s {'correlated_signal': 0.0019, 'max_speedometer': 0.8145, 'max_engine_coolant_temp': 0.2419, 'reverse_light_on': 0.391, 'reverse_light_off': 0.5401}
+primary average 0.8 s {'correlated_signal': 0.5081, 'max_speedometer': 0.4558, 'max_engine_coolant_temp': 0.2419, 'reverse_light_on': 0.4474, 'reverse_light_off': 0.3499}
+primary ward 2.7 s {'correlated_signal': 0.6924, 'max_speedometer': 0.573, 'max_engine_coolant_temp': 0.8085, 'reverse_light_on': 0.1988, 'reverse_light_off': 0.908}

@@ -1,0 +1,214 @@
+{
+ "0x4e7:without_target": {
+  "meta": {
+   "N_max": 405,
+   "N_median": 219.0,
+   "N_min": 139
+  },
+  "per_file": {
+   "without_target:max_engine_coolant_temp_attack_masquerade": {
+    "greater": 0.945150224305036,
+    "legacy_half": 0.05640412584767795,
+    "median_attack": 0.8917913192633833,
+    "median_benign": 0.8773619446993735,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.1128082516953559
+   }
+  },
+  "table2": {
+   "max_engine_coolant_temp": {
+    "greater": 0.945150224305036,
+    "legacy_half": 0.05640412584767795,
+    "median_attack": 0.8917913192633833,
+    "median_benign": 0.8773619446993735,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.1128082516953559
+   }
+  }
+ },
+ "0x6e0:without_target": {
+  "meta": {
+   "N_max": 403,
+   "N_median": 193.5,
+   "N_min": 128
+  },
+  "per_file": {
+   "without_target:correlated_signal_attack_1_masquerade": {
+    "greater": 0.9280000019010124,
+    "legacy_half": 0.07391942114187246,
+    "median_attack": 0.8821161084527982,
+    "median_benign": 0.8781118655547113,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.14783884228374491
+   },
+   "without_target:correlated_signal_attack_2_masquerade": {
+    "greater": 0.9993587414721636,
+    "legacy_half": 0.000672936036642189,
+    "median_attack": 0.8906824421610693,
+    "median_benign": 0.8781118655547113,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.001345872073284378
+   },
+   "without_target:correlated_signal_attack_3_masquerade": {
+    "greater": 0.9420070133125412,
+    "legacy_half": 0.059616812982198654,
+    "median_attack": 0.884009414270191,
+    "median_benign": 0.8781118655547113,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.11923362596439731
+   }
+  },
+  "table2": {
+   "correlated_signal": {
+    "greater": 0.9991963943285933,
+    "legacy_half": 0.0008231053261513162,
+    "median_attack": 0.8875006202561657,
+    "median_benign": 0.8781118655547113,
+    "n_attack": 36,
+    "n_benign": 66,
+    "two_sided": 0.0016462106523026324
+   }
+  }
+ },
+ "0xd0:without_target": {
+  "meta": {
+   "N_max": 401,
+   "N_median": 192.5,
+   "N_min": 142
+  },
+  "per_file": {
+   "without_target:max_speedometer_attack_1_masquerade": {
+    "greater": 0.9967487522098478,
+    "legacy_half": 0.0033900630144901903,
+    "median_attack": 0.8895507767175221,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.006780126028980381
+   },
+   "without_target:max_speedometer_attack_2_masquerade": {
+    "greater": 0.9826547765492532,
+    "legacy_half": 0.01794795667841462,
+    "median_attack": 0.8868233255005133,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.03589591335682924
+   },
+   "without_target:max_speedometer_attack_3_masquerade": {
+    "greater": 0.8320999433383657,
+    "legacy_half": 0.17139985549506653,
+    "median_attack": 0.8837916356689357,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.34279971099013307
+   },
+   "without_target:reverse_light_off_attack_1_masquerade": {
+    "greater": 0.7446735971498937,
+    "legacy_half": 0.2597965767772991,
+    "median_attack": 0.8859896169824891,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.5195931535545982
+   },
+   "without_target:reverse_light_off_attack_2_masquerade": {
+    "greater": 0.4917132435091554,
+    "legacy_half": 0.4917132435091554,
+    "median_attack": 0.8755536522712327,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.9834264870183108
+   },
+   "without_target:reverse_light_off_attack_3_masquerade": {
+    "greater": 0.8949559388375823,
+    "legacy_half": 0.10758495260481815,
+    "median_attack": 0.8834912672497051,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.2151699052096363
+   },
+   "without_target:reverse_light_on_attack_1_masquerade": {
+    "greater": 0.7664072135517336,
+    "legacy_half": 0.2378557292571109,
+    "median_attack": 0.8802532627775024,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.4757114585142218
+   },
+   "without_target:reverse_light_on_attack_2_masquerade": {
+    "greater": 0.9940242100593639,
+    "legacy_half": 0.006214541867274192,
+    "median_attack": 0.892873570397942,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.012429083734548384
+   },
+   "without_target:reverse_light_on_attack_3_masquerade": {
+    "greater": 0.983808514961899,
+    "legacy_half": 0.01675986348749632,
+    "median_attack": 0.8902919121523376,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 12,
+    "n_benign": 66,
+    "two_sided": 0.03351972697499264
+   }
+  },
+  "table2": {
+   "max_speedometer": {
+    "greater": 0.9982694802291006,
+    "legacy_half": 0.0017698443680365902,
+    "median_attack": 0.886157295774787,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 36,
+    "n_benign": 66,
+    "two_sided": 0.0035396887360731803
+   },
+   "reverse_light_off": {
+    "greater": 0.8286462815985739,
+    "legacy_half": 0.17314064279141628,
+    "median_attack": 0.8811232752197624,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 36,
+    "n_benign": 66,
+    "two_sided": 0.34628128558283255
+   },
+   "reverse_light_on": {
+    "greater": 0.9966705860792704,
+    "legacy_half": 0.003400450730153246,
+    "median_attack": 0.8854672773126886,
+    "median_benign": 0.8785266108964309,
+    "n_attack": 36,
+    "n_benign": 66,
+    "two_sided": 0.006800901460306492
+   }
+  }
+ },
+ "argv": [
+  "atlas/labs/can-signal-clustering-rebuild/run_q.py",
+  "q3",
+  ".cache/work-clusim",
+  ".cache/data/road/road/signal_extractions",
+  "atlas/labs/can-signal-clustering-rebuild/raw/q3_pairwise.json",
+  "--mode",
+  "pairwise"
+ ],
+ "guard": {
+  "mem_cap_bytes": 8589934592,
+  "rlimit_as": "not set: ValueError('current limit exceeds maximum limit')",
+  "time_cap_s": 1800
+ },
+ "mode": "pairwise",
+ "peak_rss_bytes": 2368372736,
+ "wall_s": 649.9
+}

@@ -1,0 +1,129 @@
+{
+ "seed": 0,
+ "timings_s": {
+  "parsed training": 21.2,
+  "trained": 23.0,
+  "loaded fabrication": 25.3,
+  "R0 mean sweep": 27.6,
+  "R0 binning sweep": 30.5,
+  "gauss thresholds + vals": 31.3,
+  "Q2 sweeps": 38.8,
+  "Q3": 39.9,
+  "Q1": 42.8
+ },
+ "train_files": [
+  "ambient_dyno_drive_basic_long.log",
+  "ambient_dyno_drive_basic_short.log",
+  "ambient_dyno_drive_benign_anomaly.log",
+  "ambient_dyno_drive_extended_long.log",
+  "ambient_dyno_drive_extended_short.log",
+  "ambient_dyno_drive_radio_infotainment.log",
+  "ambient_dyno_drive_winter.log",
+  "ambient_dyno_exercise_all_bits.log",
+  "ambient_dyno_idle_radio_infotainment.log",
+  "ambient_dyno_reverse.log"
+ ],
+ "train_rows": 13300759,
+ "train_aids": 105,
+ "fabrication_files": [
+  "correlated_signal_attack_1",
+  "correlated_signal_attack_2",
+  "correlated_signal_attack_3",
+  "fuzzing_attack_1",
+  "fuzzing_attack_2",
+  "fuzzing_attack_3",
+  "max_engine_coolant_temp_attack",
+  "max_speedometer_attack_1",
+  "max_speedometer_attack_2",
+  "max_speedometer_attack_3",
+  "reverse_light_off_attack_1",
+  "reverse_light_off_attack_2",
+  "reverse_light_off_attack_3",
+  "reverse_light_on_attack_1",
+  "reverse_light_on_attack_2",
+  "reverse_light_on_attack_3"
+ ],
+ "masquerade_files": [
+  "correlated_signal_attack_1_masquerade",
+  "correlated_signal_attack_2_masquerade",
+  "correlated_signal_attack_3_masquerade",
+  "max_engine_coolant_temp_attack_masquerade",
+  "max_speedometer_attack_1_masquerade",
+  "max_speedometer_attack_2_masquerade",
+  "max_speedometer_attack_3_masquerade",
+  "reverse_light_off_attack_1_masquerade",
+  "reverse_light_off_attack_2_masquerade",
+  "reverse_light_off_attack_3_masquerade",
+  "reverse_light_on_attack_1_masquerade",
+  "reverse_light_on_attack_2_masquerade",
+  "reverse_light_on_attack_3_masquerade"
+ ],
+ "fab_rows": 1588263,
+ "fab_pos_published": 61516,
+ "fab_unseen": {
+  "correlated_signal_attack_1": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "correlated_signal_attack_2": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "correlated_signal_attack_3": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "fuzzing_attack_1": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "fuzzing_attack_2": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "fuzzing_attack_3": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "max_engine_coolant_temp_attack": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "max_speedometer_attack_1": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "max_speedometer_attack_2": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "max_speedometer_attack_3": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_off_attack_1": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_off_attack_2": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_off_attack_3": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_on_attack_1": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_on_attack_2": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  },
+  "reverse_light_on_attack_3": {
+   "unseen_aids": [],
+   "unseen_rows": 0
+  }
+ }
+}

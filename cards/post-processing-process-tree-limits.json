@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "post-processing-process-tree-limits",
+  "project_ids": ["post-processing-agent"],
+  "title": "Supervise the whole job process tree",
+  "problem": "A queued script can hang or spawn children that consume shared-machine memory beyond what parent-process monitoring reveals.",
+  "mechanism": "[KNOWN: historical code inspection, 2026-11-11] The neutron post-processing agent polls a script subprocess, sums resident memory across its process tree with psutil, and kills the tree when a configured time or memory limit is exceeded. The worker also limits intake using its running-process count.",
+  "finding": "[KNOWN: pinned code summarized in engineering pattern A2] Resource accounting includes child processes, and a limit violation is written to the run error log. This is a polling supervisor pattern. The existing work did not execute it or establish that it prevents every resource exhaustion or process escape.",
+  "evidence_level": "code-inspected",
+  "source_urls": [
+    "https://github.com/neutrons/post_processing_agent/blob/0ec3642fcc811e06e8a12e58e7b101af7213dccd/README_developer.md"
+  ],
+  "code_refs": [
+    "https://github.com/neutrons/post_processing_agent/blob/0ec3642fcc811e06e8a12e58e7b101af7213dccd/postprocessing/processors/job_handling.py#L33-L88",
+    "https://github.com/neutrons/post_processing_agent/blob/0ec3642fcc811e06e8a12e58e7b101af7213dccd/postprocessing/processors/job_handling.py#L127-L158",
+    "https://github.com/neutrons/post_processing_agent/blob/0ec3642fcc811e06e8a12e58e7b101af7213dccd/postprocessing/Consumer.py#L133-L146"
+  ],
+  "supporting_paths": [
+    "lessons/engineering-patterns.md",
+    "projects/post-processing-agent.md",
+    "batches/batch-13.md"
+  ],
+  "experiment": {
+    "status": "not-run",
+    "revision": "0ec3642fcc811e06e8a12e58e7b101af7213dccd",
+    "command": null,
+    "results_path": null,
+    "limitations": "Code reading only. Polling races, transient memory spikes, child lifetime, operating-system differences and broker behavior have not been tested. This pattern does not establish a security isolation boundary."
+  },
+  "adaptation": "[INFERRED] An agent job runner can account for descendants rather than only the launcher, log the limit reason, and apply back-pressure before accepting more work. Compare this supervisor with operating-system resource controls using bounded synthetic child processes before adopting it.",
+  "unknowns": [
+    "Can a short-lived or detached child escape accounting or termination at the pinned revision?",
+    "How far can usage exceed a configured limit between polls?",
+    "How do multiple workers behave when their individual memory budgets compete?"
+  ]
+}

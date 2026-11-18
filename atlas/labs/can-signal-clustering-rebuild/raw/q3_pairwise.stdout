@@ -1,0 +1,3 @@
+0xd0 without_target 287.6 s 192.5 {'max_speedometer': 0.9983, 'reverse_light_on': 0.9967, 'reverse_light_off': 0.8286}
+0x4e7 without_target 461.2 s 219.0 {'max_engine_coolant_temp': 0.9452}
+0x6e0 without_target 649.9 s 193.5 {'correlated_signal': 0.9992}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "boundary": "Identity crosswalk only, not a dependency or integration claim. Catalog status and registry evidence remain separate.",
+  "links": [
+    {"registry_id": "software-datafed", "project_id": "datafed", "basis": "Same repository URL in catalog and registry: https://github.com/ORNL/DataFed"},
+    {"registry_id": "software-adios2", "project_id": "adios2", "basis": "Same ADIOS2 software named in catalog and registry; src-adios2-paper supplies the registry evidence."},
+    {"registry_id": "software-flowcept", "project_id": "flowcept", "basis": "Same repository URL in catalog and registry: https://github.com/ORNL/flowcept"},
+    {"registry_id": "software-zambeze", "project_id": "zambeze", "basis": "Same repository URL in catalog and registry: https://github.com/ORNL/Zambeze"}
+  ]
+}

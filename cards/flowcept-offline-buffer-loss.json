@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "flowcept-offline-buffer-loss",
+  "project_ids": ["flowcept"],
+  "title": "Buffered provenance can disappear with the workflow",
+  "problem": "A failed workflow is especially useful to diagnose, but its completed task records may still exist only in process memory.",
+  "mechanism": "[KNOWN: historical code inspection] Flowcept 1.0.3 offline mode accumulates records in a list and writes them on normal stop or an explicit dump_buffer() call. The timed autoflush settings apply to online mode.",
+  "finding": "[KNOWN: recorded experiment, 2026-11-11] The stored scenarios show no output file or records after os._exit(9), including after 200 finished tasks, or self-directed SIGTERM. Normal completion and a raised task exception preserved records. These results concern unflushed offline buffers, not broker-backed mode. The lab README separately reports that a manual dump before SIGTERM preserved 200 records; that workaround is not one of the six stored scenarios. This is a documented design limit, not an undocumented durability promise.",
+  "evidence_level": "experiment-recorded",
+  "source_urls": [
+    "https://github.com/ORNL/flowcept/blob/c000b10ea49659af6c5821b61918f3893bd46a92/docs/prov_storage.rst"
+  ],
+  "code_refs": [
+    "https://github.com/ORNL/flowcept/blob/c000b10ea49659af6c5821b61918f3893bd46a92/src/flowcept/commons/daos/mq_dao/mq_dao_base.py#L158-L195"
+  ],
+  "supporting_paths": [
+    "atlas/labs/flowcept-failure-study/README.md",
+    "atlas/labs/flowcept-failure-study/scenarios.py",
+    "atlas/labs/flowcept-failure-study/results-flowcept-1.0.3.json",
+    "lessons/engineering-patterns.md"
+  ],
+  "experiment": {
+    "status": "recorded",
+    "revision": "c000b10ea49659af6c5821b61918f3893bd46a92",
+    "command": "python3 -I atlas/labs/flowcept-failure-study/scenarios.py",
+    "results_path": "atlas/labs/flowcept-failure-study/results-flowcept-1.0.3.json",
+    "limitations": "Historical results, not rerun for this card. Reproduction requires Python with Flowcept 1.0.3 installed. Recorded environment: Python 3.11.15, macOS arm64. Synthetic offline workflows only; no broker, adapter, thread or async tests. The scenarios named hard_kill use os._exit(9), not external SIGKILL. The command prints new summaries and does not overwrite the stored result file."
+  },
+  "adaptation": "[INFERRED] When building an agent runner, explicitly choose the acceptable telemetry loss window and test termination after useful work has finished. Periodic persistence or durable append-only recording may reduce loss; measure recovery and overhead before claiming durability.",
+  "unknowns": [
+    "Durability and failure behavior of Flowcept online modes were not measured here.",
+    "Behavior under external SIGKILL, host power loss, disk failure and concurrent instrumentation is untested.",
+    "Whether a later Flowcept revision changes offline persistence requires fresh inspection."
+  ]
+}

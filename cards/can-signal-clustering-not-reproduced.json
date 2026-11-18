@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "can-signal-clustering-not-reproduced",
+  "project_ids": ["can-signal-clustering-masquerade"],
+  "title": "A published signal-clustering CAN masquerade detector did not reproduce from its description, and capture length looks like a confound",
+  "problem": "Masquerade attacks on a vehicle CAN bus keep normal message timing, so timing-based detectors miss them; ORNL published a correlation-structure detector aimed at exactly that gap, but its code is closed.",
+  "mechanism": "[KNOWN: OSTI 1866690] Each whole capture is translated to signal time series, resampled to 10 Hz, turned into a Pearson correlation matrix and clustered hierarchically (single, complete, average, Ward). Dendrograms are compared with CluSim element-centric similarity (alpha 0.9, r -5.0), and a Mann-Whitney test asks whether attack-vs-benign similarities fall below benign-vs-benign similarities. The paper reports Ward significance for all five ROAD masquerade categories and F1 of about 90-94% over 220 folds.",
+  "finding": "[KNOWN: recorded experiment, 2026-11-15] An independent rebuild (not ORNL's code) on ROAD's released signal files, with predictions hashed before any data was extracted, found Ward significant in 0 of 5 categories (smallest two-sided p 0.199) and flagged 1 of 13 masquerade captures. The global constant filter removed every injected field because some captures hold those fields constant. The only variant with significance (per-pair signal sets, 3 of 5) ran in the wrong direction, attack captures looking more similar to benign ones, and stayed significant with the target ID's signals removed. Clean pre-injection segments were significant in 3 of 5 categories and length-matched benign crops in 25% of category tests, so capture length and driving regime drive the test more than the injection does. [INFERRED] The closed code may make choices the paper does not state, or use a different signal translation; a non-reproduction does not show the original results are wrong.",
+  "evidence_level": "experiment-recorded",
+  "source_urls": [
+    "https://www.osti.gov/biblio/1866690",
+    "https://arxiv.org/abs/2201.02665",
+    "https://www.osti.gov/doecode/biblio/134139",
+    "https://zenodo.org/records/10462796",
+    "https://github.com/Hoosier-Clusters/clusim"
+  ],
+  "code_refs": [],
+  "supporting_paths": [
+    "deep-dives/can-signal-clustering/artifact-study.md",
+    "atlas/labs/can-signal-clustering-rebuild/README.md",
+    "atlas/labs/can-signal-clustering-rebuild/predictions.md",
+    "atlas/labs/can-signal-clustering-rebuild/results_table2.csv",
+    "projects/can-signal-clustering-masquerade.md"
+  ],
+  "experiment": {
+    "status": "recorded",
+    "revision": "independent rebuild from OSTI 1866690 (PDF md5 27f8aa0e05691288e8f67734c151b31a); no ORNL code",
+    "command": "sh atlas/labs/can-signal-clustering-rebuild/run.sh env dups prep r0 r0check sens a3 q1 diag q2g q3g q2p q2pi q2pc0 q2pc1 q3p",
+    "results_path": "atlas/labs/can-signal-clustering-rebuild/raw/r0.json",
+    "limitations": "Independent rebuild of a closed implementation from its paper; ten ambiguities were resolved by stated choices and only one variant was changed at a time. Python 3.10.20 with clusim 0.4, python-igraph 0.9.9, scipy 1.9.3, numpy 1.23.5 and pandas 1.5.3 on macOS arm64. Requires the ROAD dataset (not committed). Mann-Whitney on pairwise similarities treats dependent values as independent. Offline replay of one vehicle's dynamometer captures. The deviation dates in the README are self-attested; the predictions file hash is not."
+  },
+  "adaptation": "[INFERRED] When judging a whole-capture CAN detector, add two controls before trusting a significant result: clean segments of the attack captures with the injection cut out, and benign crops matched to the attack captures' lengths. Report which signals survive preprocessing filters, since a filter can silently drop the attacked field.",
+  "unknowns": [
+    "Whether any coherent set of preprocessing choices, such as a union signal set with constant signals kept or a fresh DBC translation of the raw logs, reproduces the paper's Ward column in the right direction.",
+    "What the closed DOE CODE 134139 implementation actually does differently, and what its probability score means.",
+    "Whether ORNL's later public windowed code (DOE CODE 141444) avoids the length confound."
+  ]
+}
