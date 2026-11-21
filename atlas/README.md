@@ -54,6 +54,10 @@ The atlas now has a second research layer. The current guide covers autonomous s
 The registry now contains 76 source records, 19 project/capability records, 4 facility records, 13 software records, 6 role records, and 27 typed relationships. The original guide ledger has 57 entries plus twelve source-ID entries from the workflow software batch. Quantum, nuclear, polymer, grid, AI-security, and INTERSECT portfolio lanes now have direct-source dossiers; they still need deeper technical reports, repository inspection, and complete staff maps before the atlas can be called exhaustive. Run `python3 scripts/validate_registry.py` before promoting new relationships.
 
 
+## Cyber atlas
+
+The [cyber atlas](cyber/README.md) (added 2026-11-21) maps ORNL's public cybersecurity projects by lane, with one brief per project, four deep dives (vehicles, AI security, grid and quantum, the 2010s analyst tools), an outside-in [signals](cyber/signals.md) page, a [learn-and-build guide](cyber/learn-and-build.md) and [verification notes](cyber/verification.md).
+
 ## Workflow software research and local experiment
 
 The [workflow software dossier](guide/project-dossiers/workflow-software-and-local-reconstruction.md) examines pinned Flowcept, Zambeze, INTERSECT SDK, and DataFed artifacts, including an actual historical Zambeze–Flowcept hook and its version limitations. The [local workflow lab](labs/cross-layer-pilot/README.md) tests synthetic execution, bounded recovery, evidence gates, and provenance replay. It is Atlas-authored code, not an ORNL implementation.

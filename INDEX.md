@@ -82,6 +82,7 @@ Projects: 74 cataloged, 63 full briefs plus 7 short briefs linked (all 70 verifi
 - [XACC](projects/xacc.md): framework for programming quantum computers and simulators from C++ or Python; UT-Battelle copyright plus DOE CODE code-5041 (ORNL tie CORROBORATED); EPL-1.0 or EDL-1.0. Batch 07-08. Status unknown (last default-branch commit 2023-08-01); no successor named in public sources. Verified (two sweeps, 2026-10-24). [Signals](signals/xacc.md).
 
 ## Cyber
+See also the [ORNL cyber atlas](atlas/cyber/README.md): 35 projects by lane, including 24 not yet in the catalog (one fact-check sweep so far, listed in [atlas/cyber/cyber-catalog.csv](atlas/cyber/cyber-catalog.csv)).
 - [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning simulator for training AI agents that defend networks. Verified (two sweeps; second sweep 2026-10-29), borderline active (whether it's still developed is unverifiable).
 - [TASQC](projects/tasqc.md): uses quantum correlations to authenticate grid timing signals. Group B. Verified, two sweeps (2026-10-29).
 - [Akatosh](projects/akatosh.md): pairs intrusion-detection alerts with automated forensic checks to cut false alarms. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
