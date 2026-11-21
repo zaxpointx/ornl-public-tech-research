@@ -123,6 +123,8 @@ How to read it:
   - [Gauntlet](projects/gauntlet.md): sponsored by FEMA and FEMP, per its OSTI record (signals/gauntlet.md).
 
 ### Cybersecurity
+The full cyber map, including 24 projects not yet in the catalog and the division and group structure from public pages, is in the [ORNL cyber atlas](atlas/cyber/README.md).
+
 - **Program: ORNL LDRD**
   - [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning network defense test bed [CORROBORATED, map 56]. There's a full deep dive in [deep-dives/cyberwheel](deep-dives/cyberwheel/).
 - OSTI records only:

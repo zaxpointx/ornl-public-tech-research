@@ -37,6 +37,7 @@ The [reading order](docs/reading-order.md) links the same corpus for human reade
 - **New here:** start with the [public research guide](docs/public-research-guide.md), then explore the [lab map](LAB-TREE.md) and [project index](INDEX.md).
 - **Browse projects:** use the [Project Index](INDEX.md) and [coverage matrix](docs/coverage-matrix.md).
 - **Read connected stories:** follow [INTERSECT additive manufacturing](docs/intersect-additive-story.md), the [SNS neutron data pipeline](deep-dives/sns-neutron-pipeline.md), [Cyberwheel](deep-dives/cyberwheel/synthesis.md), [autonomous science](docs/autonomous-science.md), or [isotopes and hot cells](docs/isotopes-and-hot-cells.md).
+- **Cybersecurity:** the [ORNL cyber atlas](atlas/cyber/README.md) maps 35 public ORNL cyber projects across vehicles, the grid, AI security, analyst tools and quantum-secured communication, with four deep dives, an outside-in signals page and a [learn-and-build guide](atlas/cyber/learn-and-build.md) for cybersecurity students. Its 24 new projects have had one fact-check sweep and are listed in [atlas/cyber/cyber-catalog.csv](atlas/cyber/cyber-catalog.csv) until a second sweep promotes them to the catalog.
 - **Facilities and relationships:** browse the [facilities, instruments and roles guide](docs/facilities-instruments-roles.md) and the selected [relationship index](docs/research-relationships.md).
 - **Focus lanes and the lab layer:** [discovery/lanes.csv](discovery/lanes.csv) tags every project for cybersecurity, software engineering, AI/agents and Linux/infra, with a deep, lead or pool tier. [atlas/](atlas/README.md), merged in from the former ornl-atlas repository on 2026-11-11, holds the operating-model guide, a JSON evidence registry with an agent query tool, and experiments that run ORNL code.
 - **Reuse the engineering:** [engineering patterns in ORNL's public code](lessons/engineering-patterns.md) turns design moves in 15 public repos into reusable patterns, each tied to pinned code lines, with a lookup table by what you are building.
@@ -57,7 +58,7 @@ Work in progress. Counts below are taken from the files in this snapshot.
 | Project files | 72 (63 full briefs, 7 short briefs and 2 short OSTI-only drafts) |
 | Project files checked in two sweeps | 72 |
 | Briefs still to write | 2 OSTI-only stubs (Cincinnatus, CPAD), waiting on a public docs page |
-| Deep dives finished | 6 |
+| Deep dives finished | 6 (plus 4 cyber atlas deep dives in [atlas/cyber/deep-dives/](atlas/cyber/deep-dives/vehicle-cyber.md)) |
 | Signals files | 45 ([signals/](signals/)) |
 | Research batches | 12 files covering batches 01 to 13; 07 and 08 share a file ([batches/](batches/)) |
 
