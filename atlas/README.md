@@ -58,6 +58,10 @@ The registry now contains 76 source records, 19 project/capability records, 4 fa
 
 The [cyber atlas](cyber/README.md) (added 2026-11-21) maps ORNL's public cybersecurity projects by lane, with one brief per project, four deep dives (vehicles, AI security, grid and quantum, the 2010s analyst tools), an outside-in [signals](cyber/signals.md) page, a [learn-and-build guide](cyber/learn-and-build.md) and [verification notes](cyber/verification.md).
 
+## Y-12 atlas
+
+The [Y-12 atlas](y12/README.md) (added 2026-11-22) covers the Y-12 National Security Complex, ORNL's Oak Ridge neighbor run by Consolidated Nuclear Security for NNSA: how it relates to ORNL, ORAU and NNSA, 13 briefs on public cyber and software items, two deep dives, [signals](y12/signals.md), a [learn-and-build page](y12/learn-and-build.md) and [verification notes](y12/verification.md). No public Y-12 code was found.
+
 ## Workflow software research and local experiment
 
 The [workflow software dossier](guide/project-dossiers/workflow-software-and-local-reconstruction.md) examines pinned Flowcept, Zambeze, INTERSECT SDK, and DataFed artifacts, including an actual historical Zambeze–Flowcept hook and its version limitations. The [local workflow lab](labs/cross-layer-pilot/README.md) tests synthetic execution, bounded recovery, evidence gates, and provenance replay. It is Atlas-authored code, not an ORNL implementation.
