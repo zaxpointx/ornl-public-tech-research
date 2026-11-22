@@ -1,0 +1,2 @@
+full 345.7 s {'correlated_signal': 0.9974, 'max_speedometer': 0.9974, 'max_engine_coolant_temp': 0.9436, 'reverse_light_on': 0.9979, 'reverse_light_off': 0.8994}
+pre_injection 469.3 s {'correlated_signal': 0.3385, 'max_speedometer': 0.7614, 'max_engine_coolant_temp': 0.6885, 'reverse_light_on': 0.9482, 'reverse_light_off': 0.5764}

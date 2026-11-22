@@ -1,0 +1,59 @@
+Archive:  road.zip
+ Length   Method    Size  Cmpr    Date    Time   CRC-32   Name
+--------  ------  ------- ---- ---------- ----- --------  ----
+       0  Stored        0   0% 12-26-2021 23:29 00000000  road/signal_extractions/
+    6148  Defl:N      418  93% 12-26-2021 23:29 07e24ef0  road/signal_extractions/.DS_Store
+       0  Stored        0   0% 10-08-2021 11:34 00000000  road/signal_extractions/ambient/
+       0  Stored        0   0% 12-03-2021 18:58 00000000  road/signal_extractions/DBC/
+       0  Stored        0   0% 10-08-2021 11:34 00000000  road/signal_extractions/attacks/
+10788136  Defl:N  2101621  81% 09-15-2021 11:16 2f1c985e  road/signal_extractions/ambient/reverse_light_on_attack_2_masquerade.csv
+13171552  Defl:N  2460883  81% 09-15-2021 11:16 58ef09d7  road/signal_extractions/ambient/max_speedometer_attack_1_masquerade.csv
+ 2550755  Defl:N   495014  81% 09-15-2021 11:16 42e682b6  road/signal_extractions/ambient/correlated_signal_attack_3_masquerade.csv
+275877891  Defl:N 47703815  83% 09-13-2021 11:56 8b7154e8  road/signal_extractions/ambient/ambient_dyno_exercise_all_bits.csv
+58362767  Defl:N 10585299  82% 09-13-2021 11:57 253d8939  road/signal_extractions/ambient/ambient_dyno_drive_radio_infotainment.csv
+67058935  Defl:N 13031530  81% 09-13-2021 11:57 cc719b27  road/signal_extractions/ambient/ambient_dyno_drive_basic_short.csv
+ 4255996  Defl:N   836287  80% 09-15-2021 11:16 504d52c7  road/signal_extractions/ambient/correlated_signal_attack_2_masquerade.csv
+ 7699053  Defl:N  1438735  81% 09-13-2021 11:56 0042c90e  road/signal_extractions/ambient/ambient_dyno_reverse.csv
+ 9640775  Defl:N  1876907  81% 09-15-2021 11:16 84f5d025  road/signal_extractions/ambient/reverse_light_on_attack_3_masquerade.csv
+ 8202799  Defl:N  1533303  81% 09-15-2021 11:16 b0767e9d  road/signal_extractions/ambient/reverse_light_on_attack_1_masquerade.csv
+ 8971951  Defl:N  1768104  80% 09-15-2021 11:16 81bf759f  road/signal_extractions/ambient/max_speedometer_attack_2_masquerade.csv
+    2995  Defl:N      819  73% 09-14-2021 10:40 9269f75a  road/signal_extractions/ambient/metadata.json
+10817267  Defl:N  2117654  80% 09-15-2021 11:16 33c690ac  road/signal_extractions/ambient/accelerator_attack_drive_2.csv
+12877037  Defl:N  2549155  80% 09-15-2021 11:16 9baf98d7  road/signal_extractions/ambient/accelerator_attack_drive_1.csv
+12986141  Defl:N  2492505  81% 09-15-2021 11:17 ad1cc775  road/signal_extractions/ambient/max_speedometer_attack_3_masquerade.csv
+ 4974953  Defl:N   967897  81% 09-15-2021 11:16 53817456  road/signal_extractions/ambient/correlated_signal_attack_1_masquerade.csv
+556424225  Defl:N 106308001  81% 09-13-2021 11:59 1018adb0  road/signal_extractions/ambient/ambient_highway_street_driving_long.csv
+ 6092391  Defl:N  1147085  81% 09-15-2021 11:17 24e57cff  road/signal_extractions/ambient/reverse_light_off_attack_2_masquerade.csv
+ 7179274  Defl:N  1378075  81% 09-13-2021 11:57 8d19ff98  road/signal_extractions/ambient/ambient_dyno_drive_winter.csv
+ 8658429  Defl:N  1622548  81% 09-15-2021 11:17 113ebe1c  road/signal_extractions/ambient/reverse_light_off_attack_3_masquerade.csv
+89366969  Defl:N 16436370  82% 09-13-2021 11:59 c6a19e3f  road/signal_extractions/ambient/ambient_dyno_drive_extended_long.csv
+49650718  Defl:N  9283780  81% 09-13-2021 11:59 dac62743  road/signal_extractions/ambient/ambient_dyno_drive_extended_short.csv
+47781360  Defl:N  8288218  83% 09-13-2021 12:00 2cc8e7e6  road/signal_extractions/ambient/ambient_dyno_drive_benign_anomaly.csv
+12705269  Defl:N  2458907  81% 09-15-2021 11:16 f7e3901d  road/signal_extractions/ambient/accelerator_attack_reverse_1.csv
+97350804  Defl:N 16403193  83% 09-13-2021 12:00 25d11da6  road/signal_extractions/ambient/ambient_dyno_idle_radio_infotainment.csv
+188101947  Defl:N 35291711  81% 09-13-2021 12:00 6f5132c1  road/signal_extractions/ambient/ambient_dyno_drive_basic_long.csv
+15701591  Defl:N  3060044  81% 09-15-2021 11:16 7e9a56af  road/signal_extractions/ambient/accelerator_attack_reverse_2.csv
+ 4211797  Defl:N   793329  81% 09-15-2021 11:17 58f3698a  road/signal_extractions/ambient/reverse_light_off_attack_1_masquerade.csv
+ 3873588  Defl:N   736490  81% 09-15-2021 11:17 4db44212  road/signal_extractions/ambient/max_engine_coolant_temp_attack_masquerade.csv
+70991688  Defl:N 14230745  80% 09-13-2021 12:01 b90dd620  road/signal_extractions/ambient/ambient_highway_street_driving_diagnostics.csv
+   30785  Defl:N     3488  89% 12-03-2021 15:20 b5f7f387  road/signal_extractions/DBC/anonymized.dbc
+10788136  Defl:N  2101621  81% 09-14-2021 10:06 2f1c985e  road/signal_extractions/attacks/reverse_light_on_attack_2_masquerade.csv
+13171552  Defl:N  2460883  81% 09-14-2021 10:06 58ef09d7  road/signal_extractions/attacks/max_speedometer_attack_1_masquerade.csv
+ 2550755  Defl:N   495014  81% 09-14-2021 10:06 42e682b6  road/signal_extractions/attacks/correlated_signal_attack_3_masquerade.csv
+ 4255996  Defl:N   836287  80% 09-14-2021 10:06 504d52c7  road/signal_extractions/attacks/correlated_signal_attack_2_masquerade.csv
+ 9640775  Defl:N  1876907  81% 09-14-2021 10:06 84f5d025  road/signal_extractions/attacks/reverse_light_on_attack_3_masquerade.csv
+ 8202799  Defl:N  1533303  81% 09-14-2021 10:06 b0767e9d  road/signal_extractions/attacks/reverse_light_on_attack_1_masquerade.csv
+ 8971951  Defl:N  1768104  80% 09-14-2021 10:06 81bf759f  road/signal_extractions/attacks/max_speedometer_attack_2_masquerade.csv
+    8149  Defl:N     1073  87% 09-14-2021 10:52 1cc5517d  road/signal_extractions/attacks/metadata.json
+10817267  Defl:N  2117654  80% 09-15-2021 11:16 33c690ac  road/signal_extractions/attacks/accelerator_attack_drive_2.csv
+12877037  Defl:N  2549155  80% 09-15-2021 11:16 9baf98d7  road/signal_extractions/attacks/accelerator_attack_drive_1.csv
+12986141  Defl:N  2492505  81% 09-14-2021 10:06 ad1cc775  road/signal_extractions/attacks/max_speedometer_attack_3_masquerade.csv
+ 4974953  Defl:N   967897  81% 09-14-2021 10:06 53817456  road/signal_extractions/attacks/correlated_signal_attack_1_masquerade.csv
+ 6092391  Defl:N  1147085  81% 09-14-2021 10:06 24e57cff  road/signal_extractions/attacks/reverse_light_off_attack_2_masquerade.csv
+ 8658429  Defl:N  1622548  81% 09-14-2021 10:06 113ebe1c  road/signal_extractions/attacks/reverse_light_off_attack_3_masquerade.csv
+12705269  Defl:N  2458907  81% 09-15-2021 11:16 f7e3901d  road/signal_extractions/attacks/accelerator_attack_reverse_1.csv
+15701591  Defl:N  3060044  81% 09-15-2021 11:16 7e9a56af  road/signal_extractions/attacks/accelerator_attack_reverse_2.csv
+ 4211797  Defl:N   793329  81% 09-14-2021 10:06 58f3698a  road/signal_extractions/attacks/reverse_light_off_attack_1_masquerade.csv
+ 3873588  Defl:N   736490  81% 09-14-2021 10:06 4db44212  road/signal_extractions/attacks/max_engine_coolant_temp_attack_masquerade.csv
+--------          -------  ---                            -------
+1816854562         338420736  81%                            54 files

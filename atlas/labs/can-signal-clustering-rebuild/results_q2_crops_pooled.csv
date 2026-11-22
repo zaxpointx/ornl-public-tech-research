@@ -1,0 +1,3 @@
+mode,raw_files,replicates,crops,per_crop_sig_greater,per_crop_sig_two_sided,category_tests,category_sig_greater,category_sig_two_sided,category_sig_two_sided_crop_more_similar
+global,q2_global.json,20,260,0.2346,0.2308,100,0.2900,0.2500,2
+pairwise,q2_pairwise_crops_s0.json;q2_pairwise_crops_s1.json,8,104,0.0288,0.1346,40,0.0500,0.1500,5

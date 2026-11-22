@@ -1,0 +1,23 @@
+full 1.4 s {'correlated_signal': 0.3462, 'max_speedometer': 0.2865, 'max_engine_coolant_temp': 0.6011, 'reverse_light_on': 0.0994, 'reverse_light_off': 0.5488}
+pre_injection 2.4 s {'correlated_signal': 0.0058, 'max_speedometer': 0.2322, 'max_engine_coolant_temp': 0.415, 'reverse_light_on': 0.0346, 'reverse_light_off': 0.0039}
+injection_only 3.3 s {'correlated_signal': 0.1994, 'max_speedometer': 0.1006, 'max_engine_coolant_temp': 0.1325, 'reverse_light_on': 0.1492, 'reverse_light_off': 0.1082}
+crop rep 0 4.0 s 58 {'correlated_signal': 0.0, 'max_speedometer': 0.021, 'max_engine_coolant_temp': 0.23, 'reverse_light_on': 0.11, 'reverse_light_off': 0.092}
+crop rep 1 4.6 s 59 {'correlated_signal': 0.0, 'max_speedometer': 0.508, 'max_engine_coolant_temp': 0.0, 'reverse_light_on': 0.175, 'reverse_light_off': 0.022}
+crop rep 2 5.1 s 59 {'correlated_signal': 0.005, 'max_speedometer': 0.013, 'max_engine_coolant_temp': 0.527, 'reverse_light_on': 0.003, 'reverse_light_off': 0.936}
+crop rep 3 6.1 s 103 {'correlated_signal': 0.442, 'max_speedometer': 0.784, 'max_engine_coolant_temp': 0.121, 'reverse_light_on': 0.987, 'reverse_light_off': 0.829}
+crop rep 4 7.2 s 106 {'correlated_signal': 0.674, 'max_speedometer': 0.993, 'max_engine_coolant_temp': 0.954, 'reverse_light_on': 0.819, 'reverse_light_off': 0.853}
+crop rep 5 8.2 s 110 {'correlated_signal': 0.628, 'max_speedometer': 0.367, 'max_engine_coolant_temp': 0.124, 'reverse_light_on': 0.308, 'reverse_light_off': 0.85}
+crop rep 6 8.7 s 59 {'correlated_signal': 0.03, 'max_speedometer': 0.0, 'max_engine_coolant_temp': 0.902, 'reverse_light_on': 0.038, 'reverse_light_off': 0.002}
+crop rep 7 9.3 s 58 {'correlated_signal': 0.118, 'max_speedometer': 0.03, 'max_engine_coolant_temp': 0.016, 'reverse_light_on': 0.0, 'reverse_light_off': 0.007}
+crop rep 8 9.9 s 58 {'correlated_signal': 0.027, 'max_speedometer': 0.93, 'max_engine_coolant_temp': 0.521, 'reverse_light_on': 0.888, 'reverse_light_off': 0.377}
+crop rep 9 10.9 s 101 {'correlated_signal': 0.519, 'max_speedometer': 0.372, 'max_engine_coolant_temp': 0.172, 'reverse_light_on': 0.229, 'reverse_light_off': 0.541}
+crop rep 10 12.0 s 102 {'correlated_signal': 0.596, 'max_speedometer': 0.01, 'max_engine_coolant_temp': 0.155, 'reverse_light_on': 0.541, 'reverse_light_off': 0.421}
+crop rep 11 12.5 s 57 {'correlated_signal': 0.073, 'max_speedometer': 0.001, 'max_engine_coolant_temp': 0.0, 'reverse_light_on': 0.941, 'reverse_light_off': 0.012}
+crop rep 12 13.5 s 77 {'correlated_signal': 0.0, 'max_speedometer': 0.259, 'max_engine_coolant_temp': 0.219, 'reverse_light_on': 0.448, 'reverse_light_off': 0.022}
+crop rep 13 14.8 s 104 {'correlated_signal': 0.654, 'max_speedometer': 0.885, 'max_engine_coolant_temp': 0.033, 'reverse_light_on': 0.612, 'reverse_light_off': 0.84}
+crop rep 14 16.0 s 104 {'correlated_signal': 0.767, 'max_speedometer': 0.536, 'max_engine_coolant_temp': 0.24, 'reverse_light_on': 0.898, 'reverse_light_off': 0.351}
+crop rep 15 16.7 s 59 {'correlated_signal': 0.792, 'max_speedometer': 0.026, 'max_engine_coolant_temp': 0.418, 'reverse_light_on': 0.061, 'reverse_light_off': 0.003}
+crop rep 16 17.9 s 101 {'correlated_signal': 0.015, 'max_speedometer': 0.708, 'max_engine_coolant_temp': 0.372, 'reverse_light_on': 0.4, 'reverse_light_off': 0.321}
+crop rep 17 19.1 s 104 {'correlated_signal': 0.684, 'max_speedometer': 0.127, 'max_engine_coolant_temp': 0.77, 'reverse_light_on': 0.664, 'reverse_light_off': 0.732}
+crop rep 18 20.2 s 96 {'correlated_signal': 0.923, 'max_speedometer': 0.974, 'max_engine_coolant_temp': 0.521, 'reverse_light_on': 0.95, 'reverse_light_off': 0.025}
+crop rep 19 21.3 s 100 {'correlated_signal': 0.012, 'max_speedometer': 0.09, 'max_engine_coolant_temp': 0.418, 'reverse_light_on': 0.943, 'reverse_light_off': 0.949}

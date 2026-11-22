@@ -1,0 +1,984 @@
+{
+ "argv": [
+  "atlas/labs/can-signal-clustering-rebuild/run_q.py",
+  "q2",
+  ".cache/work-clusim",
+  ".cache/data/road/road/signal_extractions",
+  "atlas/labs/can-signal-clustering-rebuild/raw/q2_pairwise_crops_s1.json",
+  "--mode",
+  "pairwise",
+  "--parts",
+  "crops",
+  "--reps",
+  "4",
+  "--seed",
+  "1"
+ ],
+ "crop_parents": [
+  "ambient_dyno_drive_basic_long",
+  "ambient_dyno_drive_basic_short",
+  "ambient_dyno_drive_benign_anomaly",
+  "ambient_dyno_drive_extended_long",
+  "ambient_dyno_drive_extended_short",
+  "ambient_dyno_drive_radio_infotainment",
+  "ambient_dyno_exercise_all_bits",
+  "ambient_dyno_idle_radio_infotainment",
+  "ambient_highway_street_driving_diagnostics",
+  "ambient_highway_street_driving_long"
+ ],
+ "crop_summary": {
+  "frac_category_sig_greater": 0.0,
+  "frac_per_crop_sig_greater": 0.038461538461538464,
+  "frac_per_crop_sig_two_sided": 0.15384615384615385,
+  "n_crops": 52,
+  "reps_with_ge3_cats_sig_greater": 0
+ },
+ "crops": [
+  {
+   "category": {
+    "correlated_signal": {
+     "greater": 0.47508233097075275,
+     "legacy_half": 0.47508233097075275,
+     "median_attack": 0.8757729303875696,
+     "median_benign": 0.8778212626246831,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_extended_short",
+      "ambient_dyno_drive_radio_infotainment",
+      "ambient_highway_street_driving_diagnostics"
+     ],
+     "two_sided": 0.9501646619415055
+    },
+    "max_engine_coolant_temp": {
+     "greater": 0.871934758133107,
+     "legacy_half": 0.13170264162436784,
+     "median_attack": 0.8848238335832259,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "parents": [
+      "ambient_highway_street_driving_long"
+     ],
+     "two_sided": 0.2634052832487357
+    },
+    "max_speedometer": {
+     "greater": 0.09703871144364884,
+     "legacy_half": 0.09703871144364884,
+     "median_attack": 0.8729164800911601,
+     "median_benign": 0.882087774232577,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_benign_anomaly",
+      "ambient_highway_street_driving_diagnostics"
+     ],
+     "two_sided": 0.19407742288729768
+    },
+    "reverse_light_off": {
+     "greater": 0.9375739625732498,
+     "legacy_half": 0.06415083359539578,
+     "median_attack": 0.8812125327938486,
+     "median_benign": 0.8756134646130596,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_extended_long",
+      "ambient_highway_street_driving_diagnostics"
+     ],
+     "two_sided": 0.12830166719079156
+    },
+    "reverse_light_on": {
+     "greater": 0.6691256119591208,
+     "legacy_half": 0.3359247253553526,
+     "median_attack": 0.878820587490384,
+     "median_benign": 0.8764638128185742,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_short",
+      "ambient_dyno_drive_extended_short",
+      "ambient_highway_street_driving_long"
+     ],
+     "two_sided": 0.6718494507107052
+    }
+   },
+   "meta": {
+    "N_max": 407,
+    "N_median": 202.0,
+    "N_min": 115
+   },
+   "per_crop": {
+    "crop0:correlated_signal_attack_1_masquerade": {
+     "greater": 0.9233660989457616,
+     "legacy_half": 0.07914033088948247,
+     "median_attack": 0.883403935855804,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 332,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 265.367287023483,
+     "two_sided": 0.15828066177896494
+    },
+    "crop0:correlated_signal_attack_2_masquerade": {
+     "greater": 0.0269865408779217,
+     "legacy_half": 0.0269865408779217,
+     "median_attack": 0.8625682322754005,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 283,
+     "parent": "ambient_dyno_drive_radio_infotainment",
+     "start": 52.79978492747509,
+     "two_sided": 0.0539730817558434
+    },
+    "crop0:correlated_signal_attack_3_masquerade": {
+     "greater": 0.33354484458889455,
+     "legacy_half": 0.33354484458889455,
+     "median_attack": 0.8719392317384705,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 170,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 141.59232953639327,
+     "two_sided": 0.6670896891777891
+    },
+    "crop0:max_engine_coolant_temp_attack_masquerade": {
+     "greater": 0.871934758133107,
+     "legacy_half": 0.13170264162436784,
+     "median_attack": 0.8848238335832259,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 259,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 1582.5490665200837,
+     "two_sided": 0.2634052832487357
+    },
+    "crop0:max_speedometer_attack_1_masquerade": {
+     "greater": 1.3450964665426771e-05,
+     "legacy_half": 1.3450964665426771e-05,
+     "median_attack": 0.8312764643875445,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 881,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 151.018693573603,
+     "two_sided": 2.6901929330853543e-05
+    },
+    "crop0:max_speedometer_attack_2_masquerade": {
+     "greater": 0.34615063335524643,
+     "legacy_half": 0.34615063335524643,
+     "median_attack": 0.8717695581115892,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 597,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 225.36963164397312,
+     "two_sided": 0.6923012667104929
+    },
+    "crop0:max_speedometer_attack_3_masquerade": {
+     "greater": 0.9820964331001504,
+     "legacy_half": 0.018675574774066648,
+     "median_attack": 0.8890836073614763,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 868,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 876.736980817697,
+     "two_sided": 0.037351149548133296
+    },
+    "crop0:reverse_light_off_attack_1_masquerade": {
+     "greater": 0.9305234789980892,
+     "legacy_half": 0.07180277444477154,
+     "median_attack": 0.883428931313474,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 282,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 658.0574001750805,
+     "two_sided": 0.14360554888954308
+    },
+    "crop0:reverse_light_off_attack_2_masquerade": {
+     "greater": 0.8408452700163094,
+     "legacy_half": 0.16336243506026188,
+     "median_attack": 0.8822934026036314,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 407,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 337.91569545322693,
+     "two_sided": 0.32672487012052376
+    },
+    "crop0:reverse_light_off_attack_3_masquerade": {
+     "greater": 0.6474808676545343,
+     "legacy_half": 0.35892924300212176,
+     "median_attack": 0.8777160144577302,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 579,
+     "parent": "ambient_dyno_drive_extended_long",
+     "start": 240.2011607159681,
+     "two_sided": 0.7178584860042435
+    },
+    "crop0:reverse_light_on_attack_1_masquerade": {
+     "greater": 0.6281322859626595,
+     "legacy_half": 0.3783926981818726,
+     "median_attack": 0.877565027755289,
+     "median_benign": 0.8760922387001729,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 549,
+     "parent": "ambient_dyno_drive_basic_short",
+     "start": 53.021192145783836,
+     "two_sided": 0.7567853963637452
+    },
+    "crop0:reverse_light_on_attack_2_masquerade": {
+     "greater": 0.5068637929208577,
+     "legacy_half": 0.5,
+     "median_attack": 0.8808870101346751,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 721,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 109.99562387140006,
+     "two_sided": 1.0
+    },
+    "crop0:reverse_light_on_attack_3_masquerade": {
+     "greater": 0.6084545138588285,
+     "legacy_half": 0.3981697298896604,
+     "median_attack": 0.8791567901307943,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 643,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 970.931724514706,
+     "two_sided": 0.7963394597793207
+    }
+   }
+  },
+  {
+   "category": {
+    "correlated_signal": {
+     "greater": 0.2999598720576385,
+     "legacy_half": 0.2999598720576385,
+     "median_attack": 0.8782412708608487,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_benign_anomaly"
+     ],
+     "two_sided": 0.599919744115277
+    },
+    "max_engine_coolant_temp": {
+     "greater": 0.3783926981818726,
+     "legacy_half": 0.3783926981818726,
+     "median_attack": 0.8684845465601442,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "parents": [
+      "ambient_dyno_idle_radio_infotainment"
+     ],
+     "two_sided": 0.7567853963637452
+    },
+    "max_speedometer": {
+     "greater": 0.9329131661288139,
+     "legacy_half": 0.06850348430477136,
+     "median_attack": 0.8880809925394654,
+     "median_benign": 0.8861049682477982,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_benign_anomaly",
+      "ambient_highway_street_driving_long"
+     ],
+     "two_sided": 0.13700696860954273
+    },
+    "reverse_light_off": {
+     "greater": 0.8307432193217232,
+     "legacy_half": 0.17199993236040895,
+     "median_attack": 0.8855200598284442,
+     "median_benign": 0.8796552624611299,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_extended_short",
+      "ambient_dyno_drive_radio_infotainment"
+     ],
+     "two_sided": 0.3439998647208179
+    },
+    "reverse_light_on": {
+     "greater": 0.9392623833435627,
+     "legacy_half": 0.06242603742675018,
+     "median_attack": 0.8831577843011348,
+     "median_benign": 0.8766712292597398,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_extended_short",
+      "ambient_dyno_idle_radio_infotainment"
+     ],
+     "two_sided": 0.12485207485350036
+    }
+   },
+   "meta": {
+    "N_max": 407,
+    "N_median": 197.0,
+    "N_min": 112
+   },
+   "per_crop": {
+    "crop1:correlated_signal_attack_1_masquerade": {
+     "greater": 0.4048234539801037,
+     "legacy_half": 0.4048234539801037,
+     "median_attack": 0.8781044327092496,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 332,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 317.087739986871,
+     "two_sided": 0.8096469079602074
+    },
+    "crop1:correlated_signal_attack_2_masquerade": {
+     "greater": 0.770304653078894,
+     "legacy_half": 0.2349490976881553,
+     "median_attack": 0.8843919014183527,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 283,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 593.3675190489226,
+     "two_sided": 0.4698981953763106
+    },
+    "crop1:correlated_signal_attack_3_masquerade": {
+     "greater": 0.245653016520691,
+     "legacy_half": 0.245653016520691,
+     "median_attack": 0.8695720022713281,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 170,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 429.87819497462374,
+     "two_sided": 0.491306033041382
+    },
+    "crop1:max_engine_coolant_temp_attack_masquerade": {
+     "greater": 0.3783926981818726,
+     "legacy_half": 0.3783926981818726,
+     "median_attack": 0.8684845465601442,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 259,
+     "parent": "ambient_dyno_idle_radio_infotainment",
+     "start": 459.84660506961416,
+     "two_sided": 0.7567853963637452
+    },
+    "crop1:max_speedometer_attack_1_masquerade": {
+     "greater": 0.9015505090534461,
+     "legacy_half": 0.10146801559788826,
+     "median_attack": 0.8865794896711197,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 881,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 1989.3927685240676,
+     "two_sided": 0.20293603119577652
+    },
+    "crop1:max_speedometer_attack_2_masquerade": {
+     "greater": 0.8569601652847936,
+     "legacy_half": 0.14696128476306325,
+     "median_attack": 0.8825801819017691,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 597,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 595.7574551611151,
+     "two_sided": 0.2939225695261265
+    },
+    "crop1:max_speedometer_attack_3_masquerade": {
+     "greater": 0.9671909362502188,
+     "legacy_half": 0.03408982697133875,
+     "median_attack": 0.8899844043214807,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 868,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 357.4495812090183,
+     "two_sided": 0.0681796539426775
+    },
+    "crop1:reverse_light_off_attack_1_masquerade": {
+     "greater": 0.33982534867769054,
+     "legacy_half": 0.33982534867769054,
+     "median_attack": 0.8622426651111653,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 282,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 52.957800867031466,
+     "two_sided": 0.6796506973553811
+    },
+    "crop1:reverse_light_off_attack_2_masquerade": {
+     "greater": 0.9618193272679406,
+     "legacy_half": 0.03963014281003403,
+     "median_attack": 0.8877748727046082,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 407,
+     "parent": "ambient_dyno_drive_radio_infotainment",
+     "start": 217.30293078493884,
+     "two_sided": 0.07926028562006807
+    },
+    "crop1:reverse_light_off_attack_3_masquerade": {
+     "greater": 0.5884951885851575,
+     "legacy_half": 0.4182119311331981,
+     "median_attack": 0.8773258626442559,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 579,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 164.0559399263944,
+     "two_sided": 0.8364238622663962
+    },
+    "crop1:reverse_light_on_attack_1_masquerade": {
+     "greater": 0.7488984072540189,
+     "legacy_half": 0.25661343891282173,
+     "median_attack": 0.8831577843011348,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 549,
+     "parent": "ambient_dyno_idle_radio_infotainment",
+     "start": 554.95708170704,
+     "two_sided": 0.5132268778256435
+    },
+    "crop1:reverse_light_on_attack_2_masquerade": {
+     "greater": 0.925811694349734,
+     "legacy_half": 0.07663390105423835,
+     "median_attack": 0.8897614979783992,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 721,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 137.13351946446244,
+     "two_sided": 0.1532678021084767
+    },
+    "crop1:reverse_light_on_attack_3_masquerade": {
+     "greater": 0.9788363381727113,
+     "legacy_half": 0.02205301871032091,
+     "median_attack": 0.8822515567770333,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 643,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 545.2613406445752,
+     "two_sided": 0.04410603742064182
+    }
+   }
+  },
+  {
+   "category": {
+    "correlated_signal": {
+     "greater": 0.986629497911089,
+     "legacy_half": 0.013854252458871714,
+     "median_attack": 0.8861536576288505,
+     "median_benign": 0.879520689475946,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_benign_anomaly",
+      "ambient_dyno_drive_extended_long"
+     ],
+     "two_sided": 0.027708504917743428
+    },
+    "max_engine_coolant_temp": {
+     "greater": 0.6538493666447536,
+     "legacy_half": 0.35251913234546567,
+     "median_attack": 0.8791430640896324,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "parents": [
+      "ambient_dyno_drive_radio_infotainment"
+     ],
+     "two_sided": 0.7050382646909313
+    },
+    "max_speedometer": {
+     "greater": 0.9997843931811412,
+     "legacy_half": 0.0002245678337390513,
+     "median_attack": 0.8937707263616512,
+     "median_benign": 0.8796552624611299,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_dyno_drive_radio_infotainment"
+     ],
+     "two_sided": 0.0004491356674781026
+    },
+    "reverse_light_off": {
+     "greater": 0.8941866534716546,
+     "legacy_half": 0.1078042415884295,
+     "median_attack": 0.8793297765204073,
+     "median_benign": 0.8759872627882362,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_basic_short",
+      "ambient_dyno_idle_radio_infotainment"
+     ],
+     "two_sided": 0.215608483176859
+    },
+    "reverse_light_on": {
+     "greater": 0.9322886774416613,
+     "legacy_half": 0.06954788800619476,
+     "median_attack": 0.8799657346394028,
+     "median_benign": 0.8777654097113461,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_basic_short",
+      "ambient_dyno_drive_extended_long",
+      "ambient_dyno_exercise_all_bits"
+     ],
+     "two_sided": 0.1390957760123895
+    }
+   },
+   "meta": {
+    "N_max": 407,
+    "N_median": 192.0,
+    "N_min": 66
+   },
+   "per_crop": {
+    "crop2:correlated_signal_attack_1_masquerade": {
+     "greater": 0.9979694283438392,
+     "legacy_half": 0.002143946541823333,
+     "median_attack": 0.893719675528239,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 332,
+     "parent": "ambient_dyno_drive_extended_long",
+     "start": 414.41435758812315,
+     "two_sided": 0.004287893083646666
+    },
+    "crop2:correlated_signal_attack_2_masquerade": {
+     "greater": 0.8824260268801445,
+     "legacy_half": 0.12100125128996175,
+     "median_attack": 0.8830701991838165,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 283,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 1041.8204325067043,
+     "two_sided": 0.2420025025799235
+    },
+    "crop2:correlated_signal_attack_3_masquerade": {
+     "greater": 0.527434866408209,
+     "legacy_half": 0.47941674587180494,
+     "median_attack": 0.8797314297041058,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 170,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 114.93261183079797,
+     "two_sided": 0.9588334917436099
+    },
+    "crop2:max_engine_coolant_temp_attack_masquerade": {
+     "greater": 0.6538493666447536,
+     "legacy_half": 0.35251913234546567,
+     "median_attack": 0.8791430640896324,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 259,
+     "parent": "ambient_dyno_drive_radio_infotainment",
+     "start": 304.79837994051667,
+     "two_sided": 0.7050382646909313
+    },
+    "crop2:max_speedometer_attack_1_masquerade": {
+     "greater": 0.9730134591220783,
+     "legacy_half": 0.02807647591690592,
+     "median_attack": 0.8903923625338915,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 881,
+     "parent": "ambient_dyno_drive_radio_infotainment",
+     "start": 154.0439833372169,
+     "two_sided": 0.05615295183381184
+    },
+    "crop2:max_speedometer_attack_2_masquerade": {
+     "greater": 0.9930615291436765,
+     "legacy_half": 0.007278282284887285,
+     "median_attack": 0.8936339644927099,
+     "median_benign": 0.880764506999396,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 597,
+     "parent": "ambient_dyno_drive_radio_infotainment",
+     "start": 247.91358152848665,
+     "two_sided": 0.01455656456977457
+    },
+    "crop2:max_speedometer_attack_3_masquerade": {
+     "greater": 0.9992714078954134,
+     "legacy_half": 0.0007730939723431281,
+     "median_attack": 0.8964484389565551,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 868,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 953.5565885581042,
+     "two_sided": 0.0015461879446862562
+    },
+    "crop2:reverse_light_off_attack_1_masquerade": {
+     "greater": 0.9855607062434342,
+     "legacy_half": 0.015081849898348699,
+     "median_attack": 0.8862336602580273,
+     "median_benign": 0.8760922387001729,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 282,
+     "parent": "ambient_dyno_drive_basic_short",
+     "start": 284.2073064438264,
+     "two_sided": 0.030163699796697398
+    },
+    "crop2:reverse_light_off_attack_2_masquerade": {
+     "greater": 0.7906486093005947,
+     "legacy_half": 0.21433546830164135,
+     "median_attack": 0.8798602516631314,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 407,
+     "parent": "ambient_dyno_idle_radio_infotainment",
+     "start": 119.98052748681394,
+     "two_sided": 0.4286709366032827
+    },
+    "crop2:reverse_light_off_attack_3_masquerade": {
+     "greater": 0.14303983471520648,
+     "legacy_half": 0.14303983471520648,
+     "median_attack": 0.8645509228948975,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 579,
+     "parent": "ambient_dyno_idle_radio_infotainment",
+     "start": 483.2000241812513,
+     "two_sided": 0.28607966943041296
+    },
+    "crop2:reverse_light_on_attack_1_masquerade": {
+     "greater": 0.976073415044064,
+     "legacy_half": 0.024912448682195002,
+     "median_attack": 0.886915095618387,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 549,
+     "parent": "ambient_dyno_drive_extended_long",
+     "start": 136.67241199336084,
+     "two_sided": 0.049824897364390004
+    },
+    "crop2:reverse_light_on_attack_2_masquerade": {
+     "greater": 0.6726893501389957,
+     "legacy_half": 0.33354484458889455,
+     "median_attack": 0.8799320447876671,
+     "median_benign": 0.8760922387001729,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 721,
+     "parent": "ambient_dyno_drive_basic_short",
+     "start": 317.903671408014,
+     "two_sided": 0.6670896891777891
+    },
+    "crop2:reverse_light_on_attack_3_masquerade": {
+     "greater": 0.3653793274936283,
+     "legacy_half": 0.3653793274936283,
+     "median_attack": 0.8752803652695132,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 643,
+     "parent": "ambient_dyno_exercise_all_bits",
+     "start": 1862.5761211239574,
+     "two_sided": 0.7307586549872566
+    }
+   }
+  },
+  {
+   "category": {
+    "correlated_signal": {
+     "greater": 0.08564734351599734,
+     "legacy_half": 0.08564734351599734,
+     "median_attack": 0.8827397552296735,
+     "median_benign": 0.8863915626021928,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_benign_anomaly",
+      "ambient_dyno_exercise_all_bits",
+      "ambient_highway_street_driving_diagnostics"
+     ],
+     "two_sided": 0.17129468703199469
+    },
+    "max_engine_coolant_temp": {
+     "greater": 0.39154548614117146,
+     "legacy_half": 0.39154548614117146,
+     "median_attack": 0.8778445092275158,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "parents": [
+      "ambient_dyno_drive_benign_anomaly"
+     ],
+     "two_sided": 0.7830909722823429
+    },
+    "max_speedometer": {
+     "greater": 0.5304451454203244,
+     "legacy_half": 0.47508233097075275,
+     "median_attack": 0.8784900486207933,
+     "median_benign": 0.8803946921406178,
+     "n_attack": 27,
+     "n_benign": 36,
+     "parents": [
+      "ambient_dyno_drive_benign_anomaly",
+      "ambient_dyno_drive_extended_short",
+      "ambient_dyno_idle_radio_infotainment"
+     ],
+     "two_sided": 0.9501646619415055
+    },
+    "reverse_light_off": {
+     "greater": 0.7705960251513612,
+     "legacy_half": 0.2326961940621332,
+     "median_attack": 0.8775276804448464,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_extended_long",
+      "ambient_highway_street_driving_long"
+     ],
+     "two_sided": 0.4653923881242664
+    },
+    "reverse_light_on": {
+     "greater": 0.7000401279423615,
+     "legacy_half": 0.3037304679953875,
+     "median_attack": 0.8801508421250323,
+     "median_benign": 0.879386116490762,
+     "n_attack": 30,
+     "n_benign": 45,
+     "parents": [
+      "ambient_dyno_drive_basic_long",
+      "ambient_highway_street_driving_diagnostics"
+     ],
+     "two_sided": 0.607460935990775
+    }
+   },
+   "meta": {
+    "N_max": 407,
+    "N_median": 200.0,
+    "N_min": 88
+   },
+   "per_crop": {
+    "crop3:correlated_signal_attack_1_masquerade": {
+     "greater": 0.8004096831213875,
+     "legacy_half": 0.2044361791546177,
+     "median_attack": 0.8827397552296735,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 332,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 206.19375992247652,
+     "two_sided": 0.4088723583092354
+    },
+    "crop3:correlated_signal_attack_2_masquerade": {
+     "greater": 0.06947652100191085,
+     "legacy_half": 0.06947652100191085,
+     "median_attack": 0.8696196496937662,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 283,
+     "parent": "ambient_dyno_exercise_all_bits",
+     "start": 156.4225240575298,
+     "two_sided": 0.1389530420038217
+    },
+    "crop3:correlated_signal_attack_3_masquerade": {
+     "greater": 0.8954466049789018,
+     "legacy_half": 0.10770617646047626,
+     "median_attack": 0.8899825886074553,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 170,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 283.4639776142335,
+     "two_sided": 0.2154123529209525
+    },
+    "crop3:max_engine_coolant_temp_attack_masquerade": {
+     "greater": 0.39154548614117146,
+     "legacy_half": 0.39154548614117146,
+     "median_attack": 0.8778445092275158,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 259,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 358.98825187450484,
+     "two_sided": 0.7830909722823429
+    },
+    "crop3:max_speedometer_attack_1_masquerade": {
+     "greater": 0.8985319844021118,
+     "legacy_half": 0.10455339502109817,
+     "median_attack": 0.8876610695905855,
+     "median_benign": 0.8782805996033853,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 881,
+     "parent": "ambient_dyno_idle_radio_infotainment",
+     "start": 162.35344046293946,
+     "two_sided": 0.20910679004219634
+    },
+    "crop3:max_speedometer_attack_2_masquerade": {
+     "greater": 0.13918970269020497,
+     "legacy_half": 0.13918970269020497,
+     "median_attack": 0.8706746377214328,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 597,
+     "parent": "ambient_dyno_drive_extended_short",
+     "start": 168.9638007191781,
+     "two_sided": 0.27837940538040995
+    },
+    "crop3:max_speedometer_attack_3_masquerade": {
+     "greater": 0.8408452700163094,
+     "legacy_half": 0.16336243506026188,
+     "median_attack": 0.8819266895489983,
+     "median_benign": 0.8813829905806936,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 868,
+     "parent": "ambient_dyno_drive_benign_anomaly",
+     "start": 296.90360857585637,
+     "two_sided": 0.32672487012052376
+    },
+    "crop3:reverse_light_off_attack_1_masquerade": {
+     "greater": 0.2850880152852633,
+     "legacy_half": 0.2850880152852633,
+     "median_attack": 0.8763944536031381,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 282,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 563.0192282772509,
+     "two_sided": 0.5701760305705266
+    },
+    "crop3:reverse_light_off_attack_2_masquerade": {
+     "greater": 0.7321767691665119,
+     "legacy_half": 0.2735192030980945,
+     "median_attack": 0.8818937129789524,
+     "median_benign": 0.8811341218201056,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 407,
+     "parent": "ambient_highway_street_driving_long",
+     "start": 1795.4165756463021,
+     "two_sided": 0.547038406196189
+    },
+    "crop3:reverse_light_off_attack_3_masquerade": {
+     "greater": 0.6410707569978782,
+     "legacy_half": 0.3653793274936283,
+     "median_attack": 0.8760421323512568,
+     "median_benign": 0.8772502198193068,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 579,
+     "parent": "ambient_dyno_drive_extended_long",
+     "start": 296.16320440824006,
+     "two_sided": 0.7307586549872566
+    },
+    "crop3:reverse_light_on_attack_1_masquerade": {
+     "greater": 0.8682973583756322,
+     "legacy_half": 0.13541071052502074,
+     "median_attack": 0.8855393325274398,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 549,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 244.5255111075091,
+     "two_sided": 0.2708214210500415
+    },
+    "crop3:reverse_light_on_attack_2_masquerade": {
+     "greater": 0.2193878809269843,
+     "legacy_half": 0.2193878809269843,
+     "median_attack": 0.8737656982086562,
+     "median_benign": 0.879386116490762,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 721,
+     "parent": "ambient_highway_street_driving_diagnostics",
+     "start": 267.6572886005413,
+     "two_sided": 0.4387757618539686
+    },
+    "crop3:reverse_light_on_attack_3_masquerade": {
+     "greater": 0.8145270541273812,
+     "legacy_half": 0.19010833536566263,
+     "median_attack": 0.8798108754983728,
+     "median_benign": 0.8785894974881856,
+     "n_attack": 11,
+     "n_benign": 55,
+     "n_grid": 643,
+     "parent": "ambient_dyno_drive_basic_long",
+     "start": 1089.8114371949862,
+     "two_sided": 0.38021667073132526
+    }
+   }
+  }
+ ],
+ "guard": {
+  "mem_cap_bytes": 8589934592,
+  "rlimit_as": "not set: ValueError('current limit exceeds maximum limit')",
+  "time_cap_s": 1800
+ },
+ "mode": "pairwise",
+ "parts": [
+  "crops"
+ ],
+ "peak_rss_bytes": 1987706880,
+ "reps": 4,
+ "seed": 1,
+ "wall_s": 790.4
+}

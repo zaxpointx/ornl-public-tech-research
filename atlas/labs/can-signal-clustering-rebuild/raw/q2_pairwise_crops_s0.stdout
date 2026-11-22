@@ -1,0 +1,4 @@
+crop rep 0 341.2 s 203.0 {'correlated_signal': 0.767, 'max_speedometer': 0.864, 'max_engine_coolant_temp': 0.697, 'reverse_light_on': 0.807, 'reverse_light_off': 0.853}
+crop rep 1 481.3 s 195.0 {'correlated_signal': 0.871, 'max_speedometer': 0.043, 'max_engine_coolant_temp': 0.0, 'reverse_light_on': 0.942, 'reverse_light_off': 0.796}
+crop rep 2 607.0 s 194.0 {'correlated_signal': 0.91, 'max_speedometer': 0.978, 'max_engine_coolant_temp': 0.765, 'reverse_light_on': 0.946, 'reverse_light_off': 0.987}
+crop rep 3 760.1 s 197.0 {'correlated_signal': 0.563, 'max_speedometer': 0.689, 'max_engine_coolant_temp': 0.939, 'reverse_light_on': 0.75, 'reverse_light_off': 0.989}

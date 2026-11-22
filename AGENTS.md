@@ -10,7 +10,7 @@ The owner's focus lanes are **cybersecurity, software engineering, AI and agents
 - **lead**: in lane, but thin public material or only one component is relevant. Research that component only.
 - **pool**: outside the lanes. Keep it as context; don't extend it unless a reusable component turns up.
 
-A deep dive is done when the project is understood, run, pushed to a failure boundary, and written up with sources. `atlas/labs/flowcept-failure-study/` is the model.
+Choose artifact study, code reconstruction or experiment according to available evidence. An experimental deep dive is done when the pinned project is understood, run, tested at a measured boundary, and written up with sources; `atlas/labs/flowcept-failure-study/` is the model. A documented or code-inspected finding remains useful without claiming execution. Prefer exceptional mechanisms to project-count quotas; exploration need not start with a personal build target.
 
 ## Where to look
 | Need | Start with |
@@ -20,19 +20,24 @@ A deep dive is done when the project is understood, run, pushed to a failure bou
 | How one project works | `projects/<id>.md`, then `signals/<id>.md` |
 | Reusable engineering, with pinned code lines | [lessons/engineering-patterns.md](lessons/engineering-patterns.md) |
 | How the lab operates (INTERSECT, facilities, job families) | [atlas/guide/](atlas/guide/README.md) |
-| A JSON context packet for an agent | `python3 atlas/scripts/atlas_query.py --search <terms>` or `--node <id>` |
+| Search across guides, cards, code studies and labs | `python3 scripts/research_library.py build`, then `search "<terms>"` using the same script |
+| A catalog project context packet | `python3 scripts/research_library.py project <id>` |
+| A registry-only context packet | `python3 atlas/scripts/atlas_query.py --search <terms>` or `--node <id>` |
+| Run an exploration round with a team | [docs/research-team.md](docs/research-team.md): `/ornl-research` in Claude Code, `$ornl-research` in Codex |
+| Projects found outside the catalog (e.g. standalone ornl.gov sites) | [discovery/leads.csv](discovery/leads.csv), scout reports in `discovery/scouting/` |
 | Relationships between projects | [connections/map.md](connections/map.md), [docs/portfolio-map.json](docs/portfolio-map.json), `atlas/registry/edges.json` |
 | Experiments that ran ORNL code | [atlas/labs/](atlas/labs/) |
 
-Two registries exist for now: the catalog (projects) and `atlas/registry/` (sources, roles, facilities, typed edges). They overlap on a few projects and have not been reconciled. Treat the catalog as authoritative for project status and the atlas registry for the operating-model graph.
+The catalog owns project identity/status; `atlas/registry/` owns sources, roles, facilities and typed edges. [discovery/registry-links.json](discovery/registry-links.json) explicitly maps confirmed overlapping software identities. Keep broad registry themes separate. The [searchable library](docs/research-library.md) joins these without upgrading evidence; its generated SQLite index is disposable.
 
 ## Continue
-The latest handoff is the end of [docs/portfolio-expansion-2026-11-10/verification.md](docs/portfolio-expansion-2026-11-10/verification.md). Batch 13 and the patterns guide are in [batches/batch-13.md](batches/batch-13.md); the merge is recorded in [atlas/README.md](atlas/README.md). Continue only the requested outcome. One agent owns a task at a time. If another agent's uncommitted files are present, leave them alone.
+The latest handoff is the end of [docs/portfolio-expansion-2026-11-10/verification.md](docs/portfolio-expansion-2026-11-10/verification.md). Batch 13 and the patterns guide are in [batches/batch-13.md](batches/batch-13.md); the merge is recorded in [atlas/README.md](atlas/README.md). Continue only the requested outcome. The owner authorizes a bounded research team under the exploration workflow: one coordinator owns the outcome, workers own disjoint files, and a fresh referee reviews evidence. Leave another owner's uncommitted files alone.
 
 ## Verify
 - `python3 scripts/audit_atlas.py`: structural consistency, lanes coverage and local links.
 - `python3 scripts/build_portfolio_map.py --check`: map freshness, when catalog inputs change.
 - `python3 atlas/scripts/validate_registry.py` and `python3 -m unittest discover -s atlas/tests -p 'test_*.py'`: atlas registry and query tool.
+- `python3 -m unittest discover -s tests -p 'test_*.py'`, then `python3 scripts/research_library.py build` and `python3 scripts/research_library.py check`: retrieval behavior, cards and generated database freshness.
 - Review the scoped diff and run `git diff --check`. Keep the known/inferred/unknown distinctions and source boundaries.
 
 No push, publication, deployment, private information, credentials, outside-system probing or real-person outreach without explicit authorization. Opening an upstream issue or pull request on an ORNL repository counts as outreach and needs the owner's OK each time. Update the existing handoff for a new outcome; no parallel tracker or automatic agent fleet.

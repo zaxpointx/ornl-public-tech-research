@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "cyberwheel-simulation-to-emulation",
+  "project_ids": ["cyberwheel"],
+  "title": "Separate simulated defender learning from emulated validation",
+  "problem": "A defender can score well in a simplified training environment without demonstrating equivalent behavior against operating-system and service behavior.",
+  "mechanism": "[KNOWN: historical public-source reconstruction] Cyberwheel configures network scenarios, red and blue agents, observations and rewards. Its v2.0 release adds FIREWHEEL emulation; the deep dive describes an action controller and SIEM observations around virtual machines.",
+  "finding": "[KNOWN: source ledger and claim-boundary ledger, accessed 2026-10-24] Public material supports simulation and emulation research. It does not establish deployment as a live intrusion-prevention system. The report's figure of over 100,000 virtual nodes describes FIREWHEEL capacity, not a demonstrated Cyberwheel training run. The deep dive did not reproduce transfer performance or inspect exact reward formulas.",
+  "evidence_level": "documented",
+  "source_urls": [
+    "https://www.osti.gov/servlets/purl/3025007",
+    "https://github.com/ORNL/cyberwheel"
+  ],
+  "code_refs": [],
+  "supporting_paths": [
+    "deep-dives/cyberwheel/system-flow.md",
+    "deep-dives/cyberwheel/claim-boundary.md",
+    "deep-dives/cyberwheel/source-ledger.md",
+    "deep-dives/cyberwheel/verification-report.md"
+  ],
+  "experiment": {
+    "status": "not-run",
+    "revision": null,
+    "command": null,
+    "results_path": null,
+    "limitations": "This card distills the in-repository source reconstruction; sources were not freshly fetched and no Cyberwheel code was run for this card. Reports of separate local experiments have not been imported or verified. Repository links can change and are not pinned code evidence."
+  },
+  "adaptation": "[INFERRED] Explore a two-stage evaluation for autonomous agents: inexpensive simulated episodes for iteration, followed by a separate synthetic emulation that exposes assumptions hidden by the simulator. Record observation and action differences, reward assumptions, and failed transfers instead of treating training reward as operational effectiveness.",
+  "unknowns": [
+    "How much a trained defender's performance changes between matched simulated and emulated scenarios.",
+    "Which detector and reward assumptions dominate learned behavior.",
+    "Whether a small reproducible emulation can run within the available local resources."
+  ]
+}

@@ -29,3 +29,8 @@ jobs:
           python3 -m unittest discover -s atlas/labs/cross-layer-pilot
       - name: Check patch whitespace
         run: git diff --check
+      - name: Test and build the research library
+        run: |
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 scripts/research_library.py build
+          python3 scripts/research_library.py check
