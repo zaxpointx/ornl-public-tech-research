@@ -83,6 +83,7 @@ Projects: 74 cataloged, 63 full briefs plus 7 short briefs linked (all 70 verifi
 
 ## Cyber
 See also the [ORNL cyber atlas](atlas/cyber/README.md): 35 projects by lane, including 24 not yet in the catalog (one fact-check sweep so far, listed in [atlas/cyber/cyber-catalog.csv](atlas/cyber/cyber-catalog.csv)).
+Outside ORNL: the [Y-12 atlas](atlas/y12/README.md) maps the public cyber and software work of the Y-12 National Security Complex (an NNSA plant run by Consolidated Nuclear Security, not part of ORNL): 13 briefs, 2 deep dives, signals and a student [learn-and-build page](atlas/y12/learn-and-build.md). One fact-check sweep so far; rows in [atlas/y12/y12-catalog.csv](atlas/y12/y12-catalog.csv).
 - [Cyberwheel](projects/cyberwheel.md): a reinforcement-learning simulator for training AI agents that defend networks. Verified (two sweeps; second sweep 2026-10-29), borderline active (whether it's still developed is unverifiable).
 - [TASQC](projects/tasqc.md): uses quantum correlations to authenticate grid timing signals. Group B. Verified, two sweeps (2026-10-29).
 - [Akatosh](projects/akatosh.md): pairs intrusion-detection alerts with automated forensic checks to cut false alarms. Short brief (group C), no public code. Verified, two sweeps (2026-10-29).
